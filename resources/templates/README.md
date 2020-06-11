@@ -16,6 +16,7 @@ A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cooki
 ├── notebooks          <- Jupyter notebooks ou equivalentes
 │
 ├── src                <- fonte em linguagem de programação ou sistema (e.g., Orange)
+│   └── README.md      <- instruções básicas de instalação/execução
 │
 └── assets             <- mídias usadas no projeto
 ~~~
@@ -34,7 +35,9 @@ Código do seu projeto que pode ser executado online sem instalação de softwar
 
 ## `src`
 
-Código em alguma linguagem, projeto em Orange ou Weka e similares. Tente organizá-lo de forma que seja simples a sua execução por terceiros.
+Código em alguma linguagem ou projeto em Orange, Weka e similares.
+
+Se for código em linguagem de programação, tente organizá-lo de forma que seja simples a sua execução por terceiros, por exemplo, acrescente as bibliotecas necessárias etc. Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
 
 ## `assets`
 
