@@ -1,4 +1,22 @@
-# Model for Project Presentation (in Portuguese)
+# Model for Project Presentation and Folder Structure (in Portuguese)
+
+# Estrutura de Arquivos e Pastas
+
+Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte. Além disso, deve-se seguir a estrutura de pastas:
+
+## `data`
+
+Dados utilizados no projeto se você tiver licença para tal e se o volume for suportado pelo Github. Você pode optar por colocar um subconjunto ilustrativo dos dados.
+
+É importante que sejam colocados os dados originais (se for possível) para garantir a reprodutibilidade do processo. Também podem ser colocados aqui dados intermediários (por exemplo, dados tratados, resumidos etc.)
+
+## `code`
+
+Código do seu projeto, que pode ser: notebook em Jupyter, código em alguma linguagem, projeto em Orange ou Weka e similares. Tente organizá-lo de forma que seja simples a sua execução por terceiros.
+
+## `assets`
+
+Qualquer mídia adicional usada no seu projeto: vídeo, ilustrações, arquivos PDF etc.
 
 # Modelo para Apresentação do Projeto
 
