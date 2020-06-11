@@ -2,21 +2,43 @@
 
 # Estrutura de Arquivos e Pastas
 
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte. Além disso, deve-se seguir a estrutura de pastas:
+A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
+
+~~~
+├── README.md          <- apresentação do projeto
+│
+├── data
+│   ├── external       <- dados de terceiros
+│   ├── interim        <- dados intermediários, e.g., resultado de transformação
+│   ├── processed      <- dados finais usados para a modelagem
+│   └── raw            <- dados originais sem modificações
+│
+├── notebooks          <- Jupyter notebooks ou equivalentes
+│
+├── src                <- fonte em linguagem de programação ou sistema (e.g., Orange)
+│
+└── assets             <- mídias usadas no projeto
+~~~
+
+Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
 
 ## `data`
 
-Dados utilizados no projeto se você tiver licença para tal e se o volume for suportado pelo Github. Você pode optar por colocar um subconjunto ilustrativo dos dados.
+Dados utilizados no projeto respeitadas as possíveis implicações éticas, se você tiver licença para tal e se o volume for suportado pelo Github. Você pode optar por colocar um subconjunto ilustrativo dos dados.
 
-É importante que sejam colocados os dados originais (se for possível) para garantir a reprodutibilidade do processo. Também podem ser colocados aqui dados intermediários (por exemplo, dados tratados, resumidos etc.)
+É importante que sejam colocados os dados originais (se for possível) para garantir a reprodutibilidade do processo. Os originais são colocados na subpasta `raw` se forem produzidos pela equipe e na subpasta `external` se forem de terceiros. Também podem ser colocados aqui dados intermediários (por exemplo, dados tratados, resumidos etc.) na pasta `interim`. Finalmente, coloque os dados finais que serviram de entrada para as suas análises na subpasta `processed`.
 
-## `code`
+## `notebooks`
 
-Código do seu projeto, que pode ser: notebook em Jupyter, código em alguma linguagem, projeto em Orange ou Weka e similares. Tente organizá-lo de forma que seja simples a sua execução por terceiros.
+Código do seu projeto que pode ser executado online sem instalação de software, tal como um notebook em Jupyter ou equivalente.
+
+## `src`
+
+Código em alguma linguagem, projeto em Orange ou Weka e similares. Tente organizá-lo de forma que seja simples a sua execução por terceiros.
 
 ## `assets`
 
-Qualquer mídia adicional usada no seu projeto: vídeo, ilustrações, arquivos PDF etc.
+Qualquer mídia usada no seu projeto: vídeo, ilustrações, arquivos PDF etc.
 
 # Modelo para Apresentação do Projeto
 
