@@ -1,1 +1,6 @@
+title: Ciência e Visualização de Dados em Saúde
+
 theme: minima
+
+header_pages:
+ - sobre.md
