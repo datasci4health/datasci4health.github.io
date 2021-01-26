@@ -11,8 +11,8 @@ Saber identificar o melhor casamento entre os dados e a técnica a fim de respon
 # Professoras e Professor:
 * Paula D. Paro Costa - Faculdade de Engenharia Elétrica e Computação (FEEC)
 * Letícia Rittner - Faculdade de Engenharia Elétrica e Computação (FEEC)
-* Taís Freire Galvão - Faculdade de Ciências Farmacêuticas
-* André Santanchè - Instituto de Computação
+* Taís Freire Galvão - Faculdade de Ciências Farmacêuticas (FCF)
+* André Santanchè - Instituto de Computação (IC)
 
 # Público Alvo
 Esta disciplina foi concebida para que possam se matricular alunos de saúde, biologia, computação, engenharias, matemática, estatística e outras áreas associadas.
