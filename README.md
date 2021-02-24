@@ -1,4 +1,4 @@
-![Banner](https://www.canva.com/design/DAESjnn7Y54/QuMpN16ywKIMf2TBLR2i-Q/view?utm_content=DAESjnn7Y54&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
+![Banner](https://www.canva.com/design/DAESjnn7Y54/QuMpN16ywKIMf2TBLR2i-Q/view)
 
 A análise computacional de dados em saúde tem crescido em relevância e impacto não apenas pelo desenvolvimento de estratégias e algoritmos, como também pela crescente quantidade de dados disponíveis.
 Este curso tem base interdisciplinar e envolve professoras e professor de computação, engenharia elétrica e farmácia. Ela acomodará diferentes trilhas de aprendizado, possibilitando a participação e interação de alunos de ciências exatas (e.g., computação, engenharias, matemática e estatística), saúde (e.g., medicina, enfermagem, farmácia) e biologia. A disciplina contará ainda com diversos convidados, tais como especialistas em Bancos de Dados, Saúde Pública, Medicina, Enfermagem e Farmácia. 
