@@ -1,4 +1,11 @@
-![Banner](https://www.canva.com/design/DAESjnn7Y54/QuMpN16ywKIMf2TBLR2i-Q/view)
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAESjnn7Y54&#x2F;view?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAESjnn7Y54&#x2F;view?utm_content=DAESjnn7Y54&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Copy of Yellow, Blue and Black Gadgets Science &amp; Technology Youtube Video Intro</a> by pdparo
 
 A análise computacional de dados em saúde tem crescido em relevância e impacto não apenas pelo desenvolvimento de estratégias e algoritmos, como também pela crescente quantidade de dados disponíveis.
 Este curso tem base interdisciplinar e envolve professoras e professor de computação, engenharia elétrica e farmácia. Ela acomodará diferentes trilhas de aprendizado, possibilitando a participação e interação de alunos de ciências exatas (e.g., computação, engenharias, matemática e estatística), saúde (e.g., medicina, enfermagem, farmácia) e biologia. A disciplina contará ainda com diversos convidados, tais como especialistas em Bancos de Dados, Saúde Pública, Medicina, Enfermagem e Farmácia. 
