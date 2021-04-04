@@ -20,7 +20,7 @@ Note que nem todos os diretórios ou arquivos serão necessários para todos os 
 Seu repositório deverá obrigatoriamente conter o arquivo README.md, arquivo de documentação Markdown, que deverá conter a descrição do projeto conforme orientações a seguir.
 
 
-# Modelo para Apresentação do Projeto
+# Editando Arquivo README.md
 
 Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
 [Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
