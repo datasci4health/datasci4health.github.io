@@ -7,7 +7,9 @@ Na primeira entrega do projeto, seu grupo deverá:
  - Criar um repositório GitHub ou GitLab público que será usado ao longo de todo o projeto (o link deverá ser submetido na atividade correspondente no Google Classroom da disciplina);
  - Organizar o repositório segundo a estrutura de diretórios proposta abaixo;
  - Editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito a seguir;
- - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo, mas é obrigatória a participação de todos os membros durante o momento da arguição da proposta.
+ - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo.
+
+Após a primeira entrega, será agendada (em horário de aula) uma data de arguição da proposta de projeto. É obrigatória a participação de todos os membros durante o momento da arguição da proposta. Durante a arguição, os professores fornecerão feedbacks sobre a proposta e seu grupo poderá tirar dǘvidas sobre o encaminhamento do projeto. 
 
 # Estrutura do Repositório
 
@@ -48,10 +50,10 @@ Segue abaixo o modelo de como devem ser documentadas as entregas.
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
 
 # Metodologia
-> Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.
+> Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
 
 # Ferramentas
 > Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
 
 # Cronograma
-> Proposta de cronograma.
+> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
