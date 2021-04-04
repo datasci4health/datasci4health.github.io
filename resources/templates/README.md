@@ -4,7 +4,7 @@ O objetivo geral do projeto final desta disciplina é realizar a análise de dad
 
 Na primeira entrega do projeto, seu grupo deverá:
 
- - Criar um repositório GitHub ou GitLab público que será usado ao longo de todo o projeto (o link deverá ser submetido na atividade correspondente no Google Classroom da disciplina);
+ - Criar um repositório GitHub ou GitLab **público** que será usado ao longo de todo o projeto (o link deverá ser submetido na atividade correspondente no Google Classroom da disciplina);
  - Organizar o repositório segundo a estrutura de diretórios proposta abaixo;
  - Editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito a seguir;
  - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo.
