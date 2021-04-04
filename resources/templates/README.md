@@ -2,11 +2,21 @@
 
 O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
 
-Esta entrega é composta de dois momentos: (1) disponibilização de material em vídeo e respectivos slides, com proposta do projeto; (2) arguição da proposta com os professores dentro do horário da aula segundo ordem de arguição a ser divulgada.
+Na primeira entrega do projeto, seu grupo deverá:
 
-O vídeo de apresentação da proposta deve ter duração máxima de 3 minutos. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo, mas é obrigatória a participação de todos os membros durante o momento da arguição da proposta.
+ - Criar um repositório GitHub ou GitLab público que será usado ao longo de todo o projeto (o link deverá ser submetido na atividade correspondente no Google Classroom da disciplina);
+ - Organizar o repositório segundo a estrutura de diretórios proposta abaixo;
+ - Editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito a seguir;
+ - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo, mas é obrigatória a participação de todos os membros durante o momento da arguição da proposta.
 
-O texto da proposta deve contemplar os aspectos indicados no modelo a seguir.
+# Estrutura do Repositório
+
+A fim de uniformizar os repositórios de projetos da disciplina, os diretórios de seu repositório deverão ser nomeados e utilizados segundo a estrutura sugerida em [Home - Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/).
+
+Note que nem todos os diretórios ou arquivos serão necessários para todos os projetos. Foque em seguir o padrão para os diretórios que forem necessários. Não crie diretórios que não serão utilizados.
+
+Seu repositório deverá obrigatoriamente conter o arquivo README.md, arquivo de documentação Markdown, que deverá conter a descrição do projeto conforme orientações a seguir.
+
 
 # Modelo para Apresentação do Projeto
 
@@ -25,10 +35,11 @@ Segue abaixo o modelo de como devem ser documentadas as entregas.
 # Modelo para Apresentação do Projeto
 
 # Projeto `<Título em Português>`
-# Project `<Title in English>`
+# Project `<Title in English>
 
 # Descrição Resumida do Projeto
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
