@@ -4,7 +4,7 @@ O objetivo geral do projeto final desta disciplina é realizar a análise de dad
 
 Esta entrega é composta de dois momentos: (1) disponibilização de material em vídeo e respectivos slides, com proposta do projeto; (2) arguição da proposta com os professores dentro do horário da aula segundo ordem de arguição a ser divulgada.
 
-O vídeo de apresentação da proposta deve ter duração máxima de 5 minutos. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo, mas é obrigatória a participação de todos os membros durante o momento da arguição da proposta.
+O vídeo de apresentação da proposta deve ter duração máxima de 3 minutos. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo, mas é obrigatória a participação de todos os membros durante o momento da arguição da proposta.
 
 O texto da proposta deve contemplar os aspectos indicados no modelo a seguir.
 
