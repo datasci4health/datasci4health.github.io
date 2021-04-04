@@ -41,6 +41,7 @@ Segue abaixo o modelo de como devem ser documentadas as entregas.
 
 # Descrição Resumida do Projeto
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
