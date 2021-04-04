@@ -37,7 +37,7 @@ Segue abaixo o modelo de como devem ser documentadas as entregas.
 # Modelo para Apresentação do Projeto
 
 # Projeto `<Título em Português>`
-# Project `<Title in English>
+# Project `<Title in English>`
 
 # Apresentação
 
