@@ -4,10 +4,11 @@ O objetivo geral do projeto final desta disciplina é realizar a análise de dad
 
 Na segunda entrega do projeto, seu grupo deverá:
 
- - Complementar o repositorio GitHub ou GitLab **público** já criado anteriormente com informações e códigos associados à finalização da etapa de análise exploratoria de dados.
- - Organizar o repositório segundo a estrutura de diretórios proposta abaixo;
- - Editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito a seguir;
- - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo.
+ - Complementar o repositório GitHub ou GitLab **público** já criado anteriormente com informações e códigos associados à finalização da etapa de análise exploratoria de dados.
+ - Deve ser mantida a estrutura anterior do repositório conforme orientações da [Primeira Entrega](https://github.com/datasci4health/home/blob/master/resources/templates/entrega1.md).
+ - O arquivo README.md deve ser atualizado para conter as seções do template abaixo.
+ - Todos os scripts ou arquivos de processamento dos dados até o momento devem ser disponibilizados nas pastas correspondentes.
+
 
 Após a primeira entrega, será agendada (em horário de aula) uma data de arguição da proposta de projeto. É obrigatória a participação de todos os membros durante o momento da arguição da proposta. Durante a arguição, os professores fornecerão feedbacks sobre a proposta e seu grupo poderá tirar dǘvidas sobre o encaminhamento do projeto. 
 
