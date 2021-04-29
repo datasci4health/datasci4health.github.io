@@ -1,4 +1,4 @@
-# Projeto - Segunda Entrega
+# Projeto - Segunda Entrega (Análise Exploratória)
 
 O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
 
