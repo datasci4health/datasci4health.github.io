@@ -4,3 +4,4 @@ theme: minima
 
 header_pages:
  - sobre.md
+ - notebooks.md
