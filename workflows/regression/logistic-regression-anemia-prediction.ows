@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Zombies Anemia" position="(91.375, 99.125)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Selecting Free and Dependent Variables" position="(259.75, 98.625)" />
+		<node id="2" name="Data Sampler" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Data Sampler" position="(437.5, 100.75)" />
+		<node id="3" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(591.75, 216.625)" />
+		<node id="4" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(739.625, 102.25)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Data Sample" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="4" source_channel="Remaining Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="4" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/santanche/git/datasci/data/zombie/raw/zombie-anemia.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 6, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci/data/zombie/raw/zombies-survey.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 9, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci/data/zombie/raw', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xfd\x00\x00\x01k\x00\x00\x0c6\x00\x00\x02\xce\x00\x00\n\xfd\x00\x00\x01\x90\x00\x00\x0c6\x00\x00\x02\xce\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\n\xfd\x00\x00\x01\x90\x00\x00\x0c6\x00\x00\x02\xce', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVAAMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACkIAAAG1
+AAAMlAAAA3gAAApCAAAB2gAADJQAAAN4AAAAAQAAAAAHgAAACkIAAAHaAAAMlAAAA3iUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMBG1jZ3OUSwKGlIwJYXZhaWxhYmxllEsAhpSMBW1jZ3NjlEsChpRo
+FUsBhpSMA21jdpRLAoaUaBVLAoaUjAZnZW5kZXKUSwGGlGgVSwOGlIwCZ3OUSwKGlIwJYXR0cmli
+dXRllEsAhpSMBmFuZW1pYZRLAYaUjAVjbGFzc5RLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRl
+c5R9lChoIEsCaBNLAmgXSwJoGksCaB1LAWgkSwF1jAVtZXRhc5R9lHViaAwpgZR9lChoD32UKGgR
+fZQojANwYmOUSwKGlGgVSwCGlIwCc3CUSwKGlGgVSwGGlIwEbmFtZZRLA4aUaBVLAoaUjAZnZW5k
+ZXKUSwGGlGgVSwOGlIwGaGVpZ2h0lEsChpRoFUsEhpSMBndlaWdodJRLAoaUaBVLBYaUjANnYmOU
+SwKGlGgiSwCGlIwCZ3OUSwKGlGgiSwGGlIwEdHlwZZRLAYaUaCZLAIaUdUr+////hpRoB0sBdWgp
+fZQojAR0eXBllEsBjAZnZW5kZXKUSwGMBmhlaWdodJRLAowGd2VpZ2h0lEsCjANnYmOUSwKMAmdz
+lEsCjANwYmOUSwKMAnNwlEsCdWgrfZSMBG5hbWWUSwNzdWJldS4=
+</properties>
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\tW\x00\x00\x01\xae\x00\x00\n]\x00\x00\x03\x81\x00\x00\tW\x00\x00\x01\xd3\x00\x00\n]\x00\x00\x03\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\tW\x00\x00\x01\xd3\x00\x00\n]\x00\x00\x03\x81', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="3" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xba\x00\x00\x01B\x00\x00\x0b\xb1\x00\x00\x02\x81\x00\x00\n\xba\x00\x00\x01g\x00\x00\x0b\xb1\x00\x00\x02\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\n\xba\x00\x00\x01g\x00\x00\x0b\xb1\x00\x00\x02\x81', '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASVDQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAApSAAAAjgAADg4AAAMfAAAKUgAAALMAAA4OAAADHwAAAAEAAAAAB4AAAApS
+AAAAswAADg4AAAMflIwJc2VsZWN0aW9ulF2USwFhjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2Nv
+cmVzlI+UKIwCRjGUjAJSMpSMAkNBlIwGUmVjYWxslIwJUHJlY2lzaW9ulIwDTVNFlIwEUk1TRZSM
+A0FVQ5SMA01BRZSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
