@@ -35,3 +35,28 @@ Source: based on [Cereals](https://web.archive.org/web/20000817072218/http://lib
 # Zombie Anemia Dataset (`zombie-anemia.csv`)
 
 Source: based on [Anemia Identification](https://www.kaggle.com/alisabrie/anemia) dataset.
+
+# Zombie Diet Dataset (`zombie-diet.csv`)
+
+Dietary habits of zombies.
+
+* dietary classes: if consumed at least once a week value=1 else value=0.
+   * bitter herb
+   * slugs
+   * cooked veg
+   * giant meat
+   * raw veg
+   * dessert
+   * potatoes
+   * green meat
+   * eggs
+   * beans
+   * honey
+   * fish
+   * milk
+   * chili
+   * fried veg
+
+* cups water: average of cups of water per day.
+
+* region: the region where the zombie lived most of its life.

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Zombie Health Diagnostic" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Diagnostic Training CSV" position="(144.7058823529412, 157.6470588235294)" />
+		<node id="1" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Build Diagnstic Tree" position="(487.0, 152.0)" />
+		<node id="2" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Filter Features and Target" position="(323.0, 149.0)" />
+		<node id="3" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="Tree Viewer" position="(698.0, 142.0)" />
+		<node id="4" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predict Diagnostic" position="(687.0, 301.0)" />
+		<node id="5" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="To Predict CSV" position="(490.0, 358.0)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Training Table" position="(322.0, 276.0)" />
+		<node id="7" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="To Predict Table" position="(688.0, 423.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Model" sink_channel="Tree" enabled="true" />
+		<link id="3" source_node_id="1" sink_node_id="4" source_channel="Model" sink_channel="Predictors" enabled="true" />
+		<link id="4" source_node_id="5" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="5" source_node_id="0" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="6" source_node_id="5" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s03orange/zombie-health-training.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s02weka/zombie-health-spreadsheet-ml-training.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 8, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s02weka/zombie-health-spreadsheet-ml.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/Documents/harena-rene/orange-analysis/nl-experiment-01.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 4, 'value': 'Text'}, {'start': 4, 'stop': 7, 'value': 'Numeric'}, {'start': 7, 'stop': 8, 'value': 'Text'}, {'start': 8, 'stop': 11, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': True, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s03orange', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02'\x00\x00\x00\x9e\x00\x00\x03r\x00\x00\x02\x06\x00\x00\x02'\x00\x00\x00\xc3\x00\x00\x03r\x00\x00\x02\x06\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02'\x00\x00\x00\xc3\x00\x00\x03r\x00\x00\x02\x06", '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': 'Diagnostics Tree', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x11\x00\x00\x00\xa2\x00\x00\x03\x8d\x00\x00\x02&gt;\x00\x00\x02\x11\x00\x00\x00\xa2\x00\x00\x03\x8d\x00\x00\x02&gt;\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02\x11\x00\x00\x00\xa2\x00\x00\x03\x8d\x00\x00\x02&gt;', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVygUAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAZgAAAAb
+AAAD7wAAAs4AAAGYAAAAQAAAA+8AAALOAAAAAAAAAAAFVgAAAZgAAABAAAAD7wAAAs6UjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAR0aW1llEdB14vcs59e6IwG
+dmFsdWVzlH2UKIwRZG9tYWluX3JvbGVfaGludHOUfZQojAtoYXNfZGlzZWFzZZRLAYaUjAlhdmFp
+bGFibGWUSwCGlIwJcGFyYWx5c2lzlEsBhpSMCWF0dHJpYnV0ZZRLAIaUjAt5ZWxsb3dfdG9uZ5RL
+AYaUaBpLAYaUjAttZW1iZXJfbG9zc5RLAYaUaBpLAoaUjApjaGVzdF9wYWlulEsBhpRoGksDhpSM
+EHRyZW1ibGluZ19maW5nZXKUSwGGlGgaSwSGlIwMc2V2ZXJlX2FuZ2VylEsBhpRoGksFhpSMEGhp
+c3RvcnlfYmFjdGVyaWGUSwGGlGgaSwaGlIwKZGlhZ25vc3RpY5RLAYaUjAVjbGFzc5RLAIaUdUr+
+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lCiMCXBhcmFseXNpc5RLAYwLeWVsbG93X3RvbmeUSwGM
+C21lbWJlcl9sb3NzlEsBjApjaGVzdF9wYWlulEsBjBB0cmVtYmxpbmdfZmluZ2VylEsBjAxzZXZl
+cmVfYW5nZXKUSwGMEGhpc3RvcnlfYmFjdGVyaWGUSwGMCmRpYWdub3N0aWOUSwGMC2hhc19kaXNl
+YXNllEsBdYwFbWV0YXOUfZR1YmgMKYGUfZQoaA9HQdeLyHwSkgloEH2UKIwRZG9tYWluX3JvbGVf
+aGludHOUfZQojAlwYXJhbHlzaXOUSwGGlIwJYXR0cmlidXRllEsAhpSMC21lbWJlcl9sb3NzlEsB
+hpRoR0sBhpSMCmNoZXN0X3BhaW6USwGGlGhHSwKGlIwQdHJlbWJsaW5nX2ZpbmdlcpRLAYaUaEdL
+A4aUjAxzZXZlcmVfYW5nZXKUSwGGlGhHSwSGlIwQaGlzdG9yeV9iYWN0ZXJpYZRLAYaUaEdLBYaU
+jAt5ZWxsb3dfdG9uZ5RLAYaUaEdLBoaUjApkaWFnbm9zdGljlEsBhpSMBWNsYXNzlEsAhpR1Sv7/
+//+GlGgHSwF1aDN9lCiMCXBhcmFseXNpc5RLAYwLeWVsbG93X3RvbmeUSwGMC21lbWJlcl9sb3Nz
+lEsBjApjaGVzdF9wYWlulEsBjBB0cmVtYmxpbmdfZmluZ2VylEsBjAxzZXZlcmVfYW5nZXKUSwGM
+EGhpc3RvcnlfYmFjdGVyaWGUSwGMCmRpYWdub3N0aWOUSwF1aD59lHViaAwpgZR9lChoD0dB14u+
+vbiIYWgQfZQojBFkb21haW5fcm9sZV9oaW50c5R9lCiMCXBhcmFseXNpc5RLA4aUjARtZXRhlEsA
+hpSMC3llbGxvd190b25nlEsDhpRocUsBhpSMC21lbWJlcl9sb3NzlEsDhpRocUsChpSMCmNoZXN0
+X3BhaW6USwOGlGhxSwOGlIwQdHJlbWJsaW5nX2ZpbmdlcpRLA4aUaHFLBIaUjAxzZXZlcmVfYW5n
+ZXKUSwOGlGhxSwWGlIwQaGlzdG9yeV9iYWN0ZXJpYZRLA4aUaHFLBoaUjApkaWFnbm9zdGljlEsD
+hpRocUsHhpR1Sv7///+GlGgHSwF1aDN9lGg+fZQoaG9LA2hzSwNodksDaHlLA2h8SwNof0sDaIJL
+A2iFSwN1dWJldS4=
+</properties>
+		<properties node_id="3" format="pickle">gASVswEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFsaW5lX3dpZHRoX21ldGhvZJRL
+AowObWF4X25vZGVfd2lkdGiUS5aMDm1heF90cmVlX2RlcHRolEsAjBFyZWdyZXNzaW9uX2NvbG9y
+c5RLAIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAHgAAAABsAAA7/AAAENwAACh4A
+AAEqAAAMnQAAAwkAAAAAAgAAAAeAAAAHgAAAAEAAAA7/AAAEN5SMBHpvb22USwWMC19fdmVyc2lv
+bl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250
+ZXh0lJOUKYGUfZQojAR0aW1llEdB14vcs7HmS4wGdmFsdWVzlH2UKIwSdGFyZ2V0X2NsYXNzX2lu
+ZGV4lEsAaAlLAXWMB2NsYXNzZXOUXZQojBNiYWN0ZXJpYWxfaW5mZWN0aW9ulIwMYml0ZV9kZWZp
+Y2l0lIwGZmlnaHRzlIwHbm90aGluZ5SMD3ZpcmFsX2luZmVjdGlvbpRldWJhdS4=
+</properties>
+		<properties node_id="4" format="pickle">gASVCgEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAApUAAAA5wAADNMAAALrAAAKVAAAAQwAAAzTAAAC6wAAAAAAAAAAB4AAAApU
+AAABDAAADNMAAALrlIwJc2VsZWN0aW9ulF2UjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2NvcmVz
+lI+UKIwDTVNFlIwJUHJlY2lzaW9ulIwEUk1TRZSMAkNBlIwGUmVjYWxslIwDTUFFlIwCUjKUjANB
+VUOUjAJGMZSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+</properties>
+		<properties node_id="5" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s03orange/zombie-health-predict.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s02weka/zombie-health-spreadsheet-predict.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s02weka/zombie-health-spreadsheet-ml-training.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 8, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': True, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/lab2learn/machine-learning/zombie-health/s03orange', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02'\x00\x00\x00\x9e\x00\x00\x03r\x00\x00\x02\x06\x00\x00\x02'\x00\x00\x00\xc3\x00\x00\x03r\x00\x00\x02\x06\x00\x00\x00\x00\x00\x00\x00\x00\x05V\x00\x00\x02'\x00\x00\x00\xc3\x00\x00\x03r\x00\x00\x02\x06", '__version__': 3}</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00F\x00\x00\x00\x1b\x00\x00\x05U\x00\x00\x02\xff\x00\x00\x00F\x00\x00\x00@\x00\x00\x02\xcd\x00\x00\x02\xff\x00\x00\x00\x00\x02\x00\x00\x00\x05V\x00\x00\x00F\x00\x00\x00@\x00\x00\x05U\x00\x00\x02\xff', 'select_rows': True, 'selected_cols': [0, 1, 2, 3, 4, 5, 6, 7], 'selected_rows': [10], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="7" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00F\x00\x00\x00\x1b\x00\x00\x05U\x00\x00\x02\xff\x00\x00\x014\x00\x00\x00k\x00\x00\x04S\x00\x00\x02^\x00\x00\x00\x00\x02\x00\x00\x00\x05V\x00\x00\x00F\x00\x00\x00@\x00\x00\x05U\x00\x00\x02\xff', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
