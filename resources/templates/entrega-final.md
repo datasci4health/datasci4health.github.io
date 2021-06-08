@@ -3,22 +3,45 @@
 
 O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
 
+A entrega final do projeto consiste em duas etapas: 
+* Apresentação do Projeto (valendo 2,0 pontos): Vídeo de Apresentação entregue com o relatório + Arguição na data de apresentação (presença de todos os membros do grupo obrigatória)
+* Relatório de Projeto (valendo 6,0 pontos).
+
 ## Datas Importantes
 
-02/07 - até 15:00h - Data e hora limites para última atualização do repositório do projeto (será considerada a última versão até essa data e horário).
-02/07 - Início das apresentações de trabalhos - A partir das 16:00 (requerida presença de todos os alunos).
-13/07 - até 10:00 - Entrega da avaliação por pares (vide outras informações abaixo).
+02/07 - Até 15:00h - Data e hora limites para última atualização do repositório do projeto (será considerada a última versão até essa data e horário).
+02/07 - A partir das 16:00 (Presença obrigatória de todos os membros do grupo na data de apresentação. Requerida presença de todos os alunos da disciplina nas datas das apresentações).
+13/07 - Até 10:00 - Entrega da avaliação por pares (vide outras informações abaixo).
 
+## Instruções para o Relatório Final
 
+Na entrega do relatório final do projeto, seu grupo deverá:
 
-Na entrega final do projeto, seu grupo deverá:
-
- - Complementar o repositório GitHub ou GitLab **público** já criado anteriormente com informações e códigos associados à finalização da etapa de análise exploratória de dados.
- - Deve ser mantida a estrutura anterior do repositório conforme orientações da [Primeira Entrega](https://github.com/datasci4health/home/blob/master/resources/templates/entrega1.md).
- - O arquivo README.md deve ser atualizado para conter as seções do template abaixo.
+ - Complementar o repositório GitHub ou GitLab **público** já criado anteriormente com informações e códigos associados à uma implementação prática de uma análise. Por implementação entende-se a execução prática da análise usando um ou mais sistemas de análise e/ou o desenvolvimento de software para análise. 
+ - Deve ser mantida a estrutura anterior do repositório conforme orientações da [Primeira Entrega](https://github.com/datasci4health/home/blob/master/resources/templates/entrega1.md). 
+ - O arquivo README.md deve ser atualizado para conter as seções do template abaixo. 
  - Todos os scripts ou arquivos de processamento dos dados até o momento devem ser disponibilizados nas pastas correspondentes.
 
-Após a primeira entrega, será agendada (em horário de aula) uma data de arguição da proposta de projeto. É obrigatória a participação de todos os membros durante o momento da arguição da proposta. Durante a arguição, os professores fornecerão feedbacks sobre a proposta e seu grupo poderá tirar dǘvidas sobre o encaminhamento do projeto.
+## Instruções para a Apresentação
+
+A fim de garantirmos que será possível a apresentação de todos os grupos nas datas agendadas, as apresentações deverão ser gravadas e entregues junto com o relatório final em lugar destacado no template do relatório.
+
+No dia da arguição do grupo, o vídeo será tocado e serão reservados 5 minutos para perguntas dos professores e dos alunos da turma.
+
+O vídeo pré-gravado deve ter no máximo 8 minutos e todos os membros do grupo devem participar da apresentação.
+
+Diretrizes para apresentação (sugestões de tópicos): 
+* Deve recapitular, de maneira sintética, objetivo inicial do projeto 
+* Abordagem adotada 
+* Dificuldades enfrentadas 
+* Deve relatar possíveis mudanças de percurso 
+* Referenciais teóricos adotados 
+* Principais ferramentas utilizadas (incluir informações úteis para que outros possam utilizá-las) 
+* Resultados obtidos 
+* Discussão dos resultados 
+* Conclusões / Lições aprendidas 
+* Trabalhos futuros 
+
 
 # Estrutura do Repositório
 
@@ -67,11 +90,6 @@ Se for código em linguagem de programação, tente organizá-lo de forma que se
 
 Qualquer mídia usada no seu projeto: vídeo, ilustrações, arquivos PDF etc.
 
-
-
-
-
-
 Note que nem todos os diretórios ou arquivos serão necessários para todos os projetos. Foque em seguir o padrão para os diretórios que forem necessários. Não crie diretórios que não serão utilizados.
 
 Seu repositório deverá obrigatoriamente conter o arquivo README.md, arquivo de documentação Markdown, que deverá conter a descrição do projeto conforme orientações a seguir.
@@ -118,13 +136,20 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
 >
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
+> *Link para vídeo da apresentação final do projeto (máximo 8 minutos). TODOS OS MEMBROS DO GRUPO DEVEM APARECER NO VÍDEO.*
+
+# Introdução e Referenciais de Teóricos
+> Contextualização do projeto
+> Motivação
+> Relevância
+> Trabalhos relacionados
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa (revisadas e atualizadas) que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
-> Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
+> Perguntas de pesquisa (revisadas e atualizadas) ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
 
 # Metodologia
-> Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
+> Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
+> Justificar teoricamente, sempre que possível, a metodologia adotada.
 
 ## Bases de Dados e Evolução
 > Elencar bases de dados estudadas e/ou utilizadas no projeto, organizando em duas partes. Primeiro aquelas que foram estudadas, mas não serão usadas e em seguida as bases adotadas.
@@ -161,8 +186,27 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 
 > Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
 
-# Ferramentas
-> Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
+# Análises Realizadas
+> Descrição detalhada das análises realizadas.
 
-# Cronograma
-> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
+## Ferramentas
+> Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas
+
+# Resultados
+> Descrição dos resultados mais importantes obtidos
+
+# Discussão
+> Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
+
+# Conclusão
+> Destacar as principais conclusões obtidas no desenvolvimento do projeto.
+> Destacar os principais desafios enfrentados.
+> Principais lições aprendidas.
+
+# Trabalhos Futuros
+> O que poderia ser melhorado se houvesse mais tempo?
+
+# Referências Bibliográficas
+> Lista de artigos, links e referências bibliográficas.
+> Fiquem à vontade para escolher o padrão de referenciamento preferido pelo grupo.
+
