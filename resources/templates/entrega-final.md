@@ -40,7 +40,11 @@ Diretrizes para apresentação (sugestões de tópicos):
 * Resultados obtidos 
 * Discussão dos resultados 
 * Conclusões / Lições aprendidas 
-* Trabalhos futuros 
+* Trabalhos futuros
+
+## Avaliação
+
+A avaliação do projeto final será realizada não apenas pelos professores da disciplina, mas também passará por etapa de avaliação por pares.
 
 
 # Estrutura do Repositório
@@ -106,15 +110,8 @@ E mais especificamente sobre tabelas em: [Organizing information with tables](ht
 Segue abaixo o modelo de como devem ser documentadas as entregas.
 > Tudo o que aparece neste modo de citação, ou indicado entre `<...>`, se refere a algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
 
-# Orientações para Análise Exploratória em Geral:
 
-Em várias partes do modelo sugerido a seguir, será indicado que você apresente uma análise exploratória. Para cada um deles, seguem algumas orientações do que escrever:
- * use estatística descritiva e gráficos;
-* inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
-* analise correlação e use gráficos de dispersão;
-* descreva os resultados/gráficos, os analise e contextualize com o tema definido.
-
-# Modelo para Apresentação do Projeto
+# Modelo Relatório Final de Projeto
 
 # Projeto `<Título em Português>`
 # Project `<Title in English>`
@@ -185,6 +182,13 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 ### Integração entre Bases e Análise Exploratória
 
 > Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
+
+> Resultados de Análise Exploratória
+* use estatística descritiva e gráficos;
+* inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
+* analise correlação e use gráficos de dispersão;
+* descreva os resultados/gráficos, os analise e contextualize com o tema definido.
+
 
 # Análises Realizadas
 > Descrição detalhada das análises realizadas.
