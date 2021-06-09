@@ -209,10 +209,10 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 > Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
 
 > Resultados de Análise Exploratória
-* use estatística descritiva e gráficos;
-* inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
-* analise correlação e use gráficos de dispersão;
-* descreva os resultados/gráficos, os analise e contextualize com o tema definido.
+> * use estatística descritiva e gráficos;
+> * inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
+> * analise correlação e use gráficos de dispersão;
+> * descreva os resultados/gráficos, os analise e contextualize com o tema definido.
 
 # Análises Realizadas
 > Descrição detalhada das análises realizadas.
