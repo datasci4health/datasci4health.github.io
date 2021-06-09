@@ -3,23 +3,23 @@
 
 O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
 
-A entrega final do projeto consiste em duas etapas: 
+A entrega final do projeto consiste em duas etapas:
 * Apresentação do Projeto (valendo 2,0 pontos): Vídeo de Apresentação entregue com o relatório + Arguição na data de apresentação (presença de todos os membros do grupo obrigatória)
 * Relatório de Projeto (valendo 6,0 pontos).
 
 ## Datas Importantes
 
-02/07 - Até 15:00h - Data e hora limites para última atualização do repositório do projeto (será considerada a última versão até essa data e horário).
-02/07 - A partir das 16:00 (Presença obrigatória de todos os membros do grupo na data de apresentação. Requerida presença de todos os alunos da disciplina nas datas das apresentações).
-13/07 - Até 10:00 - Entrega da avaliação por pares (vide outras informações abaixo).
+* 24/06 - Até 15:00 - Data e hora limites para última atualização do repositório do projeto (será considerada a última versão até essa data e horário).
+* 24/06 - A partir das 16:00 (Presença obrigatória de todos os membros do grupo na data de apresentação. Requerida presença de todos os alunos da disciplina nas datas das apresentações).
+* 13/07 - Até 10:00 - Entrega da avaliação por pares (vide outras informações abaixo).
 
 ## Instruções para o Relatório Final
 
 Na entrega do relatório final do projeto, seu grupo deverá:
 
- - Complementar o repositório GitHub ou GitLab **público** já criado anteriormente com informações e códigos associados à uma implementação prática de uma análise. Por implementação entende-se a execução prática da análise usando um ou mais sistemas de análise e/ou o desenvolvimento de software para análise. 
- - Deve ser mantida a estrutura anterior do repositório conforme orientações da [Primeira Entrega](https://github.com/datasci4health/home/blob/master/resources/templates/entrega1.md). 
- - O arquivo README.md deve ser atualizado para conter as seções do template abaixo. 
+ - Complementar o repositório GitHub ou GitLab **público** já criado anteriormente com informações e códigos associados à uma implementação prática de uma análise. Por implementação entende-se a execução prática da análise usando um ou mais sistemas de análise e/ou o desenvolvimento de software para análise.
+ - Deve ser mantida a estrutura anterior do repositório conforme orientações da [Primeira Entrega](https://github.com/datasci4health/home/blob/master/resources/templates/entrega1.md).
+ - O arquivo README.md deve ser atualizado para conter as seções do template abaixo.
  - Todos os scripts ou arquivos de processamento dos dados até o momento devem ser disponibilizados nas pastas correspondentes.
 
 ## Instruções para a Apresentação
@@ -30,16 +30,16 @@ No dia da arguição do grupo, o vídeo será tocado e serão reservados 5 minut
 
 O vídeo pré-gravado deve ter no máximo 8 minutos e todos os membros do grupo devem participar da apresentação.
 
-Diretrizes para apresentação (sugestões de tópicos): 
-* Deve recapitular, de maneira sintética, objetivo inicial do projeto 
-* Abordagem adotada 
-* Dificuldades enfrentadas 
-* Deve relatar possíveis mudanças de percurso 
-* Referenciais teóricos adotados 
-* Principais ferramentas utilizadas (incluir informações úteis para que outros possam utilizá-las) 
-* Resultados obtidos 
-* Discussão dos resultados 
-* Conclusões / Lições aprendidas 
+Diretrizes para apresentação (sugestões de tópicos):
+* Deve recapitular, de maneira sintética, objetivo inicial do projeto
+* Abordagem adotada
+* Dificuldades enfrentadas
+* Deve relatar possíveis mudanças de percurso
+* Referenciais teóricos adotados
+* Principais ferramentas utilizadas (incluir informações úteis para que outros possam utilizá-las)
+* Resultados obtidos
+* Discussão dos resultados
+* Conclusões / Lições aprendidas
 * Trabalhos futuros
 
 ## Avaliação
@@ -130,19 +130,44 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > | Nome5  | 123456  | XXX|
 
 # Descrição Resumida do Projeto
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
->
+> Descreva resumidamente o tema do projeto. O resumo idealmente deve: apresentar o contexto gerador e motivação; indicar o problema; apresentar a sua solução para o problema; indicar porque a sua solução é melhor do que os esforços atuais (não obrigatório); concluir com os resultados alcançados.
+
+# Vídeos do Projeto
+
+## Vídeo da Proposta
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
-> *Link para vídeo da apresentação final do projeto (máximo 8 minutos). TODOS OS MEMBROS DO GRUPO DEVEM APARECER NO VÍDEO.*
+
+## Vídeo da Apresentação Final
+> Link para vídeo da apresentação final do projeto (máximo 8 minutos). *TODOS OS MEMBROS DO GRUPO DEVEM APARECER NO VÍDEO*.
+
+# Slides do Projeto
+
+## Slides da Proposta
+> Link para slides de apresentação da proposta do projeto.
+
+## Slides da Apresentação Final
+> Link para slides da apresentação final do projeto.
 
 # Introdução e Referenciais de Teóricos
 > Contextualização do projeto
+>
+> Caracterização do problema
+>
 > Motivação
+>
 > Relevância
+>
 > Trabalhos relacionados
+>
+> Indicação (bastante resumida) da análise proposta
+>
+> Indicação (bastante resumida) dos resultados alcançados
 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa (revisadas e atualizadas) ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+
+# Objetivos do Projeto
+> Como seu projeto propôs abordar o problema apresentado.
 
 # Metodologia
 > Abordagem adotada pelo projeto na busca pela resposta às perguntas de pesquisa.
@@ -189,22 +214,44 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 * analise correlação e use gráficos de dispersão;
 * descreva os resultados/gráficos, os analise e contextualize com o tema definido.
 
-
 # Análises Realizadas
 > Descrição detalhada das análises realizadas.
+>
+>
+>
+>Relate aqui também a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
+>
+>
+>
+> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
+>
+> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
+
+~~~python
+df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
+sns.set(color_codes=True);
+sns.distplot(df.Hemoglobin);
+plt.show();
+~~~
 
 ## Ferramentas
 > Panorama das ferramentas utilizadas incluindo discussão sobre o uso das mesmas
 
 # Resultados
-> Descrição dos resultados mais importantes obtidos
+> Descrição dos resultados mais importantes obtidos.
+>
+> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de Análises Realizadas (o que for mais pertinente).
 
 # Discussão
 > Discussão dos resultados. Relacionar os resultados com as perguntas de pesquisa ou hipóteses avaliadas.
+>
+> A discussão dos resultados também pode ser feita opcionalmente na seção de Resultados, na medida em que os resultados são apresentados. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
 
 # Conclusão
 > Destacar as principais conclusões obtidas no desenvolvimento do projeto.
+>
 > Destacar os principais desafios enfrentados.
+>
 > Principais lições aprendidas.
 
 # Trabalhos Futuros
@@ -212,5 +259,5 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 
 # Referências Bibliográficas
 > Lista de artigos, links e referências bibliográficas.
+>
 > Fiquem à vontade para escolher o padrão de referenciamento preferido pelo grupo.
-
