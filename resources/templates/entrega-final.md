@@ -207,7 +207,9 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 ### Integração entre Bases e Análise Exploratória
 
 > Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
-
+>
+>
+>
 > Resultados de Análise Exploratória
 > * use estatística descritiva e gráficos;
 > * inclua gráficos de sobre a distribuição dos dados (e.g., histogramas e boxplots);
