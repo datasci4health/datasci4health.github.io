@@ -24,4 +24,11 @@ Esta disciplina foi concebida para que possam se matricular alunos da área da s
 
 # Disciplina
 
-As aulas serão ministradas presencialmente - terça 16h-18h e quinta 16h-18h.
+As aulas serão ministradas presencialmente nas salas:
+* **terça** 16h-18h: **PB09** (Prédio Básico sala 09)
+* **quinta** 16h-18h: **PB01** (Prédio Básico sala 01)
+
+Atenção para o fato de que a sala da terça (PB09) é diferente daquela da quinta (PB01).
+
+Para quem não conhece ainda a Unicamp, o Prédio Básico é um prédio de aulas que fica próximo ao Restaurante Universitário e Biblioteca Central:
+https://goo.gl/maps/jME74eDg4E52bEPA8
