@@ -1,7 +1,7 @@
 # UCI Heart Disease Data Set
 *lab 15/04/2021*
 
-Original [Heart Disease Data Set](https://archive.ics.uci.edu/ml/datasets/heart+Disease) at UCI Machine Learning Repository.
+Original [Heart Disease Data Set](https://archive.ics.uci.edu/ml/datasets/heart+Disease) at UCI Machine Learning Repository or the [new beta version](https://archive-beta.ics.uci.edu/ml/datasets/heart+disease).
 
 ## Kaggle Adapted Version
 
