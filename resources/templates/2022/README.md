@@ -24,6 +24,7 @@ A seguir é apresentada a estrutura de pastas esperada para entrega dos projetos
 Cada template a seguir corresponde a uma entrega do trabalho:
 * [Projeto P2](p2/README.md)
 * [Projeto P3](p3/README.md)
+* [Projeto P4](p4/README.md)
 
 Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação da equipe, como detalhado na seção seguinte.
 
