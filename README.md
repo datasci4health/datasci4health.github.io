@@ -1,6 +1,7 @@
 <h1>Edição 2023</h1>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3tEfUqJ99G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*Vídeo da Edição de 2022*
 
 A análise computacional de dados em saúde tem crescido em relevância e impacto não apenas pelo desenvolvimento de estratégias e algoritmos, como também pela crescente quantidade de dados disponíveis.
 Este curso tem base interdisciplinar e envolve professoras e professor de computação, engenharia elétrica e farmácia. Ela acomodará diferentes trilhas de aprendizado, possibilitando a participação e interação de alunos de ciências exatas (e.g., computação, engenharias, matemática e estatística), saúde (e.g., medicina, enfermagem, farmácia) e biologia. A disciplina contará ainda com diversos convidados, tais como especialistas em Bancos de Dados, Saúde Pública, Medicina, Enfermagem e Farmácia.
@@ -32,6 +33,6 @@ A disciplina é oferecida em conjunto pela Faculdade de Engenharia Elétrica e C
   * pós-graduação: MO413A - Ciência e Visualização de Dados em Saúde
   * graduação: MC936A - Tópicos em Sistemas de Informação
 * Faculdade de Ciências Médicas (FCM)
-  * pós-graduação: CX006 - Ciência e Visualização de Dados em Saúde
+  * pós-graduação: CX006A - Ciência e Visualização de Dados em Saúde
 
 As aulas serão ministradas presencialmente (salas serão divulgadas na semana anterior às aulas).
