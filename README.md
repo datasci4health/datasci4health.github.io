@@ -36,7 +36,7 @@ Esta disciplina foi concebida para que possam se matricular alunos da área da s
 A disciplina é oferecida em conjunto pela Faculdade de Engenharia Elétrica e Computação (FEEC), Instituto de Computação (IC) e Faculdade de Ciências Médicas (FCM). O código da disciplina varia de acordo com a faculdade/instituto que você se matricular:
 * Faculdade de Engenharia Elétrica e Computação (FEEC)
   * pós-graduação: IA368X - Tópicos em Engenharia de Computação
-  * graduação: EA098A - Tópicos em Engenharia de Computação
+  * graduação: EA098X - Tópicos em Engenharia de Computação
 * Instituto de Computação (IC)
   * pós-graduação: MO413A - Ciência e Visualização de Dados em Saúde
   * graduação: MC936A - Tópicos em Sistemas de Informação
