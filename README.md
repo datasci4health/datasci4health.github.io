@@ -44,3 +44,9 @@ A disciplina é oferecida em conjunto pela Faculdade de Engenharia Elétrica e C
   * pós-graduação: CX006A - Ciência e Visualização de Dados em Saúde
 
 As aulas serão ministradas presencialmente (salas serão divulgadas na semana anterior às aulas).
+
+# Ambiente Virtual Google Classroom
+
+O Ambiente Virtual Google Classroom é um dos principais meios de comunicação da disciplina, portanto, você deve estar inscrito nele para participar. Você acessa pelo link [Google Classroom](https://classroom.google.com/u/0/c/NTgyNDQ0NDk1Mzg4).
+
+Para dúvidas sobre o acesso ao Google Classroom, veja no [FAQ](faq.md). Caso você ainda não tenha acesso, se atualize sobre as orientações inciais da disciplina [aqui](landing.md).
