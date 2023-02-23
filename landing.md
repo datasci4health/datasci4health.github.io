@@ -11,7 +11,7 @@ A primeira aula presencial será no dia 09/03. As aulas correspondentes aos dias
 ## Endereços Importantes
 
 * [Página Principal da Disciplina](/home)
-* [Google Classroom](https://classroom.google.com/u/0/c/NTgyNDQ0NDk1Mzg4)
+* [Google Classroom da Disciplina](https://classroom.google.com/u/0/c/NTgyNDQ0NDk1Mzg4)
 * [FAQ](faq.md)
 
 ## Página de Orientações Iniciais
