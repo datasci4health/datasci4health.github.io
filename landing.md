@@ -17,3 +17,10 @@ A primeira aula presencial será no dia 09/03. As aulas correspondentes aos dias
 ## Página de Orientações Iniciais
 
 Esta página serve para orientações iniciais. Todos devem buscar o quanto antes o acesso ao Google Classroom para acompanhar o restante da disciplina.
+
+## Vídeos desta semana
+*Boas Vindas e informações iniciais sobre a Dinâmica do Curso*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jhzqjXB3WvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[Slides da Apresentação](landing/2023/2023-03-02_course_dynamics.pdf)
