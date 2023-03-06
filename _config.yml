@@ -5,5 +5,6 @@ theme: minima
 header_pages:
  - faq.md
  - landing.md
+ - tools.md
  - editions.md
  - notebooks.md
