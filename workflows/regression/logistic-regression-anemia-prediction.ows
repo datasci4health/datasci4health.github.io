@@ -17,29 +17,36 @@
 	<annotations />
 	<thumbnail />
 	<node_properties>
-		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/santanche/git/datasci/data/zombie/raw/zombie-anemia.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 6, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci/data/zombie/raw/zombies-survey.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 9, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci/data/zombie/raw', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xfd\x00\x00\x01k\x00\x00\x0c6\x00\x00\x02\xce\x00\x00\n\xfd\x00\x00\x01\x90\x00\x00\x0c6\x00\x00\x02\xce\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\n\xfd\x00\x00\x01\x90\x00\x00\x0c6\x00\x00\x02\xce', '__version__': 3}</properties>
-		<properties node_id="1" format="pickle">gASVAAMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACkIAAAG1
-AAAMlAAAA3gAAApCAAAB2gAADJQAAAN4AAAAAQAAAAAHgAAACkIAAAHaAAAMlAAAA3iUjBJ1c2Vf
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'data/zombie-anemia.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 6, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci4health/data/zombie/raw/zombie-anemia.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 6, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci/data/zombie/raw/zombie-anemia.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Numeric'}, {'start': 4, 'stop': 6, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci/data/zombie/raw/zombies-survey.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 9, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/workflows/regression/data', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01U\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVTAMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAyoAAAFy
+AAAFfAAAAzUAAAMqAAABlwAABXwAAAM1AAAAAQAAAAAHgAAAAyoAAAGXAAAFfAAAAzWUjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
 cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
 aW5fcm9sZV9oaW50c5R9lCiMBG1jZ3OUSwKGlIwJYXZhaWxhYmxllEsAhpSMBW1jZ3NjlEsChpRo
 FUsBhpSMA21jdpRLAoaUaBVLAoaUjAZnZW5kZXKUSwGGlGgVSwOGlIwCZ3OUSwKGlIwJYXR0cmli
 dXRllEsAhpSMBmFuZW1pYZRLAYaUjAVjbGFzc5RLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRl
-c5R9lChoIEsCaBNLAmgXSwJoGksCaB1LAWgkSwF1jAVtZXRhc5R9lHViaAwpgZR9lChoD32UKGgR
-fZQojANwYmOUSwKGlGgVSwCGlIwCc3CUSwKGlGgVSwGGlIwEbmFtZZRLA4aUaBVLAoaUjAZnZW5k
-ZXKUSwGGlGgVSwOGlIwGaGVpZ2h0lEsChpRoFUsEhpSMBndlaWdodJRLAoaUaBVLBYaUjANnYmOU
-SwKGlGgiSwCGlIwCZ3OUSwKGlGgiSwGGlIwEdHlwZZRLAYaUaCZLAIaUdUr+////hpRoB0sBdWgp
-fZQojAR0eXBllEsBjAZnZW5kZXKUSwGMBmhlaWdodJRLAowGd2VpZ2h0lEsCjANnYmOUSwKMAmdz
-lEsCjANwYmOUSwKMAnNwlEsCdWgrfZSMBG5hbWWUSwNzdWJldS4=
+c5R9lCiMAmdzlEsCjARtY2dzlEsCjAVtY2dzY5RLAowDbWN2lEsCjAZnZW5kZXKUSwGMBmFuZW1p
+YZRLAXWMBW1ldGFzlH2UdWJoDCmBlH2UKGgPfZQojBFkb21haW5fcm9sZV9oaW50c5R9lCiMA3Bi
+Y5RLAoaUjAlhdmFpbGFibGWUSwCGlIwCc3CUSwKGlGg6SwGGlIwEbmFtZZRLA4aUaDpLAoaUjAZn
+ZW5kZXKUSwGGlGg6SwOGlIwGaGVpZ2h0lEsChpRoOksEhpSMBndlaWdodJRLAoaUaDpLBYaUjANn
+YmOUSwKGlIwJYXR0cmlidXRllEsAhpSMAmdzlEsChpRoTUsBhpSMBHR5cGWUSwGGlIwFY2xhc3OU
+SwCGlHVK/v///4aUaAdLAXVoKX2UKIwEdHlwZZRLAYwGZ2VuZGVylEsBjAZoZWlnaHSUSwKMBndl
+aWdodJRLAowDZ2JjlEsCjAJnc5RLAowDcGJjlEsCjAJzcJRLAnVoMX2UjARuYW1llEsDc3ViZXUu
 </properties>
-		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\tW\x00\x00\x01\xae\x00\x00\n]\x00\x00\x03\x81\x00\x00\tW\x00\x00\x01\xd3\x00\x00\n]\x00\x00\x03\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\tW\x00\x00\x01\xd3\x00\x00\n]\x00\x00\x03\x81', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
-		<properties node_id="3" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xba\x00\x00\x01B\x00\x00\x0b\xb1\x00\x00\x02\x81\x00\x00\n\xba\x00\x00\x01g\x00\x00\x0b\xb1\x00\x00\x02\x81\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\n\xba\x00\x00\x01g\x00\x00\x0b\xb1\x00\x00\x02\x81', '__version__': 1}</properties>
-		<properties node_id="4" format="pickle">gASVDQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
-lENCAdnQywADAAAAAApSAAAAjgAADg4AAAMfAAAKUgAAALMAAA4OAAADHwAAAAEAAAAAB4AAAApS
-AAAAswAADg4AAAMflIwJc2VsZWN0aW9ulF2USwFhjAtzY29yZV90YWJsZZR9lIwMc2hvd25fc2Nv
-cmVzlI+UKIwCRjGUjAJSMpSMAkNBlIwGUmVjYWxslIwJUHJlY2lzaW9ulIwDTVNFlIwEUk1TRZSM
-A0FVQ5SMA01BRZSQc4wLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="3" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03:\x00\x00\x01\x84\x00\x00\x04E\x00\x00\x02\xb4\x00\x00\x03:\x00\x00\x01\x84\x00\x00\x04E\x00\x00\x02\xb4\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03:\x00\x00\x01\x84\x00\x00\x04E\x00\x00\x02\xb4', '__version__': 2}</properties>
+		<properties node_id="4" format="pickle">gASVMwIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAKDAAAAtAAABj8AAANFAAACgwAAANkAAAY/AAADRQAAAAEAAAAAB4AAAAKD
+AAAA2QAABj8AAANFlIwJc2VsZWN0aW9ulF2USwFhjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJs
+ZZR9lIwMc2hvd25fc2NvcmVzlI+UKIwDTVNFlIwCRjGUjANNQUWUjARSTVNFlIwHQy1JbmRleJSM
+BlJlY2FsbJSMAkNBlIwDQVVDlIwCUjKUjAlQcmVjaXNpb26UkHOMC19fdmVyc2lvbl9flEsBjBBj
+b250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmB
+lH2UKIwGdmFsdWVzlH2UKIwXc2hvd19wcm9iYWJpbGl0eV9lcnJvcnOUiIwPc2hvd19yZWdfZXJy
+b3JzlEsBjAtzaG93bl9wcm9ic5RLAYwMdGFyZ2V0X2NsYXNzlIwWKEF2ZXJhZ2Ugb3ZlciBjbGFz
+c2VzKZRoB32UaBVLAXWMB2NsYXNzZXOUjAZhbmVtaWGUjApub3QgYW5lbWlhlIaUdWJoGimBlH2U
+KGgdfZQoaB+IaCBLAWghSwBoIowWKEF2ZXJhZ2Ugb3ZlciBjbGFzc2VzKZRoB32UaBVLAXVoJSl1
+YmV1Lg==
 </properties>
 	</node_properties>
 	<session_state>

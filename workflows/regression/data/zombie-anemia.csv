@@ -1,0 +1,1422 @@
+gs,mcgs,mcgsc,mcv,gender,anemia
+14.9,22.7,29.1,83.7,male,not anemia
+15.9,25.4,28.3,72,female,not anemia
+9,21.5,29.6,71.2,female,anemia
+14.9,16,31.4,87.5,female,not anemia
+14.7,22,28.2,99.5,male,not anemia
+11.6,22.3,30.9,74.5,female,anemia
+12.7,19.5,28.9,82.9,male,anemia
+12.7,28.5,28.2,92.3,male,anemia
+14.1,29.7,30.5,75.2,female,not anemia
+14.9,25.8,31.3,82.9,male,not anemia
+13,18.3,29.6,87.8,male,anemia
+16.7,27.5,28.2,93,female,not anemia
+13.4,25.2,30.2,95.9,female,not anemia
+14.7,28.9,31,69.8,female,not anemia
+15.9,24.3,28.7,91.5,female,not anemia
+14,25.5,32,81.6,male,not anemia
+15.9,24,27.9,83.7,male,not anemia
+12.3,21.8,27.8,77.9,male,anemia
+15.4,24.6,30.1,94.3,male,not anemia
+13.6,19.3,31.4,78.9,female,not anemia
+16.5,19.3,29.2,69.7,male,not anemia
+16.2,17.2,32.2,78.4,male,not anemia
+6.9,28.1,32.5,94.6,female,anemia
+11.8,16.3,30.9,78.7,male,anemia
+11,26,32.2,98.9,male,anemia
+11,25.2,30.9,83.2,male,anemia
+10.7,21.3,29.1,78.7,female,anemia
+14.8,23.4,29.2,74.7,male,not anemia
+12.1,28.3,29.2,99.7,female,not anemia
+14.7,23.4,29.9,85.3,male,not anemia
+11.2,16.1,30.3,82.6,female,anemia
+14.3,16.4,29.9,90.1,male,not anemia
+14.3,24.1,28.7,97.2,male,not anemia
+11,17,29.5,75.3,female,anemia
+11.9,29.5,32.2,87.8,female,anemia
+13.5,22.1,29.6,74.7,male,not anemia
+14.9,17.6,32.4,101.5,male,not anemia
+14.9,29.1,32.1,84.9,female,not anemia
+11.6,19.4,30.1,85.3,female,anemia
+12.5,23.5,30.6,82.8,female,not anemia
+14.5,24.9,29,81.8,female,not anemia
+12.8,21.2,31.7,73.3,male,anemia
+12.8,21.3,29.4,94.2,female,not anemia
+15.2,28.1,31.4,77.3,female,not anemia
+16.1,21.4,29.1,88.8,female,not anemia
+11.7,26.3,30,70.5,female,anemia
+16.7,20.8,31.9,85.1,male,not anemia
+11.3,26.7,29.8,92.7,male,anemia
+15.3,18.6,30.4,96.6,female,not anemia
+14.4,28.1,28.5,93.2,male,not anemia
+13.1,28.3,29.6,86.5,male,anemia
+12.7,19.1,29.8,84.3,male,anemia
+14.8,28.2,30.8,70.7,female,not anemia
+16.9,25.5,29.6,83.2,female,not anemia
+14.7,20,29.3,94.4,male,not anemia
+13.8,27.3,29.6,97.9,female,not anemia
+10.8,16.8,30.6,79.6,male,anemia
+13.8,20.9,31.2,97.4,male,not anemia
+12.4,20.8,30.7,98.2,female,not anemia
+12.4,23,32.2,76.1,female,not anemia
+16.4,18.7,29.6,96.4,male,not anemia
+10.4,29.6,28.3,101,male,anemia
+11.5,26.1,28.6,91,male,anemia
+11.1,22.8,28,97.3,male,anemia
+16.7,23.4,29.8,92.5,female,not anemia
+10.4,27.1,29.8,75.2,female,anemia
+16.3,28.6,30.9,99.9,female,not anemia
+11.5,21.4,32.5,76.6,male,anemia
+13.7,17.1,29.9,78.4,female,not anemia
+11.2,29.6,30.3,74,female,anemia
+12.7,23.6,30.4,69.8,male,anemia
+11.2,18.5,29.3,93.9,male,anemia
+10.7,21.3,28.8,78.3,male,anemia
+12.1,19.3,30.3,83.3,female,not anemia
+16.6,21.4,28.8,78.4,male,not anemia
+13.2,20.2,28.5,85.2,female,not anemia
+14.4,29.8,31.6,92.4,female,not anemia
+13.7,18.7,30.3,69.4,male,not anemia
+10.7,19,32.2,77.1,male,anemia
+16.3,21.6,32.3,98.4,female,not anemia
+13.2,23.5,31.3,85.9,female,not anemia
+16.8,19.2,28.1,100.8,male,not anemia
+16.5,26.4,27.9,101.5,male,not anemia
+11.8,18.6,29.4,80.2,female,anemia
+12.8,16.3,31.1,100.9,male,anemia
+11.1,24.3,32.5,91,female,anemia
+15.2,20.6,31.9,99.7,female,not anemia
+13.5,19,28.8,82.3,female,not anemia
+10.9,30,29.8,98.5,male,anemia
+13.4,18.7,31.9,73.2,female,not anemia
+16,28.8,28.4,86.4,male,not anemia
+15.2,27,32.4,71.6,female,not anemia
+11.4,21,31.7,88.9,male,anemia
+16.5,27.6,29.3,77.8,female,not anemia
+11.6,24.3,29.1,85.7,male,anemia
+13.7,19.5,31.7,77.1,female,not anemia
+12.9,27.4,28.2,78.8,male,anemia
+11.8,22,29.3,71.1,male,anemia
+15.5,16.9,31.2,95.9,female,not anemia
+16.7,24.8,29.6,93.4,male,not anemia
+14.5,25.2,31.5,91.7,male,not anemia
+10.4,20,32.2,101.2,female,anemia
+10.4,17.1,31.4,90.6,male,anemia
+12.8,20.3,31.1,100.1,male,anemia
+14.4,18.4,32.1,95.6,male,not anemia
+11.7,18.4,32.1,74.8,male,anemia
+14.8,20.4,28.5,91.1,female,not anemia
+11.9,22.8,32.1,101.2,male,anemia
+11.5,24.1,30.8,74.7,male,anemia
+13.3,16.4,29.1,70,female,not anemia
+13.1,25.6,28.4,77.5,male,anemia
+15.5,21.9,31.4,100.5,female,not anemia
+15.9,28.7,31,81.6,female,not anemia
+15.3,25.3,32.2,96.6,male,not anemia
+16.3,20.9,31.2,72.5,male,not anemia
+16.9,24.2,32.1,92.5,male,not anemia
+12.8,22.9,28.8,72,female,not anemia
+16.1,20.8,31.2,79.1,female,not anemia
+16.5,21.9,30.7,71.1,male,not anemia
+13.4,27.9,29,84.4,female,not anemia
+16.8,19.9,32.4,90.9,male,not anemia
+12.2,23.3,30.4,100.2,female,not anemia
+15.4,23,30.3,87.7,male,not anemia
+10.7,27.9,31.3,86.4,female,anemia
+12.6,18.3,31.7,82.8,female,not anemia
+14.3,17.5,30.6,75,male,not anemia
+11.7,24.5,31.1,86.1,male,anemia
+13.3,25.1,30.6,73.7,male,anemia
+16.3,19.7,31.6,75.4,female,not anemia
+12.2,17.6,30.7,88.8,female,not anemia
+12.6,21.5,31.6,99.7,female,not anemia
+13.9,20.6,29.2,98.5,male,not anemia
+11.2,16.6,30.2,79.8,female,anemia
+16.5,18.5,28.4,91.6,male,not anemia
+11,25,30.4,81.4,male,anemia
+13,28.6,32.2,69.8,male,anemia
+16.9,16.7,30,78.4,female,not anemia
+13.7,24.1,27.8,86.3,male,not anemia
+16.8,24.3,30.5,90.7,male,not anemia
+13.4,21.5,30.4,92.7,female,not anemia
+13.7,23.5,29,70.6,male,not anemia
+11.6,17.5,31.6,70.5,female,anemia
+13.7,18,31.1,89.2,male,not anemia
+13.1,20,29.7,89.7,female,not anemia
+11.1,22.1,29.4,97,male,anemia
+15.3,18.1,31.4,83.5,male,not anemia
+15.8,28.6,31.1,96.6,female,not anemia
+15.4,18.5,31.5,72.2,male,not anemia
+14.6,22.7,28.1,93.8,female,not anemia
+16.4,24.4,30.6,77.4,male,not anemia
+12.4,19,31.9,73.7,male,anemia
+12.7,29,31.6,78.6,male,anemia
+10.9,29.4,31.1,91.7,male,anemia
+11.5,21.4,28.7,98.6,male,anemia
+12.8,17.8,29.1,79.4,male,anemia
+16.1,21.6,28.8,96.1,male,not anemia
+13.1,21.6,29.2,89.6,female,not anemia
+13.9,29.7,28.4,70.7,female,not anemia
+13.9,25.9,31.3,71.2,male,not anemia
+15.7,17.7,28.3,76.8,male,not anemia
+15.6,19.4,29.4,88.2,male,not anemia
+14.7,22.3,28.6,89.5,male,not anemia
+14,23.6,28.3,89.8,male,not anemia
+12.1,21.7,30.9,70.8,male,anemia
+11.1,29.8,29.2,78,female,anemia
+13.8,17.9,29.1,80.9,female,not anemia
+11.7,28.1,31.9,72.7,male,anemia
+16.7,16.5,30.5,94.5,male,not anemia
+13.9,29.3,32.2,78.7,female,not anemia
+13.1,22.2,31.5,87.3,male,anemia
+11.1,21.2,31,87,male,anemia
+12.4,23.3,31.3,70.1,male,anemia
+15.5,25.5,27.8,70.9,female,not anemia
+11.2,20.1,30.8,76.4,female,anemia
+10.4,18.9,27.8,75.1,male,anemia
+12,17.2,31.3,77.4,male,anemia
+15.2,18,31.2,80.3,male,not anemia
+11.5,16.2,30.9,100.8,female,anemia
+15.9,24.7,29.8,96.7,female,not anemia
+12.8,24,28.5,75.3,female,not anemia
+10.5,25.3,27.9,77.1,male,anemia
+12.5,25.6,29.9,79.1,male,anemia
+16.2,19.5,31,76.6,male,not anemia
+10.7,22.6,30.2,101.5,female,anemia
+14.8,23,30.5,69.8,male,not anemia
+13.1,20.2,32.4,95.4,female,not anemia
+16.7,25.1,30.1,70.8,male,not anemia
+13.2,27.8,30.6,81.4,female,not anemia
+10.5,28.3,28.7,100.1,male,anemia
+12.4,24.5,30.7,93.1,male,anemia
+14.9,29.8,32,92.1,female,not anemia
+11.3,23.5,28.4,75.8,female,anemia
+15,21.7,30.6,90,male,not anemia
+13.4,17.7,30.2,79,male,anemia
+14.8,18.8,31.9,77.5,female,not anemia
+12.7,23.3,30.3,92.8,female,not anemia
+14.6,26.3,32,90.7,female,not anemia
+16.4,27.9,29.2,87.9,male,not anemia
+16.8,24.3,31.5,92,female,not anemia
+13.7,26.9,28.1,82.5,female,not anemia
+14.8,26,29.8,73,female,not anemia
+13.2,27,31,87.7,male,anemia
+10.3,20.1,28.2,86.3,female,anemia
+13.5,27.7,31,77.3,male,not anemia
+10.6,24.5,28.3,81.5,female,anemia
+14.8,16.3,27.8,76.4,male,not anemia
+15.7,27.6,30.3,81.6,male,not anemia
+11.8,24.3,32,80.6,male,anemia
+15.7,27.2,31.3,69.4,male,not anemia
+11.5,17,30.6,71,male,anemia
+13,19,31.3,77.3,male,anemia
+13.1,17.6,28.8,85.2,female,not anemia
+14.6,27.5,31.4,83.6,male,not anemia
+11.2,22.3,29,100.6,female,anemia
+14.6,17.1,31.8,84.6,female,not anemia
+16.3,16.4,27.8,88.7,female,not anemia
+14.7,26.6,28.3,88.6,male,not anemia
+16,24.9,28.3,100,female,not anemia
+11,29.5,30.7,72.6,male,anemia
+16.6,22.7,28.2,87,male,not anemia
+11.4,17.6,30.2,70,male,anemia
+15.4,23.4,32.4,92.9,male,not anemia
+11.1,18.3,28.5,73.3,female,anemia
+15.5,17.4,28.5,78.9,female,not anemia
+10.4,18.6,29.1,79.2,female,anemia
+10.5,18.8,29.1,80.6,female,anemia
+16.7,23.5,28.1,76.9,male,not anemia
+15.3,29.3,28.9,88.3,female,not anemia
+16.3,26.7,29.9,84.1,male,not anemia
+14.6,28.9,28.5,74.2,female,not anemia
+13.4,22,30.8,79.7,female,not anemia
+14.8,28.8,29.6,84.9,male,not anemia
+16,28.1,31.6,94.6,male,not anemia
+16.6,29.1,29.9,76.4,male,not anemia
+15.6,28.8,30.8,86.4,female,not anemia
+16.7,20.1,31.4,73,male,not anemia
+10.7,20,29.1,79.3,male,anemia
+14.9,22.7,29.1,83.7,male,not anemia
+15.9,25.4,28.3,72,female,not anemia
+15.4,21.5,29.6,71.2,female,not anemia
+14.9,16,31.4,87.5,female,not anemia
+12.6,22,28.2,99.5,male,anemia
+11.6,22.3,30.9,74.5,female,anemia
+12.7,19.5,28.9,82.9,male,anemia
+12.7,28.5,28.2,92.3,male,anemia
+14.1,29.7,30.5,75.2,female,not anemia
+14.9,25.8,31.3,82.9,male,not anemia
+15.9,18.3,29.6,87.8,male,not anemia
+10.8,27.5,28.2,93,female,anemia
+13.4,25.2,30.2,95.9,female,not anemia
+14.7,28.9,31,69.8,female,not anemia
+15.9,24.3,28.7,91.5,female,not anemia
+14,25.5,32,81.6,male,not anemia
+15.9,24,27.9,83.7,male,not anemia
+12.3,21.8,27.8,77.9,male,anemia
+15.4,24.6,30.1,94.3,male,not anemia
+13.6,19.3,31.4,78.9,female,not anemia
+16.5,19.3,29.2,69.7,male,not anemia
+16.2,17.2,32.2,78.4,male,not anemia
+15.2,28.1,32.5,94.6,female,not anemia
+11.8,16.3,30.9,78.7,male,anemia
+11,26,32.2,98.9,male,anemia
+11,25.2,30.9,83.2,male,anemia
+10.7,21.3,29.1,78.7,female,anemia
+14.8,23.4,29.2,74.7,male,not anemia
+12.1,28.3,29.2,99.7,female,not anemia
+14.7,23.4,29.9,85.3,male,not anemia
+11.2,16.1,30.3,82.6,female,anemia
+14.3,16.4,29.9,90.1,male,not anemia
+12.7,24.1,28.7,97.2,male,anemia
+11,17,29.5,75.3,female,anemia
+11.9,29.5,32.2,87.8,female,anemia
+13.5,22.1,29.6,74.7,male,not anemia
+13.3,17.6,32.4,101.5,male,anemia
+14.9,29.1,32.1,84.9,female,not anemia
+11.6,19.4,30.1,85.3,female,anemia
+12.5,23.5,30.6,82.8,female,not anemia
+14.5,24.9,29,81.8,female,not anemia
+12.8,21.2,31.7,73.3,male,anemia
+12.8,21.3,29.4,94.2,female,not anemia
+15.2,28.1,31.4,77.3,female,not anemia
+16.1,21.4,29.1,88.8,female,not anemia
+11.7,26.3,30,70.5,female,anemia
+16.7,20.8,31.9,85.1,male,not anemia
+11.3,26.7,29.8,92.7,male,anemia
+15.3,18.6,30.4,96.6,female,not anemia
+14.4,28.1,28.5,93.2,male,not anemia
+13.1,28.3,29.6,86.5,male,anemia
+12.7,19.1,29.8,84.3,male,anemia
+14.8,28.2,30.8,70.7,female,not anemia
+10.5,25.5,29.6,83.2,female,anemia
+14.7,20,29.3,94.4,male,not anemia
+13.8,27.3,29.6,97.9,female,not anemia
+10.8,16.8,30.6,79.6,male,anemia
+13.8,20.9,31.2,97.4,male,not anemia
+11.5,20.8,30.7,98.2,female,anemia
+12.4,23,32.2,76.1,female,not anemia
+16.4,18.7,29.6,96.4,male,not anemia
+10.4,29.6,28.3,101,male,anemia
+11.5,26.1,28.6,91,male,anemia
+11.1,22.8,28,97.3,male,anemia
+10.4,23.4,29.8,92.5,female,anemia
+10.4,27.1,29.8,75.2,female,anemia
+16.3,28.6,30.9,99.9,female,not anemia
+11.5,21.4,32.5,76.6,male,anemia
+13.7,17.1,29.9,78.4,female,not anemia
+11.2,29.6,30.3,74,female,anemia
+12.7,23.6,30.4,69.8,male,anemia
+11.2,18.5,29.3,93.9,male,anemia
+10.7,21.3,28.8,78.3,male,anemia
+12.1,19.3,30.3,83.3,female,not anemia
+13,21.4,28.8,78.4,male,anemia
+13.2,20.2,28.5,85.2,female,not anemia
+14.4,29.8,31.6,92.4,female,not anemia
+13.7,18.7,30.3,69.4,male,not anemia
+10.7,19,32.2,77.1,male,anemia
+16.3,21.6,32.3,98.4,female,not anemia
+13.2,23.5,31.3,85.9,female,not anemia
+12.3,19.2,28.1,100.8,male,anemia
+16.5,26.4,27.9,101.5,male,not anemia
+11.8,18.6,29.4,80.2,female,anemia
+12.8,16.3,31.1,100.9,male,anemia
+11.1,24.3,32.5,91,female,anemia
+11.8,20.6,31.9,99.7,female,anemia
+13.5,19,28.8,82.3,female,not anemia
+10.9,30,29.8,98.5,male,anemia
+13.4,18.7,31.9,73.2,female,not anemia
+16,28.8,28.4,86.4,male,not anemia
+10.3,27,32.4,71.6,female,anemia
+11.4,21,31.7,88.9,male,anemia
+16.5,27.6,29.3,77.8,female,not anemia
+11.6,24.3,29.1,85.7,male,anemia
+11,19.5,31.7,77.1,female,anemia
+12.9,27.4,28.2,78.8,male,anemia
+11.8,22,29.3,71.1,male,anemia
+15.5,16.9,31.2,95.9,female,not anemia
+16.7,24.8,29.6,93.4,male,not anemia
+12.5,25.2,31.5,91.7,male,anemia
+10.4,20,32.2,101.2,female,anemia
+10.4,17.1,31.4,90.6,male,anemia
+12.8,20.3,31.1,100.1,male,anemia
+14.4,18.4,32.1,95.6,male,not anemia
+11.7,18.4,32.1,74.8,male,anemia
+14.8,20.4,28.5,91.1,female,not anemia
+11.9,22.8,32.1,101.2,male,anemia
+11.5,24.1,30.8,74.7,male,anemia
+13.3,16.4,29.1,70,female,not anemia
+13.1,25.6,28.4,77.5,male,anemia
+15.5,21.9,31.4,100.5,female,not anemia
+6.6,28.7,31,81.6,female,anemia
+15.3,25.3,32.2,96.6,male,not anemia
+10,20.9,31.2,72.5,male,anemia
+16.9,24.2,32.1,92.5,male,not anemia
+12.8,22.9,28.8,72,female,not anemia
+16.1,20.8,31.2,79.1,female,not anemia
+16.5,21.9,30.7,71.1,male,not anemia
+13.4,27.9,29,84.4,female,not anemia
+12.1,19.9,32.4,90.9,male,anemia
+12.2,23.3,30.4,100.2,female,not anemia
+15.4,23,30.3,87.7,male,not anemia
+10.7,27.9,31.3,86.4,female,anemia
+8.9,18.3,31.7,82.8,female,anemia
+14.3,17.5,30.6,75,male,not anemia
+11.7,24.5,31.1,86.1,male,anemia
+13.3,25.1,30.6,73.7,male,anemia
+16.3,19.7,31.6,75.4,female,not anemia
+12.2,17.6,30.7,88.8,female,not anemia
+9.2,21.5,31.6,99.7,female,anemia
+13.9,20.6,29.2,98.5,male,not anemia
+11.2,16.6,30.2,79.8,female,anemia
+16.5,18.5,28.4,91.6,male,not anemia
+11,25,30.4,81.4,male,anemia
+13,28.6,32.2,69.8,male,anemia
+9.9,16.7,30,78.4,female,anemia
+13.7,24.1,27.8,86.3,male,not anemia
+16.8,24.3,30.5,90.7,male,not anemia
+13.4,21.5,30.4,92.7,female,not anemia
+13.7,23.5,29,70.6,male,not anemia
+11.6,17.5,31.6,70.5,female,anemia
+13.7,18,31.1,89.2,male,not anemia
+13.1,20,29.7,89.7,female,not anemia
+11.1,22.1,29.4,97,male,anemia
+11.7,18.1,31.4,83.5,male,anemia
+15.8,28.6,31.1,96.6,female,not anemia
+15.4,18.5,31.5,72.2,male,not anemia
+14.6,22.7,28.1,93.8,female,not anemia
+11.8,24.4,30.6,77.4,male,anemia
+12.4,19,31.9,73.7,male,anemia
+12.7,29,31.6,78.6,male,anemia
+10.9,29.4,31.1,91.7,male,anemia
+11.5,21.4,28.7,98.6,male,anemia
+12.8,17.8,29.1,79.4,male,anemia
+16.1,21.6,28.8,96.1,male,not anemia
+13.1,21.6,29.2,89.6,female,not anemia
+13.9,29.7,28.4,70.7,female,not anemia
+13.9,25.9,31.3,71.2,male,not anemia
+15.7,17.7,28.3,76.8,male,not anemia
+15.6,19.4,29.4,88.2,male,not anemia
+14.7,22.3,28.6,89.5,male,not anemia
+12,23.6,28.3,89.8,male,anemia
+12.1,21.7,30.9,70.8,male,anemia
+11.1,29.8,29.2,78,female,anemia
+13.8,17.9,29.1,80.9,female,not anemia
+11.7,28.1,31.9,72.7,male,anemia
+16.7,16.5,30.5,94.5,male,not anemia
+11.1,29.3,32.2,78.7,female,anemia
+13.1,22.2,31.5,87.3,male,anemia
+11.1,21.2,31,87,male,anemia
+12.4,23.3,31.3,70.1,male,anemia
+15.5,25.5,27.8,70.9,female,not anemia
+11.2,20.1,30.8,76.4,female,anemia
+10.4,18.9,27.8,75.1,male,anemia
+12,17.2,31.3,77.4,male,anemia
+15.2,18,31.2,80.3,male,not anemia
+11.5,16.2,30.9,100.8,female,anemia
+15.9,24.7,29.8,96.7,female,not anemia
+12.8,24,28.5,75.3,female,not anemia
+10.5,25.3,27.9,77.1,male,anemia
+12.5,25.6,29.9,79.1,male,anemia
+16.2,19.5,31,76.6,male,not anemia
+10.7,22.6,30.2,101.5,female,anemia
+9,23,30.5,69.8,male,anemia
+13.1,20.2,32.4,95.4,female,not anemia
+16.7,25.1,30.1,70.8,male,not anemia
+13.2,27.8,30.6,81.4,female,not anemia
+10.5,28.3,28.7,100.1,male,anemia
+12.4,24.5,30.7,93.1,male,anemia
+14.9,29.8,32,92.1,female,not anemia
+11.3,23.5,28.4,75.8,female,anemia
+15,21.7,30.6,90,male,not anemia
+13.4,17.7,30.2,79,male,anemia
+14.8,18.8,31.9,77.5,female,not anemia
+12.7,23.3,30.3,92.8,female,not anemia
+14.6,26.3,32,90.7,female,not anemia
+9.6,27.9,29.2,87.9,male,anemia
+16.8,24.3,31.5,92,female,not anemia
+13.7,26.9,28.1,82.5,female,not anemia
+14.8,26,29.8,73,female,not anemia
+13.2,27,31,87.7,male,anemia
+10.3,20.1,28.2,86.3,female,anemia
+13.5,27.7,31,77.3,male,not anemia
+10.6,24.5,28.3,81.5,female,anemia
+14.8,16.3,27.8,76.4,male,not anemia
+15.7,27.6,30.3,81.6,male,not anemia
+11.8,24.3,32,80.6,male,anemia
+15.7,27.2,31.3,69.4,male,not anemia
+11.5,17,30.6,71,male,anemia
+13,19,31.3,77.3,male,anemia
+8.4,17.6,28.8,85.2,female,anemia
+14.6,27.5,31.4,83.6,male,not anemia
+11.2,22.3,29,100.6,female,anemia
+14.6,17.1,31.8,84.6,female,not anemia
+16.3,16.4,27.8,88.7,female,not anemia
+14.7,26.6,28.3,88.6,male,not anemia
+10.8,24.9,28.3,100,female,anemia
+11,29.5,30.7,72.6,male,anemia
+16.6,22.7,28.2,87,male,not anemia
+11.4,17.6,30.2,70,male,anemia
+15.4,23.4,32.4,92.9,male,not anemia
+11.1,18.3,28.5,73.3,female,anemia
+15.5,17.4,28.5,78.9,female,not anemia
+10.4,18.6,29.1,79.2,female,anemia
+10.5,18.8,29.1,80.6,female,anemia
+12.3,23.5,28.1,76.9,male,anemia
+9.8,29.3,28.9,88.3,female,anemia
+16.3,26.7,29.9,84.1,male,not anemia
+14.6,28.9,28.5,74.2,female,not anemia
+13.4,22,30.8,79.7,female,not anemia
+14.8,28.8,29.6,84.9,male,not anemia
+13,28.1,31.6,94.6,male,anemia
+16.6,29.1,29.9,76.4,male,not anemia
+15.6,28.8,30.8,86.4,female,not anemia
+16.7,20.1,31.4,73,male,not anemia
+10.7,20,29.1,79.3,male,anemia
+10.6,22.7,29.1,83.7,male,anemia
+15.9,25.4,28.3,72,female,not anemia
+15.4,21.5,29.6,71.2,female,not anemia
+14.9,16,31.4,87.5,female,not anemia
+14.7,22,28.2,99.5,male,not anemia
+11.6,22.3,30.9,74.5,female,anemia
+12.7,19.5,28.9,82.9,male,anemia
+12.7,28.5,28.2,92.3,male,anemia
+14.1,29.7,30.5,75.2,female,not anemia
+11.7,25.8,31.3,82.9,male,anemia
+15.9,18.3,29.6,87.8,male,not anemia
+16.7,27.5,28.2,93,female,not anemia
+13.4,25.2,30.2,95.9,female,not anemia
+14.7,28.9,31,69.8,female,not anemia
+15.9,24.3,28.7,91.5,female,not anemia
+14,25.5,32,81.6,male,not anemia
+15.9,24,27.9,83.7,male,not anemia
+12.3,21.8,27.8,77.9,male,anemia
+15.4,24.6,30.1,94.3,male,not anemia
+9.2,19.3,31.4,78.9,female,anemia
+16.5,19.3,29.2,69.7,male,not anemia
+16.2,17.2,32.2,78.4,male,not anemia
+15.2,28.1,32.5,94.6,female,not anemia
+11.8,16.3,30.9,78.7,male,anemia
+11,26,32.2,98.9,male,anemia
+11,25.2,30.9,83.2,male,anemia
+10.7,21.3,29.1,78.7,female,anemia
+14.8,23.4,29.2,74.7,male,not anemia
+12.1,28.3,29.2,99.7,female,not anemia
+14.7,23.4,29.9,85.3,male,not anemia
+11.2,16.1,30.3,82.6,female,anemia
+14.3,16.4,29.9,90.1,male,not anemia
+14.3,24.1,28.7,97.2,male,not anemia
+11,17,29.5,75.3,female,anemia
+11.9,29.5,32.2,87.8,female,anemia
+13.5,22.1,29.6,74.7,male,not anemia
+12.5,17.6,32.4,101.5,male,anemia
+14.9,29.1,32.1,84.9,female,not anemia
+11.6,19.4,30.1,85.3,female,anemia
+12.5,23.5,30.6,82.8,female,not anemia
+14.5,24.9,29,81.8,female,not anemia
+12.8,21.2,31.7,73.3,male,anemia
+9.1,21.3,29.4,94.2,female,anemia
+15.2,28.1,31.4,77.3,female,not anemia
+16.1,21.4,29.1,88.8,female,not anemia
+11.7,26.3,30,70.5,female,anemia
+16.7,20.8,31.9,85.1,male,not anemia
+11.3,26.7,29.8,92.7,male,anemia
+15.3,18.6,30.4,96.6,female,not anemia
+14.4,28.1,28.5,93.2,male,not anemia
+13.1,28.3,29.6,86.5,male,anemia
+12.7,19.1,29.8,84.3,male,anemia
+14.8,28.2,30.8,70.7,female,not anemia
+16.9,25.5,29.6,83.2,female,not anemia
+14.7,20,29.3,94.4,male,not anemia
+13.8,27.3,29.6,97.9,female,not anemia
+10.8,16.8,30.6,79.6,male,anemia
+13.8,20.9,31.2,97.4,male,not anemia
+12.4,20.8,30.7,98.2,female,not anemia
+7.8,23,32.2,76.1,female,anemia
+16.4,18.7,29.6,96.4,male,not anemia
+10.4,29.6,28.3,101,male,anemia
+11.5,26.1,28.6,91,male,anemia
+11.1,22.8,28,97.3,male,anemia
+16.7,23.4,29.8,92.5,female,not anemia
+10.4,27.1,29.8,75.2,female,anemia
+16.3,28.6,30.9,99.9,female,not anemia
+11.5,21.4,32.5,76.6,male,anemia
+13.7,17.1,29.9,78.4,female,not anemia
+11.2,29.6,30.3,74,female,anemia
+12.7,23.6,30.4,69.8,male,anemia
+11.2,18.5,29.3,93.9,male,anemia
+10.7,21.3,28.8,78.3,male,anemia
+11.7,19.3,30.3,83.3,female,anemia
+16.6,21.4,28.8,78.4,male,not anemia
+13.2,20.2,28.5,85.2,female,not anemia
+14.4,29.8,31.6,92.4,female,not anemia
+13.7,18.7,30.3,69.4,male,not anemia
+10.7,19,32.2,77.1,male,anemia
+16.3,21.6,32.3,98.4,female,not anemia
+10.4,23.5,31.3,85.9,female,anemia
+16.8,19.2,28.1,100.8,male,not anemia
+12.7,26.4,27.9,101.5,male,anemia
+11.8,18.6,29.4,80.2,female,anemia
+12.8,16.3,31.1,100.9,male,anemia
+11.1,24.3,32.5,91,female,anemia
+15.2,20.6,31.9,99.7,female,not anemia
+13.5,19,28.8,82.3,female,not anemia
+10.9,30,29.8,98.5,male,anemia
+13.4,18.7,31.9,73.2,female,not anemia
+11.9,28.8,28.4,86.4,male,anemia
+15.2,27,32.4,71.6,female,not anemia
+11.4,21,31.7,88.9,male,anemia
+16.5,27.6,29.3,77.8,female,not anemia
+11.6,24.3,29.1,85.7,male,anemia
+13.7,19.5,31.7,77.1,female,not anemia
+12.9,27.4,28.2,78.8,male,anemia
+11.8,22,29.3,71.1,male,anemia
+15.5,16.9,31.2,95.9,female,not anemia
+12.4,24.8,29.6,93.4,male,anemia
+14.5,25.2,31.5,91.7,male,not anemia
+10.4,20,32.2,101.2,female,anemia
+10.4,17.1,31.4,90.6,male,anemia
+12.8,20.3,31.1,100.1,male,anemia
+14.4,18.4,32.1,95.6,male,not anemia
+11.7,18.4,32.1,74.8,male,anemia
+14.8,20.4,28.5,91.1,female,not anemia
+11.9,22.8,32.1,101.2,male,anemia
+11.5,24.1,30.8,74.7,male,anemia
+13.3,16.4,29.1,70,female,not anemia
+13.1,25.6,28.4,77.5,male,anemia
+15.5,21.9,31.4,100.5,female,not anemia
+15.9,28.7,31,81.6,female,not anemia
+15.3,25.3,32.2,96.6,male,not anemia
+16.3,20.9,31.2,72.5,male,not anemia
+16.9,24.2,32.1,92.5,male,not anemia
+11.5,22.9,28.8,72,female,anemia
+16.1,20.8,31.2,79.1,female,not anemia
+16.5,21.9,30.7,71.1,male,not anemia
+13.4,27.9,29,84.4,female,not anemia
+16.8,19.9,32.4,90.9,male,not anemia
+12.2,23.3,30.4,100.2,female,not anemia
+9.6,23,30.3,87.7,male,anemia
+10.7,27.9,31.3,86.4,female,anemia
+12.6,18.3,31.7,82.8,female,not anemia
+14.3,17.5,30.6,75,male,not anemia
+11.7,24.5,31.1,86.1,male,anemia
+13.3,25.1,30.6,73.7,male,anemia
+16.3,19.7,31.6,75.4,female,not anemia
+12.2,17.6,30.7,88.8,female,not anemia
+12.6,21.5,31.6,99.7,female,not anemia
+13.9,20.6,29.2,98.5,male,not anemia
+11.2,16.6,30.2,79.8,female,anemia
+10.7,18.5,28.4,91.6,male,anemia
+11,25,30.4,81.4,male,anemia
+13,28.6,32.2,69.8,male,anemia
+16.9,16.7,30,78.4,female,not anemia
+13.7,24.1,27.8,86.3,male,not anemia
+16.8,24.3,30.5,90.7,male,not anemia
+13.4,21.5,30.4,92.7,female,not anemia
+13.7,23.5,29,70.6,male,not anemia
+11.6,17.5,31.6,70.5,female,anemia
+13.7,18,31.1,89.2,male,not anemia
+13.1,20,29.7,89.7,female,not anemia
+11.1,22.1,29.4,97,male,anemia
+15.3,18.1,31.4,83.5,male,not anemia
+15.8,28.6,31.1,96.6,female,not anemia
+11.5,18.5,31.5,72.2,male,anemia
+14.6,22.7,28.1,93.8,female,not anemia
+16.4,24.4,30.6,77.4,male,not anemia
+12.4,19,31.9,73.7,male,anemia
+12.7,29,31.6,78.6,male,anemia
+10.9,29.4,31.1,91.7,male,anemia
+11.5,21.4,28.7,98.6,male,anemia
+12.8,17.8,29.1,79.4,male,anemia
+16.1,21.6,28.8,96.1,male,not anemia
+13.1,21.6,29.2,89.6,female,not anemia
+13.9,29.7,28.4,70.7,female,not anemia
+13.9,25.9,31.3,71.2,male,not anemia
+15.7,17.7,28.3,76.8,male,not anemia
+15.6,19.4,29.4,88.2,male,not anemia
+11.9,22.3,28.6,89.5,male,anemia
+14,23.6,28.3,89.8,male,not anemia
+12.1,21.7,30.9,70.8,male,anemia
+11.1,29.8,29.2,78,female,anemia
+10.5,17.9,29.1,80.9,female,anemia
+11.7,28.1,31.9,72.7,male,anemia
+16.7,16.5,30.5,94.5,male,not anemia
+13.9,29.3,32.2,78.7,female,not anemia
+13.1,22.2,31.5,87.3,male,anemia
+11.1,21.2,31,87,male,anemia
+12.4,23.3,31.3,70.1,male,anemia
+15.5,25.5,27.8,70.9,female,not anemia
+11.2,20.1,30.8,76.4,female,anemia
+10.4,18.9,27.8,75.1,male,anemia
+12,17.2,31.3,77.4,male,anemia
+12,18,31.2,80.3,male,anemia
+11.5,16.2,30.9,100.8,female,anemia
+15.9,24.7,29.8,96.7,female,not anemia
+12.8,24,28.5,75.3,female,not anemia
+10.5,25.3,27.9,77.1,male,anemia
+12.5,25.6,29.9,79.1,male,anemia
+16.2,19.5,31,76.6,male,not anemia
+10.7,22.6,30.2,101.5,female,anemia
+14.8,23,30.5,69.8,male,not anemia
+13.1,20.2,32.4,95.4,female,not anemia
+16.7,25.1,30.1,70.8,male,not anemia
+13.2,27.8,30.6,81.4,female,not anemia
+10.5,28.3,28.7,100.1,male,anemia
+12.4,24.5,30.7,93.1,male,anemia
+10,29.8,32,92.1,female,anemia
+11.3,23.5,28.4,75.8,female,anemia
+15,21.7,30.6,90,male,not anemia
+13.4,17.7,30.2,79,male,anemia
+14.8,18.8,31.9,77.5,female,not anemia
+12.7,23.3,30.3,92.8,female,not anemia
+14.6,26.3,32,90.7,female,not anemia
+16.4,27.9,29.2,87.9,male,not anemia
+16.8,24.3,31.5,92,female,not anemia
+13.7,26.9,28.1,82.5,female,not anemia
+11.2,26,29.8,73,female,anemia
+13.2,27,31,87.7,male,anemia
+10.3,20.1,28.2,86.3,female,anemia
+13.5,27.7,31,77.3,male,not anemia
+10.6,24.5,28.3,81.5,female,anemia
+14.8,16.3,27.8,76.4,male,not anemia
+15.7,27.6,30.3,81.6,male,not anemia
+11.8,24.3,32,80.6,male,anemia
+15.7,27.2,31.3,69.4,male,not anemia
+11.5,17,30.6,71,male,anemia
+13,19,31.3,77.3,male,anemia
+13.1,17.6,28.8,85.2,female,not anemia
+14.6,27.5,31.4,83.6,male,not anemia
+11.2,22.3,29,100.6,female,anemia
+14.6,17.1,31.8,84.6,female,not anemia
+16.3,16.4,27.8,88.7,female,not anemia
+13.4,26.6,28.3,88.6,male,anemia
+16,24.9,28.3,100,female,not anemia
+11,29.5,30.7,72.6,male,anemia
+16.6,22.7,28.2,87,male,not anemia
+11.4,17.6,30.2,70,male,anemia
+15.4,23.4,32.4,92.9,male,not anemia
+11.1,18.3,28.5,73.3,female,anemia
+15.5,17.4,28.5,78.9,female,not anemia
+10.4,18.6,29.1,79.2,female,anemia
+10.5,18.8,29.1,80.6,female,anemia
+16.7,23.5,28.1,76.9,male,not anemia
+8.6,29.3,28.9,88.3,female,anemia
+16.3,26.7,29.9,84.1,male,not anemia
+14.6,28.9,28.5,74.2,female,not anemia
+13.4,22,30.8,79.7,female,not anemia
+14.8,28.8,29.6,84.9,male,not anemia
+16,28.1,31.6,94.6,male,not anemia
+16.6,29.1,29.9,76.4,male,not anemia
+7.5,28.8,30.8,86.4,female,anemia
+16.7,20.1,31.4,73,male,not anemia
+12.4,21.7,31.9,90.9,male,anemia
+10.8,26.7,31.6,98.3,male,anemia
+11.9,16.7,31.9,74.1,female,anemia
+15.2,19.8,28.5,83.7,male,not anemia
+15.3,18.3,30.4,93.4,female,not anemia
+12.5,22.2,27.9,89.4,male,anemia
+15.2,29,28.2,90.2,male,not anemia
+14.6,16.9,31.9,78.1,female,not anemia
+13.6,22.2,29.6,96.3,male,not anemia
+13.5,19.8,32.3,89.4,male,not anemia
+13.1,21.4,29.4,73.3,female,not anemia
+15.2,21.5,32.5,84.5,female,not anemia
+10.6,29.5,30.4,85,male,anemia
+12.9,21.8,31.9,94.4,female,not anemia
+12.9,25.7,29.7,80.6,male,anemia
+16.6,26.3,29.8,85.1,female,not anemia
+12.5,24.9,30.5,77.3,male,anemia
+10.5,28.5,32.3,70,female,anemia
+14.3,27.7,28.9,70.3,male,not anemia
+14,20.1,32.4,71.1,male,not anemia
+10.7,22.7,30.5,86.6,male,anemia
+14,27.4,31.8,87.2,female,not anemia
+16.8,18.5,28.6,96,female,not anemia
+15.5,21.3,28,75.9,male,not anemia
+12.9,28.7,31.1,71.3,male,anemia
+12.6,25,28,88.3,female,not anemia
+15.5,24.1,32.2,97.4,female,not anemia
+12.8,18.4,31,101.6,male,anemia
+13.2,16.2,30.6,70.4,male,anemia
+13.9,22.5,28.2,98.5,male,not anemia
+11.7,29.8,31.8,101.3,female,anemia
+12,29.1,28.8,82.7,male,anemia
+12.5,21.7,29.7,88.6,male,anemia
+12.6,23.2,28.3,92.9,female,not anemia
+11.4,29,32.1,96.4,male,anemia
+14.9,24.4,30.1,94.7,female,not anemia
+14.9,22.4,29.9,80.6,male,not anemia
+12.1,29.1,29.4,85.3,female,not anemia
+11.1,25,31.7,79.5,male,anemia
+15.8,24.1,31.8,98.5,male,not anemia
+14.1,19.4,32.1,77.4,male,not anemia
+13.2,27.4,30.6,101,male,anemia
+16.4,29.6,30.6,75.3,female,not anemia
+10.4,29,30,92.3,male,anemia
+16.3,24.8,30.6,83.9,male,not anemia
+14.9,28.2,31.2,90.8,male,not anemia
+15.3,17.3,32.2,89.2,female,not anemia
+14.3,21.3,29.9,101.4,female,not anemia
+12.4,16.2,31.8,98.5,female,not anemia
+10.3,22.5,32.1,75,male,anemia
+16.6,18.8,28.1,70.9,male,not anemia
+12.7,27.8,28.4,72.3,male,anemia
+14.8,25.2,30.7,101,female,not anemia
+12.7,24.3,31.4,75.5,female,not anemia
+12.6,16.1,31.1,94.2,male,anemia
+13.2,22,30.7,89.7,female,not anemia
+13.4,28.6,32,94,male,anemia
+11.5,25.7,30.4,70.2,male,anemia
+15.9,19.7,30.9,101.4,female,not anemia
+11.5,22.7,30.6,87.3,female,anemia
+10.7,26.8,32.2,86.6,female,anemia
+14.7,24.8,29.4,82.4,female,not anemia
+16.7,28.8,28.1,92,female,not anemia
+14.2,26.3,28.8,97.9,female,not anemia
+11.1,17.5,31.3,95.4,male,anemia
+13.2,23.8,28,89.9,female,not anemia
+11.3,28.9,30.5,79.7,female,anemia
+14.8,19.6,29,87.4,female,not anemia
+16,19.7,30.2,90.9,male,not anemia
+16.5,20.2,28,82.5,female,not anemia
+13.4,22.4,28.3,83.3,male,anemia
+15.7,19.1,28.9,99.5,female,not anemia
+14.7,28.8,31.7,93.6,female,not anemia
+16,20.1,31.1,95.5,male,not anemia
+10.3,26.1,32.2,96.7,male,anemia
+11.3,18.2,30.7,98,female,anemia
+13.7,28.6,32.2,82.2,male,not anemia
+10.7,18.1,31.5,97.1,female,anemia
+11.3,18.6,29.5,99.6,female,anemia
+14.7,18.3,29.3,75.8,female,not anemia
+11.2,27.7,32,70.4,male,anemia
+12.5,25.5,32,72.1,male,anemia
+15.4,16.9,28,94.9,female,not anemia
+15,27.5,28.5,80.3,female,not anemia
+15.6,25.7,31.9,74.2,female,not anemia
+15.4,24.5,28.9,73.6,male,not anemia
+13,28.5,30.8,98.2,male,anemia
+15.8,25.7,29.7,85.6,female,not anemia
+12.2,24.3,31.4,101.5,male,anemia
+10.9,26.4,30.4,89.7,female,anemia
+12.9,17.3,28.3,81.7,female,not anemia
+12.4,25.6,29.6,89.9,female,not anemia
+10.6,16,32.2,96.8,female,anemia
+14.9,17.6,31.1,86.5,female,not anemia
+14,20.3,32.1,74,female,not anemia
+12.1,26.3,29.8,84.9,female,not anemia
+13.5,22.3,29.9,86.3,female,not anemia
+15.1,17.1,28.2,86.8,male,not anemia
+11.9,23.7,29.9,69.9,female,anemia
+14.7,23.4,29,99.6,female,not anemia
+13.1,21.8,30.8,90.4,female,not anemia
+11.1,20.4,30.9,101.6,female,anemia
+13.5,19.5,32.3,80.4,female,not anemia
+12,28.1,30.9,77.9,male,anemia
+16.5,28,32.2,99.3,female,not anemia
+15.2,21.9,29.6,69.5,female,not anemia
+13.4,17.7,31.6,97.2,male,anemia
+15.9,22.4,28.9,93,male,not anemia
+12.1,25.9,29.3,82.6,male,anemia
+14.5,24.2,27.9,71.7,female,not anemia
+13.4,25.3,28.6,83.8,female,not anemia
+16.4,27.4,31.9,100.2,male,not anemia
+14.6,24.1,30.7,98.1,male,not anemia
+13.8,21.4,29.9,88.4,male,not anemia
+12.6,16.5,30.4,77,male,anemia
+11.5,22,32.4,84.2,female,anemia
+12.5,20.1,27.8,89.2,male,anemia
+16.6,22,29.5,71,male,not anemia
+12.7,21.1,32.2,94.2,male,anemia
+16.8,27.4,32.4,97.7,female,not anemia
+14.3,21.4,31.2,88.5,male,not anemia
+10.8,19,32.2,101.6,female,anemia
+12.6,16.5,28.9,97.5,female,not anemia
+16.8,27.3,28.9,70.8,female,not anemia
+10.7,24.7,29.1,78.7,male,anemia
+15.9,18.2,30.3,82.7,male,not anemia
+10.7,19.4,29.2,93.7,female,anemia
+11.4,16.2,29.8,97,female,anemia
+16.1,26.1,31.4,93.7,male,not anemia
+14.5,27.4,28.4,78.4,female,not anemia
+16.2,17.9,27.8,74.3,male,not anemia
+16.2,25.1,29.9,81.6,female,not anemia
+12.2,23.4,32,86,male,anemia
+15,20.8,32.3,88.7,male,not anemia
+11.6,18,32.2,98.9,male,anemia
+11.2,27.8,32.2,95.8,male,anemia
+11.7,16.8,32.2,73.6,female,anemia
+16.4,27.2,31.4,70.6,female,not anemia
+15.5,19.3,32.5,97.5,female,not anemia
+13.3,19.1,30.9,97.9,female,not anemia
+16.1,21.9,32.5,100.7,male,not anemia
+11.1,24.7,32.1,96.7,female,anemia
+10.8,19.8,30.8,99.6,male,anemia
+10.9,28.6,28.6,84.8,female,anemia
+15.8,25.5,28.9,72.6,female,not anemia
+13.3,28.5,29,87.7,male,anemia
+16.8,22.7,32,94.3,male,not anemia
+11.1,28,30.8,77.3,male,anemia
+12.5,29.7,30.6,90.5,female,not anemia
+12.5,25.2,28.3,73.6,male,anemia
+10.8,19.7,29.5,93,female,anemia
+10.5,23,30.4,100.1,male,anemia
+11.9,25.9,32,83.2,male,anemia
+13.2,17.8,29.6,71.2,male,anemia
+14.8,29.6,31.7,91.6,male,not anemia
+11.4,16.5,29.8,100.3,female,anemia
+10.9,27.1,30,93.2,male,anemia
+14.8,16.2,28.9,75.8,female,not anemia
+15.5,23.1,29.1,72.9,male,not anemia
+15.9,21.6,32.4,83.7,male,not anemia
+16.7,22.8,32.5,81.9,male,not anemia
+12.5,19.4,29.2,97.4,male,anemia
+13.3,26.3,30,100,female,not anemia
+13.8,21,28.6,80.8,female,not anemia
+12.3,23,29.3,85.8,female,not anemia
+11.2,23.1,30.3,75.2,female,anemia
+10.7,22.8,30.5,81.3,female,anemia
+15,21.8,28.8,95.2,female,not anemia
+11.8,28.5,31.8,89.7,male,anemia
+16.8,24.9,32,80.6,female,not anemia
+16.8,22.3,30.8,76.7,female,not anemia
+10.8,28,28.8,90.6,male,anemia
+15.2,24.9,28.4,90.1,male,not anemia
+11.4,29.3,28.7,95.8,male,anemia
+16.1,25.9,31.7,78,male,not anemia
+10.8,17.5,29.3,95.8,male,anemia
+10.6,28,30.7,90.9,female,anemia
+12.6,19.1,31.5,85.9,male,anemia
+13.4,17.8,32.3,101.3,male,anemia
+16.6,21.7,30.8,88.1,female,not anemia
+13.3,25.4,30.8,82.9,male,anemia
+14.6,25.5,31.8,83.5,male,not anemia
+13.4,26.3,28.5,84.6,female,not anemia
+13,28.3,30,83,female,not anemia
+12.8,21.6,28.3,81.2,male,anemia
+10.6,25.6,28,72.1,female,anemia
+14.3,27.6,32.3,74.3,female,not anemia
+13.1,26.9,29.5,77.6,male,anemia
+13.1,27,32.4,97.8,female,not anemia
+15.5,26.9,28,72.7,female,not anemia
+14,26.9,28,89.9,female,not anemia
+15.3,28.9,31.6,76.3,male,not anemia
+14.3,20.4,28,97.4,male,not anemia
+11.1,16.1,32.5,77.1,female,anemia
+14.4,18.1,28.7,80.2,male,not anemia
+12,19.4,29.6,71.5,female,not anemia
+11.7,19.9,28.9,71.6,female,anemia
+12.7,22.5,28.3,93.5,male,anemia
+12.2,20.1,29.8,72.6,male,anemia
+15.2,19.5,28.3,74.1,male,not anemia
+12,21.5,29.1,101.1,female,not anemia
+11.5,17.4,32.1,87.3,male,anemia
+15.1,24.3,31.4,76.1,male,not anemia
+11.5,18.9,31.2,81.3,female,anemia
+12.8,29.2,32.1,89.8,female,not anemia
+15.1,21.6,28.4,100,male,not anemia
+11.5,19.2,30.8,78.2,male,anemia
+15,19.9,30.1,76.5,male,not anemia
+13.2,17,29.4,101.5,female,not anemia
+13.1,21.3,32.4,100.6,male,anemia
+16.6,28.4,31,75.6,female,not anemia
+13.6,29.8,32.4,76.6,female,not anemia
+13.7,26,31.4,82.8,male,not anemia
+12.8,19.5,32.2,72.1,male,anemia
+14.3,19.2,30.9,94.8,female,not anemia
+14.4,25.2,32.2,94.9,male,not anemia
+14,18.2,29.6,77.6,female,not anemia
+16.8,24.4,28.2,74.8,female,not anemia
+16.9,19.3,29.1,82.1,female,not anemia
+12.3,22.9,27.9,71,male,anemia
+11.6,24.6,28.2,96.7,male,anemia
+11.7,24.4,31.5,99.8,female,anemia
+12.9,19.5,28.7,87.7,male,anemia
+15,19.5,31.3,71.9,female,not anemia
+13.6,28.8,32.5,99.6,female,not anemia
+11.2,18.8,30.9,94.7,female,anemia
+11.6,18.8,29.3,79.1,female,anemia
+12.1,18.9,31.2,76,male,anemia
+16,23.6,29.4,95.6,female,not anemia
+13.2,25.6,31.1,100.4,female,not anemia
+13,26.2,31.3,74.9,female,not anemia
+13.2,20.1,28.8,91.2,male,anemia
+10.6,25.4,28.2,82.9,female,anemia
+12.1,28.3,30.4,86.9,male,anemia
+13.1,17.7,28.1,80.7,male,anemia
+14.3,16.2,29.5,95.2,female,not anemia
+11.8,21.2,28.4,98.1,female,anemia
+12.4,21.7,31.9,90.9,male,anemia
+10.8,26.7,31.6,98.3,male,anemia
+11.9,16.7,31.9,74.1,female,anemia
+15.2,19.8,28.5,83.7,male,not anemia
+15.3,18.3,30.4,93.4,female,not anemia
+12.5,22.2,27.9,89.4,male,anemia
+15.2,29,28.2,90.2,male,not anemia
+14.6,16.9,31.9,78.1,female,not anemia
+13.6,22.2,29.6,96.3,male,not anemia
+13.5,19.8,32.3,89.4,male,not anemia
+13.1,21.4,29.4,73.3,female,not anemia
+15.2,21.5,32.5,84.5,female,not anemia
+10.6,29.5,30.4,85,male,anemia
+12.9,21.8,31.9,94.4,female,not anemia
+12.9,25.7,29.7,80.6,male,anemia
+16.6,26.3,29.8,85.1,female,not anemia
+12.5,24.9,30.5,77.3,male,anemia
+10.5,28.5,32.3,70,female,anemia
+14.3,27.7,28.9,70.3,male,not anemia
+14,20.1,32.4,71.1,male,not anemia
+10.7,22.7,30.5,86.6,male,anemia
+14,27.4,31.8,87.2,female,not anemia
+16.8,18.5,28.6,96,female,not anemia
+15.5,21.3,28,75.9,male,not anemia
+12.9,28.7,31.1,71.3,male,anemia
+12.6,25,28,88.3,female,not anemia
+15.5,24.1,32.2,97.4,female,not anemia
+12.8,18.4,31,101.6,male,anemia
+13.2,16.2,30.6,70.4,male,anemia
+13.9,22.5,28.2,98.5,male,not anemia
+11.7,29.8,31.8,101.3,female,anemia
+12,29.1,28.8,82.7,male,anemia
+12.5,21.7,29.7,88.6,male,anemia
+12.6,23.2,28.3,92.9,female,not anemia
+11.4,29,32.1,96.4,male,anemia
+14.9,24.4,30.1,94.7,female,not anemia
+14.9,22.4,29.9,80.6,male,not anemia
+12.1,29.1,29.4,85.3,female,not anemia
+11.1,25,31.7,79.5,male,anemia
+15.8,24.1,31.8,98.5,male,not anemia
+14.1,19.4,32.1,77.4,male,not anemia
+13.2,27.4,30.6,101,male,anemia
+16.4,29.6,30.6,75.3,female,not anemia
+10.4,29,30,92.3,male,anemia
+16.3,24.8,30.6,83.9,male,not anemia
+14.9,28.2,31.2,90.8,male,not anemia
+15.3,17.3,32.2,89.2,female,not anemia
+14.3,21.3,29.9,101.4,female,not anemia
+12.4,16.2,31.8,98.5,female,not anemia
+10.3,22.5,32.1,75,male,anemia
+16.6,18.8,28.1,70.9,male,not anemia
+12.7,27.8,28.4,72.3,male,anemia
+14.8,25.2,30.7,101,female,not anemia
+12.7,24.3,31.4,75.5,female,not anemia
+12.6,16.1,31.1,94.2,male,anemia
+13.2,22,30.7,89.7,female,not anemia
+13.4,28.6,32,94,male,anemia
+11.5,25.7,30.4,70.2,male,anemia
+15.9,19.7,30.9,101.4,female,not anemia
+11.5,22.7,30.6,87.3,female,anemia
+10.7,26.8,32.2,86.6,female,anemia
+14.7,24.8,29.4,82.4,female,not anemia
+16.7,28.8,28.1,92,female,not anemia
+14.2,26.3,28.8,97.9,female,not anemia
+11.1,17.5,31.3,95.4,male,anemia
+13.2,23.8,28,89.9,female,not anemia
+11.3,28.9,30.5,79.7,female,anemia
+14.8,19.6,29,87.4,female,not anemia
+16,19.7,30.2,90.9,male,not anemia
+16.5,20.2,28,82.5,female,not anemia
+13.4,22.4,28.3,83.3,male,anemia
+15.7,19.1,28.9,99.5,female,not anemia
+14.7,28.8,31.7,93.6,female,not anemia
+16,20.1,31.1,95.5,male,not anemia
+10.3,26.1,32.2,96.7,male,anemia
+11.3,18.2,30.7,98,female,anemia
+13.7,28.6,32.2,82.2,male,not anemia
+10.7,18.1,31.5,97.1,female,anemia
+11.3,18.6,29.5,99.6,female,anemia
+14.7,18.3,29.3,75.8,female,not anemia
+11.2,27.7,32,70.4,male,anemia
+12.5,25.5,32,72.1,male,anemia
+15.4,16.9,28,94.9,female,not anemia
+15,27.5,28.5,80.3,female,not anemia
+15.6,25.7,31.9,74.2,female,not anemia
+15.4,24.5,28.9,73.6,male,not anemia
+13,28.5,30.8,98.2,male,anemia
+15.8,25.7,29.7,85.6,female,not anemia
+12.2,24.3,31.4,101.5,male,anemia
+10.9,26.4,30.4,89.7,female,anemia
+12.9,17.3,28.3,81.7,female,not anemia
+12.4,25.6,29.6,89.9,female,not anemia
+10.6,16,32.2,96.8,female,anemia
+14.9,17.6,31.1,86.5,female,not anemia
+14,20.3,32.1,74,female,not anemia
+12.1,26.3,29.8,84.9,female,not anemia
+13.5,22.3,29.9,86.3,female,not anemia
+15.1,17.1,28.2,86.8,male,not anemia
+11.9,23.7,29.9,69.9,female,anemia
+14.7,23.4,29,99.6,female,not anemia
+13.1,21.8,30.8,90.4,female,not anemia
+11.1,20.4,30.9,101.6,female,anemia
+13.5,19.5,32.3,80.4,female,not anemia
+12,28.1,30.9,77.9,male,anemia
+16.5,28,32.2,99.3,female,not anemia
+15.2,21.9,29.6,69.5,female,not anemia
+13.4,17.7,31.6,97.2,male,anemia
+15.9,22.4,28.9,93,male,not anemia
+12.1,25.9,29.3,82.6,male,anemia
+14.5,24.2,27.9,71.7,female,not anemia
+13.4,25.3,28.6,83.8,female,not anemia
+16.4,27.4,31.9,100.2,male,not anemia
+14.6,24.1,30.7,98.1,male,not anemia
+13.8,21.4,29.9,88.4,male,not anemia
+12.6,16.5,30.4,77,male,anemia
+11.5,22,32.4,84.2,female,anemia
+12.5,20.1,27.8,89.2,male,anemia
+16.6,22,29.5,71,male,not anemia
+12.7,21.1,32.2,94.2,male,anemia
+16.8,27.4,32.4,97.7,female,not anemia
+14.3,21.4,31.2,88.5,male,not anemia
+10.8,19,32.2,101.6,female,anemia
+12.6,16.5,28.9,97.5,female,not anemia
+16.8,27.3,28.9,70.8,female,not anemia
+10.7,24.7,29.1,78.7,male,anemia
+15.9,18.2,30.3,82.7,male,not anemia
+10.7,19.4,29.2,93.7,female,anemia
+11.4,16.2,29.8,97,female,anemia
+16.1,26.1,31.4,93.7,male,not anemia
+14.5,27.4,28.4,78.4,female,not anemia
+16.2,17.9,27.8,74.3,male,not anemia
+16.2,25.1,29.9,81.6,female,not anemia
+12.2,23.4,32,86,male,anemia
+15,20.8,32.3,88.7,male,not anemia
+11.6,18,32.2,98.9,male,anemia
+11.2,27.8,32.2,95.8,male,anemia
+11.7,16.8,32.2,73.6,female,anemia
+16.4,27.2,31.4,70.6,female,not anemia
+15.5,19.3,32.5,97.5,female,not anemia
+13.3,19.1,30.9,97.9,female,not anemia
+16.1,21.9,32.5,100.7,male,not anemia
+11.1,24.7,32.1,96.7,female,anemia
+10.8,19.8,30.8,99.6,male,anemia
+10.9,28.6,28.6,84.8,female,anemia
+15.8,25.5,28.9,72.6,female,not anemia
+13.3,28.5,29,87.7,male,anemia
+16.8,22.7,32,94.3,male,not anemia
+11.1,28,30.8,77.3,male,anemia
+12.5,29.7,30.6,90.5,female,not anemia
+12.5,25.2,28.3,73.6,male,anemia
+10.8,19.7,29.5,93,female,anemia
+10.5,23,30.4,100.1,male,anemia
+11.9,25.9,32,83.2,male,anemia
+13.2,17.8,29.6,71.2,male,anemia
+14.8,29.6,31.7,91.6,male,not anemia
+11.4,16.5,29.8,100.3,female,anemia
+10.9,27.1,30,93.2,male,anemia
+14.8,16.2,28.9,75.8,female,not anemia
+15.5,23.1,29.1,72.9,male,not anemia
+15.9,21.6,32.4,83.7,male,not anemia
+16.7,22.8,32.5,81.9,male,not anemia
+12.5,19.4,29.2,97.4,male,anemia
+13.3,26.3,30,100,female,not anemia
+13.8,21,28.6,80.8,female,not anemia
+12.3,23,29.3,85.8,female,not anemia
+11.2,23.1,30.3,75.2,female,anemia
+10.7,22.8,30.5,81.3,female,anemia
+15,21.8,28.8,95.2,female,not anemia
+11.8,28.5,31.8,89.7,male,anemia
+16.8,24.9,32,80.6,female,not anemia
+16.8,22.3,30.8,76.7,female,not anemia
+10.8,28,28.8,90.6,male,anemia
+15.2,24.9,28.4,90.1,male,not anemia
+11.4,29.3,28.7,95.8,male,anemia
+16.1,25.9,31.7,78,male,not anemia
+10.8,17.5,29.3,95.8,male,anemia
+10.6,28,30.7,90.9,female,anemia
+12.6,19.1,31.5,85.9,male,anemia
+13.4,17.8,32.3,101.3,male,anemia
+16.6,21.7,30.8,88.1,female,not anemia
+13.3,25.4,30.8,82.9,male,anemia
+14.6,25.5,31.8,83.5,male,not anemia
+13.4,26.3,28.5,84.6,female,not anemia
+13,28.3,30,83,female,not anemia
+12.8,21.6,28.3,81.2,male,anemia
+10.6,25.6,28,72.1,female,anemia
+14.3,27.6,32.3,74.3,female,not anemia
+13.1,26.9,29.5,77.6,male,anemia
+13.1,27,32.4,97.8,female,not anemia
+15.5,26.9,28,72.7,female,not anemia
+14,26.9,28,89.9,female,not anemia
+15.3,28.9,31.6,76.3,male,not anemia
+14.3,20.4,28,97.4,male,not anemia
+11.1,16.1,32.5,77.1,female,anemia
+14.4,18.1,28.7,80.2,male,not anemia
+12,19.4,29.6,71.5,female,not anemia
+11.7,19.9,28.9,71.6,female,anemia
+12.7,22.5,28.3,93.5,male,anemia
+12.2,20.1,29.8,72.6,male,anemia
+15.2,19.5,28.3,74.1,male,not anemia
+12,21.5,29.1,101.1,female,not anemia
+11.5,17.4,32.1,87.3,male,anemia
+15.1,24.3,31.4,76.1,male,not anemia
+11.5,18.9,31.2,81.3,female,anemia
+12.8,29.2,32.1,89.8,female,not anemia
+15.1,21.6,28.4,100,male,not anemia
+11.5,19.2,30.8,78.2,male,anemia
+15,19.9,30.1,76.5,male,not anemia
+13.2,17,29.4,101.5,female,not anemia
+15.1,21.3,32.4,100.6,male,not anemia
+16.6,28.4,31,75.6,female,not anemia
+13.6,29.8,32.4,76.6,female,not anemia
+13.7,26,31.4,82.8,male,not anemia
+14.8,19.5,32.2,72.1,male,not anemia
+14.3,19.2,30.9,94.8,female,not anemia
+14.4,25.2,32.2,94.9,male,not anemia
+14,18.2,29.6,77.6,female,not anemia
+16.8,24.4,28.2,74.8,female,not anemia
+16.9,19.3,29.1,82.1,female,not anemia
+12.3,22.9,27.9,71,male,anemia
+11.6,24.6,28.2,96.7,male,anemia
+11.7,24.4,31.5,99.8,female,anemia
+12.9,19.5,28.7,87.7,male,anemia
+15,19.5,31.3,71.9,female,not anemia
+13.6,28.8,32.5,99.6,female,not anemia
+11.2,18.8,30.9,94.7,female,anemia
+11.6,18.8,29.3,79.1,female,anemia
+12.1,18.9,31.2,76,male,anemia
+16,23.6,29.4,95.6,female,not anemia
+13.2,25.6,31.1,100.4,female,not anemia
+13,26.2,31.3,74.9,female,not anemia
+13.2,20.1,28.8,91.2,male,anemia
+10.6,25.4,28.2,82.9,female,anemia
+12.1,28.3,30.4,86.9,male,anemia
+13.1,17.7,28.1,80.7,male,anemia
+14.3,16.2,29.5,95.2,female,not anemia
+11.8,21.2,28.4,98.1,female,anemia
+12.4,21.7,31.9,90.9,male,anemia
+10.8,26.7,31.6,98.3,male,anemia
+11.9,16.7,31.9,74.1,female,anemia
+15.2,19.8,28.5,83.7,male,not anemia
+15.3,18.3,30.4,93.4,female,not anemia
+12.5,22.2,27.9,89.4,male,anemia
+15.2,29,28.2,90.2,male,not anemia
+14.6,16.9,31.9,78.1,female,not anemia
+13.6,22.2,29.6,96.3,male,not anemia
+13.5,19.8,32.3,89.4,male,not anemia
+13.1,21.4,29.4,73.3,female,not anemia
+15.2,21.5,32.5,84.5,female,not anemia
+10.6,29.5,30.4,85,male,anemia
+12.9,21.8,31.9,94.4,female,not anemia
+12.9,25.7,29.7,80.6,male,anemia
+16.6,26.3,29.8,85.1,female,not anemia
+12.5,24.9,30.5,77.3,male,anemia
+10.5,28.5,32.3,70,female,anemia
+14.3,27.7,28.9,70.3,male,not anemia
+14,20.1,32.4,71.1,male,not anemia
+10.7,22.7,30.5,86.6,male,anemia
+14,27.4,31.8,87.2,female,not anemia
+16.8,18.5,28.6,96,female,not anemia
+15.5,21.3,28,75.9,male,not anemia
+12.9,28.7,31.1,71.3,male,anemia
+12.6,25,28,88.3,female,not anemia
+15.5,24.1,32.2,97.4,female,not anemia
+12.8,18.4,31,101.6,male,anemia
+13.2,16.2,30.6,70.4,male,anemia
+13.9,22.5,28.2,98.5,male,not anemia
+11.7,29.8,31.8,101.3,female,anemia
+12,29.1,28.8,82.7,male,anemia
+12.5,21.7,29.7,88.6,male,anemia
+12.6,23.2,28.3,92.9,female,not anemia
+11.4,29,32.1,96.4,male,anemia
+14.9,24.4,30.1,94.7,female,not anemia
+14.9,22.4,29.9,80.6,male,not anemia
+12.1,29.1,29.4,85.3,female,not anemia
+11.1,25,31.7,79.5,male,anemia
+15.8,24.1,31.8,98.5,male,not anemia
+14.1,19.4,32.1,77.4,male,not anemia
+13.2,27.4,30.6,101,male,anemia
+16.4,29.6,30.6,75.3,female,not anemia
+10.4,29,30,92.3,male,anemia
+16.3,24.8,30.6,83.9,male,not anemia
+14.9,28.2,31.2,90.8,male,not anemia
+15.3,17.3,32.2,89.2,female,not anemia
+14.3,21.3,29.9,101.4,female,not anemia
+12.4,16.2,31.8,98.5,female,not anemia
+10.3,22.5,32.1,75,male,anemia
+16.6,18.8,28.1,70.9,male,not anemia
+12.7,27.8,28.4,72.3,male,anemia
+14.8,25.2,30.7,101,female,not anemia
+12.7,24.3,31.4,75.5,female,not anemia
+12.6,16.1,31.1,94.2,male,anemia
+13.2,22,30.7,89.7,female,not anemia
+13.4,28.6,32,94,male,anemia
+11.5,25.7,30.4,70.2,male,anemia
+15.9,19.7,30.9,101.4,female,not anemia
+11.5,22.7,30.6,87.3,female,anemia
+10.7,26.8,32.2,86.6,female,anemia
+14.7,24.8,29.4,82.4,female,not anemia
+16.7,28.8,28.1,92,female,not anemia
+14.2,26.3,28.8,97.9,female,not anemia
+11.1,17.5,31.3,95.4,male,anemia
+13.2,23.8,28,89.9,female,not anemia
+11.3,28.9,30.5,79.7,female,anemia
+14.8,19.6,29,87.4,female,not anemia
+16,19.7,30.2,90.9,male,not anemia
+16.5,20.2,28,82.5,female,not anemia
+13.4,22.4,28.3,83.3,male,anemia
+15.7,19.1,28.9,99.5,female,not anemia
+14.7,28.8,31.7,93.6,female,not anemia
+16,20.1,31.1,95.5,male,not anemia
+10.3,26.1,32.2,96.7,male,anemia
+11.3,18.2,30.7,98,female,anemia
+13.7,28.6,32.2,82.2,male,not anemia
+10.7,18.1,31.5,97.1,female,anemia
+11.3,18.6,29.5,99.6,female,anemia
+14.7,18.3,29.3,75.8,female,not anemia
+11.2,27.7,32,70.4,male,anemia
+12.5,25.5,32,72.1,male,anemia
+15.4,16.9,28,94.9,female,not anemia
+15,27.5,28.5,80.3,female,not anemia
+15.6,25.7,31.9,74.2,female,not anemia
+15.4,24.5,28.9,73.6,male,not anemia
+13,28.5,30.8,98.2,male,anemia
+15.8,25.7,29.7,85.6,female,not anemia
+12.2,24.3,31.4,101.5,male,anemia
+10.9,26.4,30.4,89.7,female,anemia
+12.9,17.3,28.3,81.7,female,not anemia
+12.4,25.6,29.6,89.9,female,not anemia
+10.6,16,32.2,96.8,female,anemia
+14.9,17.6,31.1,86.5,female,not anemia
+14,20.3,32.1,74,female,not anemia
+12.1,26.3,29.8,84.9,female,not anemia
+13.5,22.3,29.9,86.3,female,not anemia
+15.1,17.1,28.2,86.8,male,not anemia
+11.9,23.7,29.9,69.9,female,anemia
+14.7,23.4,29,99.6,female,not anemia
+13.1,21.8,30.8,90.4,female,not anemia
+11.1,20.4,30.9,101.6,female,anemia
+13.5,19.5,32.3,80.4,female,not anemia
+12,28.1,30.9,77.9,male,anemia
+16.5,28,32.2,99.3,female,not anemia
+15.2,21.9,29.6,69.5,female,not anemia
+13.4,17.7,31.6,97.2,male,anemia
+15.9,22.4,28.9,93,male,not anemia
+12.1,25.9,29.3,82.6,male,anemia
+14.5,24.2,27.9,71.7,female,not anemia
+13.4,25.3,28.6,83.8,female,not anemia
+16.4,27.4,31.9,100.2,male,not anemia
+14.6,24.1,30.7,98.1,male,not anemia
+13.8,21.4,29.9,88.4,male,not anemia
+12.6,16.5,30.4,77,male,anemia
+11.5,22,32.4,84.2,female,anemia
+12.5,20.1,27.8,89.2,male,anemia
+16.6,22,29.5,71,male,not anemia
+12.7,21.1,32.2,94.2,male,anemia
+16.8,27.4,32.4,97.7,female,not anemia
+14.3,21.4,31.2,88.5,male,not anemia
+10.8,19,32.2,101.6,female,anemia
+12.6,16.5,28.9,97.5,female,not anemia
+16.8,27.3,28.9,70.8,female,not anemia
+10.7,24.7,29.1,78.7,male,anemia
+15.9,18.2,30.3,82.7,male,not anemia
+10.7,19.4,29.2,93.7,female,anemia
+11.4,16.2,29.8,97,female,anemia
+16.1,26.1,31.4,93.7,male,not anemia
+14.5,27.4,28.4,78.4,female,not anemia
+16.2,17.9,27.8,74.3,male,not anemia
+16.2,25.1,29.9,81.6,female,not anemia
+12.2,23.4,32,86,male,anemia
+15,20.8,32.3,88.7,male,not anemia
+11.6,18,32.2,98.9,male,anemia
+11.2,27.8,32.2,95.8,male,anemia
+11.7,16.8,32.2,73.6,female,anemia
+16.4,27.2,31.4,70.6,female,not anemia
+15.5,19.3,32.5,97.5,female,not anemia
+13.3,19.1,30.9,97.9,female,not anemia
+16.1,21.9,32.5,100.7,male,not anemia
+11.1,24.7,32.1,96.7,female,anemia
+10.8,19.8,30.8,99.6,male,anemia
+10.9,28.6,28.6,84.8,female,anemia
+15.8,25.5,28.9,72.6,female,not anemia
+13.3,28.5,29,87.7,male,anemia
+16.8,22.7,32,94.3,male,not anemia
+11.1,28,30.8,77.3,male,anemia
+12.5,29.7,30.6,90.5,female,not anemia
+12.5,25.2,28.3,73.6,male,anemia
+10.8,19.7,29.5,93,female,anemia
+10.5,23,30.4,100.1,male,anemia
+11.9,25.9,32,83.2,male,anemia
+13.2,17.8,29.6,71.2,male,anemia
+14.8,29.6,31.7,91.6,male,not anemia
+11.4,16.5,29.8,100.3,female,anemia
+10.9,27.1,30,93.2,male,anemia
+14.8,16.2,28.9,75.8,female,not anemia
+15.5,23.1,29.1,72.9,male,not anemia
+15.9,21.6,32.4,83.7,male,not anemia
+16.7,22.8,32.5,81.9,male,not anemia
+12.5,19.4,29.2,97.4,male,anemia
+13.3,26.3,30,100,female,not anemia
+13.8,21,28.6,80.8,female,not anemia
+12.3,23,29.3,85.8,female,not anemia
+11.2,23.1,30.3,75.2,female,anemia
+10.7,22.8,30.5,81.3,female,anemia
+15,21.8,28.8,95.2,female,not anemia
+11.8,28.5,31.8,89.7,male,anemia
+16.8,24.9,32,80.6,female,not anemia
+16.8,22.3,30.8,76.7,female,not anemia
+10.8,28,28.8,90.6,male,anemia
+15.2,24.9,28.4,90.1,male,not anemia
+11.4,29.3,28.7,95.8,male,anemia
+16.1,25.9,31.7,78,male,not anemia
+10.8,17.5,29.3,95.8,male,anemia
+10.6,28,30.7,90.9,female,anemia
+12.6,19.1,31.5,85.9,male,anemia
+13.4,17.8,32.3,101.3,male,anemia
+16.6,21.7,30.8,88.1,female,not anemia
+13.3,25.4,30.8,82.9,male,anemia
+14.6,25.5,31.8,83.5,male,not anemia
+13.4,26.3,28.5,84.6,female,not anemia
+13,28.3,30,83,female,not anemia
+12.8,21.6,28.3,81.2,male,anemia
+10.6,25.6,28,72.1,female,anemia
+14.3,27.6,32.3,74.3,female,not anemia
+13.1,26.9,29.5,77.6,male,anemia
+13.1,27,32.4,97.8,female,not anemia
+15.5,26.9,28,72.7,female,not anemia
+14,26.9,28,89.9,female,not anemia
+15.3,28.9,31.6,76.3,male,not anemia
+13.2,20.4,28,97.4,male,anemia
+11.1,16.1,32.5,77.1,female,anemia
+14.4,18.1,28.7,80.2,male,not anemia
+12,19.4,29.6,71.5,female,not anemia
+11.7,19.9,28.9,71.6,female,anemia
+12.7,22.5,28.3,93.5,male,anemia
+12.2,20.1,29.8,72.6,male,anemia
+15.2,19.5,28.3,74.1,male,not anemia
+12,21.5,29.1,101.1,female,not anemia
+11.5,17.4,32.1,87.3,male,anemia
+15.1,24.3,31.4,76.1,male,not anemia
+11.5,18.9,31.2,81.3,female,anemia
+12.8,29.2,32.1,89.8,female,not anemia
+15.1,21.6,28.4,100,male,not anemia
+11.5,19.2,30.8,78.2,male,anemia
+15,19.9,30.1,76.5,male,not anemia
+13.2,17,29.4,101.5,female,not anemia
+15.1,21.3,32.4,100.6,male,not anemia
+16.6,28.4,31,75.6,female,not anemia
+13.6,29.8,32.4,76.6,female,not anemia
+13,26,31.4,82.8,male,anemia
+14.8,19.5,32.2,72.1,male,not anemia
+14.3,19.2,30.9,94.8,female,not anemia
+14.4,25.2,32.2,94.9,male,not anemia
+14,18.2,29.6,77.6,female,not anemia
+16.8,24.4,28.2,74.8,female,not anemia
+16.9,19.3,29.1,82.1,female,not anemia
+12.3,22.9,27.9,71,male,anemia
+11.6,24.6,28.2,96.7,male,anemia
+11.7,24.4,31.5,99.8,female,anemia
+12.9,19.5,28.7,87.7,male,anemia
+15,19.5,31.3,71.9,female,not anemia
+13.6,28.8,32.5,99.6,female,not anemia
+11.2,18.8,30.9,94.7,female,anemia
+11.6,18.8,29.3,79.1,female,anemia
+12.1,18.9,31.2,76,male,anemia
+16,23.6,29.4,95.6,female,not anemia
+13.2,25.6,31.1,100.4,female,not anemia
+13,26.2,31.3,74.9,female,not anemia
+13.2,20.1,28.8,91.2,male,anemia
+10.6,25.4,28.2,82.9,female,anemia
+12.1,28.3,30.4,86.9,male,anemia
+13.1,17.7,28.1,80.7,male,anemia
+14.3,16.2,29.5,95.2,female,not anemia
+11.8,21.2,28.4,98.1,female,anemia
