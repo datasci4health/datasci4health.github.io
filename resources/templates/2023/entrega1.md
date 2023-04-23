@@ -9,7 +9,6 @@ Na primeira entrega do projeto, seu grupo deverá:
  - Criar uma pasta com um nome que referencie seu projeto na raiz do novo repositório;
  - Iniciar a organização da pasta de projeto como descrito na Seção [Estrutura de sua pasta de projeto](#estrutura-de-sua-pasta-de-projeto);
  - Dentro da pasta criada, editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito na Seção [Modelo para Apresentação do Projeto](#modelo-para-apresentação-do-projeto);
- - Incluir na descrição do projeto um link para um vídeo de at
  - Após a finalização da edição do conteúdo da primeira entrega, atribuir a tag de release **2023.1_datasci4health_E1** à versão atual do seu projeto;
  - Dar um **pull request** do projeto no **branch** principal até a data de entrega.
 
