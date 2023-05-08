@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  mimic-db-manager:
+    image: mysql:8.0.33
+    volumes:
+      - mimic-import:/import
+      - mimic-export:/export
+      - mimic-db:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+volumes:
+  mimic-import:
+    driver: "local"
+    driver_opts:
+      type: "none"
+      device: "/media/santanche/jubatus/pesquisa/dados/mimic-iv-2.2-import"
+      o: "bind" 
+  mimic-export:
+    driver: "local"
+    driver_opts:
+      type: "none"
+      device: "/media/santanche/jubatus/pesquisa/dados/mimic-export"
+      o: "bind" 
+  mimic-db:
+    driver: "local"
+    driver_opts:
+      type: "none"
+      device: "/media/santanche/jubatus/pesquisa/dados/mimic-iv-2.2-db"
+      # device: "/home/santanche/Documents/mimic"
+      o: "bind" 

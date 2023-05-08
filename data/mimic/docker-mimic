@@ -1,0 +1,5 @@
+docker run --name mimic-db-manager \
+           -e MYSQL_ROOT_PASSWORD=mimic \
+           -d mysql:8.0.33 \
+           -v /media/santanche/jubatus/pesquisa/dados/mimic-iv-2.2-import:import \
+           -v /media/santanche/jubatus/pesquisa/dados/mimic-iv-2.2-db:/var/lib/mysql
