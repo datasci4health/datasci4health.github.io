@@ -3,6 +3,8 @@
 MIMIC Scripts from:
 https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iv/buildmimic/mysql
 
+There is a copy of these scripts in the folder `github-scripts`.
+
 ## Docker-compose
 
 Docker-compose in two stages to enable writing in an external hard drive.
@@ -39,4 +41,13 @@ cd import
 mysql -p -e "create database mimic4"
 mysql -p --local-infile mimic4 < load.sql > load.log
 mysql -p mimic4 < index.sql > index.log
+~~~
+
+## Importing `import-lab_itemid_to_loinc`
+
+The file `import-lab_itemid_to_loinc.sql` contains the script to import the table `d_labitems_to_loinc` which data is available at: https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/concepts/concept_map/d_labitems_to_loinc.csv
+
+Import instructions:
+~~~
+mysql -p mimic4 < import-lab_itemid_to_loinc.sql > import-lab_itemid_to_loinc.log
 ~~~

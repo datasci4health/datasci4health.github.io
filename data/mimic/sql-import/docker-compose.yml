@@ -30,5 +30,4 @@ volumes:
     driver_opts:
       type: "none"
       device: "/media/santanche/jubatus/pesquisa/dados/mimic-iv-2.2-db"
-      # device: "/home/santanche/Documents/mimic"
       o: "bind" 
