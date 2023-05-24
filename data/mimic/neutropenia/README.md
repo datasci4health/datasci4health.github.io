@@ -218,12 +218,29 @@ alter table neutro_admissions
   add unique index neutro_admissions_idx04 (hadm_id);
 ~~~
 
+Creating a string field (`deathtime_str`) counterpart for the `deathtime` field (as date fields do not accept characters like ?):
+
+~~~sql
+alter table neutro_admissions
+add deathtime_str varchar(255);
+
+update neutro_admissions
+set deathtime_str = cast(deathtime as char);
+~~~
+
+Converting null fields in ?, as the Orange workflow uses ? to indicate missing values:
+
+~~~sql
+update neutro_admissions
+set deathtime_str = '?' where deathtime_str is null;
+~~~
+
 Exporting the table to CSV:
 
 ~~~sql
 select 'subject_id', 'hadm_id', 'admittime', 'dischtime', 'deathtime', 'admission_type', 'marital_status', 'race'
 union all
-select subject_id, hadm_id, admittime, dischtime, deathtime, admission_type, marital_status, race
+select subject_id, hadm_id, admittime, dischtime, deathtime_str, admission_type, marital_status, race
 from neutro_admissions
 into outfile 'neutro_admissions.csv'
 fields optionally enclosed by '"' 
@@ -610,7 +627,7 @@ set valuenum_str = cast(valuenum as char);
 
 Converting null fields in ?, as the Orange workflow uses ? to indicate missing values:
 
-~~~
+~~~sql
 update neutro_labevents
 set valuenum_str = '?' where valuenum_str is null;
 ~~~
