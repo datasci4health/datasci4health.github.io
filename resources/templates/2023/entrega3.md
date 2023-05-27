@@ -21,8 +21,11 @@ De maneira análoga às entregas E1 e E2, a atualização do repositório GitHub
 * 25/06 - Data limite para pull request do repositório do projeto (será considerada a última versão até essa data e horário).
 * 27/06 (Terça) - Apresentação de grupos - Parte 1. A partir das 16:00 
 * 29/06 (Quinta) - Apresentação de grupos - Parte 2. A partir das 16:00 
-(Presença obrigatória de todos os membros do grupo na data de apresentação. Requerida presença de todos os alunos da disciplina nas datas das apresentações). 
 * 30/06 - Entrega da avaliação por pares (vide outras informações abaixo).
+
+Requerida presença de todos os alunos da disciplina nas datas das apresentações.
+Presença obrigatória de todos os membros do grupo na data de apresentação. 
+
 
 ## Instruções para a Apresentação
 
@@ -117,7 +120,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 ## Slides da Apresentação Final
 > Link para slides da apresentação final do projeto.
 
-# Introdução e Referenciais de Teóricos
+# Introdução e Referenciais Teóricos
 > Contextualização do projeto
 >
 > Caracterização do problema
