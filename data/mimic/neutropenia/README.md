@@ -256,7 +256,8 @@ Retrieving all diagnoses of the selected admissions besides those indicating Neu
 drop table if exists neutro_diagnoses;
 
 create table neutro_diagnoses as
-select d.*, i.long_title from diagnoses_icd d, neutro_admissions n, d_icd_diagnoses i
+select d.*, i.long_title
+from diagnoses_icd d, neutro_admissions n, d_icd_diagnoses i
 where d.subject_id = n.subject_id and d.hadm_id = n.hadm_id and d.icd_code = i.icd_code and d.icd_version = i.icd_version;
 
 alter table neutro_diagnoses 
@@ -607,10 +608,42 @@ select l.* from labevents l, neutro_admissions n
 where l.subject_id = n.subject_id and l.hadm_id = n.hadm_id;
 ~~~
 
+## LOINC of the selected lab exams (`neutro_itemid_loinc`)
+
+Codes of items and respective LOINC with descriptions for the selected exams.
+
+Filtering those items present in the exams of the selected patients/admissions:
+
+~~~sql
+create view neutro_items as
+select distinct itemid from neutro_labevents order by itemid;
+~~~
+
+Creating a lab item mapping table. Items are mapped to LOINC using the `lab_itemid_to_loinc` table. Columns mapped are indicated with the `_map` suffix as they showed inconsistencies (the priority in the `label` and `fluid` columns is those without `_map` suffix):
+
 ~~~sql
 create table neutro_itemid_loinc as
-select ll.* from lab_itemid_to_loinc ll, neutro_items ni
-where ll.itemid = ni.itemid;
+select ni.itemid, dl.label, ll.label as label_map, dl.fluid,
+ll.fluid as fluid_map, dl.category, ll.valueuom as valueuom_map,
+ll.loinc as loinc_map, ll.loinc_version as loinc_version_map,
+ll.notes as notes_map
+from d_labitems dl, lab_itemid_to_loinc ll, neutro_items ni
+where dl.itemid = ni.itemid and ll.itemid = ni.itemid;
+~~~
+
+Exporting:
+
+~~~sql
+select 'itemid', 'label', 'label_map', 'fluid', 'fluid_map', 'category',
+'valueuom_map', 'loinc_map', 'loinc_version_map', 'notes_map'
+union all
+select itemid, label, label_map, fluid, fluid_map, category, valueuom_map,
+loinc_map, loinc_version_map, notes_map
+from neutro_itemid_loinc
+into outfile 'neutro_itemid_loinc.csv'
+fields optionally enclosed by '"' 
+terminated by ',' 
+lines terminated by '\n';
 ~~~
 
 ### Replacing null by interrogation (Orange compatibility)
@@ -655,21 +688,6 @@ union all
 select subject_id, hadm_id, labevent_id, specimen_id, itemid, charttime, value, valuenum_str, valueuom, ref_range_lower, ref_range_upper, flag, priority, comments
 from neutro_labevents
 into outfile 'neutro_labevents.csv'
-fields optionally enclosed by '"' 
-terminated by ',' 
-lines terminated by '\n';
-~~~
-
-## LOINC of the selected lab exams (`neutro_itemid_loinc`)
-
-Codes of items and respective LOINC with descriptions for the selected exams:
-
-~~~sql
-select 'itemid', 'label', 'fluid', 'category', 'valueuom', 'loinc', 'loinc_version', 'notes'
-union all
-select itemid, label, fluid, category, valueuom, loinc, loinc_version, notes
-from neutro_itemid_loinc
-into outfile 'neutro_itemid_loinc.csv'
 fields optionally enclosed by '"' 
 terminated by ',' 
 lines terminated by '\n';
