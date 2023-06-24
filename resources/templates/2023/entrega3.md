@@ -18,7 +18,7 @@ De maneira análoga às entregas E1 e E2, a atualização do repositório GitHub
 
 ## Datas Importantes
 
-* 25/06 - Data limite para pull request do repositório do projeto (será considerada a última versão até essa data e horário).
+* 26/06 - Data limite para pull request do repositório do projeto (será considerada a última versão até essa data e horário).
 * 27/06 (Terça) - Apresentação de grupos - Parte 1. A partir das 16:00 
 * 29/06 (Quinta) - Apresentação de grupos - Parte 2. A partir das 16:00 
 * 30/06 - Entrega da avaliação por pares (vide outras informações abaixo).
