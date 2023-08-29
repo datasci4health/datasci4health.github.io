@@ -4,6 +4,10 @@
 
 ## Guia de Instalação
 
+Este vídeo dá uma visão geral sobre o Orange e sua instalação:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MY7oIiLt71Y?si=nRzupaK34RZVSMkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Windows
 
 Baixe e execute o instalador padrão. Observe duas coisas fundamentais:
@@ -20,6 +24,14 @@ No Linux eu segui a instalação da versão PIP do site:
 pip3 install PyQt5 PyQtWebEngine
 pip3 install orange3
 ~~~
+
+Para executar, eu também segui as orientações do site:
+
+~~~
+python3 -m Orange.canvas
+~~~
+
+#### Tratando problemas no Linux
 
 Não tive mais problemas na versão recente. Apenas se você tiver problemas nesta instalação você pode seguir a linha:
 
