@@ -5,3 +5,4 @@ Esta é uma disciplina que vem sendo desenvolvida desde 2018, ela é parte de um
 Páginas de edições anteriores:
 * [2021](history/2021.md)
 * [2022](history/2022.md)
+* [2023](history/2023.md)
