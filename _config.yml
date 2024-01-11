@@ -9,8 +9,8 @@ defaults:
     values:
       image:
         path: /assets/images/datasci4health-teaser.png
-        width: 1200
-        height: 627
+        width: 600
+        height: 600
 
 theme: minima
 
