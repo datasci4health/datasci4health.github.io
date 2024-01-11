@@ -1,5 +1,7 @@
 <h1>Edição 2024</h1>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AVrFoHwogAE?si=OmVlMT0HUYG3F4er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 A análise computacional de dados em saúde tem crescido em relevância e impacto não apenas pelo desenvolvimento de estratégias e algoritmos, como também pela crescente quantidade de dados disponíveis.
 Este curso tem base interdisciplinar e envolve professoras e professores de computação, engenharia elétrica, biologia e medicina. Ela acomodará diferentes trilhas de aprendizado, possibilitando a participação e interação de alunos de ciências exatas (e.g., computação, engenharias, matemática e estatística), biologia e saúde (e.g., medicina, enfermagem e farmácia). A disciplina terá a participação de professores colaboradores, que fazem parte do staff.
 
