@@ -1,4 +1,8 @@
-# Notebooks
+---
+layout: page
+title: Notebooks
+permalink: /notebooks/
+---
 
 Executando Notebooks via Binder
 

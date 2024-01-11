@@ -2,9 +2,22 @@ title: Ciência e Visualização de Dados em Saúde
 
 theme: minima
 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 header_pages:
  - faq.md
  - landing.md
  - tools.md
  - editions.md
  - notebooks.md
+
+minima:
+  # classic	           Default, light color scheme.
+  # dark	             Dark variant of the classic skin.
+  # auto	             Adaptive skin based on the default classic and dark skins.
+  # solarized-light	   Light variant of solarized color scheme.
+  # solarized-dark	   Dark variant of solarized color scheme.
+  # solarized	         Adaptive skin for solarized color scheme skins.
+  skin: classic

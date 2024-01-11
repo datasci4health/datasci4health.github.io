@@ -1,4 +1,8 @@
-# FAQ
+---
+layout: page
+title: FAQ
+permalink: /faq/
+---
 
 **A disciplina será presencial?**
 

@@ -1,4 +1,8 @@
-# Orientações Iniciais
+---
+layout: page
+title: Orientações Iniciais
+permalink: /landing/
+---
 
 ## Local e Horários
 
