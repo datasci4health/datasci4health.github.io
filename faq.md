@@ -12,6 +12,10 @@ Sim. As aulas serão terças e quintas das 8h às 10h. Local a ser definido.
 
 Infelizmente, não é possível. A disciplina é organizada para a realização de trabalhos e dinâmicas em grupo em sala.
 
+**Como proceder se me matricular no período de alteração de matrícula?**
+
+Se o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que em 2024 acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração. Se você não for aluno de computação, biologia ou saúde, é importante que me escreva um e-mail antes de se matricular.
+
 **Sou aluno da disciplina, como entro no Ambiente Virtual Google Classroom?**
 
 A sala virtual fica no Google Classroom (em breve publicaremos o link). Você deverá fazer login com seu email Unicamp (email @dac.unicamp.br) para acessar. Se você é um aluno especial, deve buscar acesso a este e-mail junto à DAC.

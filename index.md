@@ -57,3 +57,5 @@ A disciplina é oferecida pelo Instituto de Computação (IC).
 As aulas serão presenciais terças e quintas das 8h às 10h. Local a ser definido.
 
 Alunos dos cursos de Biologia e Saúde são bem vindos. Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina.
+
+Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no FAQ).
