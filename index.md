@@ -59,3 +59,8 @@ As aulas serão presenciais terças e quintas das 8h às 10h. Local a ser defini
 Alunos dos cursos de Biologia e Saúde são bem vindos. Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina.
 
 Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no FAQ).
+
+# Youtube
+As aulas da disciplina são gravadas e os vídeos de 2024 são postados nesta playlist: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=M3lEUyaTPbRwRX97&amp;list=PL3JRjVnXiTBYh6TXRmCwfG_9UFfxRIX_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
