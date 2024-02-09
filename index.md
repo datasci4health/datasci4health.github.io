@@ -54,4 +54,6 @@ A disciplina é oferecida pelo Instituto de Computação (IC).
   * pós-graduação: MO413A - Ciência e Visualização de Dados em Saúde
   * graduação: MC936A - Tópicos em Sistemas de Informação
 
+As aulas serão presenciais terças e quintas das 8h às 10h. Local a ser definido.
+
 Alunos dos cursos de Biologia e Saúde são bem vindos. Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina.
