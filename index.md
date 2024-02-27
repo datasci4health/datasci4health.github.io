@@ -6,6 +6,12 @@ layout: home
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AVrFoHwogAE?si=OmVlMT0HUYG3F4er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<hr>
+
+### [Veja Orientações iniciais aqui](landing.md)
+
+<hr>
+
 A análise computacional de dados em saúde tem crescido em relevância e impacto não apenas pelo desenvolvimento de estratégias e algoritmos, como também pela crescente quantidade de dados disponíveis.
 Este curso tem base interdisciplinar e envolve professoras e professores de computação, engenharia elétrica, biologia e medicina. Ela acomodará diferentes trilhas de aprendizado, possibilitando a participação e interação de alunos de ciências exatas (e.g., computação, engenharias, matemática e estatística), biologia e saúde (e.g., medicina, enfermagem e farmácia). A disciplina terá a participação de professores colaboradores, que fazem parte do staff.
 
@@ -54,11 +60,11 @@ A disciplina é oferecida pelo Instituto de Computação (IC).
   * pós-graduação: MO413A - Ciência e Visualização de Dados em Saúde
   * graduação: MC936A - Tópicos em Sistemas de Informação
 
-As aulas serão presenciais terças e quintas das 8h às 10h. Local a ser definido.
+As aulas serão presenciais terças e quintas das 8h às 10h. Veja detalhes de cronograma e local na página de [Orientações Iniciais](landing.md).
 
 Alunos dos cursos de Biologia e Saúde são bem vindos. Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina.
 
-Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no FAQ).
+Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no [FAQ](faq.md)).
 
 # Youtube
 As aulas da disciplina são gravadas e os vídeos de 2024 são postados nesta playlist: 
