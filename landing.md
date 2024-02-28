@@ -20,7 +20,7 @@ A entrada do prédio é indicada na foto a seguir (dentro do prédio a sala é i
 
 ## Cronograma de Aulas
 
-O calendário de aulas da Unicamp inicia 28/02. Entretanto, como esta disciplina abrange alunos de cursos diferentes, além de alunos que entrarão na alteração de matrícula, a aula de abertura oficial da disciplina será na quinta-feira (07/03). Antes disso será oferecido um material de alinhamento e aquecimento tanto no [Google Classroom](https://classroom.google.com/c/NjU2Njk1MDEwNDUx) quanto na página de [Primeiros Passos](start.md). 
+O calendário de aulas da Unicamp inicia 28/02. Entretanto, como esta disciplina abrange alunos de cursos diferentes, além de alunos que entrarão na alteração de matrícula, a aula de abertura oficial da disciplina será na quinta-feira 07/03. Antes disso, será oferecido um material de alinhamento e aquecimento tanto no [Google Classroom](https://classroom.google.com/c/NjU2Njk1MDEwNDUx) quanto na página de [Primeiros Passos](start.md). 
 
 No dia 29/02 às 8am o professor André estará disponível na sala 351 para aqueles alunos que queiram tirar dúvidas sobre a disciplina. Mesmo aqueles que ainda não estão matriculados e queiram entrar na alteração de matrícula ou querem se candidatar para participar como ouvintes.
 
