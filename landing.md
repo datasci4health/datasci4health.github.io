@@ -14,7 +14,7 @@ O Instituto de Computação possui mais de um prédio. O IC 3/3.5 fica logo no i
 
 Este é o endereço no [Google Maps](https://maps.app.goo.gl/uhgVRw3zTV51Z7Mm8).
 
-A entrada do prédio é indicada na foto a seguir (dentro do prédio a sala é identificada como 51):
+A entrada do prédio é indicada na foto a seguir:
 
 ![Entrada do IC 3/3.5](landing/2024/mapa-ic3.png)
 
