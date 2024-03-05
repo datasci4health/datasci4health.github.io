@@ -6,7 +6,7 @@ permalink: /dynamics/
 
 ## DataGraphia
 
-Catalogando e Analisando Bases em Saúde. [Veja detalhes aqui](datagraphia.md)
+Catalogando e Analisando Bases em Saúde. [Veja detalhes aqui](/dynamics/datagraphia/)
 
 ## Notebooks
 
