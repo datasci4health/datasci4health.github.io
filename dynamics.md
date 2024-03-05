@@ -6,8 +6,7 @@ permalink: /dynamics/
 
 ## DataGraphia
 
-* [Catálogo da Datagrfia 2024](https://docs.google.com/presentation/d/1IN1PcAOksZj0FMXenZxaTlDea8LYk8t2CX2zEyLHFCU/edit?usp=sharing)
-* [Instruções da Dinâmica 2024](https://docs.google.com/presentation/d/1qF2ho1ySlPOlwViyV4fqYghydje0cx8JtAzZ3kMuQj8/edit?usp=sharing)
+Catalogando e Analisando Bases em Saúde. [Veja detalhes aqui](datagraphia.md)
 
 ## Notebooks
 

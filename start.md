@@ -6,6 +6,4 @@ permalink: /start/
 
 ## Começando na Disciplina
 
-Esta página apresentará todas as orientações iniciais e material de alinhamento e aquecimento que serão postadas no Google Classroom, até que todos tenham acesso ao mesmo.
-
-Em breve será postado material aqui.
+Há uma tarefa a ser realizada até 12/03 chamada DataGraphia. [Veja detalhes aqui](/dynamics/datagraphia/)
