@@ -21,9 +21,10 @@ plugins:
 header_pages:
  - faq.md
  - landing.md
+ - data.md
  - tools.md
  - editions.md
- - notebooks.md
+ - dynamics.md
 
 minima:
   # classic	           Default, light color scheme.
