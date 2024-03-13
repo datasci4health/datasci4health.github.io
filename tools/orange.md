@@ -1,4 +1,8 @@
-# Orange Data Mining
+---
+layout: page
+title: Orange Data Mining
+permalink: /tools/orange/
+---
 
 [Orange Web Site](https://orangedatamining.com/)
 

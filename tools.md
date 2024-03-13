@@ -4,4 +4,4 @@ title: Tools
 permalink: /tools/
 ---
 
-## [Orange Data Mining](tools/orange.md)
+## [Orange Data Mining](/tools/orange/)

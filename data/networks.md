@@ -1,4 +1,8 @@
-# Network Data
+---
+layout: page
+title: Network Data
+permalink: /data/network/
+---
 
 ## Simple Topology
 
