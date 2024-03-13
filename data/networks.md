@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Network Data
-permalink: /data/network/
+permalink: /data/networks/
 ---
 
 ## Simple Topology

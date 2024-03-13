@@ -4,4 +4,4 @@ title: Data
 permalink: /data/
 ---
 
-## [Networks](dat/networks.md)
+## [Networks](/data/networks/)

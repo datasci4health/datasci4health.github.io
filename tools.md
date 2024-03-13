@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tools
-permalink: /tools/
+permalink: /tools/orange/
 ---
 
 ## [Orange Data Mining](/tools/orange/)
