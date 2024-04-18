@@ -1,0 +1,154 @@
+ID,Gene.symbol,Gene.title,-log10(Pvalue),log2(fold change)
+7898623,UBXN10,UBX domain protein 10,5.923,1.132
+7902074,LEPROT,leptin receptor overlapping transcript///leptin receptor,5.001,1.314
+7902074,LEPR,leptin receptor overlapping transcript///leptin receptor,5.001,1.314
+7903308,TRMT13,tRNA methyltransferase 13 homolog,5.023,0.988
+7906085,LMNA,lamin A/C,3.81,-1.148
+7906377,MNDA,myeloid cell nuclear differentiation antigen,4.039,-1.352
+7906757,FCGR2A,Fc fragment of IgG receptor IIa,4.648,1.322
+7908459,CFH,complement factor H,7.298,1.954
+7911301,PGBD2,piggyBac transposable element derived 2,3.943,0.62
+7913450,HSPG2,heparan sulfate proteoglycan 2,6.544,1.23
+7915504,ELOVL1,ELOVL fatty acid elongase 1,4.089,0.628
+7916432,DHCR24,24-dehydrocholesterol reductase,8.322,2.012
+7916986,NEGR1,neuronal growth regulator 1,4.177,-1.234
+7917359,ZNHIT6,zinc finger HIT-type containing 6,3.703,0.764
+7917954,FRRS1,ferric chelate reductase 1,3.845,0.892
+7918323,SORT1,sortilin 1,5.45,1.162
+7918457,KCNA3,potassium voltage-gated channel subfamily A member 3,7.228,-2.342
+7918857,TSPAN2,tetraspanin 2,7.734,1.614
+7919751,MCL1,BCL2 family apoptosis regulator,3.723,-1.036
+7922137,NME7,NME/NM23 family member 7,4.038,0.564
+7922219,SELL,selectin L,5.381,-1.346
+7922268,KIFAP3,kinesin associated protein 3,3.693,0.566
+7922717,RGS16,regulator of G-protein signaling 16,5.369,-0.906
+7924817,PRO2012,uncharacterized protein PRO2012,3.655,0.814
+7925954,NET1,neuroepithelial cell transforming 1,3.897,0.92
+7926223,CAMK1D,calcium/calmodulin dependent protein kinase ID,3.866,0.938
+7926506,CACNB2,calcium voltage-gated channel auxiliary subunit beta 2,4.63,1.034
+7929574,DNTT,DNA nucleotidylexotransferase,3.712,-1.152
+7929816,SCD,stearoyl-CoA desaturase,5.039,1.326
+7932285,FAM188A,family with sequence similarity 188 member A,3.986,0.738
+7932407,ST8SIA6,"ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 6",3.962,0.972
+7935270,BLNK,B-cell linker,7.011,-1.478
+7936463,ABLIM1,actin binding LIM protein 1,3.878,0.824
+7937335,IFITM1,interferon induced transmembrane protein 1,3.813,1.048
+7938485,MICAL2,"microtubule associated monooxygenase, calponin and LIM domain containing 2",3.754,0.87
+7938890,PRMT3,protein arginine methyltransferase 3,3.648,0.698
+7940191,STX3,syntaxin 3,3.702,-0.84
+7948364,MPEG1,macrophage expressed 1,4.706,-2.01
+7949532,FOSL1,"FOS like 1, AP-1 transcription factor subunit",4.071,-0.848
+7953835,KLRG1,killer cell lectin like receptor G1,6.218,1.432
+7954090,EMP1,epithelial membrane protein 1,3.647,-1.958
+7955217,SPATS2,spermatogenesis associated serine rich 2,4.032,0.814
+7955578,GRASP,general receptor for phosphoinositides 1 associated scaffold protein,3.919,-1.204
+7957260,GLIPR1,GLI pathogenesis related 1,5.847,-1.624
+7957551,SOCS2,suppressor of cytokine signaling 2,4.066,1.178
+7961365,MANSC1,MANSC domain containing 1,3.587,1.236
+7962212,PKP2,plakophilin 2,4.364,-1.338
+7967322,HCAR3,hydroxycarboxylic acid receptor 3,3.612,-1.524
+7968789,RGCC,regulator of cell cycle,3.888,-1.542
+7969228,ALG11,"ALG11, alpha-1,2-mannosyltransferase///UTP14, small subunit processome component homolog C (S. cerevisiae)",3.622,0.724
+7969228,UTP14C,"ALG11, alpha-1,2-mannosyltransferase///UTP14, small subunit processome component homolog C (S. cerevisiae)",3.622,0.724
+7970737,FLT3,fms related tyrosine kinase 3,4.156,-1.67
+7971731,ATP7B,ATPase copper transporting beta,5.235,1.044
+7972021,TBC1D4,TBC1 domain family member 4,3.854,0.604
+7972674,TEX30,testis expressed 30,5.295,0.844
+7972682,KDELC1,KDEL motif containing 1,3.737,0.848
+7977319,PLD4,phospholipase D family member 4,5.254,-1.1
+7978407,PRKD1,protein kinase D1,3.888,-1.066
+7978739,TRAPPC6B,trafficking protein particle complex 6B,4.533,0.762
+7982154,HERC2P9,hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,4.843,1.104
+7982154,HERC2P2,hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,4.843,1.104
+7982154,HERC2P3,hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,4.843,1.104
+7982154,HERC2,hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,4.843,1.104
+7983638,DTWD1,DTW domain containing 1,3.687,0.94
+7983940,FAM63B,family with sequence similarity 63 member B,3.567,0.78
+7986569,HERC2P4,hect domain and RLD 2 pseudogene 4///hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,5.072,1.044
+7988672,HDC,histidine decarboxylase,4.766,2.074
+7997712,IRF8,interferon regulatory factor 8,4.98,-2.834
+8000184,IGSF6,immunoglobulin superfamily member 6,4.202,-1.794
+8002381,COG4,component of oligomeric golgi complex 4,3.615,0.724
+8004691,TMEM88,transmembrane protein 88,5.606,-1.216
+8005475,TRIM16L,tripartite motif containing 16-like///tripartite motif containing 16,4.01,0.826
+8005475,TRIM16,tripartite motif containing 16-like///tripartite motif containing 16,4.01,0.826
+8007921,MYL4,myosin light chain 4,3.827,1.088
+8010050,UBALD2,UBA like domain containing 2,3.681,-0.572
+8012475,MYH10,"myosin, heavy chain 10, non-muscle",3.769,0.73
+8012918,TVP23C-CDRT4,TVP23C-CDRT4 readthrough///CMT1A duplicated region transcript 4,5.221,0.904
+8012918,CDRT4,TVP23C-CDRT4 readthrough///CMT1A duplicated region transcript 4,5.221,0.904
+8014316,CCL5,C-C motif chemokine ligand 5,4.041,1.886
+8017186,HEATR6,HEAT repeat containing 6,4.074,0.834
+8018114,SDK2,sidekick cell adhesion molecule 2,4.68,-1.216
+8021301,RAB27B,"RAB27B, member RAS oncogene family",3.679,1.646
+8022283,PIEZO2,piezo type mechanosensitive ion channel component 2,4.848,1.802
+8022674,CDH2,cadherin 2,6.619,-1.616
+8023220,SMAD7,SMAD family member 7,3.863,-1.676
+8024056,ELANE,"elastase, neutrophil expressed",4.807,-2.452
+8024228,MIDN,midnolin,3.645,-0.8
+8024518,ZNF555,zinc finger protein 555,4.026,1.214
+8027254,ZNF90,zinc finger protein 90,4.422,0.598
+8028652,ZFP36,ZFP36 ring finger protein,6.318,-1.77
+8029465,BCL3,B-cell CLL/lymphoma 3,4.393,-1.158
+8030954,ZNF137P,"zinc finger protein 137, pseudogene",4.274,0.738
+8038981,ZNF611,zinc finger protein 611,3.621,0.758
+8040103,ID2,"inhibitor of DNA binding 2, HLH protein",5.723,-2.038
+8041781,EPAS1,endothelial PAS domain protein 1,6.439,1.558
+8045539,KYNU,kynureninase,5.941,2.13
+8047403,CASP10,caspase 10,4.481,1.048
+8050894,KIF3C,kinesin family member 3C,3.724,0.596
+8052233,CLHC1,clathrin heavy chain linker domain containing 1,3.786,0.75
+8056491,SCN9A,sodium voltage-gated channel alpha subunit 9,9.761,1.924
+8057677,SLC40A1,solute carrier family 40 member 1,4.002,0.914
+8058670,IKZF2,IKAROS family zinc finger 2,4.335,0.99
+8065569,BCL2L1,BCL2 like 1,3.824,0.868
+8071061,TPTEP1,transmembrane phosphatase with tensin homology pseudogene 1,3.807,-1.3
+8072744,NCF4,neutrophil cytosolic factor 4,3.567,1.188
+8073522,SREBF2,sterol regulatory element binding transcription factor 2,3.595,0.628
+8073960,PIM3,"Pim-3 proto-oncogene, serine/threonine kinase",3.957,-0.626
+8079753,DAG1,dystroglycan 1,3.968,0.654
+8083876,SKIL,SKI-like proto-oncogene,3.751,-2.238
+8085797,THRB,thyroid hormone receptor beta,4.877,1.256
+8089448,DPPA4,developmental pluripotency associated 4,3.91,0.824
+8092691,BCL6,B-cell CLL/lymphoma 6,4.006,-1.47
+8094638,WDR19,WD repeat domain 19,4.235,0.79
+8095343,STAP1,signal transducing adaptor family member 1,4.805,1.41
+8095819,FAM47E-STBD1,FAM47E-STBD1 readthrough///family with sequence similarity 47 member E,3.855,1.202
+8095819,FAM47E,FAM47E-STBD1 readthrough///family with sequence similarity 47 member E,3.855,1.202
+8096361,HERC5,HECT and RLD domain containing E3 ubiquitin protein ligase 5,3.606,-0.69
+8098060,RXFP1,relaxin/insulin like family peptide receptor 1,7.813,2.132
+8098195,MSMO1,methylsterol monooxygenase 1,7.903,2.178
+8099476,PROM1,prominin 1,5.107,-1.434
+8100994,CXCL2,C-X-C motif chemokine ligand 2,4.283,-1.756
+8103226,TMEM154,transmembrane protein 154,4.411,1.118
+8103922,CASP3,caspase 3,5.347,1.054
+8106280,HMGCR,3-hydroxy-3-methylglutaryl-CoA reductase,3.739,1.016
+8113073,ARRDC3,arrestin domain containing 3,4.199,1.386
+8114010,IRF1,interferon regulatory factor 1,4.647,-1.31
+8116835,GCNT2,"glucosaminyl (N-acetyl) transferase 2, I-branching enzyme (I blood group)",3.953,1.348
+8117655,ZSCAN9,zinc finger and SCAN domain containing 9,4.048,0.718
+8121814,NKAIN2,Na+/K+ transporting ATPase interacting 2,4.636,0.75
+8122265,TNFAIP3,TNF alpha induced protein 3,4.487,-1.658
+8123744,F13A1,coagulation factor XIII A chain,4.45,-2.24
+8124848,IER3,immediate early response 3,5.036,-1.838
+8126153,KCNK5,potassium two pore domain channel subfamily K member 5,4.389,0.914
+8134219,VPS50,"VPS50, EARP/GARPII complex subunit",4.546,1.038
+8138231,THSD7A,thrombospondin type 1 domain containing 7A,3.619,-0.934
+8140864,CYP51A1,cytochrome P450 family 51 subfamily A member 1,3.861,0.74
+8148280,SQLE,squalene epoxidase,4.314,0.774
+8148448,KHDRBS3,"KH RNA binding domain containing, signal transduction associated 3",4.689,-0.888
+8148572,LY6E,"lymphocyte antigen 6 complex, locus E",3.759,0.6
+8149071,ANGPT2,angiopoietin 2,4.341,1.55
+8150439,ANK1,ankyrin 1,4.565,0.808
+8152215,KLF10,Kruppel like factor 10,6.173,-1.546
+8152962,LRRC6,leucine rich repeat containing 6,3.617,0.736
+8155754,MAMDC2,MAM domain containing 2,7.562,1.67
+8156706,TMOD1,tropomodulin 1,3.857,0.892
+8161270,ANKRD18A,ankyrin repeat domain 18A,4.519,-1.232
+8162455,NINJ1,ninjurin 1,6.828,-1.056
+8163505,HDHD3,haloacid dehalogenase like hydrolase domain containing 3,3.786,0.688
+8168472,ATP7A,ATPase copper transporting alpha,4.777,0.806
+8168531,GPR174,G protein-coupled receptor 174,4.021,1.082
+8170187,CD40LG,CD40 ligand,4.334,1.664
+8170390,IDS,iduronate 2-sulfatase,4.055,-1.092
+8174207,NXF3,nuclear RNA export factor 3,3.962,1.196
