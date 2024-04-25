@@ -1,4 +1,4 @@
-# T02 - Integrando Redes
+## T02 - Integrando Redes
 
 Dado o a lista de 2.000 genes diferencialmente expressos extraídos do artigo:
 
