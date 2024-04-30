@@ -1,0 +1,143 @@
+DISEASE_ID,DISEASE_NAME
+ORPHA:97685,17q11 microdeletion syndrome
+ORPHA:158057,Acquired hemophagocytic lymphohistiocytosis associated with malignant disease
+ORPHA:75564,Acquired idiopathic sideroblastic anemia
+ORPHA:514,Acute monoblastic/monocytic leukemia
+ORPHA:86843,Acute panmyelosis with myelofibrosis
+OMIM:612376,Acute promyelocytic leukemia
+OMIM:619824,"Agammaglobulinemia 8B, autosomal recessive"
+ORPHA:98850,Aggressive systemic mastocytosis
+ORPHA:51,Aicardi-Goutières syndrome
+ORPHA:231401,Alpha-thalassemia-myelodysplastic syndrome
+OMIM:619151,"AMED syndrome, digenic"
+ORPHA:2585,Ataxia-pancytopenia syndrome
+OMIM:159550,Ataxia-Pancytopenia syndrome
+OMIM:208900,Ataxia-telangiectasia
+ORPHA:90033,"Autoimmune hemolytic anemia, warm type"
+ORPHA:486,Autosomal dominant severe congenital neutropenia
+OMIM:109543,"B-CELL MALIGNANCY, LOW-GRADE"
+ORPHA:125,Bloom syndrome
+OMIM:210900,Bloom syndrome
+OMIM:620044,Bone marrow failure and diabetes mellitus syndrome
+OMIM:617052,Bone marrow failure syndrome 3
+ORPHA:90280,Chilblain lupus
+ORPHA:3474,CHIME syndrome
+OMIM:280000,CHIME syndrome
+OMIM:616604,"Chromosome 14q32 duplication syndrome, 700-kb"
+ORPHA:521,Chronic myeloid leukemia
+ORPHA:70591,Chronic thromboembolic pulmonary hypertension
+ORPHA:77293,Chronic visceral acid sphingomyelinase deficiency
+ORPHA:331,Congenital factor XIII deficiency
+ORPHA:1546,Cryptococcosis
+ORPHA:79140,Cutaneous neuroendocrine carcinoma
+ORPHA:3226,Deafness-lymphedema-leukemia syndrome
+ORPHA:124,Diamond-Blackfan anemia
+ORPHA:79456,Diffuse cutaneous mastocytosis
+OMIM:223350,Dohle bodies and leukemia
+ORPHA:870,Down syndrome
+OMIM:190685,Down syndrome
+OMIM:223370,Dubowitz syndrome
+ORPHA:235,Dubowitz syndrome
+OMIM:305000,"Dyskeratosis congenita, X-linked"
+ORPHA:289,Ellis Van Creveld syndrome
+OMIM:133180,"Erythroleukemia, familial, susceptibility to"
+ORPHA:3318,Essential thrombocythemia
+ORPHA:71493,Familial thrombocytosis
+OMIM:227650,Fanconi anemia
+OMIM:227645,"Fanconi anemia, complementation group C"
+OMIM:605724,"Fanconi anemia, complementation group D1"
+OMIM:227646,"Fanconi anemia, complementation group D2"
+OMIM:600901,"Fanconi anemia, complementation group E"
+OMIM:614082,"Fanconi anemia, complementation group G"
+OMIM:610832,"Fanconi anemia, complementation group N"
+OMIM:616435,"Fanconi anemia, complementation group T"
+ORPHA:157991,Generalized eruptive histiocytosis
+OMIM:613029,Glioma susceptibility 3
+OMIM:607685,"Hypereosinophilic syndrome, idiopathic"
+ORPHA:3260,Idiopathic hypereosinophilic syndrome
+OMIM:614172,Immunodeficiency 21
+OMIM:616005,Immunodeficiency 36
+OMIM:616873,"Immunodeficiency, common variable, 13"
+OMIM:607785,Juvenile myelomonocytic leukemia
+ORPHA:158000,Juvenile xanthogranuloma
+ORPHA:137605,Legius syndrome
+OMIM:613065,"Leukemia, acute lymphocytic, susceptibility to, 1"
+OMIM:151380,"Leukemia, acute monocytic"
+OMIM:246470,"Leukemia, acute myelocytic, with polyposis coli and colon cancer"
+OMIM:601626,"Leukemia, acute myeloid"
+OMIM:308960,"Leukemia, acute, ?x-linked"
+OMIM:151400,"Leukemia, chronic lymphocytic"
+OMIM:608232,"Leukemia, chronic myeloid"
+ORPHA:2968,Leukocyte adhesion deficiency
+ORPHA:524,Li-Fraumeni syndrome
+OMIM:151623,Li-Fraumeni syndrome
+OMIM:606593,LIG4 syndrome
+ORPHA:99812,LIG4 syndrome
+OMIM:614038,"Lymphedema, primary, with myelodysplasia"
+OMIM:247640,"Lymphoblastic leukemia, acute, with lymphomatous features"
+OMIM:153600,"Macroglobulinemia, Waldenstrom, somatic"
+OMIM:602501,"Megalencephaly-capillary malformation-polymicrogyria syndrome, somatic"
+ORPHA:99646,Metaphyseal chondromatosis with D-2-hydroxyglutaric aciduria
+ORPHA:2526,Microcephaly-lymphedema-chorioretinopathy syndrome
+OMIM:276300,Mismatch repair cancer syndrome 1
+OMIM:619096,Mismatch repair cancer syndrome 2
+OMIM:619041,Monosomy 7 myelodysplasia and leukemia syndrome 2
+ORPHA:1052,Mosaic variegated aneuploidy syndrome
+OMIM:257300,Mosaic variegated aneuploidy syndrome 1
+OMIM:600080,"Myelocytic leukemia-like syndrome, familial, chronic"
+OMIM:252270,Myelodysplasia and leukemia syndrome with monosomy 7
+ORPHA:86841,Myelodysplastic syndrome associated with isolated del(5q) chromosome abnormality
+OMIM:254450,"Myelofibrosis with myeloid metaplasia, somatic"
+OMIM:254700,"Myeloproliferative disease, autosomal recessive"
+OMIM:131440,"Myeloproliferative disorder, chronic, with eosinophilia"
+OMIM:159595,"Myeloproliferative syndrome, transient"
+OMIM:616871,"Myeloproliferative/lymphoproliferative neoplasms, familial (multiple types), susceptibility to"
+OMIM:310465,N syndrome
+ORPHA:2770,Nasu-Hakola disease
+ORPHA:636,Neurofibromatosis type 1
+OMIM:607847,"Neutropenia, nonimmune chronic idiopathic, of adults"
+OMIM:610738,"Neutropenia, severe congenital 3, autosomal recessive"
+OMIM:202700,"Neutropenia, severe congenital, 1, autosomal dominant"
+ORPHA:647,Nijmegen breakage syndrome
+ORPHA:648,Noonan syndrome
+OMIM:163950,Noonan syndrome 1
+OMIM:605275,Noonan syndrome 2
+OMIM:609942,Noonan syndrome 3
+OMIM:613224,Noonan syndrome 6
+OMIM:613563,Noonan syndrome-like disorder with or without juvenile myelomonocytic leukemia
+ORPHA:443167,NUT midline carcinoma
+OMIM:601399,"Platelet disorder, familial, with associated myeloid malignancy"
+ORPHA:2911,Poland syndrome
+ORPHA:729,Polycythemia vera
+ORPHA:100924,Porphyria due to ALA dehydratase deficiency
+ORPHA:90026,Primary erythromelalgia
+OMIM:620400,"Pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 9"
+OMIM:614742,"Pulmonary fibrosis and/or bone marrow failure, telomere-related, 1"
+OMIM:614743,"Pulmonary fibrosis and/or bone marrow failure, telomere-related, 2"
+ORPHA:48104,Pyoderma gangrenosum
+OMIM:614470,"RAS-associated autoimmune lymphoproliferative syndrome type IV, somatic"
+ORPHA:86839,Refractory anemia with excess blasts
+ORPHA:790,Retinoblastoma
+OMIM:180200,RETINOBLASTOMA
+ORPHA:2909,Rothmund-Thomson syndrome
+ORPHA:221008,Rothmund-Thomson syndrome type 1
+ORPHA:221016,Rothmund-Thomson syndrome type 2
+OMIM:180849,Rubinstein-Taybi syndrome 1
+ORPHA:798,Schinzel-Giedion syndrome
+ORPHA:811,Shwachman-Diamond syndrome
+OMIM:260400,Shwachman-Diamond syndrome 1
+ORPHA:91139,Simple cryoglobulinemia
+ORPHA:821,Sotos syndrome
+OMIM:185050,Storage pool platelet disease
+ORPHA:3243,Sweet syndrome
+ORPHA:281090,Syndromic recessive X-linked ichthyosis
+ORPHA:98849,Systemic mastocytosis with associated hematologic neoplasm
+ORPHA:404443,Tatton-Brown-Rahman syndrome
+OMIM:619951,Tessadori-van Haaften neurodevelopmental syndrome 4
+OMIM:616216,Thrombocytopenia 5
+ORPHA:99867,Thymoma
+OMIM:619975,Tumor predisposition syndrome 2
+ORPHA:99818,Turcot syndrome with polyposis
+ORPHA:98827,Unclassified myelodysplastic syndrome
+ORPHA:33226,Waldenström macroglobulinemia
+ORPHA:906,Wiskott-Aldrich syndrome
