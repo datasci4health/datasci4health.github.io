@@ -4,4 +4,4 @@ Giustacchini, A., Thongjuea, S., Barkas, N., Woll, P. S., Povinelli, B. J., Boot
 
 * PMID: 29030909
 
-* GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97562
+* GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76312
