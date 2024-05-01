@@ -1,6 +1,6 @@
-# Article Microenvironmental
+# Article Progression
 
-RRadich, J. P., Dai, H., Mao, M., Oehler, V., Schelter, J., Druker, B., Sawyers, C., Shah, N., Stock, W., Willman, C. L., Friend, S., & Linsley, P. S. (2006). Gene expression changes associated with progression and response in chronic myeloid leukemia. Proceedings of the National Academy of Sciences of the United States of America, 103(8), 2794–2799. https://doi.org/10.1073/PNAS.0510423103
+Radich, J. P., Dai, H., Mao, M., Oehler, V., Schelter, J., Druker, B., Sawyers, C., Shah, N., Stock, W., Willman, C. L., Friend, S., & Linsley, P. S. (2006). Gene expression changes associated with progression and response in chronic myeloid leukemia. Proceedings of the National Academy of Sciences of the United States of America, 103(8), 2794–2799. https://doi.org/10.1073/PNAS.0510423103
 
 * PubMed PMID: [16477019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1413797/)
 

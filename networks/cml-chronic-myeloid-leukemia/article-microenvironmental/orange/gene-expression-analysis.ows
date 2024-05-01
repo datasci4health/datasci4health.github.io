@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="GEO Data Sets" qualified_name="orangecontrib.bioinformatics.widgets.OWGEODatasets.OWGEODatasets" project_name="Orange3-Bioinformatics" version="" title="GEO Data Sets" position="(150, 150)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(298.8888888888889, 46.66666666666666)" />
+		<node id="2" name="Differential Expression" qualified_name="orangecontrib.bioinformatics.widgets.OWDifferentialExpression.OWDifferentialExpression" project_name="Orange3-Bioinformatics" version="" title="Differential Expression" position="(299.0, 295.0)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(504.0, 272.7777777777778)" />
+		<node id="4" name="Volcano Plot" qualified_name="orangecontrib.bioinformatics.widgets.OWVolcanoPlot.OWVolcanoPlot" project_name="Orange3-Bioinformatics" version="" title="Volcano Plot" position="(500.6666666666666, 359.99999999999994)" />
+		<node id="5" name="GO Browser" qualified_name="orangecontrib.bioinformatics.widgets.OWGOBrowser.OWGOBrowser" project_name="Orange3-Bioinformatics" version="" title="GO Browser" position="(505.6666666666666, 54.44444444444446)" />
+		<node id="6" name="KEGG Pathways" qualified_name="orangecontrib.bioinformatics.widgets.OWKEGGPathwayBrowser.OWKEGGPathwayBrowser" project_name="Orange3-Bioinformatics" version="" title="KEGG Pathways" position="(506.22222222222206, 169.44444444444446)" />
+		<node id="7" name="Gene Set Enrichment" qualified_name="orangecontrib.bioinformatics.widgets.OWGeneSetEnrichment.OWGeneSets" project_name="Orange3-Bioinformatics" version="" title="Gene Set Enrichment" position="(506.7777777777776, 453.8888888888889)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Expression Data" sink_channel="Data" enabled="true" source_channel_id="gds_data" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Expression Data" sink_channel="Data" enabled="true" source_channel_id="gds_data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Selected genes" sink_channel="Data" enabled="true" sink_channel_id="data" />
+		<link id="3" source_node_id="2" sink_node_id="4" source_channel="Data subset" sink_channel="Data" enabled="true" sink_channel_id="data" />
+		<link id="4" source_node_id="2" sink_node_id="5" source_channel="Data subset" sink_channel="Cluster Data" enabled="true" />
+		<link id="5" source_node_id="2" sink_node_id="6" source_channel="Selected genes" sink_channel="Data" enabled="true" />
+		<link id="6" source_node_id="2" sink_node_id="7" source_channel="Selected genes" sink_channel="Data" enabled="true" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'gds_selection_states': {}, 'genes_as_rows': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x08\xf1\x00\x00\x01\x15\x00\x00\x0e\x81\x00\x00\x04\x03\x00\x00\x08\xf1\x00\x00\x01:\x00\x00\x0e\x81\x00\x00\x04\x03\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x08\xf1\x00\x00\x01:\x00\x00\x0e\x81\x00\x00\x04\x03', 'search_pattern': 'chronic myeloid leukemia', 'selected_gds': {'title': 'Bone marrow microenvironment effect on imatinib-treated chronic myeloid leukemia CD34+ cells', 'description': 'Analysis of CML cells treated with tyrosine kinase inhibitor (TKI) imatinib and BM mesenchymal stromal cells (MSCs). Coculture with MSCs protects the CML cells from TKI-mediated cell death and depletion. Results provide insight into microenvironmental protection of CML cells from TKI treatment.', 'type': 'Expression profiling by array', 'pubmed_id': '23299311', 'platform': 'GPL6244', 'platform_organism': 'Homo sapiens', 'platform_technology_type': 'in situ oligonucleotide', 'feature_count': '33297', 'sample_organism': 'Homo sapiens', 'sample_type': 'RNA', 'channel_count': '1', 'sample_count': '12', 'value_type': 'transformed count', 'reference_series': 'GSE43225', 'order': 'none', 'update_date': 'Mar 11 2014', 'subsets': [{'dataset_id': 'GDS4756', 'description': 'imatinib', 'sample_id': ['GSM1058966', 'GSM1058970', 'GSM1058974'], 'type': 'protocol', 'id': 'GDS4756_1'}, {'dataset_id': 'GDS4756', 'description': 'mesenchymal stromal cell', 'sample_id': ['GSM1058967', 'GSM1058971', 'GSM1058975'], 'type': 'protocol', 'id': 'GDS4756_2'}, {'dataset_id': 'GDS4756', 'description': 'combined (IM + MSC)', 'sample_id': ['GSM1058968', 'GSM1058972', 'GSM1058976'], 'type': 'protocol', 'id': 'GDS4756_3'}, {'dataset_id': 'GDS4756', 'description': 'untreated', 'sample_id': ['GSM1058965', 'GSM1058969', 'GSM1058973'], 'type': 'protocol', 'id': 'GDS4756_4'}, {'dataset_id': 'GDS4756', 'description': 'bone marrow', 'sample_id': ['GSM1058966', 'GSM1058965', 'GSM1058968', 'GSM1058967'], 'type': 'tissue', 'id': 'GDS4756_5'}, {'dataset_id': 'GDS4756', 'description': 'peripheral blood', 'sample_id': ['GSM1058970', 'GSM1058969', 'GSM1058972', 'GSM1058971', 'GSM1058974', 'GSM1058973', 'GSM1058976', 'GSM1058975'], 'type': 'tissue', 'id': 'GDS4756_6'}], 'taxid': '9606', 'genes': 26803, 'aggregation_function': 'mean', 'name': 'GDS4756', 'version': 1.0, 'instances': '12', 'variables': 26806, 'target': '', 'gene_as_attribute_name': True, 'gene_id_attribute': 'Entrez ID', 'url': 'http://file.biolab.si/geo/GDS4756.tab', 'compression': 'gz'}, 'splitter_settings': (b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x01\xea\x00\x00\x00\xd7\x01\x00\x00\x00\x07\x01\x00\x00\x00\x02', b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x01\xb5\x00\x00\x02\x10\x01\x00\x00\x00\x07\x01\x00\x00\x00\x01'), '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00U\x00\x00\x00\xa4\x00\x00\x07*\x00\x00\x03\x93\x00\x00\x00U\x00\x00\x00\xa4\x00\x00\x07*\x00\x00\x03\x93\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x00U\x00\x00\x00\xa4\x00\x00\x07*\x00\x00\x03\x93', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVbwQAAAAAAAB9lCiMC2FscGhhX3ZhbHVllEc/hHrhR64Ue4wLYXV0b19jb21taXSUiYwMY29t
+cHV0ZV9udWxslImMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAZuX2Jlc3SUSxSMEnBlcm11dGF0aW9u
+c19jb3VudJRLFIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAAQwAAAGAAAAc8AAAD
+swAAAEMAAACFAAAHPAAAA7MAAAABAAAAAAeAAAAAQwAAAIUAAAc8AAADs5SMC3Njb3JlX2luZGV4
+lEsBjAp0aHJlc2hvbGRzlH2UKIwLRm9sZCBDaGFuZ2WUjBVudW1weS5jb3JlLm11bHRpYXJyYXmU
+jAZzY2FsYXKUk5SMBW51bXB5lIwFZHR5cGWUk5SMAmY4lImIh5RSlChLA4wBPJROTk5K/////0r/
+////SwB0lGJDCLVaxNNSUec/lIaUUpRoD2gVQwj5ZBwbbGf3P5SGlFKUhpSMEWxvZzIoRm9sZCBD
+aGFuZ2UplEe/uZmZmZmZmkc/uZmZmZmZmoaUjAZULXRlc3SUSv7///9LAoaUjA5ULXRlc3QgUC12
+YWx1ZZRHP4R64UeuFHtHP4R64UeuFHuGlIwFQU5PVkGUSwBLA4aUjA1BTk9WQSBQLXZhbHVllEsA
+Rz+EeuFHrhR7hpR1jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwTY3VycmVudF9n
+cm91cF9pbmRleJRLAIwRc3RvcmVkX3NlbGVjdGlvbnOUXZQoXZQoSwBLAmVdlEsAYV2USwBhZWgp
+SwF1jAVpdGVtc5QojAVjbGFzc5SMGWltYXRpbmlifHBlcmlwaGVyYWwgYmxvb2SUhpSMCHByb3Rv
+Y29slIwIaW1hdGluaWKUhpRoPYwYbWVzZW5jaHltYWwgc3Ryb21hbCBjZWxslIaUjAZ0aXNzdWWU
+jBBwZXJpcGhlcmFsIGJsb29klIaUaD2MCXVudHJlYXRlZJSGlGg6jCRjb21iaW5lZCAoSU0gKyBN
+U0MpfHBlcmlwaGVyYWwgYmxvb2SUhpRoOowfY29tYmluZWQgKElNICsgTVNDKXxib25lIG1hcnJv
+d5SGlGg6jBp1bnRyZWF0ZWR8cGVyaXBoZXJhbCBibG9vZJSGlGg6jCltZXNlbmNoeW1hbCBzdHJv
+bWFsIGNlbGx8cGVyaXBoZXJhbCBibG9vZJSGlGg6jCRtZXNlbmNoeW1hbCBzdHJvbWFsIGNlbGx8
+Ym9uZSBtYXJyb3eUhpRoOowVdW50cmVhdGVkfGJvbmUgbWFycm93lIaUaDqMFGltYXRpbmlifGJv
+bmUgbWFycm93lIaUaD2ME2NvbWJpbmVkIChJTSArIE1TQymUhpRoQowLYm9uZSBtYXJyb3eUhpSR
+lHViYXUu
+</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01:\x00\x00\x00\xa4\x00\x00\x06F\x00\x00\x03\x93\x00\x00\x01:\x00\x00\x00\xa4\x00\x00\x06F\x00\x00\x03\x93\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x01:\x00\x00\x00\xa4\x00\x00\x06F\x00\x00\x03\x93', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASV/wQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAGKAAAAlQAABfUAAAN9AAABigAAALoAAAX1AAAD
+fQAAAAEAAAAAB4AAAAGKAAAAugAABfUAAAN9lIwJc2VsZWN0aW9ulE6MD3Zpc3VhbF9zZXR0aW5n
+c5R9lIwFZ3JhcGiUfZQojAthbHBoYV92YWx1ZZRLgIwNY2xhc3NfZGVuc2l0eZSJjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSIjAtwb2ludF93aWR0aJRLCowJc2hvd19ncmlk
+lImMC3Nob3dfbGVnZW5klIh1jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiM
+FW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0
+dHJfY29sb3KUjBFsb2cyKEZvbGQgQ2hhbmdlKZRLZoaUjAphdHRyX2xhYmVslE5K/v///4aUjAph
+dHRyX3NoYXBllE5K/v///4aUjAlhdHRyX3NpemWUTkr+////hpSME2N1cnJlbnRfZ3JvdXBfaW5k
+ZXiUSwBK/v///4aUjBFzdG9yZWRfc2VsZWN0aW9uc5RdlChdlChLAEsCZV2USwBhXZRLAGFlaAh9
+lGgRSwF1jAphdHRyaWJ1dGVzlH2UKIwKR1NNMTA1ODk2NpRLAowKR1NNMTA1ODk3MJRLAowKR1NN
+MTA1ODk3NJRLAowKR1NNMTA1ODk2N5RLAowKR1NNMTA1ODk3MZRLAowKR1NNMTA1ODk3NZRLAowK
+R1NNMTA1ODk2OJRLAowKR1NNMTA1ODk3MpRLAowKR1NNMTA1ODk3NpRLAowKR1NNMTA1ODk2NZRL
+AowKR1NNMTA1ODk2OZRLAowKR1NNMTA1ODk3M5RLAnWMBW1ldGFzlH2UKIwFZ2VuZXOUSwOMCUVu
+dHJleiBJRJRLA4wRbG9nMihGb2xkIENoYW5nZSmUSwJ1dWJoFimBlH2UKGgZfZQojAphdHRyX2Nv
+bG9ylE5K/v///4aUjAphdHRyX2xhYmVslE5K/v///4aUjAphdHRyX3NoYXBllE5K/v///4aUjAlh
+dHRyX3NpemWUTkr+////hpSME2N1cnJlbnRfZ3JvdXBfaW5kZXiUSwBK/v///4aUjBFzdG9yZWRf
+c2VsZWN0aW9uc5RdlChdlChLBEsGZV2USwBhXZRLAGFljAVncmFwaJR9lGgRSwF1aCx9lChoLksC
+aC9LAmgwSwJoMUsCaDJLAmgzSwJoNEsCaDVLAmg2SwJoN0sCaDhLAmg5SwJ1aDp9lChoPEsDaD1L
+A4wLRm9sZCBDaGFuZ2WUSwJ1dWJoFimBlH2UKGgZfZQoaEKMDlQtdGVzdCBQLXZhbHVllEtmhpRo
+RE5K/v///4aUaEZOSv7///+GlGhITkr+////hpRoSksASv7///+GlGhMXZQoXZQoSwRLBmVdlEsA
+YV2USwBhZWhRfZRoEUsBdWgsfZQoaC5LAmgvSwJoMEsCaDFLAmgySwJoM0sCaDRLAmg1SwJoNksC
+aDdLAmg4SwJoOUsCdWg6fZQoaDxLA2g9SwNoWUsCdXViZXUu
+</properties>
+		<properties node_id="5" format="literal">{'aspect_index': 0, 'controlAreaVisible': True, 'filter_by_num_of_instances': False, 'filter_by_p_value': True, 'filter_by_p_value_nofdr': False, 'max_p_value': 0.2, 'max_p_value_no_fdr': 0.01, 'min_num_of_instances': 1, 'prob_func': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\xcc\x00\x00\x00\x99\x00\x00\x05\xb3\x00\x00\x03y\x00\x00\x01\xcc\x00\x00\x00\xbe\x00\x00\x05\xb3\x00\x00\x03y\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x01\xcc\x00\x00\x00\xbe\x00\x00\x05\xb3\x00\x00\x03y', 'selection_direct_annotation': 0, 'selection_disjoint': 0, 'use_evidence_type': {'EXP': True, 'IDA': True, 'IPI': True, 'IMP': True, 'IGI': True, 'IEP': True, 'ISS': True, 'ISA': True, 'ISO': True, 'ISM': True, 'IGC': True, 'RCA': True, 'TAS': True, 'NAS': True, 'IC': True, 'ND': True, 'IEA': True, 'NR': True}, 'use_reference_dataset': False, '__version__': 1, 'context_settings': []}</properties>
+		<properties node_id="6" format="literal">{'autoCommit': False, 'autoResize': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\t6\x00\x00\x00g\x00\x00\r5\x00\x00\x03\x98\x00\x00\t6\x00\x00\x00\x8c\x00\x00\r5\x00\x00\x03\x98\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\t6\x00\x00\x00\x8c\x00\x00\r5\x00\x00\x03\x98', 'showOrthology': True, 'useReference': False, '__version__': 1}</properties>
+		<properties node_id="7" format="literal">{'auto_commit': False, 'controlAreaVisible': True, 'max_fdr': 0.01, 'max_p_value': 0.0001, 'min_count': 5, 'organism': None, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01*\x00\x00\x00\xcb\x00\x00\x06V\x00\x00\x03G\x00\x00\x01*\x00\x00\x00\xf0\x00\x00\x06V\x00\x00\x03G\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x01*\x00\x00\x00\xf0\x00\x00\x06V\x00\x00\x03G', 'search_pattern': '', 'selected_rows': [], 'stored_gene_sets_selection': [], 'use_max_fdr': True, 'use_min_count': True, 'use_p_value': False, 'use_reference_data': False, 'gs_selection_component': {'custom_gene_set_indicator': None, 'selected_organism': 11, 'selection': [('KEGG', 'Pathways')]}, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
