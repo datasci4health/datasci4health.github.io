@@ -1,0 +1,332 @@
+ID	Gene.symbol	Gene.title	log2(fold change)	-log10(Pvalue)
+7892501			1.032	1.669
+7892554			1.06	2.132
+7892732			1.906	1.753
+7892779			1.34	1.818
+7892866			1.16	2.336
+7892873			1.052	2.296
+7892982			1.028	1.643
+7893057			1.79	3.334
+7893155			1.002	1.901
+7893192			-1.086	2.562
+7893204			1.112	2.198
+7893365			1.25	3.005
+7893471			1.124	2.328
+7893501			1.07	2.367
+7893519			1.08	2.543
+7893526			1.302	1.753
+7893581			1.14	2.439
+7893626			1.252	1.488
+7893697			1.08	2.118
+7893706			-1.044	3.421
+7893735			1.022	1.725
+7893825			1.156	1.348
+7894021			1.288	2.265
+7894023			1.39	1.881
+7894054			1.342	1.304
+7894270			1.486	2.556
+7894271			1.012	1.355
+7894327			1.09	1.851
+7894332			-1.334	1.508
+7894391			1.006	2.453
+7894408			-1.31	0.77
+7894510			1.34	3.925
+7894530			1.04	2.456
+7894532			1.038	1.122
+7894553			1.072	1.593
+7894591			1.658	2.874
+7894746			1.018	1.729
+7894759			1.442	3.429
+7894832			1.088	2.62
+7894886			1.002	1.629
+7894902			1.238	1.796
+7895035			1.092	1.569
+7895085			1.066	2.73
+7895092			1.434	1.471
+7895176			1.194	2.705
+7895255			1	0.979
+7895331			1.166	2.024
+7895383			1.556	3.195
+7895413			1.056	0.835
+7895458			1.03	1.404
+7895470			1.012	2.231
+7895670			2.028	3.079
+7895706			1.142	2.732
+7895796			1.016	1.988
+7895803			1.838	3.403
+7895856			1.006	2.379
+7895864			1.082	2.246
+7895980			1.03	1.049
+7896001			1.34	2.164
+7896006			1.072	1.317
+7896019			1.114	1.31
+7896131			1.206	2.418
+7896224			1.284	2.275
+7896279			1.002	1.159
+7896299			1.178	1.234
+7896337			1.11	2.735
+7896414			1.03	1.216
+7896470			1.562	3.576
+7896502			1.006	1.58
+7896552			1.286	1.273
+7896568			1.246	2.75
+7896577			1.024	3.886
+7896597			1.034	1.76
+7896630			-1.116	1.467
+7896638			1.12	3.112
+7896641			1.11	2.656
+7896687			-1.326	4.262
+7896690			-1.498	5.943
+7896697			-1.556	3.555
+7896703			-1.162	4.282
+7896707			-1.4	5.586
+7896715			-1.934	4.109
+7896720			1.09	2.329
+7896738			-1.052	1.358
+7896740	OR4F17///OR4F5///OR4F4	olfactory receptor family 4 subfamily F member 17///olfactory receptor family 4 subfamily F member 5///olfactory receptor family 4 subfamily F member 4	-1.226	1.875
+7898623	UBXN10	UBX domain protein 10	1.132	4.625
+7901054	PLK3	polo like kinase 3	-1.422	3.228
+7902072			1.22	4.977
+7902074	LEPROT///LEPR	leptin receptor overlapping transcript///leptin receptor	1.314	4.682
+7902102			1.6	3.84
+7902158	TCTEX1D1	Tctex1 domain containing 1	-1.364	3.557
+7902205	IL12RB2	interleukin 12 receptor subunit beta 2	-1.124	2.634
+7902235	LRRC7	leucine rich repeat containing 7	1.37	3.05
+7902965	BTBD8	BTB domain containing 8	1.056	3.022
+7904572			-1.508	1.756
+7906085	LMNA	lamin A/C	-1.148	3.332
+7906377	MNDA	myeloid cell nuclear differentiation antigen	-1.352	3.296
+7906757	FCGR2A	Fc fragment of IgG receptor IIa	1.322	4.537
+7908388	RGS1	regulator of G-protein signaling 1	-1.338	2.407
+7908459	CFH	complement factor H	1.954	6.964
+7908917	BTG2	BTG anti-proliferation factor 2	-1.204	2.775
+7911178	NLRP3	NLR family pyrin domain containing 3	-1.146	2.085
+7911199	GCSAML	germinal center associated signaling and motility like	1.044	1.991
+7913450	HSPG2	heparan sulfate proteoglycan 2	1.23	5.025
+7916432	DHCR24	24-dehydrocholesterol reductase	2.012	5.889
+7916986	NEGR1	neuronal growth regulator 1	-1.234	4.724
+7917180			-1.19	2.24
+7918323	SORT1	sortilin 1	1.162	5.347
+7918457	KCNA3	potassium voltage-gated channel subfamily A member 3	-2.342	5.826
+7918467	LRIF1	ligand dependent nuclear receptor interacting factor 1	1.022	3.007
+7918857	TSPAN2	tetraspanin 2	1.614	6.163
+7919556	RNVU1-15	RNA, variant U1 small nuclear 15	-1.602	2.092
+7919560	RNVU1-15	RNA, variant U1 small nuclear 15	-1.658	2.131
+7919594	RNVU1-19	RNA, variant U1 small nuclear 19	-1.06	1.262
+7919749			-1.016	1.081
+7919751	MCL1	BCL2 family apoptosis regulator	-1.036	3.27
+7920123	S100A10	S100 calcium binding protein A10	1.538	2.77
+7922219	SELL	selectin L	-1.346	4.358
+7922412	SNORD77	small nucleolar RNA, C/D box 77	1.306	2.646
+7926506	CACNB2	calcium voltage-gated channel auxiliary subunit beta 2	1.034	4.389
+7929574	DNTT	DNA nucleotidylexotransferase	-1.152	3.589
+7929816	SCD	stearoyl-CoA desaturase	1.326	5.136
+7935270	BLNK	B-cell linker	-1.478	5.919
+7937335	IFITM1	interferon induced transmembrane protein 1	1.048	2.95
+7940216	MS4A3	membrane spanning 4-domains A3	-1.706	2.386
+7948103	OR4C12	olfactory receptor family 4 subfamily C member 12	-1.004	1.643
+7948221	PRG2	proteoglycan 2, pro eosinophil major basic protein	1.16	1.419
+7948364	MPEG1	macrophage expressed 1	-2.01	3.906
+7952641	ARHGAP32	Rho GTPase activating protein 32	-1.832	2.886
+7953835	KLRG1	killer cell lectin like receptor G1	1.432	4.987
+7954090	EMP1	epithelial membrane protein 1	-1.958	3.566
+7955578	GRASP	general receptor for phosphoinositides 1 associated scaffold protein	-1.204	3.638
+7955589	NR4A1	nuclear receptor subfamily 4 group A member 1	-1.41	2.131
+7957023	LYZ	lysozyme	-1.542	2.755
+7957260	GLIPR1	GLI pathogenesis related 1	-1.624	4.338
+7957551	SOCS2	suppressor of cytokine signaling 2	1.178	4.321
+7961365	MANSC1	MANSC domain containing 1	1.236	3.972
+7962212	PKP2	plakophilin 2	-1.338	3.464
+7964631	FAM19A2	family with sequence similarity 19 member A2, C-C motif chemokine like	-1.192	3.468
+7964834	CPM	carboxypeptidase M	-1.136	2.037
+7965335	DUSP6	dual specificity phosphatase 6	-1.168	2.275
+7965836			1.45	3.442
+7965838			1.61	4.607
+7967318	HCAR2	hydroxycarboxylic acid receptor 2	-1.14	2.192
+7967322	HCAR3	hydroxycarboxylic acid receptor 3	-1.524	2.575
+7968789	RGCC	regulator of cell cycle	-1.542	4.065
+7970737	FLT3	fms related tyrosine kinase 3	-1.67	3.535
+7971590	CAB39L	calcium binding protein 39 like	1.176	2.02
+7971731	ATP7B	ATPase copper transporting beta	1.044	5.021
+7972557	GPR183	G protein-coupled receptor 183	-1.216	0.846
+7972981	OR11H12///OR11H1	olfactory receptor family 11 subfamily H member 12///olfactory receptor family 11 subfamily H member 1	-1.274	1.805
+7973008	OR4M1///OR4M2	olfactory receptor family 4 subfamily M member 1///olfactory receptor family 4 subfamily M member 2	-1.01	1.195
+7973012	OR4K2	olfactory receptor family 4 subfamily K member 2	-1.192	1.385
+7973014	OR4K5	olfactory receptor family 4 subfamily K member 5	-1.004	1.729
+7973105	RNASE3	ribonuclease A family member 3	-1.112	2.517
+7973108	ECRP///ECRP	ribonuclease A family member 2 pseudogene///ribonuclease A family member 2 pseudogene	-1.404	3.183
+7977319	PLD4	phospholipase D family member 4	-1.1	3.702
+7977450	OR11H12///OR11H1	olfactory receptor family 11 subfamily H member 12///olfactory receptor family 11 subfamily H member 1	-1.224	1.755
+7977472	OR11H12///OR11H1	olfactory receptor family 11 subfamily H member 12///olfactory receptor family 11 subfamily H member 1	-1.348	1.854
+7978351	CTSG	cathepsin G	-1.456	1.326
+7978407	PRKD1	protein kinase D1	-1.066	3.273
+7979696			-1.008	1.129
+7980537	STON2	stonin 2	1.208	3.41
+7980688			-1.126	0.959
+7982154	HERC2P9///HERC2P2///HERC2P3///HERC2	hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2	1.104	4.108
+7984213			1.138	2.682
+7986534			-1.02	1.507
+7986569	HERC2P4///HERC2P9///HERC2P2///HERC2P3///HERC2	hect domain and RLD 2 pseudogene 4///hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2	1.044	4.108
+7986701	HERC2P4///HERC2P9///HERC2P2///HERC2P3///HERC2	hect domain and RLD 2 pseudogene 4///hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2	1.046	4.015
+7988672	HDC	histidine decarboxylase	2.074	3.823
+7991663	OR4F17///OR4F5///OR4F4	olfactory receptor family 4 subfamily F member 17///olfactory receptor family 4 subfamily F member 5///olfactory receptor family 4 subfamily F member 4	-1.226	1.875
+7991665			-1.07	1.526
+7992181	TPSB2///TPSD1///TPSAB1	tryptase beta 2 (gene/pseudogene)///tryptase delta 1///tryptase alpha/beta 1	1.252	2.338
+7994109	PLK1	polo like kinase 1	-1.092	2.461
+7997712	IRF8	interferon regulatory factor 8	-2.834	3.74
+7998434	TPSB2///TPSD1///TPSAB1	tryptase beta 2 (gene/pseudogene)///tryptase delta 1///tryptase alpha/beta 1	1.308	2.486
+8000184	IGSF6	immunoglobulin superfamily member 6	-1.794	2.813
+8001067	HERC2P4///HERC2P2///HERC2P3///HERC2	hect domain and RLD 2 pseudogene 4///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2	1.128	4.402
+8001099	HERC2P4///HERC2P2///HERC2P3///HERC2	hect domain and RLD 2 pseudogene 4///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2	1.108	4.114
+8004691	TMEM88	transmembrane protein 88	-1.216	5.467
+8005829			1.044	4.542
+8007921	MYL4	myosin light chain 4	1.088	3.716
+8014316	CCL5	C-C motif chemokine ligand 5	1.886	3.4
+8014369	CCL3	C-C motif chemokine ligand 3	-1.058	3.206
+8016932	MPO	myeloperoxidase	-1.104	1.619
+8018095			1.01	1.434
+8018114	SDK2	sidekick cell adhesion molecule 2	-1.216	4.075
+8021301	RAB27B	RAB27B, member RAS oncogene family	1.646	3.96
+8021645	SERPINB10	serpin family B member 10	-1.326	1.606
+8021653	SERPINB8	serpin family B member 8	-1.186	1.98
+8022283	PIEZO2	piezo type mechanosensitive ion channel component 2	1.802	3.682
+8022295	PIEZO2	piezo type mechanosensitive ion channel component 2	1.926	4.189
+8022310	PIEZO2	piezo type mechanosensitive ion channel component 2	1.846	4.414
+8022674	CDH2	cadherin 2	-1.616	5.981
+8023220	SMAD7	SMAD family member 7	-1.676	4.503
+8023935			-1.032	1.381
+8023937	OR4F17///OR4F5///OR4F4	olfactory receptor family 4 subfamily F member 17///olfactory receptor family 4 subfamily F member 5///olfactory receptor family 4 subfamily F member 4	-1.226	1.875
+8024038	AZU1	azurocidin 1	-1.39	1.671
+8024048	PRTN3	proteinase 3	-1.194	1.564
+8024056	ELANE	elastase, neutrophil expressed	-2.452	3.506
+8024518	ZNF555	zinc finger protein 555	1.214	3.311
+8025601	ICAM1	intercellular adhesion molecule 1	-1.426	2.969
+8025927	ZNF627///ZNF627	zinc finger protein 627///zinc finger protein 627	1.146	2.325
+8025984	ZNF844	zinc finger protein 844	1.004	2.938
+8028652	ZFP36	ZFP36 ring finger protein	-1.77	5.069
+8029465	BCL3	B-cell CLL/lymphoma 3	-1.158	4.016
+8030978	ZNF845	zinc finger protein 845	1.076	2.454
+8034326			1.304	3.55
+8040103	ID2	inhibitor of DNA binding 2, HLH protein	-2.038	4.986
+8041781	EPAS1	endothelial PAS domain protein 1	1.558	5.771
+8044700	DPP10	dipeptidyl peptidase like 10	1.76	1.82
+8045319			-1.18	1.375
+8045539	KYNU	kynureninase	2.13	6.526
+8045889	TANC1	tetratricopeptide repeat, ankyrin repeat and coiled-coil containing 1	1.078	1.582
+8047403	CASP10	caspase 10	1.048	3.713
+8049435	SH3BP4	SH3 domain binding protein 4	-1.044	4.313
+8050213			-1.038	3.981
+8051462			1.668	5.119
+8051928	PREPL	prolyl endopeptidase-like	1.018	3.899
+8054041	TRIM43B///TRIM43	tripartite motif containing 43B///tripartite motif containing 43	-1.048	1.575
+8055234			-1.18	1.375
+8056491	SCN9A	sodium voltage-gated channel alpha subunit 9	1.924	7.422
+8061416	CST7	cystatin F	-1.064	2.18
+8061564	ID1	inhibitor of DNA binding 1, HLH protein	-1.186	2.618
+8066117	SAMHD1	SAM and HD domain containing deoxynucleoside triphosphate triphosphohydrolase 1	-1.104	1.388
+8067836	LINC00314	long intergenic non-protein coding RNA 314	-1.188	1.15
+8070665	LOC102724428///SIK1	serine/threonine-protein kinase SIK1///salt inducible kinase 1	-1.122	2.782
+8071061	TPTEP1	transmembrane phosphatase with tensin homology pseudogene 1	-1.3	3.166
+8072744	NCF4	neutrophil cytosolic factor 4	1.188	4.667
+8073007	MAFF	MAF bZIP transcription factor F	-1.186	3.046
+8074192			-1.2	1.443
+8074194	OR11H12///OR11H1	olfactory receptor family 11 subfamily H member 12///olfactory receptor family 11 subfamily H member 1	-1.274	1.805
+8077366	LRRN1	leucine rich repeat neuronal 1	-1.018	4.072
+8077929			1.046	2.835
+8080964	GXYLT2	glucoside xylosyltransferase 2	-1.158	3.532
+8081546			-1.208	1.6
+8082058	CSTA	cystatin A	-1.208	2.846
+8082585	COL6A5	collagen type VI alpha 5 chain	1.076	1.608
+8083876	SKIL	SKI-like proto-oncogene	-2.238	4.047
+8085797	THRB	thyroid hormone receptor beta	1.256	4.239
+8091118			1.186	2.833
+8091385	CP	ceruloplasmin (ferroxidase)	1.146	2.565
+8092552	IGF2BP2	insulin like growth factor 2 mRNA binding protein 2	-1.392	1.77
+8092691	BCL6	B-cell CLL/lymphoma 6	-1.47	3.667
+8095343	STAP1	signal transducing adaptor family member 1	1.41	4.36
+8095585	SLC4A4	solute carrier family 4 member 4	1.034	3.554
+8095736	AREG	amphiregulin	-1.672	0.964
+8095744	AREG	amphiregulin	-1.864	0.984
+8095819	FAM47E-STBD1///FAM47E	FAM47E-STBD1 readthrough///family with sequence similarity 47 member E	1.202	4.06
+8098060	RXFP1	relaxin/insulin like family peptide receptor 1	2.132	7.497
+8098195	MSMO1	methylsterol monooxygenase 1	2.178	6.641
+8098439	EPCAM	epithelial cell adhesion molecule	-1.496	1.706
+8098547			1.092	3.005
+8099476	PROM1	prominin 1	-1.434	4.044
+8099850	TMEM156	transmembrane protein 156	1.224	3.21
+8100758	UGT2B11///UGT2B17///UGT2B15///UGT2B10///UGT2B7	UDP glucuronosyltransferase family 2 member B11///UDP glucuronosyltransferase family 2 member B17///UDP glucuronosyltransferase family 2 member B15///UDP glucuronosyltransferase family 2 member B10///UDP glucuronosyltransferase family 2 member B7	-1.426	1.854
+8100768	LOC101929773///UGT2B28///UGT2B11///UGT2B17///UGT2B10///UGT2B7///UGT2B4	UDP-glucuronosyltransferase 2B10-like///UDP glucuronosyltransferase family 2 member B28///UDP glucuronosyltransferase family 2 member B11///UDP glucuronosyltransferase family 2 member B17///UDP glucuronosyltransferase family 2 member B10///UDP glucuronosyltransferase family 2 member B7///UDP glucuronosyltransferase family 2 member B4	-1.132	1.982
+8100827	JCHAIN	joining chain of multimeric IgA and IgM	-1.606	2.724
+8100994	CXCL2	C-X-C motif chemokine ligand 2	-1.756	3.575
+8101126	CXCL10	C-X-C motif chemokine ligand 10	-1.212	3.789
+8101284	PRKG2	protein kinase, cGMP-dependent, type II	-1.094	2.251
+8101304	RASGEF1B	RasGEF domain family member 1B	-1.386	2.665
+8101322	MOP-1	MOP-1	-1.608	1.742
+8102988	GYPE	glycophorin E (MNS blood group)	1.45	2.946
+8102993	GYPB	glycophorin B (MNS blood group)	1.054	1.88
+8103226	TMEM154	transmembrane protein 154	1.118	4.788
+8103922	CASP3	caspase 3	1.054	4.786
+8106280	HMGCR	3-hydroxy-3-methylglutaryl-CoA reductase	1.016	3.856
+8106418	CRHBP	corticotropin releasing hormone binding protein	-1.908	2.581
+8107518			1.412	3.12
+8107909	SLC22A4	solute carrier family 22 member 4	-1.002	1.652
+8108370	EGR1	early growth response 1	-1.188	2.077
+8111271	CDH9	cadherin 9	-1.258	2.29
+8111524	UGT3A2	UDP glycosyltransferase family 3 member A2	-1.284	2.671
+8111915	SEPP1	selenoprotein P, plasma, 1	-1.048	1.583
+8111960	C5orf34	chromosome 5 open reading frame 34	1.2	2.304
+8112428	CD180	CD180 molecule	-1.488	2.648
+8113073	ARRDC3	arrestin domain containing 3	1.386	3.694
+8114010	IRF1	interferon regulatory factor 1	-1.31	3.936
+8116571			-1.546	1.654
+8116835	GCNT2	glucosaminyl (N-acetyl) transferase 2, I-branching enzyme (I blood group)	1.348	4.252
+8117529			-1.056	1.945
+8117714	OR2J3///OR2J2	olfactory receptor family 2 subfamily J member 3///olfactory receptor family 2 subfamily J member 2	-1.118	1.359
+8117718	OR2J3	olfactory receptor family 2 subfamily J member 3	-1.072	1.071
+8120271			1.386	2.886
+8121130			1.318	4.528
+8121277	AIM1	absent in melanoma 1	-1.162	2.561
+8122265	TNFAIP3	TNF alpha induced protein 3	-1.658	3.717
+8123744	F13A1	coagulation factor XIII A chain	-2.24	3.791
+8124848	IER3	immediate early response 3	-1.838	4.466
+8134219	VPS50	VPS50, EARP/GARPII complex subunit	1.038	3.645
+8135069	SERPINE1	serpin family E member 1	-1.104	2.556
+8136115	STRIP2	striatin interacting protein 2	1.012	2.807
+8139100	TARP///TRGC2	TCR gamma alternate reading frame protein///T cell receptor gamma constant 2	1.002	1.703
+8140907			1.042	3.054
+8146794	PREX2	phosphatidylinositol-3,4,5-trisphosphate dependent Rac exchange factor 2	-1.08	4.296
+8148304	TRIB1	tribbles pseudokinase 1	-1.002	1.73
+8149071	ANGPT2	angiopoietin 2	1.55	4.655
+8152215	KLF10	Kruppel like factor 10	-1.546	5.2
+8152522	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2	1.094	3.628
+8154211			1.178	2.613
+8154215			1.178	5.342
+8154217			1.074	3.173
+8154692	TEK	TEK receptor tyrosine kinase	1.164	3.914
+8155359	CNTNAP3B///CNTNAP3P2///CNTNAP3	contactin associated protein-like 3B///contactin associated protein-like 3 pseudogene 2///contactin associated protein-like 3	-1.022	1.643
+8155487	FGF7P3///FGF7P6///FGF7	fibroblast growth factor 7 pseudogene 3///fibroblast growth factor 7 pseudogene 6///fibroblast growth factor 7	-1.048	1.976
+8155754	MAMDC2	MAM domain containing 2	1.67	7.89
+8156086			-1.024	1.074
+8160168	FREM1	FRAS1 related extracellular matrix 1	1.18	1.129
+8161270	ANKRD18A	ankyrin repeat domain 18A	-1.232	3.823
+8161423	FGF7P3///FGF7P6///FGF7	fibroblast growth factor 7 pseudogene 3///fibroblast growth factor 7 pseudogene 6///fibroblast growth factor 7	-1.048	1.976
+8161455	FGF7P3///FGF7P6///FGF7	fibroblast growth factor 7 pseudogene 3///fibroblast growth factor 7 pseudogene 6///fibroblast growth factor 7	-1.048	1.976
+8162455	NINJ1	ninjurin 1	-1.056	5.331
+8163002	KLF4	Kruppel like factor 4	-1.716	2.893
+8166723	XK	X-linked Kx blood group	1.004	2.858
+8167560	GAGE10///GAGE12D///GAGE8///GAGE12F///GAGE2A///GAGE12H///GAGE12E///GAGE12C///GAGE12J///GAGE12G///GAGE13///GAGE2E///GAGE6///GAGE2C	G antigen 10///G antigen 12D///G antigen 8///G antigen 12F///G antigen 2A///G antigen 12H///G antigen 12E///G antigen 12C///G antigen 12J///G antigen 12G///G antigen 13///G antigen 2E///G antigen 6///G antigen 2C	-1.188	1.434
+8168531	GPR174	G protein-coupled receptor 174	1.082	3.596
+8169580	IL13RA1	interleukin 13 receptor subunit alpha 1	-1.05	1.805
+8170187	CD40LG	CD40 ligand	1.664	3.195
+8170390	IDS	iduronate 2-sulfatase	-1.092	3.275
+8174207	NXF3	nuclear RNA export factor 3	1.196	3.974
+8174594			1.048	3.31
+8175593	IDS	iduronate 2-sulfatase	-1.482	4.272
+8176234	CLIC2	chloride intracellular channel 2	1.02	3.362
+8177694	OR2J3///OR2J2	olfactory receptor family 2 subfamily J member 3///olfactory receptor family 2 subfamily J member 2	-1.152	1.368
+8178435	IER3	immediate early response 3	-2.054	4.579
+8179003	OR2J3///OR2J2	olfactory receptor family 2 subfamily J member 3///olfactory receptor family 2 subfamily J member 2	-1.152	1.368
+8179704	IER3	immediate early response 3	-1.838	4.466
+8180268	CYP51A1	cytochrome P450 family 51 subfamily A member 1	1.036	4.52
+8180366	TARP	TCR gamma alternate reading frame protein	1.058	1.623
+8180367	TARP	TCR gamma alternate reading frame protein	1.058	1.623

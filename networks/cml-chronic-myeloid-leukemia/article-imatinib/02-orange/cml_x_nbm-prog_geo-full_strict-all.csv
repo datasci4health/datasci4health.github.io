@@ -1,0 +1,73 @@
+ID,Gene.symbol,Gene.title,Gene.ID,adj.P.Val,P.Value,t,B,logFC
+8155754,MAMDC2,MAM domain containing 2,256691,0.00042,1.29e-08,12.9,8.81698,1.67
+8098060,RXFP1,relaxin/insulin like family peptide receptor 1,59350,0.00042,3.19e-08,11.9,8.20351,2.13
+8056491,SCN9A,sodium voltage-gated channel alpha subunit 9,6335,0.00042,3.78e-08,11.7,8.08407,1.92
+7908459,CFH,complement factor H,3075,0.000904,1.09e-07,10.7,7.32407,1.95
+8098195,MSMO1,methylsterol monooxygenase 1,6307,0.001523,2.29e-07,10,6.76459,2.18
+8045539,KYNU,kynureninase,8942,0.001652,2.98e-07,9.8,6.56157,2.13
+7918857,TSPAN2,tetraspanin 2,10100,0.00327,6.88e-07,9.09,5.90326,1.61
+7916432,DHCR24,24-dehydrocholesterol reductase,1718,0.00391,1.29e-06,8.59,5.39312,2.01
+8041781,EPAS1,endothelial PAS domain protein 1,2034,0.004338,1.69e-06,8.37,5.17053,1.56
+7918323,SORT1,sortilin 1,6272,0.008629,4.5e-06,7.64,4.35053,1.16
+7929816,SCD,stearoyl-CoA desaturase,6319,0.012058,7.31e-06,7.29,3.93545,1.33
+7913450,HSPG2,heparan sulfate proteoglycan 2,3339,0.013001,9.44e-06,7.11,3.71376,1.23
+7971731,ATP7B,ATPase copper transporting beta,540,0.013001,9.54e-06,7.11,3.70508,1.04
+7953835,KLRG1,killer cell lectin like receptor G1,10219,0.013001,1.03e-05,7.05,3.63771,1.43
+8103226,TMEM154,transmembrane protein 154,201799,0.017568,1.63e-05,6.74,3.23687,1.12
+8103922,CASP3,caspase 3,836,0.017568,1.64e-05,6.74,3.23357,1.05
+7902074,LEPROT,leptin receptor overlapping transcript///leptin receptor,54741,0.019772,2.08e-05,6.58,3.02221,1.31
+8072744,NCF4,neutrophil cytosolic factor 4,4689,0.019893,2.15e-05,6.56,2.99186,1.19
+8149071,ANGPT2,angiopoietin 2,285,0.019896,2.21e-05,6.54,2.9675,1.55
+7898623,UBXN10,UBX domain protein 10,127733,0.020795,2.37e-05,6.49,2.90466,1.13
+7906757,FCGR2A,Fc fragment of IgG receptor IIa,2212,0.022396,2.9e-05,6.36,2.72596,1.32
+8180268,CYP51A1,cytochrome P450 family 51 subfamily A member 1,1595,0.022396,3.02e-05,6.33,2.6906,1.04
+8022310,PIEZO2,piezo type mechanosensitive ion channel component 2,63895,0.025651,3.85e-05,6.18,2.47284,1.85
+8001067,HERC2P4,hect domain and RLD 2 pseudogene 4///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,100289574,0.025875,3.96e-05,6.16,2.44731,1.13
+7926506,CACNB2,calcium voltage-gated channel auxiliary subunit beta 2,783,0.02617,4.09e-05,6.14,2.41971,1.03
+8095343,STAP1,signal transducing adaptor family member 1,26228,0.026976,4.37e-05,6.1,2.36063,1.41
+7957551,SOCS2,suppressor of cytokine signaling 2,8835,0.026976,4.78e-05,6.04,2.27895,1.18
+8116835,GCNT2,"glucosaminyl (N-acetyl) transferase 2, I-branching enzyme (I blood group)",2651,0.027038,5.6e-05,5.94,2.1359,1.35
+8085797,THRB,thyroid hormone receptor beta,7068,0.027426,5.77e-05,5.92,2.11006,1.26
+7982154,HERC2P9,hect domain and RLD 2 pseudogene 9///hect domain and RLD 2 pseudogene 2///hect domain and RLD 2 pseudogene 3///HECT and RLD domain containing E3 ubiquitin protein ligase 2,440248,0.031112,7.79e-05,5.74,1.83767,1.1
+8095819,FAM47E-STBD1,FAM47E-STBD1 readthrough///family with sequence similarity 47 member E,100631383,0.032208,8.71e-05,5.67,1.73683,1.2
+8174207,NXF3,nuclear RNA export factor 3,56000,0.035553,0.000106,5.55,1.5567,1.2
+7961365,MANSC1,MANSC domain containing 1,54682,0.035553,0.000107,5.54,1.55094,1.24
+8021301,RAB27B,"RAB27B, member RAS oncogene family",5874,0.035774,0.00011,5.53,1.52724,1.65
+8154692,TEK,TEK receptor tyrosine kinase,7010,0.037942,0.000122,5.46,1.42983,1.16
+8051928,PREPL,prolyl endopeptidase-like,9581,0.038174,0.000126,5.44,1.39901,1.02
+8106280,HMGCR,3-hydroxy-3-methylglutaryl-CoA reductase,3156,0.040379,0.000139,5.38,1.30697,1.02
+7988672,HDC,histidine decarboxylase,3067,0.042097,0.00015,5.34,1.23751,2.07
+8007921,MYL4,myosin light chain 4,4635,0.048118,0.000192,5.19,1.01287,1.09
+8047403,CASP10,caspase 10,843,0.048118,0.000194,5.19,1.0056,1.05
+8113073,ARRDC3,arrestin domain containing 3,57561,0.048444,0.000202,5.16,0.96597,1.39
+8022674,CDH2,cadherin 2,1000,0.00391,1.04e-06,-8.76,5.56685,-1.62
+7935270,BLNK,B-cell linker,29760,0.00391,1.2e-06,-8.64,5.44992,-1.48
+7918457,KCNA3,potassium voltage-gated channel subfamily A member 3,3738,0.004145,1.49e-06,-8.47,5.2738,-2.34
+8004691,TMEM88,transmembrane protein 88,92162,0.007581,3.42e-06,-7.84,4.58481,-1.22
+8162455,NINJ1,ninjurin 1,4814,0.008629,4.66e-06,-7.61,4.32043,-1.06
+8152215,KLF10,Kruppel like factor 10,7071,0.011055,6.31e-06,-7.4,4.06216,-1.55
+8028652,ZFP36,ZFP36 ring finger protein,7538,0.012899,8.52e-06,-7.18,3.80266,-1.77
+8040103,ID2,"inhibitor of DNA binding 2, HLH protein",3398,0.013001,1.03e-05,-7.05,3.6352,-2.04
+7916986,NEGR1,neuronal growth regulator 1,257194,0.019063,1.89e-05,-6.64,3.1065,-1.23
+8178435,IER3,immediate early response 3,8870,0.02197,2.64e-05,-6.42,2.81027,-2.05
+8023220,SMAD7,SMAD family member 7,4092,0.022752,3.14e-05,-6.31,2.65464,-1.68
+7922219,SELL,selectin L,6402,0.026976,4.39e-05,-6.09,2.35655,-1.35
+7957260,GLIPR1,GLI pathogenesis related 1,11010,0.026976,4.59e-05,-6.07,2.31504,-1.62
+8049435,SH3BP4,SH3 domain binding protein 4,23677,0.026976,4.86e-05,-6.03,2.26392,-1.04
+8146794,PREX2,"phosphatidylinositol-3,4,5-trisphosphate dependent Rac exchange factor 2",80243,0.027038,5.06e-05,-6,2.22799,-1.08
+8175593,IDS,iduronate 2-sulfatase,3423,0.027038,5.34e-05,-5.97,2.17864,-1.48
+8018114,SDK2,sidekick cell adhesion molecule 2,54549,0.032208,8.42e-05,-5.69,1.76697,-1.22
+8077366,LRRN1,leucine rich repeat neuronal 1,57633,0.032208,8.47e-05,-5.68,1.76164,-1.02
+7968789,RGCC,regulator of cell cycle,28984,0.032208,8.62e-05,-5.67,1.74607,-1.54
+8083876,SKIL,SKI-like proto-oncogene,6498,0.032318,8.97e-05,-5.65,1.71007,-2.24
+8099476,PROM1,prominin 1,8842,0.032318,9.03e-05,-5.65,1.70392,-1.43
+8029465,BCL3,B-cell CLL/lymphoma 3,602,0.033873,9.65e-05,-5.61,1.64339,-1.16
+8114010,IRF1,interferon regulatory factor 1,3659,0.037463,0.000116,-5.49,1.47624,-1.31
+7948364,MPEG1,macrophage expressed 1,219972,0.038019,0.000124,-5.45,1.41331,-2.01
+8161270,ANKRD18A,ankyrin repeat domain 18A,253650,0.042097,0.00015,-5.34,1.23851,-1.23
+8123744,F13A1,coagulation factor XIII A chain,2162,0.043619,0.000162,-5.3,1.17139,-2.24
+8101126,CXCL10,C-X-C motif chemokine ligand 10,3627,0.043619,0.000162,-5.29,1.16721,-1.21
+7997712,IRF8,interferon regulatory factor 8,3394,0.046601,0.000182,-5.23,1.06314,-2.83
+8122265,TNFAIP3,TNF alpha induced protein 3,7128,0.048118,0.000192,-5.19,1.01358,-1.66
+7977319,PLD4,phospholipase D family member 4,122618,0.048236,0.000198,-5.17,0.98324,-1.1
+8092691,BCL6,B-cell CLL/lymphoma 6,604,0.049081,0.000215,-5.13,0.90872,-1.47
