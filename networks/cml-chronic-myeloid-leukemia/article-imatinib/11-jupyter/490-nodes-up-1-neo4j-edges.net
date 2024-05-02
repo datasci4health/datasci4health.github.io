@@ -1,0 +1,614 @@
+*vertices 225
+1 p1.name 0.0 0.0 ellipse
+2 p2.name 0.0 0.0 ellipse
+3 ANXA2 0.0 0.0 ellipse
+4 ANXA5 0.0 0.0 ellipse
+5 BLM 0.0 0.0 ellipse
+6 BRCA1 0.0 0.0 ellipse
+7 BRIP1 0.0 0.0 ellipse
+8 CACNA1D 0.0 0.0 ellipse
+9 CACNB2 0.0 0.0 ellipse
+10 BUB3 0.0 0.0 ellipse
+11 CCT5 0.0 0.0 ellipse
+12 CDC45 0.0 0.0 ellipse
+13 CDC6 0.0 0.0 ellipse
+14 CDC7 0.0 0.0 ellipse
+15 CDH2 0.0 0.0 ellipse
+16 CDH9 0.0 0.0 ellipse
+17 CDKN1A 0.0 0.0 ellipse
+18 BCL6 0.0 0.0 ellipse
+19 CDKN1B 0.0 0.0 ellipse
+20 CENPJ 0.0 0.0 ellipse
+21 CENPU 0.0 0.0 ellipse
+22 CENPK 0.0 0.0 ellipse
+23 CHEK1 0.0 0.0 ellipse
+24 APOD 0.0 0.0 ellipse
+25 CLU 0.0 0.0 ellipse
+26 APOO 0.0 0.0 ellipse
+27 BCL2L1 0.0 0.0 ellipse
+28 AREG 0.0 0.0 ellipse
+29 CTSC 0.0 0.0 ellipse
+30 CCL5 0.0 0.0 ellipse
+31 CXCL2 0.0 0.0 ellipse
+32 CXCR4 0.0 0.0 ellipse
+33 DCAF12 0.0 0.0 ellipse
+34 DCLRE1C 0.0 0.0 ellipse
+35 ARG2 0.0 0.0 ellipse
+36 DHCR24 0.0 0.0 ellipse
+37 DHCR7 0.0 0.0 ellipse
+38 CABLES1 0.0 0.0 ellipse
+39 DLK1 0.0 0.0 ellipse
+40 DNA2 0.0 0.0 ellipse
+41 ANPEP 0.0 0.0 ellipse
+42 DPP4 0.0 0.0 ellipse
+43 DTL 0.0 0.0 ellipse
+44 DCUN1D5 0.0 0.0 ellipse
+45 EGR3 0.0 0.0 ellipse
+46 CD36 0.0 0.0 ellipse
+47 EMP1 0.0 0.0 ellipse
+48 FANCI 0.0 0.0 ellipse
+49 FCER1G 0.0 0.0 ellipse
+50 FCGR2A 0.0 0.0 ellipse
+51 FGF9 0.0 0.0 ellipse
+52 CEBPB 0.0 0.0 ellipse
+53 FOSL1 0.0 0.0 ellipse
+54 ANK3 0.0 0.0 ellipse
+55 GABARAPL1 0.0 0.0 ellipse
+56 GINS1 0.0 0.0 ellipse
+57 GINS2 0.0 0.0 ellipse
+58 EIPR1 0.0 0.0 ellipse
+59 GMNN 0.0 0.0 ellipse
+60 H2AC14 0.0 0.0 ellipse
+61 H3C12 0.0 0.0 ellipse
+62 ELOVL6 0.0 0.0 ellipse
+63 HACD3 0.0 0.0 ellipse
+64 FADS1 0.0 0.0 ellipse
+65 HAUS6 0.0 0.0 ellipse
+66 GSTM3 0.0 0.0 ellipse
+67 HPGDS 0.0 0.0 ellipse
+68 HSPE1 0.0 0.0 ellipse
+69 ICAM1 0.0 0.0 ellipse
+70 ARHGEF12 0.0 0.0 ellipse
+71 IGF1R 0.0 0.0 ellipse
+72 IL1B 0.0 0.0 ellipse
+73 IL1R1 0.0 0.0 ellipse
+74 IL1RAP 0.0 0.0 ellipse
+75 IL1RL1 0.0 0.0 ellipse
+76 IL2RA 0.0 0.0 ellipse
+77 ITGAL 0.0 0.0 ellipse
+78 ITGB3 0.0 0.0 ellipse
+79 GLI2 0.0 0.0 ellipse
+80 KDM6B 0.0 0.0 ellipse
+81 KLRG1 0.0 0.0 ellipse
+82 KNL1 0.0 0.0 ellipse
+83 DSN1 0.0 0.0 ellipse
+84 MAPRE3 0.0 0.0 ellipse
+85 MCL1 0.0 0.0 ellipse
+86 MCM10 0.0 0.0 ellipse
+87 MCM2 0.0 0.0 ellipse
+88 MCM3 0.0 0.0 ellipse
+89 MCM4 0.0 0.0 ellipse
+90 MCM5 0.0 0.0 ellipse
+91 MCM6 0.0 0.0 ellipse
+92 MFAP3 0.0 0.0 ellipse
+93 MFAP5 0.0 0.0 ellipse
+94 MFAP4 0.0 0.0 ellipse
+95 MID2 0.0 0.0 ellipse
+96 MLF1 0.0 0.0 ellipse
+97 LIN7A 0.0 0.0 ellipse
+98 MPDZ 0.0 0.0 ellipse
+99 ERAL1 0.0 0.0 ellipse
+100 MTERF3 0.0 0.0 ellipse
+101 MTHFD1 0.0 0.0 ellipse
+102 DPYSL3 0.0 0.0 ellipse
+103 NCKAP1 0.0 0.0 ellipse
+104 COX7B 0.0 0.0 ellipse
+105 NDUFA2 0.0 0.0 ellipse
+106 NDUFAF1 0.0 0.0 ellipse
+107 BHLHE41 0.0 0.0 ellipse
+108 NFIL3 0.0 0.0 ellipse
+109 HLF 0.0 0.0 ellipse
+110 NLGN1 0.0 0.0 ellipse
+111 EPB41L3 0.0 0.0 ellipse
+112 LGALS1 0.0 0.0 ellipse
+113 MAGI2 0.0 0.0 ellipse
+114 NMI 0.0 0.0 ellipse
+115 FKBP4 0.0 0.0 ellipse
+116 NR3C2 0.0 0.0 ellipse
+117 MIDN 0.0 0.0 ellipse
+118 NR4A1 0.0 0.0 ellipse
+119 NUP210 0.0 0.0 ellipse
+120 NUP43 0.0 0.0 ellipse
+121 ORC1 0.0 0.0 ellipse
+122 LMNA 0.0 0.0 ellipse
+123 PAPSS1 0.0 0.0 ellipse
+124 PCLAF 0.0 0.0 ellipse
+125 PCNA 0.0 0.0 ellipse
+126 ESCO2 0.0 0.0 ellipse
+127 HAVCR2 0.0 0.0 ellipse
+128 PDCD1LG2 0.0 0.0 ellipse
+129 ICOS 0.0 0.0 ellipse
+130 DLAT 0.0 0.0 ellipse
+131 PDK1 0.0 0.0 ellipse
+132 PDLIM1 0.0 0.0 ellipse
+133 IDH1 0.0 0.0 ellipse
+134 PEX12 0.0 0.0 ellipse
+135 GP1BA 0.0 0.0 ellipse
+136 PGM5 0.0 0.0 ellipse
+137 PLAU 0.0 0.0 ellipse
+138 CFH 0.0 0.0 ellipse
+139 PLK4 0.0 0.0 ellipse
+140 POLE2 0.0 0.0 ellipse
+141 POLR2H 0.0 0.0 ellipse
+142 GTF2A2 0.0 0.0 ellipse
+143 GTF3C6 0.0 0.0 ellipse
+144 INTS7 0.0 0.0 ellipse
+145 PRMT3 0.0 0.0 ellipse
+146 CNTN1 0.0 0.0 ellipse
+147 PRNP 0.0 0.0 ellipse
+148 PSMA4 0.0 0.0 ellipse
+149 PSMA6 0.0 0.0 ellipse
+150 PSMB6 0.0 0.0 ellipse
+151 PTGER2 0.0 0.0 ellipse
+152 PTGER4 0.0 0.0 ellipse
+153 PTGS2 0.0 0.0 ellipse
+154 PTGS1 0.0 0.0 ellipse
+155 PTK2 0.0 0.0 ellipse
+156 LPXN 0.0 0.0 ellipse
+157 PTPRD 0.0 0.0 ellipse
+158 RAD17 0.0 0.0 ellipse
+159 RAD51 0.0 0.0 ellipse
+160 MND1 0.0 0.0 ellipse
+161 RAD51AP1 0.0 0.0 ellipse
+162 RAD51C 0.0 0.0 ellipse
+163 IQGAP1 0.0 0.0 ellipse
+164 RALA 0.0 0.0 ellipse
+165 RALB 0.0 0.0 ellipse
+166 RASGEF1B 0.0 0.0 ellipse
+167 RFC4 0.0 0.0 ellipse
+168 RMI1 0.0 0.0 ellipse
+169 S100A10 0.0 0.0 ellipse
+170 S100A11 0.0 0.0 ellipse
+171 SCD 0.0 0.0 ellipse
+172 SCN9A 0.0 0.0 ellipse
+173 SELP 0.0 0.0 ellipse
+174 SELPLG 0.0 0.0 ellipse
+175 SERPINE1 0.0 0.0 ellipse
+176 SKP2 0.0 0.0 ellipse
+177 SLC27A2 0.0 0.0 ellipse
+178 SLF1 0.0 0.0 ellipse
+179 SMC2 0.0 0.0 ellipse
+180 ARHGEF40 0.0 0.0 ellipse
+181 SMC3 0.0 0.0 ellipse
+182 SGO1 0.0 0.0 ellipse
+183 SMC6 0.0 0.0 ellipse
+184 DNM3 0.0 0.0 ellipse
+185 SNX9 0.0 0.0 ellipse
+186 CD33 0.0 0.0 ellipse
+187 SOCS3 0.0 0.0 ellipse
+188 IRF1 0.0 0.0 ellipse
+189 PIK3R6 0.0 0.0 ellipse
+190 SORT1 0.0 0.0 ellipse
+191 SOS1 0.0 0.0 ellipse
+192 BTK 0.0 0.0 ellipse
+193 FLT3 0.0 0.0 ellipse
+194 SPARC 0.0 0.0 ellipse
+195 SPP1 0.0 0.0 ellipse
+196 STX2 0.0 0.0 ellipse
+197 TEC 0.0 0.0 ellipse
+198 TICRR 0.0 0.0 ellipse
+199 TIMP1 0.0 0.0 ellipse
+200 MINDY3 0.0 0.0 ellipse
+201 TNFSF13B 0.0 0.0 ellipse
+202 TPM4 0.0 0.0 ellipse
+203 TRIM16 0.0 0.0 ellipse
+204 ADAM19 0.0 0.0 ellipse
+205 TSC22D2 0.0 0.0 ellipse
+206 TSC22D3 0.0 0.0 ellipse
+207 TTC28 0.0 0.0 ellipse
+208 TTK 0.0 0.0 ellipse
+209 DHFR 0.0 0.0 ellipse
+210 TYMS 0.0 0.0 ellipse
+211 SHMT2 0.0 0.0 ellipse
+212 UCHL5 0.0 0.0 ellipse
+213 SMAD7 0.0 0.0 ellipse
+214 UHRF1 0.0 0.0 ellipse
+215 CHMP1B 0.0 0.0 ellipse
+216 VPS25 0.0 0.0 ellipse
+217 WDFY3 0.0 0.0 ellipse
+218 WDHD1 0.0 0.0 ellipse
+219 WDR76 0.0 0.0 ellipse
+220 HELLS 0.0 0.0 ellipse
+221 RRP12 0.0 0.0 ellipse
+222 XPO1 0.0 0.0 ellipse
+223 RANBP1 0.0 0.0 ellipse
+224 SNUPN 0.0 0.0 ellipse
+225 XRCC2 0.0 0.0 ellipse
+*edges
+1 2 1.0
+3 4 1.0
+3 125 1.0
+3 137 1.0
+3 169 1.0
+3 170 1.0
+3 175 1.0
+4 169 1.0
+4 194 1.0
+5 6 1.0
+5 7 1.0
+5 40 1.0
+5 158 1.0
+5 159 1.0
+5 161 1.0
+5 162 1.0
+5 167 1.0
+5 168 1.0
+5 225 1.0
+6 7 1.0
+6 17 1.0
+6 20 1.0
+6 21 1.0
+6 23 1.0
+6 34 1.0
+6 40 1.0
+6 45 1.0
+6 48 1.0
+6 60 1.0
+6 82 1.0
+6 86 1.0
+6 95 1.0
+6 114 1.0
+6 124 1.0
+6 141 1.0
+6 158 1.0
+6 159 1.0
+6 161 1.0
+6 162 1.0
+6 167 1.0
+6 168 1.0
+6 176 1.0
+6 178 1.0
+6 181 1.0
+6 183 1.0
+6 207 1.0
+6 214 1.0
+6 225 1.0
+7 23 1.0
+7 40 1.0
+7 48 1.0
+7 158 1.0
+7 159 1.0
+7 161 1.0
+7 162 1.0
+7 167 1.0
+7 168 1.0
+7 225 1.0
+8 9 1.0
+10 11 1.0
+10 82 1.0
+10 208 1.0
+11 33 1.0
+11 68 1.0
+11 219 1.0
+12 13 1.0
+12 14 1.0
+12 17 1.0
+12 56 1.0
+12 57 1.0
+12 86 1.0
+12 87 1.0
+12 88 1.0
+12 89 1.0
+12 90 1.0
+12 91 1.0
+12 121 1.0
+12 125 1.0
+12 140 1.0
+12 178 1.0
+12 181 1.0
+12 198 1.0
+12 218 1.0
+13 14 1.0
+13 17 1.0
+13 86 1.0
+13 87 1.0
+13 88 1.0
+13 89 1.0
+13 90 1.0
+13 91 1.0
+13 121 1.0
+14 17 1.0
+14 86 1.0
+14 87 1.0
+14 88 1.0
+14 89 1.0
+14 90 1.0
+14 91 1.0
+14 121 1.0
+15 16 1.0
+15 51 1.0
+15 81 1.0
+15 101 1.0
+15 110 1.0
+17 19 1.0
+17 43 1.0
+17 59 1.0
+17 86 1.0
+17 124 1.0
+17 125 1.0
+17 176 1.0
+18 19 1.0
+19 33 1.0
+19 43 1.0
+19 176 1.0
+19 222 1.0
+20 65 1.0
+20 139 1.0
+21 22 1.0
+21 82 1.0
+21 96 1.0
+22 82 1.0
+23 43 1.0
+23 88 1.0
+23 159 1.0
+23 161 1.0
+24 25 1.0
+25 26 1.0
+25 27 1.0
+27 85 1.0
+27 137 1.0
+28 29 1.0
+28 69 1.0
+28 155 1.0
+28 191 1.0
+30 31 1.0
+30 32 1.0
+30 153 1.0
+30 175 1.0
+31 32 1.0
+31 42 1.0
+32 42 1.0
+32 69 1.0
+32 71 1.0
+32 72 1.0
+33 43 1.0
+34 48 1.0
+35 36 1.0
+36 37 1.0
+38 39 1.0
+40 86 1.0
+40 125 1.0
+40 158 1.0
+40 159 1.0
+40 161 1.0
+40 162 1.0
+40 167 1.0
+40 168 1.0
+40 218 1.0
+40 225 1.0
+41 42 1.0
+42 199 1.0
+43 44 1.0
+43 125 1.0
+43 140 1.0
+43 167 1.0
+46 47 1.0
+46 49 1.0
+46 69 1.0
+46 78 1.0
+46 199 1.0
+47 69 1.0
+48 159 1.0
+48 162 1.0
+49 50 1.0
+51 191 1.0
+52 53 1.0
+54 55 1.0
+54 84 1.0
+54 172 1.0
+55 217 1.0
+56 57 1.0
+56 86 1.0
+56 87 1.0
+56 88 1.0
+56 89 1.0
+56 90 1.0
+56 91 1.0
+56 140 1.0
+56 218 1.0
+57 58 1.0
+57 87 1.0
+57 88 1.0
+57 89 1.0
+57 90 1.0
+57 91 1.0
+57 140 1.0
+57 218 1.0
+59 88 1.0
+59 91 1.0
+60 61 1.0
+60 121 1.0
+60 141 1.0
+60 179 1.0
+60 214 1.0
+61 87 1.0
+61 88 1.0
+61 89 1.0
+61 91 1.0
+61 121 1.0
+61 141 1.0
+61 179 1.0
+61 214 1.0
+62 63 1.0
+62 171 1.0
+63 64 1.0
+63 171 1.0
+65 139 1.0
+66 67 1.0
+69 76 1.0
+69 77 1.0
+69 166 1.0
+69 174 1.0
+69 199 1.0
+70 71 1.0
+71 78 1.0
+71 125 1.0
+71 155 1.0
+72 73 1.0
+72 74 1.0
+72 75 1.0
+72 203 1.0
+73 74 1.0
+73 75 1.0
+73 76 1.0
+74 75 1.0
+74 157 1.0
+76 191 1.0
+77 78 1.0
+78 155 1.0
+78 191 1.0
+78 195 1.0
+79 80 1.0
+82 83 1.0
+82 96 1.0
+83 96 1.0
+86 87 1.0
+86 88 1.0
+86 89 1.0
+86 90 1.0
+86 91 1.0
+86 121 1.0
+86 198 1.0
+86 218 1.0
+87 88 1.0
+87 89 1.0
+87 90 1.0
+87 91 1.0
+87 121 1.0
+87 140 1.0
+87 218 1.0
+88 89 1.0
+88 90 1.0
+88 91 1.0
+88 121 1.0
+88 125 1.0
+88 140 1.0
+88 218 1.0
+89 90 1.0
+89 91 1.0
+89 121 1.0
+89 125 1.0
+89 140 1.0
+89 218 1.0
+90 91 1.0
+90 121 1.0
+90 140 1.0
+90 218 1.0
+91 121 1.0
+91 140 1.0
+91 218 1.0
+92 93 1.0
+93 94 1.0
+94 199 1.0
+97 98 1.0
+99 100 1.0
+102 103 1.0
+102 132 1.0
+103 132 1.0
+104 105 1.0
+105 106 1.0
+107 108 1.0
+108 109 1.0
+110 111 1.0
+110 112 1.0
+110 113 1.0
+111 145 1.0
+115 116 1.0
+117 118 1.0
+119 120 1.0
+121 176 1.0
+122 123 1.0
+122 219 1.0
+124 125 1.0
+124 214 1.0
+125 126 1.0
+125 140 1.0
+125 158 1.0
+125 159 1.0
+125 167 1.0
+126 181 1.0
+127 128 1.0
+128 129 1.0
+129 201 1.0
+130 131 1.0
+133 134 1.0
+134 177 1.0
+135 136 1.0
+135 173 1.0
+135 174 1.0
+137 138 1.0
+137 175 1.0
+138 195 1.0
+138 196 1.0
+140 167 1.0
+140 214 1.0
+140 218 1.0
+141 142 1.0
+141 143 1.0
+141 144 1.0
+146 147 1.0
+148 149 1.0
+148 150 1.0
+148 190 1.0
+148 212 1.0
+149 150 1.0
+149 212 1.0
+150 212 1.0
+151 152 1.0
+153 154 1.0
+155 156 1.0
+155 187 1.0
+155 191 1.0
+158 167 1.0
+158 168 1.0
+159 160 1.0
+159 161 1.0
+159 162 1.0
+159 168 1.0
+159 225 1.0
+161 162 1.0
+161 168 1.0
+161 225 1.0
+162 168 1.0
+162 225 1.0
+163 164 1.0
+163 202 1.0
+164 165 1.0
+167 168 1.0
+168 225 1.0
+173 174 1.0
+178 183 1.0
+180 181 1.0
+181 182 1.0
+184 185 1.0
+186 187 1.0
+187 188 1.0
+187 189 1.0
+191 192 1.0
+191 193 1.0
+191 197 1.0
+192 197 1.0
+194 195 1.0
+199 200 1.0
+204 205 1.0
+205 206 1.0
+207 218 1.0
+209 210 1.0
+210 211 1.0
+212 213 1.0
+213 222 1.0
+215 216 1.0
+219 220 1.0
+219 221 1.0
+222 223 1.0
+222 224 1.0

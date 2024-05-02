@@ -20,3 +20,9 @@ Gemfile.lock
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# LibreOffice
+.~lock.*#
+
+# Jupyter Notebook
+.ipynb_checkpoints
