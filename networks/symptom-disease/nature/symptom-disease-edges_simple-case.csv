@@ -1,5 +1,5 @@
-symptom,disease
-Blindness,Diabetes Mellitus
-Obesity,Diabetes Mellitus
-Obesity,Myocardial Infarction
-Blindness,Uveitis
+symptom,disease,weight
+Blindness,Diabetes Mellitus,31.85
+Obesity,Diabetes Mellitus,2709.96
+Obesity,Myocardial Infarction,233.95
+Blindness,Uveitis,49.42
