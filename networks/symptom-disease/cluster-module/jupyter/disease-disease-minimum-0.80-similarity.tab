@@ -1,0 +1,1616 @@
+MeSH Disease Term source	MeSH Disease Term target	symptom similarity score
+Alzheimer Disease	Memory Disorders	0.842904
+Alzheimer Disease	Dementia, Vascular	0.905955
+Alzheimer Disease	Cognition Disorders	0.887207
+Alzheimer Disease	Atrophy	0.815629
+Mitral Valve Prolapse	Heart Valve Diseases	0.93182
+Refractive Errors	Amblyopia	0.904725
+Refractive Errors	Anisometropia	0.916668
+Myoclonus	Creutzfeldt-Jakob Syndrome	0.837944
+Myoclonus	Unverricht-Lundborg Syndrome	0.954774
+Bipolar Disorder	Depressive Disorder	0.840119
+Bipolar Disorder	Depressive Disorder, Major	0.844747
+Charcot-Marie-Tooth Disease	Neuromuscular Diseases	0.876631
+Charcot-Marie-Tooth Disease	Muscular Atrophy	0.975521
+Gastrointestinal Hemorrhage	Peptic Ulcer Hemorrhage	0.931482
+Respiratory Distress Syndrome, Adult	Acidosis	0.856381
+Coloboma	Nails, Malformed	0.810997
+Coloboma	Orofaciodigital Syndromes	0.856286
+Coloboma	Hypertelorism	0.84669
+Coloboma	Foot Deformities, Congenital	0.80992
+Muscle Hypotonia	Pyruvate Metabolism, Inborn Errors	0.878369
+Adrenocortical Hyperfunction	Acanthosis Nigricans	0.846727
+Adrenocortical Hyperfunction	Cushing Syndrome	0.831758
+Adrenocortical Hyperfunction	Alopecia	0.818868
+Lung Diseases, Obstructive	Respiratory Distress Syndrome, Adult	0.895346
+Lung Diseases, Obstructive	Pulmonary Emphysema	0.908151
+Lung Diseases, Obstructive	Emphysema	0.884171
+Respiratory Tract Infections	Asthma	0.850807
+Disorders of Sex Development	46, XY Disorders of Sex Development	0.862454
+Disorders of Sex Development	Leydig Cell Tumor	0.932499
+Disorders of Sex Development	Adrenocortical Carcinoma	0.977895
+Disorders of Sex Development	46, XX Disorders of Sex Development	0.862454
+Disorders of Sex Development	Antley-Bixler Syndrome Phenotype	0.862454
+Disorders of Sex Development	Androgen-Insensitivity Syndrome	0.803916
+Disorders of Sex Development	Gonadal Dysgenesis, 46,XX	0.823281
+Myocardial Stunning	Coronary Restenosis	0.840244
+Macular Degeneration	Choroid Diseases	0.829216
+Macular Degeneration	Retinal Drusen	0.840675
+Macular Degeneration	Retinal Diseases	0.83974
+Macular Degeneration	Choroidal Neovascularization	0.899181
+Muscular Diseases	Myositis	0.828127
+Muscular Diseases	Muscular Dystrophies	0.816695
+Diabetic Nephropathies	Diabetic Angiopathies	0.918446
+Diabetic Nephropathies	Polycystic Kidney, Autosomal Dominant	0.872883
+Diabetic Nephropathies	Renal Insufficiency	0.805042
+Smith-Lemli-Opitz Syndrome	Chromosome Breakage	0.813486
+Niemann-Pick Disease, Type C	Supranuclear Palsy, Progressive	0.832963
+Niemann-Pick Disease, Type C	Tauopathies	0.821935
+Hyperparathyroidism	Hypocalcemia	0.855151
+Hyperparathyroidism	Rickets	0.869083
+Hyperparathyroidism	Hypoparathyroidism	0.846416
+Tetany	Magnesium Deficiency	0.878784
+Eczema	Keratosis	0.814481
+Skin Diseases	Eczema	0.830179
+Skin Diseases	Dermatitis, Exfoliative	0.844568
+Skin Diseases	Dermatitis, Allergic Contact	0.815584
+Skin Diseases	Drug Eruptions	0.873497
+Skin Diseases	Dermatitis, Contact	0.818113
+Skin Diseases	Dermatitis	0.908545
+Skin Diseases	Psoriasis	0.86083
+Skin Diseases	Urticaria	0.887011
+Skin Diseases	Folliculitis	0.821728
+Skin Diseases	Dermatitis, Atopic	0.844804
+Skin Diseases	Keratosis	0.805688
+Mitochondrial Diseases	Mitochondrial Myopathies	0.91771
+Mitochondrial Diseases	Mitochondrial Encephalomyopathies	0.883747
+Multiple Sclerosis, Relapsing-Remitting	Multiple Sclerosis, Chronic Progressive	0.825854
+Hypertension, Pulmonary	Reperfusion Injury	0.879453
+Hypertension, Pulmonary	Polycythemia	0.952198
+Hypertension, Pulmonary	Myocardial Reperfusion Injury	0.931289
+Neural Tube Defects	Spinal Dysraphism	0.942302
+Neural Tube Defects	Vesico-Ureteral Reflux	0.872858
+Neural Tube Defects	Spina Bifida Cystica	0.876442
+Neural Tube Defects	Urinary Tract Infections	0.882048
+Neural Tube Defects	Meningomyelocele	0.936152
+Athetosis	Purine-Pyrimidine Metabolism, Inborn Errors	0.869029
+Psychoses, Substance-Induced	Lewy Body Disease	0.923026
+Lung Diseases	Bronchiectasis	0.847954
+Lung Diseases	Pulmonary Veno-Occlusive Disease	0.802837
+Angina Pectoris	Coronary Disease	0.974088
+Angina Pectoris	Coronary Restenosis	0.806039
+Pain	Breast Diseases	0.869456
+Vipoma	Gastrinoma	0.883794
+Syncope	Sick Sinus Syndrome	0.985687
+Syncope	Long QT Syndrome	0.990177
+Syncope	Arrhythmogenic Right Ventricular Dysplasia	0.971353
+Syncope	Torsades de Pointes	0.946438
+Syncope	Arrhythmias, Cardiac	0.83903
+Syncope	Heart Block	0.959356
+Syncope	Death, Sudden, Cardiac	0.900983
+Syncope	Tachycardia, Ventricular	0.978593
+Syncope	Ventricular Fibrillation	0.851043
+Syncope	Brugada Syndrome	0.917034
+Syncope	Bundle-Branch Block	0.885295
+Dementia	Alzheimer Disease	0.973312
+Dementia	Dementia, Vascular	0.899399
+Dementia	Cognition Disorders	0.839475
+Hyperlipidemias	Obesity	0.930571
+Hyperlipidemias	Metabolic Diseases	0.915116
+Hyperlipidemias	Hypercholesterolemia	0.926976
+Hyperlipidemias	Glucose Intolerance	0.917449
+Hyperlipidemias	Hyperlipoproteinemias	0.943095
+Hyperlipidemias	Endometrial Hyperplasia	0.877495
+Hyperlipidemias	Gout	0.899649
+Hyperlipidemias	Endometrial Neoplasms	0.898368
+Hyperlipidemias	Diabetes Mellitus	0.958687
+Hyperlipidemias	Lipid Metabolism Disorders	0.844791
+Hyperlipidemias	Hyperinsulinism	0.941196
+Hyperlipidemias	Hyperlipoproteinemia Type IV	0.916981
+Hyperlipidemias	Hypothalamic Diseases	0.800608
+Hyperlipidemias	Bardet-Biedl Syndrome	0.858062
+Hyperlipidemias	Hypertriglyceridemia	0.951506
+Hyperlipidemias	Hyperlipidemia, Familial Combined	0.934206
+Hyperlipidemias	Hypoalphalipoproteinemias	0.906766
+Hyperlipidemias	Dyslipidemias	0.91877
+Mucocutaneous Lymph Node Syndrome	Neutropenia	0.850718
+Wilms Tumor	Congenital Abnormalities	0.826973
+Immunologic Deficiency Syndromes	Candidiasis, Chronic Mucocutaneous	0.863775
+Spinal Dysraphism	Vesico-Ureteral Reflux	0.915712
+Spinal Dysraphism	Spina Bifida Cystica	0.932274
+Spinal Dysraphism	Urinary Tract Infections	0.87717
+Spinal Dysraphism	Urologic Diseases	0.831504
+Deafness	Waardenburg's Syndrome	0.852985
+Deafness	Ichthyosiform Erythroderma, Congenital	0.965103
+Nails, Malformed	Orofaciodigital Syndromes	0.80345
+Nails, Malformed	Hypertelorism	0.830505
+Nails, Malformed	Xeroderma Pigmentosum	0.852395
+Nails, Malformed	Chromosome Breakage	0.85154
+Tooth Abnormalities	Coloboma	0.826382
+Tooth Abnormalities	Cleidocranial Dysplasia	0.805322
+Tooth Abnormalities	Nails, Malformed	0.816293
+Tooth Abnormalities	Chromosome Disorders	0.83802
+Tooth Abnormalities	Craniofacial Dysostosis	0.911513
+Tooth Abnormalities	Orofaciodigital Syndromes	0.841926
+Tooth Abnormalities	Amino Acid Metabolism, Inborn Errors	0.819822
+Tooth Abnormalities	Fibromatosis, Gingival	0.861603
+Tooth Abnormalities	Klinefelter Syndrome	0.806181
+Tooth Abnormalities	Hypertelorism	0.880406
+Tooth Abnormalities	Chromosome Aberrations	0.857584
+Tooth Abnormalities	Syndactyly	0.85116
+Tooth Abnormalities	Craniosynostoses	0.858504
+Tooth Abnormalities	Xeroderma Pigmentosum	0.839769
+Tooth Abnormalities	Hand Deformities, Congenital	0.889383
+Tooth Abnormalities	Ectodermal Dysplasia	0.866963
+Tooth Abnormalities	Chromosome Breakage	0.841658
+Tooth Abnormalities	Exostoses, Multiple Hereditary	0.802335
+Tooth Abnormalities	Foot Deformities, Congenital	0.83333
+Macrocephaly	Fibromatosis, Gingival	0.810971
+Macrocephaly	Xeroderma Pigmentosum	0.809368
+Sick Sinus Syndrome	Long QT Syndrome	0.980121
+Sick Sinus Syndrome	Arrhythmogenic Right Ventricular Dysplasia	0.959018
+Sick Sinus Syndrome	Torsades de Pointes	0.934632
+Sick Sinus Syndrome	Heart Block	0.961804
+Sick Sinus Syndrome	Death, Sudden, Cardiac	0.913077
+Sick Sinus Syndrome	Tachycardia, Ventricular	0.973254
+Sick Sinus Syndrome	Ventricular Fibrillation	0.866258
+Sick Sinus Syndrome	Brugada Syndrome	0.926217
+Sick Sinus Syndrome	Bundle-Branch Block	0.897959
+Lymphoma, B-Cell	Lymphoma, Large B-Cell, Diffuse	0.810507
+Chromosome Disorders	Smith-Lemli-Opitz Syndrome	0.878149
+Chromosome Disorders	Blepharophimosis	0.89062
+Chromosome Disorders	Silver-Russell Syndrome	0.814441
+Chromosome Disorders	Nails, Malformed	0.806374
+Chromosome Disorders	Macrocephaly	0.865174
+Chromosome Disorders	Craniofacial Dysostosis	0.898374
+Chromosome Disorders	Rubinstein-Taybi Syndrome	0.814917
+Chromosome Disorders	Orofaciodigital Syndromes	0.828905
+Chromosome Disorders	Amino Acid Metabolism, Inborn Errors	0.942561
+Chromosome Disorders	Fibromatosis, Gingival	0.898142
+Chromosome Disorders	Hallermann's Syndrome	0.855382
+Chromosome Disorders	Hypertelorism	0.841913
+Chromosome Disorders	Chromosome Aberrations	0.966804
+Chromosome Disorders	Syndactyly	0.884968
+Chromosome Disorders	Craniosynostoses	0.904449
+Chromosome Disorders	Polydactyly	0.910174
+Chromosome Disorders	Xeroderma Pigmentosum	0.898716
+Chromosome Disorders	Hand Deformities, Congenital	0.857796
+Chromosome Disorders	Stereotypic Movement Disorder	0.815405
+Chromosome Disorders	Anophthalmos	0.861052
+Chromosome Disorders	Chromosome Breakage	0.920472
+Chromosome Disorders	Cri-du-Chat Syndrome	0.874653
+Chromosome Disorders	Exostoses, Multiple Hereditary	0.858417
+Chromosome Disorders	Sebaceous Gland Neoplasms	0.850913
+Chromosome Disorders	Wolf-Hirschhorn Syndrome	0.901952
+Asthma	Pallister-Hall Syndrome	0.822611
+Asthma	Asbestosis	0.851873
+Asthma	Bronchial Hyperreactivity	0.934145
+Asthma	Respiratory Hypersensitivity	0.822967
+Asthma	Hypersensitivity, Immediate	0.847723
+Craniofacial Dysostosis	Smith-Lemli-Opitz Syndrome	0.813079
+Craniofacial Dysostosis	Nails, Malformed	0.856321
+Craniofacial Dysostosis	Orofaciodigital Syndromes	0.905371
+Craniofacial Dysostosis	Fibromatosis, Gingival	0.90061
+Craniofacial Dysostosis	Hypertelorism	0.907174
+Craniofacial Dysostosis	Syndactyly	0.903609
+Craniofacial Dysostosis	Craniosynostoses	0.884326
+Craniofacial Dysostosis	Polydactyly	0.831693
+Craniofacial Dysostosis	Hand Deformities, Congenital	0.912122
+Craniofacial Dysostosis	Chromosome Breakage	0.895601
+Craniofacial Dysostosis	Foot Deformities, Congenital	0.838922
+Colitis, Ulcerative	Crohn Disease	0.887839
+Exocrine Pancreatic Insufficiency	Celiac Disease	0.856154
+Premature Birth	Hernia, Umbilical	0.83326
+Microcephaly	Nails, Malformed	0.839976
+Microcephaly	Tooth Abnormalities	0.844628
+Microcephaly	Macrocephaly	0.892118
+Microcephaly	Chromosome Disorders	0.965221
+Microcephaly	Craniofacial Dysostosis	0.925011
+Microcephaly	Rubinstein-Taybi Syndrome	0.83428
+Microcephaly	Dwarfism	0.940785
+Microcephaly	Orofaciodigital Syndromes	0.863708
+Microcephaly	Abnormalities, Multiple	0.978853
+Microcephaly	Amino Acid Metabolism, Inborn Errors	0.967066
+Microcephaly	Mental Retardation	0.983096
+Microcephaly	Fibromatosis, Gingival	0.937276
+Microcephaly	Piebaldism	0.846214
+Microcephaly	Phenylketonurias	0.974757
+Microcephaly	De Lange Syndrome	0.883006
+Microcephaly	Klinefelter Syndrome	0.905274
+Microcephaly	Tuberous Sclerosis	0.817487
+Microcephaly	Hallermann's Syndrome	0.902019
+Microcephaly	Down Syndrome	0.848082
+Microcephaly	Hypertelorism	0.851148
+Microcephaly	Skin Abnormalities	0.904462
+Microcephaly	Metabolism, Inborn Errors	0.914369
+Microcephaly	Mucopolysaccharidosis IV	0.849707
+Microcephaly	Chromosome Aberrations	0.993475
+Microcephaly	Syndactyly	0.907776
+Microcephaly	Craniosynostoses	0.900289
+Microcephaly	Carbohydrate Metabolism, Inborn Errors	0.8019
+Microcephaly	Polydactyly	0.889254
+Microcephaly	Xeroderma Pigmentosum	0.926552
+Microcephaly	Hand Deformities, Congenital	0.872956
+Microcephaly	Congenital Hypothyroidism	0.806525
+Microcephaly	Stereotypic Movement Disorder	0.830957
+Microcephaly	Homocystinuria	0.825348
+Microcephaly	Ectodermal Dysplasia	0.827292
+Microcephaly	Chromosome Breakage	0.961531
+Microcephaly	Cri-du-Chat Syndrome	0.857707
+Microcephaly	Exostoses, Multiple Hereditary	0.875325
+Microcephaly	Sebaceous Gland Neoplasms	0.889659
+Microcephaly	Pain Insensitivity, Congenital	0.818675
+Microcephaly	Wolf-Hirschhorn Syndrome	0.904739
+Microcephaly	Maple Syrup Urine Disease	0.879136
+Brain Injuries	Craniocerebral Trauma	0.82421
+Fibrous Dysplasia, Polyostotic	Cafe-au-Lait Spots	0.978085
+Fibrous Dysplasia, Polyostotic	Colorectal Neoplasms, Hereditary Nonpolyposis	0.971549
+HIV Infections	Acquired Immunodeficiency Syndrome	0.883855
+HIV Infections	HIV Seropositivity	0.836684
+HIV Infections	Graft vs Host Disease	0.835855
+Kidney Failure, Chronic	Nephrotic Syndrome	0.867491
+Kidney Failure, Chronic	Proteinuria	0.861198
+Kidney Failure, Chronic	Glomerulosclerosis, Focal Segmental	0.874438
+Kidney Failure, Chronic	Renal Insufficiency	0.895418
+Glioma	Glioblastoma	0.834058
+Glioma	Brain Neoplasms	0.813162
+Fanconi Syndrome	Nephrotic Syndrome	0.895261
+Fanconi Syndrome	Glomerulosclerosis, Focal Segmental	0.900077
+Rubinstein-Taybi Syndrome	Xeroderma Pigmentosum	0.813549
+Rubinstein-Taybi Syndrome	Chromosome Breakage	0.819144
+Rubinstein-Taybi Syndrome	Cri-du-Chat Syndrome	0.805176
+Night Blindness	Leber Congenital Amaurosis	0.861592
+Night Blindness	Color Vision Defects	0.816022
+Pulmonary Disease, Chronic Obstructive	Lung Diseases, Obstructive	0.814914
+Pulmonary Disease, Chronic Obstructive	Lung Diseases, Interstitial	0.856005
+Pulmonary Disease, Chronic Obstructive	Pulmonary Emphysema	0.911327
+Pulmonary Disease, Chronic Obstructive	Pulmonary Alveolar Proteinosis	0.860354
+Pulmonary Disease, Chronic Obstructive	Pulmonary Fibrosis	0.879701
+Pulmonary Disease, Chronic Obstructive	Idiopathic Pulmonary Fibrosis	0.889265
+Pulmonary Disease, Chronic Obstructive	Emphysema	0.89069
+Dwarfism	Nails, Malformed	0.826348
+Dwarfism	Tooth Abnormalities	0.835338
+Dwarfism	Macrocephaly	0.853549
+Dwarfism	Chromosome Disorders	0.909306
+Dwarfism	Craniofacial Dysostosis	0.92303
+Dwarfism	Orofaciodigital Syndromes	0.834105
+Dwarfism	Amino Acid Metabolism, Inborn Errors	0.904533
+Dwarfism	Fibromatosis, Gingival	0.885747
+Dwarfism	Phenylketonurias	0.960984
+Dwarfism	Klinefelter Syndrome	0.888597
+Dwarfism	Hypertelorism	0.83598
+Dwarfism	Congenital Abnormalities	0.800599
+Dwarfism	Chromosome Aberrations	0.938677
+Dwarfism	Syndactyly	0.861736
+Dwarfism	Craniosynostoses	0.863195
+Dwarfism	Polydactyly	0.858144
+Dwarfism	Xeroderma Pigmentosum	0.890627
+Dwarfism	Hand Deformities, Congenital	0.852296
+Dwarfism	Congenital Hypothyroidism	0.867208
+Dwarfism	Ectodermal Dysplasia	0.814742
+Dwarfism	Chromosome Breakage	0.908098
+Dwarfism	Cri-du-Chat Syndrome	0.822761
+Dwarfism	Exostoses, Multiple Hereditary	0.839405
+Dwarfism	Cryptorchidism	0.821354
+Dwarfism	Wolf-Hirschhorn Syndrome	0.821065
+Incontinentia Pigmenti	Classical Lissencephalies and Subcortical Band Heterotopias	0.957708
+Learning Disorders	Attention Deficit Disorder with Hyperactivity	0.82312
+Long QT Syndrome	Arrhythmogenic Right Ventricular Dysplasia	0.962687
+Long QT Syndrome	Torsades de Pointes	0.948457
+Long QT Syndrome	Coffin-Lowry Syndrome	0.845241
+Long QT Syndrome	Romano-Ward Syndrome	0.854134
+Long QT Syndrome	Death, Sudden, Cardiac	0.911538
+Long QT Syndrome	Tachycardia, Ventricular	0.974926
+Long QT Syndrome	Ventricular Fibrillation	0.869009
+Long QT Syndrome	Atrioventricular Block	0.956243
+Stomach Neoplasms	Stomach Ulcer	0.847311
+Stomach Neoplasms	Duodenal Ulcer	0.820097
+Stomach Neoplasms	Stomach Diseases	0.879209
+Cardiomyopathies	Heart Diseases	0.853721
+Cerebellar Diseases	Spinocerebellar Degenerations	0.835998
+Psychotic Disorders	Psychoses, Substance-Induced	0.919284
+Psychotic Disorders	Schizophrenia	0.920766
+Psychotic Disorders	Lewy Body Disease	0.875952
+Gilbert Disease	Crigler-Najjar Syndrome	0.929786
+Orofaciodigital Syndromes	Blepharophimosis	0.82289
+Liver Cirrhosis	Liver Diseases	0.824042
+Dermatitis, Seborrheic	Alopecia	0.859898
+Torsades de Pointes	Arrhythmogenic Right Ventricular Dysplasia	0.935133
+Torsades de Pointes	Coffin-Lowry Syndrome	0.805717
+Torsades de Pointes	Death, Sudden, Cardiac	0.918052
+Torsades de Pointes	Ventricular Fibrillation	0.886234
+Hypokalemic Periodic Paralysis	Myotonic Disorders	0.835832
+Adrenocortical Carcinoma	46, XY Disorders of Sex Development	0.862558
+Adrenocortical Carcinoma	46, XX Disorders of Sex Development	0.862558
+Adrenocortical Carcinoma	Antley-Bixler Syndrome Phenotype	0.862558
+Adrenocortical Carcinoma	Gonadal Dysgenesis, 46,XX	0.821428
+Carcinoma, Hepatocellular	Liver Neoplasms	0.926237
+Neoplasms, Experimental	Liver Neoplasms, Experimental	0.90754
+Epilepsy, Absence	Epilepsies, Myoclonic	0.871005
+Tetralogy of Fallot	Transposition of Great Vessels	0.97236
+Obesity	Metabolic Diseases	0.941822
+Obesity	Glucose Intolerance	0.939292
+Obesity	Hyperlipoproteinemias	0.92309
+Obesity	Endometrial Hyperplasia	0.928949
+Obesity	Gout	0.874082
+Obesity	Endometrial Neoplasms	0.943922
+Obesity	Diabetes Mellitus	0.963128
+Obesity	Lipid Metabolism Disorders	0.893968
+Obesity	Hyperinsulinism	0.979443
+Obesity	Bardet-Biedl Syndrome	0.928762
+Obesity	Hyperlipidemia, Familial Combined	0.987497
+Obesity	Hypoalphalipoproteinemias	0.988107
+Obesity	Dyslipidemias	0.945105
+Intestinal Neoplasms	Intestinal Polyps	0.825961
+Intestinal Neoplasms	Gastrinoma	0.848222
+Intestinal Neoplasms	Crohn Disease	0.823269
+Nephrotic Syndrome	Nephrosis	0.985884
+Nephrotic Syndrome	Denys-Drash Syndrome	0.955773
+Nephrotic Syndrome	Lecithin Acyltransferase Deficiency	0.992435
+Nephrotic Syndrome	Immune Complex Diseases	0.918671
+Nephrotic Syndrome	Oculocerebrorenal Syndrome	0.868777
+Nephrotic Syndrome	Anemia, Macrocytic	0.836105
+Metabolic Diseases	Glucose Intolerance	0.92519
+Metabolic Diseases	Hyperlipoproteinemias	0.898854
+Metabolic Diseases	Diabetes Mellitus	0.933382
+Metabolic Diseases	Lipid Metabolism Disorders	0.872182
+Metabolic Diseases	Bardet-Biedl Syndrome	0.911989
+Metabolic Diseases	Hyperlipidemia, Familial Combined	0.932871
+Metabolic Diseases	Hypoalphalipoproteinemias	0.926101
+Metabolic Diseases	Dyslipidemias	0.912953
+Supranuclear Palsy, Progressive	Striatonigral Degeneration	0.967389
+Gram-Negative Bacterial Infections	AIDS-Related Opportunistic Infections	0.918953
+Gram-Negative Bacterial Infections	Celiac Disease	0.876898
+Hypercholesterolemia	Glucose Intolerance	0.819358
+Hypercholesterolemia	Hyperlipoproteinemias	0.854487
+Hypercholesterolemia	Diabetes Mellitus	0.837473
+Hypercholesterolemia	Dyslipidemias	0.812242
+Essential Tremor	Tremor	0.895442
+Keloid	Candidiasis, Vulvovaginal	0.880891
+Keloid	Keratosis	0.804279
+Myositis Ossificans	Oral Submucous Fibrosis	0.870321
+Myositis Ossificans	Ankylosis	0.844912
+Citrullinemia	Carbamoyl-Phosphate Synthase I Deficiency Disease	0.947027
+Photosensitivity Disorders	Keratosis	0.800245
+Fibromatosis, Abdominal	Hereditary Angioedema Type III	0.883577
+Abnormalities, Multiple	Coloboma	0.850732
+Abnormalities, Multiple	Smith-Lemli-Opitz Syndrome	0.870029
+Abnormalities, Multiple	Nails, Malformed	0.872301
+Abnormalities, Multiple	Tooth Abnormalities	0.890831
+Abnormalities, Multiple	Macrocephaly	0.88443
+Abnormalities, Multiple	Chromosome Disorders	0.963684
+Abnormalities, Multiple	Craniofacial Dysostosis	0.958652
+Abnormalities, Multiple	Rubinstein-Taybi Syndrome	0.828028
+Abnormalities, Multiple	Dwarfism	0.940949
+Abnormalities, Multiple	Orofaciodigital Syndromes	0.900247
+Abnormalities, Multiple	Amino Acid Metabolism, Inborn Errors	0.945316
+Abnormalities, Multiple	Fibromatosis, Gingival	0.944149
+Abnormalities, Multiple	Piebaldism	0.844621
+Abnormalities, Multiple	Phenylketonurias	0.946845
+Abnormalities, Multiple	Klinefelter Syndrome	0.903543
+Abnormalities, Multiple	Fragile X Syndrome	0.884108
+Abnormalities, Multiple	Hypertelorism	0.906117
+Abnormalities, Multiple	Skin Abnormalities	0.894069
+Abnormalities, Multiple	Metabolism, Inborn Errors	0.910495
+Abnormalities, Multiple	Chromosome Aberrations	0.987045
+Abnormalities, Multiple	Syndactyly	0.922725
+Abnormalities, Multiple	Craniosynostoses	0.91102
+Abnormalities, Multiple	Carbohydrate Metabolism, Inborn Errors	0.800037
+Abnormalities, Multiple	Polydactyly	0.901875
+Abnormalities, Multiple	Xeroderma Pigmentosum	0.939818
+Abnormalities, Multiple	Hand Deformities, Congenital	0.921072
+Abnormalities, Multiple	Congenital Hypothyroidism	0.861029
+Abnormalities, Multiple	Stereotypic Movement Disorder	0.814544
+Abnormalities, Multiple	Ectodermal Dysplasia	0.858448
+Abnormalities, Multiple	Chromosome Breakage	0.955497
+Abnormalities, Multiple	Cri-du-Chat Syndrome	0.862531
+Abnormalities, Multiple	Exostoses, Multiple Hereditary	0.876769
+Abnormalities, Multiple	Sebaceous Gland Neoplasms	0.855438
+Abnormalities, Multiple	Pain Insensitivity, Congenital	0.811358
+Abnormalities, Multiple	Wolf-Hirschhorn Syndrome	0.898583
+Abnormalities, Multiple	Foot Deformities, Congenital	0.831197
+Abnormalities, Multiple	Genetic Diseases, Inborn	0.861832
+Abnormalities, Multiple	Maple Syrup Urine Disease	0.855798
+Amino Acid Metabolism, Inborn Errors	Nails, Malformed	0.817837
+Amino Acid Metabolism, Inborn Errors	Macrocephaly	0.847506
+Amino Acid Metabolism, Inborn Errors	Rubinstein-Taybi Syndrome	0.813234
+Amino Acid Metabolism, Inborn Errors	Orofaciodigital Syndromes	0.845941
+Amino Acid Metabolism, Inborn Errors	Fibromatosis, Gingival	0.927864
+Amino Acid Metabolism, Inborn Errors	Hypertelorism	0.821261
+Amino Acid Metabolism, Inborn Errors	Syndactyly	0.87183
+Amino Acid Metabolism, Inborn Errors	Craniosynostoses	0.873052
+Amino Acid Metabolism, Inborn Errors	Polydactyly	0.862173
+Amino Acid Metabolism, Inborn Errors	Xeroderma Pigmentosum	0.921086
+Amino Acid Metabolism, Inborn Errors	Hand Deformities, Congenital	0.837732
+Amino Acid Metabolism, Inborn Errors	Chromosome Breakage	0.92285
+Amino Acid Metabolism, Inborn Errors	Cri-du-Chat Syndrome	0.839858
+Amino Acid Metabolism, Inborn Errors	Exostoses, Multiple Hereditary	0.853997
+Amino Acid Metabolism, Inborn Errors	Maple Syrup Urine Disease	0.90712
+Paralyses, Familial Periodic	Paralysis, Hyperkalemic Periodic	0.949703
+Anemia, Dyserythropoietic, Congenital	Anemia, Diamond-Blackfan	0.903629
+Pituitary ACTH Hypersecretion	Acanthosis Nigricans	0.81438
+Lung Diseases, Interstitial	Pulmonary Alveolar Proteinosis	0.922376
+Lung Diseases, Interstitial	Pulmonary Fibrosis	0.932657
+Lung Diseases, Interstitial	Idiopathic Pulmonary Fibrosis	0.938887
+Myotonia Congenita	Myotonic Dystrophy	0.824606
+Osteoarthritis	Osteoarthritis, Hip	0.938528
+Osteoarthritis	Osteoarthritis, Knee	0.924619
+Neurofibromatoses	Cafe-au-Lait Spots	0.977045
+Neurofibromatoses	Fibrous Dysplasia, Polyostotic	0.966539
+Neurofibromatoses	Neurofibromatosis 1	0.913221
+Mental Retardation	Smith-Lemli-Opitz Syndrome	0.829603
+Mental Retardation	Blepharophimosis	0.92045
+Mental Retardation	Nails, Malformed	0.846442
+Mental Retardation	Tooth Abnormalities	0.835582
+Mental Retardation	Macrocephaly	0.872913
+Mental Retardation	Chromosome Disorders	0.946493
+Mental Retardation	Craniofacial Dysostosis	0.908062
+Mental Retardation	Rubinstein-Taybi Syndrome	0.840844
+Mental Retardation	Dwarfism	0.922102
+Mental Retardation	Orofaciodigital Syndromes	0.863916
+Mental Retardation	Abnormalities, Multiple	0.969765
+Mental Retardation	Amino Acid Metabolism, Inborn Errors	0.948897
+Mental Retardation	Fibromatosis, Gingival	0.943041
+Mental Retardation	Piebaldism	0.854463
+Mental Retardation	Phenylketonurias	0.968913
+Mental Retardation	De Lange Syndrome	0.870633
+Mental Retardation	Klinefelter Syndrome	0.909358
+Mental Retardation	Fragile X Syndrome	0.906021
+Mental Retardation	Hallermann's Syndrome	0.921674
+Mental Retardation	Down Syndrome	0.83959
+Mental Retardation	Hypertelorism	0.845178
+Mental Retardation	Skin Abnormalities	0.902062
+Mental Retardation	Metabolism, Inborn Errors	0.880525
+Mental Retardation	Mucopolysaccharidosis IV	0.84801
+Mental Retardation	Chromosome Aberrations	0.985722
+Mental Retardation	Syndactyly	0.900638
+Mental Retardation	Craniosynostoses	0.899153
+Mental Retardation	Polydactyly	0.857152
+Mental Retardation	Xeroderma Pigmentosum	0.939746
+Mental Retardation	Hand Deformities, Congenital	0.865881
+Mental Retardation	Stereotypic Movement Disorder	0.83707
+Mental Retardation	Homocystinuria	0.808275
+Mental Retardation	Anophthalmos	0.894077
+Mental Retardation	Ectodermal Dysplasia	0.816113
+Mental Retardation	Chromosome Breakage	0.980734
+Mental Retardation	Cri-du-Chat Syndrome	0.858345
+Mental Retardation	Exostoses, Multiple Hereditary	0.88644
+Mental Retardation	Sebaceous Gland Neoplasms	0.865116
+Mental Retardation	Pain Insensitivity, Congenital	0.832016
+Mental Retardation	Wolf-Hirschhorn Syndrome	0.871457
+Mental Retardation	Genetic Diseases, Inborn	0.80461
+Mental Retardation	Maple Syrup Urine Disease	0.846795
+Optic Atrophy	Glaucoma	0.862475
+Optic Atrophy	Retinal Diseases	0.908315
+Memory Disorders	Cognition Disorders	0.857234
+Mammary Neoplasms, Experimental	Cardiomegaly	0.813048
+Mammary Neoplasms, Experimental	Liver Cirrhosis, Experimental	0.908068
+Glucose Intolerance	Hyperlipoproteinemias	0.883439
+Glucose Intolerance	Hypoalphalipoproteinemias	0.908757
+Glucose Intolerance	Dyslipidemias	0.917061
+Hyperlipoproteinemias	Hypoalphalipoproteinemias	0.913898
+Bone Diseases, Developmental	Coloboma	0.875183
+Bone Diseases, Developmental	Blepharophimosis	0.813879
+Bone Diseases, Developmental	Nails, Malformed	0.839199
+Bone Diseases, Developmental	Tooth Abnormalities	0.896931
+Bone Diseases, Developmental	Chromosome Disorders	0.848944
+Bone Diseases, Developmental	Craniofacial Dysostosis	0.928046
+Bone Diseases, Developmental	Microcephaly	0.858181
+Bone Diseases, Developmental	Dwarfism	0.867007
+Bone Diseases, Developmental	Orofaciodigital Syndromes	0.884709
+Bone Diseases, Developmental	Abnormalities, Multiple	0.913408
+Bone Diseases, Developmental	Amino Acid Metabolism, Inborn Errors	0.826481
+Bone Diseases, Developmental	Mental Retardation	0.841023
+Bone Diseases, Developmental	Fibromatosis, Gingival	0.85239
+Bone Diseases, Developmental	Phenylketonurias	0.823841
+Bone Diseases, Developmental	De Lange Syndrome	0.84362
+Bone Diseases, Developmental	Klinefelter Syndrome	0.812614
+Bone Diseases, Developmental	Down Syndrome	0.823455
+Bone Diseases, Developmental	Hypertelorism	0.879399
+Bone Diseases, Developmental	Skin Abnormalities	0.825659
+Bone Diseases, Developmental	Metabolism, Inborn Errors	0.813397
+Bone Diseases, Developmental	Mucopolysaccharidosis IV	0.813266
+Bone Diseases, Developmental	Chromosome Aberrations	0.869559
+Bone Diseases, Developmental	Syndactyly	0.883315
+Bone Diseases, Developmental	Craniosynostoses	0.821934
+Bone Diseases, Developmental	Polydactyly	0.801334
+Bone Diseases, Developmental	Xeroderma Pigmentosum	0.855253
+Bone Diseases, Developmental	Hand Deformities, Congenital	0.905033
+Bone Diseases, Developmental	Congenital Hypothyroidism	0.881149
+Bone Diseases, Developmental	Ectodermal Dysplasia	0.831578
+Bone Diseases, Developmental	Chromosome Breakage	0.82694
+Bone Diseases, Developmental	Choanal Atresia	0.803195
+Bone Diseases, Developmental	Exostoses, Multiple Hereditary	0.825441
+Bone Diseases, Developmental	Acrocephalosyndactylia	0.809784
+Bone Diseases, Developmental	Pierre Robin Syndrome	0.855924
+Bone Diseases, Developmental	Craniofacial Abnormalities	0.876903
+Bone Diseases, Developmental	Foot Deformities, Congenital	0.847263
+Bone Diseases, Developmental	Genetic Diseases, Inborn	0.838221
+Purpura Fulminans	Protein C Deficiency	0.805839
+Autistic Disorder	Asperger Syndrome	0.810373
+Autistic Disorder	Language Development Disorders	0.809052
+Autistic Disorder	Cri-du-Chat Syndrome	0.818391
+Leukemia, Lymphocytic, Chronic, B-Cell	Common Variable Immunodeficiency	0.866392
+Leukemia, Lymphocytic, Chronic, B-Cell	Autoimmune Lymphoproliferative Syndrome	0.805335
+Leukemia, Lymphocytic, Chronic, B-Cell	Myelodysplastic Syndromes	0.865438
+Diabetes Insipidus	Diabetes Insipidus, Nephrogenic	0.982853
+Diabetes Insipidus	Diabetes Insipidus, Neurogenic	0.992193
+Hyperbilirubinemia, Hereditary	Crigler-Najjar Syndrome	0.934222
+Hyperbilirubinemia, Hereditary	Gilbert Disease	0.985507
+Fibromatosis, Gingival	Orofaciodigital Syndromes	0.861448
+Piebaldism	Amino Acid Metabolism, Inborn Errors	0.810514
+Piebaldism	Fibromatosis, Gingival	0.810261
+Piebaldism	Craniosynostoses	0.859426
+Piebaldism	Xeroderma Pigmentosum	0.807323
+Piebaldism	Hand Deformities, Congenital	0.805165
+Piebaldism	Chromosome Breakage	0.866756
+Tachycardia	Long QT Syndrome	0.898531
+Tachycardia	Arrhythmogenic Right Ventricular Dysplasia	0.889203
+Tachycardia	Torsades de Pointes	0.918245
+Tachycardia	Death, Sudden, Cardiac	0.932147
+Tachycardia	Tachycardia, Ventricular	0.932539
+Tachycardia	Ventricular Fibrillation	0.915387
+Tachycardia	Brugada Syndrome	0.858437
+Drug Eruptions	Candidiasis, Vulvovaginal	0.861565
+Drug Eruptions	Keloid	0.854632
+Drug Eruptions	Dermatitis, Contact	0.856871
+Drug Eruptions	Porokeratosis	0.878121
+Drug Eruptions	Psoriasis	0.810436
+Drug Eruptions	Urticaria	0.915423
+Drug Eruptions	Liver Cirrhosis, Biliary	0.80704
+Drug Eruptions	Folliculitis	0.904343
+Drug Eruptions	Cholestasis, Intrahepatic	0.83282
+Drug Eruptions	Parapsoriasis	0.814253
+Drug Eruptions	Dermatitis, Atopic	0.886223
+Drug Eruptions	Keratosis	0.81232
+Dermatitis, Contact	Candidiasis, Vulvovaginal	0.821539
+Dermatitis, Contact	Dermatitis, Allergic Contact	0.946101
+Dermatitis, Contact	Pruritus	0.803779
+Dermatitis, Contact	Keratosis	0.861482
+Hypersensitivity	Hypersensitivity, Immediate	0.860369
+Dermatitis	Keloid	0.877278
+Dermatitis	Keratosis	0.844957
+Atrial Fibrillation	Death, Sudden, Cardiac	0.835338
+Phenylketonurias	Chromosome Disorders	0.929187
+Phenylketonurias	Rubinstein-Taybi Syndrome	0.815822
+Phenylketonurias	Orofaciodigital Syndromes	0.837492
+Phenylketonurias	Amino Acid Metabolism, Inborn Errors	0.946359
+Phenylketonurias	Klinefelter Syndrome	0.906218
+Phenylketonurias	Hypertelorism	0.812128
+Phenylketonurias	Syndactyly	0.879203
+Phenylketonurias	Polydactyly	0.856875
+Phenylketonurias	Hand Deformities, Congenital	0.837039
+Phenylketonurias	Chromosome Breakage	0.950907
+Phenylketonurias	Cri-du-Chat Syndrome	0.855332
+Phenylketonurias	Exostoses, Multiple Hereditary	0.864586
+Phenylketonurias	Maple Syrup Urine Disease	0.87122
+Neovascularization, Pathologic	Hypertension, Pulmonary	0.948095
+Neovascularization, Pathologic	Reperfusion Injury	0.911438
+Neovascularization, Pathologic	Polycythemia	0.932511
+Pulmonary Emphysema	Pulmonary Fibrosis	0.83021
+Hydrops Fetalis	Anemia, Diamond-Blackfan	0.951221
+Headache	Sinus Thrombosis, Intracranial	0.801585
+Ataxia	Hereditary Central Nervous System Demyelinating Diseases	0.852037
+Muscular Dystrophy, Oculopharyngeal	Muscular Dystrophy, Facioscapulohumeral	0.835684
+Endometrial Hyperplasia	Glucose Intolerance	0.884298
+Neurodegenerative Diseases	Supranuclear Palsy, Progressive	0.866325
+Neurodegenerative Diseases	Tauopathies	0.9385
+Neurodegenerative Diseases	Pick Disease of the Brain	0.810571
+Neurodegenerative Diseases	Nerve Degeneration	0.818641
+Neurodegenerative Diseases	Multiple System Atrophy	0.865622
+Neurodegenerative Diseases	Striatonigral Degeneration	0.85635
+Reperfusion Injury	Polycythemia	0.878841
+Gout	Hyperlipoproteinemias	0.854737
+Gout	Endometrial Hyperplasia	0.821754
+Gout	Diabetes Mellitus	0.892317
+Gout	Dyslipidemias	0.843673
+Growth Disorders	Dwarfism	0.898184
+Growth Disorders	Phenylketonurias	0.843541
+Growth Disorders	Congenital Abnormalities	0.804961
+Diabetes, Gestational	Persistent Hyperinsulinemia Hypoglycemia of Infancy	0.855494
+Muscle Weakness	Myositis, Inclusion Body	0.809193
+Choroid Diseases	Retinal Diseases	0.885456
+Polycythemia	Persistent Fetal Circulation Syndrome	0.81513
+Cataract	Retinal Detachment	0.857917
+Cataract	Myopia	0.835341
+Hyperpigmentation	Cafe-au-Lait Spots	0.809888
+Hyperpigmentation	Colorectal Neoplasms, Hereditary Nonpolyposis	0.812927
+Hematologic Neoplasms	Neutropenia	0.904963
+Prader-Willi Syndrome	Metabolic Diseases	0.805053
+Glaucoma	Macular Degeneration	0.822954
+Glaucoma	Glaucoma, Open-Angle	0.862315
+Glaucoma	Retinal Diseases	0.960221
+Glaucoma	Choroidal Neovascularization	0.811116
+Hypertrophy, Left Ventricular	Diabetic Angiopathies	0.850643
+Leukemia, Myeloid	Leukemia, Myeloid, Acute	0.834767
+De Lange Syndrome	Tooth Abnormalities	0.850928
+De Lange Syndrome	Chromosome Disorders	0.859076
+De Lange Syndrome	Dwarfism	0.904444
+De Lange Syndrome	Orofaciodigital Syndromes	0.809424
+De Lange Syndrome	Abnormalities, Multiple	0.898237
+De Lange Syndrome	Amino Acid Metabolism, Inborn Errors	0.862853
+De Lange Syndrome	Fibromatosis, Gingival	0.864671
+De Lange Syndrome	Phenylketonurias	0.902011
+De Lange Syndrome	Klinefelter Syndrome	0.848122
+De Lange Syndrome	Down Syndrome	0.815235
+De Lange Syndrome	Hypertelorism	0.825461
+De Lange Syndrome	Skin Abnormalities	0.807712
+De Lange Syndrome	Metabolism, Inborn Errors	0.820879
+De Lange Syndrome	Chromosome Aberrations	0.884081
+De Lange Syndrome	Syndactyly	0.801981
+De Lange Syndrome	Xeroderma Pigmentosum	0.853524
+De Lange Syndrome	Hand Deformities, Congenital	0.856598
+De Lange Syndrome	Chromosome Breakage	0.869103
+De Lange Syndrome	Exostoses, Multiple Hereditary	0.81508
+Hyperammonemia	Ornithine Carbamoyltransferase Deficiency Disease	0.814567
+Fetal Death	Fetal Growth Retardation	0.883056
+Bloom Syndrome	Werner Syndrome	0.913479
+Bloom Syndrome	Progeria	0.920805
+Cockayne Syndrome	Dyskeratosis Congenita	0.849632
+Dyskeratosis Congenita	Werner Syndrome	0.813719
+Dyskeratosis Congenita	Progeria	0.865659
+Dyskeratosis Congenita	Cutis Laxa	0.853246
+Ischemia	Hyperemia	0.823753
+Ischemia	Peripheral Vascular Diseases	0.861316
+Synovitis	Hypoproteinemia	0.810679
+Synovitis	Bone Marrow Diseases	0.917384
+Tauopathies	Supranuclear Palsy, Progressive	0.962614
+Tauopathies	Striatonigral Degeneration	0.940952
+Kartagener Syndrome	Ciliary Motility Disorders	0.825955
+Fibrosarcoma	Melanoma, Experimental	0.866272
+Hemorrhagic Disorders	Thrombasthenia	0.862731
+Klinefelter Syndrome	Blepharophimosis	0.8321
+Klinefelter Syndrome	Macrocephaly	0.820382
+Klinefelter Syndrome	Chromosome Disorders	0.904694
+Klinefelter Syndrome	Craniofacial Dysostosis	0.849909
+Klinefelter Syndrome	Amino Acid Metabolism, Inborn Errors	0.879916
+Klinefelter Syndrome	Fibromatosis, Gingival	0.859049
+Klinefelter Syndrome	Piebaldism	0.824152
+Klinefelter Syndrome	Hallermann's Syndrome	0.829999
+Klinefelter Syndrome	Chromosome Aberrations	0.906221
+Klinefelter Syndrome	Syndactyly	0.835611
+Klinefelter Syndrome	Craniosynostoses	0.874852
+Klinefelter Syndrome	Polydactyly	0.818262
+Klinefelter Syndrome	Xeroderma Pigmentosum	0.850459
+Klinefelter Syndrome	Hand Deformities, Congenital	0.812233
+Klinefelter Syndrome	Chromosome Breakage	0.883855
+Klinefelter Syndrome	Cri-du-Chat Syndrome	0.855394
+Klinefelter Syndrome	Exostoses, Multiple Hereditary	0.825488
+Magnesium Deficiency	Rickets	0.930342
+Spasms, Infantile	Amino Acid Metabolism, Inborn Errors	0.811902
+Fragile X Syndrome	Chromosome Disorders	0.902268
+Fragile X Syndrome	Amino Acid Metabolism, Inborn Errors	0.885827
+Fragile X Syndrome	Fibromatosis, Gingival	0.846053
+Fragile X Syndrome	Klinefelter Syndrome	0.91404
+Fragile X Syndrome	Polydactyly	0.810315
+Fragile X Syndrome	Chromosome Breakage	0.877917
+Fragile X Syndrome	Cri-du-Chat Syndrome	0.847289
+Fragile X Syndrome	Exostoses, Multiple Hereditary	0.822971
+Hyperglycemia	Hyperlipidemias	0.879178
+Hyperglycemia	Obesity	0.866684
+Hyperglycemia	Metabolic Diseases	0.898297
+Hyperglycemia	Glucose Intolerance	0.918439
+Hyperglycemia	Hyperlipoproteinemias	0.841719
+Hyperglycemia	Endometrial Hyperplasia	0.825355
+Hyperglycemia	Metabolic Syndrome X	0.888138
+Hyperglycemia	Endometrial Neoplasms	0.842645
+Hyperglycemia	Diabetes Mellitus	0.9032
+Hyperglycemia	Hyperinsulinism	0.906921
+Hyperglycemia	Insulin Resistance	0.881306
+Hyperglycemia	Bardet-Biedl Syndrome	0.800797
+Hyperglycemia	Hypertriglyceridemia	0.884034
+Hyperglycemia	Dyslipidemias	0.869207
+Nephrocalcinosis	Pseudohypoaldosteronism	0.845344
+Nephrocalcinosis	Dent Disease	0.957523
+Nephrocalcinosis	Nephrolithiasis	0.955794
+Coronary Disease	Coronary Stenosis	0.869782
+Coronary Disease	Coronary Restenosis	0.877266
+Coronary Disease	Myocardial Infarction	0.809236
+Neuromuscular Diseases	Muscular Diseases	0.85663
+Neuromuscular Diseases	Myositis	0.801194
+Neuromuscular Diseases	Muscular Dystrophies	0.877687
+Neuromuscular Diseases	Muscular Atrophy	0.854791
+Color Vision Defects	Leber Congenital Amaurosis	0.862798
+Werner Syndrome	DNA Repair-Deficiency Disorders	0.864892
+Arrhythmias, Cardiac	Sick Sinus Syndrome	0.857815
+Arrhythmias, Cardiac	Long QT Syndrome	0.856832
+Arrhythmias, Cardiac	Arrhythmogenic Right Ventricular Dysplasia	0.83104
+Arrhythmias, Cardiac	Torsades de Pointes	0.886575
+Arrhythmias, Cardiac	Tachycardia	0.954636
+Arrhythmias, Cardiac	Heart Block	0.912102
+Arrhythmias, Cardiac	Death, Sudden, Cardiac	0.924242
+Arrhythmias, Cardiac	Tachycardia, Ventricular	0.888033
+Arrhythmias, Cardiac	Ventricular Fibrillation	0.92535
+Arrhythmias, Cardiac	Brugada Syndrome	0.803407
+Arrhythmias, Cardiac	Bundle-Branch Block	0.953066
+Spinocerebellar Ataxias	Myoclonic Epilepsies, Progressive	0.850783
+Retinal Detachment	Vitreoretinopathy, Proliferative	0.814057
+Retinal Detachment	Myopia, Degenerative	0.839123
+Pancreatic Cyst	Pancreatic Diseases	0.844054
+Lymphoproliferative Disorders	Immunologic Deficiency Syndromes	0.858919
+Hallermann's Syndrome	Fibromatosis, Gingival	0.860928
+Carcinoma, Non-Small-Cell Lung	Carcinoma, Small Cell	0.812717
+Carcinoma, Non-Small-Cell Lung	Sarcoma	0.8173
+Hypertension	Hypertrophy, Left Ventricular	0.924357
+Hypertension	Diabetes Mellitus, Type 2	0.940996
+Hypertension	Hyperuricemia	0.918647
+Hypertension	Diabetic Angiopathies	0.817999
+Coronary Aneurysm	Myocardial Infarction	0.818903
+Duodenal Ulcer	Stomach Ulcer	0.928334
+Anemia, Hemolytic, Congenital	Hydrops Fetalis	0.810049
+Polycystic Ovary Syndrome	Acne Vulgaris	0.847725
+Acquired Immunodeficiency Syndrome	AIDS-Related Opportunistic Infections	0.831405
+Glomerulonephritis, Membranoproliferative	Nephrotic Syndrome	0.985657
+Glomerulonephritis, Membranoproliferative	Lecithin Acyltransferase Deficiency	0.982269
+Glomerulonephritis, Membranoproliferative	Immune Complex Diseases	0.950177
+Glomerulonephritis, Membranoproliferative	Hematuria	0.945331
+Leukocytosis	Hereditary Autoinflammatory Diseases	0.805059
+Leukocytosis	Neutropenia	0.884805
+Leukocytosis	Agranulocytosis	0.86759
+Down Syndrome	Tooth Abnormalities	0.80943
+Down Syndrome	Chromosome Disorders	0.88125
+Down Syndrome	Craniofacial Dysostosis	0.81933
+Down Syndrome	Dwarfism	0.825017
+Down Syndrome	Abnormalities, Multiple	0.861212
+Down Syndrome	Amino Acid Metabolism, Inborn Errors	0.831387
+Down Syndrome	Autistic Disorder	0.820955
+Down Syndrome	Phenylketonurias	0.839867
+Down Syndrome	Klinefelter Syndrome	0.868426
+Down Syndrome	Fragile X Syndrome	0.848459
+Down Syndrome	Skin Abnormalities	0.818095
+Down Syndrome	Mucopolysaccharidosis II	0.825061
+Down Syndrome	Chromosome Aberrations	0.851692
+Down Syndrome	Craniosynostoses	0.869653
+Down Syndrome	Polydactyly	0.871984
+Down Syndrome	Chromosome Breakage	0.810244
+Down Syndrome	Cri-du-Chat Syndrome	0.939509
+Down Syndrome	Exostoses, Multiple Hereditary	0.801253
+Down Syndrome	Angelman Syndrome	0.831812
+Down Syndrome	Developmental Disabilities	0.861931
+Angina, Unstable	Myocardial Infarction	0.827584
+Adrenal Hyperplasia, Congenital	46, XY Disorders of Sex Development	0.878912
+Adrenal Hyperplasia, Congenital	Disorders of Sex Development	0.839584
+Adrenal Hyperplasia, Congenital	Adrenocortical Carcinoma	0.804248
+Adrenal Hyperplasia, Congenital	Antley-Bixler Syndrome Phenotype	0.878912
+Psoriasis	Eczema	0.818586
+Psoriasis	Candidiasis, Vulvovaginal	0.828553
+Psoriasis	Dermatitis, Allergic Contact	0.810931
+Psoriasis	Dermatitis	0.839433
+Psoriasis	Urticaria	0.870382
+Psoriasis	Folliculitis	0.818796
+Psoriasis	Pruritus	0.802707
+Psoriasis	Dermatitis, Atopic	0.846015
+Hyperbilirubinemia	Crigler-Najjar Syndrome	0.87645
+Hyperbilirubinemia	Gilbert Disease	0.905013
+Hyperbilirubinemia	Hyperbilirubinemia, Hereditary	0.924712
+Optic Atrophy, Hereditary, Leber	Optic Atrophies, Hereditary	0.869612
+Schizophrenia	Psychoses, Substance-Induced	0.864438
+Schizophrenia	Lewy Body Disease	0.866296
+Nephritis, Interstitial	Nephrotic Syndrome	0.964763
+Nephritis, Interstitial	Immune Complex Diseases	0.895983
+Nephritis, Interstitial	Renal Insufficiency	0.825072
+Myeloproliferative Disorders	Hydrops Fetalis	0.829371
+Corneal Opacity	Eye Abnormalities	0.851057
+Pulmonary Alveolar Proteinosis	Pulmonary Emphysema	0.806103
+Pulmonary Alveolar Proteinosis	Pulmonary Fibrosis	0.924197
+Hypertelorism	Blepharophimosis	0.847089
+Hypertelorism	Orofaciodigital Syndromes	0.845375
+Hypertelorism	Fibromatosis, Gingival	0.867254
+Hypertelorism	Wolf-Hirschhorn Syndrome	0.846646
+Muscular Dystrophies, Limb-Girdle	Muscular Dystrophy, Facioscapulohumeral	0.804992
+Cecal Neoplasms	Gastrointestinal Stromal Tumors	0.810459
+Heart Block	Long QT Syndrome	0.959127
+Heart Block	Arrhythmogenic Right Ventricular Dysplasia	0.936226
+Heart Block	Torsades de Pointes	0.944658
+Heart Block	Coffin-Lowry Syndrome	0.814219
+Heart Block	Death, Sudden, Cardiac	0.927804
+Heart Block	Tachycardia, Ventricular	0.968467
+Heart Block	Ventricular Fibrillation	0.905658
+Mesothelioma	Pneumothorax	0.821471
+Mesothelioma	Pleural Diseases	0.815782
+Heart Defects, Congenital	Methemoglobinemia	0.944455
+Heart Defects, Congenital	Tetralogy of Fallot	0.974267
+Heart Defects, Congenital	Transposition of Great Vessels	0.96995
+Dystonia	Pantothenate Kinase-Associated Neurodegeneration	0.955743
+Dystonia	Dystonic Disorders	0.999155
+Dystonia	X-Linked Combined Immunodeficiency Diseases	0.925682
+Retinoblastoma	Eye Abnormalities	0.822126
+Retinoblastoma	Microphthalmos	0.800702
+Hepatitis B	Jaundice, Chronic Idiopathic	0.913896
+Hepatitis B	Hepatitis	0.921562
+Hepatitis B	Liver Diseases	0.889682
+Hepatitis B	Hepatitis B, Chronic	0.837129
+Hepatitis B	Drug-Induced Liver Injury	0.903305
+Metabolic Syndrome X	Hyperlipidemias	0.938612
+Metabolic Syndrome X	Obesity	0.988339
+Metabolic Syndrome X	Metabolic Diseases	0.945611
+Metabolic Syndrome X	Glucose Intolerance	0.95678
+Metabolic Syndrome X	Hyperlipoproteinemias	0.915065
+Metabolic Syndrome X	Endometrial Hyperplasia	0.920851
+Metabolic Syndrome X	Gout	0.875261
+Metabolic Syndrome X	Endometrial Neoplasms	0.939527
+Metabolic Syndrome X	Diabetes Mellitus	0.983375
+Metabolic Syndrome X	Lipid Metabolism Disorders	0.891034
+Metabolic Syndrome X	Hyperinsulinism	0.981849
+Metabolic Syndrome X	Hyperlipoproteinemia Type IV	0.890129
+Metabolic Syndrome X	Hypothalamic Diseases	0.835842
+Metabolic Syndrome X	Bardet-Biedl Syndrome	0.917386
+Metabolic Syndrome X	Hypertriglyceridemia	0.977359
+Metabolic Syndrome X	Hyperlipidemia, Familial Combined	0.976758
+Metabolic Syndrome X	Hypoalphalipoproteinemias	0.97419
+Metabolic Syndrome X	Dyslipidemias	0.954895
+Urticaria	Dermatitis, Allergic Contact	0.902265
+Urticaria	Dermatitis, Contact	0.825537
+Urticaria	Cholestasis, Intrahepatic	0.885922
+Urticaria	Pruritus	0.957858
+Urticaria	Vulvar Neoplasms	0.87872
+Urticaria	Parapsoriasis	0.821372
+Urticaria	Dermatitis, Atopic	0.966753
+Urticaria	Keratosis	0.855139
+Urinary Tract Infections	Vesico-Ureteral Reflux	0.876426
+Urinary Tract Infections	Spina Bifida Cystica	0.834576
+Urinary Tract Infections	Urinary Bladder Neoplasms	0.83607
+Pseudohypoparathyroidism	Pseudopseudohypoparathyroidism	0.994824
+Vascular Diseases	Peripheral Vascular Diseases	0.874538
+Vascular Diseases	Ischemia	0.852053
+Epilepsy	Classical Lissencephalies and Subcortical Band Heterotopias	0.893476
+Epilepsy	Incontinentia Pigmenti	0.88196
+Epilepsy	Epilepsy, Absence	0.860794
+Epilepsy	Epilepsy, Generalized	0.958259
+Epilepsy	Epilepsies, Partial	0.924598
+Epilepsy	Seizures	0.850405
+Epilepsy	Seizures, Febrile	0.852826
+Epilepsy	Malformations of Cortical Development	0.815314
+Parkinsonian Disorders	Niemann-Pick Disease, Type C	0.84457
+Parkinsonian Disorders	Parkinson Disease, Secondary	0.806785
+Parkinsonian Disorders	Multiple System Atrophy	0.801763
+Parkinsonian Disorders	Striatonigral Degeneration	0.869174
+Cerebral Infarction	Stroke	0.931631
+Liver Cirrhosis, Biliary	Keloid	0.827792
+Hypocalcemia	Hypoparathyroidism	0.963776
+Dystonic Disorders	Pantothenate Kinase-Associated Neurodegeneration	0.955504
+Dystonic Disorders	X-Linked Combined Immunodeficiency Diseases	0.92559
+Pregnancy Complications	Abortion, Spontaneous	0.826689
+Osteogenesis Imperfecta	Mandibulofacial Dysostosis	0.808578
+Depressive Disorder	Depressive Disorder, Major	0.863488
+Scoliosis	Kyphosis	0.863603
+Endometrial Neoplasms	Metabolic Diseases	0.920749
+Endometrial Neoplasms	Glucose Intolerance	0.895449
+Endometrial Neoplasms	Hyperlipoproteinemias	0.889676
+Endometrial Neoplasms	Endometrial Hyperplasia	0.91549
+Endometrial Neoplasms	Gout	0.857643
+Endometrial Neoplasms	Diabetes Mellitus	0.920267
+Endometrial Neoplasms	Lipid Metabolism Disorders	0.846077
+Endometrial Neoplasms	Hypothalamic Diseases	0.804993
+Endometrial Neoplasms	Bardet-Biedl Syndrome	0.894382
+Endometrial Neoplasms	Dyslipidemias	0.901053
+Job's Syndrome	Immunologic Deficiency Syndromes	0.94177
+Job's Syndrome	Lymphoproliferative Disorders	0.847973
+Skin Abnormalities	Blepharophimosis	0.837184
+Skin Abnormalities	Chromosome Disorders	0.888799
+Skin Abnormalities	Craniofacial Dysostosis	0.833431
+Skin Abnormalities	Dwarfism	0.848116
+Skin Abnormalities	Amino Acid Metabolism, Inborn Errors	0.865415
+Skin Abnormalities	Fibromatosis, Gingival	0.844073
+Skin Abnormalities	Phenylketonurias	0.872518
+Skin Abnormalities	Klinefelter Syndrome	0.837058
+Skin Abnormalities	Fragile X Syndrome	0.828063
+Skin Abnormalities	Hallermann's Syndrome	0.826223
+Skin Abnormalities	Metabolism, Inborn Errors	0.82473
+Skin Abnormalities	Chromosome Aberrations	0.900716
+Skin Abnormalities	Syndactyly	0.83245
+Skin Abnormalities	Craniosynostoses	0.825196
+Skin Abnormalities	Polydactyly	0.815688
+Skin Abnormalities	Xeroderma Pigmentosum	0.857017
+Skin Abnormalities	Chromosome Breakage	0.883925
+Skin Abnormalities	Cri-du-Chat Syndrome	0.816054
+Skin Abnormalities	Exostoses, Multiple Hereditary	0.81167
+Skin Abnormalities	Wolf-Hirschhorn Syndrome	0.802697
+Spherocytosis, Hereditary	Jaundice, Chronic Idiopathic	0.924076
+Diabetes Mellitus, Type 1	Diabetic Nephropathies	0.97142
+Diabetes Mellitus, Type 1	Albuminuria	0.974955
+Diabetes Mellitus, Type 1	Hypertrophy, Left Ventricular	0.817624
+Diabetes Mellitus, Type 1	Diabetic Angiopathies	0.934708
+Diabetes Mellitus, Type 1	Polycystic Kidney, Autosomal Dominant	0.8041
+Diabetes Mellitus, Type 2	Hypertrophy, Left Ventricular	0.921033
+Diabetes Mellitus, Type 2	Metabolic Syndrome X	0.800637
+Diabetes Mellitus, Type 2	Hyperuricemia	0.952947
+Diabetes Mellitus, Type 2	Diabetes Mellitus	0.860879
+Diabetes Mellitus, Type 2	Diabetic Angiopathies	0.811618
+alpha-Thalassemia	Hydrops Fetalis	0.954008
+alpha-Thalassemia	Anemia, Diamond-Blackfan	0.907146
+alpha-Thalassemia	Myeloproliferative Disorders	0.807156
+von Willebrand Diseases	Factor XI Deficiency	0.86333
+von Willebrand Diseases	Hemorrhagic Disorders	0.914862
+von Willebrand Diseases	Thrombasthenia	0.878045
+von Willebrand Diseases	Hemophilia B	0.868345
+Hyperventilation	Panic Disorder	0.900017
+Adenocarcinoma	Gastrointestinal Neoplasms	0.869536
+Metabolism, Inborn Errors	Smith-Lemli-Opitz Syndrome	0.818417
+Metabolism, Inborn Errors	Lipid Metabolism, Inborn Errors	0.802633
+Metabolism, Inborn Errors	Macrocephaly	0.814885
+Metabolism, Inborn Errors	Chromosome Disorders	0.913981
+Metabolism, Inborn Errors	Craniofacial Dysostosis	0.850675
+Metabolism, Inborn Errors	Dwarfism	0.865323
+Metabolism, Inborn Errors	Orofaciodigital Syndromes	0.813826
+Metabolism, Inborn Errors	Amino Acid Metabolism, Inborn Errors	0.947554
+Metabolism, Inborn Errors	Fibromatosis, Gingival	0.883398
+Metabolism, Inborn Errors	Phenylketonurias	0.875297
+Metabolism, Inborn Errors	Klinefelter Syndrome	0.826797
+Metabolism, Inborn Errors	Spasms, Infantile	0.80215
+Metabolism, Inborn Errors	Fragile X Syndrome	0.824392
+Metabolism, Inborn Errors	Tuberous Sclerosis	0.830849
+Metabolism, Inborn Errors	Syndactyly	0.820864
+Metabolism, Inborn Errors	Craniosynostoses	0.827955
+Metabolism, Inborn Errors	Carbohydrate Metabolism, Inborn Errors	0.841363
+Metabolism, Inborn Errors	Polydactyly	0.862304
+Metabolism, Inborn Errors	Xeroderma Pigmentosum	0.887377
+Metabolism, Inborn Errors	Hand Deformities, Congenital	0.810639
+Metabolism, Inborn Errors	Homocystinuria	0.843935
+Metabolism, Inborn Errors	Chromosome Breakage	0.859959
+Metabolism, Inborn Errors	Wolf-Hirschhorn Syndrome	0.884271
+Metabolism, Inborn Errors	Maple Syrup Urine Disease	0.872954
+Folliculitis	Keloid	0.912685
+Bacteremia	Malaria	0.82515
+Bacteremia	Neutropenia	0.929572
+Bacteremia	Bacterial Infections	0.811207
+Bacteremia	Sepsis	0.811894
+Nephrolithiasis	Dent Disease	0.942833
+Malaria	Malaria, Falciparum	0.9073
+Malaria	Neutropenia	0.819811
+Malaria	Agranulocytosis	0.821138
+Intestinal Perforation	Peritonitis	0.95811
+Stomach Diseases	Stomach Ulcer	0.898721
+Mucopolysaccharidosis IV	Chromosome Breakage	0.841992
+Ovarian Neoplasms	46, XY Disorders of Sex Development	0.871085
+Ovarian Neoplasms	Disorders of Sex Development	0.824482
+Ovarian Neoplasms	Leydig Cell Tumor	0.921569
+Ovarian Neoplasms	Adrenocortical Carcinoma	0.806592
+Ovarian Neoplasms	Adrenal Hyperplasia, Congenital	0.934293
+Ovarian Neoplasms	46, XX Disorders of Sex Development	0.871085
+Ovarian Neoplasms	Antley-Bixler Syndrome Phenotype	0.871085
+Ovarian Neoplasms	Gonadal Dysgenesis, 46,XX	0.831036
+Fanconi Anemia	Noonan Syndrome	0.838798
+Chromosome Aberrations	Nails, Malformed	0.850249
+Chromosome Aberrations	Macrocephaly	0.90147
+Chromosome Aberrations	Rubinstein-Taybi Syndrome	0.839744
+Chromosome Aberrations	Orofaciodigital Syndromes	0.880694
+Chromosome Aberrations	Hypertelorism	0.86665
+Chromosome Aberrations	Polydactyly	0.895737
+Chromosome Aberrations	Xeroderma Pigmentosum	0.93873
+Chromosome Aberrations	Hand Deformities, Congenital	0.882567
+Chromosome Aberrations	Chromosome Breakage	0.965472
+Chromosome Aberrations	Exostoses, Multiple Hereditary	0.87972
+Cough	Ciliary Motility Disorders	0.816555
+Liddle Syndrome	Hereditary Autoinflammatory Diseases	0.896486
+Liddle Syndrome	Neutropenia	0.955226
+Protein S Deficiency	Protein C Deficiency	0.889842
+Syndactyly	Orofaciodigital Syndromes	0.885195
+Syndactyly	Fibromatosis, Gingival	0.866811
+Syndactyly	Hallermann's Syndrome	0.834269
+Syndactyly	Hypertelorism	0.82962
+Syndactyly	Xeroderma Pigmentosum	0.864844
+Syndactyly	Hand Deformities, Congenital	0.858891
+Syndactyly	Chromosome Breakage	0.878386
+Retinal Degeneration	Leber Congenital Amaurosis	0.843621
+Retinal Degeneration	Night Blindness	0.87942
+Retinal Degeneration	Retinal Drusen	0.884696
+Retinal Degeneration	Optic Atrophies, Hereditary	0.852088
+Inflammation	Arthritis, Experimental	0.851363
+Inflammation	Leishmaniasis, Cutaneous	0.801152
+Coronary Artery Disease	Angina Pectoris	0.956806
+Coronary Artery Disease	Coronary Disease	0.995164
+Coronary Artery Disease	Coronary Stenosis	0.911563
+Coronary Artery Disease	Coronary Restenosis	0.916594
+Coronary Artery Disease	Myocardial Infarction	0.849243
+Fatty Liver	Hyperlipidemias	0.917348
+Fatty Liver	Obesity	0.962419
+Fatty Liver	Metabolic Diseases	0.922012
+Fatty Liver	Glucose Intolerance	0.917537
+Fatty Liver	Hyperlipoproteinemias	0.892817
+Fatty Liver	Endometrial Hyperplasia	0.884817
+Fatty Liver	Metabolic Syndrome X	0.963013
+Fatty Liver	Endometrial Neoplasms	0.944292
+Fatty Liver	Diabetes Mellitus	0.931996
+Fatty Liver	Lipid Metabolism Disorders	0.884895
+Fatty Liver	Insulin Resistance	0.962156
+Fatty Liver	Bardet-Biedl Syndrome	0.892295
+Fatty Liver	Hypertriglyceridemia	0.946657
+Fatty Liver	Hyperlipidemia, Familial Combined	0.9618
+Fatty Liver	Hypoalphalipoproteinemias	0.93514
+Fatty Liver	Dyslipidemias	0.929188
+AIDS-Related Opportunistic Infections	Entamoebiasis	0.883204
+AIDS-Related Opportunistic Infections	Inflammatory Bowel Diseases	0.838906
+AIDS-Related Opportunistic Infections	Celiac Disease	0.855023
+Wolff-Parkinson-White Syndrome	Arrhythmogenic Right Ventricular Dysplasia	0.908677
+Wolff-Parkinson-White Syndrome	Death, Sudden, Cardiac	0.934064
+Heart Diseases	Aortic Valve Stenosis	0.882845
+Heart Diseases	Cardiomyopathy, Hypertrophic	0.884932
+Entamoebiasis	Vipoma	0.919647
+Entamoebiasis	Enterocolitis	0.901803
+Entamoebiasis	Inflammatory Bowel Diseases	0.840407
+Entamoebiasis	Celiac Disease	0.895313
+Neutropenia	Pancytopenia	0.879061
+Neutropenia	Lymphohistiocytosis, Hemophagocytic	0.80105
+Neutropenia	Hereditary Autoinflammatory Diseases	0.866125
+Pulmonary Embolism	Pulmonary Fibrosis	0.820483
+Pulmonary Embolism	Lymphangioleiomyomatosis	0.831116
+Myocardial Reperfusion Injury	Reperfusion Injury	0.900946
+Myocardial Reperfusion Injury	Polycythemia	0.915145
+Diabetes Mellitus	Glucose Intolerance	0.949045
+Diabetes Mellitus	Hyperlipoproteinemias	0.914581
+Diabetes Mellitus	Endometrial Hyperplasia	0.902974
+Diabetes Mellitus	Hyperuricemia	0.864876
+Diabetes Mellitus	Lipid Metabolism Disorders	0.857292
+Diabetes Mellitus	Bardet-Biedl Syndrome	0.897043
+Diabetes Mellitus	Hyperlipidemia, Familial Combined	0.958193
+Diabetes Mellitus	Hypoalphalipoproteinemias	0.9503
+Diabetes Mellitus	Dyslipidemias	0.935345
+Hypertension, Renal	Kidney Failure, Chronic	0.902079
+Hypertension, Renal	Glomerulosclerosis, Focal Segmental	0.805964
+Hypertension, Renal	Renal Insufficiency	0.940069
+Craniosynostoses	Orofaciodigital Syndromes	0.81997
+Craniosynostoses	Fibromatosis, Gingival	0.865058
+Craniosynostoses	Hypertelorism	0.834492
+Craniosynostoses	Syndactyly	0.868614
+Craniosynostoses	Polydactyly	0.843141
+Craniosynostoses	Hand Deformities, Congenital	0.857413
+Craniosynostoses	Chromosome Breakage	0.889575
+Craniosynostoses	Cri-du-Chat Syndrome	0.849686
+Craniosynostoses	Wolf-Hirschhorn Syndrome	0.820358
+Cholelithiasis	Gallstones	0.98902
+Hypotension, Orthostatic	Long QT Syndrome	0.887297
+Hypotension, Orthostatic	Arrhythmogenic Right Ventricular Dysplasia	0.835245
+Hypotension, Orthostatic	Torsades de Pointes	0.840508
+Hypotension, Orthostatic	Heart Block	0.879771
+Hypotension, Orthostatic	Death, Sudden, Cardiac	0.807489
+Hypotension, Orthostatic	Tachycardia, Ventricular	0.866519
+Hypotension, Orthostatic	Brugada Syndrome	0.871666
+Heart Septal Defects, Atrial	Hypertension, Pulmonary	0.807186
+Hirschsprung Disease	Megacolon	0.977637
+Hirschsprung Disease	Multiple Endocrine Neoplasia Type 2b	0.862143
+Hirschsprung Disease	Anus Diseases	0.898427
+Hypogonadism	Eunuchism	0.812045
+Hypogonadism	Kallmann Syndrome	0.913948
+Polydactyly	Smith-Lemli-Opitz Syndrome	0.876675
+Polydactyly	Macrocephaly	0.832167
+Polydactyly	Fibromatosis, Gingival	0.80519
+Polydactyly	Xeroderma Pigmentosum	0.803221
+Polydactyly	Chromosome Breakage	0.83728
+Polydactyly	Cri-du-Chat Syndrome	0.869929
+Cushing Syndrome	Pituitary ACTH Hypersecretion	0.87935
+Cushing Syndrome	Endometrial Hyperplasia	0.886014
+Cushing Syndrome	Acanthosis Nigricans	0.954254
+Cushing Syndrome	Polycystic Ovary Syndrome	0.894041
+Bronchial Hyperreactivity	Respiratory Hypersensitivity	0.832925
+Myopathies, Nemaline	Myositis, Inclusion Body	0.827881
+Blindness	Optic Atrophy, Hereditary, Leber	0.854919
+Blindness	Optic Atrophies, Hereditary	0.813228
+Mevalonate Kinase Deficiency	Hereditary Autoinflammatory Diseases	0.900829
+Xeroderma Pigmentosum	Orofaciodigital Syndromes	0.871656
+Xeroderma Pigmentosum	Fibromatosis, Gingival	0.934896
+Xeroderma Pigmentosum	Hypertelorism	0.857974
+Xeroderma Pigmentosum	Wolf-Hirschhorn Syndrome	0.823272
+Proteinuria	Nephrotic Syndrome	0.9937
+Proteinuria	Nephrosis	0.988762
+Proteinuria	Lecithin Acyltransferase Deficiency	0.995019
+Proteinuria	Immune Complex Diseases	0.904121
+Proteinuria	Glomerulonephritis, Membranoproliferative	0.9813
+Proteinuria	Oculocerebrorenal Syndrome	0.874829
+Proteinuria	Glomerulosclerosis, Focal Segmental	0.998468
+Proteinuria	Glomerulonephritis, IGA	0.866215
+Rhinitis, Allergic, Seasonal	Rhinitis, Allergic, Perennial	0.976313
+Cardiomyopathy, Dilated	Ventricular Dysfunction, Left	0.948292
+Cardiomyopathy, Dilated	Cardiomyopathy, Restrictive	0.826491
+Myocardial Infarction	Myocardial Stunning	0.940106
+Myocardial Infarction	Coronary Stenosis	0.906333
+Myocardial Infarction	Coronary Restenosis	0.943375
+Staphylococcal Skin Infections	Dermatitis	0.849574
+Cleft Palate	Cleft Lip	0.970755
+Myopathy, Central Core	Myopathies, Structural, Congenital	0.899884
+Myopathy, Central Core	Myopathies, Nemaline	0.841368
+Bacterial Infections	Gram-Negative Bacterial Infections	0.835858
+Bacterial Infections	Communicable Diseases	0.948336
+Bone Neoplasms	Opioid-Related Disorders	0.827192
+Polycystic Kidney, Autosomal Dominant	Renal Insufficiency	0.902789
+Hand Deformities, Congenital	Coloboma	0.857863
+Hand Deformities, Congenital	Blepharophimosis	0.867673
+Hand Deformities, Congenital	Nails, Malformed	0.845315
+Hand Deformities, Congenital	Orofaciodigital Syndromes	0.857104
+Hand Deformities, Congenital	Fibromatosis, Gingival	0.87633
+Hand Deformities, Congenital	Hypertelorism	0.941051
+Hand Deformities, Congenital	Xeroderma Pigmentosum	0.86684
+Hand Deformities, Congenital	Chromosome Breakage	0.887149
+Hand Deformities, Congenital	Wolf-Hirschhorn Syndrome	0.835068
+Hand Deformities, Congenital	Foot Deformities, Congenital	0.923577
+Keratoconus	Corneal Dystrophies, Hereditary	0.823596
+Colorectal Neoplasms, Hereditary Nonpolyposis	Cafe-au-Lait Spots	0.953854
+Infection	Malaria	0.812962
+Infection	Neutropenia	0.844494
+Infection	Bacterial Infections	0.934135
+Bone Diseases, Metabolic	Bone Resorption	0.833223
+Congenital Hypothyroidism	Coloboma	0.896017
+Congenital Hypothyroidism	Nails, Malformed	0.816124
+Congenital Hypothyroidism	Tooth Abnormalities	0.840326
+Congenital Hypothyroidism	Orofaciodigital Syndromes	0.821642
+Congenital Hypothyroidism	Fibromatosis, Gingival	0.83856
+Congenital Hypothyroidism	Hypertelorism	0.835352
+Congenital Hypothyroidism	Hand Deformities, Congenital	0.83761
+Salmonella Infections, Animal	Entamoebiasis	0.845078
+Salmonella Infections, Animal	Inflammatory Bowel Diseases	0.850442
+Glaucoma, Open-Angle	Low Tension Glaucoma	0.94979
+Mood Disorders	Depressive Disorder	0.844228
+Mood Disorders	Depressive Disorder, Major	0.820039
+Epilepsy, Generalized	Classical Lissencephalies and Subcortical Band Heterotopias	0.881602
+Epilepsy, Generalized	Incontinentia Pigmenti	0.876469
+Epilepsy, Generalized	Epilepsy, Absence	0.813497
+Epilepsy, Generalized	Seizures	0.844218
+Epilepsy, Generalized	Seizures, Febrile	0.845991
+Lipid Metabolism Disorders	Hyperlipoproteinemias	0.825252
+Lipid Metabolism Disorders	Hypoalphalipoproteinemias	0.848201
+Lipid Metabolism Disorders	Dyslipidemias	0.877798
+Stereotypic Movement Disorder	Chromosome Breakage	0.817372
+Hyperinsulinism	Metabolic Diseases	0.955192
+Hyperinsulinism	Hypercholesterolemia	0.809877
+Hyperinsulinism	Glucose Intolerance	0.968732
+Hyperinsulinism	Hyperlipoproteinemias	0.924413
+Hyperinsulinism	Endometrial Hyperplasia	0.94465
+Hyperinsulinism	Endometrial Neoplasms	0.940178
+Hyperinsulinism	Diabetes Mellitus	0.969844
+Hyperinsulinism	Cushing Syndrome	0.813863
+Hyperinsulinism	Hypothalamic Diseases	0.850321
+Hyperinsulinism	Bardet-Biedl Syndrome	0.914436
+Hyperinsulinism	Hypoalphalipoproteinemias	0.965888
+Hyperinsulinism	Dyslipidemias	0.936131
+Appendicitis	Peritonitis	0.94653
+Muscular Dystrophy, Facioscapulohumeral	Myositis, Inclusion Body	0.846779
+Progeria	Werner Syndrome	0.97877
+Blood Coagulation Disorders	Hemorrhagic Disorders	0.819894
+Homocystinuria	Amino Acid Metabolism, Inborn Errors	0.861482
+Brain Neoplasms	Glioblastoma	0.827372
+Brain Neoplasms	Intracranial Arteriovenous Malformations	0.842662
+Brain Neoplasms	Astrocytoma	0.850011
+Rickets	Hypocalcemia	0.93206
+Rickets	Hypoparathyroidism	0.911767
+Arthritis, Experimental	Neurogenic Inflammation	0.816798
+Death, Sudden, Cardiac	Arrhythmogenic Right Ventricular Dysplasia	0.918616
+Abortion, Spontaneous	Premature Birth	0.839874
+Abortion, Spontaneous	Fetal Death	0.802656
+Abortion, Spontaneous	Fetal Growth Retardation	0.822877
+Abortion, Spontaneous	Hyaline Membrane Disease	0.812427
+Carcinoma, Renal Cell	Kidney Neoplasms	0.800235
+Ectodermal Dysplasia	Chromosome Disorders	0.815068
+Ectodermal Dysplasia	Craniofacial Dysostosis	0.865958
+Ectodermal Dysplasia	Amino Acid Metabolism, Inborn Errors	0.805192
+Ectodermal Dysplasia	Fibromatosis, Gingival	0.828533
+Ectodermal Dysplasia	Hypertelorism	0.828724
+Ectodermal Dysplasia	Chromosome Aberrations	0.835299
+Ectodermal Dysplasia	Syndactyly	0.806214
+Ectodermal Dysplasia	Xeroderma Pigmentosum	0.828001
+Ectodermal Dysplasia	Hand Deformities, Congenital	0.824598
+Ectodermal Dysplasia	Chromosome Breakage	0.810072
+Chromosome Breakage	Blepharophimosis	0.908825
+Chromosome Breakage	Macrocephaly	0.85008
+Chromosome Breakage	Orofaciodigital Syndromes	0.851511
+Chromosome Breakage	Fibromatosis, Gingival	0.933633
+Chromosome Breakage	Hypertelorism	0.865904
+Chromosome Breakage	Xeroderma Pigmentosum	0.931248
+Chromosome Breakage	Wolf-Hirschhorn Syndrome	0.884691
+Cri-du-Chat Syndrome	Macrocephaly	0.803949
+Cri-du-Chat Syndrome	Chromosome Breakage	0.826058
+Goiter	Deafness	0.913079
+Meningomyelocele	Spina Bifida Cystica	0.895833
+Parkinson Disease	Parkinson Disease, Secondary	0.832781
+Choanal Atresia	Hypertelorism	0.809895
+Epilepsies, Partial	Classical Lissencephalies and Subcortical Band Heterotopias	0.812969
+Epilepsies, Partial	Incontinentia Pigmenti	0.830532
+Liver Diseases	Gallbladder Neoplasms	0.823494
+Liver Diseases	Hepatic Veno-Occlusive Disease	0.842556
+Liver Diseases	Jaundice, Chronic Idiopathic	0.899012
+Liver Diseases	Hyperbilirubinemia	0.85684
+Liver Diseases	Spherocytosis, Hereditary	0.8761
+Liver Diseases	Hepatitis	0.961975
+Liver Diseases	Protoporphyria, Erythropoietic	0.838557
+Liver Diseases	Hepatitis B, Chronic	0.82738
+Liver Diseases	Drug-Induced Liver Injury	0.950571
+Liver Diseases	Liver Failure	0.817143
+Cholestasis, Intrahepatic	Candidiasis, Vulvovaginal	0.873439
+Cholestasis, Intrahepatic	Dermatitis, Allergic Contact	0.84027
+Cholestasis, Intrahepatic	Keloid	0.854675
+Cholestasis, Intrahepatic	Dermatitis	0.829513
+Cholestasis, Intrahepatic	Liver Cirrhosis, Biliary	0.869967
+Cholestasis, Intrahepatic	Pruritus	0.924153
+Cholestasis, Intrahepatic	Dermatitis, Atopic	0.90396
+Frontotemporal Dementia	Pick Disease of the Brain	0.97513
+Primary Ovarian Insufficiency	Gonadal Dysgenesis	0.985235
+Exostoses, Multiple Hereditary	Craniofacial Dysostosis	0.83881
+Exostoses, Multiple Hereditary	Fibromatosis, Gingival	0.855428
+Exostoses, Multiple Hereditary	Hallermann's Syndrome	0.858467
+Exostoses, Multiple Hereditary	Syndactyly	0.852104
+Exostoses, Multiple Hereditary	Craniosynostoses	0.838812
+Exostoses, Multiple Hereditary	Xeroderma Pigmentosum	0.843561
+Exostoses, Multiple Hereditary	Hand Deformities, Congenital	0.808104
+Exostoses, Multiple Hereditary	Chromosome Breakage	0.874222
+Glomerulosclerosis, Focal Segmental	Nephrotic Syndrome	0.993939
+Glomerulosclerosis, Focal Segmental	Nephrosis	0.987949
+Glomerulosclerosis, Focal Segmental	Denys-Drash Syndrome	0.958784
+Glomerulosclerosis, Focal Segmental	Lecithin Acyltransferase Deficiency	0.995165
+Glomerulosclerosis, Focal Segmental	Immune Complex Diseases	0.906962
+Glomerulosclerosis, Focal Segmental	Anemia, Macrocytic	0.834157
+Glomerulosclerosis, Focal Segmental	Hematuria	0.938179
+Pre-Eclampsia	Hypertension, Pregnancy-Induced	0.942472
+Acne Vulgaris	Dermatitis, Seborrheic	0.902395
+Acne Vulgaris	Alopecia	0.926259
+Leukemia	Leukemia, Myeloid, Acute	0.850886
+Leukemia	Leukemia, Lymphoid	0.807489
+Leukemia	Leukemia, Myeloid	0.842408
+Tachycardia, Ventricular	Arrhythmogenic Right Ventricular Dysplasia	0.979451
+Tachycardia, Ventricular	Torsades de Pointes	0.962598
+Tachycardia, Ventricular	Coffin-Lowry Syndrome	0.833079
+Tachycardia, Ventricular	Romano-Ward Syndrome	0.820721
+Tachycardia, Ventricular	Death, Sudden, Cardiac	0.949027
+Tachycardia, Ventricular	Ventricular Fibrillation	0.899273
+Tachycardia, Ventricular	Atrioventricular Block	0.961193
+Cholangiocarcinoma	Bile Duct Neoplasms	0.962963
+Intestinal Diseases	Inflammatory Bowel Diseases	0.808853
+Intestinal Diseases	Celiac Disease	0.838719
+Liver Neoplasms, Experimental	Mammary Neoplasms, Experimental	0.85455
+Liver Neoplasms, Experimental	Liver Cirrhosis, Experimental	0.809022
+Brain Diseases	Central Nervous System Diseases	0.839746
+Brain Diseases	Brain Neoplasms	0.848345
+Mitochondrial Myopathies	Mitochondrial Encephalomyopathies	0.969837
+Hypothalamic Diseases	Glucose Intolerance	0.805023
+Hypothalamic Diseases	Diabetes Mellitus	0.819489
+Hypothalamic Diseases	Hypoalphalipoproteinemias	0.821128
+Keratitis	Deafness	0.826422
+Keratitis	Waardenburg's Syndrome	0.874331
+Atherosclerosis	Hyperglycemia	0.820345
+Atherosclerosis	Diabetes Mellitus	0.80254
+Atherosclerosis	Venous Thromboembolism	0.848101
+Atherosclerosis	Dyslipidemias	0.800951
+Renal Insufficiency	Nephrosis	0.854325
+Retinal Diseases	Retinal Dystrophies	0.872163
+Retinal Diseases	Optic Disk Drusen	0.852917
+Choroidal Neovascularization	Retinal Vein Occlusion	0.838415
+Choroidal Neovascularization	Optic Atrophy, Hereditary, Leber	0.807197
+Parathyroid Neoplasms	Hyperparathyroidism	0.832396
+Sebaceous Gland Neoplasms	Xeroderma Pigmentosum	0.814474
+Sebaceous Gland Neoplasms	Chromosome Breakage	0.84063
+Sebaceous Gland Neoplasms	Wolf-Hirschhorn Syndrome	0.881806
+Anemia, Hemolytic, Autoimmune	Autoimmune Lymphoproliferative Syndrome	0.905414
+Anemia, Hemolytic, Autoimmune	Thrombocytopenia	0.8693
+Respiratory Distress Syndrome, Newborn	Fetal Growth Retardation	0.88964
+Ventricular Fibrillation	Arrhythmogenic Right Ventricular Dysplasia	0.838166
+Ventricular Fibrillation	Death, Sudden, Cardiac	0.896588
+Seizures	Classical Lissencephalies and Subcortical Band Heterotopias	0.924068
+Seizures	Incontinentia Pigmenti	0.916078
+Seizures	Seizures, Febrile	0.933501
+Seizures	Malformations of Cortical Development	0.80826
+Colitis	Rectal Neoplasms	0.832419
+Colitis	Crohn Disease	0.858269
+Colitis	Celiac Disease	0.918447
+Rectal Neoplasms	Vipoma	0.813169
+Rectal Neoplasms	Mucositis	0.820845
+Rectal Neoplasms	Gastrinoma	0.831916
+Rectal Neoplasms	AIDS-Related Opportunistic Infections	0.805436
+Rectal Neoplasms	Inflammatory Bowel Diseases	0.829441
+Leishmaniasis, Cutaneous	Sciatic Neuropathy	0.912481
+Leishmaniasis, Cutaneous	Arthritis, Experimental	0.818009
+Leishmaniasis, Cutaneous	Hyperalgesia	0.92933
+Pulmonary Fibrosis	Lymphangioleiomyomatosis	0.814732
+Ophthalmoplegia	Duane Retraction Syndrome	0.952907
+Multiple Myeloma	Blood Protein Disorders	0.843263
+Glomerulonephritis	Kidney Failure, Chronic	0.85458
+Glomerulonephritis	Nephrotic Syndrome	0.98505
+Glomerulonephritis	Nephrosis	0.972429
+Glomerulonephritis	Denys-Drash Syndrome	0.941078
+Glomerulonephritis	Lecithin Acyltransferase Deficiency	0.975109
+Glomerulonephritis	Immune Complex Diseases	0.959973
+Glomerulonephritis	Glomerulonephritis, Membranoproliferative	0.992972
+Glomerulonephritis	Nephritis, Interstitial	0.960564
+Glomerulonephritis	Anemia, Macrocytic	0.819261
+Glomerulonephritis	Proteinuria	0.979704
+Glomerulonephritis	Glomerulosclerosis, Focal Segmental	0.980296
+Glomerulonephritis	Glomerulonephritis, IGA	0.941909
+Glomerulonephritis	Lupus Nephritis	0.983708
+Glomerulonephritis	Hematuria	0.948578
+Neurofibromatosis 1	Cafe-au-Lait Spots	0.878898
+Neurofibromatosis 1	Fibrous Dysplasia, Polyostotic	0.90744
+Neurofibromatosis 1	Colorectal Neoplasms, Hereditary Nonpolyposis	0.889801
+Pruritus	Keratosis	0.836664
+Dysgammaglobulinemia	Immunologic Deficiency Syndromes	0.963102
+Urinary Incontinence	Female Urogenital Diseases	0.84731
+Urinary Incontinence	Prostatic Intraepithelial Neoplasia	0.889435
+Inflammatory Bowel Diseases	Vipoma	0.842759
+Inflammatory Bowel Diseases	Colonic Polyps	0.810404
+Inflammatory Bowel Diseases	Gastrinoma	0.860118
+Inflammatory Bowel Diseases	Celiac Disease	0.895477
+Myositis, Inclusion Body	Multiple Acyl Coenzyme A Dehydrogenase Deficiency	0.805718
+Acrocephalosyndactylia	Tooth Abnormalities	0.800933
+Acrocephalosyndactylia	Craniofacial Dysostosis	0.85264
+Acrocephalosyndactylia	Orofaciodigital Syndromes	0.817132
+Acrocephalosyndactylia	Syndactyly	0.823166
+Acrocephalosyndactylia	Craniosynostoses	0.804065
+Acrocephalosyndactylia	Hand Deformities, Congenital	0.804068
+Urologic Diseases	Spina Bifida Cystica	0.824023
+Heart Septal Defects, Ventricular	Heart Septal Defects	0.890063
+Brugada Syndrome	Long QT Syndrome	0.923816
+Brugada Syndrome	Arrhythmogenic Right Ventricular Dysplasia	0.894273
+Brugada Syndrome	Torsades de Pointes	0.87753
+Brugada Syndrome	Heart Block	0.900443
+Brugada Syndrome	Death, Sudden, Cardiac	0.85998
+Brugada Syndrome	Tachycardia, Ventricular	0.919221
+Brugada Syndrome	Ventricular Fibrillation	0.851739
+Pierre Robin Syndrome	Orofaciodigital Syndromes	0.804234
+Pierre Robin Syndrome	Hand Deformities, Congenital	0.814526
+Spinal Diseases	Spondylitis, Ankylosing	0.896713
+Ophthalmoplegia, Chronic Progressive External	Mitochondrial Diseases	0.837075
+Ophthalmoplegia, Chronic Progressive External	Mitochondrial Myopathies	0.948561
+Ophthalmoplegia, Chronic Progressive External	Mitochondrial Encephalomyopathies	0.946373
+Insulin Resistance	Hyperlipidemias	0.93064
+Insulin Resistance	Obesity	0.98831
+Insulin Resistance	Metabolic Diseases	0.953963
+Insulin Resistance	Glucose Intolerance	0.949921
+Insulin Resistance	Hyperlipoproteinemias	0.918081
+Insulin Resistance	Endometrial Hyperplasia	0.948721
+Insulin Resistance	Gout	0.870972
+Insulin Resistance	Metabolic Syndrome X	0.990537
+Insulin Resistance	Endometrial Neoplasms	0.948006
+Insulin Resistance	Diabetes Mellitus	0.96949
+Insulin Resistance	Cushing Syndrome	0.809648
+Insulin Resistance	Lipid Metabolism Disorders	0.875838
+Insulin Resistance	Hyperinsulinism	0.990462
+Insulin Resistance	Hypothalamic Diseases	0.840197
+Insulin Resistance	Bardet-Biedl Syndrome	0.926454
+Insulin Resistance	Hypertriglyceridemia	0.96867
+Insulin Resistance	Hyperlipidemia, Familial Combined	0.98213
+Insulin Resistance	Hypoalphalipoproteinemias	0.979885
+Insulin Resistance	Dyslipidemias	0.943671
+Bardet-Biedl Syndrome	Glucose Intolerance	0.856229
+Bardet-Biedl Syndrome	Hyperlipoproteinemias	0.879098
+Bardet-Biedl Syndrome	Hypoalphalipoproteinemias	0.937214
+Bardet-Biedl Syndrome	Dyslipidemias	0.869479
+Agranulocytosis	Neutropenia	0.962287
+Amyloidosis	Nephrotic Syndrome	0.80273
+Respiratory Insufficiency	Respiratory Distress Syndrome, Adult	0.90147
+Respiratory Insufficiency	Lung Diseases, Obstructive	0.888211
+Respiratory Insufficiency	Acidosis	0.852074
+Hypertriglyceridemia	Obesity	0.970329
+Hypertriglyceridemia	Metabolic Diseases	0.939837
+Hypertriglyceridemia	Hypercholesterolemia	0.84882
+Hypertriglyceridemia	Glucose Intolerance	0.945944
+Hypertriglyceridemia	Hyperlipoproteinemias	0.914077
+Hypertriglyceridemia	Gout	0.877421
+Hypertriglyceridemia	Endometrial Neoplasms	0.931646
+Hypertriglyceridemia	Diabetes Mellitus	0.969682
+Hypertriglyceridemia	Lipid Metabolism Disorders	0.897941
+Hypertriglyceridemia	Hyperinsulinism	0.966631
+Hypertriglyceridemia	Hyperlipoproteinemia Type IV	0.901059
+Hypertriglyceridemia	Bardet-Biedl Syndrome	0.888309
+Hypertriglyceridemia	Hyperlipidemia, Familial Combined	0.956352
+Hypertriglyceridemia	Hypoalphalipoproteinemias	0.941429
+Hypertriglyceridemia	Dyslipidemias	0.944397
+Hemangioma, Capillary	Anisometropia	0.919126
+Amyotrophic Lateral Sclerosis	Motor Neuron Disease	0.847346
+Fetal Growth Retardation	Premature Birth	0.943272
+Fetal Growth Retardation	Fetal Membranes, Premature Rupture	0.838303
+Fetal Growth Retardation	Anemia, Neonatal	0.813004
+Fetal Growth Retardation	Hernia, Umbilical	0.83539
+Vulvar Neoplasms	Lichenoid Eruptions	0.826915
+Arthritis	Osteoarthritis	0.828054
+Arthritis	Femur Head Necrosis	0.816435
+Idiopathic Pulmonary Fibrosis	Pulmonary Emphysema	0.829352
+Idiopathic Pulmonary Fibrosis	Pulmonary Alveolar Proteinosis	0.930452
+Idiopathic Pulmonary Fibrosis	Pulmonary Embolism	0.824559
+Idiopathic Pulmonary Fibrosis	Pulmonary Fibrosis	0.998885
+Idiopathic Pulmonary Fibrosis	Lymphangioleiomyomatosis	0.827632
+Lipodystrophy	Acanthosis Nigricans	0.805544
+Seizures, Febrile	Classical Lissencephalies and Subcortical Band Heterotopias	0.890083
+Seizures, Febrile	Incontinentia Pigmenti	0.894294
+Crohn Disease	Exocrine Pancreatic Insufficiency	0.810847
+Crohn Disease	Gastrinoma	0.834324
+Crohn Disease	AIDS-Related Opportunistic Infections	0.811493
+Crohn Disease	Salmonella Infections, Animal	0.815337
+Crohn Disease	Inflammatory Bowel Diseases	0.924343
+Crohn Disease	Celiac Disease	0.835875
+Angelman Syndrome	Chromosome Disorders	0.805043
+Angelman Syndrome	Cri-du-Chat Syndrome	0.815327
+Ankylosis	Oral Submucous Fibrosis	0.807303
+Uremia	Psoriasis	0.801284
+Uremia	Cholestasis, Intrahepatic	0.82779
+Craniofacial Abnormalities	Smith-Lemli-Opitz Syndrome	0.85866
+Craniofacial Abnormalities	Blepharophimosis	0.894211
+Craniofacial Abnormalities	Silver-Russell Syndrome	0.811827
+Craniofacial Abnormalities	Nails, Malformed	0.819484
+Craniofacial Abnormalities	Tooth Abnormalities	0.885435
+Craniofacial Abnormalities	Macrocephaly	0.848982
+Craniofacial Abnormalities	Chromosome Disorders	0.962867
+Craniofacial Abnormalities	Craniofacial Dysostosis	0.921708
+Craniofacial Abnormalities	Microcephaly	0.958629
+Craniofacial Abnormalities	Rubinstein-Taybi Syndrome	0.8144
+Craniofacial Abnormalities	Dwarfism	0.916311
+Craniofacial Abnormalities	Orofaciodigital Syndromes	0.855738
+Craniofacial Abnormalities	Abnormalities, Multiple	0.969733
+Craniofacial Abnormalities	Amino Acid Metabolism, Inborn Errors	0.922953
+Craniofacial Abnormalities	Mental Retardation	0.938513
+Craniofacial Abnormalities	Fibromatosis, Gingival	0.901645
+Craniofacial Abnormalities	Piebaldism	0.857053
+Craniofacial Abnormalities	Phenylketonurias	0.92525
+Craniofacial Abnormalities	De Lange Syndrome	0.877001
+Craniofacial Abnormalities	Klinefelter Syndrome	0.906455
+Craniofacial Abnormalities	Fragile X Syndrome	0.884953
+Craniofacial Abnormalities	Hallermann's Syndrome	0.849436
+Craniofacial Abnormalities	Down Syndrome	0.889793
+Craniofacial Abnormalities	Hypertelorism	0.87625
+Craniofacial Abnormalities	Skin Abnormalities	0.888664
+Craniofacial Abnormalities	Metabolism, Inborn Errors	0.88535
+Craniofacial Abnormalities	Mucopolysaccharidosis IV	0.816003
+Craniofacial Abnormalities	Chromosome Aberrations	0.959551
+Craniofacial Abnormalities	Syndactyly	0.909097
+Craniofacial Abnormalities	Craniosynostoses	0.937373
+Craniofacial Abnormalities	Polydactyly	0.898217
+Craniofacial Abnormalities	Xeroderma Pigmentosum	0.887926
+Craniofacial Abnormalities	Hand Deformities, Congenital	0.889411
+Craniofacial Abnormalities	Congenital Hypothyroidism	0.81246
+Craniofacial Abnormalities	Anophthalmos	0.852175
+Craniofacial Abnormalities	Ectodermal Dysplasia	0.832778
+Craniofacial Abnormalities	Chromosome Breakage	0.919825
+Craniofacial Abnormalities	Cri-du-Chat Syndrome	0.882232
+Craniofacial Abnormalities	Exostoses, Multiple Hereditary	0.858541
+Craniofacial Abnormalities	Sebaceous Gland Neoplasms	0.818278
+Craniofacial Abnormalities	Wolf-Hirschhorn Syndrome	0.887362
+Craniofacial Abnormalities	Foot Deformities, Congenital	0.801715
+Craniofacial Abnormalities	Genetic Diseases, Inborn	0.842687
+Craniofacial Abnormalities	Maple Syrup Urine Disease	0.818484
+Hyperlipidemia, Familial Combined	Glucose Intolerance	0.925601
+Hyperlipidemia, Familial Combined	Hyperlipoproteinemias	0.930638
+Hyperlipidemia, Familial Combined	Hypoalphalipoproteinemias	0.983403
+Hyperlipidemia, Familial Combined	Dyslipidemias	0.931483
+Alopecia	Hirsutism	0.914761
+Hematologic Diseases	Blood Platelet Disorders	0.908843
+Hematologic Diseases	Anemia, Aplastic	0.846753
+Hematologic Diseases	Thrombocytopenia	0.899009
+Bundle-Branch Block	Long QT Syndrome	0.892398
+Bundle-Branch Block	Arrhythmogenic Right Ventricular Dysplasia	0.898551
+Bundle-Branch Block	Torsades de Pointes	0.906176
+Bundle-Branch Block	Heart Block	0.929465
+Bundle-Branch Block	Death, Sudden, Cardiac	0.951802
+Bundle-Branch Block	Tachycardia, Ventricular	0.931014
+Bundle-Branch Block	Ventricular Fibrillation	0.89524
+Bundle-Branch Block	Brugada Syndrome	0.856597
+Carcinoma, Transitional Cell	Urinary Bladder Neoplasms	0.852237
+Stroke	Infarction, Middle Cerebral Artery	0.87799
+Hemophilia B	Factor VII Deficiency	0.848976
+Pancreatic Neoplasms	Pancreatic Diseases	0.845415
+Hemophilia A	Hemorrhagic Disorders	0.811986
+Hemophilia A	von Willebrand Diseases	0.924488
+Hemophilia A	Hemophilia B	0.973634
+Hemophilia A	Factor VII Deficiency	0.865897
+Obsessive-Compulsive Disorder	Tourette Syndrome	0.811767
+Diabetes Insipidus, Neurogenic	Diabetes Insipidus, Nephrogenic	0.977553
+Multiple System Atrophy	Supranuclear Palsy, Progressive	0.950598
+Multiple System Atrophy	Tauopathies	0.921987
+Pancreatic Diseases	Pancreatitis	0.815662
+Glomerulonephritis, IGA	Nephrotic Syndrome	0.882263
+Glomerulonephritis, IGA	Lecithin Acyltransferase Deficiency	0.864658
+Glomerulonephritis, IGA	Immune Complex Diseases	0.957496
+Glomerulonephritis, IGA	Glomerulonephritis, Membranoproliferative	0.934368
+Glomerulonephritis, IGA	Hematuria	0.875594
+Celiac Disease	Vipoma	0.905156
+Celiac Disease	Gastrinoma	0.841829
+Joint Diseases	Soft Tissue Neoplasms	0.8201
+Joint Diseases	Osteoarthritis	0.828675
+Joint Diseases	Osteolysis	0.80747
+Mammary Neoplasms, Animal	Liver Cirrhosis, Experimental	0.817525
+Colorectal Neoplasms	Mucositis	0.803778
+Colorectal Neoplasms	Rectal Neoplasms	0.917957
+Colorectal Neoplasms	Inflammatory Bowel Diseases	0.838812
+Dermatitis, Atopic	Eczema	0.870971
+Dermatitis, Atopic	Dermatitis, Allergic Contact	0.91268
+Dermatitis, Atopic	Keloid	0.909323
+Dermatitis, Atopic	Dermatitis, Contact	0.81624
+Dermatitis, Atopic	Dermatitis	0.912642
+Dermatitis, Atopic	Liver Cirrhosis, Biliary	0.877953
+Dermatitis, Atopic	Pruritus	0.979773
+Dermatitis, Atopic	Alagille Syndrome	0.820549
+Dermatitis, Atopic	Keratosis	0.843749
+Renal Tubular Transport, Inborn Errors	Nephrocalcinosis	0.868484
+Neurogenic Inflammation	Hyperalgesia	0.89321
+Aortic Aneurysm	Aortic Aneurysm, Thoracic	0.806849
+Developmental Disabilities	Autistic Disorder	0.85512
+Developmental Disabilities	DiGeorge Syndrome	0.845009
+Developmental Disabilities	Cri-du-Chat Syndrome	0.840213
+Developmental Disabilities	Angelman Syndrome	0.827127
+Lupus Nephritis	Nephrotic Syndrome	0.993318
+Anemia, Aplastic	Thrombocytopenia	0.802525
+Malformations of Cortical Development	Classical Lissencephalies and Subcortical Band Heterotopias	0.839234
+Malformations of Cortical Development	Incontinentia Pigmenti	0.829523
+Keratosis	Candidiasis, Vulvovaginal	0.848708
+Keratosis	Porokeratosis	0.857899
+Anorexia Nervosa	Bulimia Nervosa	0.879604
+Pain Insensitivity, Congenital	Exostoses, Multiple Hereditary	0.810163
+Lymphoma, T-Cell, Cutaneous	Keloid	0.817826
+Lymphoma, T-Cell, Cutaneous	Drug Eruptions	0.847948
+Lymphoma, T-Cell, Cutaneous	Porokeratosis	0.857696
+Lymphoma, T-Cell, Cutaneous	Cholestasis, Intrahepatic	0.809422
+Myocardial Ischemia	Myocardial Stunning	0.882759
+Myocardial Ischemia	Angina Pectoris	0.822129
+Myocardial Ischemia	Coronary Disease	0.908735
+Myocardial Ischemia	Coronary Aneurysm	0.910894
+Myocardial Ischemia	Coronary Artery Disease	0.943587
+Myocardial Ischemia	Coronary Restenosis	0.975934
+Myocardial Ischemia	Myocardial Infarction	0.946316
+Dermatomyositis	Myositis, Inclusion Body	0.853297
+Cardiomyopathy, Hypertrophic	Aortic Valve Stenosis	0.925635
+Optic Neuropathy, Ischemic	Retinal Vein Occlusion	0.874585
+Optic Neuropathy, Ischemic	Choroidal Neovascularization	0.890885
+Cerebral Palsy	Muscle Spasticity	0.858197
+Kidney Diseases	Kidney Failure, Chronic	0.853764
+Kidney Diseases	Fanconi Syndrome	0.82449
+Kidney Diseases	Nephrotic Syndrome	0.867536
+Kidney Diseases	Nephrosis	0.896001
+Kidney Diseases	Lecithin Acyltransferase Deficiency	0.852963
+Kidney Diseases	Immune Complex Diseases	0.800396
+Kidney Diseases	Glomerulonephritis, Membranoproliferative	0.842714
+Kidney Diseases	Nephritis, Interstitial	0.876449
+Kidney Diseases	Hypertension, Renal	0.848363
+Kidney Diseases	Proteinuria	0.868085
+Kidney Diseases	Glomerulosclerosis, Focal Segmental	0.870919
+Kidney Diseases	Renal Insufficiency	0.851476
+Kidney Diseases	Glomerulonephritis	0.864084
+Kidney Diseases	Lupus Nephritis	0.872745
+Kidney Diseases	Hematuria	0.871041
+Dyslipidemias	Hyperlipoproteinemias	0.885665
+Dyslipidemias	Hypoalphalipoproteinemias	0.922023
+Lymphopenia	Immunologic Deficiency Syndromes	0.925116
+Lymphopenia	Lymphoproliferative Disorders	0.878385
+Lymphopenia	Job's Syndrome	0.910122
+Sinoatrial Block	Sick Sinus Syndrome	0.894415
+Sinoatrial Block	Long QT Syndrome	0.876627
+Sinoatrial Block	Arrhythmogenic Right Ventricular Dysplasia	0.856281
+Sinoatrial Block	Torsades de Pointes	0.872521
+Sinoatrial Block	Arrhythmias, Cardiac	0.865041
+Sinoatrial Block	Heart Block	0.884807
+Sinoatrial Block	Hypotension, Orthostatic	0.835285
+Sinoatrial Block	Death, Sudden, Cardiac	0.850951
+Sinoatrial Block	Tachycardia, Ventricular	0.879022
+Sinoatrial Block	Brugada Syndrome	0.815781
+Optic Nerve Diseases	Glaucoma	0.920064
+Optic Nerve Diseases	Retinal Diseases	0.860704
+Foot Deformities, Congenital	Hypertelorism	0.875553
+Cholestasis	Cholestasis, Intrahepatic	0.907014
+Helicobacter Infections	Stomach Ulcer	0.804686
+Helicobacter Infections	Duodenal Ulcer	0.920974
+Hypertension, Portal	Gastrointestinal Hemorrhage	0.855358
+Hypertension, Portal	Peptic Ulcer Hemorrhage	0.866443
+Drug-Induced Liver Injury	Hepatic Veno-Occlusive Disease	0.859308
+Drug-Induced Liver Injury	Jaundice, Chronic Idiopathic	0.951934
+Drug-Induced Liver Injury	Hyperbilirubinemia	0.888677
+Drug-Induced Liver Injury	Spherocytosis, Hereditary	0.898812
+Drug-Induced Liver Injury	Hepatitis	0.964086
+Drug-Induced Liver Injury	Hepatitis B, Chronic	0.823704
+Muscular Atrophy, Spinal	Spinal Muscular Atrophies of Childhood	0.867434
+Osteoporosis	Osteoporosis, Postmenopausal	0.872983
+Osteoporosis	Fractures, Compression	0.804043
+Colonic Neoplasms	Gastrointestinal Neoplasms	0.862104
+Colonic Neoplasms	Adenocarcinoma	0.885669
+Liver Neoplasms	Gallbladder Neoplasms	0.811243
+Liver Neoplasms	Pancreatic Neoplasms	0.861156
+Liver Neoplasms	Pancreatic Diseases	0.837467
+Genetic Diseases, Inborn	Metabolism, Inborn Errors	0.822548
+Genetic Diseases, Inborn	Polydactyly	0.802938
+Genetic Diseases, Inborn	Hand Deformities, Congenital	0.820658
+Genetic Diseases, Inborn	Chromosome Breakage	0.801586
+Malabsorption Syndromes	Lactose Intolerance	0.815039
+Malabsorption Syndromes	Celiac Disease	0.906882
+Microphthalmos	Corneal Opacity	0.861554
+Microphthalmos	Anophthalmos	0.810566
+Microphthalmos	Eye Abnormalities	0.891361
+Hyperalgesia	Sciatic Neuropathy	0.980221
+Hearing Loss, Sensorineural	Cogan Syndrome	0.884046
+Hypergammaglobulinemia	Immunologic Deficiency Syndromes	0.940378
+Hypergammaglobulinemia	Lymphoproliferative Disorders	0.850618
+Hypergammaglobulinemia	Job's Syndrome	0.986492
+Hypergammaglobulinemia	Lymphopenia	0.912932
+Myopia	Refractive Errors	0.924098
+Myopia	Hyperopia	0.879148

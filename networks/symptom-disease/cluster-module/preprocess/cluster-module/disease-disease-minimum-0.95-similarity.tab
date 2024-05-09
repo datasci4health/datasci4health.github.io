@@ -1,0 +1,174 @@
+MeSH Disease Term source	MeSH Disease Term target	symptom similarity score
+Myoclonus	Unverricht-Lundborg Syndrome	0.954774
+Charcot-Marie-Tooth Disease	Muscular Atrophy	0.975521
+Disorders of Sex Development	Adrenocortical Carcinoma	0.977895
+Hypertension, Pulmonary	Polycythemia	0.952198
+Angina Pectoris	Coronary Disease	0.974088
+Syncope	Sick Sinus Syndrome	0.985687
+Syncope	Long QT Syndrome	0.990177
+Syncope	Arrhythmogenic Right Ventricular Dysplasia	0.971353
+Syncope	Heart Block	0.959356
+Syncope	Tachycardia, Ventricular	0.978593
+Dementia	Alzheimer Disease	0.973312
+Hyperlipidemias	Diabetes Mellitus	0.958687
+Hyperlipidemias	Hypertriglyceridemia	0.951506
+Deafness	Ichthyosiform Erythroderma, Congenital	0.965103
+Sick Sinus Syndrome	Long QT Syndrome	0.980121
+Sick Sinus Syndrome	Arrhythmogenic Right Ventricular Dysplasia	0.959018
+Sick Sinus Syndrome	Heart Block	0.961804
+Sick Sinus Syndrome	Tachycardia, Ventricular	0.973254
+Chromosome Disorders	Chromosome Aberrations	0.966804
+Microcephaly	Chromosome Disorders	0.965221
+Microcephaly	Abnormalities, Multiple	0.978853
+Microcephaly	Amino Acid Metabolism, Inborn Errors	0.967066
+Microcephaly	Mental Retardation	0.983096
+Microcephaly	Phenylketonurias	0.974757
+Microcephaly	Chromosome Aberrations	0.993475
+Microcephaly	Chromosome Breakage	0.961531
+Fibrous Dysplasia, Polyostotic	Cafe-au-Lait Spots	0.978085
+Fibrous Dysplasia, Polyostotic	Colorectal Neoplasms, Hereditary Nonpolyposis	0.971549
+Dwarfism	Phenylketonurias	0.960984
+Incontinentia Pigmenti	Classical Lissencephalies and Subcortical Band Heterotopias	0.957708
+Long QT Syndrome	Arrhythmogenic Right Ventricular Dysplasia	0.962687
+Long QT Syndrome	Tachycardia, Ventricular	0.974926
+Long QT Syndrome	Atrioventricular Block	0.956243
+Tetralogy of Fallot	Transposition of Great Vessels	0.97236
+Obesity	Diabetes Mellitus	0.963128
+Obesity	Hyperinsulinism	0.979443
+Obesity	Hyperlipidemia, Familial Combined	0.987497
+Obesity	Hypoalphalipoproteinemias	0.988107
+Nephrotic Syndrome	Nephrosis	0.985884
+Nephrotic Syndrome	Denys-Drash Syndrome	0.955773
+Nephrotic Syndrome	Lecithin Acyltransferase Deficiency	0.992435
+Supranuclear Palsy, Progressive	Striatonigral Degeneration	0.967389
+Abnormalities, Multiple	Chromosome Disorders	0.963684
+Abnormalities, Multiple	Craniofacial Dysostosis	0.958652
+Abnormalities, Multiple	Chromosome Aberrations	0.987045
+Abnormalities, Multiple	Chromosome Breakage	0.955497
+Neurofibromatoses	Cafe-au-Lait Spots	0.977045
+Neurofibromatoses	Fibrous Dysplasia, Polyostotic	0.966539
+Mental Retardation	Abnormalities, Multiple	0.969765
+Mental Retardation	Phenylketonurias	0.968913
+Mental Retardation	Chromosome Aberrations	0.985722
+Mental Retardation	Chromosome Breakage	0.980734
+Diabetes Insipidus	Diabetes Insipidus, Nephrogenic	0.982853
+Diabetes Insipidus	Diabetes Insipidus, Neurogenic	0.992193
+Hyperbilirubinemia, Hereditary	Gilbert Disease	0.985507
+Phenylketonurias	Chromosome Breakage	0.950907
+Hydrops Fetalis	Anemia, Diamond-Blackfan	0.951221
+Glaucoma	Retinal Diseases	0.960221
+Tauopathies	Supranuclear Palsy, Progressive	0.962614
+Nephrocalcinosis	Dent Disease	0.957523
+Nephrocalcinosis	Nephrolithiasis	0.955794
+Arrhythmias, Cardiac	Tachycardia	0.954636
+Arrhythmias, Cardiac	Bundle-Branch Block	0.953066
+Glomerulonephritis, Membranoproliferative	Nephrotic Syndrome	0.985657
+Glomerulonephritis, Membranoproliferative	Lecithin Acyltransferase Deficiency	0.982269
+Glomerulonephritis, Membranoproliferative	Immune Complex Diseases	0.950177
+Nephritis, Interstitial	Nephrotic Syndrome	0.964763
+Heart Block	Long QT Syndrome	0.959127
+Heart Block	Tachycardia, Ventricular	0.968467
+Heart Defects, Congenital	Tetralogy of Fallot	0.974267
+Heart Defects, Congenital	Transposition of Great Vessels	0.96995
+Dystonia	Pantothenate Kinase-Associated Neurodegeneration	0.955743
+Dystonia	Dystonic Disorders	0.999155
+Metabolic Syndrome X	Obesity	0.988339
+Metabolic Syndrome X	Glucose Intolerance	0.95678
+Metabolic Syndrome X	Diabetes Mellitus	0.983375
+Metabolic Syndrome X	Hyperinsulinism	0.981849
+Metabolic Syndrome X	Hypertriglyceridemia	0.977359
+Metabolic Syndrome X	Hyperlipidemia, Familial Combined	0.976758
+Metabolic Syndrome X	Hypoalphalipoproteinemias	0.97419
+Metabolic Syndrome X	Dyslipidemias	0.954895
+Urticaria	Pruritus	0.957858
+Urticaria	Dermatitis, Atopic	0.966753
+Pseudohypoparathyroidism	Pseudopseudohypoparathyroidism	0.994824
+Epilepsy	Epilepsy, Generalized	0.958259
+Hypocalcemia	Hypoparathyroidism	0.963776
+Dystonic Disorders	Pantothenate Kinase-Associated Neurodegeneration	0.955504
+Diabetes Mellitus, Type 1	Diabetic Nephropathies	0.97142
+Diabetes Mellitus, Type 1	Albuminuria	0.974955
+Diabetes Mellitus, Type 2	Hyperuricemia	0.952947
+alpha-Thalassemia	Hydrops Fetalis	0.954008
+Intestinal Perforation	Peritonitis	0.95811
+Chromosome Aberrations	Chromosome Breakage	0.965472
+Liddle Syndrome	Neutropenia	0.955226
+Coronary Artery Disease	Angina Pectoris	0.956806
+Coronary Artery Disease	Coronary Disease	0.995164
+Fatty Liver	Obesity	0.962419
+Fatty Liver	Metabolic Syndrome X	0.963013
+Fatty Liver	Insulin Resistance	0.962156
+Fatty Liver	Hyperlipidemia, Familial Combined	0.9618
+Diabetes Mellitus	Hyperlipidemia, Familial Combined	0.958193
+Diabetes Mellitus	Hypoalphalipoproteinemias	0.9503
+Cholelithiasis	Gallstones	0.98902
+Hirschsprung Disease	Megacolon	0.977637
+Cushing Syndrome	Acanthosis Nigricans	0.954254
+Proteinuria	Nephrotic Syndrome	0.9937
+Proteinuria	Nephrosis	0.988762
+Proteinuria	Lecithin Acyltransferase Deficiency	0.995019
+Proteinuria	Glomerulonephritis, Membranoproliferative	0.9813
+Proteinuria	Glomerulosclerosis, Focal Segmental	0.998468
+Rhinitis, Allergic, Seasonal	Rhinitis, Allergic, Perennial	0.976313
+Cleft Palate	Cleft Lip	0.970755
+Colorectal Neoplasms, Hereditary Nonpolyposis	Cafe-au-Lait Spots	0.953854
+Hyperinsulinism	Metabolic Diseases	0.955192
+Hyperinsulinism	Glucose Intolerance	0.968732
+Hyperinsulinism	Diabetes Mellitus	0.969844
+Hyperinsulinism	Hypoalphalipoproteinemias	0.965888
+Progeria	Werner Syndrome	0.97877
+Liver Diseases	Hepatitis	0.961975
+Liver Diseases	Drug-Induced Liver Injury	0.950571
+Frontotemporal Dementia	Pick Disease of the Brain	0.97513
+Primary Ovarian Insufficiency	Gonadal Dysgenesis	0.985235
+Glomerulosclerosis, Focal Segmental	Nephrotic Syndrome	0.993939
+Glomerulosclerosis, Focal Segmental	Nephrosis	0.987949
+Glomerulosclerosis, Focal Segmental	Denys-Drash Syndrome	0.958784
+Glomerulosclerosis, Focal Segmental	Lecithin Acyltransferase Deficiency	0.995165
+Tachycardia, Ventricular	Arrhythmogenic Right Ventricular Dysplasia	0.979451
+Tachycardia, Ventricular	Torsades de Pointes	0.962598
+Tachycardia, Ventricular	Atrioventricular Block	0.961193
+Cholangiocarcinoma	Bile Duct Neoplasms	0.962963
+Mitochondrial Myopathies	Mitochondrial Encephalomyopathies	0.969837
+Ophthalmoplegia	Duane Retraction Syndrome	0.952907
+Glomerulonephritis	Nephrotic Syndrome	0.98505
+Glomerulonephritis	Nephrosis	0.972429
+Glomerulonephritis	Lecithin Acyltransferase Deficiency	0.975109
+Glomerulonephritis	Immune Complex Diseases	0.959973
+Glomerulonephritis	Glomerulonephritis, Membranoproliferative	0.992972
+Glomerulonephritis	Nephritis, Interstitial	0.960564
+Glomerulonephritis	Proteinuria	0.979704
+Glomerulonephritis	Glomerulosclerosis, Focal Segmental	0.980296
+Glomerulonephritis	Lupus Nephritis	0.983708
+Dysgammaglobulinemia	Immunologic Deficiency Syndromes	0.963102
+Insulin Resistance	Obesity	0.98831
+Insulin Resistance	Metabolic Diseases	0.953963
+Insulin Resistance	Metabolic Syndrome X	0.990537
+Insulin Resistance	Diabetes Mellitus	0.96949
+Insulin Resistance	Hyperinsulinism	0.990462
+Insulin Resistance	Hypertriglyceridemia	0.96867
+Insulin Resistance	Hyperlipidemia, Familial Combined	0.98213
+Insulin Resistance	Hypoalphalipoproteinemias	0.979885
+Agranulocytosis	Neutropenia	0.962287
+Hypertriglyceridemia	Obesity	0.970329
+Hypertriglyceridemia	Diabetes Mellitus	0.969682
+Hypertriglyceridemia	Hyperinsulinism	0.966631
+Hypertriglyceridemia	Hyperlipidemia, Familial Combined	0.956352
+Idiopathic Pulmonary Fibrosis	Pulmonary Fibrosis	0.998885
+Craniofacial Abnormalities	Chromosome Disorders	0.962867
+Craniofacial Abnormalities	Microcephaly	0.958629
+Craniofacial Abnormalities	Abnormalities, Multiple	0.969733
+Craniofacial Abnormalities	Chromosome Aberrations	0.959551
+Hyperlipidemia, Familial Combined	Hypoalphalipoproteinemias	0.983403
+Bundle-Branch Block	Death, Sudden, Cardiac	0.951802
+Hemophilia A	Hemophilia B	0.973634
+Diabetes Insipidus, Neurogenic	Diabetes Insipidus, Nephrogenic	0.977553
+Multiple System Atrophy	Supranuclear Palsy, Progressive	0.950598
+Glomerulonephritis, IGA	Immune Complex Diseases	0.957496
+Dermatitis, Atopic	Pruritus	0.979773
+Lupus Nephritis	Nephrotic Syndrome	0.993318
+Myocardial Ischemia	Coronary Restenosis	0.975934
+Drug-Induced Liver Injury	Jaundice, Chronic Idiopathic	0.951934
+Drug-Induced Liver Injury	Hepatitis	0.964086
+Hyperalgesia	Sciatic Neuropathy	0.980221
+Hypergammaglobulinemia	Job's Syndrome	0.986492

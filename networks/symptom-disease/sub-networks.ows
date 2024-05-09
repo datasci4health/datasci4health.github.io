@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(150, 150)" />
+		<node id="1" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows" position="(304.0, 149.0)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(493.66666666666663, 141.66666666666663)" />
+		<node id="3" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(488.0, 278.66666666666663)" />
+		<node id="4" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows (1)" position="(329.0, 383.0)" />
+		<node id="5" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data (1)" position="(496.0, 381.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="3" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'nature/disease-disease(41467_2014_BFncomms5212_MOESM1046_ESM).tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Text'}, {'start': 2, 'stop': 3, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci4health/networks/symptom-disease/nature/symptom-disease(41467_2014_BFncomms5212_MOESM1045_ESM).tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Text'}, {'start': 2, 'stop': 4, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/symptom-disease/nature', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVdgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlIiMDXB1cmdlX2NsYXNzZXOUiIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAClAAAAP4AAATrAAADFQAAApQAAAEjAAAE6wAAAxUAAAABAAAAAAeAAAAClAAAASMA
+AATrAAADFZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1
+ZXOUfZQojApjb25kaXRpb25zlF2UKIwYc3ltcHRvbSBzaW1pbGFyaXR5IHNjb3JllEsCSwVdlEc/
+6zMzMzMzM2F0lGFoCEsCdYwKYXR0cmlidXRlc5R9lIwYc3ltcHRvbSBzaW1pbGFyaXR5IHNjb3Jl
+lEsCc4wFbWV0YXOUfZQojBhNZVNIIERpc2Vhc2UgVGVybSBzb3VyY2WUSwOMGE1lU0ggRGlzZWFz
+ZSBUZXJtIHRhcmdldJRLA3V1YmgNKYGUfZQoaBB9lCiMCmNvbmRpdGlvbnOUXZQojAtURklERiBz
+Y29yZZRLAksFXZRHQEkAAAAAAABhdJRhaAhLAnVoF32UKIwRUHViTWVkIG9jY3VycmVuY2WUSwKM
+C1RGSURGIHNjb3JllEsCdWgafZQojBFNZVNIIFN5bXB0b20gVGVybZRLA4wRTWVTSCBEaXNlYXNl
+IFRlcm2USwN1dWJldS4=
+</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01:\x00\x00\x00\x7f\x00\x00\x06F\x00\x00\x03\x93\x00\x00\x01:\x00\x00\x00\xa4\x00\x00\x06F\x00\x00\x03\x93\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x01:\x00\x00\x00\xa4\x00\x00\x06F\x00\x00\x03\x93', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Tab-separated values (*.tab)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xd3\x00\x00\x01\xad\x00\x00\x04\xad\x00\x00\x02e\x00\x00\x02\xd3\x00\x00\x01\xd2\x00\x00\x04\xad\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x02\xd3\x00\x00\x01\xd2\x00\x00\x04\xad\x00\x00\x02e', 'stored_name': 'disease-disease-minimum-0.85-similarity.tab', 'stored_path': 'cluster-module/preprocess/cluster-module', '__version__': 3}</properties>
+		<properties node_id="4" format="pickle">gASV0gEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAClAAAASMAAATrAAADFQAAApQAAAEjAAAE6wAAAxUAAAABAAAAAAeAAAAClAAAASMA
+AATrAAADFZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojBhzeW1wdG9tIHNpbWlsYXJpdHkgc2NvcmWUSwJLBV2URz/u
+ZmZmZmZmYXSUYWgISwJ1jAphdHRyaWJ1dGVzlH2UjBhzeW1wdG9tIHNpbWlsYXJpdHkgc2NvcmWU
+SwJzjAVtZXRhc5R9lCiMGE1lU0ggRGlzZWFzZSBUZXJtIHNvdXJjZZRLA4wYTWVTSCBEaXNlYXNl
+IFRlcm0gdGFyZ2V0lEsDdXViYXUu
+</properties>
+		<properties node_id="5" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Tab-separated values (*.tab)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x031\x00\x00\x01\xd2\x00\x00\x05\x0b\x00\x00\x02e\x00\x00\x031\x00\x00\x01\xd2\x00\x00\x05\x0b\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x031\x00\x00\x01\xd2\x00\x00\x05\x0b\x00\x00\x02e', 'stored_name': 'disease-disease-minimum-0.95-similarity.tab', 'stored_path': 'cluster-module', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
