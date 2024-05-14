@@ -5,8 +5,6 @@
 
 A fim de uniformizar os repositórios de projetos da disciplina, os diretórios de seu repositório deverão ser nomeados conforme segue.
 
-Seu repositório deverá obrigatoriamente conter o arquivo `README.md`, arquivo de documentação Markdown, que deverá conter a descrição do projeto conforme orientações a seguir.
-
 ~~~
 ...
 │

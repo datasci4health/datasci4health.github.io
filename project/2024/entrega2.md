@@ -1,4 +1,4 @@
-# Projeto de Curso – Primeira Entrega
+# Projeto de Curso – Entrega Intermediária
 
 * MO413/MC936 - Ciência e Visualização de Dados em Saúde 2024
 * UNICAMP
@@ -7,7 +7,7 @@
 
 O objetivo geral do projeto de curso é realizar a análise de dados relacionados à saúde, aliada às seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
 
-O problema escolhido deve ser no contexto das “ômicas” e a análise de dados deve usar estratégias de Ciência de Redes. Esta primeira entrega tem a função de apresentar as propostas iniciais para debate. Tudo o que for apresentado nesta versão pode ser modificado e melhorado em entregas subsequentes.
+O problema escolhido deve ser no contexto das “ômicas” e a análise de dados deve usar estratégias de Ciência de Redes. Esta segunda entrega intermediária tem a função de apresentar o andamento dos trabalhos, debater dificuldades, redirecionamentos, avanços e novas ideias. O que for apresentado nesta versão pode ser modificado e melhorado na entrega final.
 
 # Fontes de Dados
 
@@ -30,11 +30,11 @@ O projeto pode escolher um ou mais dos seguintes diferenciais:
 
 É muito importante considerar que serão valorizadas equipes que arrisquem em análises ousadas, às quais não se saiba se se alcançará o resultado esperado. Equipes podem obter nota máxima, mesmo que não alcancem o resultado esperado, considerando que apresentem um trabalho bem fundamentado, audacioso, que demonstre integração entre os componentes.
 
-# Primeira Entrega
+# Segunda Entrega
 
-Nesta primeira entrega a equipe deve definir o problema de pesquisa que será abordado. A partir do problema, deverá elaborar uma primeira versão da proposta. Nesta primeira versão, são apresentadas versões iniciais para debate de:
+Nesta segunda entrega intermediária a equipe deve apresentar pelo menos os tópicos sugeridos abaixo. Alguns deles já foram apresentados na primeira etapa e devem ser reapresentados - iguais, se não houve mudança, ou revisados:
 
-* slides de apresentação da primeira entrega;
+* slides de apresentação da segunda entrega;
 * resumo da proposta;
 * perguntas de pesquisa a serem respondidas;
 * metodologia;
@@ -69,16 +69,12 @@ Algumas atribuições são compartilhadas por se entender que é fruto da intera
 
 A entrega do projeto deve ser feita via GitHub. Para isso a equipe deve:
 
-* criar uma organização no GitHub que represente a equipe;
-* criar um projeto dentro desta organização para todas as entregas da disciplina;
-* cadastrar o projeto no GitHub da equipe neste [Formulário]();
-* no mínimo todos os membros da equipe de computação deverão ter uma conta no GitHub e devem ser membros da organização;
-* idealmente, os alunos da biologia também devem ter uma conta no GitHub e participarem da organização;
-* crie um arquivo README.md na raiz do projeto com os dados da equipe conforme o [Modelo de README](/resources/templates/2024/);
-* crie uma pasta `project1` na raiz do projeto e coloque a primeira entrega dentro desta pasta conforme [Modelo da Primeira Entrega](/resources/templates/2024/project1/).
+* usar a mesma organização e projeto no GitHub da etapa anterior;
+* atualize (se necessário) o arquivo README.md na raiz do projeto;
+* crie uma pasta `project2` na raiz do projeto e coloque a segunda entrega dentro desta pasta conforme [Modelo da Segunda Entrega](/resources/templates/2024/project2/).
 
-A submissão da entrega 1 deve ser até o dia **15/04 às 7:59 am**.
+A submissão da entrega 2 deve ser até o dia **23/05 às 7:59 am**.
 
-A apresentação será neste mesmo dia **15/04** no horário da aula. Cada equipe terá 10 minutos para se apresentar e haverá mais 5 minutos para perguntas/respostas. Todos os membros da equipe devem participar apresentando.
+A apresentação será neste mesmo dia **23/05** no horário da aula. Cada equipe terá 10 minutos para se apresentar e haverá mais 5 minutos para perguntas/respostas. Todos os membros da equipe devem participar apresentando.
 
 É muito importante que a equipe organize o tempo de forma a detalhar mais o que for mais relevante de modo que possa receber feedback.
