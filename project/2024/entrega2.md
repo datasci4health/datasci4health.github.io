@@ -73,8 +73,8 @@ A entrega do projeto deve ser feita via GitHub. Para isso a equipe deve:
 * atualize (se necessário) o arquivo README.md na raiz do projeto;
 * crie uma pasta `project2` na raiz do projeto e coloque a segunda entrega dentro desta pasta conforme [Modelo da Segunda Entrega](/resources/templates/2024/project2/).
 
-A submissão da entrega 2 deve ser até o dia **23/05 às 7:59 am**.
+A submissão da entrega 2 deve ser até o dia **28/05 às 7:59 am**.
 
-A apresentação será neste mesmo dia **23/05** no horário da aula. Cada equipe terá 10 minutos para se apresentar e haverá mais 5 minutos para perguntas/respostas. Todos os membros da equipe devem participar apresentando.
+A apresentação será neste mesmo dia **28/05** no horário da aula. Cada equipe terá 10 minutos para se apresentar e haverá mais 5 minutos para perguntas/respostas. Todos os membros da equipe devem participar apresentando.
 
 É muito importante que a equipe organize o tempo de forma a detalhar mais o que for mais relevante de modo que possa receber feedback.
