@@ -26,3 +26,6 @@ Thumbs.db
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Orange
+.*.ows.swp.p
