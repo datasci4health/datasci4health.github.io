@@ -1,0 +1,11 @@
+*vertices 5
+1 Blindness 0.0 0.0 ellipse type symptom
+2 "Diabetes Mellitus" 0.0 0.0 ellipse type disease
+3 Obesity 0.0 0.0 ellipse type symptom
+4 "Myocardial Infarction" 0.0 0.0 ellipse type disease
+5 Uveitis 0.0 0.0 ellipse type disease
+*edges
+1 2 31.85
+1 5 49.42
+2 3 2709.96
+3 4 233.95

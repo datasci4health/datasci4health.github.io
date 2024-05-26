@@ -1,0 +1,294 @@
+disease source,disease target,similarity
+"Adrenocortical Hyperfunction","Acanthosis Nigricans",0.846727
+"Adrenocortical Hyperfunction","Cushing Syndrome",0.831758
+"Adrenocortical Hyperfunction","Alopecia",0.818868
+"Cushing Syndrome","Pituitary ACTH Hypersecretion",0.87935
+"Cushing Syndrome","Endometrial Hyperplasia",0.886014
+"Cushing Syndrome","Acanthosis Nigricans",0.954254
+"Cushing Syndrome","Polycystic Ovary Syndrome",0.894041
+"Alopecia","Hirsutism",0.914761
+"Diabetic Nephropathies","Diabetic Angiopathies",0.918446
+"Diabetic Nephropathies","Polycystic Kidney, Autosomal Dominant",0.872883
+"Diabetic Nephropathies","Renal Insufficiency",0.805042
+"Polycystic Kidney, Autosomal Dominant","Renal Insufficiency",0.902789
+"Renal Insufficiency","Nephrosis",0.854325
+"Hyperlipidemias","Obesity",0.930571
+"Hyperlipidemias","Metabolic Diseases",0.915116
+"Hyperlipidemias","Hypercholesterolemia",0.926976
+"Hyperlipidemias","Glucose Intolerance",0.917449
+"Hyperlipidemias","Hyperlipoproteinemias",0.943095
+"Hyperlipidemias","Endometrial Hyperplasia",0.877495
+"Hyperlipidemias","Gout",0.899649
+"Hyperlipidemias","Endometrial Neoplasms",0.898368
+"Hyperlipidemias","Diabetes Mellitus",0.958687
+"Hyperlipidemias","Lipid Metabolism Disorders",0.844791
+"Hyperlipidemias","Hyperinsulinism",0.941196
+"Hyperlipidemias","Hyperlipoproteinemia Type IV",0.916981
+"Hyperlipidemias","Hypothalamic Diseases",0.800608
+"Hyperlipidemias","Bardet-Biedl Syndrome",0.858062
+"Hyperlipidemias","Hypertriglyceridemia",0.951506
+"Hyperlipidemias","Hyperlipidemia, Familial Combined",0.934206
+"Hyperlipidemias","Hypoalphalipoproteinemias",0.906766
+"Hyperlipidemias","Dyslipidemias",0.91877
+"Obesity","Metabolic Diseases",0.941822
+"Obesity","Glucose Intolerance",0.939292
+"Obesity","Hyperlipoproteinemias",0.92309
+"Obesity","Endometrial Hyperplasia",0.928949
+"Obesity","Gout",0.874082
+"Obesity","Endometrial Neoplasms",0.943922
+"Obesity","Diabetes Mellitus",0.963128
+"Obesity","Lipid Metabolism Disorders",0.893968
+"Obesity","Hyperinsulinism",0.979443
+"Obesity","Bardet-Biedl Syndrome",0.928762
+"Obesity","Hyperlipidemia, Familial Combined",0.987497
+"Obesity","Hypoalphalipoproteinemias",0.988107
+"Obesity","Dyslipidemias",0.945105
+"Metabolic Diseases","Glucose Intolerance",0.92519
+"Metabolic Diseases","Hyperlipoproteinemias",0.898854
+"Metabolic Diseases","Diabetes Mellitus",0.933382
+"Metabolic Diseases","Lipid Metabolism Disorders",0.872182
+"Metabolic Diseases","Bardet-Biedl Syndrome",0.911989
+"Metabolic Diseases","Hyperlipidemia, Familial Combined",0.932871
+"Metabolic Diseases","Hypoalphalipoproteinemias",0.926101
+"Metabolic Diseases","Dyslipidemias",0.912953
+"Hypercholesterolemia","Glucose Intolerance",0.819358
+"Hypercholesterolemia","Hyperlipoproteinemias",0.854487
+"Hypercholesterolemia","Diabetes Mellitus",0.837473
+"Hypercholesterolemia","Dyslipidemias",0.812242
+"Glucose Intolerance","Hyperlipoproteinemias",0.883439
+"Glucose Intolerance","Hypoalphalipoproteinemias",0.908757
+"Glucose Intolerance","Dyslipidemias",0.917061
+"Hyperlipoproteinemias","Hypoalphalipoproteinemias",0.913898
+"Endometrial Hyperplasia","Glucose Intolerance",0.884298
+"Gout","Hyperlipoproteinemias",0.854737
+"Gout","Endometrial Hyperplasia",0.821754
+"Gout","Diabetes Mellitus",0.892317
+"Gout","Dyslipidemias",0.843673
+"Endometrial Neoplasms","Metabolic Diseases",0.920749
+"Endometrial Neoplasms","Glucose Intolerance",0.895449
+"Endometrial Neoplasms","Hyperlipoproteinemias",0.889676
+"Endometrial Neoplasms","Endometrial Hyperplasia",0.91549
+"Endometrial Neoplasms","Gout",0.857643
+"Endometrial Neoplasms","Diabetes Mellitus",0.920267
+"Endometrial Neoplasms","Lipid Metabolism Disorders",0.846077
+"Endometrial Neoplasms","Hypothalamic Diseases",0.804993
+"Endometrial Neoplasms","Bardet-Biedl Syndrome",0.894382
+"Endometrial Neoplasms","Dyslipidemias",0.901053
+"Diabetes Mellitus","Glucose Intolerance",0.949045
+"Diabetes Mellitus","Hyperlipoproteinemias",0.914581
+"Diabetes Mellitus","Endometrial Hyperplasia",0.902974
+"Diabetes Mellitus","Hyperuricemia",0.864876
+"Diabetes Mellitus","Lipid Metabolism Disorders",0.857292
+"Diabetes Mellitus","Bardet-Biedl Syndrome",0.897043
+"Diabetes Mellitus","Hyperlipidemia, Familial Combined",0.958193
+"Diabetes Mellitus","Hypoalphalipoproteinemias",0.9503
+"Diabetes Mellitus","Dyslipidemias",0.935345
+"Lipid Metabolism Disorders","Hyperlipoproteinemias",0.825252
+"Lipid Metabolism Disorders","Hypoalphalipoproteinemias",0.848201
+"Lipid Metabolism Disorders","Dyslipidemias",0.877798
+"Hyperinsulinism","Metabolic Diseases",0.955192
+"Hyperinsulinism","Hypercholesterolemia",0.809877
+"Hyperinsulinism","Glucose Intolerance",0.968732
+"Hyperinsulinism","Hyperlipoproteinemias",0.924413
+"Hyperinsulinism","Endometrial Hyperplasia",0.94465
+"Hyperinsulinism","Endometrial Neoplasms",0.940178
+"Hyperinsulinism","Diabetes Mellitus",0.969844
+"Hyperinsulinism","Cushing Syndrome",0.813863
+"Hyperinsulinism","Hypothalamic Diseases",0.850321
+"Hyperinsulinism","Bardet-Biedl Syndrome",0.914436
+"Hyperinsulinism","Hypoalphalipoproteinemias",0.965888
+"Hyperinsulinism","Dyslipidemias",0.936131
+"Hypothalamic Diseases","Glucose Intolerance",0.805023
+"Hypothalamic Diseases","Diabetes Mellitus",0.819489
+"Hypothalamic Diseases","Hypoalphalipoproteinemias",0.821128
+"Bardet-Biedl Syndrome","Glucose Intolerance",0.856229
+"Bardet-Biedl Syndrome","Hyperlipoproteinemias",0.879098
+"Bardet-Biedl Syndrome","Hypoalphalipoproteinemias",0.937214
+"Bardet-Biedl Syndrome","Dyslipidemias",0.869479
+"Hypertriglyceridemia","Obesity",0.970329
+"Hypertriglyceridemia","Metabolic Diseases",0.939837
+"Hypertriglyceridemia","Hypercholesterolemia",0.84882
+"Hypertriglyceridemia","Glucose Intolerance",0.945944
+"Hypertriglyceridemia","Hyperlipoproteinemias",0.914077
+"Hypertriglyceridemia","Gout",0.877421
+"Hypertriglyceridemia","Endometrial Neoplasms",0.931646
+"Hypertriglyceridemia","Diabetes Mellitus",0.969682
+"Hypertriglyceridemia","Lipid Metabolism Disorders",0.897941
+"Hypertriglyceridemia","Hyperinsulinism",0.966631
+"Hypertriglyceridemia","Hyperlipoproteinemia Type IV",0.901059
+"Hypertriglyceridemia","Bardet-Biedl Syndrome",0.888309
+"Hypertriglyceridemia","Hyperlipidemia, Familial Combined",0.956352
+"Hypertriglyceridemia","Hypoalphalipoproteinemias",0.941429
+"Hypertriglyceridemia","Dyslipidemias",0.944397
+"Hyperlipidemia, Familial Combined","Glucose Intolerance",0.925601
+"Hyperlipidemia, Familial Combined","Hyperlipoproteinemias",0.930638
+"Hyperlipidemia, Familial Combined","Hypoalphalipoproteinemias",0.983403
+"Hyperlipidemia, Familial Combined","Dyslipidemias",0.931483
+"Dyslipidemias","Hyperlipoproteinemias",0.885665
+"Dyslipidemias","Hypoalphalipoproteinemias",0.922023
+"Kidney Failure, Chronic","Nephrotic Syndrome",0.867491
+"Kidney Failure, Chronic","Proteinuria",0.861198
+"Kidney Failure, Chronic","Glomerulosclerosis, Focal Segmental",0.874438
+"Kidney Failure, Chronic","Renal Insufficiency",0.895418
+"Nephrotic Syndrome","Nephrosis",0.985884
+"Nephrotic Syndrome","Denys-Drash Syndrome",0.955773
+"Nephrotic Syndrome","Lecithin Acyltransferase Deficiency",0.992435
+"Nephrotic Syndrome","Immune Complex Diseases",0.918671
+"Nephrotic Syndrome","Oculocerebrorenal Syndrome",0.868777
+"Nephrotic Syndrome","Anemia, Macrocytic",0.836105
+"Proteinuria","Nephrotic Syndrome",0.9937
+"Proteinuria","Nephrosis",0.988762
+"Proteinuria","Lecithin Acyltransferase Deficiency",0.995019
+"Proteinuria","Immune Complex Diseases",0.904121
+"Proteinuria","Glomerulonephritis, Membranoproliferative",0.9813
+"Proteinuria","Oculocerebrorenal Syndrome",0.874829
+"Proteinuria","Glomerulosclerosis, Focal Segmental",0.998468
+"Proteinuria","Glomerulonephritis, IGA",0.866215
+"Glomerulosclerosis, Focal Segmental","Nephrotic Syndrome",0.993939
+"Glomerulosclerosis, Focal Segmental","Nephrosis",0.987949
+"Glomerulosclerosis, Focal Segmental","Denys-Drash Syndrome",0.958784
+"Glomerulosclerosis, Focal Segmental","Lecithin Acyltransferase Deficiency",0.995165
+"Glomerulosclerosis, Focal Segmental","Immune Complex Diseases",0.906962
+"Glomerulosclerosis, Focal Segmental","Anemia, Macrocytic",0.834157
+"Glomerulosclerosis, Focal Segmental","Hematuria",0.938179
+"Fanconi Syndrome","Nephrotic Syndrome",0.895261
+"Fanconi Syndrome","Glomerulosclerosis, Focal Segmental",0.900077
+"Dermatitis, Seborrheic","Alopecia",0.859898
+"Pituitary ACTH Hypersecretion","Acanthosis Nigricans",0.81438
+"Prader-Willi Syndrome","Metabolic Diseases",0.805053
+"Hypertrophy, Left Ventricular","Diabetic Angiopathies",0.850643
+"Hyperglycemia","Hyperlipidemias",0.879178
+"Hyperglycemia","Obesity",0.866684
+"Hyperglycemia","Metabolic Diseases",0.898297
+"Hyperglycemia","Glucose Intolerance",0.918439
+"Hyperglycemia","Hyperlipoproteinemias",0.841719
+"Hyperglycemia","Endometrial Hyperplasia",0.825355
+"Hyperglycemia","Metabolic Syndrome X",0.888138
+"Hyperglycemia","Endometrial Neoplasms",0.842645
+"Hyperglycemia","Diabetes Mellitus",0.9032
+"Hyperglycemia","Hyperinsulinism",0.906921
+"Hyperglycemia","Insulin Resistance",0.881306
+"Hyperglycemia","Bardet-Biedl Syndrome",0.800797
+"Hyperglycemia","Hypertriglyceridemia",0.884034
+"Hyperglycemia","Dyslipidemias",0.869207
+"Metabolic Syndrome X","Hyperlipidemias",0.938612
+"Metabolic Syndrome X","Obesity",0.988339
+"Metabolic Syndrome X","Metabolic Diseases",0.945611
+"Metabolic Syndrome X","Glucose Intolerance",0.95678
+"Metabolic Syndrome X","Hyperlipoproteinemias",0.915065
+"Metabolic Syndrome X","Endometrial Hyperplasia",0.920851
+"Metabolic Syndrome X","Gout",0.875261
+"Metabolic Syndrome X","Endometrial Neoplasms",0.939527
+"Metabolic Syndrome X","Diabetes Mellitus",0.983375
+"Metabolic Syndrome X","Lipid Metabolism Disorders",0.891034
+"Metabolic Syndrome X","Hyperinsulinism",0.981849
+"Metabolic Syndrome X","Hyperlipoproteinemia Type IV",0.890129
+"Metabolic Syndrome X","Hypothalamic Diseases",0.835842
+"Metabolic Syndrome X","Bardet-Biedl Syndrome",0.917386
+"Metabolic Syndrome X","Hypertriglyceridemia",0.977359
+"Metabolic Syndrome X","Hyperlipidemia, Familial Combined",0.976758
+"Metabolic Syndrome X","Hypoalphalipoproteinemias",0.97419
+"Metabolic Syndrome X","Dyslipidemias",0.954895
+"Insulin Resistance","Hyperlipidemias",0.93064
+"Insulin Resistance","Obesity",0.98831
+"Insulin Resistance","Metabolic Diseases",0.953963
+"Insulin Resistance","Glucose Intolerance",0.949921
+"Insulin Resistance","Hyperlipoproteinemias",0.918081
+"Insulin Resistance","Endometrial Hyperplasia",0.948721
+"Insulin Resistance","Gout",0.870972
+"Insulin Resistance","Metabolic Syndrome X",0.990537
+"Insulin Resistance","Endometrial Neoplasms",0.948006
+"Insulin Resistance","Diabetes Mellitus",0.96949
+"Insulin Resistance","Cushing Syndrome",0.809648
+"Insulin Resistance","Lipid Metabolism Disorders",0.875838
+"Insulin Resistance","Hyperinsulinism",0.990462
+"Insulin Resistance","Hypothalamic Diseases",0.840197
+"Insulin Resistance","Bardet-Biedl Syndrome",0.926454
+"Insulin Resistance","Hypertriglyceridemia",0.96867
+"Insulin Resistance","Hyperlipidemia, Familial Combined",0.98213
+"Insulin Resistance","Hypoalphalipoproteinemias",0.979885
+"Insulin Resistance","Dyslipidemias",0.943671
+"Hypertension","Hypertrophy, Left Ventricular",0.924357
+"Hypertension","Diabetes Mellitus, Type 2",0.940996
+"Hypertension","Hyperuricemia",0.918647
+"Hypertension","Diabetic Angiopathies",0.817999
+"Diabetes Mellitus, Type 2","Hypertrophy, Left Ventricular",0.921033
+"Diabetes Mellitus, Type 2","Metabolic Syndrome X",0.800637
+"Diabetes Mellitus, Type 2","Hyperuricemia",0.952947
+"Diabetes Mellitus, Type 2","Diabetes Mellitus",0.860879
+"Diabetes Mellitus, Type 2","Diabetic Angiopathies",0.811618
+"Polycystic Ovary Syndrome","Acne Vulgaris",0.847725
+"Acne Vulgaris","Dermatitis, Seborrheic",0.902395
+"Acne Vulgaris","Alopecia",0.926259
+"Glomerulonephritis, Membranoproliferative","Nephrotic Syndrome",0.985657
+"Glomerulonephritis, Membranoproliferative","Lecithin Acyltransferase Deficiency",0.982269
+"Glomerulonephritis, Membranoproliferative","Immune Complex Diseases",0.950177
+"Glomerulonephritis, Membranoproliferative","Hematuria",0.945331
+"Nephritis, Interstitial","Nephrotic Syndrome",0.964763
+"Nephritis, Interstitial","Immune Complex Diseases",0.895983
+"Nephritis, Interstitial","Renal Insufficiency",0.825072
+"Diabetes Mellitus, Type 1","Diabetic Nephropathies",0.97142
+"Diabetes Mellitus, Type 1","Albuminuria",0.974955
+"Diabetes Mellitus, Type 1","Hypertrophy, Left Ventricular",0.817624
+"Diabetes Mellitus, Type 1","Diabetic Angiopathies",0.934708
+"Diabetes Mellitus, Type 1","Polycystic Kidney, Autosomal Dominant",0.8041
+"Fatty Liver","Hyperlipidemias",0.917348
+"Fatty Liver","Obesity",0.962419
+"Fatty Liver","Metabolic Diseases",0.922012
+"Fatty Liver","Glucose Intolerance",0.917537
+"Fatty Liver","Hyperlipoproteinemias",0.892817
+"Fatty Liver","Endometrial Hyperplasia",0.884817
+"Fatty Liver","Metabolic Syndrome X",0.963013
+"Fatty Liver","Endometrial Neoplasms",0.944292
+"Fatty Liver","Diabetes Mellitus",0.931996
+"Fatty Liver","Lipid Metabolism Disorders",0.884895
+"Fatty Liver","Insulin Resistance",0.962156
+"Fatty Liver","Bardet-Biedl Syndrome",0.892295
+"Fatty Liver","Hypertriglyceridemia",0.946657
+"Fatty Liver","Hyperlipidemia, Familial Combined",0.9618
+"Fatty Liver","Hypoalphalipoproteinemias",0.93514
+"Fatty Liver","Dyslipidemias",0.929188
+"Hypertension, Renal","Kidney Failure, Chronic",0.902079
+"Hypertension, Renal","Glomerulosclerosis, Focal Segmental",0.805964
+"Hypertension, Renal","Renal Insufficiency",0.940069
+"Glomerulonephritis, IGA","Nephrotic Syndrome",0.882263
+"Glomerulonephritis, IGA","Lecithin Acyltransferase Deficiency",0.864658
+"Glomerulonephritis, IGA","Immune Complex Diseases",0.957496
+"Glomerulonephritis, IGA","Glomerulonephritis, Membranoproliferative",0.934368
+"Glomerulonephritis, IGA","Hematuria",0.875594
+"Atherosclerosis","Hyperglycemia",0.820345
+"Atherosclerosis","Diabetes Mellitus",0.80254
+"Atherosclerosis","Venous Thromboembolism",0.848101
+"Atherosclerosis","Dyslipidemias",0.800951
+"Glomerulonephritis","Kidney Failure, Chronic",0.85458
+"Glomerulonephritis","Nephrotic Syndrome",0.98505
+"Glomerulonephritis","Nephrosis",0.972429
+"Glomerulonephritis","Denys-Drash Syndrome",0.941078
+"Glomerulonephritis","Lecithin Acyltransferase Deficiency",0.975109
+"Glomerulonephritis","Immune Complex Diseases",0.959973
+"Glomerulonephritis","Glomerulonephritis, Membranoproliferative",0.992972
+"Glomerulonephritis","Nephritis, Interstitial",0.960564
+"Glomerulonephritis","Anemia, Macrocytic",0.819261
+"Glomerulonephritis","Proteinuria",0.979704
+"Glomerulonephritis","Glomerulosclerosis, Focal Segmental",0.980296
+"Glomerulonephritis","Glomerulonephritis, IGA",0.941909
+"Glomerulonephritis","Lupus Nephritis",0.983708
+"Glomerulonephritis","Hematuria",0.948578
+"Lupus Nephritis","Nephrotic Syndrome",0.993318
+"Amyloidosis","Nephrotic Syndrome",0.80273
+"Lipodystrophy","Acanthosis Nigricans",0.805544
+"Kidney Diseases","Kidney Failure, Chronic",0.853764
+"Kidney Diseases","Fanconi Syndrome",0.82449
+"Kidney Diseases","Nephrotic Syndrome",0.867536
+"Kidney Diseases","Nephrosis",0.896001
+"Kidney Diseases","Lecithin Acyltransferase Deficiency",0.852963
+"Kidney Diseases","Immune Complex Diseases",0.800396
+"Kidney Diseases","Glomerulonephritis, Membranoproliferative",0.842714
+"Kidney Diseases","Nephritis, Interstitial",0.876449
+"Kidney Diseases","Hypertension, Renal",0.848363
+"Kidney Diseases","Proteinuria",0.868085
+"Kidney Diseases","Glomerulosclerosis, Focal Segmental",0.870919
+"Kidney Diseases","Renal Insufficiency",0.851476
+"Kidney Diseases","Glomerulonephritis",0.864084
+"Kidney Diseases","Lupus Nephritis",0.872745
+"Kidney Diseases","Hematuria",0.871041

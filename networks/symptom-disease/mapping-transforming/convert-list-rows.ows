@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Human Phenotype Ontology  - Genes x Diseases" position="(216.0, 174.0)" />
+		<node id="1" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Split one gene x disease (OMIM) per line" position="(371.0, 172.0)" />
+		<node id="2" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Comparative Toxicogenomics Database - Maps MeSH to OMIM" position="(103.0, 382.0)" />
+		<node id="3" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Split one map per line and Rename fields" position="(237.0, 382.0)" />
+		<node id="4" name="Merge Data" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" project_name="Orange3" version="" title="Join OMIM reference to MeSH Name - Genes x DIseases" position="(525.0, 263.0)" />
+		<node id="5" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Discard unmatched OMIM references" position="(661.0, 265.0)" />
+		<node id="6" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Nature Symptom x Disease" position="(799.0, -11.0)" />
+		<node id="7" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique MeSH Disease Name" position="(380.0, 381.0)" />
+		<node id="8" name="Merge Data" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" project_name="Orange3" version="" title="Join with Diseases and respective Genes" position="(946.0, 75.0)" />
+		<node id="9" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique MeSH Disease Name" position="(813.0, 252.0)" />
+		<node id="10" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter only Diseases with Genes" position="(1094.0, 76.0)" />
+		<node id="11" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Reorganize Columns Order" position="(787.0, 446.0)" />
+		<node id="12" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Relate Disease with Genes" position="(975.0, 444.0)" />
+		<node id="13" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select only Symptom and Disease Columns" position="(1282.0, 82.0)" />
+		<node id="14" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Relate Disease with Symptoms" position="(1452.0, 81.0)" />
+		<node id="15" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Disease Columns" position="(992.0, 257.0)" />
+		<node id="16" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Diseases" position="(1151.0, 260.0)" />
+		<node id="17" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique MeSH Symptom Terms" position="(1341.0, -92.0)" />
+		<node id="18" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select only the Symptom Term" position="(1221.0, -92.0)" />
+		<node id="19" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Symptoms" position="(1463.0, -91.0)" />
+		<node id="20" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Gene Columns" position="(762.3333333333335, 583.3333333333335)" />
+		<node id="21" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique Genes" position="(912.3333333333335, 583.3333333333335)" />
+		<node id="22" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Genes" position="(1080.3333333333335, 583.3333333333335)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="8" sink_node_id="10" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="1" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="7" sink_node_id="4" source_channel="Data" sink_channel="Extra Data" enabled="true" source_channel_id="data" sink_channel_id="extra_data" />
+		<link id="7" source_node_id="5" sink_node_id="11" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="8" source_node_id="11" sink_node_id="12" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="9" source_node_id="5" sink_node_id="9" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="10" source_node_id="6" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="11" source_node_id="9" sink_node_id="8" source_channel="Data" sink_channel="Extra Data" enabled="true" source_channel_id="data" sink_channel_id="extra_data" />
+		<link id="12" source_node_id="10" sink_node_id="13" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="13" source_node_id="13" sink_node_id="14" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="14" source_node_id="9" sink_node_id="15" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="15" source_node_id="15" sink_node_id="16" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="16" source_node_id="10" sink_node_id="18" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="17" source_node_id="18" sink_node_id="17" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="18" source_node_id="17" sink_node_id="19" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="19" source_node_id="5" sink_node_id="20" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="20" source_node_id="20" sink_node_id="21" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="21" source_node_id="21" sink_node_id="22" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': '02-source-human-phenotype-ontology/genes_for_HP_0001909.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 3, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/santanche/git/datasci4health/networks/symptom-disease/genes_for_HP_0001909.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 3, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/symptom-disease/human-phenotype-ontology', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xf4\x00\x00\x01I\x00\x00\x0c?\x00\x00\x02\xb1\x00\x00\n\xf4\x00\x00\x01n\x00\x00\x0c?\x00\x00\x02\xb1\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xf4\x00\x00\x01n\x00\x00\x0c?\x00\x00\x02\xb1', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x00\x1b\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, StringVariable\n\ndomain = Domain([], [],\n                metas=[StringVariable("Gene Entrez ID"),\n                       StringVariable("Gene Symbol"),\n                       StringVariable("OMIM Disease ID")])\n\ngene_disease = []\nempty = []\n\nfor inst in in_data:\n    disease_ids = inst["DISEASE_IDS"].value.split(",")\n    for d in range(0, len(disease_ids)):\n        gene_disease.append([inst["GENE_ENTREZ_ID"].value, inst["GENE_SYMBOL"].value, disease_ids[d]])\n        empty.append([])\n        \nprint("generated")\n\nout_data = Table.from_numpy(domain, np.array(empty), metas=np.array(gene_disease))', 'filename': None}], 'scriptText': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, StringVariable\n\ndomain = Domain([], [],\n                metas=[StringVariable("Gene Entrez ID"),\n                       StringVariable("Gene Symbol"),\n                       StringVariable("OMIM Disease ID")])\n\ngene_disease = []\nempty = []\n\nfor inst in in_data:\n    disease_ids = inst["DISEASE_IDS"].value.split(",")\n    for d in range(0, len(disease_ids)):\n        gene_disease.append([inst["GENE_ENTREZ_ID"].value, inst["GENE_SYMBOL"].value, disease_ids[d]])\n        empty.append([])\n        \nprint("generated")\n\nout_data = Table.from_numpy(domain, np.array(empty), metas=np.array(gene_disease))', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xac\x00\x00\x00h\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': '03-source-comparative-toxicogenomics-database/CTD_diseases.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/symptom-disease/comparative-toxicogenomics-database', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03&gt;\x00\x00\x01^\x00\x00\x04\x89\x00\x00\x02\xc6\x00\x00\x03&gt;\x00\x00\x01\x83\x00\x00\x04\x89\x00\x00\x02\xc6\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03&gt;\x00\x00\x01\x83\x00\x00\x04\x89\x00\x00\x02\xc6', '__version__': 3}</properties>
+		<properties node_id="3" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x00\x1b\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, StringVariable\n\ngene_disease = []\nempty = []\n\ndomain = Domain([], [],\n                metas=[StringVariable("MeSH Disease ID"),\n                       StringVariable("MeSH Disease Term"),\n                       StringVariable("OMIM Disease ID")])\n\nfor inst in in_data:\n    disease_ids = inst["AltDiseaseIDs"].value\n    if len(disease_ids) &gt; 0:\n        disease_ids = disease_ids.split("|")\n        for d in range(0, len(disease_ids)):\n            gene_disease.append([inst["DiseaseID"].value, inst["DiseaseName"].value, disease_ids[d]])\n            empty.append([])\n        \nprint("generated")\n\nout_data = Table.from_numpy(domain, np.array(empty), metas=np.array(gene_disease))', 'filename': None}], 'scriptText': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, StringVariable\n\ngene_disease = []\nempty = []\n\ndomain = Domain([], [],\n                metas=[StringVariable("MeSH Disease ID"),\n                       StringVariable("MeSH Disease Term"),\n                       StringVariable("OMIM Disease ID")])\n\nfor inst in in_data:\n    disease_ids = inst["AltDiseaseIDs"].value\n    if len(disease_ids) &gt; 0:\n        disease_ids = disease_ids.split("|")\n        for d in range(0, len(disease_ids)):\n            gene_disease.append([inst["DiseaseID"].value, inst["DiseaseName"].value, disease_ids[d]])\n            empty.append([])\n        \nprint("generated")\n\nout_data = Table.from_numpy(domain, np.array(empty), metas=np.array(gene_disease))', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xac\x00\x00\x00h\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="4" format="pickle">gASVCQQAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMB21lcmdp
+bmeUSwCME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACkYAAAFFAAAMRwAAAn0AAApG
+AAABagAADEcAAAJ9AAAAAAAAAAAHgAAACkYAAAFqAAAMRwAAAn2UjAtfX3ZlcnNpb25fX5RLAowQ
+Y29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5Qp
+gZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfcGFpcnOUXZRdlCiMD09NSU0gRGlzZWFzZSBJRJRLZ4aU
+jA9PTUlNIERpc2Vhc2UgSUSUS2eGlGVhaAZLAnWMCnZhcmlhYmxlczGUfZQojA5HZW5lIEVudHJl
+eiBJRJRLZ4wLR2VuZSBTeW1ib2yUS2eMD09NSU0gRGlzZWFzZSBJRJRLZ3WMCnZhcmlhYmxlczKU
+fZQojA9NZVNIIERpc2Vhc2UgSUSUS2eMEU1lU0ggRGlzZWFzZSBUZXJtlEtnjA9PTUlNIERpc2Vh
+c2UgSUSUS2d1dWJoCymBlH2UKGgOfZQoaBBdlF2UKGgbS2eGlIwPT01JTSBEaXNlYXNlIElElEtn
+hpRlYWgGSwJ1aBd9lChoGUtnaBpLZ2gbS2d1aBx9lCiMEU1lU0ggRGlzZWFzZSBOYW1llEtnjA9N
+ZVNIIERpc2Vhc2UgSUSUS2eMD09NSU0gRGlzZWFzZSBJRJRLZ3V1YmgLKYGUfZQoaA59lChoEF2U
+XZQoaCdLZ4aUaBtLZ4aUZWFoBksCdWgXfZQojA9NZVNIIERpc2Vhc2UgSUSUS2eMEU1lU0ggRGlz
+ZWFzZSBOYW1llEtnaCdLZ3VoHH2UKGgZS2doGktnaBtLZ3V1YmgLKYGUfZQoaA59lChoEF2UXZQo
+jA9PTUlNIERpc2Vhc2UgSUSUS2eGlGgtS2eGlGVhaAZLAnVoF32UKIwOR0VORV9FTlRSRVpfSUSU
+S2eMC0dFTkVfU1lNQk9MlEtnaD5LZ3VoHH2UKGgrS2doLEtnaC1LZ3V1YmgLKYGUfZQoaA59lCho
+EF2UXZQojApESVNFQVNFX0lElEtnhpRoLUtnhpRlYWgGSwJ1aBd9lChoQktnaENLZ2hKS2d1aBx9
+lChoK0tnaCxLZ2gtS2d1dWJoCymBlH2UKGgOfZQoaBBdlF2UKGhKS2eGlIwMQWx0RGlzZWFzZUlE
+lEtnhpRlYWgGSwJ1aBd9lChoQktnaENLZ2hKS2d1aBx9lCiMC0Rpc2Vhc2VOYW1llEtnjAlEaXNl
+YXNlSUSUS2doVUtndXViZXUu
+</properties>
+		<properties node_id="5" format="pickle">gASVVQMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAJ1AAAAPgAAAwrAAAC6gAACdQAAAD4AAAMKwAAAuoAAAAAAAAAAAeAAAAJ1AAAAPgA
+AAwrAAAC6pSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1
+ZXOUfZQojApjb25kaXRpb25zlF2UKIwPTWVTSCBEaXNlYXNlIElElEsDSw4pdJRhaAhLAnWMCmF0
+dHJpYnV0ZXOUfZSMBW1ldGFzlH2UKIwOR2VuZSBFbnRyZXogSUSUSwOMC0dlbmUgU3ltYm9slEsD
+jA9PTUlNIERpc2Vhc2UgSUSUSwOMD01lU0ggRGlzZWFzZSBJRJRLA4wRTWVTSCBEaXNlYXNlIFRl
+cm2USwN1dWJoDSmBlH2UKGgQfZQojApjb25kaXRpb25zlF2UKIwPTWVTSCBEaXNlYXNlIElElEsD
+Sw4pdJRhaAhLAnVoFn2UaBh9lChoGksDaBtLA2gcSwOMEU1lU0ggRGlzZWFzZSBOYW1llEsDjA9N
+ZVNIIERpc2Vhc2UgSUSUSwN1dWJoDSmBlH2UKGgQfZQoaCJdlChoKUsDSw4pdJRhaAhLAnVoFn2U
+aBh9lCiMDkdFTkVfRU5UUkVaX0lElEsDjAtHRU5FX1NZTUJPTJRLA4wPT01JTSBEaXNlYXNlIElE
+lEsDaChLA2gpSwN1dWJoDSmBlH2UKGgQfZQoaCJdlChoKUsDSw4pdJRhaAhLAnVoFn2UaBh9lCho
+MUsDaDJLA4wKRElTRUFTRV9JRJRLA2goSwNoKUsDdXViaA0pgZR9lChoEH2UKGgiXZQojAtEaXNl
+YXNlTmFtZZRLA0sOKXSUYWgISwJ1aBZ9lGgYfZQoaDFLA2gySwNoO0sDaEBLA4wJRGlzZWFzZUlE
+lEsDdXViZXUu
+</properties>
+		<properties node_id="6" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': '01-source-nature/symptom-disease(41467_2014_BFncomms5212_MOESM1045_ESM).tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Text'}, {'start': 2, 'stop': 4, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'VarPath', 'name': 'basedir', 'relpath': '01-source-nature/symptoms-diseases(41467_2014_BFncomms5212_MOESM1045_ESM).tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/symptom-disease/nature', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01U\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+		<properties node_id="7" format="pickle">gASVXAIAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAzMAAAD9AAAETAAAAxUAAAMzAAABIgAABEwAAAMV
+AAAAAQAAAAAHgAAAAzMAAAEiAAAETAAAAxWUjAp0aWVicmVha2VylIwORmlyc3QgaW5zdGFuY2WU
+jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0
+aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMDXNlbGVjdGVkX3ZhcnOUXZSMD09N
+SU0gRGlzZWFzZSBJRJRLZ4aUYUr9////hpRoB0sBdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQo
+jA9NZVNIIERpc2Vhc2UgSUSUSwOMEU1lU0ggRGlzZWFzZSBUZXJtlEsDaBNLA3V1YmgMKYGUfZQo
+aA99lChoEV2UjA9PTUlNIERpc2Vhc2UgSUSUS2eGlGFK/f///4aUaAdLAXVoFn2UaBh9lCiMEU1l
+U0ggRGlzZWFzZSBOYW1llEsDjA9NZVNIIERpc2Vhc2UgSUSUSwOMD09NSU0gRGlzZWFzZSBJRJRL
+A3V1YmgMKYGUfZQoaA99lChoEV2UjAxBbHREaXNlYXNlSUSUS2eGlGFK/f///4aUaAdLAXVoFn2U
+aBh9lCiMC0Rpc2Vhc2VOYW1llEsDjAlEaXNlYXNlSUSUSwNoLEsDdXViZXUu
+</properties>
+		<properties node_id="8" format="pickle">gASVCAcAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMB21lcmdp
+bmeUSwCME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACiwAAAFqAAAMSgAAAn0AAAos
+AAABagAADEoAAAJ9AAAAAAAAAAAHgAAACiwAAAFqAAAMSgAAAn2UjAtfX3ZlcnNpb25fX5RLAowQ
+Y29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5Qp
+gZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfcGFpcnOUXZRdlCiMEU1lU0ggRGlzZWFzZSBUZXJtlEtn
+hpSMEU1lU0ggRGlzZWFzZSBUZXJtlEtnhpRlYWgGSwJ1jAp2YXJpYWJsZXMxlH2UKIwRUHViTWVk
+IG9jY3VycmVuY2WUS2aMC1RGSURGIHNjb3JllEtmjBFNZVNIIFN5bXB0b20gVGVybZRLZ2gTS2d1
+jAp2YXJpYWJsZXMylH2UKIwOR2VuZSBFbnRyZXogSUSUS2eMC0dlbmUgU3ltYm9slEtnjA9PTUlN
+IERpc2Vhc2UgSUSUS2eMD01lU0ggRGlzZWFzZSBJRJRLZ2gVS2d1dWJoCymBlH2UKGgOfZQoaBBd
+lF2UKIwRTWVTSCBEaXNlYXNlIFRlcm2US2eGlGgVS2eGlGVhaAZLAnVoF32UKIwRTWVTSCBTeW1w
+dG9tIFRlcm2US2eMEU1lU0ggRGlzZWFzZSBUZXJtlEtnjBFQdWJNZWQgb2NjdXJyZW5jZZRLZ4wL
+VEZJREYgc2NvcmWUS2d1aBx9lCiMDkdlbmUgRW50cmV6IElElEtnjAtHZW5lIFN5bWJvbJRLZ4wP
+T01JTSBEaXNlYXNlIElElEtnjA9NZVNIIERpc2Vhc2UgSUSUS2eMEU1lU0ggRGlzZWFzZSBUZXJt
+lEtndXViaAspgZR9lChoDn2UKGgQXZRdlChoLEtnhpRoNEtnhpRlYWgGSwJ1aBd9lChoK0tnaCxL
+Z2gtS2doLktndWgcfZQoaDNLZ2g0S2eMD09NSU0gRGlzZWFzZSBJRJRLZ3V1YmgLKYGUfZQoaA59
+lChoEF2UXZQoaCxLZ4aUjBFNZVNIIERpc2Vhc2UgTmFtZZRLZ4aUZWFoBksCdWgXfZQoaCtLZ2gs
+S2doLUtnaC5LZ3VoHH2UKGgwS2doMUtnaDJLZ4wRTWVTSCBEaXNlYXNlIE5hbWWUS2eMD01lU0gg
+RGlzZWFzZSBJRJRLZ3V1YmgLKYGUfZQoaA59lChoEF2UXZQoaEVLZ4aUaCxLZ4aUZWFoBksCdWgX
+fZQoaDBLZ2gxS2doMktnjA9NZVNIIERpc2Vhc2UgSUSUS2doRUtndWgcfZQoaCtLZ2gsS2doLUtn
+aC5LZ3V1YmgLKYGUfZQoaA59lChoEF2UXZQoaEVLZ4aUaCxLZ4aUZWFoBksCdWgXfZRoRUtnc2gc
+fZQoaCtLZ2gsS2doLUtnaC5LZ3V1YmgLKYGUfZQoaA59lChoEF2UXZQoaCxLZ4aUaEVLZ4aUZWFo
+BksCdWgXfZQoaCtLZ2gsS2doLUtnaC5LZ3VoHH2UaEVLZ3N1YmgLKYGUfZQoaA59lChoEF2UXZQo
+aCxLZ4aUaElLZ4aUZWFoBksCdWgXfZQoaCtLZ2gsS2doLUtnaC5LZ3VoHH2UKIwOR0VORV9FTlRS
+RVpfSUSUS2eMC0dFTkVfU1lNQk9MlEtnjA9PTUlNIERpc2Vhc2UgSUSUS2doSUtnaEpLZ3V1YmgL
+KYGUfZQoaA59lChoEF2UXZQoaCxLZ4aUaElLZ4aUZWFoBksCdWgXfZQoaCtLZ2gsS2doLUtnaC5L
+Z3VoHH2UKGhwS2docUtnjApESVNFQVNFX0lElEtnaElLZ2hKS2d1dWJoCymBlH2UKGgOfZQoaBBd
+lF2UKGgsS2eGlIwLRGlzZWFzZU5hbWWUS2eGlGVhaAZLAnVoF32UKGgrS2doLEtnaC1LZ2guS2d1
+aBx9lChocEtnaHFLZ2h8S2dog0tnjAlEaXNlYXNlSUSUS2d1dWJoCymBlH2UKGgOfZQoaBBdlF2U
+KGgsS2eGlGiDS2eGlGVhaAZLAnVoF32UaCxLZ3NoHH2UKGhwS2docUtnaHxLZ2iDS2doh0tndXVi
+aAspgZR9lChoDn2UKGgQXZRdlCiMEU1lU0ggRGlzZWFzZSBUZXJtlEtnhpRog0tnhpRlYWgGSwJ1
+aBd9lCiMEVB1Yk1lZCBvY2N1cnJlbmNllEtmjAtURklERiBzY29yZZRLZowRTWVTSCBTeW1wdG9t
+IFRlcm2US2dolktndWgcfZQoaHBLZ2hxS2dofEtnaINLZ2iHS2d1dWJldS4=
+</properties>
+		<properties node_id="9" format="pickle">gASVZQMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAzMAAAD9AAAETAAAAxUAAAMzAAABIgAABEwAAAMV
+AAAAAQAAAAAHgAAAAzMAAAEiAAAETAAAAxWUjAp0aWVicmVha2VylIwORmlyc3QgaW5zdGFuY2WU
+jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0
+aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMDXNlbGVjdGVkX3ZhcnOUXZSMEU1l
+U0ggRGlzZWFzZSBUZXJtlEtnhpRhSv3///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9
+lCiMDkdlbmUgRW50cmV6IElElEsDjAtHZW5lIFN5bWJvbJRLA4wPT01JTSBEaXNlYXNlIElElEsD
+jA9NZVNIIERpc2Vhc2UgSUSUSwNoE0sDdXViaAwpgZR9lChoD32UKGgRXZSMEU1lU0ggRGlzZWFz
+ZSBOYW1llEtnhpRhSv3///+GlGgHSwF1aBZ9lGgYfZQoaBpLA2gbSwNoHEsDjBFNZVNIIERpc2Vh
+c2UgTmFtZZRLA4wPTWVTSCBEaXNlYXNlIElElEsDdXViaAwpgZR9lChoD32UKGgRXZRoIktnhpRh
+Sv3///+GlGgHSwF1aBZ9lGgYfZRoIksDc3ViaAwpgZR9lChoD32UKGgRXZRoJ0tnhpRhSv3///+G
+lGgHSwF1aBZ9lGgYfZQojA5HRU5FX0VOVFJFWl9JRJRLA4wLR0VORV9TWU1CT0yUSwOMD09NSU0g
+RGlzZWFzZSBJRJRLA2gnSwNoKEsDdXViaAwpgZR9lChoD32UKGgRXZRoJ0tnhpRhSv3///+GlGgH
+SwF1aBZ9lGgYfZQoaDlLA2g6SwOMCkRJU0VBU0VfSUSUSwNoJ0sDaChLA3V1YmgMKYGUfZQoaA99
+lChoEV2UjAtEaXNlYXNlTmFtZZRLZ4aUYUr9////hpRoB0sBdWgWfZRoGH2UKGg5SwNoOksDaERL
+A2hJSwOMCURpc2Vhc2VJRJRLA3V1YmV1Lg==
+</properties>
+		<properties node_id="10" format="pickle">gASV+AQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAJ1AAAANMAAAwrAAAC6gAACdQAAAD4AAAMKwAAAuoAAAAAAAAAAAeAAAAJ1AAAAPgA
+AAwrAAAC6pSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1
+ZXOUfZQojApjb25kaXRpb25zlF2UKIwOR2VuZSBFbnRyZXogSUSUSwNLDil0lGFoCEsCdYwKYXR0
+cmlidXRlc5R9lCiMEVB1Yk1lZCBvY2N1cnJlbmNllEsCjAtURklERiBzY29yZZRLAnWMBW1ldGFz
+lH2UKIwRTWVTSCBTeW1wdG9tIFRlcm2USwOMEU1lU0ggRGlzZWFzZSBUZXJtlEsDaBRLA4wLR2Vu
+ZSBTeW1ib2yUSwOMD09NSU0gRGlzZWFzZSBJRJRLA4wPTWVTSCBEaXNlYXNlIElElEsDdXViaA0p
+gZR9lChoEH2UKGgSXZQoaBRLA0sOKXSUYWgISwJ1aBZ9lGgafZQojBFNZVNIIFN5bXB0b20gVGVy
+bZRLA4wRTWVTSCBEaXNlYXNlIFRlcm2USwOMEVB1Yk1lZCBvY2N1cnJlbmNllEsDjAtURklERiBz
+Y29yZZRLA4wOR2VuZSBFbnRyZXogSUSUSwOMC0dlbmUgU3ltYm9slEsDjA9PTUlNIERpc2Vhc2Ug
+SUSUSwOMD01lU0ggRGlzZWFzZSBJRJRLA3V1YmgNKYGUfZQoaBB9lCiMCmNvbmRpdGlvbnOUXZQo
+jA9NZVNIIERpc2Vhc2UgSUSUSwNLDil0lGFoCEsCdWgWfZRoGn2UKGgoSwNoKUsDaCpLA2grSwNo
+NUsDjA9PTUlNIERpc2Vhc2UgSUSUSwN1dWJoDSmBlH2UKGgQfZQoaDNdlChoKEsDSwCMAJSFlHSU
+YWgISwJ1aBZ9lGgafZQoaChLA2gpSwNoKksDaCtLA3V1YmgNKYGUfZQoaBB9lChoM12UKGgoSwNL
+AGg/dJRhaAhLAnVoFn2UaBp9lChoKEsDaClLA2gqSwNoK0sDjAtHRU5FX1NZTUJPTJRLA4wKRElT
+RUFTRV9JRJRLA4wRTWVTSCBEaXNlYXNlIE5hbWWUSwNoL0sDdXViaA0pgZR9lChoEH2UKGgzXZQo
+jA5HRU5FX0VOVFJFWl9JRJRLA0sOKXSUYWgISwJ1aBZ9lGgafZQoaChLA2gpSwNoKksDaCtLA2hR
+SwNoSksDjA9PTUlNIERpc2Vhc2UgSUSUSwNoL0sDdXViaA0pgZR9lChoEH2UKGgzXZQoaFFLA0sO
+KXSUYWgISwJ1aBZ9lGgafZQoaChLA2gpSwNoKksDaCtLA2hRSwNoSksDaEtLA2gvSwN1dWJoDSmB
+lH2UKGgQfZQoaDNdlChoUUsDSw4pdJRhaAhLAnVoFn2UaBp9lChoKEsDaClLA2gqSwNoK0sDaFFL
+A2hKSwNoS0sDjAlEaXNlYXNlSUSUSwN1dWJldS4=
+</properties>
+		<properties node_id="11" format="pickle">gASV/QIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAAC2
+AAAE6wAAA4EAAAKUAAAAtgAABOsAAAOBAAAAAQAAAAAHgAAAApQAAAC2AAAE6wAAA4GUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMEU1lU0ggRGlzZWFzZSBUZXJtlEsDhpSMCWF2YWlsYWJsZZRLAIaU
+jA9PTUlNIERpc2Vhc2UgSUSUSwOGlGgVSwGGlIwLR2VuZSBTeW1ib2yUSwOGlGgVSwKGlIwPTWVT
+SCBEaXNlYXNlIElElEsDhpSMBG1ldGGUSwCGlIwOR2VuZSBFbnRyZXogSUSUSwOGlGgfSwGGlHVK
+/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZSMBW1ldGFzlH2UKIwOR2VuZSBFbnRyZXogSUSUSwOM
+C0dlbmUgU3ltYm9slEsDjA9PTUlNIERpc2Vhc2UgSUSUSwOMD01lU0ggRGlzZWFzZSBJRJRLA4wR
+TWVTSCBEaXNlYXNlIFRlcm2USwN1dWJoDCmBlH2UKGgPfZQojBFkb21haW5fcm9sZV9oaW50c5R9
+lCiMD01lU0ggRGlzZWFzZSBJRJRLA4aUjARtZXRhlEsAhpSMEU1lU0ggRGlzZWFzZSBOYW1llEsD
+hpRoNUsBhpRoK0sDhpRoNUsChpRoKUsDhpRoNUsDhpRoKksDhpRoNUsEhpR1Sv7///+GlGgHSwF1
+aCV9lGgnfZQoaClLA2gqSwNoK0sDaDNLA2g3SwN1dWJldS4=
+</properties>
+		<properties node_id="12" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0c\x01\x00\x00\x02\xb0\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0c\x01\x00\x00\x02\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0c\x01\x00\x00\x02\xb0', 'stored_name': 'disease-gene.csv', 'stored_path': '04-prepared', '__version__': 3}</properties>
+		<properties node_id="13" format="pickle">gASVngQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADL
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAQAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMEU1lU0ggRGlzZWFzZSBUZXJtlEsDhpSMCWF2YWlsYWJsZZRLAIaU
+jA9PTUlNIERpc2Vhc2UgSUSUSwOGlGgVSwGGlIwOR2VuZSBFbnRyZXogSUSUSwOGlGgVSwKGlIwL
+R2VuZSBTeW1ib2yUSwOGlGgVSwOGlIwRUHViTWVkIG9jY3VycmVuY2WUSwKGlGgVSwSGlIwLVEZJ
+REYgc2NvcmWUSwKGlIwJYXR0cmlidXRllEsAhpSMD01lU0ggRGlzZWFzZSBJRJRLA4aUjARtZXRh
+lEsAhpSMEU1lU0ggU3ltcHRvbSBUZXJtlEsDhpRoKUsBhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1
+dGVzlH2UKGggSwJoI0sCdYwFbWV0YXOUfZQoaCtLA2gTSwNoGksDaB1LA2gXSwNoJ0sDdXViaAwp
+gZR9lChoD32UKGgRfZQojBFQdWJNZWQgb2NjdXJyZW5jZZRLA4aUaBVLAIaUaBpLA4aUaBVLAYaU
+aB1LA4aUaBVLAoaUaBdLA4aUaBVLA4aUjBFNZVNIIERpc2Vhc2UgVGVybZRLA4aUaBVLBIaUaCdL
+A4aUaClLAIaUjBFNZVNIIFN5bXB0b20gVGVybZRLA4aUaClLAYaUjAtURklERiBzY29yZZRLA4aU
+aClLAoaUdUr+////hpRoB0sBdWgvfZRoMX2UKIwRTWVTSCBTeW1wdG9tIFRlcm2USwOMEU1lU0gg
+RGlzZWFzZSBUZXJtlEsDjBFQdWJNZWQgb2NjdXJyZW5jZZRLA4wLVEZJREYgc2NvcmWUSwOMDkdl
+bmUgRW50cmV6IElElEsDjAtHZW5lIFN5bWJvbJRLA4wPT01JTSBEaXNlYXNlIElElEsDjA9NZVNI
+IERpc2Vhc2UgSUSUSwN1dWJoDCmBlH2UKGgPfZQojBFkb21haW5fcm9sZV9oaW50c5R9lChoUEsD
+hpSMCWF2YWlsYWJsZZRLAIaUjA9PTUlNIERpc2Vhc2UgSUSUSwOGlGhcSwGGlGhPSwOGlGhcSwKG
+lIwPTWVTSCBEaXNlYXNlIElElEsDhpSMBG1ldGGUSwCGlGhOSwOGlGhlSwGGlGhRSwOGlGhlSwKG
+lHVK/v///4aUaAdLAXVoL32UaDF9lChoTksDaE9LA2hQSwNoUUsDaGNLA2heSwN1dWJldS4=
+</properties>
+		<properties node_id="14" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xe1\x00\x00\x01\xf8\x00\x00\x0c\x1f\x00\x00\x02\xb0\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0c\x1f\x00\x00\x02\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0c\x1f\x00\x00\x02\xb0', 'stored_name': 'disease-symptom.csv', 'stored_path': '04-prepared', '__version__': 3}</properties>
+		<properties node_id="15" format="pickle">gASVSAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADw
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAQAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwOR2VuZSBFbnRyZXogSUSUSwOGlIwJYXZhaWxhYmxllEsAhpSMC0dl
+bmUgU3ltYm9slEsDhpRoFUsBhpSMD01lU0ggRGlzZWFzZSBJRJRLA4aUjARtZXRhlEsAhpSMEU1l
+U0ggRGlzZWFzZSBUZXJtlEsDhpRoHEsBhpSMD09NSU0gRGlzZWFzZSBJRJRLA4aUaBxLAoaUdUr+
+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQojA5HZW5lIEVudHJleiBJRJRLA4wL
+R2VuZSBTeW1ib2yUSwOMD09NSU0gRGlzZWFzZSBJRJRLA4wPTWVTSCBEaXNlYXNlIElElEsDjBFN
+ZVNIIERpc2Vhc2UgVGVybZRLA3V1YmF1Lg==
+</properties>
+		<properties node_id="16" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0', 'stored_name': 'diseases.csv', 'stored_path': '04-prepared', '__version__': 3}</properties>
+		<properties node_id="17" format="pickle">gASV4AIAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAzMAAAEiAAAETAAAAxUAAAMzAAABIgAABEwAAAMV
+AAAAAQAAAAAHgAAAAzMAAAEiAAAETAAAAxWUjAp0aWVicmVha2VylIwORmlyc3QgaW5zdGFuY2WU
+jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0
+aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMDXNlbGVjdGVkX3ZhcnOUXZSMEU1l
+U0ggU3ltcHRvbSBUZXJtlEtnhpRhSv3///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9
+lIwRTWVTSCBTeW1wdG9tIFRlcm2USwNzdWJoDCmBlH2UKGgPfZQoaBFdlGgTS2eGlGFK/f///4aU
+aAdLAXVoFn2UKIwRUHViTWVkIG9jY3VycmVuY2WUSwKMC1RGSURGIHNjb3JllEsCdWgYfZRoE0sD
+c3ViaAwpgZR9lChoD32UKIwNc2VsZWN0ZWRfdmFyc5RdlGgaS2eGlGFK/f///4aUaAdLAXVoFn2U
+aBh9lChoGksDjBFNZVNIIERpc2Vhc2UgVGVybZRLA4wRUHViTWVkIG9jY3VycmVuY2WUSwOMDkdl
+bmUgRW50cmV6IElElEsDjAtHZW5lIFN5bWJvbJRLA4wPT01JTSBEaXNlYXNlIElElEsDdXViaAwp
+gZR9lChoD32UKGgoXZRoB0sBdWgWfZRoGH2UdWJoDCmBlH2UKGgPfZQoaChdlGgaS2eGlGFK/f//
+/4aUaAdLAXVoFn2UaBh9lCiMD01lU0ggRGlzZWFzZSBJRJRLA2gaSwOMC1RGSURGIHNjb3JllEsD
+dXViZXUu
+</properties>
+		<properties node_id="18" format="pickle">gASV3wQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADw
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAQAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMD01lU0ggRGlzZWFzZSBJRJRLA4aUjAlhdmFpbGFibGWUSwCGlIwR
+TWVTSCBEaXNlYXNlIFRlcm2USwOGlGgVSwGGlIwOR2VuZSBFbnRyZXogSUSUSwOGlGgVSwKGlIwL
+R2VuZSBTeW1ib2yUSwOGlGgVSwOGlIwPT01JTSBEaXNlYXNlIElElEsDhpRoFUsEhpSMEVB1Yk1l
+ZCBvY2N1cnJlbmNllEsChpRoFUsFhpSMC1RGSURGIHNjb3JllEsChpRoFUsGhpSMEU1lU0ggU3lt
+cHRvbSBUZXJtlEsDhpSMBG1ldGGUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQoaCNL
+AmgmSwJ1jAVtZXRhc5R9lChoKUsDaBdLA2gaSwNoHUsDaCBLA2gTSwN1dWJoDCmBlH2UKGgPfZQo
+aBF9lChoE0sDhpRoFUsAhpSMC1RGSURGIHNjb3JllEsDhpRoFUsBhpSMEU1lU0ggRGlzZWFzZSBU
+ZXJtlEsDhpRoFUsChpSMEVB1Yk1lZCBvY2N1cnJlbmNllEsDhpRoFUsDhpRoGksDhpRoFUsEhpRo
+HUsDhpRoFUsFhpRoIEsDhpRoFUsGhpSMEU1lU0ggU3ltcHRvbSBUZXJtlEsDhpRoK0sAhpR1Sv7/
+//+GlGgHSwF1aC59lGgwfZQojBFNZVNIIFN5bXB0b20gVGVybZRLA4wRTWVTSCBEaXNlYXNlIFRl
+cm2USwOMEVB1Yk1lZCBvY2N1cnJlbmNllEsDjAtURklERiBzY29yZZRLA4wOR2VuZSBFbnRyZXog
+SUSUSwOMC0dlbmUgU3ltYm9slEsDjA9PTUlNIERpc2Vhc2UgSUSUSwOMD01lU0ggRGlzZWFzZSBJ
+RJRLA3V1YmgMKYGUfZQoaA99lCiMEWRvbWFpbl9yb2xlX2hpbnRzlH2UKGhUSwOGlIwJYXZhaWxh
+YmxllEsAhpRoUEsDhpRoW0sBhpRoTksDhpRoW0sChpRoT0sDhpRoW0sDhpSMD09NSU0gRGlzZWFz
+ZSBJRJRLA4aUaFtLBIaUaE1LA4aUjARtZXRhlEsAhpR1Sv7///+GlGgHSwF1aC59lGgwfZQoaE1L
+A2hOSwNoT0sDaFBLA2hUSwNoY0sDdXViaAwpgZR9lChoD32UKGhYfZQoaFRLA4aUaFtLAIaUaFBL
+A4aUaFtLAYaUaE1LA4aUaGdLAIaUdUr+////hpRoB0sBdWgufZRoMH2UKGhUSwNoTUsDaFBLA3V1
+YmV1Lg==
+</properties>
+		<properties node_id="19" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xe1\x00\x00\x01\xf8\x00\x00\x0b\xfe\x00\x00\x02\xb0\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0', 'stored_name': 'symptoms.csv', 'stored_path': '04-prepared', '__version__': 3}</properties>
+		<properties node_id="20" format="pickle">gASVSAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADL
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAQAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwRTWVTSCBEaXNlYXNlIFRlcm2USwOGlIwJYXZhaWxhYmxllEsAhpSM
+D09NSU0gRGlzZWFzZSBJRJRLA4aUaBVLAYaUjA9NZVNIIERpc2Vhc2UgSUSUSwOGlGgVSwKGlIwO
+R2VuZSBFbnRyZXogSUSUSwOGlIwEbWV0YZRLAIaUjAtHZW5lIFN5bWJvbJRLA4aUaB9LAYaUdUr+
+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQojA5HZW5lIEVudHJleiBJRJRLA4wL
+R2VuZSBTeW1ib2yUSwOMD09NSU0gRGlzZWFzZSBJRJRLA4wPTWVTSCBEaXNlYXNlIElElEsDjBFN
+ZVNIIERpc2Vhc2UgVGVybZRLA3V1YmF1Lg==
+</properties>
+		<properties node_id="21" format="pickle">gASVYwEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAzMAAAD9AAAETAAAAxUAAAMzAAABIgAABEwAAAMV
+AAAAAQAAAAAHgAAAAzMAAAEiAAAETAAAAxWUjAp0aWVicmVha2VylIwORmlyc3QgaW5zdGFuY2WU
+jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRp
+bmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwNc2VsZWN0ZWRfdmFyc5RdlIwOR2Vu
+ZSBFbnRyZXogSUSUS2eGlGFK/f///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZSMBW1ldGFzlH2UKGgT
+SwOMC0dlbmUgU3ltYm9slEsDdXViYXUu
+</properties>
+		<properties node_id="22" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xe1\x00\x00\x02\x1d\x00\x00\x0b\xfe\x00\x00\x02\xb0', 'stored_name': 'genes.csv', 'stored_path': '04-prepared', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
