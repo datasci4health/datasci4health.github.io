@@ -8,7 +8,7 @@ Zhou, X., Menche, J., Barabási, A.-L., & Sharma, A. (2014). Human symptoms–di
 
 * folder `mapping-transforming`
 
-Orange workflow `converte-list-rows.ows` prepares files of three sources:
+Orange workflow `convert-list-rows.ows` prepares files of three sources:
 * `01-source-nature` - original from the articles on Nature
 * `02-source-human-phenotype-ontology` - Human Phenotype Ontology (genes x diseases)
 * `03-source-comparative-toxicogenomics-database` - Comparative Toxicogenomics Database (maps MeSH to OMIM)
@@ -21,10 +21,10 @@ Prepared files are saved at:
 
 * folder `mapping-transforming`
 
-Relations between symptoms and diseases manually selected and stored in:
+Relations between symptoms and diseases are manually selected and stored in the:
 * `05-manually-selected` -  rationale stored at `symptom-disease(selected).xlsx`
 
-Besides processing the simple example in Cypher, there two equivalent examples:
+Besides processing the simple example in Cypher, there are two equivalent examples:
 
 * `06-jupyter-networkx` - Jupyter example using NetworkX (files are also converted to Pajek for Orange)
 * `07-orange-network` - Orange example using networks 
@@ -35,8 +35,8 @@ Besides processing the simple example in Cypher, there two equivalent examples:
 
 * `01-preprocess` - data from symptoms and diseases are converted by Orange to a network disease-disease with different similarity thresholds (0.8 and 0.95)
 
-This data is source to the other three projects:
+This data is the source of the other three projects:
 
 * `02-cytoscape` - networks are imported to CytoScape, which infers communities
-* `03-jupyter-networkx` - networks are imported, displayed and converted (to Pajek for Orange) at Jupyter with NetworkX
+* `03-jupyter-networkx` - networks are imported, displayed, and converted (to Pajek for Orange) at Jupyter with NetworkX
 * `04-orange-cluster-network` - clusters and communities (network) are compared
