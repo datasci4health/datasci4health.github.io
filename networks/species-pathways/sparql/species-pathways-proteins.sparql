@@ -218,3 +218,56 @@ WHERE {
   ?protein up_core:organism taxon:10090 .
 }
 
+
+# Cluster Casein kinase I isoform delta - 100% (UniRef100_Q9DC28)
+# ---------------------------------------------------------------
+
+# All subjects and properties related to the cluster
+
+PREFIX up_ref: <http://purl.uniprot.org/uniref/>
+
+SELECT DISTINCT ?subject ?property
+WHERE {
+  ?subject ?property up_ref:UniRef100_Q9DC28 .
+}
+
+# All properties and objects related to the cluster
+
+PREFIX up_ref: <http://purl.uniprot.org/uniref/>
+
+SELECT DISTINCT ?property ?object
+WHERE {
+  up_ref:UniRef100_Q9DC28 ?property ?object .
+}
+
+# The UniParc which this cluster is member of
+
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX up_ref: <http://purl.uniprot.org/uniref/>
+
+SELECT DISTINCT ?uniparc ?label
+WHERE {
+  up_ref:UniRef100_Q9DC28 up_core:member ?uniparc .
+  ?uniparc rdfs:label ?label .
+}
+
+-----
+uniparc
+UPI0000027B20
+-----
+
+# All properties and objects related to the UniParc
+
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX up_arc:  <http://purl.uniprot.org/uniparc/>
+
+SELECT DISTINCT ?protein ?organism ?scientific_name
+WHERE {
+  up_arc:UPI0000027B20 up_core:sequenceFor ?protein .
+  ?protein rdf:type up_core:Protein .
+  ?protein up_core:organism ?organism .
+  ?organism up_core:scientificName ?scientific_name .
+}
