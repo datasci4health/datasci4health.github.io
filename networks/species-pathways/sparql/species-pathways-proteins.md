@@ -90,56 +90,6 @@ WHERE {
 }
 ~~~
 
-# Wnt signaling pathway, planar cell polarity pathway (GO:0060071)
-
-## All proteins classified with the pathway
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?protein ?label
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0060071 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-}
-~~~
-
-## All proteins classified with the pathway and their organism
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?protein ?label ?organism
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0060071 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-  ?protein up_core:organism ?organism .
-}
-~~~
-
-## All proteins classified with the pathway and their organism with the scientific name
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?protein ?label ?organism ?scientific_name
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0060071 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-  ?protein up_core:organism ?organism .
-  ?organism up_core:scientificName ?scientific_name .
-}
-~~~
-
 # Wnt signaling pathway (GO:0016055)
 
 * URI: https://amigo.geneontology.org/amigo/term/GO:0016055
@@ -328,6 +278,56 @@ SELECT DISTINCT ?protein ?organism ?scientific_name
 WHERE {
   up_arc:UPI0000027B20 up_core:sequenceFor ?protein .
   ?protein rdf:type up_core:Protein .
+  ?protein up_core:organism ?organism .
+  ?organism up_core:scientificName ?scientific_name .
+}
+~~~
+
+# Wnt signaling pathway, planar cell polarity pathway (GO:0060071)
+
+## All proteins classified with the pathway
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?protein ?label
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0060071 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
+}
+~~~
+
+## All proteins classified with the pathway and their organism
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?protein ?label ?organism
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0060071 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
+  ?protein up_core:organism ?organism .
+}
+~~~
+
+## All proteins classified with the pathway and their organism with the scientific name
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?protein ?label ?organism ?scientific_name
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0060071 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
   ?protein up_core:organism ?organism .
   ?organism up_core:scientificName ?scientific_name .
 }
