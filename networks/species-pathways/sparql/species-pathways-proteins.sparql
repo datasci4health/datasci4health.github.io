@@ -4,77 +4,6 @@
 
 * UniProt (better): https://sparql.uniprot.org/sparql
 
-# Wnt signaling pathway (GO:0016055)
-# ----------------------------------
-
-* URI: https://amigo.geneontology.org/amigo/term/GO:0016055
-
-# All superclasses of the pathway 
-
-PREFIX obo:  <http://purl.obolibrary.org/obo/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?super ?labels
-WHERE {
-  obo:GO_0016055 rdfs:subClassOf ?super .
-  ?super rdfs:label ?labels .
-}
-
-# All subclasses of the pathway
-
-PREFIX obo:  <http://purl.obolibrary.org/obo/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?sub ?label
-WHERE {
-  ?sub rdfs:subClassOf obo:GO_0016055 .
-  ?sub rdfs:label ?label .
-}
-
-# All properties and objects related to the pathway
-
-PREFIX obo: <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?property ?object
-WHERE {
-  obo:GO_0016055 ?property ?object .
-}
-
-# All subjects and properties related to the pathway
-
-PREFIX obo: <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?subject ?property
-WHERE {
-   ?subject ?property obo:GO_0016055 .
-}
-
-# All subjects (URI and label) classified with the pathway
-
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-
-SELECT DISTINCT ?uri ?label
-WHERE {
-  ?uri up_core:classifiedWith obo:GO_0016055 .
-  ?uri rdfs:label ?label .
-}
-
-# All proteins (URI and label) classified with the pathway
-
-PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-
-SELECT DISTINCT ?protein ?label
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0016055 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-}
-
 # PRICKLE2 - Prickle-like protein 2 (UniProtKB:Q7Z3G6)
 # ----------------------------------------------------
 
@@ -150,8 +79,6 @@ WHERE {
   ?gene rdfs:label ?label .
 }
 
-
-
 # Wnt signaling pathway, planar cell polarity pathway (GO:0060071)
 # ----------------------------------------------------------------
 
@@ -199,6 +126,74 @@ WHERE {
 
 # Wnt signaling pathway (GO:0016055)
 # ----------------------------------
+
+* URI: https://amigo.geneontology.org/amigo/term/GO:0016055
+
+# All superclasses of the pathway 
+
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?super ?labels
+WHERE {
+  obo:GO_0016055 rdfs:subClassOf ?super .
+  ?super rdfs:label ?labels .
+}
+
+# All subclasses of the pathway
+
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?sub ?label
+WHERE {
+  ?sub rdfs:subClassOf obo:GO_0016055 .
+  ?sub rdfs:label ?label .
+}
+
+# All properties and objects related to the pathway
+
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?property ?object
+WHERE {
+  obo:GO_0016055 ?property ?object .
+}
+
+# All subjects and properties related to the pathway
+
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?subject ?property
+WHERE {
+   ?subject ?property obo:GO_0016055 .
+}
+
+# All subjects (URI and label) classified with the pathway
+
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?uri ?label
+WHERE {
+  ?uri up_core:classifiedWith obo:GO_0016055 .
+  ?uri rdfs:label ?label .
+}
+
+# All proteins (URI and label) classified with the pathway
+
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?protein ?label
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0016055 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
+}
 
 # All proteins classified with the pathway and their organism with the scientific name
 

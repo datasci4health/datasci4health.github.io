@@ -4,6 +4,142 @@
 
 * UniProt (better): https://sparql.uniprot.org/sparql
 
+# PRICKLE2 - Prickle-like protein 2 (UniProtKB:Q7Z3G6)
+
+* URI: http://purl.uniprot.org/uniprot/Q7Z3G6
+
+## All subjects related to the protein
+
+~~~sparql
+PREFIX up: <http://purl.uniprot.org/uniprot/>
+
+SELECT DISTINCT ?subject ?property
+WHERE {
+  ?subject ?property up:Q7Z3G6 .
+}
+~~~
+
+## All properties and objects related to the protein
+
+~~~sparql
+PREFIX up: <http://purl.uniprot.org/uniprot/>
+
+SELECT DISTINCT ?property ?object
+WHERE {
+  up:Q7Z3G6 ?property ?object .
+}
+~~~
+
+## All proteins URI with the label "Prickle-like protein 2"
+
+~~~sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?protein ?label
+WHERE {
+  ?protein rdfs:label "Prickle-like protein 2" .
+}
+~~~
+
+## All objects classified with the protein
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up:      <http://purl.uniprot.org/uniprot/>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?object ?label
+WHERE {
+  up:Q7Z3G6 up_core:classifiedWith ?object .
+  ?object rdfs:label ?label .
+}
+~~~
+
+~~~csv
+object, label
+http://purl.obolibrary.org/obo/GO_0005737,"cytoplasm"
+http://purl.obolibrary.org/obo/GO_0031965,"nuclear membrane"
+http://purl.obolibrary.org/obo/GO_0008270,"zinc ion binding"
+http://purl.obolibrary.org/obo/GO_0060071,"Wnt signaling pathway, planar cell polarity pathway"
+~~~
+
+## Organism related to this protein
+
+~~~sparql
+PREFIX up:      <http://purl.uniprot.org/uniprot/>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?taxon ?scientific_name
+WHERE {
+  up:Q7Z3G6 up_core:organism ?taxon .
+  ?taxon up_core:scientificName ?scientific_name .
+}
+~~~
+
+## Gene related to this protein
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up:      <http://purl.uniprot.org/uniprot/>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+
+SELECT DISTINCT ?gene ?label
+WHERE {
+  up:Q7Z3G6 up_core:encodedBy ?gene .
+  ?gene rdfs:label ?label .
+}
+~~~
+
+# Wnt signaling pathway, planar cell polarity pathway (GO:0060071)
+
+## All proteins classified with the pathway
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?protein ?label
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0060071 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
+}
+~~~
+
+## All proteins classified with the pathway and their organism
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?protein ?label ?organism
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0060071 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
+  ?protein up_core:organism ?organism .
+}
+~~~
+
+## All proteins classified with the pathway and their organism with the scientific name
+
+~~~sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX up_core: <http://purl.uniprot.org/core/>
+PREFIX obo:     <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?protein ?label ?organism ?scientific_name
+WHERE {
+  ?protein up_core:classifiedWith obo:GO_0060071 .
+  ?protein rdf:type up_core:Protein .
+  ?protein rdfs:label ?label .
+  ?protein up_core:organism ?organism .
+  ?organism up_core:scientificName ?scientific_name .
+}
+~~~
+
 # Wnt signaling pathway (GO:0016055)
 
 * URI: https://amigo.geneontology.org/amigo/term/GO:0016055
@@ -85,144 +221,6 @@ WHERE {
   ?protein rdfs:label ?label .
 }
 ~~~
-
-# PRICKLE2 - Prickle-like protein 2 (UniProtKB:Q7Z3G6)
-
-* URI: http://purl.uniprot.org/uniprot/Q7Z3G6
-
-## All subjects related to the protein
-
-~~~sparql
-PREFIX up: <http://purl.uniprot.org/uniprot/>
-
-SELECT DISTINCT ?subject ?property
-WHERE {
-  ?subject ?property up:Q7Z3G6 .
-}
-~~~
-
-## All properties and objects related to the protein
-
-~~~sparql
-PREFIX up: <http://purl.uniprot.org/uniprot/>
-
-SELECT DISTINCT ?property ?object
-WHERE {
-  up:Q7Z3G6 ?property ?object .
-}
-~~~
-
-## All proteins URI with the label "Prickle-like protein 2"
-
-~~~sparql
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?protein ?label
-WHERE {
-  ?protein rdfs:label "Prickle-like protein 2" .
-}
-~~~
-
-## All objects classified with the protein
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up:      <http://purl.uniprot.org/uniprot/>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-
-SELECT DISTINCT ?object ?label
-WHERE {
-  up:Q7Z3G6 up_core:classifiedWith ?object .
-  ?object rdfs:label ?label .
-}
-~~~
-
-~~~csv
-object, label
-http://purl.obolibrary.org/obo/GO_0005737,"cytoplasm"
-http://purl.obolibrary.org/obo/GO_0031965,"nuclear membrane"
-http://purl.obolibrary.org/obo/GO_0008270,"zinc ion binding"
-http://purl.obolibrary.org/obo/GO_0060071,"Wnt signaling pathway, planar cell polarity pathway"
-~~~
-
-## Organism related to this protein
-
-~~~sparql
-PREFIX up:      <http://purl.uniprot.org/uniprot/>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-
-SELECT DISTINCT ?protein ?taxon ?scientific_name
-WHERE {
-  up:Q7Z3G6 up_core:organism ?taxon .
-  ?taxon up_core:scientificName ?scientific_name .
-}
-~~~
-
-## Gene related to this protein
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up:      <http://purl.uniprot.org/uniprot/>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-
-SELECT DISTINCT ?gene ?label
-WHERE {
-  up:Q7Z3G6 up_core:encodedBy ?gene .
-  ?gene rdfs:label ?label .
-}
-~~~
-
-# Wnt signaling pathway, planar cell polarity pathway (GO:0060071)
-
-## All proteins classified with the pathway
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?protein ?label
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0060071 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-}
-~~~
-
-## All proteins classified with the pathway and their organism
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?protein ?label ?organism
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0060071 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-  ?protein up_core:organism ?organism .
-}
-~~~
-
-## All proteins classified with the pathway and their organism with the scientific name
-
-~~~sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX up_core: <http://purl.uniprot.org/core/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-
-SELECT DISTINCT ?protein ?label ?organism ?scientific_name
-WHERE {
-  ?protein up_core:classifiedWith obo:GO_0060071 .
-  ?protein rdf:type up_core:Protein .
-  ?protein rdfs:label ?label .
-  ?protein up_core:organism ?organism .
-  ?organism up_core:scientificName ?scientific_name .
-}
-~~~
-
-# Wnt signaling pathway (GO:0016055)
 
 ## All proteins classified with the pathway and their organism with the scientific name
 
