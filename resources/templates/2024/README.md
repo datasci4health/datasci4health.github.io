@@ -16,7 +16,7 @@ A seguir é apresentada a estrutura de pastas esperada no repositório do projet
 
 * [Entrega 1](project1/)
 * [Entrega 2](project2/)
-* Entrega Final
+* [Entrega 3 - Final](project3-final/)
 
 Na raiz do projeto do GitHub deve haver um arquivo de nome `README.md` contendo a apresentação da equipe e projeto, como detalhado na seção seguinte. Este arquivo é escrito em Markdown. Para conhecer Markdown, veja [Editando o Arquivo README.md](markdown.md). 
 
