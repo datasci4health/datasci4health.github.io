@@ -45,7 +45,7 @@ mysql -p mimic4 < index.sql > index.log
 
 ## Importing `import-lab_itemid_to_loinc`
 
-The file `import-lab_itemid_to_loinc.sql` contains the script to import the table `d_labitems_to_loinc` which data is available at: https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/concepts/concept_map/d_labitems_to_loinc.csv
+The file `import-lab_itemid_to_loinc.sql` contains the script to import the table `d_labitems_to_loinc` which data is available at: https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/mapping/d_labitems_to_loinc.csv
 
 Import instructions:
 ~~~
