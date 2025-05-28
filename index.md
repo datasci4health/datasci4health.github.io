@@ -4,6 +4,7 @@ layout: home
 
 <h1>Edição 2025 / 2&deg; Semestre</h1>
 
+<h3>Vídeo sobre a edição de 2024:</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AVrFoHwogAE?si=OmVlMT0HUYG3F4er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <hr>
@@ -42,8 +43,9 @@ Em relação à análise de dados com enfoque em ciência de redes, serão abord
 
 A disciplina é guiada por problemas em saúde trazidos por professores da biologia e medicina. Nesta edição, já estão sendo preparados problemas no domínio de câncer e hematologia, mas poderão sugerir problemas em outros domínios.
 
-# Professor
+# Professores
 * André Santanchè - Instituto de Computação (IC)
+* (outros professores do staff deverão participar - atualizaremos aqui)
 
 # Staff
 * Letícia Rittner - Faculdade de Engenharia Elétrica e Computação (FEEC)
