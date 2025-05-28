@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<h1>Edição 2024</h1>
+<h1>Edição 2025 / 2&deg; Semestre</h1>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AVrFoHwogAE?si=OmVlMT0HUYG3F4er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -55,18 +55,22 @@ A disciplina é guiada por problemas em saúde trazidos por professores da biolo
 Esta disciplina foi concebida para que possam se matricular alunos da área de biologia, saúde (medicina, enfermagem, farmácia), computação, engenharias, matemática, estatística e outras áreas associadas.
 
 # Disciplina
-A disciplina é oferecida pelo Instituto de Computação (IC).
+Conforme aconteceu em anos anteriores, pretende-se oferecer a disciplina nos Institutos e Faculdades abaixo. Alguns ainda estão em fase de definição:
 * Instituto de Computação (IC)
   * pós-graduação: MO413A - Ciência e Visualização de Dados em Saúde
   * graduação: MC936A - Tópicos em Sistemas de Informação
+* Instituto de Biologia (IB)
+  * em fase de definição
+* Faculdade de Ciências Médicas (FCM)
+  * em fase de definição
 
-As aulas serão presenciais terças e quintas das 8h às 10h. Veja detalhes de cronograma e local na página de [Orientações Iniciais](landing.md).
+As aulas serão presenciais segundas e quartas das 8h às 10h. Veja detalhes de cronograma e local na página de [Orientações Iniciais](landing.md).
 
-Alunos dos cursos de Biologia e Saúde são bem vindos. Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina.
+Alunos dos cursos de Biologia e Saúde são bem vindos. <!-- Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina. -->
 
-Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no [FAQ](faq.md)).
+<!-- Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no [FAQ](faq.md)). -->
 
 # Youtube
-As aulas da disciplina são gravadas e os vídeos de 2024 são postados nesta playlist: 
+As aulas da disciplina são gravadas. Os vídeos de 2024 foram postados nesta playlist: 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=M3lEUyaTPbRwRX97&amp;list=PL3JRjVnXiTBYh6TXRmCwfG_9UFfxRIX_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

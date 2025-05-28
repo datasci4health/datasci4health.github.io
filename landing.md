@@ -6,8 +6,10 @@ permalink: /landing/
 
 ## Local e Horários
 
-As aulas serão terças e quintas das 8h às 10h no Instituto de Computação, prédio IC 3/3.5, sala 351.
+As aulas serão segundas e quartas das 8h às 10h - local ainda a ser definido.
+<!-- no Instituto de Computação, prédio IC 3/3.5, sala 351. -->
 
+<!--
 ### Como chegar no local
 
 O Instituto de Computação possui mais de um prédio. O IC 3/3.5 fica logo no início da rua Saturnino de Brito (veja imagem abaixo).
@@ -25,13 +27,16 @@ O calendário de aulas da Unicamp inicia 28/02. Entretanto, como esta disciplina
 ## Acesso ao Google Classroom
 
 Alunos especiais e aqueles que ingressarem na alteração de matrícula levarão alguns dias após o início das aulas para terem acesso ao Google Classroom. Não se preocupe, até que você tenha acesso, você poderá acompanhar a disciplina pela página de [Primeiros Passos](start.md).
+-->
 
 ## Endereços Importantes
 
 * [Página Principal da Disciplina](/)
-* [Google Classroom da Disciplina](https://classroom.google.com/c/NjU2Njk1MDEwNDUx)
+<!-- * [Google Classroom da Disciplina](https://classroom.google.com/c/NjU2Njk1MDEwNDUx) -->
 * [FAQ](faq.md)
 
+<!--
 ## Página de Orientações Iniciais
 
 Esta página e a de [Primeiros Passos](start.md) servem para orientações iniciais. Todos devem buscar o quanto antes o acesso ao Google Classroom para acompanhar o restante da disciplina.
+-->

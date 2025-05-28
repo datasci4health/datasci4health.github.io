@@ -6,7 +6,7 @@ permalink: /faq/
 
 **A disciplina será presencial?**
 
-Sim. As aulas serão terças e quintas das 8h às 10h. Veja detalhes de cronograma e local na página de [Orientações Iniciais](landing.md).
+Sim. As aulas serão segundas e quartas das 8h às 10h. Veja detalhes de cronograma e local na página de [Orientações Iniciais](landing.md).
 
 **É possível fazer a disciplina remotamente?**
 
@@ -14,11 +14,12 @@ Infelizmente, não é possível. A disciplina é organizada para a realização 
 
 **Como proceder se me matricular no período de alteração de matrícula?**
 
-Se o prazo de matrícula regular se encerrou e você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que em 2024 acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração. Se você não for aluno de computação, biologia ou saúde, é importante que me escreva um e-mail antes de se matricular.
+Se o prazo de matrícula regular se encerrou e você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula. Com regras específicas a serem divulgadas.
+<!-- Se a alteração de matrícula acontecer depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração. Se você não for aluno de computação, biologia ou saúde, é importante que me escreva um e-mail antes de se matricular. -->
 
 **Sou aluno da disciplina, como entro no Ambiente Virtual Google Classroom?**
 
-A sala virtual fica no Google Classroom [neste link](https://classroom.google.com/c/NjU2Njk1MDEwNDUx). Você deverá fazer login com seu email UNICAMP (email @dac.unicamp.br) para acessar. Se você é um aluno especial, deve buscar acesso ao seu e-mail UNICAMP junto à DAC.
+A sala virtual fica no Google Classroom <!-- [neste link](https://classroom.google.com/c/NjU2Njk1MDEwNDUx)-->. Você deverá fazer login com seu email UNICAMP (email @dac.unicamp.br) para acessar. Se você é um aluno especial, deve buscar acesso ao seu e-mail UNICAMP junto à DAC.
 
 Caso você ainda não tenha acesso ao Google Classroom, se atualize sobre as orientações inciais da disciplina [aqui](landing.md).
 
