@@ -24,6 +24,9 @@ select * from selected_mi_cases limit 5;
 
 select d.text from selected_mi_cases s, notes_discharge d where s.hadm_id=d.hadm_id limit 5;
 
+select count(*) from selected_mi_cases s, notes_discharge d where s.hadm_id=d.hadm_id;
+>> 28.984
+
 select s.*,
        d.note_id,
        d.note_type,
