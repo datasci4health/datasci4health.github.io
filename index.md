@@ -45,13 +45,12 @@ A disciplina é guiada por problemas em saúde trazidos por professores da biolo
 
 # Professores
 * André Santanchè - Instituto de Computação (IC)
-* (outros professores do staff deverão participar - atualizaremos aqui)
+* Murilo Vieira Geraldo - Instituto de Biologia (IB)
+* Renato Vicentini dos Santos - Instituto de Biologia (IB)
 
 # Staff
 * Letícia Rittner - Faculdade de Engenharia Elétrica e Computação (FEEC)
-* Murilo Vieira Geraldo - Instituto de Biologia (IB)
 * Paula D. Paro Costa - Faculdade de Engenharia Elétrica e Computação (FEEC)
-* Renato Vicentini dos Santos - Instituto de Biologia (IB)
 
 # Público Alvo
 Esta disciplina foi concebida para que possam se matricular alunos da área de biologia, saúde (medicina, enfermagem, farmácia), computação, engenharias, matemática, estatística e outras áreas associadas.
