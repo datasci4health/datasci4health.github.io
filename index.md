@@ -56,14 +56,15 @@ A disciplina é guiada por problemas em saúde trazidos por professores da biolo
 Esta disciplina foi concebida para que possam se matricular alunos da área de biologia, saúde (medicina, enfermagem, farmácia), computação, engenharias, matemática, estatística e outras áreas associadas.
 
 # Disciplina
-Conforme aconteceu em anos anteriores, pretende-se oferecer a disciplina nos Institutos e Faculdades abaixo. Alguns ainda estão em fase de definição:
+Conforme aconteceu em anos anteriores, a disciplina será oferecida nos Institutos e Faculdades abaixo:
 * Instituto de Computação (IC)
-  * pós-graduação: MO413A - Ciência e Visualização de Dados em Saúde
-  * graduação: MC936A - Tópicos em Sistemas de Informação
+  * pós-graduação: [MO413A](https://www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/P/IC/MO413) - Ciência e Visualização de Dados em Saúde
+  * graduação: [MC936A](www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/G/IC/MC936) - Tópicos em Sistemas de Informação
 * Instituto de Biologia (IB)
-  * em fase de definição
+  * pós-graduação: [BM004 Turma MVG](https://www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/P/IB/BM004) - Tópicos Especiais em Biologia Molecular e Morfofuncional IV
+    * responsável: Murilo Vieira Geraldo
 * Faculdade de Ciências Médicas (FCM)
-  * em fase de definição
+  * pós-graduação: [CX006](https://www.dac.unicamp.br/portal/caderno-de-horarios/2025/2/S/P/FCM/CX006) - Ciência e Visualização de Dados em Saúde
 
 As aulas serão presenciais segundas e quartas das 8h às 10h. Veja detalhes de cronograma e local na página de [Orientações Iniciais](landing.md).
 
