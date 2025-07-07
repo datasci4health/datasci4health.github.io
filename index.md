@@ -4,8 +4,11 @@ layout: home
 
 <h1>Edição 2025 / 2&deg; Semestre</h1>
 
-<h3>Vídeo sobre a edição de 2024:</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AVrFoHwogAE?si=OmVlMT0HUYG3F4er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h3>Visão Geral da Disciplina</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XIXPP2OoGiI?si=-HLnp8zMHVLtnh0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h3>Resumo Final da Edição de 2024</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lGjKClqVQPA?si=qgduvVbq3i3IOHc2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <hr>
 
