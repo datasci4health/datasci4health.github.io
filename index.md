@@ -7,8 +7,10 @@ layout: home
 <h3>Visão Geral da Disciplina</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIXPP2OoGiI?si=-HLnp8zMHVLtnh0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h3>Resumo Final da Edição de 2024</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lGjKClqVQPA?si=qgduvVbq3i3IOHc2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Todas as aulas desta disciplina são gravadas e ficam disponíveis nesta playlist.
+
+<h3>Playlist da Disciplina 2025</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=fzC1t_pj4KbDHDqn&amp;list=PL3JRjVnXiTBb837vbmZIyIelMM3winBQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <hr>
 
@@ -74,8 +76,3 @@ As aulas serão presenciais segundas e quartas das 8h às 10h. Veja detalhes de 
 Alunos dos cursos de Biologia e Saúde são bem vindos. <!-- Para isso deverão solicitar matrícula na disciplina do IC. A inscrição será aprovada por nós na disciplina. -->
 
 <!-- Como o prazo de matrícula regular se encerrou, se você tiver interesse em cursar a disciplina, ainda é possível inscrever-se na alteração de matrícula, que acontece de 6 a 8 de março. Como a alteração de matrícula acontece depois do início das aulas, você pode começar a cursá-la antes, mesmo que esteja aguardando o período de alteração (veja detalhes no [FAQ](faq.md)). -->
-
-# Youtube
-As aulas da disciplina são gravadas. Os vídeos de 2024 foram postados nesta playlist: 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=M3lEUyaTPbRwRX97&amp;list=PL3JRjVnXiTBYh6TXRmCwfG_9UFfxRIX_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
