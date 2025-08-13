@@ -11,7 +11,7 @@ Zhou, X., Menche, J., Barabási, A.-L., & Sharma, A. (2014). Human symptoms–di
 Orange workflow `convert-list-rows.ows` prepares files of three sources:
 * `01-source-nature` - original from the articles on Nature
 * `02-source-human-phenotype-ontology` - Human Phenotype Ontology (genes x diseases)
-* `03-source-comparative-toxicogenomics-database` - Comparative Toxicogenomics Database (maps MeSH to OMIM)
+* `03-source-comparative-toxicogenomics-database` - [Comparative Toxicogenomics Database](https://ctdbase.org/) (maps MeSH to OMIM)
 
 Prepared files are saved at:
 
