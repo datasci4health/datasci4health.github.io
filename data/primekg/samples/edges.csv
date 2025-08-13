@@ -1,0 +1,7 @@
+relation,display_relation,x_index,y_index
+protein_protein,ppi,0,8889
+protein_protein,ppi,3,11592
+disease_phenotype_positive,phenotype present,27325,25213
+disease_phenotype_positive,phenotype present,29323,25269
+drug_effect,side effect,14251,24475
+drug_effect,side effect,14251,22735

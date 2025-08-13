@@ -10,6 +10,9 @@ node_index,node_id,node_type,node_name,node_source
 8,4489,gene/protein,MT1A,NCBI
 9,6272,gene/protein,SORT1,NCBI
 10,4041,gene/protein,LRP5,NCBI
+8889,56992,gene/protein,KIF15,NCBI
+11592,11253,gene/protein,MAN1B1,NCBI
+14251,DB00864,drug,Tacrolimus,DrugBank
 15511,DB01411,drug,Pranlukast,DrugBank
 15512,DB01456,drug,5-androstenedione,DrugBank
 15513,DB01483,drug,Barbital,DrugBank
@@ -25,6 +28,8 @@ node_index,node_id,node_type,node_name,node_source
 15523,DB01873,drug,Epothilone D,DrugBank
 15524,DB02187,drug,Equilin,DrugBank
 15525,DB02789,drug,Pregnenolone,DrugBank
+20733,DB13314,drug,Alminoprofen,DrugBank
+22735,2605,effect/phenotype,Hepatic necrosis,HPO
 23722,4280,effect/phenotype,Irregular ossification of hand bones,HPO
 23723,100328,effect/phenotype,Carpometacarpal synostosis,HPO
 23724,9705,effect/phenotype,Synostosis involving the 2nd metacarpal,HPO
@@ -41,6 +46,11 @@ node_index,node_id,node_type,node_name,node_source
 23735,4323,effect/phenotype,Abnormality of body weight,HPO
 23736,1824,effect/phenotype,Weight loss,HPO
 23737,2703,effect/phenotype,Abnormality of skull ossification,HPO
+24475,2910,effect/phenotype,Elevated hepatic transaminase,HPO
+25213,200040,effect/phenotype,Epidermoid cyst,HPO
+25269,2353,effect/phenotype,EEG abnormality,HPO
+27325,8174_14325_14324_8173_16471,disease,pachyonychia congenita,MONDO_grouped
+29323,7530,disease,electroencephalographic peculiarity: 14 and 6 per sec. positive spike phenomenon,MONDO
 32923,19637,disease,renal hypoplasia (disease),MONDO
 32924,19086,disease,carcinoma of esophagus,MONDO
 32925,15269,disease,symmetrical thalamic calcifications,MONDO
