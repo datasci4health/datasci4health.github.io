@@ -1,0 +1,139 @@
+node_index,node_id,node_type,node_name,node_source
+0,9796,gene/protein,PHYHIP,NCBI
+1,7918,gene/protein,GPANK1,NCBI
+2,8233,gene/protein,ZRSR2,NCBI
+3,4899,gene/protein,NRF1,NCBI
+4,5297,gene/protein,PI4KA,NCBI
+5,6564,gene/protein,SLC15A1,NCBI
+6,8668,gene/protein,EIF3I,NCBI
+7,10826,gene/protein,FAXDC2,NCBI
+8,4489,gene/protein,MT1A,NCBI
+9,6272,gene/protein,SORT1,NCBI
+10,4041,gene/protein,LRP5,NCBI
+15511,DB01411,drug,Pranlukast,DrugBank
+15512,DB01456,drug,5-androstenedione,DrugBank
+15513,DB01483,drug,Barbital,DrugBank
+15514,DB01536,drug,Androstenedione,DrugBank
+15515,DB01544,drug,Flunitrazepam,DrugBank
+15516,DB01559,drug,Clotiazepam,DrugBank
+15517,DB01588,drug,Prazepam,DrugBank
+15518,DB01589,drug,Quazepam,DrugBank
+15519,DB01595,drug,Nitrazepam,DrugBank
+15520,DB01656,drug,Roflumilast,DrugBank
+15521,DB01698,drug,Rutin,DrugBank
+15522,DB01764,drug,Dalfopristin,DrugBank
+15523,DB01873,drug,Epothilone D,DrugBank
+15524,DB02187,drug,Equilin,DrugBank
+15525,DB02789,drug,Pregnenolone,DrugBank
+23722,4280,effect/phenotype,Irregular ossification of hand bones,HPO
+23723,100328,effect/phenotype,Carpometacarpal synostosis,HPO
+23724,9705,effect/phenotype,Synostosis involving the 2nd metacarpal,HPO
+23725,11911,effect/phenotype,Abnormality of metacarpophalangeal joint,HPO
+23726,2577,effect/phenotype,Abnormal stomach morphology,HPO
+23727,2597,effect/phenotype,Abnormality of the vasculature,HPO
+23728,4308,effect/phenotype,Ventricular arrhythmia,HPO
+23729,1877,effect/phenotype,Abnormal erythrocyte morphology,HPO
+23730,10701,effect/phenotype,Abnormal immunoglobulin level,HPO
+23731,8207,effect/phenotype,Primary adrenal insufficiency,HPO
+23732,100589,effect/phenotype,Urogenital fistula,HPO
+23733,142,effect/phenotype,Abnormal vagina morphology,HPO
+23734,25487,effect/phenotype,Abnormality of bladder morphology,HPO
+23735,4323,effect/phenotype,Abnormality of body weight,HPO
+23736,1824,effect/phenotype,Weight loss,HPO
+23737,2703,effect/phenotype,Abnormality of skull ossification,HPO
+32923,19637,disease,renal hypoplasia (disease),MONDO
+32924,19086,disease,carcinoma of esophagus,MONDO
+32925,15269,disease,symmetrical thalamic calcifications,MONDO
+32926,15264,disease,cryptogenic organizing pneumonia,MONDO
+32927,16994,disease,microcephalic osteodysplastic primordial dwarfism types I and III,MONDO
+32928,19542,disease,acute liver failure,MONDO
+32929,15268,disease,medullary sponge kidney,MONDO
+32930,19543,disease,acquired aneurysmal subarachnoid hemorrhage,MONDO
+32931,17794,disease,Xq12-q13.3 duplication syndrome,MONDO
+32932,5683,disease,brucellosis,MONDO
+32933,19544,disease,cocaine intoxication,MONDO
+41511,31058,biological_process,positive regulation of histone modification,GO
+41512,2000758,biological_process,positive regulation of peptidyl-lysine acetylation,GO
+41513,31057,biological_process,negative regulation of histone modification,GO
+41514,2000757,biological_process,negative regulation of peptidyl-lysine acetylation,GO
+41515,6891,biological_process,intra-Golgi vesicle-mediated transport,GO
+41516,2000178,biological_process,negative regulation of neural precursor cell proliferation,GO
+41517,70445,biological_process,regulation of oligodendrocyte progenitor proliferation,GO
+41518,45685,biological_process,regulation of glial cell differentiation,GO
+41519,31445,biological_process,regulation of heterochromatin assembly,GO
+41520,2001251,biological_process,negative regulation of chromosome organization,GO
+41521,120262,biological_process,negative regulation of heterochromatin organization,GO
+41522,45798,biological_process,negative regulation of chromatin assembly or disassembly,GO
+41523,120263,biological_process,positive regulation of heterochromatin organization,GO
+54105,8242,molecular_function,omega peptidase activity,GO
+54106,101005,molecular_function,deubiquitinase activity,GO
+54107,70003,molecular_function,threonine-type peptidase activity,GO
+54108,8234,molecular_function,cysteine-type peptidase activity,GO
+54109,16805,molecular_function,dipeptidase activity,GO
+54110,8235,molecular_function,metalloexopeptidase activity,GO
+54111,120013,molecular_function,lipid transfer activity,GO
+54112,38024,molecular_function,cargo receptor activity,GO
+54113,16874,molecular_function,ligase activity,GO
+54114,15252,molecular_function,proton channel activity,GO
+54115,140030,molecular_function,modification-dependent protein binding,GO
+61889,D000927,exposure,Anticonvulsants,CTD
+61890,D000928,exposure,Antidepressive Agents,CTD
+61891,D000941,exposure,Antigens,CTD
+61892,D000890,exposure,Anti-Infective Agents,CTD
+61893,D000965,exposure,Antimony,CTD
+61894,D000978,exposure,Antiparkinson Agents,CTD
+61895,D014150,exposure,Antipsychotic Agents,CTD
+61896,C026987,exposure,aroclor 1260,CTD
+61897,D000077237,exposure,Arsenic Trioxide,CTD
+61898,D017638,exposure,"Asbestos, Crocidolite",CTD
+61899,D017632,exposure,"Asbestos, Serpentine",CTD
+61900,D001241,exposure,Aspirin,CTD
+61901,D001464,exposure,Barium,CTD
+61902,D001542,exposure,Benomyl,CTD
+61903,C002003,exposure,bentazone,CTD
+61904,C029876,exposure,benzidine,CTD
+61905,D001562,exposure,Benzimidazoles,CTD
+61906,D019817,exposure,Benzoic Acid,CTD
+61907,C022921,exposure,benzo(k)fluoranthene,CTD
+61908,D001608,exposure,Beryllium,CTD
+61909,D019207,exposure,beta Carotene,CTD
+61910,D047071,exposure,beta-Glucans,CTD
+64769,2339,anatomy,epithelium of lobar bronchus,UBERON
+64770,2340,anatomy,epithelium of main bronchus,UBERON
+64771,2341,anatomy,epithelium of segmental bronchus,UBERON
+64772,2342,anatomy,neural crest,UBERON
+64773,2343,anatomy,abdomen musculature,UBERON
+64774,2345,anatomy,descending thoracic aorta,UBERON
+64775,2346,anatomy,neurectoderm,UBERON
+64776,2347,anatomy,thoracic vertebra,UBERON
+64777,2348,anatomy,epicardium,UBERON
+64778,2349,anatomy,myocardium,UBERON
+64779,2350,anatomy,conducting system of heart,UBERON
+64780,2351,anatomy,sinoatrial node,UBERON
+64781,2352,anatomy,atrioventricular node,UBERON
+64782,2353,anatomy,bundle of His,UBERON
+125078,1990665,cellular_component,AnxA2-p11 complex,GO
+125079,8074,cellular_component,"guanylate cyclase complex, soluble",GO
+125080,2199,cellular_component,zona pellucida receptor complex,GO
+125081,31422,cellular_component,RecQ family helicase-topoisomerase III complex,GO
+125082,70745,cellular_component,interleukin-35 complex,GO
+125083,61576,cellular_component,acyl-CoA ceramide synthase complex,GO
+125084,61703,cellular_component,pyroptosome complex,GO
+125085,5862,cellular_component,muscle thin filament tropomyosin,GO
+125086,35693,cellular_component,NOS2-CD74 complex,GO
+125087,33551,cellular_component,monopolin complex,GO
+125088,33596,cellular_component,TSC1-TSC2 complex,GO
+125089,98820,cellular_component,trans-synaptic protein complex,GO
+127635,R-HSA-264642,pathway,Acetylcholine Neurotransmitter Release Cycle,REACTOME
+127636,R-HSA-210455,pathway,Astrocytic Glutamate-Glutamine Uptake And Metabolism,REACTOME
+127637,R-HSA-112308,pathway,Presynaptic depolarization and calcium channel opening,REACTOME
+127638,R-HSA-112412,pathway,SOS-mediated signalling,REACTOME
+127639,R-HSA-110056,pathway,MAPK3 (ERK1) activation,REACTOME
+127640,R-HSA-112411,pathway,MAPK1 (ERK2) activation,REACTOME
+127641,R-HSA-113501,pathway,Inhibition of replication initiation of damaged DNA by RB1/E2F1,REACTOME
+127642,R-HSA-113507,pathway,E2F-enabled inhibition of pre-replication complex formation,REACTOME
+127643,R-HSA-111446,pathway,Activation of BIM and translocation to mitochondria ,REACTOME
+127644,R-HSA-111447,pathway,Activation of BAD and translocation to mitochondria ,REACTOME
+127645,R-HSA-111448,pathway,Activation of NOXA and translocation to mitochondria,REACTOME
+127646,R-HSA-139910,pathway,Activation of BMF and translocation to mitochondria,REACTOME
+127647,R-HSA-139915,pathway,Activation of PUMA and translocation to mitochondria,REACTOME
