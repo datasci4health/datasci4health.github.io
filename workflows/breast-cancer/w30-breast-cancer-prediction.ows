@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Breast Cancer Prediction" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Breast Cancer Wisconsin (Diagnostic)" position="(106.0, 191.33333333333337)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Target Select" position="(251.66666666666686, 191.6428571428571)" />
+		<node id="2" name="Data Sampler" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Data Sampler" position="(457.66666666666686, 192.6428571428571)" />
+		<node id="3" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(657.666666666667, 75.64285714285711)" />
+		<node id="4" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(875.666666666667, 196.6428571428571)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data Sample" sink_channel="Data" enabled="true" source_channel_id="data_sample" sink_channel_id="data" />
+		<link id="3" source_node_id="2" sink_node_id="4" source_channel="Remaining Data" sink_channel="Data" enabled="true" source_channel_id="remaining_data" sink_channel_id="data" />
+		<link id="4" source_node_id="3" sink_node_id="4" source_channel="Model" sink_channel="Predictors" enabled="true" source_channel_id="model" sink_channel_id="predictors" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(290.33333333333337, 269.08333333333337, 150.0, 140.0)" font-family="Ubuntu" font-size="16">Select columns used for training and configure the target column for prediction (diagnosis)</text>
+		<arrow id="1" start="(310.75, 261.9166666666667)" end="(284.9166666666667, 241.91666666666669)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(578.0, 275.0, 150.0, 26.0)" font-family="Ubuntu" font-size="16">Splits the training dataset (up) from the test dataset (straight).</text>
+		<arrow id="3" start="(577.0, 275.0)" end="(498.0, 225.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(814.0, 17.0, 150.0, 103.0)" font-family="Ubuntu" font-size="16">Logistic Regression is the method to predict the diagnosis.</text>
+		<arrow id="5" start="(799.0, 61.0)" end="(701.0, 68.0)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(933.0, 266.0, 259.0, 175.0)" font-family="Ubuntu" font-size="16">Uses Logistic Regression to predict the diagnosis. It present the result and performance indicators.</text>
+		<arrow id="7" start="(957.0, 258.0)" end="(911.0, 220.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'data/breast-cancer-wisconsin.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 2, 'value': 'Categorical'}, {'start': 2, 'stop': 32, 'value': 'Numeric'}, {'start': 32, 'stop': 33, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/workflows/breast-cancer/data', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01U\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVEgcAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADL
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAQAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwCaWSUSwOGlIwJYXZhaWxhYmxllEsAhpSMC3JhZGl1c19tZWFulEsC
+hpSMCWF0dHJpYnV0ZZRLAIaUjAx0ZXh0dXJlX21lYW6USwKGlGgZSwGGlIwOcGVyaW1ldGVyX21l
+YW6USwKGlGgZSwKGlIwJYXJlYV9tZWFulEsChpRoGUsDhpSMD3Ntb290aG5lc3NfbWVhbpRLAoaU
+aBlLBIaUjBBjb21wYWN0bmVzc19tZWFulEsChpRoGUsFhpSMDmNvbmNhdml0eV9tZWFulEsChpRo
+GUsGhpSME2NvbmNhdmUgcG9pbnRzX21lYW6USwKGlGgZSweGlIwNc3ltbWV0cnlfbWVhbpRLAoaU
+aBlLCIaUjBZmcmFjdGFsX2RpbWVuc2lvbl9tZWFulEsChpRoGUsJhpSMCXJhZGl1c19zZZRLAoaU
+aBlLCoaUjAp0ZXh0dXJlX3NllEsChpRoGUsLhpSMDHBlcmltZXRlcl9zZZRLAoaUaBlLDIaUjAdh
+cmVhX3NllEsChpRoGUsNhpSMDXNtb290aG5lc3Nfc2WUSwKGlGgZSw6GlIwOY29tcGFjdG5lc3Nf
+c2WUSwKGlGgZSw+GlIwMY29uY2F2aXR5X3NllEsChpRoGUsQhpSMEWNvbmNhdmUgcG9pbnRzX3Nl
+lEsChpRoGUsRhpSMC3N5bW1ldHJ5X3NllEsChpRoGUsShpSMFGZyYWN0YWxfZGltZW5zaW9uX3Nl
+lEsChpRoGUsThpSMDHJhZGl1c193b3JzdJRLAoaUaBlLFIaUjA10ZXh0dXJlX3dvcnN0lEsChpRo
+GUsVhpSMD3BlcmltZXRlcl93b3JzdJRLAoaUaBlLFoaUjAphcmVhX3dvcnN0lEsChpRoGUsXhpSM
+EHNtb290aG5lc3Nfd29yc3SUSwKGlGgZSxiGlIwRY29tcGFjdG5lc3Nfd29yc3SUSwKGlGgZSxmG
+lIwPY29uY2F2aXR5X3dvcnN0lEsChpRoGUsahpSMFGNvbmNhdmUgcG9pbnRzX3dvcnN0lEsChpRo
+GUsbhpSMDnN5bW1ldHJ5X3dvcnN0lEsChpRoGUschpSMF2ZyYWN0YWxfZGltZW5zaW9uX3dvcnN0
+lEsChpRoGUsdhpSMCWRpYWdub3Npc5RLAYaUjAVjbGFzc5RLAIaUdUr+////hpRoB0sBdYwKYXR0
+cmlidXRlc5R9lCiMCWRpYWdub3Npc5RLAYwLcmFkaXVzX21lYW6USwKMDHRleHR1cmVfbWVhbpRL
+AowOcGVyaW1ldGVyX21lYW6USwKMCWFyZWFfbWVhbpRLAowPc21vb3RobmVzc19tZWFulEsCjBBj
+b21wYWN0bmVzc19tZWFulEsCjA5jb25jYXZpdHlfbWVhbpRLAowTY29uY2F2ZSBwb2ludHNfbWVh
+bpRLAowNc3ltbWV0cnlfbWVhbpRLAowWZnJhY3RhbF9kaW1lbnNpb25fbWVhbpRLAowJcmFkaXVz
+X3NllEsCjAp0ZXh0dXJlX3NllEsCjAxwZXJpbWV0ZXJfc2WUSwKMB2FyZWFfc2WUSwKMDXNtb290
+aG5lc3Nfc2WUSwKMDmNvbXBhY3RuZXNzX3NllEsCjAxjb25jYXZpdHlfc2WUSwKMEWNvbmNhdmUg
+cG9pbnRzX3NllEsCjAtzeW1tZXRyeV9zZZRLAowUZnJhY3RhbF9kaW1lbnNpb25fc2WUSwKMDHJh
+ZGl1c193b3JzdJRLAowNdGV4dHVyZV93b3JzdJRLAowPcGVyaW1ldGVyX3dvcnN0lEsCjAphcmVh
+X3dvcnN0lEsCjBBzbW9vdGhuZXNzX3dvcnN0lEsCjBFjb21wYWN0bmVzc193b3JzdJRLAowPY29u
+Y2F2aXR5X3dvcnN0lEsCjBRjb25jYXZlIHBvaW50c193b3JzdJRLAowOc3ltbWV0cnlfd29yc3SU
+SwKMF2ZyYWN0YWxfZGltZW5zaW9uX3dvcnN0lEsCdYwFbWV0YXOUfZSMAmlklEsDc3ViYXUu
+</properties>
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03/\x00\x00\x01\x12\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="3" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x030\x00\x00\x01\\\x00\x00\x04;\x00\x00\x02\x8c\x00\x00\x030\x00\x00\x01\\\x00\x00\x04;\x00\x00\x02\x8c\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x030\x00\x00\x01\\\x00\x00\x04;\x00\x00\x02\x8c', '__version__': 2}</properties>
+		<properties node_id="4" format="pickle">gASV7wIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAABrAAAAlwAABxQAAAN8AAAAawAAALwAAAcUAAADfAAAAAEAAAAAB4AAAABr
+AAAAvAAABxQAAAN8lIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwQc2hvd19zY29yZV9oaW50c5R9lCiMBk1vZGVsX5SIjAZUcmFpbl+UiYwFVGVzdF+UiYwDTVNF
+lIiMAlIylIiMA0FVQ5SIjARSTVNFlIiMCVByZWNpc2lvbpSIjAZSZWNhbGyUiIwDTUFFlIiMAkYx
+lIiMAkNBlIiMF1ByZWNpc2lvblJlY2FsbEZTdXBwb3J0lIiMC1RhcmdldFNjb3JllIiMB0xvZ0xv
+c3OUiYwLU3BlY2lmaWNpdHmUiYwXTWF0dGhld3NDb3JyQ29lZmZpY2llbnSUiIwETUFQRZSIjAZD
+VlJNU0WUiYwPQ2x1c3RlcmluZ1Njb3JllIiMClNpbGhvdWV0dGWUiIwXQWRqdXN0ZWRNdXR1YWxJ
+bmZvU2NvcmWUiHVzjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5n
+ZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMF3Nob3dfcHJv
+YmFiaWxpdHlfZXJyb3JzlIiMD3Nob3dfcmVnX2Vycm9yc5RLAYwLc2hvd25fcHJvYnOUSwGMDHRh
+cmdldF9jbGFzc5SMFihBdmVyYWdlIG92ZXIgY2xhc3NlcymUaAd9lGghSwJ1jAdjbGFzc2VzlIwB
+QpSMAU2UhpR1YmgmKYGUfZQoaCl9lChoK4hoLEsBaC1LAGgujBYoQXZlcmFnZSBvdmVyIGNsYXNz
+ZXMplGgHfZRoIUsCdWgxKXViZXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

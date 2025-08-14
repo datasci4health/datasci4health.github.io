@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Breast Cancer Prediction" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Breast Cancer Wisconsin (Diagnostic)" position="(198.22222222222229, 351.33333333333337)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Target Select" position="(343.88888888888914, 351.6428571428571)" />
+		<node id="2" name="Data Sampler" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Data Sampler" position="(549.8888888888891, 352.6428571428571)" />
+		<node id="3" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(749.8888888888894, 235.6428571428571)" />
+		<node id="4" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(987.8888888888894, 815.531746031746)" />
+		<node id="5" name="Save Model" qualified_name="Orange.widgets.model.owsavemodel.OWSaveModel" project_name="Orange3" version="" title="Save Model" position="(965.666666666667, 236.64285714285705)" />
+		<node id="6" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Test Data" position="(894.5555555555558, 428.8650793650794)" />
+		<node id="7" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Load Teste Data" position="(589.6666666666665, 921.0873015873017)" />
+		<node id="8" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(792.3333333333331, 919.9761904761905)" />
+		<node id="9" name="Load Model" qualified_name="Orange.widgets.model.owloadmodel.OWLoadModel" project_name="Orange3" version="" title="Load Model" position="(788.9999999999997, 743.309523809524)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data Sample" sink_channel="Data" enabled="true" source_channel_id="data_sample" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="5" source_channel="Model" sink_channel="Model" enabled="true" source_channel_id="model" sink_channel_id="model" />
+		<link id="4" source_node_id="2" sink_node_id="6" source_channel="Data Sample" sink_channel="Data" enabled="true" source_channel_id="data_sample" sink_channel_id="data" />
+		<link id="5" source_node_id="7" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="9" sink_node_id="4" source_channel="Model" sink_channel="Predictors" enabled="true" source_channel_id="model" sink_channel_id="predictors" />
+		<link id="7" source_node_id="8" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(382.55555555555566, 429.08333333333337, 150.0, 140.0)" font-family="Ubuntu" font-size="16">Select columns used for training and configure the target column for prediction (diagnosis)</text>
+		<arrow id="1" start="(402.97222222222223, 421.9166666666667)" end="(377.1388888888889, 401.9166666666667)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(670.2222222222224, 435.0, 150.0, 85.0)" font-family="Ubuntu" font-size="16">Splits the training dataset (up) from the test dataset (straight).</text>
+		<arrow id="3" start="(669.2222222222224, 435.0)" end="(590.2222222222224, 385.0)" fill="#C1272D" />
+		<text id="4" type="text/markdown" rect="(866.2222222222223, 91.44444444444446, 150.0, 103.0)" font-family="Ubuntu" font-size="16">Logistic Regression is the method to predict the diagnosis.</text>
+		<arrow id="5" start="(860.1111111111115, 138.77777777777777)" end="(774.3333333333336, 203.5555555555555)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(1078.555555555556, 859.3333333333333, 259.0, 86.11111111111109)" font-family="Ubuntu" font-size="16">Uses the model (Logistic Regression) to predict the diagnosis. It present the result and performance indicators.</text>
+		<arrow id="7" start="(1074.777777777778, 864.6666666666667)" end="(1028.777777777778, 826.6666666666667)" fill="#C1272D" />
+		<text id="8" type="text/markdown" rect="(1145.8888888888896, 477.8888888888889, 192.0, 144.0)" font-family="Ubuntu" font-size="16">Save the model in the local drive
+
+## Model
+
+Load the model from the local drive</text>
+		<arrow id="9" start="(1180.1111111111113, 463.7777777777778)" end="(996.6666666666666, 256.66666666666663)" fill="#C1272D" />
+		<text id="10" type="text/markdown" rect="(545.3333333333334, 601.3333333333333, 391.1111111111113, 56.0)" font-family="Ubuntu" font-size="16"># Production Environment</text>
+		<text id="11" type="text/markdown" rect="(402.8888888888889, 23.444444444444443, 650.2222222222224, 47.000000000000014)" font-family="Ubuntu" font-size="16"># Development e Deployment Environment</text>
+		<arrow id="12" start="(1141.0, 598.0)" end="(833.0, 726.9999999999999)" fill="#C1272D" />
+		<text id="13" type="text/plain" rect="(566.0, 717.0, 150.0, 121.0)" font-family="Ubuntu" font-size="16">Select columns used for training and configure the target column for prediction (diagnosis)</text>
+		<arrow id="14" start="(679.0, 815.0)" end="(759.0, 879.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'data/breast-cancer-wisconsin.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 2, 'value': 'Categorical'}, {'start': 2, 'stop': 32, 'value': 'Numeric'}, {'start': 32, 'stop': 33, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/workflows/breast-cancer/data', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01U\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVEgcAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADL
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAQAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwCaWSUSwOGlIwJYXZhaWxhYmxllEsAhpSMC3JhZGl1c19tZWFulEsC
+hpSMCWF0dHJpYnV0ZZRLAIaUjAx0ZXh0dXJlX21lYW6USwKGlGgZSwGGlIwOcGVyaW1ldGVyX21l
+YW6USwKGlGgZSwKGlIwJYXJlYV9tZWFulEsChpRoGUsDhpSMD3Ntb290aG5lc3NfbWVhbpRLAoaU
+aBlLBIaUjBBjb21wYWN0bmVzc19tZWFulEsChpRoGUsFhpSMDmNvbmNhdml0eV9tZWFulEsChpRo
+GUsGhpSME2NvbmNhdmUgcG9pbnRzX21lYW6USwKGlGgZSweGlIwNc3ltbWV0cnlfbWVhbpRLAoaU
+aBlLCIaUjBZmcmFjdGFsX2RpbWVuc2lvbl9tZWFulEsChpRoGUsJhpSMCXJhZGl1c19zZZRLAoaU
+aBlLCoaUjAp0ZXh0dXJlX3NllEsChpRoGUsLhpSMDHBlcmltZXRlcl9zZZRLAoaUaBlLDIaUjAdh
+cmVhX3NllEsChpRoGUsNhpSMDXNtb290aG5lc3Nfc2WUSwKGlGgZSw6GlIwOY29tcGFjdG5lc3Nf
+c2WUSwKGlGgZSw+GlIwMY29uY2F2aXR5X3NllEsChpRoGUsQhpSMEWNvbmNhdmUgcG9pbnRzX3Nl
+lEsChpRoGUsRhpSMC3N5bW1ldHJ5X3NllEsChpRoGUsShpSMFGZyYWN0YWxfZGltZW5zaW9uX3Nl
+lEsChpRoGUsThpSMDHJhZGl1c193b3JzdJRLAoaUaBlLFIaUjA10ZXh0dXJlX3dvcnN0lEsChpRo
+GUsVhpSMD3BlcmltZXRlcl93b3JzdJRLAoaUaBlLFoaUjAphcmVhX3dvcnN0lEsChpRoGUsXhpSM
+EHNtb290aG5lc3Nfd29yc3SUSwKGlGgZSxiGlIwRY29tcGFjdG5lc3Nfd29yc3SUSwKGlGgZSxmG
+lIwPY29uY2F2aXR5X3dvcnN0lEsChpRoGUsahpSMFGNvbmNhdmUgcG9pbnRzX3dvcnN0lEsChpRo
+GUsbhpSMDnN5bW1ldHJ5X3dvcnN0lEsChpRoGUschpSMF2ZyYWN0YWxfZGltZW5zaW9uX3dvcnN0
+lEsChpRoGUsdhpSMCWRpYWdub3Npc5RLAYaUjAVjbGFzc5RLAIaUdUr+////hpRoB0sBdYwKYXR0
+cmlidXRlc5R9lCiMCWRpYWdub3Npc5RLAYwLcmFkaXVzX21lYW6USwKMDHRleHR1cmVfbWVhbpRL
+AowOcGVyaW1ldGVyX21lYW6USwKMCWFyZWFfbWVhbpRLAowPc21vb3RobmVzc19tZWFulEsCjBBj
+b21wYWN0bmVzc19tZWFulEsCjA5jb25jYXZpdHlfbWVhbpRLAowTY29uY2F2ZSBwb2ludHNfbWVh
+bpRLAowNc3ltbWV0cnlfbWVhbpRLAowWZnJhY3RhbF9kaW1lbnNpb25fbWVhbpRLAowJcmFkaXVz
+X3NllEsCjAp0ZXh0dXJlX3NllEsCjAxwZXJpbWV0ZXJfc2WUSwKMB2FyZWFfc2WUSwKMDXNtb290
+aG5lc3Nfc2WUSwKMDmNvbXBhY3RuZXNzX3NllEsCjAxjb25jYXZpdHlfc2WUSwKMEWNvbmNhdmUg
+cG9pbnRzX3NllEsCjAtzeW1tZXRyeV9zZZRLAowUZnJhY3RhbF9kaW1lbnNpb25fc2WUSwKMDHJh
+ZGl1c193b3JzdJRLAowNdGV4dHVyZV93b3JzdJRLAowPcGVyaW1ldGVyX3dvcnN0lEsCjAphcmVh
+X3dvcnN0lEsCjBBzbW9vdGhuZXNzX3dvcnN0lEsCjBFjb21wYWN0bmVzc193b3JzdJRLAowPY29u
+Y2F2aXR5X3dvcnN0lEsCjBRjb25jYXZlIHBvaW50c193b3JzdJRLAowOc3ltbWV0cnlfd29yc3SU
+SwKMF2ZyYWN0YWxfZGltZW5zaW9uX3dvcnN0lEsCdYwFbWV0YXOUfZSMAmlklEsDc3ViYXUu
+</properties>
+		<properties node_id="2" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 5, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 80, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03/\x00\x00\x01\x12\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03/\x00\x00\x017\x00\x00\x04P\x00\x00\x03\x00', 'selectedFold': 1, 'sql_dl': False, 'stratify': False, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="3" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x030\x00\x00\x01\\\x00\x00\x04;\x00\x00\x02\x8c\x00\x00\x030\x00\x00\x01\\\x00\x00\x04;\x00\x00\x02\x8c\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x030\x00\x00\x01\\\x00\x00\x04;\x00\x00\x02\x8c', '__version__': 2}</properties>
+		<properties node_id="4" format="pickle">gASVPAMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAABrAAAAvAAABxQAAAN8AAAAawAAALwAAAcUAAADfAAAAAEAAAAAB4AAAABr
+AAAAvAAABxQAAAN8lIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwQc2hvd19zY29yZV9oaW50c5R9lCiMBk1vZGVsX5SIjAZUcmFpbl+UiYwFVGVzdF+UiYwDTVNF
+lIiMAlIylIiMA0FVQ5SIjARSTVNFlIiMCVByZWNpc2lvbpSIjAZSZWNhbGyUiIwDTUFFlIiMAkYx
+lIiMAkNBlIiMF1ByZWNpc2lvblJlY2FsbEZTdXBwb3J0lIiMC1RhcmdldFNjb3JllIiMB0xvZ0xv
+c3OUiYwLU3BlY2lmaWNpdHmUiYwXTWF0dGhld3NDb3JyQ29lZmZpY2llbnSUiIwETUFQRZSIjAZD
+VlJNU0WUiYwPQ2x1c3RlcmluZ1Njb3JllIiMClNpbGhvdWV0dGWUiIwXQWRqdXN0ZWRNdXR1YWxJ
+bmZvU2NvcmWUiHVzjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5n
+ZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMF3Nob3dfcHJv
+YmFiaWxpdHlfZXJyb3JzlIiMD3Nob3dfcmVnX2Vycm9yc5RLAYwLc2hvd25fcHJvYnOUSwGMDHRh
+cmdldF9jbGFzc5SMFihBdmVyYWdlIG92ZXIgY2xhc3NlcymUaAd9lGghSwJ1jAdjbGFzc2VzlIwB
+QpSMAU2UhpR1YmgmKYGUfZQoaCl9lCiMF3Nob3dfcHJvYmFiaWxpdHlfZXJyb3JzlIiMD3Nob3df
+cmVnX2Vycm9yc5RLAYwLc2hvd25fcHJvYnOUSwCMDHRhcmdldF9jbGFzc5SMFihBdmVyYWdlIG92
+ZXIgY2xhc3NlcymUjAtzY29yZV90YWJsZZR9lGghSwJ1aDEpdWJldS4=
+</properties>
+		<properties node_id="5" format="literal">{'auto_save': False, 'controlAreaVisible': True, 'filter': 'Pickled model (*.pkcls)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x05\x1f\x00\x00\x02\x14\x00\x00\x06\xc9\x00\x00\x02\xad\x00\x00\x05\x1f\x00\x00\x029\x00\x00\x06\xc9\x00\x00\x02\xad\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x05\x1f\x00\x00\x029\x00\x00\x06\xc9\x00\x00\x02\xad', 'stored_name': 'breast-cancer-wisconsin(model).pkcls', 'stored_path': '.', '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x05)\x00\x00\x01;\x00\x00\x06\xb6\x00\x00\x01\xf3\x00\x00\x05)\x00\x00\x01`\x00\x00\x06\xb6\x00\x00\x01\xf3\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x05)\x00\x00\x01`\x00\x00\x06\xb6\x00\x00\x01\xf3', 'stored_name': 'breast-cancer-wisconsin(test).csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="7" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'breast-cancer-wisconsin(test).csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Categorical'}, {'start': 1, 'stop': 31, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/workflows/breast-cancer', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+		<properties node_id="8" format="pickle">gASVIAUAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAQsAAACk
+AAAGdAAAA5MAAAELAAAApAAABnQAAAOTAAAAAQAAAAAHgAAAAQsAAACkAAAGdAAAA5OUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwLcmFkaXVzX21lYW6USwKGlIwJYXR0cmlidXRllEsAhpSMDHRleHR1
+cmVfbWVhbpRLAoaUaBVLAYaUjA5wZXJpbWV0ZXJfbWVhbpRLAoaUaBVLAoaUjAlhcmVhX21lYW6U
+SwKGlGgVSwOGlIwPc21vb3RobmVzc19tZWFulEsChpRoFUsEhpSMEGNvbXBhY3RuZXNzX21lYW6U
+SwKGlGgVSwWGlIwOY29uY2F2aXR5X21lYW6USwKGlGgVSwaGlIwTY29uY2F2ZSBwb2ludHNfbWVh
+bpRLAoaUaBVLB4aUjA1zeW1tZXRyeV9tZWFulEsChpRoFUsIhpSMFmZyYWN0YWxfZGltZW5zaW9u
+X21lYW6USwKGlGgVSwmGlIwJcmFkaXVzX3NllEsChpRoFUsKhpSMCnRleHR1cmVfc2WUSwKGlGgV
+SwuGlIwMcGVyaW1ldGVyX3NllEsChpRoFUsMhpSMB2FyZWFfc2WUSwKGlGgVSw2GlIwNc21vb3Ro
+bmVzc19zZZRLAoaUaBVLDoaUjA5jb21wYWN0bmVzc19zZZRLAoaUaBVLD4aUjAxjb25jYXZpdHlf
+c2WUSwKGlGgVSxCGlIwRY29uY2F2ZSBwb2ludHNfc2WUSwKGlGgVSxGGlIwLc3ltbWV0cnlfc2WU
+SwKGlGgVSxKGlIwUZnJhY3RhbF9kaW1lbnNpb25fc2WUSwKGlGgVSxOGlIwMcmFkaXVzX3dvcnN0
+lEsChpRoFUsUhpSMDXRleHR1cmVfd29yc3SUSwKGlGgVSxWGlIwPcGVyaW1ldGVyX3dvcnN0lEsC
+hpRoFUsWhpSMCmFyZWFfd29yc3SUSwKGlGgVSxeGlIwQc21vb3RobmVzc193b3JzdJRLAoaUaBVL
+GIaUjBFjb21wYWN0bmVzc193b3JzdJRLAoaUaBVLGYaUjA9jb25jYXZpdHlfd29yc3SUSwKGlGgV
+SxqGlIwUY29uY2F2ZSBwb2ludHNfd29yc3SUSwKGlGgVSxuGlIwOc3ltbWV0cnlfd29yc3SUSwKG
+lGgVSxyGlIwXZnJhY3RhbF9kaW1lbnNpb25fd29yc3SUSwKGlGgVSx2GlIwJZGlhZ25vc2lzlEsB
+hpSMBWNsYXNzlEsAhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKGhuSwFoE0sCaBdLAmga
+SwJoHUsCaCBLAmgjSwJoJksCaClLAmgsSwJoL0sCaDJLAmg1SwJoOEsCaDtLAmg+SwJoQUsCaERL
+AmhHSwJoSksCaE1LAmhQSwJoU0sCaFZLAmhZSwJoXEsCaF9LAmhiSwJoZUsCaGhLAmhrSwJ1jAVt
+ZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="9" format="pickle">gASVpAEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZSMHm9y
+YW5nZXdpZGdldC51dGlscy5maWxlZGlhbG9nc5SMClJlY2VudFBhdGiUk5QpgZR9lCiMB2Fic3Bh
+dGiUjF8vaG9tZS9zYW50YW5jaGUvZ2l0L2RhdGFzY2k0aGVhbHRoL3dvcmtmbG93cy9icmVhc3Qt
+Y2FuY2VyL2JyZWFzdC1jYW5jZXItd2lzY29uc2luKG1vZGVsKS5wa2Nsc5SMBnByZWZpeJSMB2Jh
+c2VkaXKUjAdyZWxwYXRolIwkYnJlYXN0LWNhbmNlci13aXNjb25zaW4obW9kZWwpLnBrY2xzlIwF
+dGl0bGWUjACUjAVzaGVldJRoEIwLZmlsZV9mb3JtYXSUTnViYYwTc2F2ZWRXaWRnZXRHZW9tZXRy
+eZRDQgHZ0MsAAwAAAAACqQAAAiMAAATvAAACrAAAAqkAAAJIAAAE7wAAAqwAAAABAAAAAAeAAAAC
+qQAAAkgAAATvAAACrJSMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
