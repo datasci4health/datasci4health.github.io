@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(150, 150)" />
+		<node id="1" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script" position="(300.0000000000001, 150.71428571428572)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'topology-very-simple-edges.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/topology-very-simple', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xaf\x00\x00\x01x\x00\x00\x0b\xfa\x00\x00\x02\xbb\x00\x00\n\xaf\x00\x00\x01x\x00\x00\x0b\xfa\x00\x00\x02\xbb\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xaf\x00\x00\x01x\x00\x00\x0b\xfa\x00\x00\x02\xbb', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x00\x1b\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import networkx as nx\nfrom orangecontrib.network import Network\nimport numpy as np\n\nsources = [str(row[0]) for row in in_data]\ntargets = [str(row[1]) for row in in_data]\n\n# Create NetworkX graph\nG = nx.Graph()\nfor u, v in zip(sources, targets):\n    G.add_edge(u, v)\n\n# Get unique nodes\nnodes = list(G.nodes())\nnode_to_index = {node: i for i, node in enumerate(nodes)}\n\n# Create adjacency matrix\nn_nodes = len(nodes)\nadjacency_matrix = np.zeros((n_nodes, n_nodes))\n\nfor u, v in G.edges():\n    i, j = node_to_index[u], node_to_index[v]\n    adjacency_matrix[i, j] = 1\n    if not G.is_directed():  # For undirected graphs\n        adjacency_matrix[j, i] = 1\n\n# Create Orange Network\nnetwork = Network(adjacency_matrix, nodes)\n\n# Output for Orange\nout_network = network\n', 'filename': None}], 'scriptText': 'import networkx as nx\nfrom orangecontrib.network import Network  # this is the Orange Network class\n\n# Example: assume CSV has columns [source, target, weight]\nsources = [str(row[0]) for row in in_data]\ntargets = [str(row[1]) for row in in_data]\n\n# Build a weighted NetworkX graph\nG = nx.Graph()\nfor u, v in zip(sources, targets):\n    G.add_edge(u, v)\n\n# Convert NetworkX graph → Orange Network\nout_network = Network.from_networkx(G)\n', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xac\x00\x00\x00h\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

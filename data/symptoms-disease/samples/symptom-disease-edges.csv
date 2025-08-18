@@ -1,0 +1,13 @@
+disease,symptom,association
+Influenza,Fever,136
+Influenza,Headache,17
+Influenza,Fatigue,5
+Myocardial Infarction,Chest Pain,1005
+Myocardial Infarction,Fatigue,74
+Diabetes Complications,Obesity,126
+Diabetes Complications,Albuminuria,45
+Diabetes Complications,Acute Coronary Syndrome,19
+Diabetes Complications,Diarrhea,7
+Diabetes Complications,Fatigue,2
+Embolism,Chest Pain,4
+Embolism,Acute Coronary Syndrome,4
