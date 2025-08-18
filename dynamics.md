@@ -16,3 +16,6 @@ Executando Notebooks via Binder
 
 ## Aula Models and Tables
 [Slides](https://docs.google.com/presentation/d/1qSMNonyaJBdUvX7WfmeWtzMc3y1Zx0ZJN5Jv2EPgTX0/edit?usp=sharing)
+
+## Aula Networks and Graphs
+[Slides](https://docs.google.com/presentation/d/1W9FDeWCfeR3aAp1cHaHxjSlmzkylJaiL4uOquZABOKc/edit?usp=sharing)
