@@ -45,7 +45,7 @@ Nesta primeira entrega a equipe deve definir o problema de pesquisa que será ab
 
 # Equipes
 
-As equipes deverão ter 4 componentes (no mínimo 3) divididos igualmente metade exatas/computação (1 ou 2) e metade biologia/saúde (1 ou 2).
+As equipes deverão ter 6 componentes (no mínimo 5) se possível divididos cerca de dois biologia/saúde e quatro exatas/computação.
 
 
 # Papéis
