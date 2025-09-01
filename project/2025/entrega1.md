@@ -47,7 +47,6 @@ Nesta primeira entrega a equipe deve definir o problema de pesquisa que será ab
 
 As equipes deverão ter 6 componentes (no mínimo 5) se possível divididos cerca de 2 biologia/saúde e 4 exatas/computação.
 
-
 # Papéis
 
 O desenvolvimento do trabalho prevê papéis distintos para alunos de biologia e saúde e aqueles de computação e exatas. Cada aluno da equipe será avaliado conforme o seu papel dentro do trabalho, portanto as notas serão individuais dentro da equipe e poderão sofrer variações.
