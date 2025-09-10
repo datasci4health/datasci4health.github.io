@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Breast Cancer Differial Expression Analysis - Normal vs Luminal A" description="This workflow starts with data extracted from GEO (differential expression: Normal vs Luminal A), prepares them for STRING and CytoScape.">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Luminal A Differential Gene Expression" position="(74.375, 97.5)" />
+		<node id="1" name="GEO Preprocessor" qualified_name="orange3biosci.widgets.geo_preprocessor.OWGeoPreprocessor" project_name="orange-biosci" version="" title="GEO Preprocessor" position="(241.25, 96.875)" />
+		<node id="2" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique Gene.ID" position="(421.875, 97.75)" />
+		<node id="3" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter p-value &lt;= 0.001 and  (logFC &lt;= 3 or                                                                                                                          logFC &gt;= 3)" position="(575.75, 100.0)" />
+		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Cut only Gene.ID" position="(764.375, 91.5)" />
+		<node id="5" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save for STRING" position="(914.375, 91.5)" />
+		<node id="6" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Nodes for CytoScape" position="(774.375, 199.83333333333337)" />
+		<node id="7" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="STRING File Import" position="(84.87499999999989, 346.0)" />
+		<node id="8" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Physical (Experimental and Databases)" position="(234.8749999999999, 346.0)" />
+		<node id="9" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Extract only: origin, destination, and combined score" position="(427.3749999999998, 344.3333333333335)" />
+		<node id="10" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Edges for CytoScape" position="(599.875, 341.83333333333337)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="GEO Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Processed Data" sink_channel="Data" enabled="true" source_channel_id="processed_data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="3" sink_node_id="6" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="6" source_node_id="7" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="8" sink_node_id="9" source_channel="Unmatched Data" sink_channel="Data" enabled="true" source_channel_id="unmatched_data" sink_channel_id="data" />
+		<link id="8" source_node_id="9" sink_node_id="10" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<text id="0" type="text/markdown" rect="(1017.0, 175.0, 226.0, 48.0)" font-family="Ubuntu" font-size="16"># Nodes Traject</text>
+		<text id="1" type="text/markdown" rect="(1010.0, 336.0, 224.0, 47.0)" font-family="Ubuntu" font-size="16"># Edges Traject</text>
+		<arrow id="2" start="(1021.0, 201.0)" end="(858.0, 167.0)" fill="#C1272D" />
+		<arrow id="3" start="(1012.0, 363.0)" end="(684.0, 357.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'geo-full-table.tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Text'}, {'start': 1, 'stop': 6, 'value': 'Numeric'}, {'start': 6, 'stop': 9, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/breast-cancer/geo-subtypes/workflow', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xf9\x00\x00\x00\xc9\x00\x00\x04D\x00\x00\x021\x00\x00\x02\xf9\x00\x00\x00\xee\x00\x00\x04D\x00\x00\x021\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xf9\x00\x00\x00\xee\x00\x00\x04D\x00\x00\x021', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\\\x00\x00\x018\x00\x00\x05}\x00\x00\x03P\x00\x00\x02\\\x00\x00\x01]\x00\x00\x05}\x00\x00\x03P\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\\\x00\x00\x01]\x00\x00\x05}\x00\x00\x03P', 'select_first': 0, 'skip_empty_genes': True, 'split_delimiter': '///', '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVrAEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAy4AAAD9AAAEUQAAAxUAAAMuAAABIgAABFEAAAMV
+AAAAAQAAAAAHgAAAAy4AAAEiAAAEUQAAAxWUjAp0aWVicmVha2VylIwORmlyc3QgaW5zdGFuY2WU
+jAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRp
+bmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwNc2VsZWN0ZWRfdmFyc5RdlIwHR2Vu
+ZS5JRJRLZ4aUYUr9////hpRoB0sBdYwKYXR0cmlidXRlc5R9lCiMCWFkai5QLlZhbJRLAowHUC5W
+YWx1ZZRLAowBdJRLAowBQpRLAowFbG9nRkOUSwJ1jAVtZXRhc5R9lCiMAklElEsDjAtHZW5lLnN5
+bWJvbJRLA4wKR2VuZS50aXRsZZRLA4wHR2VuZS5JRJRLA3V1YmF1Lg==
+</properties>
+		<properties node_id="3" format="pickle">gASV9QEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAB+wAAASMAAAWEAAADFQAAAfsAAAEjAAAFhAAAAxUAAAABAAAAAAeAAAAB+wAAASMA
+AAWEAAADFZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQoKIwJYWRqLlAuVmFslEsCSwNdlEc/UGJN0vGp/GF0lCiMBWxv
+Z0ZDlEsCSwddlChHwAf/+sHSncdHQAf/+sHSncdldJRlaAhLAnWMCmF0dHJpYnV0ZXOUfZQojAlh
+ZGouUC5WYWyUSwKMB1AuVmFsdWWUSwKMAXSUSwKMAUKUSwKMBWxvZ0ZDlEsCdYwFbWV0YXOUfZQo
+jAJJRJRLA4wLR2VuZS5zeW1ib2yUSwOMCkdlbmUudGl0bGWUSwOMB0dlbmUuSUSUSwN1dWJhdS4=
+</properties>
+		<properties node_id="4" format="pickle">gASVaAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAhsAAADw
+AAAFZQAAA0cAAAIbAAAA8AAABWUAAANHAAAAAQAAAAAHgAAAAhsAAADwAAAFZQAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwHUC5WYWx1ZZRLAoaUjAlhdmFpbGFibGWUSwCGlIwBdJRLAoaUaBVL
+AYaUjAFClEsChpRoFUsChpSMCWFkai5QLlZhbJRLAoaUaBVLA4aUjAVsb2dGQ5RLAoaUaBVLBIaU
+jAJJRJRLA4aUaBVLBYaUjApHZW5lLnRpdGxllEsDhpRoFUsGhpSMC0dlbmUuc3ltYm9slEsDhpRo
+FUsHhpSMB0dlbmUuSUSUSwOGlIwEbWV0YZRLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRlc5R9
+lCiMCWFkai5QLlZhbJRLAowHUC5WYWx1ZZRLAmgXSwJoGksCjAVsb2dGQ5RLAnWMBW1ldGFzlH2U
+KIwCSUSUSwOMC0dlbmUuc3ltYm9slEsDjApHZW5lLnRpdGxllEsDjAdHZW5lLklElEsDdXViYXUu
+</properties>
+		<properties node_id="5" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\xc8\x00\x00\x01\xda\x00\x00\x05"\x00\x00\x02\x92\x00\x00\x03\xc8\x00\x00\x01\xff\x00\x00\x05"\x00\x00\x02\x92\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\xc8\x00\x00\x01\xff\x00\x00\x05"\x00\x00\x02\x92', 'stored_name': 'selected-genes-string.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="6" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x05\x00\x00\x01\xad\x00\x00\x04{\x00\x00\x02e\x00\x00\x03\x05\x00\x00\x01\xd2\x00\x00\x04{\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x05\x00\x00\x01\xd2\x00\x00\x04{\x00\x00\x02e', 'stored_name': 'selected-genes-cytoscape.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="7" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'string_interactions_short.tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Text'}, {'start': 4, 'stop': 13, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/breast-cancer/geo-subtypes/workflow', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xf9\x00\x00\x00\xee\x00\x00\x04D\x00\x00\x021\x00\x00\x02\xf9\x00\x00\x00\xee\x00\x00\x04D\x00\x00\x021\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xf9\x00\x00\x00\xee\x00\x00\x04D\x00\x00\x021', '__version__': 3}</properties>
+		<properties node_id="8" format="pickle">gASVxwIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAB+wAAASMAAAWEAAADFQAAAfsAAAEjAAAFhAAAAxUAAAABAAAAAAeAAAAB+wAAASMA
+AAWEAAADFZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQoKIwlZXhwZXJpbWVudGFsbHlfZGV0ZXJtaW5lZF9pbnRlcmFj
+dGlvbpRLAksAXZRHAAAAAAAAAABhdJQojBJkYXRhYmFzZV9hbm5vdGF0ZWSUSwJLAF2URwAAAAAA
+AAAAYXSUZWgISwJ1jAphdHRyaWJ1dGVzlH2UKIwabmVpZ2hib3Job29kX29uX2Nocm9tb3NvbWWU
+SwKMC2dlbmVfZnVzaW9ulEsCjBlwaHlsb2dlbmV0aWNfY29vY2N1cnJlbmNllEsCjAhob21vbG9n
+eZRLAowMY29leHByZXNzaW9ulEsCjCVleHBlcmltZW50YWxseV9kZXRlcm1pbmVkX2ludGVyYWN0
+aW9ulEsCjBJkYXRhYmFzZV9hbm5vdGF0ZWSUSwKMFGF1dG9tYXRlZF90ZXh0bWluaW5nlEsCjA5j
+b21iaW5lZF9zY29yZZRLAnWMBW1ldGFzlH2UKIwGI25vZGUxlEsDjAVub2RlMpRLA4wPbm9kZTFf
+c3RyaW5nX2lklEsDjA9ub2RlMl9zdHJpbmdfaWSUSwN1dWJhdS4=
+</properties>
+		<properties node_id="9" format="pickle">gASV/AMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAhsAAADL
+AAAFZQAAA0cAAAIbAAAA8AAABWUAAANHAAAAAQAAAAAHgAAAAhsAAADwAAAFZQAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwabmVpZ2hib3Job29kX29uX2Nocm9tb3NvbWWUSwKGlIwJYXZhaWxh
+YmxllEsAhpSMC2dlbmVfZnVzaW9ulEsChpRoFUsBhpSMGXBoeWxvZ2VuZXRpY19jb29jY3VycmVu
+Y2WUSwKGlGgVSwKGlIwIaG9tb2xvZ3mUSwKGlGgVSwOGlIwMY29leHByZXNzaW9ulEsChpRoFUsE
+hpSMJWV4cGVyaW1lbnRhbGx5X2RldGVybWluZWRfaW50ZXJhY3Rpb26USwKGlGgVSwWGlIwSZGF0
+YWJhc2VfYW5ub3RhdGVklEsChpRoFUsGhpSMFGF1dG9tYXRlZF90ZXh0bWluaW5nlEsChpRoFUsH
+hpSMDmNvbWJpbmVkX3Njb3JllEsChpSMCWF0dHJpYnV0ZZRLAIaUjAYjbm9kZTGUSwOGlIwEbWV0
+YZRLAIaUjAVub2RlMpRLA4aUaDJLAYaUjA9ub2RlMV9zdHJpbmdfaWSUSwOGlGgySwKGlIwPbm9k
+ZTJfc3RyaW5nX2lklEsDhpRoMksDhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKIwabmVp
+Z2hib3Job29kX29uX2Nocm9tb3NvbWWUSwKMC2dlbmVfZnVzaW9ulEsCjBlwaHlsb2dlbmV0aWNf
+Y29vY2N1cnJlbmNllEsCjAhob21vbG9neZRLAowMY29leHByZXNzaW9ulEsCjCVleHBlcmltZW50
+YWxseV9kZXRlcm1pbmVkX2ludGVyYWN0aW9ulEsCjBJkYXRhYmFzZV9hbm5vdGF0ZWSUSwKMFGF1
+dG9tYXRlZF90ZXh0bWluaW5nlEsCjA5jb21iaW5lZF9zY29yZZRLAnWMBW1ldGFzlH2UKIwGI25v
+ZGUxlEsDjAVub2RlMpRLA4wPbm9kZTFfc3RyaW5nX2lklEsDjA9ub2RlMl9zdHJpbmdfaWSUSwN1
+dWJhdS4=
+</properties>
+		<properties node_id="10" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xf0\x00\x00\x01\xd2\x00\x00\x04\x8f\x00\x00\x02e\x00\x00\x02\xf0\x00\x00\x01\xd2\x00\x00\x04\x8f\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x02\xf0\x00\x00\x01\xd2\x00\x00\x04\x8f\x00\x00\x02e', 'stored_name': 'selected-interactions-cytoscape.csv', 'stored_path': '.', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
