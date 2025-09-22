@@ -25,3 +25,6 @@ Gruosso, T., Mieulet, V., Cardon, M., Bourachot, B., Kieffer, Y., Devun, F., Dub
   * data treated on Orange Datamining
      * p-value 0.001 and logFC 3
      * physical sub-network (Experiments and Databases)
+* `soft`
+  * SOFT file download from (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45827)
+  * notebook to explore SOFT format
