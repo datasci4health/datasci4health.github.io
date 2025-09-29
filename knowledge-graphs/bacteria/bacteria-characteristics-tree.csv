@@ -1,0 +1,27 @@
+source,target
+S. aureus,Staphylococcus
+S. pyogenes,Streptococcus
+C. difficile,Clostridium
+B. anthracis,Bacillus
+L. monocytogenes,Listeria
+Staphylococcus,Gram-Positive Cocci
+Streptococcus,Gram-Positive Cocci
+Clostridium,Gram-Positive Bacilli
+Bacillus,Gram-Positive Bacilli
+Listeria,Gram-Positive Bacilli
+Gram-Positive Cocci,Gram-Positive Bacteria
+Gram-Positive Bacilli,Gram-Positive Bacteria
+Gram-Positive Bacteria,Bacteria
+E. coli,Escherichia
+P. aeruginosa,Pseudomonas
+S. typhi,Salmonella
+N. gonorrhoeae,Neisseria
+V. cholerae,Vibrio
+Escherichia,Gram-Negative Bacilli
+Pseudomonas,Gram-Negative Bacilli
+Salmonella,Gram-Negative Bacilli
+Vibrio,Gram-Negative Bacilli
+Neisseria,Gram-Negative Cocci
+Gram-Negative Bacilli,Gram-Negative Bacteria
+Gram-Negative Cocci,Gram-Negative Bacteria
+Gram-Negative Bacteria,Bacteria

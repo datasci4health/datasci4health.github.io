@@ -29,3 +29,6 @@ Thumbs.db
 
 # Orange
 .*.ows.swp.p
+
+# venv
+.venv/

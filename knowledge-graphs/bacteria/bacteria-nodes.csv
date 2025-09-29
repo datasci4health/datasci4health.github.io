@@ -1,0 +1,37 @@
+concept,type
+V. cholerae,taxonomy
+P. aeruginosa,taxonomy
+S. typhi,taxonomy
+E. coli,taxonomy
+Vibrio,taxonomy
+Pseudomonas,taxonomy
+Pseudomonadaceae,taxonomy
+Salmonella,taxonomy
+Escherichia,taxonomy
+Enterobacteriaceae,taxonomy
+Gammaproteobacteria,taxonomy
+N. gonorrhoeae,taxonomy
+Neisseria,taxonomy
+Betaproteobacteria,taxonomy
+Pseudomonadota,taxonomy
+S. aureus,taxonomy
+S. pyogenes,taxonomy
+C. difficile,taxonomy
+B. anthracis,taxonomy
+L. monocytogenes,taxonomy
+Staphylococcus,taxonomy
+Bacillus,taxonomy
+Bacillales,taxonomy
+Streptococcus,taxonomy
+Lactobacillales,taxonomy
+Listeria,taxonomy
+Listeriaceae,taxonomy
+Clostridium,taxonomy
+Bacilli,taxonomy
+Clostridia,taxonomy
+Bacillota,taxonomy
+Bacteria,taxonomy
+negative,stain
+positive,stain
+rod,shape
+coccus,shape

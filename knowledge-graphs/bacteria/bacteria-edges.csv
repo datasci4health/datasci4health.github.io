@@ -1,0 +1,43 @@
+resource,property,value
+V. cholerae,is-a,Vibrio
+P. aeruginosa,is-a,Pseudomonas
+S. typhi,is-a,Salmonella
+E. coli,is-a,Escherichia
+Vibrio,is-a,Gammaproteobacteria
+Pseudomonas,is-a,Pseudomonadaceae
+Pseudomonadaceae,is-a,Gammaproteobacteria
+Salmonella,is-a,Enterobacteriaceae
+Escherichia,is-a,Enterobacteriaceae
+Enterobacteriaceae,is-a,Gammaproteobacteria
+Gammaproteobacteria,is-a,Pseudomonadota
+N. gonorrhoeae,is-a,Neisseria
+Neisseria,is-a,Betaproteobacteria
+Betaproteobacteria,is-a,Pseudomonadota
+Pseudomonadota,gram-stain,negative
+V. cholerae,cell-shape,rod
+Enterobacteriaceae,cell-shape,rod
+Pseudomonadaceae,cell-shape,rod
+N. gonorrhoeae,cell-shape,coccus
+Pseudomonadota,is-a,Bacteria
+S. aureus,is-a,Staphylococcus
+S. pyogenes,is-a,Streptococcus
+C. difficile,is-a,Clostridium
+B. anthracis,is-a,Bacillus
+L. monocytogenes,is-a,Listeria
+Staphylococcus,is-a,Bacillales
+Bacillus,is-a,Bacillales
+Bacillales,is-a,Bacilli
+Streptococcus,is-a,Lactobacillales
+Lactobacillales,is-a,Bacilli
+Listeria,is-a,Listeriaceae
+Listeriaceae,is-a,Bacillales
+Clostridium,is-a,Clostridia
+Bacilli,is-a,Bacillota
+Clostridia,is-a,Bacillota
+Bacillota,gram-stain,positive
+Staphylococcus,cell-shape,coccus
+Streptococcus,cell-shape,coccus
+Clostridia,cell-shape,rod
+Bacillota,is-a,Bacteria
+Listeriaceae,cell-shape,rod
+Bacillus,cell-shape,rod
