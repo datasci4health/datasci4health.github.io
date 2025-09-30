@@ -17,7 +17,7 @@ A fim de uniformizar os repositórios de projetos da disciplina, os diretórios 
         └── slides  <- slides da prévia (em PDF)
 ~~~
 
-Na raiz da pasta `project1` deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
+Na raiz da pasta `project1` deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado a seguir.
 
 Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Há partes do modelo a seguir que têm uma marcação específica indicando que **não devem ser literalmente transcritas**:
 
