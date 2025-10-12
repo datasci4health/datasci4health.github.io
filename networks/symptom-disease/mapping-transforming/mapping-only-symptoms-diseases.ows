@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(150, 150)" />
+		<node id="1" name="Elements Pairing" qualified_name="orange3biosci.widgets.elements_pairing.OWElementsPairing" project_name="orange-biosci" version="" title="Elements Pairing" position="(300, 150)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(450, 150)" />
+		<node id="3" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(600, 150)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Paired Sources" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': '01-source-nature/symptom-disease(41467_2014_BFncomms5212_MOESM1045_ESM).tsv'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Text'}, {'start': 2, 'stop': 4, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/symptom-disease/mapping-transforming/01-source-nature', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xbd\x00\x00\x01\x99\x00\x00\x0c\x08\x00\x00\x03\x01\x00\x00\n\xbd\x00\x00\x01\xbe\x00\x00\x0c\x08\x00\x00\x03\x01\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xbd\x00\x00\x01\xbe\x00\x00\x0c\x08\x00\x00\x03\x01', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x0cJ\x00\x00\x00\xd8\x00\x00\r0\x00\x00\x02\xf0\x00\x00\x0cJ\x00\x00\x00\xfd\x00\x00\r0\x00\x00\x02\xf0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x0cJ\x00\x00\x00\xfd\x00\x00\r0\x00\x00\x02\xf0', 'source_column': 'MeSH Disease Term', 'target_column': 'MeSH Symptom Term', '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x0b\t\x00\x00\x00\xca\x00\x00\x0e\x8b\x00\x00\x02\x86\x00\x00\x0b\t\x00\x00\x00\xef\x00\x00\x0e\x8b\x00\x00\x02\x86\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x0b\t\x00\x00\x00\xef\x00\x00\x0e\x8b\x00\x00\x02\x86', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x0c\x94\x00\x00\x02\x19\x00\x00\r\xc5\x00\x00\x02\xd1\x00\x00\x0c\x94\x00\x00\x02&gt;\x00\x00\r\xc5\x00\x00\x02\xd1\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x0c\x94\x00\x00\x02&gt;\x00\x00\r\xc5\x00\x00\x02\xd1', 'stored_name': 'disease-disease.csv', 'stored_path': '20-disease-disease-orange', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
