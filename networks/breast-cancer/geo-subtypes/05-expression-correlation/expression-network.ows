@@ -8,7 +8,7 @@
 		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only Sample Expression with Entrez ID" position="(695.7058823529414, 237.3529411764706)" />
 		<node id="5" name="Transpose" qualified_name="Orange.widgets.data.owtranspose.OWTranspose" project_name="Orange3" version="" title="Transpose to Compute Correlation (Genes in the Columns)" position="(833.4705882352941, 235.99999999999994)" />
 		<node id="6" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique Entrez ID" position="(543.0, 228.0)" />
-		<node id="7" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter Correlation &gt; 0.5" position="(1138.636363636363, 236.63636363636363)" />
+		<node id="7" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter Correlation range -0.5 &lt;= or &gt;= 0.5" position="(1138.636363636363, 236.63636363636363)" />
 		<node id="8" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Edges (Source, Target, and Correlation)" position="(1490.6666666666665, 239.10526315789463)" />
 		<node id="9" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Entrez ID, Gene Symbol and Expression Mean" position="(703.2941176470588, 85.17647058823536)" />
 		<node id="10" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Nodes (ID, Symbol, and Expression Mean)" position="(867.2352941176473, 83.64705882352939)" />
@@ -35,7 +35,7 @@
 	</annotations>
 	<thumbnail />
 	<node_properties>
-		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'sample_substrings': 'Luminal A', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x08\xd2\x00\x00\x01\x10\x00\x00\x0eh\x00\x00\x03(\x00\x00\x08\xd2\x00\x00\x015\x00\x00\x0eh\x00\x00\x03(\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x08\xd2\x00\x00\x015\x00\x00\x0eh\x00\x00\x03(', 'soft_file_path': '/home/santanche/Documents/breast-cancer/GSE45827_family.soft', 'transform_log2': False, '__version__': 1}</properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'sample_substrings': 'Luminal A', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xf5\x00\x00\x01"\x00\x00\x06\x8b\x00\x00\x03\x15\x00\x00\x00\xf5\x00\x00\x01"\x00\x00\x06\x8b\x00\x00\x03\x15\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x00\xf5\x00\x00\x01"\x00\x00\x06\x8b\x00\x00\x03\x15', 'soft_file_path': '/home/santanche/Documents/breast-cancer/GSE45827_family.soft', 'transform_log2': False, '__version__': 1}</properties>
 		<properties node_id="1" format="pickle">gASVSAUAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
 V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACvgAAAFUAAAMQQAAA3EAAAr4AAABeQAADEEAAANx
 AAAAAAAAAAAHgAAACvgAAAF5AAAMQQAAA3GUjBBzZWxlY3Rpb25fbWV0aG9klEsAjAh2YXJfbmFt
@@ -230,8 +230,8 @@ aLVLAmi4SwJou0sCaL5LAmjBSwJoxEsCaMdLAmjKSwJozUsCaNBLAmjTSwJo1ksCaNlLAmjcSwJo
 30sCaOJLAmjlSwJo6EsCaOtLAmjuSwJo8UsCaPRLAmj3SwJo+ksCaP1LAmoAAQAASwJopEsCdWia
 fZQoaKhLA2oDAQAASwN1dWJldS4=
 </properties>
-		<properties node_id="5" format="pickle">gASVTAUAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
-V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACwAAAACrAAAMBQAAAccAAAsAAAAA0AAADAUAAAHH
+		<properties node_id="5" format="pickle">gASVmwUAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACwAAAADQAAAMBQAAAccAAAsAAAAA0AAADAUAAAHH
 AAAAAAAAAAAHgAAACwAAAADQAAAMBQAAAceUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0
 aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
 c5R9lCiMDGZlYXR1cmVfbmFtZZSMAJRK/v///4aUjBRmZWF0dXJlX25hbWVzX2NvbHVtbpSMCUVu
@@ -244,16 +244,18 @@ CkdTTTExMTYyMDiUSwKMCkdTTTExMTYyMDmUSwKMCkdTTTExMTYyMTOUSwKMCkdTTTExMTYyMTaU
 SwKMCkdTTTExMTYyMTeUSwKMCkdTTTExMTYyMjCUSwKMCkdTTTExMTYyMjGUSwKMCkdTTTExMTYy
 MjKUSwKMCkdTTTExMTYyMjOUSwKMCkdTTTExMTYyMjSUSwKMCkdTTTExMTYyMjWUSwKMCkdTTTEx
 MTYyMjiUSwKMCkdTTTExMTYyMzGUSwKMCkdTTTExMTYyMzKUSwKMCkdTTTExMTYyMzSUSwKMCkdT
-TTExMTYyMzWUSwJ1jAVtZXRhc5R9lIwJRW50cmV6IElElEsDc3ViaAopgZR9lChoDX2UKGgPaBBK
-/v///4aUaBJoE0tnhpRoFUsBSv7///+GlGgXiUr+////hpRoBUsBdWgZfZQojApHU00xMTE2MTgw
-lEsCjApHU00xMTE2MTgxlEsCjApHU00xMTE2MTg0lEsCjApHU00xMTE2MTg3lEsCjApHU00xMTE2
-MTkwlEsCjApHU00xMTE2MTkxlEsCjApHU00xMTE2MTk0lEsCjApHU00xMTE2MTk1lEsCjApHU00x
-MTE2MTk5lEsCjApHU00xMTE2MjAwlEsCjApHU00xMTE2MjAzlEsCjApHU00xMTE2MjA0lEsCjApH
-U00xMTE2MjA1lEsCjApHU00xMTE2MjA4lEsCjApHU00xMTE2MjA5lEsCjApHU00xMTE2MjEzlEsC
-jApHU00xMTE2MjE2lEsCjApHU00xMTE2MjE3lEsCjApHU00xMTE2MjIwlEsCjApHU00xMTE2MjIx
-lEsCjApHU00xMTE2MjIylEsCjApHU00xMTE2MjIzlEsCjApHU00xMTE2MjI0lEsCjApHU00xMTE2
-MjI1lEsCjApHU00xMTE2MjI4lEsCjApHU00xMTE2MjMxlEsCjApHU00xMTE2MjMylEsCjApHU00x
-MTE2MjM0lEsCjApHU00xMTE2MjM1lEsCdWg4fZQoaBNLA4wLR2VuZSBTeW1ib2yUSwN1dWJldS4=
+TTExMTYyMzWUSwJ1jAVtZXRhc5R9lIwJRW50cmV6IElElEsDc3ViaAopgZR9lChoDX2UKIwMZmVh
+dHVyZV9uYW1llGgQSv7///+GlIwUZmVhdHVyZV9uYW1lc19jb2x1bW6UjAlFbnRyZXogSUSUS2eG
+lIwMZmVhdHVyZV90eXBllEsBSv7///+GlIwVcmVtb3ZlX3JlZHVuZGFudF9pbnN0lIlK/v///4aU
+aAVLAXVoGX2UKIwKR1NNMTExNjE4MJRLAowKR1NNMTExNjE4MZRLAowKR1NNMTExNjE4NJRLAowK
+R1NNMTExNjE4N5RLAowKR1NNMTExNjE5MJRLAowKR1NNMTExNjE5MZRLAowKR1NNMTExNjE5NJRL
+AowKR1NNMTExNjE5NZRLAowKR1NNMTExNjE5OZRLAowKR1NNMTExNjIwMJRLAowKR1NNMTExNjIw
+M5RLAowKR1NNMTExNjIwNJRLAowKR1NNMTExNjIwNZRLAowKR1NNMTExNjIwOJRLAowKR1NNMTEx
+NjIwOZRLAowKR1NNMTExNjIxM5RLAowKR1NNMTExNjIxNpRLAowKR1NNMTExNjIxN5RLAowKR1NN
+MTExNjIyMJRLAowKR1NNMTExNjIyMZRLAowKR1NNMTExNjIyMpRLAowKR1NNMTExNjIyM5RLAowK
+R1NNMTExNjIyNJRLAowKR1NNMTExNjIyNZRLAowKR1NNMTExNjIyOJRLAowKR1NNMTExNjIzMZRL
+AowKR1NNMTExNjIzMpRLAowKR1NNMTExNjIzNJRLAowKR1NNMTExNjIzNZRLAnVoOH2UKGhBSwOM
+C0dlbmUgU3ltYm9slEsDdXViZXUu
 </properties>
 		<properties node_id="6" format="pickle">gASVBAYAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
 V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACmgAAAHsAAALiwAAA98AAApoAAAB7AAAC4sAAAPf
@@ -284,14 +286,15 @@ RUsCaEZLAmhHSwJoSEsCaElLAmhKSwJoS0sCaExLAmhNSwJoTksCaE9LAmhQSwJoUUsCaFJLAmhT
 SwJoVEsCaFVLAmhWSwJoV0sCaFhLAmhZSwJoWksCaFtLAmhcSwJoXUsCaF5LAmhfSwJoYEsCdWg2
 fZRoQEsDc3ViZXUu
 </properties>
-		<properties node_id="7" format="pickle">gASVtQEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+		<properties node_id="7" format="pickle">gASVvwEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
 ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
-0MsAAwAAAAAKIwAAAVcAAA2sAAADSQAACiMAAAFXAAANrAAAA0kAAAAAAAAAAAeAAAAKIwAAAVcA
-AA2sAAADSZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+0MsAAwAAAAAB+wAAAP4AAAWEAAADFQAAAfsAAAEjAAAFhAAAAxUAAAABAAAAAAeAAAAB+wAAASMA
+AAWEAAADFZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
 dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
-c5R9lCiMCmNvbmRpdGlvbnOUXZQojAtDb3JyZWxhdGlvbpRLAksFXZRHP+AAAAAAAABhdJRhaAhL
-AnWMCmF0dHJpYnV0ZXOUfZQojAtDb3JyZWxhdGlvbpRLAowNdW5jb3JyZWN0ZWQgcJRLAowDRkRS
-lEsCdYwFbWV0YXOUfZQojAlGZWF0dXJlIDGUSwOMCUZlYXR1cmUgMpRLA3V1YmF1Lg==
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojAtDb3JyZWxhdGlvbpRLAksHXZQoR7/f//vOQhfTRz/f//vO
+QhfTZXSUYWgISwJ1jAphdHRyaWJ1dGVzlH2UKIwLQ29ycmVsYXRpb26USwKMDXVuY29ycmVjdGVk
+IHCUSwKMA0ZEUpRLAnWMBW1ldGFzlH2UKIwJRmVhdHVyZSAxlEsDjAlGZWF0dXJlIDKUSwN1dWJh
+dS4=
 </properties>
 		<properties node_id="8" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x0b\xa2\x00\x00\x02/\x00\x00\r\x15\x00\x00\x02\xc2\x00\x00\x0b\xa2\x00\x00\x02/\x00\x00\r\x15\x00\x00\x02\xc2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x0b\xa2\x00\x00\x02/\x00\x00\r\x15\x00\x00\x02\xc2', 'stored_name': 'edges-genes-correlations.csv', 'stored_path': '/home/santanche/git/datasci4health/networks/breast-cancer/geo-subtypes/05-expression-correlation', '__version__': 3}</properties>
 		<properties node_id="9" format="pickle">gASV/AkAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
