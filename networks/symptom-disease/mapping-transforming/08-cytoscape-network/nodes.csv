@@ -1,0 +1,564 @@
+Node ID,Node Description,Node Type
+Aging__Premature,"Aging, Premature",symptom
+Asthenia,Asthenia,symptom
+Fever,Fever,symptom
+Fever_of_Unknown_Origin,Fever of Unknown Origin,symptom
+Hypothermia,Hypothermia,symptom
+Body_Weight,Body Weight,symptom
+Birth_Weight,Birth Weight,symptom
+Fetal_Macrosomia,Fetal Macrosomia,symptom
+Body_Weight_Changes,Body Weight Changes,symptom
+Weight_Gain,Weight Gain,symptom
+Weight_Loss,Weight Loss,symptom
+Emaciation,Emaciation,symptom
+Cachexia,Cachexia,symptom
+Fetal_Weight,Fetal Weight,symptom
+Overweight,Overweight,symptom
+Obesity,Obesity,symptom
+Obesity__Morbid,"Obesity, Morbid",symptom
+Thinness,Thinness,symptom
+Cardiac_Output__High,"Cardiac Output, High",symptom
+Cardiac_Output__Low,"Cardiac Output, Low",symptom
+Chills,Chills,symptom
+Cyanosis,Cyanosis,symptom
+Edema,Edema,symptom
+Edema__Cardiac,"Edema, Cardiac",symptom
+Hydrops_Fetalis,Hydrops Fetalis,symptom
+Eye_Manifestations,Eye Manifestations,symptom
+Eye_Hemorrhage,Eye Hemorrhage,symptom
+Fatigue,Fatigue,symptom
+Mental_Fatigue,Mental Fatigue,symptom
+Feminization,Feminization,symptom
+Fetal_Distress,Fetal Distress,symptom
+Flushing,Flushing,symptom
+Heart_Murmurs,Heart Murmurs,symptom
+Hot_Flashes,Hot Flashes,symptom
+Hypergammaglobulinemia,Hypergammaglobulinemia,symptom
+Intermittent_Claudication,Intermittent Claudication,symptom
+Mobility_Limitation,Mobility Limitation,symptom
+Motion_Sickness,Motion Sickness,symptom
+Neurologic_Manifestations,Neurologic Manifestations,symptom
+Cerebrospinal_Fluid_Otorrhea,Cerebrospinal Fluid Otorrhea,symptom
+Cerebrospinal_Fluid_Rhinorrhea,Cerebrospinal Fluid Rhinorrhea,symptom
+Decerebrate_State,Decerebrate State,symptom
+Dyskinesias,Dyskinesias,symptom
+Ataxia,Ataxia,symptom
+Cerebellar_Ataxia,Cerebellar Ataxia,symptom
+Gait_Ataxia,Gait Ataxia,symptom
+Athetosis,Athetosis,symptom
+Chorea,Chorea,symptom
+Dystonia,Dystonia,symptom
+Torticollis,Torticollis,symptom
+Hyperkinesis,Hyperkinesis,symptom
+Hypokinesia,Hypokinesia,symptom
+Myoclonus,Myoclonus,symptom
+Psychomotor_Agitation,Psychomotor Agitation,symptom
+Akathisia__Drug-Induced,"Akathisia, Drug-Induced",symptom
+Tremor,Tremor,symptom
+Gait_Disorders__Neurologic,"Gait Disorders, Neurologic",symptom
+Gait_Apraxia,Gait Apraxia,symptom
+Meningism,Meningism,symptom
+Neurobehavioral_Manifestations,Neurobehavioral Manifestations,symptom
+Apraxias,Apraxias,symptom
+Catatonia,Catatonia,symptom
+Language_Disorders,Language Disorders,symptom
+Agraphia,Agraphia,symptom
+Anomia,Anomia,symptom
+Dyslexia,Dyslexia,symptom
+Dyslexia__Acquired,"Dyslexia, Acquired",symptom
+Alexia__Pure,"Alexia, Pure",symptom
+Language_Development_Disorders,Language Development Disorders,symptom
+Speech_Disorders,Speech Disorders,symptom
+Aphasia,Aphasia,symptom
+Aphasia__Broca,"Aphasia, Broca",symptom
+Aphasia__Wernicke,"Aphasia, Wernicke",symptom
+Articulation_Disorders,Articulation Disorders,symptom
+Dysarthria,Dysarthria,symptom
+Echolalia,Echolalia,symptom
+Mutism,Mutism,symptom
+Stuttering,Stuttering,symptom
+Learning_Disorders,Learning Disorders,symptom
+Confusion,Confusion,symptom
+Delirium,Delirium,symptom
+Consciousness_Disorders,Consciousness Disorders,symptom
+Unconsciousness,Unconsciousness,symptom
+Coma,Coma,symptom
+Persistent_Vegetative_State,Persistent Vegetative State,symptom
+Stupor,Stupor,symptom
+Syncope,Syncope,symptom
+Syncope__Vasovagal,"Syncope, Vasovagal",symptom
+Lethargy,Lethargy,symptom
+Memory_Disorders,Memory Disorders,symptom
+Amnesia,Amnesia,symptom
+Amnesia__Anterograde,"Amnesia, Anterograde",symptom
+Amnesia__Retrograde,"Amnesia, Retrograde",symptom
+Amnesia__Transient_Global,"Amnesia, Transient Global",symptom
+Korsakoff_Syndrome,Korsakoff Syndrome,symptom
+Mental_Retardation,Mental Retardation,symptom
+Perceptual_Disorders,Perceptual Disorders,symptom
+Agnosia,Agnosia,symptom
+Gerstmann_Syndrome,Gerstmann Syndrome,symptom
+Auditory_Perceptual_Disorders,Auditory Perceptual Disorders,symptom
+Hallucinations,Hallucinations,symptom
+Illusions,Illusions,symptom
+Phantom_Limb,Phantom Limb,symptom
+Psychomotor_Disorders,Psychomotor Disorders,symptom
+Apraxia__Ideomotor,"Apraxia, Ideomotor",symptom
+Fasciculation,Fasciculation,symptom
+Muscle_Cramp,Muscle Cramp,symptom
+Muscle_Hypertonia,Muscle Hypertonia,symptom
+Muscle_Rigidity,Muscle Rigidity,symptom
+Muscle_Spasticity,Muscle Spasticity,symptom
+Muscle_Hypotonia,Muscle Hypotonia,symptom
+Muscle_Weakness,Muscle Weakness,symptom
+Muscular_Atrophy,Muscular Atrophy,symptom
+Sarcopenia,Sarcopenia,symptom
+Myokymia,Myokymia,symptom
+Myotonia,Myotonia,symptom
+Spasm,Spasm,symptom
+Hemifacial_Spasm,Hemifacial Spasm,symptom
+Trismus,Trismus,symptom
+Tetany,Tetany,symptom
+Pain,Pain,symptom
+Back_Pain,Back Pain,symptom
+Low_Back_Pain,Low Back Pain,symptom
+Facial_Pain,Facial Pain,symptom
+Headache,Headache,symptom
+Neck_Pain,Neck Pain,symptom
+Neuralgia,Neuralgia,symptom
+Neuralgia__Postherpetic,"Neuralgia, Postherpetic",symptom
+Sciatica,Sciatica,symptom
+Pain__Intractable,"Pain, Intractable",symptom
+Pain__Referred,"Pain, Referred",symptom
+Paralysis,Paralysis,symptom
+Facial_Paralysis,Facial Paralysis,symptom
+Gastroparesis,Gastroparesis,symptom
+Hemiplegia,Hemiplegia,symptom
+Ophthalmoplegia,Ophthalmoplegia,symptom
+Supranuclear_Palsy__Progressive,"Supranuclear Palsy, Progressive",symptom
+Paraplegia,Paraplegia,symptom
+Brown-Sequard_Syndrome,Brown-Sequard Syndrome,symptom
+Quadriplegia,Quadriplegia,symptom
+Respiratory_Paralysis,Respiratory Paralysis,symptom
+Vocal_Cord_Paralysis,Vocal Cord Paralysis,symptom
+Paresis,Paresis,symptom
+Paraparesis,Paraparesis,symptom
+Paraparesis__Spastic,"Paraparesis, Spastic",symptom
+Psychophysiologic_Disorders,Psychophysiologic Disorders,symptom
+Pupil_Disorders,Pupil Disorders,symptom
+Miosis,Miosis,symptom
+Horner_Syndrome,Horner Syndrome,symptom
+Tonic_Pupil,Tonic Pupil,symptom
+Reflex__Abnormal,"Reflex, Abnormal",symptom
+Reflex__Babinski,"Reflex, Babinski",symptom
+Seizures,Seizures,symptom
+Sensation_Disorders,Sensation Disorders,symptom
+Dizziness,Dizziness,symptom
+Hearing_Disorders,Hearing Disorders,symptom
+Hearing_Loss,Hearing Loss,symptom
+Deafness,Deafness,symptom
+Hearing_Loss__Bilateral,"Hearing Loss, Bilateral",symptom
+Hearing_Loss__Conductive,"Hearing Loss, Conductive",symptom
+Hearing_Loss__Functional,"Hearing Loss, Functional",symptom
+Hearing_Loss__High-Frequency,"Hearing Loss, High-Frequency",symptom
+Hearing_Loss__Sensorineural,"Hearing Loss, Sensorineural",symptom
+Hearing_Loss__Central,"Hearing Loss, Central",symptom
+Hearing_Loss__Sudden,"Hearing Loss, Sudden",symptom
+Hearing_Loss__Unilateral,"Hearing Loss, Unilateral",symptom
+Tinnitus,Tinnitus,symptom
+Olfaction_Disorders,Olfaction Disorders,symptom
+Somatosensory_Disorders,Somatosensory Disorders,symptom
+Hyperalgesia,Hyperalgesia,symptom
+Hyperesthesia,Hyperesthesia,symptom
+Hypesthesia,Hypesthesia,symptom
+Paresthesia,Paresthesia,symptom
+Taste_Disorders,Taste Disorders,symptom
+Ageusia,Ageusia,symptom
+Dysgeusia,Dysgeusia,symptom
+Vision_Disorders,Vision Disorders,symptom
+Amblyopia,Amblyopia,symptom
+Blindness,Blindness,symptom
+Amaurosis_Fugax,Amaurosis Fugax,symptom
+Blindness__Cortical,"Blindness, Cortical",symptom
+Color_Vision_Defects,Color Vision Defects,symptom
+Diplopia,Diplopia,symptom
+Hemianopsia,Hemianopsia,symptom
+Photophobia,Photophobia,symptom
+Scotoma,Scotoma,symptom
+Vision__Low,"Vision, Low",symptom
+Sleep_Disorders,Sleep Disorders,symptom
+Sleep_Deprivation,Sleep Deprivation,symptom
+Urinary_Bladder__Neurogenic,"Urinary Bladder, Neurogenic",symptom
+Vertigo,Vertigo,symptom
+Voice_Disorders,Voice Disorders,symptom
+Aphonia,Aphonia,symptom
+Dysphonia,Dysphonia,symptom
+Hoarseness,Hoarseness,symptom
+Oral_Manifestations,Oral Manifestations,symptom
+Oral_Hemorrhage,Oral Hemorrhage,symptom
+Abdominal_Pain,Abdominal Pain,symptom
+Abdomen__Acute,"Abdomen, Acute",symptom
+Colic,Colic,symptom
+Arthralgia,Arthralgia,symptom
+Shoulder_Pain,Shoulder Pain,symptom
+Chest_Pain,Chest Pain,symptom
+Angina_Pectoris,Angina Pectoris,symptom
+Acute_Coronary_Syndrome,Acute Coronary Syndrome,symptom
+Angina__Unstable,"Angina, Unstable",symptom
+Angina_Pectoris__Variant,"Angina Pectoris, Variant",symptom
+Earache,Earache,symptom
+Toothache,Toothache,symptom
+Flank_Pain,Flank Pain,symptom
+Glossalgia,Glossalgia,symptom
+Pain__Postoperative,"Pain, Postoperative",symptom
+Pelvic_Pain,Pelvic Pain,symptom
+Dysmenorrhea,Dysmenorrhea,symptom
+Reticulocytosis,Reticulocytosis,symptom
+Aerophagy,Aerophagy,symptom
+Anorexia,Anorexia,symptom
+Constipation,Constipation,symptom
+Diarrhea,Diarrhea,symptom
+Diarrhea__Infantile,"Diarrhea, Infantile",symptom
+Dyspepsia,Dyspepsia,symptom
+Eructation,Eructation,symptom
+Flatulence,Flatulence,symptom
+Gagging,Gagging,symptom
+Halitosis,Halitosis,symptom
+Heartburn,Heartburn,symptom
+Hiccup,Hiccup,symptom
+Hyperphagia,Hyperphagia,symptom
+Bulimia,Bulimia,symptom
+Nausea,Nausea,symptom
+Postoperative_Nausea_and_Vomiting,Postoperative Nausea and Vomiting,symptom
+Vomiting,Vomiting,symptom
+Hematemesis,Hematemesis,symptom
+Hyperemesis_Gravidarum,Hyperemesis Gravidarum,symptom
+Vomiting__Anticipatory,"Vomiting, Anticipatory",symptom
+Anoxia,Anoxia,symptom
+Apnea,Apnea,symptom
+Cough,Cough,symptom
+Dyspnea,Dyspnea,symptom
+Dyspnea__Paroxysmal,"Dyspnea, Paroxysmal",symptom
+Hemoptysis,Hemoptysis,symptom
+Hypercapnia,Hypercapnia,symptom
+Hyperoxia,Hyperoxia,symptom
+Hyperventilation,Hyperventilation,symptom
+Hypocapnia,Hypocapnia,symptom
+Hypoventilation,Hypoventilation,symptom
+Mouth_Breathing,Mouth Breathing,symptom
+Respiratory_Aspiration,Respiratory Aspiration,symptom
+Respiratory_Sounds,Respiratory Sounds,symptom
+Snoring,Snoring,symptom
+Skin_Manifestations,Skin Manifestations,symptom
+Cafe-au-Lait_Spots,Cafe-au-Lait Spots,symptom
+Ecchymosis,Ecchymosis,symptom
+Jaundice,Jaundice,symptom
+Jaundice__Obstructive,"Jaundice, Obstructive",symptom
+Livedo_Reticularis,Livedo Reticularis,symptom
+Necrolytic_Migratory_Erythema,Necrolytic Migratory Erythema,symptom
+Pallor,Pallor,symptom
+Pruritus,Pruritus,symptom
+Purpura,Purpura,symptom
+Purpura_Fulminans,Purpura Fulminans,symptom
+Purpura__Hyperglobulinemic,"Purpura, Hyperglobulinemic",symptom
+Purpura__Schoenlein-Henoch,"Purpura, Schoenlein-Henoch",symptom
+Purpura__Thrombocytopenic,"Purpura, Thrombocytopenic",symptom
+Purpura__Thrombocytopenic__Idiopathic,"Purpura, Thrombocytopenic, Idiopathic",symptom
+Purpura__Thrombotic_Thrombocytopenic,"Purpura, Thrombotic Thrombocytopenic",symptom
+Waterhouse-Friderichsen_Syndrome,Waterhouse-Friderichsen Syndrome,symptom
+Striae_Distensae,Striae Distensae,symptom
+Dysuria,Dysuria,symptom
+Hypercalciuria,Hypercalciuria,symptom
+Nocturia,Nocturia,symptom
+Oliguria,Oliguria,symptom
+Polyuria,Polyuria,symptom
+Prostatism,Prostatism,symptom
+Proteinuria,Proteinuria,symptom
+Albuminuria,Albuminuria,symptom
+Hemoglobinuria,Hemoglobinuria,symptom
+Urinary_Bladder__Overactive,"Urinary Bladder, Overactive",symptom
+Urinary_Incontinence,Urinary Incontinence,symptom
+Urinary_Incontinence__Stress,"Urinary Incontinence, Stress",symptom
+Urinary_Incontinence__Urge,"Urinary Incontinence, Urge",symptom
+Urinoma,Urinoma,symptom
+Virilism,Virilism,symptom
+Hirsutism,Hirsutism,symptom
+MESH:D015464,"Leukemia, Myelogenous, Chronic, BCR-ABL Positive",disease
+MESH:D018860,Sneddon Syndrome,disease
+MESH:C535729,Dyschromatosis symmetrica hereditaria 1,disease
+MESH:C535607,Aicardi-Goutieres syndrome,disease
+MESH:C562618,"Porphyria, Acute Hepatic",disease
+MESH:D015179,Colorectal Neoplasms,disease
+MESH:C535944,"Desmoid disease, hereditary",disease
+MESH:D013274,Stomach Neoplasms,disease
+MESH:D011125,Adenomatous Polyposis Coli,disease
+MESH:D006528,"Carcinoma, Hepatocellular",disease
+MESH:D054429,"Leukemia, Myelomonocytic, Juvenile",disease
+MESH:D009190,Myelodysplastic Syndromes,disease
+MESH:C537419,Bohring syndrome,disease
+MESH:D001943,Breast Neoplasms,disease
+MESH:D001260,Ataxia Telangiectasia,disease
+MESH:C563023,Alpha-Thalassemia Myelodysplasia Syndrome,disease
+MESH:C538258,ATR-X syndrome,disease
+MESH:C537457,"Mental retardation-hypotonic facies syndrome, x-linked, 1",disease
+MESH:D054198,Precursor Cell Lymphoblastic Leukemia-Lymphoma,disease
+MESH:D001816,Bloom Syndrome,disease
+MESH:D009634,Noonan Syndrome,disease
+MESH:D008175,Lung Neoplasms,disease
+MESH:D000096142,"Melanoma, Cutaneous Malignant",disease
+MESH:C535579,Cardiofaciocutaneous syndrome,disease
+MESH:D010190,Pancreatic Neoplasms,disease
+MESH:D008527,Medulloblastoma,disease
+MESH:C563980,"Fanconi Anemia, Complementation Group D1",disease
+MESH:D009396,Wilms Tumor,disease
+MESH:D011471,Prostatic Neoplasms,disease
+MESH:D005910,Glioma,disease
+MESH:C536987,Mosaic variegated aneuploidy syndrome,disease
+MESH:D055728,Primary Myelofibrosis,disease
+MESH:D013922,Thrombocytosis,disease
+MESH:C563985,Melanoma-Pancreatic Cancer Syndrome,disease
+MESH:C536149,Melanoma astrocytoma syndrome,disease
+MESH:D015470,"Leukemia, Myeloid, Acute",disease
+MESH:C563755,Li-Fraumeni Syndrome 2,disease
+MESH:D012516,Osteosarcoma,disease
+MESH:D012415,Rubinstein-Taybi Syndrome,disease
+MESH:D019871,Dyskeratosis Congenita,disease
+MESH:D000081003,Shwachman-Diamond Syndrome,disease
+MESH:D000080984,Congenital Bone Marrow Failure Syndromes,disease
+MESH:D012779,Short Rib-Polydactyly Syndrome,disease
+MESH:C536227,Cyclic neutropenia,disease
+MESH:C565969,"Neutropenia, Severe Congenital, Autosomal Dominant 1",disease
+MESH:C537394,Neuronal intestinal pseudoobstruction,disease
+MESH:C564369,Lethal Congenital Contracture Syndrome 2,disease
+MESH:C536695,Weyers acrofacial dysostosis,disease
+MESH:D004613,Ellis-Van Creveld Syndrome,disease
+MESH:C567691,"Factor Xiii, A Subunit, Deficiency Of",disease
+MESH:D019851,Thrombophilia,disease
+MESH:C567688,"Factor XIII, B Subunit, Deficiency Of",disease
+MESH:D005199,Fanconi Anemia,disease
+MESH:C563551,"Myeloproliferative Syndrome, Transient",disease
+MESH:C564050,"Thrombocytopenia, Platelet Dysfunction, Hemolysis, and Imbalanced Globin Synthesis",disease
+MESH:C567748,"Neutropenia, Severe Congenital, Autosomal Dominant 2",disease
+MESH:C564320,"Neutropenia, Nonimmune Chronic Idiopathic, Adult",disease
+MESH:C537592,"Neutropenia, Severe Congenital, Autosomal Recessive 3",disease
+MESH:C537343,Singleton Merten syndrome,disease
+MESH:D017074,Common Variable Immunodeficiency,disease
+MESH:C536842,"Polycythemia, primary familial and congenital",disease
+MESH:D006502,Budd-Chiari Syndrome,disease
+MESH:D011087,Polycythemia Vera,disease
+MESH:C563236,Testicular Germ Cell Tumor,disease
+MESH:D008415,Mastocytosis,disease
+MESH:D016116,Piebaldism,disease
+MESH:D046152,Gastrointestinal Stromal Tumors,disease
+MESH:D001749,Urinary Bladder Neoplasms,disease
+MESH:C537847,Noonan syndrome 3,disease
+MESH:D002538,Intracranial Arteriovenous Malformations,disease
+MESH:D054000,"Nevus, Sebaceous of Jadassohn",disease
+MESH:C564694,LIG4 Syndrome,disease
+MESH:D009101,Multiple Myeloma,disease
+MESH:C536641,Schwannomatosis,disease
+MESH:C548081,Noonan Syndrome 2,disease
+MESH:D008557,Melorheostosis,disease
+MESH:C536494,Uveal melanoma,disease
+MESH:D010505,Familial Mediterranean Fever,disease
+MESH:D055653,Muir-Torre Syndrome,disease
+MESH:C536928,Turcot syndrome,disease
+MESH:D055847,Lynch Syndrome II,disease
+MESH:C535982,Congenital amegakaryocytic thrombocytopenia,disease
+MESH:C537261,Lynch syndrome I (site-specific colonic cancer),disease
+MESH:D008258,Waldenstrom Macroglobulinemia,disease
+MESH:C567379,MYD88 Deficiency,disease
+MESH:D049932,Nijmegen Breakage Syndrome,disease
+MESH:D000741,"Anemia, Aplastic",disease
+MESH:C537393,Neurofibromatosis-Noonan syndrome,disease
+MESH:D009456,Neurofibromatosis 1,disease
+MESH:C563523,"Neurofibromatosis, Familial Spinal",disease
+MESH:C565611,"Dyskeratosis Congenita, Autosomal Recessive",disease
+MESH:C580062,Epidermal Nevus,disease
+MESH:C537387,Neurocutaneous melanosis,disease
+MESH:C548084,Noonan Syndrome 6,disease
+MESH:C572845,"Thyroid cancer, follicular",disease
+MESH:C536819,"Melanocytic nevus syndrome, congenital",disease
+MESH:D058495,Sotos Syndrome,disease
+MESH:C567018,"Mental Retardation, Autosomal Recessive 5",disease
+MESH:D015473,"Leukemia, Promyelocytic, Acute",disease
+MESH:C563657,"Fanconi Anemia, Complementation Group N",disease
+MESH:D017681,Hypereosinophilic Syndrome,disease
+MESH:C562978,"Fibromatosis, Congenital Generalized",disease
+MESH:C536653,Penttinen-Aula syndrome,disease
+MESH:C536275,Fahr's disease,disease
+MESH:C565054,"Myeloproliferative Disorder, Chronic, with Eosinophilia",disease
+MESH:C536729,Zunich neuroectodermal syndrome,disease
+MESH:C567863,"Congenital Lipomatous Overgrowth, Vascular Malformations, and Epidermal Nevi",disease
+MESH:D017492,"Keratosis, Seborrheic",disease
+MESH:D010051,Ovarian Neoplasms,disease
+MESH:C537327,SHORT syndrome,disease
+MESH:C562938,Metachondromatosis,disease
+MESH:D044542,LEOPARD Syndrome,disease
+MESH:C548083,Noonan Syndrome 5,disease
+MESH:C537117,"LEOPARD syndrome, 2",disease
+MESH:D012175,Retinoblastoma,disease
+MESH:D018288,"Carcinoma, Small Cell",disease
+MESH:D011038,Rothmund-Thomson Syndrome,disease
+MESH:C535288,Rapadilino syndrome,disease
+MESH:C536788,Craniosynostosis radial aplasia syndrome,disease
+MESH:C563681,Aicardi-Goutieres Syndrome 4,disease
+MESH:C563683,Aicardi-Goutieres Syndrome 3,disease
+MESH:C567254,Diamond-Blackfan Anemia 7,disease
+MESH:C567280,Diamond-Blackfan Anemia 5,disease
+MESH:C567650,Diamond-Blackfan Anemia 9,disease
+MESH:C535323,Chromosome 5q Deletion Syndrome,disease
+MESH:C567281,Diamond-Blackfan Anemia 4,disease
+MESH:D029503,"Anemia, Diamond-Blackfan",disease
+MESH:C536355,"Anemia, Diamond-Blackfan, 3",disease
+MESH:C567649,Diamond-Blackfan Anemia 10,disease
+MESH:C567253,Diamond-Blackfan Anemia 8,disease
+MESH:C563324,"Platelet Disorder, Familial, with Associated Myeloid Malignancy",disease
+MESH:C566473,"Tumoral Calcinosis, Normophosphatemic, Familial",disease
+MESH:C563233,Myelocerebellar Disorder,disease
+MESH:C535608,Aicardi-Goutieres syndrome 5,disease
+MESH:C565467,"Indifference to Pain, Congenital, Autosomal Recessive",disease
+MESH:C563475,Paroxysmal Extreme Pain Disorder,disease
+MESH:D004916,Erythromelalgia,disease
+MESH:C536632,Schinzel-Giedion syndrome,disease
+MESH:D052536,"Niemann-Pick Disease, Type A",disease
+MESH:D052537,"Niemann-Pick Disease, Type B",disease
+MESH:C548082,Noonan Syndrome 4,disease
+MESH:C548032,Legius syndrome,disease
+MESH:D016114,"Ichthyosis, X-Linked",disease
+MESH:D000361,Agammaglobulinemia,disease
+MESH:C564915,"Osteopetrosis, Autosomal Recessive 1",disease
+MESH:C565079,"Dyskeratosis Congenita, Autosomal Dominant",disease
+MESH:D054990,Idiopathic Pulmonary Fibrosis,disease
+MESH:D016864,Li-Fraumeni Syndrome,disease
+MESH:D000077274,Nasopharyngeal Carcinoma,disease
+MESH:C565972,"Adrenocortical Carcinoma, Hereditary",disease
+MESH:D020288,"Papilloma, Choroid Plexus",disease
+MESH:C566007,"Vasculopathy, Retinal, With Cerebral Leukodystrophy",disease
+MESH:D008180,"Lupus Erythematosus, Systemic",disease
+MESH:C535924,Chilblain lupus 1,disease
+MESH:C536329,Polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy,disease
+MESH:D014923,Wiskott-Aldrich Syndrome,disease
+MESH:C564539,"Neutropenia, Severe Congenital, X-Linked",disease
+MESH:C564052,Thrombocytopenia 1,disease
+25,ABL1,gene
+51816,ADA2,gene
+103,ADAR,gene
+210,ALAD,gene
+324,APC,gene
+23092,ARHGAP26,gene
+171023,ASXL1,gene
+472,ATM,gene
+546,ATRX,gene
+581,BAX,gene
+613,BCR,gene
+641,BLM,gene
+673,BRAF,gene
+675,BRCA2,gene
+699,BUB1,gene
+701,BUB1B,gene
+811,CALR,gene
+867,CBL,gene
+1029,CDKN2A,gene
+1050,CEBPA,gene
+9702,CEP57,gene
+11200,CHEK2,gene
+26511,CHIC2,gene
+1387,CREBBP,gene
+1736,DKC1,gene
+134218,DNAJC21,gene
+1788,DNMT3A,gene
+51626,DYNC2LI1,gene
+1991,ELANE,gene
+2033,EP300,gene
+2065,ERBB3,gene
+2120,ETV6,gene
+2121,EVC,gene
+132884,EVC2,gene
+2162,F13A1,gene
+2165,F13B,gene
+2175,FANCA,gene
+2322,FLT3,gene
+2623,GATA1,gene
+2624,GATA2,gene
+2672,GFI1,gene
+2782,GNB1,gene
+10456,HAX1,gene
+3417,IDH1,gene
+64135,IFIH1,gene
+10320,IKZF1,gene
+3717,JAK2,gene
+3815,KIT,gene
+3845,KRAS,gene
+3981,LIG4,gene
+4026,LPP,gene
+8216,LZTR1,gene
+5604,MAP2K1,gene
+8930,MBD4,gene
+4210,MEFV,gene
+4292,MLH1,gene
+8028,MLLT10,gene
+4352,MPL,gene
+4436,MSH2,gene
+4615,MYD88,gene
+4683,NBN,gene
+4763,NF1,gene
+55505,NOP10,gene
+4869,NPM1,gene
+4893,NRAS,gene
+64324,NSD1,gene
+54888,NSUN2,gene
+4926,NUMA1,gene
+8021,NUP214,gene
+79728,PALB2,gene
+5156,PDGFRA,gene
+5159,PDGFRB,gene
+8301,PICALM,gene
+9487,PIGL,gene
+5290,PIK3CA,gene
+5295,PIK3R1,gene
+5781,PTPN11,gene
+5894,RAF1,gene
+5914,RARA,gene
+5925,RB1,gene
+9401,RECQL4,gene
+10535,RNASEH2A,gene
+79621,RNASEH2B,gene
+84153,RNASEH2C,gene
+6135,RPL11,gene
+6165,RPL35A,gene
+6204,RPS10,gene
+6208,RPS14,gene
+6218,RPS17,gene
+6223,RPS19,gene
+6229,RPS24,gene
+6231,RPS26,gene
+6201,RPS7,gene
+861,RUNX1,gene
+54809,SAMD9,gene
+219285,SAMD9L,gene
+25939,SAMHD1,gene
+51119,SBDS,gene
+6335,SCN9A,gene
+26040,SETBP1,gene
+23451,SF3B1,gene
+10019,SH2B3,gene
+6455,SH3GL1,gene
+6609,SMPD1,gene
+6654,SOS1,gene
+161742,SPRED1,gene
+6729,SRP54,gene
+412,STS,gene
+6886,TAL1,gene
+6887,TAL2,gene
+6929,TCF3,gene
+10312,TCIRG1,gene
+7012,TERC,gene
+7015,TERT,gene
+54790,TET2,gene
+7066,THPO,gene
+7157,TP53,gene
+11277,TREX1,gene
+7305,TYROBP,gene
+7454,WAS,gene
+7456,WIPF1,gene
