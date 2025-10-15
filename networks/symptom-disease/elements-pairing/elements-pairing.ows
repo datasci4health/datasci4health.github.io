@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Elements Pairing" qualified_name="orange3biosci.widgets.elements_pairing.OWElementsPairing" project_name="orange-biosci" version="" title="Doenças que compartilham o mesmo Sintoma" position="(835.3846153846155, 122.15384615384617)" />
+		<node id="1" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="KG de Sintomas e Doenças" position="(104.07692307692305, 119.61538461538463)" />
+		<node id="2" name="List Splitter" qualified_name="orange3biosci.widgets.list_splitter.OWListSplitter" project_name="orange-biosci" version="" title="Split the Sintomas de cada Doença" position="(241.76923076923072, 119.61538461538461)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Doenças-Doenças e Peso" position="(1012.1538461538462, 36.538461538461554)" />
+		<node id="4" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Separa Sintoma de Peso" position="(397.38461538461524, 118.76923076923075)" />
+		<node id="5" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Remove coluna de Sintomas agregados" position="(551.1538461538463, 124.6153846153846)" />
+		<node id="6" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Doenças-Doenças e Peso" position="(1019.5384615384614, 125.92307692307688)" />
+		<node id="7" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Renomeia Doenças para Singular" position="(708.7692307692313, 124.38461538461539)" />
+		<node id="8" name="Elements Pairing" qualified_name="orange3biosci.widgets.elements_pairing.OWElementsPairing" project_name="orange-biosci" version="" title="Sintomas que Compartilham a mesma Doença" position="(846.461538461539, 285.9230769230769)" />
+		<node id="9" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Sintoma-Sintoma e Peso" position="(1015.6923076923082, 286.6923076923076)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="0" sink_node_id="3" source_channel="Paired Sources" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="0" sink_node_id="6" source_channel="Paired Sources" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="7" sink_node_id="0" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="7" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="8" source_node_id="8" sink_node_id="9" source_channel="Paired Sources" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'aggregation_methods': {'Weight': 'mean'}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x96\x00\x00\x01k\x00\x00\x02\xa3\x00\x00\x03\x83\x00\x00\x01\x96\x00\x00\x01\x90\x00\x00\x02\xa3\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x01\x96\x00\x00\x01\x90\x00\x00\x02\xa3\x00\x00\x03\x83', 'source_column': 'Disease', 'target_column': 'Symptom', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': '01-source-health-kg/DerivedKnowledgeGraph_final.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Text'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/networks/symptom-disease/elements-pairing/01-source-health-kg', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03#\x00\x00\x01X\x00\x00\x04n\x00\x00\x02\xc0\x00\x00\x03#\x00\x00\x01}\x00\x00\x04n\x00\x00\x02\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03#\x00\x00\x01}\x00\x00\x04n\x00\x00\x02\xc0', '__version__': 3}</properties>
+		<properties node_id="2" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'delimiter': ',', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xda\x00\x00\x01\x18\x00\x00\x0b\xe2\x00\x00\x02\x9b\x00\x00\n\xda\x00\x00\x01=\x00\x00\x0b\xe2\x00\x00\x02\x9b\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xda\x00\x00\x01=\x00\x00\x0b\xe2\x00\x00\x02\x9b', 'selected_field_name': 'Symptoms', 'split_mode': 2, '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xb4\x00\x00\x028\x00\x00\x06\x17\x00\x00\x04$\x00\x00\x02\xb4\x00\x00\x02]\x00\x00\x06\x17\x00\x00\x04$\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xb4\x00\x00\x02]\x00\x00\x06\x17\x00\x00\x04$', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASVmgEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwGMC2Rl
+c2NyaXB0b3JzlF2UKIwoT3JhbmdlLndpZGdldHMuZGF0YS5vd2ZlYXR1cmVjb25zdHJ1Y3RvcpSM
+EFN0cmluZ0Rlc2NyaXB0b3KUk5SMB1N5bXB0b22UjB5TeW1wdG9tcy5zcGxpdCgnKCcpWzBdLnN0
+cmlwKCmUiIeUgZRoBYwUQ29udGludW91c0Rlc2NyaXB0b3KUk5QojAZXZWlnaHSUjCNmbG9hdChT
+eW1wdG9tcy5zcGxpdCgnKCcpWzFdWzA6LTFdKZROiXSUgZRljBdleHByZXNzaW9uc193aXRoX3Zh
+bHVlc5SJjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAHCAAAAeQAABgcAAAIpAAAB
+wgAAAJ4AAAYHAAACKQAAAAAAAAAAB4AAAAHCAAAAngAABgcAAAIplIwLX192ZXJzaW9uX1+USwSM
+EGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
+</properties>
+		<properties node_id="5" format="pickle">gASV6wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAApQAAADw
+AAAE6wAAA0cAAAKUAAAA8AAABOsAAANHAAAAAAAAAAAHgAAAApQAAADwAAAE6wAAA0eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwIU3ltcHRvbXOUSwOGlIwJYXZhaWxhYmxllEsAhpSMBldlaWdodJRL
+AoaUjAlhdHRyaWJ1dGWUSwCGlIwIRGlzZWFzZXOUSwOGlIwEbWV0YZRLAIaUjAdTeW1wdG9tlEsD
+hpRoHUsBhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UjAZXZWlnaHSUSwJzjAVtZXRhc5R9
+lCiMCERpc2Vhc2VzlEsDjAhTeW1wdG9tc5RLA4wHU3ltcHRvbZRLA3V1YmF1Lg==
+</properties>
+		<properties node_id="6" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03=\x00\x00\x01\xd6\x00\x00\x04\\\x00\x00\x02i\x00\x00\x03=\x00\x00\x01\xd6\x00\x00\x04\\\x00\x00\x02i\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03=\x00\x00\x01\xd6\x00\x00\x04\\\x00\x00\x02i', 'stored_name': 'disease-pairs.csv', 'stored_path': '02-cytoscape', '__version__': 3}</properties>
+		<properties node_id="7" format="literal">{'_domain_change_hints': {('String', ('Diseases', ())): [('Rename', ('Disease',))]}, '_merge_dialog_settings': {}, 'controlAreaVisible': True, 'output_table_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x0b\x00\x00\x00\xed\x00\x00\x05\x8a\x00\x00\x02\xcc\x00\x00\x03\x0b\x00\x00\x00\xed\x00\x00\x05\x8a\x00\x00\x02\xcc\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x0b\x00\x00\x00\xed\x00\x00\x05\x8a\x00\x00\x02\xcc', '__version__': 4}</properties>
+		<properties node_id="8" format="literal">{'aggregation_methods': {'Weight': 'mean'}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\xb2\x00\x00\x01\x9f\x00\x00\x02\xbf\x00\x00\x03\xb7\x00\x00\x01\xb2\x00\x00\x01\xc4\x00\x00\x02\xbf\x00\x00\x03\xb7\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x01\xb2\x00\x00\x01\xc4\x00\x00\x02\xbf\x00\x00\x03\xb7', 'source_column': 'Symptom', 'target_column': 'Disease', '__version__': 1}</properties>
+		<properties node_id="9" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03(\x00\x00\x02&lt;\x00\x00\x06/\x00\x00\x03\xff\x00\x00\x03(\x00\x00\x02a\x00\x00\x06/\x00\x00\x03\xff\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03(\x00\x00\x02a\x00\x00\x06/\x00\x00\x03\xff', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
