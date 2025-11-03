@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(150, 150)" />
+		<node id="1" name="List Splitter" qualified_name="orange3biosci.widgets.list_splitter.OWListSplitter" project_name="orange-biosci" version="" title="List Splitter" position="(736.0, 146.0)" />
+		<node id="2" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain (1)" position="(290.0, 149.0)" />
+		<node id="3" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Formula" position="(437.0, 150.0)" />
+		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(591.0, 153.0)" />
+		<node id="5" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(736.0, 297.0)" />
+		<node id="6" name="Document Embedding" qualified_name="orangecontrib.text.widgets.owdocumentembedding.OWDocumentEmbedding" project_name="Orange3-Text" version="" title="Document Embedding" position="(886.0, 297.0)" />
+		<node id="7" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(1036.0, 297.0)" />
+		<node id="8" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(915.0, 146.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="4" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="6" source_node_id="6" sink_node_id="7" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="7" source_node_id="1" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'wikipathways-20251010-gmt-Homo_sapiens.gmt'}, {'encoding': 'utf-8', 'delimiter': '%', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Auto'}, {'start': 1, 'stop': 2, 'value': 'Skip'}, {'start': 2, 'stop': 4, 'value': 'Auto'}], 'rowspec': [], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/language-model/pathways', 'filter': 'Text - tab separated (*.tsv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\x81\x00\x00\x01\xa4\x00\x00\x0b\xcc\x00\x00\x03\x0c\x00\x00\n\x81\x00\x00\x01\xc9\x00\x00\x0b\xcc\x00\x00\x03\x0c\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\x81\x00\x00\x01\xc9\x00\x00\x0b\xcc\x00\x00\x03\x0c', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'delimiter': ',', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x03\x00\x00\x01a\x00\x00\x04}\x00\x00\x02\xd6\x00\x00\x03\x03\x00\x00\x01a\x00\x00\x04}\x00\x00\x02\xd6\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x03\x00\x00\x01a\x00\x00\x04}\x00\x00\x02\xd6', 'selected_field_name': 'gene sequence', 'split_mode': 2, '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVbwEAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UKIwGU3RyaW5nlIwDWC4wlCmG
+lIaUXZSMBlJlbmFtZZSME3BhdGh3YXkgZGVzY3JpcHRpb26UhZSGlGFoA4wDWC4ylCmGlIaUXZQo
+jA1Bc0NhdGVnb3JpY2FslCmGlGgIjAxwYXRod2F5IGNvZGWUhZSGlGVoA4wDWC4zlCmGlIaUXZRo
+CIwQcGF0aHdheSBlbGVtZW50c5SFlIaUYXWMFl9tZXJnZV9kaWFsb2dfc2V0dGluZ3OUfZSMEmNv
+bnRyb2xBcmVhVmlzaWJsZZSIjBFvdXRwdXRfdGFibGVfbmFtZZSMAJSME3NhdmVkV2lkZ2V0R2Vv
+bWV0cnmUQ0IB2dDLAAMAAAAACTsAAAC+AAAMZgAAA2gAAAk7AAAA4wAADGYAAANoAAAAAAAAAAAH
+gAAACTsAAADjAAAMZgAAA2iUjAtfX3ZlcnNpb25fX5RLBHUu
+</properties>
+		<properties node_id="3" format="pickle">gASVWQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwCMC2Rl
+c2NyaXB0b3JzlF2UjChPcmFuZ2Uud2lkZ2V0cy5kYXRhLm93ZmVhdHVyZWNvbnN0cnVjdG9ylIwQ
+U3RyaW5nRGVzY3JpcHRvcpSTlIwNZ2VuZSBzZXF1ZW5jZZSMKSIsIi5qb2luKHBhdGh3YXlfZWxl
+bWVudHMuc3BsaXQoIgkiKVsyOl0plIiHlIGUYYwXZXhwcmVzc2lvbnNfd2l0aF92YWx1ZXOUiYwT
+c2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAJWwAAAVYAAA2gAAADBgAACVsAAAF7AAAN
+oAAAAwYAAAAAAAAAAAeAAAAJWwAAAXsAAA2gAAADBpSMC19fdmVyc2lvbl9flEsEjBBjb250ZXh0
+X3NldHRpbmdzlF2UdS4=
+</properties>
+		<properties node_id="4" format="pickle">gASV6AEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACrgAAAEg
+AAANDwAAA3cAAAq4AAABIAAADQ8AAAN3AAAAAAAAAAAHgAAACrgAAAEgAAANDwAAA3eUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwQcGF0aHdheSBlbGVtZW50c5RLA4aUjAlhdmFpbGFibGWUSwCGlIwM
+cGF0aHdheSBjb2RllEsBhpSMCWF0dHJpYnV0ZZRLAIaUjBNwYXRod2F5IGRlc2NyaXB0aW9ulEsD
+hpSMBG1ldGGUSwCGlIwNZ2VuZSBzZXF1ZW5jZZRLA4aUaB1LAYaUdUr+////hpRoB0sBdYwKYXR0
+cmlidXRlc5R9lIwFbWV0YXOUfZQoaBtLA2gXSwFoE0sDaB9LA3V1YmF1Lg==
+</properties>
+		<properties node_id="5" format="pickle">gASVpAIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojAxh
+bmRlcnNlbi50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGdyaW1tLXRhbGVzLXNlbGVjdGVkLnRh
+YpSMGGVsZWN0aW9uLXR3ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAosAAADyAAAE9AAAA0YAAAKLAAAA8gAA
+BPQAAANGAAAAAQAAAAAHgAAAAosAAADyAAAE9AAAA0aUjAtfX3ZlcnNpb25fX5RLAowQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllE5K/v///4aUjA50aXRsZV92YXJpYWJsZZSMDWdlbmUgc2Vx
+dWVuY2WUS2eGlIwKdXNlZF9hdHRyc5RdlGgYS2eGlGFK/f///4aUaAtLAnWMCmF0dHJpYnV0ZXOU
+fZSMDHBhdGh3YXkgY29kZZRLAXOMBW1ldGFzlH2UKIwTcGF0aHdheSBkZXNjcmlwdGlvbpRLA2gY
+SwN1jA5kb2N1bWVudHNfaGFzaJSKEIdLzP/beIviJ1x7Aopn106MCGxhbmd1YWdllE51YmgQKYGU
+fZQoaBN9lChoFYwCZW6USv7///+GlGgXjAVUaXRsZZRLZ4aUaBpdlIwHQ29udGVudJRLZ4aUYUr9
+////hpRoC0sCdWgefZRoIX2UKGgrSwNoLksDdWgkihCzBApsjP72t8gDXO5IbD0MaCWMAmVulHVi
+ZXUu
+</properties>
+		<properties node_id="6" format="literal">{'aggregator': 'Mean', 'autocommit': True, 'controlAreaVisible': True, 'hidden_cb': True, 'language': 'en', 'method': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x030\x00\x00\x01\x91\x00\x00\x04O\x00\x00\x02\xa7\x00\x00\x030\x00\x00\x01\x91\x00\x00\x04O\x00\x00\x02\xa7\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x030\x00\x00\x01\x91\x00\x00\x04O\x00\x00\x02\xa7', '__version__': 3}</properties>
+		<properties node_id="7" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x00\xa4\x00\x00\x0e\xa0\x00\x00\x03\x93\x00\x00\x07\xc6\x00\x00\x00\xa4\x00\x00\x0e\xa0\x00\x00\x03\x93\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x00\xa4\x00\x00\x0e\xa0\x00\x00\x03\x93', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="8" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x00\x1b\x00\x00\x0e\xff\x00\x00\x047\x00\x00\x07\xc6\x00\x00\x00\xa4\x00\x00\x0e\x82\x00\x00\x03\x93\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x00@\x00\x00\x0e\xff\x00\x00\x047', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
