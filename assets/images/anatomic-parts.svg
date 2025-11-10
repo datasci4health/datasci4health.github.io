@@ -1,0 +1,97 @@
+<svg viewBox="0 0 400 800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <image width="397.57336" height="801.71887"
+     preserveAspectRatio="none" xlink:href="body-background.png"
+     id="back-image" x="-0.75955611" y="-0.36621454" />
+  <!-- Brain -->
+  <polygon id="brain" points="180,30 220,30 240,50 240,80 220,95 180,95 160,80 160,50" 
+           fill="rgba(255, 200, 0, 0.3)" stroke="orange" display="none" stroke-width="2"/>
+  
+  <!-- Thyroid -->
+  <polygon id="thyroid" points="190,120 210,120 215,130 205,135 195,135 185,130" 
+           fill="rgba(150, 0, 150, 0.3)" stroke="purple" display="none" stroke-width="2"/>
+  
+  <!-- Lungs (both sides) -->
+  <polygon id="lungs" points="140,150 170,140 180,160 180,220 170,230 140,220 130,180" 
+           fill="rgba(255, 150, 200, 0.3)" stroke="pink" display="none" stroke-width="2"/>
+  <polygon id="lungs-right" points="260,150 230,140 220,160 220,220 230,230 260,220 270,180" 
+           fill="rgba(255, 150, 200, 0.3)" stroke="pink" display="none" stroke-width="2"/>
+  
+  <!-- Heart -->
+  <polygon id="heart" points="180,170 220,170 230,190 220,210 200,220 180,210 170,190" 
+           fill="rgba(255, 0, 0, 0.3)" stroke="red" display="none" stroke-width="2"/>
+  
+  <!-- Apex (heart apex) -->
+  <polygon id="apex" points="195,210 205,210 200,220" 
+           fill="rgba(200, 0, 0, 0.4)" stroke="darkred" display="none" stroke-width="2"/>
+  
+  <!-- Pulmonic area (heart) -->
+  <polygon id="pulmonic" points="185,170 200,165 215,170 200,180" 
+           fill="rgba(100, 150, 255, 0.3)" stroke="blue" display="none" stroke-width="2"/>
+  
+  <!-- Liver -->
+  <polygon id="liver" points="210,240 260,245 270,270 260,300 220,305 200,295 195,260" 
+           fill="rgba(139, 69, 19, 0.3)" stroke="brown" display="none" stroke-width="2"/>
+  
+  <!-- Stomach -->
+  <polygon id="stomach" points="170,240 210,235 215,260 205,280 180,285 165,270" 
+           fill="rgba(255, 180, 180, 0.3)" stroke="lightcoral" display="none" stroke-width="2"/>
+  
+  <!-- Epigastrium (upper abdomen area) -->
+  <polygon id="epigastrium" points="160,230 240,230 250,260 240,280 160,280 150,260" 
+           fill="rgba(200, 200, 100, 0.2)" stroke="olive" display="none" stroke-width="2"/>
+  
+  <!-- Spleen -->
+  <polygon id="spleen" points="130,250 155,245 165,265 160,285 140,290 125,275" 
+           fill="rgba(128, 0, 128, 0.3)" stroke="purple" display="none" stroke-width="2"/>
+  
+  <!-- Abdomen (general) -->
+  <polygon id="abdomen" points="150,280 250,280 260,320 250,380 150,380 140,320" 
+           fill="rgba(230, 220, 180, 0.2)" stroke="tan" display="none" stroke-width="2"/>
+  
+  <!-- Bowels/Intestines -->
+  <polygon id="bowels" points="160,310 240,310 245,360 235,400 165,400 155,360" 
+           fill="rgba(255, 220, 180, 0.3)" stroke="peru" display="none" stroke-width="2"/>
+  
+  <!-- Costal margin (rib edge) -->
+  <polygon id="costal-margin" points="140,230 260,230 270,250 260,260 140,260 130,250" 
+           fill="rgba(200, 200, 200, 0.2)" stroke="gray" display="none" stroke-width="2"/>
+  
+  <!-- Bladder (for urine) -->
+  <polygon id="urine" points="175,410 225,410 230,435 200,445 170,435" 
+           fill="rgba(255, 255, 0, 0.3)" stroke="gold" display="none" stroke-width="2"/>
+  
+  <!-- Blood (circulatory system - represented as vessels) -->
+  <polygon id="blood" points="200,150 205,150 205,450 200,450" 
+           fill="rgba(255, 0, 0, 0.2)" stroke="red" display="none" stroke-width="1"/>
+  
+  <!-- Stools (lower intestine/rectum area) -->
+  <polygon id="stools" points="185,400 215,400 220,425 200,435 180,425" 
+           fill="rgba(139, 90, 43, 0.3)" stroke="saddlebrown" display="none" stroke-width="2"/>
+  
+  <!-- Mucous membranes (general - represented in throat/mouth area) -->
+  <polygon id="mucous-membranes" points="190,105 210,105 210,120 190,120" 
+           fill="rgba(255, 192, 203, 0.3)" stroke="pink" display="none" stroke-width="2"/>
+  
+  <!-- Red cells (in blood - symbolically in heart area) -->
+  <ellipse id="red-cells" cx="200" cy="190" rx="5" ry="5" 
+           fill="rgba(200, 0, 0, 0.5)" stroke="darkred" display="none" stroke-width="1"/>
+  
+  <!-- White cells/Leucocytes (in blood - symbolically) -->
+  <ellipse id="leucocytes" cx="210" cy="190" rx="4" ry="4" 
+           fill="rgba(255, 255, 255, 0.6)" stroke="gray" display="none" stroke-width="1"/>
+  
+  <!-- Cells (general - symbolically) -->
+  <ellipse id="cells" cx="205" cy="195" rx="3" ry="3" 
+           fill="rgba(150, 150, 255, 0.4)" stroke="blue" display="none" stroke-width="1"/>
+  
+  <!-- Labels for clarity -->
+  <text x="200" y="20" text-anchor="middle" font-size="10" fill="black" font-weight="bold">Brain</text>
+  <text x="200" y="115" text-anchor="middle" font-size="8" fill="black">Thyroid</text>
+  <text x="200" y="190" text-anchor="middle" font-size="10" fill="black" font-weight="bold">Heart</text>
+  <text x="155" y="185" text-anchor="middle" font-size="9" fill="black">Lungs</text>
+  <text x="240" y="270" text-anchor="middle" font-size="9" fill="black">Liver</text>
+  <text x="185" y="265" text-anchor="middle" font-size="9" fill="black">Stomach</text>
+  <text x="145" y="270" text-anchor="middle" font-size="8" fill="black">Spleen</text>
+  <text x="200" y="350" text-anchor="middle" font-size="9" fill="black">Bowels</text>
+  <text x="200" y="425" text-anchor="middle" font-size="8" fill="black">Bladder</text>
+</svg>
