@@ -7,11 +7,11 @@ A seguir é apresentada a estrutura de pastas esperada no repositório do projet
 ~~~
 ├── README.md        <- apresentação do projeto
 │
-├── project-1        <- primeira entrega
+├── project1         <- primeira entrega
 │
-├── project-2        <- segunda entrega parcial
+├── project2         <- segunda entrega parcial
 │
-└── project-3-final  <- entrega final
+└── project3-final   <- entrega final
 ~~~
 
 * [Entrega 1](project1/)

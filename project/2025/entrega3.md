@@ -73,9 +73,9 @@ A entrega do projeto deve ser feita via GitHub. Para isso a equipe deve:
 
 * usar a mesma organização e projeto no GitHub da etapa anterior;
 * atualize (se necessário) o arquivo README.md na raiz do projeto;
-* crie uma pasta `project3-final` na raiz do projeto e coloque a segunda entrega dentro desta pasta conforme [Modelo da Terceira Entrega](/resources/templates/2025/project3-final/).
+* crie uma pasta `project3-final` na raiz do projeto e coloque a terceira entrega dentro desta pasta conforme [Modelo da Terceira Entrega](/resources/templates/2025/project3-final/).
 
-A submissão da entrega 2 será dividida em duas partes: slides até o dia **12/11 às 7:59 am** e texto no GitHub até **24/11**.
+A submissão da entrega 3 será dividida em duas partes: slides até o dia **12/11 às 7:59 am** e texto no GitHub até **24/11**.
 
 A apresentação será no dia da submissão dos slides **12/11** no horário da aula. Cada equipe terá 20 minutos para se apresentar e haverá mais 10 minutos para perguntas/respostas. Todos os membros da equipe devem participar apresentando.
 
