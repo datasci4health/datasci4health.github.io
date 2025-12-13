@@ -1,270 +1,270 @@
 pathway_id,pathway_position_id,pathway_position_type,functional_unit_id,functional_unit_logic,gene_id,entry_id,evidence,notes
-path:hsa05224,254,node,FU_e664764b,AND,hsa:8202,254,KGML,protein complex inferred from group
-path:hsa05224,254,node,FU_e664764b,AND,hsa:8648,254,KGML,protein complex inferred from group
-path:hsa05224,254,node,FU_e664764b,AND,hsa:2353,254,KGML,protein complex inferred from group
-path:hsa05224,254,node,FU_e664764b,AND,hsa:3725,254,KGML,protein complex inferred from group
-path:hsa05224,254,node,FU_e664764b,AND,hsa:6667,254,KGML,protein complex inferred from group
-path:hsa05224,254,node,FU_e664764b,AND,hsa:2099,254,KGML,protein complex inferred from group
-path:hsa05224,254,node,FU_e664764b,AND,hsa:2100,254,KGML,protein complex inferred from group
-path:hsa05224,255,node,FU_71988a43,AND,hsa:8202,255,KGML,protein complex inferred from group
-path:hsa05224,255,node,FU_71988a43,AND,hsa:8648,255,KGML,protein complex inferred from group
-path:hsa05224,255,node,FU_71988a43,AND,hsa:2099,255,KGML,protein complex inferred from group
-path:hsa05224,255,node,FU_71988a43,AND,hsa:2100,255,KGML,protein complex inferred from group
-path:hsa05224,256,node,FU_759f133c,AND,hsa:5241,256,KGML,protein complex inferred from group
-path:hsa05224,256,node,FU_759f133c,AND,hsa:8202,256,KGML,protein complex inferred from group
-path:hsa05224,256,node,FU_759f133c,AND,hsa:8648,256,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:4040,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:4041,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:11211,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:2535,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:7855,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:7976,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:8321,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:8322,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:8323,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:8324,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:8325,257,KGML,protein complex inferred from group
-path:hsa05224,257,node,FU_28e0f39c,AND,hsa:8326,257,KGML,protein complex inferred from group
-path:hsa05224,258,node,FU_158dc52a,AND,hsa:1019,258,KGML,protein complex inferred from group
-path:hsa05224,258,node,FU_158dc52a,AND,hsa:1021,258,KGML,protein complex inferred from group
-path:hsa05224,258,node,FU_158dc52a,AND,hsa:595,258,KGML,protein complex inferred from group
-path:hsa05224,6,node,FU_7e0f6bfe,OR,hsa:2099,6,KGML,isozyme group
-path:hsa05224,6,node,FU_7e0f6bfe,OR,hsa:2100,6,KGML,isozyme group
-path:hsa05224,7,node,FU_c8425db1,OR,hsa:2099,7,KGML,isozyme group
-path:hsa05224,7,node,FU_c8425db1,OR,hsa:2100,7,KGML,isozyme group
-path:hsa05224,11,node,FU_ea517902,SINGLE,hsa:1956,11,KGML,
-path:hsa05224,15,node,FU_c1bef09e,OR,hsa:2099,15,KGML,isozyme group
-path:hsa05224,15,node,FU_c1bef09e,OR,hsa:2100,15,KGML,isozyme group
-path:hsa05224,16,node,FU_343f9f09,OR,hsa:8202,16,KGML,isozyme group
-path:hsa05224,16,node,FU_343f9f09,OR,hsa:8648,16,KGML,isozyme group
-path:hsa05224,17,node,FU_6548d733,OR,hsa:3265,17,KGML,isozyme group
-path:hsa05224,17,node,FU_6548d733,OR,hsa:3845,17,KGML,isozyme group
-path:hsa05224,17,node,FU_6548d733,OR,hsa:4893,17,KGML,isozyme group
-path:hsa05224,18,node,FU_304f7aa6,OR,hsa:369,18,KGML,isozyme group
-path:hsa05224,18,node,FU_304f7aa6,OR,hsa:5894,18,KGML,isozyme group
-path:hsa05224,18,node,FU_304f7aa6,OR,hsa:673,18,KGML,isozyme group
-path:hsa05224,19,node,FU_efc697c6,OR,hsa:5604,19,KGML,isozyme group
-path:hsa05224,19,node,FU_efc697c6,OR,hsa:5605,19,KGML,isozyme group
-path:hsa05224,20,node,FU_79e9dbba,OR,hsa:5594,20,KGML,isozyme group
-path:hsa05224,20,node,FU_79e9dbba,OR,hsa:5595,20,KGML,isozyme group
-path:hsa05224,25,node,FU_b133c6e4,OR,hsa:25759,25,KGML,isozyme group
-path:hsa05224,25,node,FU_b133c6e4,OR,hsa:399694,25,KGML,isozyme group
-path:hsa05224,25,node,FU_b133c6e4,OR,hsa:53358,25,KGML,isozyme group
-path:hsa05224,25,node,FU_b133c6e4,OR,hsa:6464,25,KGML,isozyme group
-path:hsa05224,26,node,FU_e9a8c566,SINGLE,hsa:2885,26,KGML,
-path:hsa05224,27,node,FU_7479ea48,OR,hsa:6654,27,KGML,isozyme group
-path:hsa05224,27,node,FU_7479ea48,OR,hsa:6655,27,KGML,isozyme group
-path:hsa05224,33,node,FU_395cf3bf,OR,hsa:182,33,KGML,isozyme group
-path:hsa05224,33,node,FU_395cf3bf,OR,hsa:3714,33,KGML,isozyme group
-path:hsa05224,34,node,FU_b269a87f,OR,hsa:4851,34,KGML,isozyme group
-path:hsa05224,34,node,FU_b269a87f,OR,hsa:4853,34,KGML,isozyme group
-path:hsa05224,34,node,FU_b269a87f,OR,hsa:4854,34,KGML,isozyme group
-path:hsa05224,34,node,FU_b269a87f,OR,hsa:4855,34,KGML,isozyme group
-path:hsa05224,36,node,FU_8b9702fd,SINGLE,hsa:2475,36,KGML,
-path:hsa05224,37,node,FU_4477a88a,OR,hsa:6198,37,KGML,isozyme group
-path:hsa05224,37,node,FU_4477a88a,OR,hsa:6199,37,KGML,isozyme group
-path:hsa05224,39,node,FU_6e15282b,SINGLE,hsa:3479,39,KGML,
-path:hsa05224,40,node,FU_a51b5c1b,SINGLE,hsa:3480,40,KGML,
-path:hsa05224,42,node,FU_88761320,SINGLE,hsa:2064,42,KGML,
-path:hsa05224,43,node,FU_61b7bad6,OR,hsa:8202,43,KGML,isozyme group
-path:hsa05224,43,node,FU_61b7bad6,OR,hsa:8648,43,KGML,isozyme group
-path:hsa05224,45,node,FU_3fbad4b1,OR,hsa:2353,45,KGML,isozyme group
-path:hsa05224,45,node,FU_3fbad4b1,OR,hsa:3725,45,KGML,isozyme group
-path:hsa05224,45,node,FU_3fbad4b1,OR,hsa:6667,45,KGML,isozyme group
-path:hsa05224,47,node,FU_9cce0dbe,OR,hsa:2099,47,KGML,isozyme group
-path:hsa05224,47,node,FU_9cce0dbe,OR,hsa:2100,47,KGML,isozyme group
-path:hsa05224,48,node,FU_2903e9c2,OR,hsa:10683,48,KGML,isozyme group
-path:hsa05224,48,node,FU_2903e9c2,OR,hsa:28514,48,KGML,isozyme group
-path:hsa05224,48,node,FU_2903e9c2,OR,hsa:54567,48,KGML,isozyme group
-path:hsa05224,58,node,FU_19a949e5,OR,hsa:2099,58,KGML,isozyme group
-path:hsa05224,58,node,FU_19a949e5,OR,hsa:2100,58,KGML,isozyme group
-path:hsa05224,71,node,FU_7691c271,SINGLE,hsa:5241,71,KGML,
-path:hsa05224,74,node,FU_1c1c4a7e,SINGLE,hsa:5241,74,KGML,
-path:hsa05224,75,node,FU_0288c1b7,OR,hsa:8202,75,KGML,isozyme group
-path:hsa05224,75,node,FU_0288c1b7,OR,hsa:8648,75,KGML,isozyme group
-path:hsa05224,76,node,FU_65892597,OR,hsa:3265,76,KGML,isozyme group
-path:hsa05224,76,node,FU_65892597,OR,hsa:3845,76,KGML,isozyme group
-path:hsa05224,76,node,FU_65892597,OR,hsa:4893,76,KGML,isozyme group
-path:hsa05224,77,node,FU_723de1d1,OR,hsa:369,77,KGML,isozyme group
-path:hsa05224,77,node,FU_723de1d1,OR,hsa:5894,77,KGML,isozyme group
-path:hsa05224,77,node,FU_723de1d1,OR,hsa:673,77,KGML,isozyme group
-path:hsa05224,78,node,FU_181f7b4e,OR,hsa:5604,78,KGML,isozyme group
-path:hsa05224,78,node,FU_181f7b4e,OR,hsa:5605,78,KGML,isozyme group
-path:hsa05224,79,node,FU_ee02ce5d,OR,hsa:5594,79,KGML,isozyme group
-path:hsa05224,79,node,FU_ee02ce5d,OR,hsa:5595,79,KGML,isozyme group
-path:hsa05224,85,node,FU_d162b67f,OR,hsa:25759,85,KGML,isozyme group
-path:hsa05224,85,node,FU_d162b67f,OR,hsa:399694,85,KGML,isozyme group
-path:hsa05224,85,node,FU_d162b67f,OR,hsa:53358,85,KGML,isozyme group
-path:hsa05224,85,node,FU_d162b67f,OR,hsa:6464,85,KGML,isozyme group
-path:hsa05224,86,node,FU_5509363b,SINGLE,hsa:2885,86,KGML,
-path:hsa05224,87,node,FU_baaefcf5,OR,hsa:6654,87,KGML,isozyme group
-path:hsa05224,87,node,FU_baaefcf5,OR,hsa:6655,87,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:110117499,91,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:5290,91,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:5291,91,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:5293,91,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:5295,91,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:5296,91,KGML,isozyme group
-path:hsa05224,91,node,FU_9ddb59f9,OR,hsa:8503,91,KGML,isozyme group
-path:hsa05224,92,node,FU_47277246,OR,hsa:10000,92,KGML,isozyme group
-path:hsa05224,92,node,FU_47277246,OR,hsa:207,92,KGML,isozyme group
-path:hsa05224,92,node,FU_47277246,OR,hsa:208,92,KGML,isozyme group
-path:hsa05224,95,node,FU_91c851d6,SINGLE,hsa:2475,95,KGML,
-path:hsa05224,96,node,FU_cc200e10,OR,hsa:6198,96,KGML,isozyme group
-path:hsa05224,96,node,FU_cc200e10,OR,hsa:6199,96,KGML,isozyme group
-path:hsa05224,99,node,FU_493cd40b,SINGLE,hsa:3479,99,KGML,
-path:hsa05224,100,node,FU_7a339cbc,SINGLE,hsa:3480,100,KGML,
-path:hsa05224,108,node,FU_b26e998a,SINGLE,hsa:1956,108,KGML,
-path:hsa05224,110,node,FU_d43a9eef,OR,hsa:3265,110,KGML,isozyme group
-path:hsa05224,110,node,FU_d43a9eef,OR,hsa:3845,110,KGML,isozyme group
-path:hsa05224,110,node,FU_d43a9eef,OR,hsa:4893,110,KGML,isozyme group
-path:hsa05224,111,node,FU_47102945,OR,hsa:369,111,KGML,isozyme group
-path:hsa05224,111,node,FU_47102945,OR,hsa:5894,111,KGML,isozyme group
-path:hsa05224,111,node,FU_47102945,OR,hsa:673,111,KGML,isozyme group
-path:hsa05224,112,node,FU_f68e862b,OR,hsa:5604,112,KGML,isozyme group
-path:hsa05224,112,node,FU_f68e862b,OR,hsa:5605,112,KGML,isozyme group
-path:hsa05224,113,node,FU_dd72bf87,OR,hsa:5594,113,KGML,isozyme group
-path:hsa05224,113,node,FU_dd72bf87,OR,hsa:5595,113,KGML,isozyme group
-path:hsa05224,118,node,FU_c74e02e2,OR,hsa:25759,118,KGML,isozyme group
-path:hsa05224,118,node,FU_c74e02e2,OR,hsa:399694,118,KGML,isozyme group
-path:hsa05224,118,node,FU_c74e02e2,OR,hsa:53358,118,KGML,isozyme group
-path:hsa05224,118,node,FU_c74e02e2,OR,hsa:6464,118,KGML,isozyme group
-path:hsa05224,119,node,FU_4283640d,SINGLE,hsa:2885,119,KGML,
-path:hsa05224,120,node,FU_50791b51,OR,hsa:6654,120,KGML,isozyme group
-path:hsa05224,120,node,FU_50791b51,OR,hsa:6655,120,KGML,isozyme group
-path:hsa05224,125,node,FU_27efecc3,SINGLE,hsa:2475,125,KGML,
-path:hsa05224,126,node,FU_b6e1d3e2,OR,hsa:6198,126,KGML,isozyme group
-path:hsa05224,126,node,FU_b6e1d3e2,OR,hsa:6199,126,KGML,isozyme group
-path:hsa05224,128,node,FU_9f1b954c,SINGLE,hsa:3479,128,KGML,
-path:hsa05224,129,node,FU_4bbd9e39,SINGLE,hsa:3480,129,KGML,
-path:hsa05224,135,node,FU_64eb39fa,SINGLE,hsa:5728,135,KGML,
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:110117499,138,KGML,isozyme group
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:5290,138,KGML,isozyme group
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:5291,138,KGML,isozyme group
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:5293,138,KGML,isozyme group
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:5295,138,KGML,isozyme group
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:5296,138,KGML,isozyme group
-path:hsa05224,138,node,FU_4e499ad1,OR,hsa:8503,138,KGML,isozyme group
-path:hsa05224,139,node,FU_97bf5ee7,OR,hsa:10000,139,KGML,isozyme group
-path:hsa05224,139,node,FU_97bf5ee7,OR,hsa:207,139,KGML,isozyme group
-path:hsa05224,139,node,FU_97bf5ee7,OR,hsa:208,139,KGML,isozyme group
-path:hsa05224,143,node,FU_b7ba9674,SINGLE,hsa:5728,143,KGML,
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:110117499,147,KGML,isozyme group
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:5290,147,KGML,isozyme group
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:5291,147,KGML,isozyme group
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:5293,147,KGML,isozyme group
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:5295,147,KGML,isozyme group
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:5296,147,KGML,isozyme group
-path:hsa05224,147,node,FU_8d9ab7c0,OR,hsa:8503,147,KGML,isozyme group
-path:hsa05224,148,node,FU_8b1875f5,OR,hsa:10000,148,KGML,isozyme group
-path:hsa05224,148,node,FU_8b1875f5,OR,hsa:207,148,KGML,isozyme group
-path:hsa05224,148,node,FU_8b1875f5,OR,hsa:208,148,KGML,isozyme group
-path:hsa05224,153,node,FU_5f8fc5be,SINGLE,hsa:5728,153,KGML,
-path:hsa05224,157,node,FU_fe179051,SINGLE,hsa:595,157,KGML,
-path:hsa05224,158,node,FU_1911fea7,SINGLE,hsa:4609,158,KGML,
-path:hsa05224,159,node,FU_f3808d78,OR,hsa:51176,159,KGML,isozyme group
-path:hsa05224,159,node,FU_f3808d78,OR,hsa:6932,159,KGML,isozyme group
-path:hsa05224,159,node,FU_f3808d78,OR,hsa:6934,159,KGML,isozyme group
-path:hsa05224,159,node,FU_f3808d78,OR,hsa:83439,159,KGML,isozyme group
-path:hsa05224,160,node,FU_2c323696,OR,hsa:122011,160,KGML,isozyme group
-path:hsa05224,160,node,FU_2c323696,OR,hsa:1452,160,KGML,isozyme group
-path:hsa05224,161,node,FU_3894fca4,OR,hsa:8312,161,KGML,isozyme group
-path:hsa05224,161,node,FU_3894fca4,OR,hsa:8313,161,KGML,isozyme group
-path:hsa05224,162,node,FU_8e1368ce,OR,hsa:10297,162,KGML,isozyme group
-path:hsa05224,162,node,FU_8e1368ce,OR,hsa:324,162,KGML,isozyme group
-path:hsa05224,163,node,FU_f7900825,SINGLE,hsa:1499,163,KGML,
-path:hsa05224,164,node,FU_49eb7a74,SINGLE,hsa:2932,164,KGML,
-path:hsa05224,165,node,FU_406f8ddb,OR,hsa:10023,165,KGML,isozyme group
-path:hsa05224,165,node,FU_406f8ddb,OR,hsa:23401,165,KGML,isozyme group
-path:hsa05224,166,node,FU_0b38048a,OR,hsa:1855,166,KGML,isozyme group
-path:hsa05224,166,node,FU_0b38048a,OR,hsa:1856,166,KGML,isozyme group
-path:hsa05224,166,node,FU_0b38048a,OR,hsa:1857,166,KGML,isozyme group
-path:hsa05224,167,node,FU_41eccfca,OR,hsa:4040,167,KGML,isozyme group
-path:hsa05224,167,node,FU_41eccfca,OR,hsa:4041,167,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:11211,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:2535,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:7855,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:7976,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:8321,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:8322,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:8323,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:8324,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:8325,168,KGML,isozyme group
-path:hsa05224,168,node,FU_da8b81c3,OR,hsa:8326,168,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:51384,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:54361,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7471,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7472,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7473,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7474,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7475,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7476,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7477,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7478,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7479,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7480,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7481,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7482,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7483,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:7484,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:80326,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:81029,169,KGML,isozyme group
-path:hsa05224,169,node,FU_00ff16c6,OR,hsa:89780,169,KGML,isozyme group
-path:hsa05224,184,node,FU_5cbf1add,OR,hsa:1019,184,KGML,isozyme group
-path:hsa05224,184,node,FU_5cbf1add,OR,hsa:1021,184,KGML,isozyme group
-path:hsa05224,185,node,FU_ed3d8316,SINGLE,hsa:5925,185,KGML,
-path:hsa05224,186,node,FU_feabeb17,OR,hsa:1869,186,KGML,isozyme group
-path:hsa05224,186,node,FU_feabeb17,OR,hsa:1870,186,KGML,isozyme group
-path:hsa05224,186,node,FU_feabeb17,OR,hsa:1871,186,KGML,isozyme group
-path:hsa05224,187,node,FU_80da2fb4,SINGLE,hsa:595,187,KGML,
-path:hsa05224,195,node,FU_884483e1,SINGLE,hsa:3815,195,KGML,
-path:hsa05224,198,node,FU_d80d850a,SINGLE,hsa:595,198,KGML,
-path:hsa05224,199,node,FU_83fb9699,SINGLE,hsa:1026,199,KGML,
-path:hsa05224,200,node,FU_7a0a22f7,SINGLE,hsa:4791,200,KGML,
-path:hsa05224,201,node,FU_e181b744,SINGLE,hsa:4609,201,KGML,
-path:hsa05224,202,node,FU_e406e4cb,SINGLE,hsa:2064,202,KGML,
-path:hsa05224,205,node,FU_1de21de1,SINGLE,hsa:2260,205,KGML,
-path:hsa05224,211,node,FU_e912eea2,SINGLE,hsa:595,211,KGML,
-path:hsa05224,216,node,FU_872accec,OR,hsa:54361,216,KGML,isozyme group
-path:hsa05224,216,node,FU_872accec,OR,hsa:7471,216,KGML,isozyme group
-path:hsa05224,218,node,FU_afb7c825,SINGLE,hsa:8600,218,KGML,
-path:hsa05224,219,node,FU_9d4d7dc1,SINGLE,hsa:4609,219,KGML,
-path:hsa05224,220,node,FU_aebb10fd,SINGLE,hsa:1950,220,KGML,
-path:hsa05224,221,node,FU_0750e9b4,SINGLE,hsa:1950,221,KGML,
-path:hsa05224,222,node,FU_ddbb3bc4,SINGLE,hsa:672,222,KGML,
-path:hsa05224,223,node,FU_f8c9a85a,SINGLE,hsa:675,223,KGML,
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2246,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2247,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2248,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2249,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2250,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2251,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2252,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2253,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2254,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:2255,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:26281,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:26291,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:27006,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:8074,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:8817,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:8822,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:8823,226,KGML,isozyme group
-path:hsa05224,226,node,FU_2a653a39,OR,hsa:9965,226,KGML,isozyme group
-path:hsa05224,228,node,FU_9fa74e60,SINGLE,hsa:2064,228,KGML,
-path:hsa05224,229,node,FU_253a8153,OR,hsa:3280,229,KGML,isozyme group
-path:hsa05224,229,node,FU_253a8153,OR,hsa:388585,229,KGML,isozyme group
-path:hsa05224,230,node,FU_a1f42796,OR,hsa:23462,230,KGML,isozyme group
-path:hsa05224,230,node,FU_a1f42796,OR,hsa:23493,230,KGML,isozyme group
-path:hsa05224,230,node,FU_a1f42796,OR,hsa:26508,230,KGML,isozyme group
-path:hsa05224,231,node,FU_9e397415,SINGLE,hsa:2324,231,KGML,
-path:hsa05224,236,node,FU_fb6878b9,SINGLE,hsa:2064,236,KGML,
-path:hsa05224,242,node,FU_f38485c3,SINGLE,hsa:7157,242,KGML,
-path:hsa05224,248,node,FU_46bbc60a,SINGLE,hsa:1026,248,KGML,
-path:hsa05224,249,node,FU_03cab526,OR,hsa:10912,249,KGML,isozyme group
-path:hsa05224,249,node,FU_03cab526,OR,hsa:1647,249,KGML,isozyme group
-path:hsa05224,249,node,FU_03cab526,OR,hsa:4616,249,KGML,isozyme group
-path:hsa05224,250,node,FU_71be3dd9,SINGLE,hsa:581,250,KGML,
-path:hsa05224,251,node,FU_6650df52,SINGLE,hsa:578,251,KGML,
-path:hsa05224,252,node,FU_4955e13c,SINGLE,hsa:1643,252,KGML,
-path:hsa05224,253,node,FU_ef7d760f,SINGLE,hsa:51426,253,KGML,
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:8202,254,KGML,protein complex inferred from group
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:8648,254,KGML,protein complex inferred from group
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:2353,254,KGML,protein complex inferred from group
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:3725,254,KGML,protein complex inferred from group
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:6667,254,KGML,protein complex inferred from group
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:2099,254,KGML,protein complex inferred from group
+path:hsa05224,254,node,FU_ff7e0284,AND,hsa:2100,254,KGML,protein complex inferred from group
+path:hsa05224,255,node,FU_62cb5aa4,AND,hsa:8202,255,KGML,protein complex inferred from group
+path:hsa05224,255,node,FU_62cb5aa4,AND,hsa:8648,255,KGML,protein complex inferred from group
+path:hsa05224,255,node,FU_62cb5aa4,AND,hsa:2099,255,KGML,protein complex inferred from group
+path:hsa05224,255,node,FU_62cb5aa4,AND,hsa:2100,255,KGML,protein complex inferred from group
+path:hsa05224,256,node,FU_6953742d,AND,hsa:5241,256,KGML,protein complex inferred from group
+path:hsa05224,256,node,FU_6953742d,AND,hsa:8202,256,KGML,protein complex inferred from group
+path:hsa05224,256,node,FU_6953742d,AND,hsa:8648,256,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:4040,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:4041,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:11211,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:2535,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:7855,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:7976,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:8321,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:8322,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:8323,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:8324,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:8325,257,KGML,protein complex inferred from group
+path:hsa05224,257,node,FU_13786009,AND,hsa:8326,257,KGML,protein complex inferred from group
+path:hsa05224,258,node,FU_5a998403,AND,hsa:1019,258,KGML,protein complex inferred from group
+path:hsa05224,258,node,FU_5a998403,AND,hsa:1021,258,KGML,protein complex inferred from group
+path:hsa05224,258,node,FU_5a998403,AND,hsa:595,258,KGML,protein complex inferred from group
+path:hsa05224,6,node,FU_1e80a761,OR,hsa:2099,6,KGML,isozyme group
+path:hsa05224,6,node,FU_1e80a761,OR,hsa:2100,6,KGML,isozyme group
+path:hsa05224,7,node,FU_f16d901c,OR,hsa:2099,7,KGML,isozyme group
+path:hsa05224,7,node,FU_f16d901c,OR,hsa:2100,7,KGML,isozyme group
+path:hsa05224,11,node,FU_f1d15d84,SINGLE,hsa:1956,11,KGML,
+path:hsa05224,15,node,FU_97fe9302,OR,hsa:2099,15,KGML,isozyme group
+path:hsa05224,15,node,FU_97fe9302,OR,hsa:2100,15,KGML,isozyme group
+path:hsa05224,16,node,FU_2eb71cc0,OR,hsa:8202,16,KGML,isozyme group
+path:hsa05224,16,node,FU_2eb71cc0,OR,hsa:8648,16,KGML,isozyme group
+path:hsa05224,17,node,FU_1d840388,OR,hsa:3265,17,KGML,isozyme group
+path:hsa05224,17,node,FU_1d840388,OR,hsa:3845,17,KGML,isozyme group
+path:hsa05224,17,node,FU_1d840388,OR,hsa:4893,17,KGML,isozyme group
+path:hsa05224,18,node,FU_0ff55d3f,OR,hsa:369,18,KGML,isozyme group
+path:hsa05224,18,node,FU_0ff55d3f,OR,hsa:5894,18,KGML,isozyme group
+path:hsa05224,18,node,FU_0ff55d3f,OR,hsa:673,18,KGML,isozyme group
+path:hsa05224,19,node,FU_90b342b7,OR,hsa:5604,19,KGML,isozyme group
+path:hsa05224,19,node,FU_90b342b7,OR,hsa:5605,19,KGML,isozyme group
+path:hsa05224,20,node,FU_733d81e2,OR,hsa:5594,20,KGML,isozyme group
+path:hsa05224,20,node,FU_733d81e2,OR,hsa:5595,20,KGML,isozyme group
+path:hsa05224,25,node,FU_12f6cdfd,OR,hsa:25759,25,KGML,isozyme group
+path:hsa05224,25,node,FU_12f6cdfd,OR,hsa:399694,25,KGML,isozyme group
+path:hsa05224,25,node,FU_12f6cdfd,OR,hsa:53358,25,KGML,isozyme group
+path:hsa05224,25,node,FU_12f6cdfd,OR,hsa:6464,25,KGML,isozyme group
+path:hsa05224,26,node,FU_d82735c8,SINGLE,hsa:2885,26,KGML,
+path:hsa05224,27,node,FU_1c28365c,OR,hsa:6654,27,KGML,isozyme group
+path:hsa05224,27,node,FU_1c28365c,OR,hsa:6655,27,KGML,isozyme group
+path:hsa05224,33,node,FU_87ebd50b,OR,hsa:182,33,KGML,isozyme group
+path:hsa05224,33,node,FU_87ebd50b,OR,hsa:3714,33,KGML,isozyme group
+path:hsa05224,34,node,FU_a6c161e9,OR,hsa:4851,34,KGML,isozyme group
+path:hsa05224,34,node,FU_a6c161e9,OR,hsa:4853,34,KGML,isozyme group
+path:hsa05224,34,node,FU_a6c161e9,OR,hsa:4854,34,KGML,isozyme group
+path:hsa05224,34,node,FU_a6c161e9,OR,hsa:4855,34,KGML,isozyme group
+path:hsa05224,36,node,FU_9483f41a,SINGLE,hsa:2475,36,KGML,
+path:hsa05224,37,node,FU_f61e86b8,OR,hsa:6198,37,KGML,isozyme group
+path:hsa05224,37,node,FU_f61e86b8,OR,hsa:6199,37,KGML,isozyme group
+path:hsa05224,39,node,FU_2dfed683,SINGLE,hsa:3479,39,KGML,
+path:hsa05224,40,node,FU_b986b077,SINGLE,hsa:3480,40,KGML,
+path:hsa05224,42,node,FU_a5a198b3,SINGLE,hsa:2064,42,KGML,
+path:hsa05224,43,node,FU_dfdeb9b6,OR,hsa:8202,43,KGML,isozyme group
+path:hsa05224,43,node,FU_dfdeb9b6,OR,hsa:8648,43,KGML,isozyme group
+path:hsa05224,45,node,FU_bbc8a6d2,OR,hsa:2353,45,KGML,isozyme group
+path:hsa05224,45,node,FU_bbc8a6d2,OR,hsa:3725,45,KGML,isozyme group
+path:hsa05224,45,node,FU_bbc8a6d2,OR,hsa:6667,45,KGML,isozyme group
+path:hsa05224,47,node,FU_4ede4887,OR,hsa:2099,47,KGML,isozyme group
+path:hsa05224,47,node,FU_4ede4887,OR,hsa:2100,47,KGML,isozyme group
+path:hsa05224,48,node,FU_6ebc798c,OR,hsa:10683,48,KGML,isozyme group
+path:hsa05224,48,node,FU_6ebc798c,OR,hsa:28514,48,KGML,isozyme group
+path:hsa05224,48,node,FU_6ebc798c,OR,hsa:54567,48,KGML,isozyme group
+path:hsa05224,58,node,FU_396d4d45,OR,hsa:2099,58,KGML,isozyme group
+path:hsa05224,58,node,FU_396d4d45,OR,hsa:2100,58,KGML,isozyme group
+path:hsa05224,71,node,FU_549d1599,SINGLE,hsa:5241,71,KGML,
+path:hsa05224,74,node,FU_adcc538c,SINGLE,hsa:5241,74,KGML,
+path:hsa05224,75,node,FU_be55e258,OR,hsa:8202,75,KGML,isozyme group
+path:hsa05224,75,node,FU_be55e258,OR,hsa:8648,75,KGML,isozyme group
+path:hsa05224,76,node,FU_725cf385,OR,hsa:3265,76,KGML,isozyme group
+path:hsa05224,76,node,FU_725cf385,OR,hsa:3845,76,KGML,isozyme group
+path:hsa05224,76,node,FU_725cf385,OR,hsa:4893,76,KGML,isozyme group
+path:hsa05224,77,node,FU_fe5e35c6,OR,hsa:369,77,KGML,isozyme group
+path:hsa05224,77,node,FU_fe5e35c6,OR,hsa:5894,77,KGML,isozyme group
+path:hsa05224,77,node,FU_fe5e35c6,OR,hsa:673,77,KGML,isozyme group
+path:hsa05224,78,node,FU_a34aa7ae,OR,hsa:5604,78,KGML,isozyme group
+path:hsa05224,78,node,FU_a34aa7ae,OR,hsa:5605,78,KGML,isozyme group
+path:hsa05224,79,node,FU_051d68f5,OR,hsa:5594,79,KGML,isozyme group
+path:hsa05224,79,node,FU_051d68f5,OR,hsa:5595,79,KGML,isozyme group
+path:hsa05224,85,node,FU_b25ed5bf,OR,hsa:25759,85,KGML,isozyme group
+path:hsa05224,85,node,FU_b25ed5bf,OR,hsa:399694,85,KGML,isozyme group
+path:hsa05224,85,node,FU_b25ed5bf,OR,hsa:53358,85,KGML,isozyme group
+path:hsa05224,85,node,FU_b25ed5bf,OR,hsa:6464,85,KGML,isozyme group
+path:hsa05224,86,node,FU_9958d000,SINGLE,hsa:2885,86,KGML,
+path:hsa05224,87,node,FU_2460f7c1,OR,hsa:6654,87,KGML,isozyme group
+path:hsa05224,87,node,FU_2460f7c1,OR,hsa:6655,87,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:110117499,91,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:5290,91,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:5291,91,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:5293,91,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:5295,91,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:5296,91,KGML,isozyme group
+path:hsa05224,91,node,FU_1ad30e20,OR,hsa:8503,91,KGML,isozyme group
+path:hsa05224,92,node,FU_d5fe2d9a,OR,hsa:10000,92,KGML,isozyme group
+path:hsa05224,92,node,FU_d5fe2d9a,OR,hsa:207,92,KGML,isozyme group
+path:hsa05224,92,node,FU_d5fe2d9a,OR,hsa:208,92,KGML,isozyme group
+path:hsa05224,95,node,FU_6ed3a341,SINGLE,hsa:2475,95,KGML,
+path:hsa05224,96,node,FU_0decb9fa,OR,hsa:6198,96,KGML,isozyme group
+path:hsa05224,96,node,FU_0decb9fa,OR,hsa:6199,96,KGML,isozyme group
+path:hsa05224,99,node,FU_5e3d9665,SINGLE,hsa:3479,99,KGML,
+path:hsa05224,100,node,FU_99d51f54,SINGLE,hsa:3480,100,KGML,
+path:hsa05224,108,node,FU_0a39c352,SINGLE,hsa:1956,108,KGML,
+path:hsa05224,110,node,FU_89b1bf6c,OR,hsa:3265,110,KGML,isozyme group
+path:hsa05224,110,node,FU_89b1bf6c,OR,hsa:3845,110,KGML,isozyme group
+path:hsa05224,110,node,FU_89b1bf6c,OR,hsa:4893,110,KGML,isozyme group
+path:hsa05224,111,node,FU_6e83dc55,OR,hsa:369,111,KGML,isozyme group
+path:hsa05224,111,node,FU_6e83dc55,OR,hsa:5894,111,KGML,isozyme group
+path:hsa05224,111,node,FU_6e83dc55,OR,hsa:673,111,KGML,isozyme group
+path:hsa05224,112,node,FU_c29741bb,OR,hsa:5604,112,KGML,isozyme group
+path:hsa05224,112,node,FU_c29741bb,OR,hsa:5605,112,KGML,isozyme group
+path:hsa05224,113,node,FU_bcc40721,OR,hsa:5594,113,KGML,isozyme group
+path:hsa05224,113,node,FU_bcc40721,OR,hsa:5595,113,KGML,isozyme group
+path:hsa05224,118,node,FU_f6a4f05a,OR,hsa:25759,118,KGML,isozyme group
+path:hsa05224,118,node,FU_f6a4f05a,OR,hsa:399694,118,KGML,isozyme group
+path:hsa05224,118,node,FU_f6a4f05a,OR,hsa:53358,118,KGML,isozyme group
+path:hsa05224,118,node,FU_f6a4f05a,OR,hsa:6464,118,KGML,isozyme group
+path:hsa05224,119,node,FU_ae4e4bd1,SINGLE,hsa:2885,119,KGML,
+path:hsa05224,120,node,FU_d8c84745,OR,hsa:6654,120,KGML,isozyme group
+path:hsa05224,120,node,FU_d8c84745,OR,hsa:6655,120,KGML,isozyme group
+path:hsa05224,125,node,FU_530a70ff,SINGLE,hsa:2475,125,KGML,
+path:hsa05224,126,node,FU_5ea62512,OR,hsa:6198,126,KGML,isozyme group
+path:hsa05224,126,node,FU_5ea62512,OR,hsa:6199,126,KGML,isozyme group
+path:hsa05224,128,node,FU_1b169d15,SINGLE,hsa:3479,128,KGML,
+path:hsa05224,129,node,FU_b9f28720,SINGLE,hsa:3480,129,KGML,
+path:hsa05224,135,node,FU_1aff5a46,SINGLE,hsa:5728,135,KGML,
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:110117499,138,KGML,isozyme group
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:5290,138,KGML,isozyme group
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:5291,138,KGML,isozyme group
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:5293,138,KGML,isozyme group
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:5295,138,KGML,isozyme group
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:5296,138,KGML,isozyme group
+path:hsa05224,138,node,FU_ed79dd83,OR,hsa:8503,138,KGML,isozyme group
+path:hsa05224,139,node,FU_77182f44,OR,hsa:10000,139,KGML,isozyme group
+path:hsa05224,139,node,FU_77182f44,OR,hsa:207,139,KGML,isozyme group
+path:hsa05224,139,node,FU_77182f44,OR,hsa:208,139,KGML,isozyme group
+path:hsa05224,143,node,FU_06d75e82,SINGLE,hsa:5728,143,KGML,
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:110117499,147,KGML,isozyme group
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:5290,147,KGML,isozyme group
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:5291,147,KGML,isozyme group
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:5293,147,KGML,isozyme group
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:5295,147,KGML,isozyme group
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:5296,147,KGML,isozyme group
+path:hsa05224,147,node,FU_db70bc67,OR,hsa:8503,147,KGML,isozyme group
+path:hsa05224,148,node,FU_8d222760,OR,hsa:10000,148,KGML,isozyme group
+path:hsa05224,148,node,FU_8d222760,OR,hsa:207,148,KGML,isozyme group
+path:hsa05224,148,node,FU_8d222760,OR,hsa:208,148,KGML,isozyme group
+path:hsa05224,153,node,FU_a55a3563,SINGLE,hsa:5728,153,KGML,
+path:hsa05224,157,node,FU_e4aa0abe,SINGLE,hsa:595,157,KGML,
+path:hsa05224,158,node,FU_a5d4a670,SINGLE,hsa:4609,158,KGML,
+path:hsa05224,159,node,FU_dfc9d3f2,OR,hsa:51176,159,KGML,isozyme group
+path:hsa05224,159,node,FU_dfc9d3f2,OR,hsa:6932,159,KGML,isozyme group
+path:hsa05224,159,node,FU_dfc9d3f2,OR,hsa:6934,159,KGML,isozyme group
+path:hsa05224,159,node,FU_dfc9d3f2,OR,hsa:83439,159,KGML,isozyme group
+path:hsa05224,160,node,FU_10aec8b4,OR,hsa:122011,160,KGML,isozyme group
+path:hsa05224,160,node,FU_10aec8b4,OR,hsa:1452,160,KGML,isozyme group
+path:hsa05224,161,node,FU_fba3da50,OR,hsa:8312,161,KGML,isozyme group
+path:hsa05224,161,node,FU_fba3da50,OR,hsa:8313,161,KGML,isozyme group
+path:hsa05224,162,node,FU_606e8b09,OR,hsa:10297,162,KGML,isozyme group
+path:hsa05224,162,node,FU_606e8b09,OR,hsa:324,162,KGML,isozyme group
+path:hsa05224,163,node,FU_05a17a77,SINGLE,hsa:1499,163,KGML,
+path:hsa05224,164,node,FU_744f86a4,SINGLE,hsa:2932,164,KGML,
+path:hsa05224,165,node,FU_b8288cb2,OR,hsa:10023,165,KGML,isozyme group
+path:hsa05224,165,node,FU_b8288cb2,OR,hsa:23401,165,KGML,isozyme group
+path:hsa05224,166,node,FU_05c63a34,OR,hsa:1855,166,KGML,isozyme group
+path:hsa05224,166,node,FU_05c63a34,OR,hsa:1856,166,KGML,isozyme group
+path:hsa05224,166,node,FU_05c63a34,OR,hsa:1857,166,KGML,isozyme group
+path:hsa05224,167,node,FU_13b0af8c,OR,hsa:4040,167,KGML,isozyme group
+path:hsa05224,167,node,FU_13b0af8c,OR,hsa:4041,167,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:11211,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:2535,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:7855,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:7976,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:8321,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:8322,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:8323,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:8324,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:8325,168,KGML,isozyme group
+path:hsa05224,168,node,FU_d2b9441a,OR,hsa:8326,168,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:51384,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:54361,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7471,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7472,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7473,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7474,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7475,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7476,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7477,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7478,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7479,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7480,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7481,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7482,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7483,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:7484,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:80326,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:81029,169,KGML,isozyme group
+path:hsa05224,169,node,FU_8f9831f7,OR,hsa:89780,169,KGML,isozyme group
+path:hsa05224,184,node,FU_cefe8149,OR,hsa:1019,184,KGML,isozyme group
+path:hsa05224,184,node,FU_cefe8149,OR,hsa:1021,184,KGML,isozyme group
+path:hsa05224,185,node,FU_27f26981,SINGLE,hsa:5925,185,KGML,
+path:hsa05224,186,node,FU_8d2432f4,OR,hsa:1869,186,KGML,isozyme group
+path:hsa05224,186,node,FU_8d2432f4,OR,hsa:1870,186,KGML,isozyme group
+path:hsa05224,186,node,FU_8d2432f4,OR,hsa:1871,186,KGML,isozyme group
+path:hsa05224,187,node,FU_55be9996,SINGLE,hsa:595,187,KGML,
+path:hsa05224,195,node,FU_83458e69,SINGLE,hsa:3815,195,KGML,
+path:hsa05224,198,node,FU_d1027c77,SINGLE,hsa:595,198,KGML,
+path:hsa05224,199,node,FU_66eaf18e,SINGLE,hsa:1026,199,KGML,
+path:hsa05224,200,node,FU_67ae444f,SINGLE,hsa:4791,200,KGML,
+path:hsa05224,201,node,FU_4d47c735,SINGLE,hsa:4609,201,KGML,
+path:hsa05224,202,node,FU_7f6e1224,SINGLE,hsa:2064,202,KGML,
+path:hsa05224,205,node,FU_cda2298b,SINGLE,hsa:2260,205,KGML,
+path:hsa05224,211,node,FU_c6a08511,SINGLE,hsa:595,211,KGML,
+path:hsa05224,216,node,FU_f683b8e8,OR,hsa:54361,216,KGML,isozyme group
+path:hsa05224,216,node,FU_f683b8e8,OR,hsa:7471,216,KGML,isozyme group
+path:hsa05224,218,node,FU_2cc2b484,SINGLE,hsa:8600,218,KGML,
+path:hsa05224,219,node,FU_c2fa1e98,SINGLE,hsa:4609,219,KGML,
+path:hsa05224,220,node,FU_7bbddedd,SINGLE,hsa:1950,220,KGML,
+path:hsa05224,221,node,FU_fe5a669a,SINGLE,hsa:1950,221,KGML,
+path:hsa05224,222,node,FU_e0430c06,SINGLE,hsa:672,222,KGML,
+path:hsa05224,223,node,FU_e54f2456,SINGLE,hsa:675,223,KGML,
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2246,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2247,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2248,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2249,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2250,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2251,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2252,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2253,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2254,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:2255,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:26281,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:26291,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:27006,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:8074,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:8817,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:8822,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:8823,226,KGML,isozyme group
+path:hsa05224,226,node,FU_4412b94f,OR,hsa:9965,226,KGML,isozyme group
+path:hsa05224,228,node,FU_b34e0962,SINGLE,hsa:2064,228,KGML,
+path:hsa05224,229,node,FU_61290df4,OR,hsa:3280,229,KGML,isozyme group
+path:hsa05224,229,node,FU_61290df4,OR,hsa:388585,229,KGML,isozyme group
+path:hsa05224,230,node,FU_5dc71e0b,OR,hsa:23462,230,KGML,isozyme group
+path:hsa05224,230,node,FU_5dc71e0b,OR,hsa:23493,230,KGML,isozyme group
+path:hsa05224,230,node,FU_5dc71e0b,OR,hsa:26508,230,KGML,isozyme group
+path:hsa05224,231,node,FU_e1948a48,SINGLE,hsa:2324,231,KGML,
+path:hsa05224,236,node,FU_2694ec10,SINGLE,hsa:2064,236,KGML,
+path:hsa05224,242,node,FU_74f3b2f0,SINGLE,hsa:7157,242,KGML,
+path:hsa05224,248,node,FU_c54b6f77,SINGLE,hsa:1026,248,KGML,
+path:hsa05224,249,node,FU_ea7e930f,OR,hsa:10912,249,KGML,isozyme group
+path:hsa05224,249,node,FU_ea7e930f,OR,hsa:1647,249,KGML,isozyme group
+path:hsa05224,249,node,FU_ea7e930f,OR,hsa:4616,249,KGML,isozyme group
+path:hsa05224,250,node,FU_423be9c7,SINGLE,hsa:581,250,KGML,
+path:hsa05224,251,node,FU_e0402909,SINGLE,hsa:578,251,KGML,
+path:hsa05224,252,node,FU_f90eab14,SINGLE,hsa:1643,252,KGML,
+path:hsa05224,253,node,FU_85147b1b,SINGLE,hsa:51426,253,KGML,
