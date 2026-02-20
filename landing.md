@@ -27,7 +27,7 @@ Alunos especiais e aqueles que ingressarem na alteração de matrícula levarão
 ## Endereços Importantes
 
 * [Página Principal da Disciplina](/)
-[Google Classroom da Disciplina](https://classroom.google.com/c/ODQwMTg4NTgxMDMz)
+* [Google Classroom da Disciplina](https://classroom.google.com/c/ODQwMTg4NTgxMDMz)
 * [FAQ](faq.md)
 
 <!--
