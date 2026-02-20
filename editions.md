@@ -10,3 +10,4 @@ Páginas de edições anteriores:
 * [2021](/history/2021/)
 * [2022](/history/2022/)
 * [2023](/history/2023/)
+* [2025](/history/2025/)

@@ -6,8 +6,8 @@ permalink: /landing/
 
 ## Local e Horários
 
-As aulas serão segundas e quartas das 8h às 10h.
-no Instituto de Computação, prédio IC 3/3.5, sala 351.
+As aulas serão segundas e quartas das 14h às 16h.
+no Instituto de Computação, prédio IC 3/3.5, sala 352.
 
 ### Como chegar no local
 
@@ -27,7 +27,7 @@ Alunos especiais e aqueles que ingressarem na alteração de matrícula levarão
 ## Endereços Importantes
 
 * [Página Principal da Disciplina](/)
-[Google Classroom da Disciplina](https://classroom.google.com/c/Nzg5MDMxNjU4MzY4)
+[Google Classroom da Disciplina](https://classroom.google.com/c/ODQwMTg4NTgxMDMz)
 * [FAQ](faq.md)
 
 <!--
