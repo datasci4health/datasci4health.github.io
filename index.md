@@ -4,15 +4,16 @@ layout: home
 
 <h1>Edição 2026 / 1&deg; Semestre</h1>
 
-<h3>Visão Geral da Disciplina (edição 2025 - válido para 2026)</h3>
+<h3>Visão Geral da Disciplina (edição 2025 - mais resumida)</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIXPP2OoGiI?si=-HLnp8zMHVLtnh0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<!--
+<h3>Apresentação da Disciplina 2026 (mais detalhada)</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yb-ygbFyeAc?si=46NI0wUjo_4BMXk5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Todas as aulas desta disciplina são gravadas e ficam disponíveis nesta playlist.
 
-<h3>Playlist da Disciplina 2025</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=fzC1t_pj4KbDHDqn&amp;list=PL3JRjVnXiTBb837vbmZIyIelMM3winBQ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
--->
+<h3>Playlist da Disciplina 2026</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=5SiJgpTN4n_9RE_N&amp;list=PL3JRjVnXiTBYMNyUFz0Y6OP2B5ZkC4Inh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <hr>
 

@@ -7,7 +7,8 @@ permalink: /landing/
 ## Local e Horários
 
 As aulas serão segundas e quartas das 14h às 16h.
-no Instituto de Computação, prédio IC 3/3.5, sala 352.
+No Instituto de Computação, prédio IC 3/3.5, sala 352.
+Vamos começar a ter algumas aulas nas quartas no laboratório 303 do IC 3/3.5 (mesmo prédio).
 
 ### Como chegar no local
 
