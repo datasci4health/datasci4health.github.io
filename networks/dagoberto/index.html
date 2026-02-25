@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Visualizer</title>
+    <title>Network & Chart Visualizer</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
         body {
@@ -31,12 +32,25 @@
         #main-content {
             flex-grow: 1;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
-        #cy {
+        /* Container styles for toggling */
+        #cy-container, #chart-container {
             width: 100%;
             height: 100%;
+            position: absolute;
+            top: 0; left: 0;
             background-color: #eef2f5;
         }
+        #chart-container {
+            display: none; /* Hidden by default */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        #cy { width: 100%; height: 100%; }
+        
         h2, h3 { margin: 0 0 10px 0; color: #333; }
         
         /* Input Section Styling */
@@ -60,7 +74,6 @@
             border-radius: 4px;
             transition: all 0.2s ease;
         }
-        /* Drag and drop visual feedback */
         textarea.drag-over {
             background-color: #e2eef9;
             border: 2px dashed #0056b3;
@@ -79,6 +92,8 @@
             transition: background 0.2s;
         }
         button:hover { background-color: #004494; }
+        button.alt-btn { background-color: #17a2b8; }
+        button.alt-btn:hover { background-color: #138496; }
         .small-btn {
             padding: 4px 8px;
             font-size: 0.8em;
@@ -98,27 +113,30 @@
 <body>
 
     <div id="sidebar">
-        <h2>Network Setup</h2>
+        <h2>Data Setup</h2>
 
         <div>
             <div class="input-header">
-                <label>Nodes CSV (needs 'id', 'type')</label>
+                <label>Nodes CSV</label>
                 <button class="small-btn" onclick="downloadCSV('nodes-csv', 'nodes.csv')">Save CSV</button>
             </div>
             <input type="file" id="nodes-file" class="file-input" accept=".csv" />
-            <textarea id="nodes-csv" placeholder="Drop CSV file here or type...&#10;id,type,label"></textarea>
+            <textarea id="nodes-csv" placeholder="id,x,y,type"></textarea>
         </div>
 
         <div>
             <div class="input-header">
-                <label>Edges CSV (needs 'source', 'target', 'type')</label>
+                <label>Edges CSV</label>
                 <button class="small-btn" onclick="downloadCSV('edges-csv', 'edges.csv')">Save CSV</button>
             </div>
             <input type="file" id="edges-file" class="file-input" accept=".csv" />
-            <textarea id="edges-csv" placeholder="Drop CSV file here or type...&#10;source,target,type"></textarea>
+            <textarea id="edges-csv" placeholder="source,target,type"></textarea>
         </div>
 
-        <button onclick="renderNetwork()">Render Network</button>
+        <div class="button-group">
+            <button onclick="renderNetwork()">Render Network</button>
+            <button class="alt-btn" onclick="renderChart()">Plot Nodes Chart</button>
+        </div>
 
         <hr>
 
@@ -129,107 +147,85 @@
             <input type="file" id="load-setup-file" accept=".json" style="display: none" onchange="loadSetup(event)" />
         </div>
         <div class="button-group" style="margin-top: 10px;">
-            <button onclick="downloadImage()">Download Graph Image</button>
+            <button onclick="downloadImage()">Download View Image</button>
         </div>
     </div>
 
     <div id="main-content">
-        <div id="cy"></div>
+        <div id="cy-container">
+            <div id="cy"></div>
+        </div>
+        <div id="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
 
     <script>
         let cy = null;
+        let myChart = null;
 
         // --- Visual Palettes ---
         const colors = ['#e6194B', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabed4'];
         const shapes = ['ellipse', 'rectangle', 'triangle', 'diamond', 'pentagon', 'hexagon', 'heptagon', 'star'];
         const lineStyles = ['solid', 'dashed', 'dotted'];
 
+        // --- View Toggling ---
+        function showView(viewName) {
+            document.getElementById('cy-container').style.display = viewName === 'network' ? 'block' : 'none';
+            document.getElementById('chart-container').style.display = viewName === 'chart' ? 'block' : 'none';
+        }
+
         // --- Sample Data Injection ---
-        document.getElementById('nodes-csv').value = `id,type\nAlice,Person\nBob,Person\nCharlie,Person\nAcmeCorp,Company\nGlobex,Company`;
+        // Notice the updated nodes data with X and Y numerical columns
+        document.getElementById('nodes-csv').value = `id,weight,height,type\nAlice,65,160,Person\nBob,80,175,Person\nCharlie,72,180,Person\nAcmeCorp,120,100,Company\nGlobex,150,110,Company`;
         document.getElementById('edges-csv').value = `source,target,type\nAlice,AcmeCorp,WorksFor\nBob,AcmeCorp,WorksFor\nCharlie,Globex,WorksFor\nAlice,Bob,Knows\nBob,Charlie,Knows`;
 
-        // --- File Input Handlers ---
+        // --- File Input & Drag/Drop Handlers ---
         function setupFileReader(inputId, textareaId) {
             document.getElementById(inputId).addEventListener('change', function(e) {
                 const file = e.target.files[0];
                 if (!file) return;
                 const reader = new FileReader();
-                reader.onload = function(e) {
-                    document.getElementById(textareaId).value = e.target.result;
-                };
+                reader.onload = function(e) { document.getElementById(textareaId).value = e.target.result; };
                 reader.readAsText(file);
             });
         }
         setupFileReader('nodes-file', 'nodes-csv');
         setupFileReader('edges-file', 'edges-csv');
 
-        // --- Drag and Drop Handlers ---
         function setupDragAndDrop(textareaId) {
             const textarea = document.getElementById(textareaId);
-
-            // Prevent default browser behavior (opening the file)
-            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-                textarea.addEventListener(eventName, preventDefaults, false);
-            });
-
-            function preventDefaults(e) {
-                e.preventDefault();
-                e.stopPropagation();
-            }
-
-            // Add/remove visual feedback class
-            ['dragenter', 'dragover'].forEach(eventName => {
-                textarea.addEventListener(eventName, () => textarea.classList.add('drag-over'), false);
-            });
-
-            ['dragleave', 'drop'].forEach(eventName => {
-                textarea.addEventListener(eventName, () => textarea.classList.remove('drag-over'), false);
-            });
-
-            // Handle the dropped file
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(evt => textarea.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); }, false));
+            ['dragenter', 'dragover'].forEach(evt => textarea.addEventListener(evt, () => textarea.classList.add('drag-over'), false));
+            ['dragleave', 'drop'].forEach(evt => textarea.addEventListener(evt, () => textarea.classList.remove('drag-over'), false));
             textarea.addEventListener('drop', (e) => {
-                const dt = e.dataTransfer;
-                const files = dt.files;
-                
+                const files = e.dataTransfer.files;
                 if (files && files.length > 0) {
-                    const file = files[0];
                     const reader = new FileReader();
-                    reader.onload = function(e) {
-                        textarea.value = e.target.result;
-                    };
-                    reader.readAsText(file);
+                    reader.onload = function(evt) { textarea.value = evt.target.result; };
+                    reader.readAsText(files[0]);
                 }
             });
         }
         setupDragAndDrop('nodes-csv');
         setupDragAndDrop('edges-csv');
 
-        // --- CSV Download ---
         function downloadCSV(textareaId, defaultFilename) {
             const csvContent = document.getElementById(textareaId).value;
-            if (!csvContent.trim()) {
-                alert("The text box is empty. Nothing to save.");
-                return;
-            }
-            
-            // Create a Blob containing the CSV data
+            if (!csvContent.trim()) { alert("The text box is empty."); return; }
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
-            
-            // Create a temporary anchor element and trigger download
             const link = document.createElement("a");
             link.setAttribute("href", url);
             link.setAttribute("download", defaultFilename);
-            link.style.display = 'none';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            URL.revokeObjectURL(url); // Clean up
         }
 
-        // --- Network Rendering ---
+        // --- 1. Network Rendering ---
         function renderNetwork() {
+            showView('network');
             const nodesCsv = document.getElementById('nodes-csv').value;
             const edgesCsv = document.getElementById('edges-csv').value;
 
@@ -241,89 +237,128 @@
             const nodesData = Papa.parse(nodesCsv, { header: true, skipEmptyLines: true }).data;
             const edgesData = Papa.parse(edgesCsv, { header: true, skipEmptyLines: true }).data;
 
-            let nodeTypes = [...new Set(nodesData.map(n => n.type))];
-            let edgeTypes = [...new Set(edgesData.map(e => e.type))];
+            let nodeTypes = [...new Set(nodesData.map(n => n.type).filter(Boolean))];
+            let edgeTypes = [...new Set(edgesData.map(e => e.type).filter(Boolean))];
 
             let style = [
-                {
-                    selector: 'node',
-                    style: {
-                        'label': 'data(id)',
-                        'text-valign': 'center',
-                        'text-halign': 'center',
-                        'color': '#fff',
-                        'text-outline-width': 2,
-                        'text-outline-color': '#333',
-                        'width': 50,
-                        'height': 50
-                    }
-                },
-                {
-                    selector: 'edge',
-                    style: {
-                        'label': 'data(type)',
-                        'curve-style': 'bezier',
-                        'target-arrow-shape': 'triangle',
-                        'font-size': 10,
-                        'text-background-opacity': 1,
-                        'text-background-color': '#eef2f5'
-                    }
-                }
+                { selector: 'node', style: { 'label': 'data(id)', 'text-valign': 'center', 'text-halign': 'center', 'color': '#fff', 'text-outline-width': 2, 'text-outline-color': '#333', 'width': 50, 'height': 50 } },
+                { selector: 'edge', style: { 'label': 'data(type)', 'curve-style': 'bezier', 'target-arrow-shape': 'triangle', 'font-size': 10, 'text-background-opacity': 1, 'text-background-color': '#eef2f5' } }
             ];
 
             nodeTypes.forEach((type, index) => {
-                style.push({
-                    selector: `node[type = "${type}"]`,
-                    style: {
-                        'background-color': colors[index % colors.length],
-                        'shape': shapes[index % shapes.length]
-                    }
-                });
+                style.push({ selector: `node[type = "${type}"]`, style: { 'background-color': colors[index % colors.length], 'shape': shapes[index % shapes.length] } });
             });
-
             edgeTypes.forEach((type, index) => {
-                style.push({
-                    selector: `edge[type = "${type}"]`,
-                    style: {
-                        'line-color': colors[(index + 3) % colors.length],
-                        'target-arrow-color': colors[(index + 3) % colors.length],
-                        'line-style': lineStyles[index % lineStyles.length]
-                    }
-                });
+                style.push({ selector: `edge[type = "${type}"]`, style: { 'line-color': colors[(index + 3) % colors.length], 'target-arrow-color': colors[(index + 3) % colors.length], 'line-style': lineStyles[index % lineStyles.length] } });
             });
 
             let elements = [];
+            // We use Object.keys to dynamically find the first column as ID if 'id' is missing
             nodesData.forEach(n => {
-                if(n.id) elements.push({ data: n });
+                let keys = Object.keys(n);
+                if(keys.length > 0) {
+                    n.id = n[keys[0]]; // Ensure the first column always acts as the ID for Cytoscape
+                    elements.push({ data: n });
+                }
             });
-            edgesData.forEach(e => {
-                if(e.source && e.target) elements.push({ data: e });
-            });
+            edgesData.forEach(e => { if(e.source && e.target) elements.push({ data: e }); });
 
-            if (cy) { cy.destroy(); }
+            if (cy) cy.destroy();
             cy = cytoscape({
                 container: document.getElementById('cy'),
                 elements: elements,
                 style: style,
-                layout: {
-                    name: 'cose',
-                    padding: 50,
-                    animate: true
+                layout: { name: 'cose', padding: 50, animate: true }
+            });
+        }
+
+        // --- 2. Chart Rendering ---
+        function renderChart() {
+            showView('chart');
+            const nodesCsv = document.getElementById('nodes-csv').value;
+            if (!nodesCsv.trim()) { alert("Please provide Nodes CSV data."); return; }
+
+            const parsed = Papa.parse(nodesCsv, { header: true, skipEmptyLines: true });
+            const data = parsed.data;
+            const headers = parsed.meta.fields;
+
+            if (headers.length < 3) {
+                alert("Chart requires at least 3 columns: Label, X-axis, and Y-axis.");
+                return;
+            }
+
+            // Assign columns dynamically based on index (0, 1, 2, 3)
+            const labelCol = headers[0];
+            const xCol = headers[1];
+            const yCol = headers[2];
+            const typeCol = headers.length > 3 ? headers[3] : null;
+
+            // Group data into categories for coloring
+            const groupedData = {};
+            data.forEach(row => {
+                let cat = (typeCol && row[typeCol]) ? row[typeCol] : 'Data Points';
+                if (!groupedData[cat]) {
+                    groupedData[cat] = {
+                        label: cat,
+                        data: [],
+                        pointLabels: [], // Custom array for tooltip labels
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    };
+                }
+                
+                let xVal = parseFloat(row[xCol]);
+                let yVal = parseFloat(row[yCol]);
+                
+                // Only plot if they are valid numbers
+                if(!isNaN(xVal) && !isNaN(yVal)) {
+                    groupedData[cat].data.push({ x: xVal, y: yVal });
+                    groupedData[cat].pointLabels.push(row[labelCol]); 
+                }
+            });
+
+            // Convert to Chart.js dataset array and assign colors
+            const chartDatasets = Object.keys(groupedData).map((catName, index) => {
+                let ds = groupedData[catName];
+                ds.backgroundColor = colors[index % colors.length];
+                return ds;
+            });
+
+            if (myChart) myChart.destroy();
+
+            const ctx = document.getElementById('myChart').getContext('2d');
+            myChart = new Chart(ctx, {
+                type: 'scatter',
+                data: { datasets: chartDatasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: { display: true, text: 'Nodes Cartesian Plot', font: { size: 18 } },
+                        tooltip: {
+                            callbacks: {
+                                // Show the custom Label (Column 1) in the tooltip
+                                label: function(context) {
+                                    let ds = context.chart.data.datasets[context.datasetIndex];
+                                    let pointLabel = ds.pointLabels[context.dataIndex];
+                                    return `${pointLabel}: (${context.parsed.x}, ${context.parsed.y})`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { title: { display: true, text: xCol, font: { weight: 'bold' } } },
+                        y: { title: { display: true, text: yCol, font: { weight: 'bold' } } }
+                    }
                 }
             });
         }
 
         // --- Save / Load Full Setup ---
         function saveSetup() {
-            const setup = {
-                nodes: document.getElementById('nodes-csv').value,
-                edges: document.getElementById('edges-csv').value
-            };
+            const setup = { nodes: document.getElementById('nodes-csv').value, edges: document.getElementById('edges-csv').value };
             const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(setup));
-            const dlAnchorElem = document.createElement('a');
-            dlAnchorElem.setAttribute("href", dataStr);
-            dlAnchorElem.setAttribute("download", "network_setup.json");
-            dlAnchorElem.click();
+            const dl = document.createElement('a'); dl.setAttribute("href", dataStr); dl.setAttribute("download", "setup.json"); dl.click();
         }
 
         function loadSetup(event) {
@@ -336,25 +371,28 @@
                     document.getElementById('nodes-csv').value = setup.nodes || "";
                     document.getElementById('edges-csv').value = setup.edges || "";
                     renderNetwork();
-                } catch (err) {
-                    alert("Invalid JSON file.");
-                }
+                } catch (err) { alert("Invalid JSON file."); }
             };
             reader.readAsText(file);
             event.target.value = '';
         }
 
-        // --- Download Image ---
+        // --- Download Active View Image ---
         function downloadImage() {
-            if (!cy) {
-                alert("Please render a network first.");
-                return;
+            const networkVisible = document.getElementById('cy-container').style.display !== 'none';
+            const dl = document.createElement('a');
+            
+            if (networkVisible) {
+                if (!cy) { alert("Render network first."); return; }
+                dl.setAttribute("href", cy.png({ bg: '#eef2f5', full: true, scale: 2 }));
+                dl.setAttribute("download", "network_graph.png");
+            } else {
+                if (!myChart) { alert("Render chart first."); return; }
+                // Chart.js natively supports toBase64Image
+                dl.setAttribute("href", myChart.toBase64Image());
+                dl.setAttribute("download", "nodes_chart.png");
             }
-            const png64 = cy.png({ bg: '#eef2f5', full: true, scale: 2 });
-            const dlAnchorElem = document.createElement('a');
-            dlAnchorElem.setAttribute("href", png64);
-            dlAnchorElem.setAttribute("download", "network_graph.png");
-            dlAnchorElem.click();
+            dl.click();
         }
 
         // Render default network on load
