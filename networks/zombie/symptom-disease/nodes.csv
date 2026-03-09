@@ -1,0 +1,13 @@
+id,type
+paralysis,symptom
+yellow tong,symptom
+member loss,symptom
+chest pain,symptom
+trembling finger,symptom
+severe anger,symptom
+history bacteria,symptom
+bacterial infection,disease
+bite deficit,disease
+viral infection,disease
+fights,disease
+nothing,disease

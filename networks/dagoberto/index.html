@@ -76,7 +76,7 @@
                 <button class="small-btn" onclick="saveTextAsFile('nodes-csv', 'nodes.csv')">Save CSV</button>
             </div>
             <input type="file" id="nodes-file" class="file-input" accept=".csv" />
-            <textarea id="nodes-csv" placeholder="id,x,y,type,score" oninput="updateDropdowns()"></textarea>
+            <textarea id="nodes-csv" placeholder="Paste Nodes CSV here..." oninput="updateDropdowns()"></textarea>
             
             <div class="select-group">
                 <div class="select-row">
@@ -96,7 +96,7 @@
                 <button class="small-btn" onclick="saveTextAsFile('edges-csv', 'edges.csv')">Save CSV</button>
             </div>
             <input type="file" id="edges-file" class="file-input" accept=".csv" />
-            <textarea id="edges-csv" placeholder="source,target,type,strength" oninput="updateDropdowns()"></textarea>
+            <textarea id="edges-csv" placeholder="Paste Edges CSV here..." oninput="updateDropdowns()"></textarea>
 
             <div class="select-group">
                 <div class="select-row">
@@ -145,14 +145,12 @@
     <script>
         let cy = null;
         let myChart = null;
+        let lastNodesCsv = "";
+        let lastEdgesCsv = "";
 
         const categoryColors = ['#3cb44b', '#e6194B', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabed4'];
         const shapes = ['ellipse', 'rectangle', 'triangle', 'diamond', 'pentagon', 'hexagon'];
         const lineStyles = ['solid', 'dashed', 'dotted'];
-
-        // Sample Data
-        document.getElementById('nodes-csv').value = `id,x,y,type,score\nAlice,10,20,Person,8.5\nBob,15,25,Person,-10\nCharlie,20,15,Person,0\nAcmeCorp,30,10,Company,3.2\nGlobex,40,12,Company,-4.5`;
-        document.getElementById('edges-csv').value = `source,target,type,strength\nAlice,AcmeCorp,WorksFor,10\nBob,AcmeCorp,WorksFor,5\nCharlie,Globex,WorksFor,8\nAlice,Bob,Knows,2\nBob,Charlie,Knows,1`;
 
         // --- File Reader & Dropdowns ---
         function setupFileReader(inputId, textareaId) {
@@ -220,6 +218,15 @@
             const edgesCsv = document.getElementById('edges-csv').value;
             if (!nodesCsv.trim() || !edgesCsv.trim()) return alert("Please provide data.");
 
+            // Determine if data has changed to preserve layout
+            const dataUnchanged = (nodesCsv === lastNodesCsv && edgesCsv === lastEdgesCsv);
+            let preservedPositions = null;
+
+            if (dataUnchanged && cy && !customPositions) {
+                preservedPositions = {};
+                cy.nodes().forEach(n => { preservedPositions[n.id()] = { ...n.position() }; });
+            }
+
             const nodesData = Papa.parse(nodesCsv, { header: true, skipEmptyLines: true }).data;
             const edgesData = Papa.parse(edgesCsv, { header: true, skipEmptyLines: true }).data;
 
@@ -264,6 +271,8 @@
             let layoutConfig = { name: 'cose', padding: 50, animate: true };
             if (customPositions && Object.keys(customPositions).length > 0) {
                 layoutConfig = { name: 'preset', positions: (node) => customPositions[node.id()] };
+            } else if (preservedPositions) {
+                layoutConfig = { name: 'preset', positions: (node) => preservedPositions[node.id()] };
             }
 
             if (cy) cy.destroy();
@@ -276,6 +285,10 @@
                 ],
                 layout: layoutConfig
             });
+
+            // Update state
+            lastNodesCsv = nodesCsv;
+            lastEdgesCsv = edgesCsv;
         }
 
         function renderChart() {
@@ -434,7 +447,8 @@
             a.click();
         }
 
-        window.onload = () => { updateDropdowns(); renderNetwork(); };
+        // Only update dropdowns on load, wait for user to hit Render
+        window.onload = () => { updateDropdowns(); };
     </script>
 </body>
 </html>

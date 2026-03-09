@@ -1,0 +1,15 @@
+source,target,weight
+paralysis,bacterial infection,2
+yellow tong,bacterial infection,5
+yellow tong,bite deficit,5
+trembling finger,bite deficit,6
+history bacteria,bite deficit,3
+member loss,bite deficit,3
+member loss,viral infection,1
+chest pain,viral infection,3
+member loss,fights,2
+severe anger,fights,1
+severe anger,nothing,1
+chest pain,bacterial infection,1
+history bacteria,viral infection,1
+chest pain,fights,1
