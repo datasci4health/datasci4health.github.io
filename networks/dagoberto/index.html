@@ -261,7 +261,8 @@
             const nodesWeightsCsv = document.getElementById('nodes-weights-csv').value;
             const edgesCsv = document.getElementById('edges-csv').value;
             
-            if (!nodesDataCsv.trim() && !nodesWeightsCsv.trim() || !edgesCsv.trim()) return; // Silent return if empty on startup
+            // Only Edges are strictly required now
+            if (!edgesCsv.trim()) return;
 
             const dataUnchanged = (nodesDataCsv === lastNodesDataCsv && nodesWeightsCsv === lastNodesWeightsCsv && edgesCsv === lastEdgesCsv);
             let preservedPositions = null;
@@ -270,8 +271,21 @@
                 cy.nodes().forEach(n => { preservedPositions[n.id()] = { ...n.position() }; });
             }
 
-            const nodesData = getMergedNodesData();
+            let nodesData = getMergedNodesData();
             const edgesData = Papa.parse(edgesCsv, { header: true, skipEmptyLines: true }).data;
+
+            // Automatically deduce missing nodes from edges
+            const existingNodeIds = new Set(nodesData.map(n => String(n.id)));
+            edgesData.forEach(e => {
+                if (e.source && !existingNodeIds.has(String(e.source))) {
+                    nodesData.push({ id: e.source });
+                    existingNodeIds.add(String(e.source));
+                }
+                if (e.target && !existingNodeIds.has(String(e.target))) {
+                    nodesData.push({ id: e.target });
+                    existingNodeIds.add(String(e.target));
+                }
+            });
 
             const nTypeCol = document.getElementById('node-type-sel').value;
             const nColorCol = document.getElementById('node-color-sel').value;
@@ -428,7 +442,6 @@
 
         // --- JSON Save/Load & Setup Core ---
         function applySetupJSON(setup) {
-            // Support older JSONs that only had 'nodes'
             if (setup.nodes) {
                 document.getElementById('nodes-data-csv').value = setup.nodes || "";
                 document.getElementById('nodes-weights-csv').value = "";
