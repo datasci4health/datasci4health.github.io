@@ -72,20 +72,20 @@
 
         <div>
             <div class="input-header">
-                <label>Nodes Data CSV (Need 'id')</label>
+                <label>Nodes Data (CSV/TSV, Need 'id')</label>
                 <button class="small-btn" onclick="saveTextAsFile('nodes-data-csv', 'nodes_data.csv')">Save</button>
             </div>
-            <input type="file" id="nodes-data-file" class="file-input" accept=".csv" />
-            <textarea id="nodes-data-csv" placeholder="Paste Nodes Data CSV here..." oninput="updateDropdowns()"></textarea>
+            <input type="file" id="nodes-data-file" class="file-input" accept=".csv,.tsv,.txt" />
+            <textarea id="nodes-data-csv" placeholder="Paste or load Nodes Data here..." oninput="updateDropdowns()"></textarea>
         </div>
 
         <div>
             <div class="input-header">
-                <label>Nodes Weights CSV (Optional, Need 'id')</label>
+                <label>Nodes Weights (CSV/TSV, Opt., Need 'id')</label>
                 <button class="small-btn" onclick="saveTextAsFile('nodes-weights-csv', 'nodes_weights.csv')">Save</button>
             </div>
-            <input type="file" id="nodes-weights-file" class="file-input" accept=".csv" />
-            <textarea id="nodes-weights-csv" placeholder="Paste Nodes Weights CSV here..." oninput="updateDropdowns()"></textarea>
+            <input type="file" id="nodes-weights-file" class="file-input" accept=".csv,.tsv,.txt" />
+            <textarea id="nodes-weights-csv" placeholder="Paste or load Nodes Weights here..." oninput="updateDropdowns()"></textarea>
             
             <div class="select-group">
                 <div class="select-row">
@@ -101,11 +101,11 @@
 
         <div>
             <div class="input-header">
-                <label>Edges CSV (Need 'source', 'target')</label>
+                <label>Edges Data (CSV/TSV, Need 'source', 'target')</label>
                 <button class="small-btn" onclick="saveTextAsFile('edges-csv', 'edges.csv')">Save</button>
             </div>
-            <input type="file" id="edges-file" class="file-input" accept=".csv" />
-            <textarea id="edges-csv" placeholder="Paste Edges CSV here..." oninput="updateDropdowns()"></textarea>
+            <input type="file" id="edges-file" class="file-input" accept=".csv,.tsv,.txt" />
+            <textarea id="edges-csv" placeholder="Paste or load Edges here..." oninput="updateDropdowns()"></textarea>
 
             <div class="select-group">
                 <div class="select-row">
@@ -130,7 +130,7 @@
         <div class="button-group">
             <button class="spatial-btn" onclick="saveSpatialCSV()">Save Positions</button>
             <button class="spatial-btn" onclick="document.getElementById('load-spatial-file').click()">Load Positions</button>
-            <input type="file" id="load-spatial-file" accept=".csv" style="display: none" onchange="loadSpatialCSV(event)" />
+            <input type="file" id="load-spatial-file" accept=".csv,.tsv,.txt" style="display: none" onchange="loadSpatialCSV(event)" />
         </div>
 
         <hr>
@@ -162,6 +162,13 @@
         const shapes = ['ellipse', 'rectangle', 'triangle', 'diamond', 'pentagon', 'hexagon'];
         const lineStyles = ['solid', 'dashed', 'dotted'];
 
+        // --- Data Import Formatter (Auto-detects CSV/TSV and outputs CSV) ---
+        function formatToCsv(rawText) {
+            if (!rawText || !rawText.trim()) return "";
+            const parsed = Papa.parse(rawText.trim(), { skipEmptyLines: true });
+            return Papa.unparse(parsed.data);
+        }
+
         // --- File Readers ---
         function setupFileReader(inputId, textareaId) {
             document.getElementById(inputId).addEventListener('change', function(e) {
@@ -169,7 +176,7 @@
                 if (!file) return;
                 const reader = new FileReader();
                 reader.onload = function(e) { 
-                    document.getElementById(textareaId).value = e.target.result; 
+                    document.getElementById(textareaId).value = formatToCsv(e.target.result); 
                     updateDropdowns(); 
                 };
                 reader.readAsText(file);
@@ -400,7 +407,10 @@
             txt.addEventListener('drop', e => {
                 if (e.dataTransfer.files.length > 0) {
                     const r = new FileReader();
-                    r.onload = evt => { txt.value = evt.target.result; updateDropdowns(); };
+                    r.onload = evt => { 
+                        txt.value = formatToCsv(evt.target.result); 
+                        updateDropdowns(); 
+                    };
                     r.readAsText(e.dataTransfer.files[0]);
                 }
             });
@@ -423,7 +433,9 @@
             if (!file) return;
             const reader = new FileReader();
             reader.onload = function(e) {
-                const parsed = Papa.parse(e.target.result, { header: true, skipEmptyLines: true });
+                // Apply the same formatting logic here so spatial files can be TSV too
+                const formattedCsv = formatToCsv(e.target.result);
+                const parsed = Papa.parse(formattedCsv, { header: true, skipEmptyLines: true });
                 if (cy) {
                     cy.batch(() => {
                         parsed.data.forEach(row => {
