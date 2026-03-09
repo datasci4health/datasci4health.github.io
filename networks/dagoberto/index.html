@@ -31,9 +31,10 @@
         #chart-container { display: none; padding: 20px; box-sizing: border-box; background-color: #ffffff; }
         #cy { width: 100%; height: 100%; }
         
-        h2, h3 { margin: 0 0 10px 0; color: #333; }
+        h2, h3 { margin: 0 0 10px 0; color: #333; font-size: 1.2em; }
         .input-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
         label { font-weight: bold; font-size: 0.9em; color: #555; }
+        .file-input { margin-bottom: 5px; font-size: 0.85em; width: 100%; }
         
         textarea {
             width: 100%; height: 80px; resize: vertical;
@@ -55,6 +56,8 @@
         button:hover { background-color: #004494; }
         button.alt-btn { background-color: #17a2b8; }
         button.alt-btn:hover { background-color: #138496; }
+        button.spatial-btn { background-color: #6f42c1; }
+        button.spatial-btn:hover { background-color: #5936a2; }
         .small-btn { padding: 4px 8px; font-size: 0.8em; background-color: #28a745; }
         .small-btn:hover { background-color: #218838; }
         .button-group { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -70,8 +73,9 @@
         <div>
             <div class="input-header">
                 <label>Nodes CSV (Need 'id')</label>
-                <button class="small-btn" onclick="downloadCSV('nodes-csv', 'nodes.csv')">Save CSV</button>
+                <button class="small-btn" onclick="saveTextAsFile('nodes-csv', 'nodes.csv')">Save CSV</button>
             </div>
+            <input type="file" id="nodes-file" class="file-input" accept=".csv" />
             <textarea id="nodes-csv" placeholder="id,x,y,type,score" oninput="updateDropdowns()"></textarea>
             
             <div class="select-group">
@@ -89,8 +93,9 @@
         <div>
             <div class="input-header">
                 <label>Edges CSV (Need 'source', 'target')</label>
-                <button class="small-btn" onclick="downloadCSV('edges-csv', 'edges.csv')">Save CSV</button>
+                <button class="small-btn" onclick="saveTextAsFile('edges-csv', 'edges.csv')">Save CSV</button>
             </div>
+            <input type="file" id="edges-file" class="file-input" accept=".csv" />
             <textarea id="edges-csv" placeholder="source,target,type,strength" oninput="updateDropdowns()"></textarea>
 
             <div class="select-group">
@@ -112,10 +117,19 @@
 
         <hr>
 
-        <h3>Actions</h3>
+        <h3>Spatial Configuration</h3>
         <div class="button-group">
-            <button onclick="saveSetup()">Save JSON</button>
-            <button onclick="document.getElementById('load-setup-file').click()">Load JSON</button>
+            <button class="spatial-btn" onclick="saveSpatialCSV()">Save Positions CSV</button>
+            <button class="spatial-btn" onclick="document.getElementById('load-spatial-file').click()">Load Positions CSV</button>
+            <input type="file" id="load-spatial-file" accept=".csv" style="display: none" onchange="loadSpatialCSV(event)" />
+        </div>
+
+        <hr>
+
+        <h3>Full Setup Actions</h3>
+        <div class="button-group">
+            <button onclick="saveSetup()">Save Full JSON</button>
+            <button onclick="document.getElementById('load-setup-file').click()">Load Full JSON</button>
             <input type="file" id="load-setup-file" accept=".json" style="display: none" onchange="loadSetup(event)" />
         </div>
         <div class="button-group" style="margin-top: 10px;">
@@ -132,16 +146,31 @@
         let cy = null;
         let myChart = null;
 
-        // Visual Palettes
         const categoryColors = ['#3cb44b', '#e6194B', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabed4'];
         const shapes = ['ellipse', 'rectangle', 'triangle', 'diamond', 'pentagon', 'hexagon'];
         const lineStyles = ['solid', 'dashed', 'dotted'];
 
-        // Sample Data with new numeric columns
+        // Sample Data
         document.getElementById('nodes-csv').value = `id,x,y,type,score\nAlice,10,20,Person,8.5\nBob,15,25,Person,-10\nCharlie,20,15,Person,0\nAcmeCorp,30,10,Company,3.2\nGlobex,40,12,Company,-4.5`;
         document.getElementById('edges-csv').value = `source,target,type,strength\nAlice,AcmeCorp,WorksFor,10\nBob,AcmeCorp,WorksFor,5\nCharlie,Globex,WorksFor,8\nAlice,Bob,Knows,2\nBob,Charlie,Knows,1`;
 
-        // --- Dropdown Management ---
+        // --- File Reader & Dropdowns ---
+        function setupFileReader(inputId, textareaId) {
+            document.getElementById(inputId).addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = function(e) { 
+                    document.getElementById(textareaId).value = e.target.result; 
+                    updateDropdowns(); 
+                };
+                reader.readAsText(file);
+                e.target.value = ''; // Reset input
+            });
+        }
+        setupFileReader('nodes-file', 'nodes-csv');
+        setupFileReader('edges-file', 'edges-csv');
+
         function getCsvHeaders(csvStr) {
             const parsed = Papa.parse(csvStr, { preview: 1, header: true });
             return parsed.meta.fields || [];
@@ -169,156 +198,91 @@
             populateSelect('edge-width-sel', eHeaders, 'strength');
         }
 
-        // --- Math & Color Interpolation ---
-        // Maps value to a Divergent Scale: Red (-1) -> Gray (0) -> Blue (+1)
+        // Divergent Color Map (-1: Red, 0: Gray, +1: Blue)
         function getDivergentColor(val, maxAbs) {
-            if (isNaN(val) || maxAbs === 0) return 'rgb(180, 180, 180)'; // Gray fallback
+            if (isNaN(val) || maxAbs === 0) return 'rgb(180, 180, 180)';
             let norm = Math.max(-1, Math.min(1, val / maxAbs));
-            
             let r = 180, g = 180, b = 180;
             if (norm < 0) {
-                // Towards Red: Increase R, Decrease G and B
-                let intensity = -norm;
-                r = Math.round(180 + (255 - 180) * intensity);
-                g = Math.round(180 * (1 - intensity));
-                b = Math.round(180 * (1 - intensity));
+                let i = -norm;
+                r = Math.round(180 + (255 - 180) * i); g = Math.round(180 * (1 - i)); b = Math.round(180 * (1 - i));
             } else if (norm > 0) {
-                // Towards Blue: Increase B, Decrease R and G
-                let intensity = norm;
-                r = Math.round(180 * (1 - intensity));
-                g = Math.round(180 * (1 - intensity));
-                b = Math.round(180 + (255 - 180) * intensity);
+                let i = norm;
+                r = Math.round(180 * (1 - i)); g = Math.round(180 * (1 - i)); b = Math.round(180 + (255 - 180) * i);
             }
             return `rgb(${r},${g},${b})`;
         }
 
         // --- Core Rendering Logic ---
-        function renderNetwork() {
+        function renderNetwork(customPositions = null) {
             showView('network');
             const nodesCsv = document.getElementById('nodes-csv').value;
             const edgesCsv = document.getElementById('edges-csv').value;
-            if (!nodesCsv.trim() || !edgesCsv.trim()) { alert("Please provide data."); return; }
+            if (!nodesCsv.trim() || !edgesCsv.trim()) return alert("Please provide data.");
 
             const nodesData = Papa.parse(nodesCsv, { header: true, skipEmptyLines: true }).data;
             const edgesData = Papa.parse(edgesCsv, { header: true, skipEmptyLines: true }).data;
 
-            // Read Selected Columns
             const nTypeCol = document.getElementById('node-type-sel').value;
             const nColorCol = document.getElementById('node-color-sel').value;
             const eTypeCol = document.getElementById('edge-type-sel').value;
             const eWidthCol = document.getElementById('edge-width-sel').value;
 
-            // 1. Pre-process Nodes
+            // Nodes Setup
             let nodeTypes = nTypeCol ? [...new Set(nodesData.map(n => n[nTypeCol]).filter(Boolean))] : [];
             let maxAbsNodeColor = 0;
-            
-            if (nColorCol) {
-                nodesData.forEach(n => {
-                    let val = parseFloat(n[nColorCol]);
-                    if (!isNaN(val) && Math.abs(val) > maxAbsNodeColor) maxAbsNodeColor = Math.abs(val);
-                });
-            }
+            if (nColorCol) nodesData.forEach(n => { let v = parseFloat(n[nColorCol]); if (!isNaN(v) && Math.abs(v) > maxAbsNodeColor) maxAbsNodeColor = Math.abs(v); });
 
             let elements = [];
             nodesData.forEach(n => {
                 let keys = Object.keys(n);
                 if(keys.length === 0) return;
-                n.id = n.id || n[keys[0]]; // Fallback id
-
-                // Compute Category Properties
+                n.id = n.id || n[keys[0]];
                 let catIndex = nTypeCol ? nodeTypes.indexOf(n[nTypeCol]) : 0;
                 n._shape = nTypeCol && catIndex >= 0 ? shapes[catIndex % shapes.length] : 'ellipse';
-                let catColor = nTypeCol && catIndex >= 0 ? categoryColors[catIndex % categoryColors.length] : '#888';
-
-                // Compute Final Color
-                if (nColorCol) {
-                    n._color = getDivergentColor(parseFloat(n[nColorCol]), maxAbsNodeColor);
-                } else {
-                    n._color = catColor;
-                }
-
+                n._color = nColorCol ? getDivergentColor(parseFloat(n[nColorCol]), maxAbsNodeColor) : (nTypeCol && catIndex >= 0 ? categoryColors[catIndex % categoryColors.length] : '#888');
                 elements.push({ data: n });
             });
 
-            // 2. Pre-process Edges
+            // Edges Setup
             let edgeTypes = eTypeCol ? [...new Set(edgesData.map(e => e[eTypeCol]).filter(Boolean))] : [];
-            let minEdgeWidth = Infinity, maxEdgeWidth = -Infinity;
-            
-            if (eWidthCol) {
-                edgesData.forEach(e => {
-                    let val = parseFloat(e[eWidthCol]);
-                    if (!isNaN(val)) {
-                        if (val < minEdgeWidth) minEdgeWidth = val;
-                        if (val > maxEdgeWidth) maxEdgeWidth = val;
-                    }
-                });
-            }
+            let minE = Infinity, maxE = -Infinity;
+            if (eWidthCol) edgesData.forEach(e => { let v = parseFloat(e[eWidthCol]); if (!isNaN(v)) { if (v < minE) minE = v; if (v > maxE) maxE = v; } });
 
             edgesData.forEach(e => {
                 if(!e.source || !e.target) return;
-
-                // Compute Category Properties
                 let catIndex = eTypeCol ? edgeTypes.indexOf(e[eTypeCol]) : 0;
                 e._style = eTypeCol && catIndex >= 0 ? lineStyles[catIndex % lineStyles.length] : 'solid';
                 e._color = eTypeCol && catIndex >= 0 ? categoryColors[(catIndex + 3) % categoryColors.length] : '#999';
                 e._typeLabel = eTypeCol ? e[eTypeCol] : '';
-
-                // Compute Thickness
-                e._width = 2; // default
-                if (eWidthCol && maxEdgeWidth !== -Infinity) {
-                    let val = parseFloat(e[eWidthCol]);
-                    if (!isNaN(val)) {
-                        let norm = maxEdgeWidth === minEdgeWidth ? 1 : (val - minEdgeWidth) / (maxEdgeWidth - minEdgeWidth);
-                        e._width = 1 + (norm * 9); // Scale 1px to 10px
-                    }
-                }
+                e._width = 2;
+                if (eWidthCol && maxE !== -Infinity) { let v = parseFloat(e[eWidthCol]); if (!isNaN(v)) e._width = 1 + ((maxE === minE ? 1 : (v - minE) / (maxE - minE)) * 9); }
                 elements.push({ data: e });
             });
 
-            // 3. Initialize Cytoscape
+            // Layout determination
+            let layoutConfig = { name: 'cose', padding: 50, animate: true };
+            if (customPositions && Object.keys(customPositions).length > 0) {
+                layoutConfig = { name: 'preset', positions: (node) => customPositions[node.id()] };
+            }
+
             if (cy) cy.destroy();
             cy = cytoscape({
                 container: document.getElementById('cy'),
                 elements: elements,
                 style: [
-                    {
-                        selector: 'node',
-                        style: {
-                            'label': 'data(id)', 'text-valign': 'center', 'text-halign': 'center',
-                            'color': '#fff', 'text-outline-width': 2, 'text-outline-color': '#333',
-                            'width': 50, 'height': 50,
-                            'background-color': 'data(_color)', // Data-driven mapping
-                            'shape': 'data(_shape)'            // Data-driven mapping
-                        }
-                    },
-                    {
-                        selector: 'edge',
-                        style: {
-                            'label': 'data(_typeLabel)', 'curve-style': 'bezier', 'target-arrow-shape': 'triangle',
-                            'font-size': 10, 'text-background-opacity': 1, 'text-background-color': '#eef2f5',
-                            'line-color': 'data(_color)',         // Data-driven mapping
-                            'target-arrow-color': 'data(_color)', // Data-driven mapping
-                            'line-style': 'data(_style)',         // Data-driven mapping
-                            'width': 'data(_width)'               // Data-driven mapping
-                        }
-                    }
+                    { selector: 'node', style: { 'label': 'data(id)', 'text-valign': 'center', 'text-halign': 'center', 'color': '#fff', 'text-outline-width': 2, 'text-outline-color': '#333', 'width': 50, 'height': 50, 'background-color': 'data(_color)', 'shape': 'data(_shape)' } },
+                    { selector: 'edge', style: { 'label': 'data(_typeLabel)', 'curve-style': 'bezier', 'target-arrow-shape': 'triangle', 'font-size': 10, 'text-background-opacity': 1, 'text-background-color': '#eef2f5', 'line-color': 'data(_color)', 'target-arrow-color': 'data(_color)', 'line-style': 'data(_style)', 'width': 'data(_width)' } }
                 ],
-                layout: { name: 'cose', padding: 50, animate: true }
+                layout: layoutConfig
             });
-        }
-
-        // --- Other Utilities (Chart, Save/Load, Setup) ---
-        function showView(view) {
-            document.getElementById('cy-container').style.display = view === 'network' ? 'block' : 'none';
-            document.getElementById('chart-container').style.display = view === 'chart' ? 'block' : 'none';
         }
 
         function renderChart() {
             showView('chart');
-            const nodesCsv = document.getElementById('nodes-csv').value;
-            const parsed = Papa.parse(nodesCsv, { header: true, skipEmptyLines: true });
+            const parsed = Papa.parse(document.getElementById('nodes-csv').value, { header: true, skipEmptyLines: true });
             const headers = parsed.meta.fields;
-            if (headers.length < 3) { alert("Chart requires at least 3 columns (Label, X, Y)."); return; }
+            if (headers.length < 3) return alert("Chart requires at least 3 columns (Label, X, Y).");
 
             const labelCol = headers[0], xCol = headers[1], yCol = headers[2], typeCol = headers[3];
             const groupedData = {};
@@ -327,34 +291,37 @@
                 let cat = (typeCol && row[typeCol]) ? row[typeCol] : 'Points';
                 if (!groupedData[cat]) groupedData[cat] = { label: cat, data: [], pointLabels: [], pointRadius: 6, pointHoverRadius: 8 };
                 let xVal = parseFloat(row[xCol]), yVal = parseFloat(row[yCol]);
-                if(!isNaN(xVal) && !isNaN(yVal)) {
-                    groupedData[cat].data.push({ x: xVal, y: yVal });
-                    groupedData[cat].pointLabels.push(row[labelCol]); 
-                }
+                if(!isNaN(xVal) && !isNaN(yVal)) { groupedData[cat].data.push({ x: xVal, y: yVal }); groupedData[cat].pointLabels.push(row[labelCol]); }
             });
 
-            const chartDatasets = Object.keys(groupedData).map((catName, index) => {
-                let ds = groupedData[catName];
-                ds.backgroundColor = categoryColors[index % categoryColors.length];
-                return ds;
-            });
+            const chartDatasets = Object.keys(groupedData).map((catName, i) => { let ds = groupedData[catName]; ds.backgroundColor = categoryColors[i % categoryColors.length]; return ds; });
 
             if (myChart) myChart.destroy();
             myChart = new Chart(document.getElementById('myChart').getContext('2d'), {
-                type: 'scatter',
-                data: { datasets: chartDatasets },
+                type: 'scatter', data: { datasets: chartDatasets },
                 options: {
                     responsive: true, maintainAspectRatio: false,
-                    plugins: {
-                        title: { display: true, text: 'Nodes Cartesian Plot' },
-                        tooltip: { callbacks: { label: ctx => `${ctx.dataset.pointLabels[ctx.dataIndex]}: (${ctx.parsed.x}, ${ctx.parsed.y})` } }
-                    },
-                    scales: {
-                        x: { title: { display: true, text: xCol, font: { weight: 'bold' } } },
-                        y: { title: { display: true, text: yCol, font: { weight: 'bold' } } }
-                    }
+                    plugins: { title: { display: true, text: 'Nodes Cartesian Plot' }, tooltip: { callbacks: { label: ctx => `${ctx.dataset.pointLabels[ctx.dataIndex]}: (${ctx.parsed.x}, ${ctx.parsed.y})` } } },
+                    scales: { x: { title: { display: true, text: xCol, font: { weight: 'bold' } } }, y: { title: { display: true, text: yCol, font: { weight: 'bold' } } } }
                 }
             });
+        }
+
+        // --- Utils & Interactions ---
+        function showView(view) {
+            document.getElementById('cy-container').style.display = view === 'network' ? 'block' : 'none';
+            document.getElementById('chart-container').style.display = view === 'chart' ? 'block' : 'none';
+        }
+
+        function triggerDownload(content, filename, type) {
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(new Blob([content], { type: type }));
+            a.download = filename; a.click();
+        }
+
+        function saveTextAsFile(txtId, fName) {
+            const content = document.getElementById(txtId).value;
+            if (content.trim()) triggerDownload(content, fName, 'text/csv');
         }
 
         function setupDragDrop(txtId) {
@@ -372,33 +339,85 @@
         }
         setupDragDrop('nodes-csv'); setupDragDrop('edges-csv');
 
-        function downloadCSV(txtId, fName) {
-            const content = document.getElementById(txtId).value;
-            if (!content.trim()) return;
-            const a = document.createElement("a");
-            a.href = URL.createObjectURL(new Blob([content], { type: 'text/csv' }));
-            a.download = fName; a.click();
+        // --- Spatial Config Methods ---
+        function saveSpatialCSV() {
+            if (!cy) return alert("Render the network first.");
+            let csv = "id,x,y\n";
+            cy.nodes().forEach(n => {
+                let pos = n.position();
+                csv += `${n.id()},${pos.x},${pos.y}\n`;
+            });
+            triggerDownload(csv, 'spatial_positions.csv', 'text/csv');
         }
 
+        function loadSpatialCSV(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const parsed = Papa.parse(e.target.result, { header: true, skipEmptyLines: true });
+                if (cy) {
+                    cy.batch(() => {
+                        parsed.data.forEach(row => {
+                            if (row.id && row.x != null && row.y != null) {
+                                let node = cy.$id(row.id);
+                                if (node.length) node.position({ x: parseFloat(row.x), y: parseFloat(row.y) });
+                            }
+                        });
+                    });
+                    cy.fit(); // Recenter the viewport
+                } else {
+                    alert("Render the network first before applying positions.");
+                }
+            };
+            reader.readAsText(file);
+            event.target.value = '';
+        }
+
+        // --- JSON Save/Load ---
         function saveSetup() {
-            const setup = { nodes: document.getElementById('nodes-csv').value, edges: document.getElementById('edges-csv').value };
-            const a = document.createElement('a');
-            a.href = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(setup));
-            a.download = "setup.json"; a.click();
+            let positions = {};
+            if (cy) cy.nodes().forEach(n => { positions[n.id()] = n.position(); });
+
+            const setup = { 
+                nodes: document.getElementById('nodes-csv').value, 
+                edges: document.getElementById('edges-csv').value,
+                positions: positions,
+                dropdowns: {
+                    nodeType: document.getElementById('node-type-sel').value,
+                    nodeColor: document.getElementById('node-color-sel').value,
+                    edgeType: document.getElementById('edge-type-sel').value,
+                    edgeWidth: document.getElementById('edge-width-sel').value
+                }
+            };
+            triggerDownload(JSON.stringify(setup), "full_setup.json", "application/json");
         }
 
         function loadSetup(event) {
-            if (!event.target.files[0]) return;
-            const r = new FileReader();
-            r.onload = function(e) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
                 try {
                     const setup = JSON.parse(e.target.result);
                     document.getElementById('nodes-csv').value = setup.nodes || "";
                     document.getElementById('edges-csv').value = setup.edges || "";
-                    updateDropdowns(); renderNetwork();
+                    updateDropdowns();
+
+                    // Restore dropdown selections
+                    if (setup.dropdowns) {
+                        document.getElementById('node-type-sel').value = setup.dropdowns.nodeType || "";
+                        document.getElementById('node-color-sel').value = setup.dropdowns.nodeColor || "";
+                        document.getElementById('edge-type-sel').value = setup.dropdowns.edgeType || "";
+                        document.getElementById('edge-width-sel').value = setup.dropdowns.edgeWidth || "";
+                    }
+
+                    // Render with preset positions
+                    renderNetwork(setup.positions);
                 } catch (err) { alert("Invalid JSON file."); }
             };
-            r.readAsText(event.target.files[0]);
+            reader.readAsText(file);
+            event.target.value = '';
         }
 
         function downloadImage() {
@@ -415,7 +434,6 @@
             a.click();
         }
 
-        // Initialize App
         window.onload = () => { updateDropdowns(); renderNetwork(); };
     </script>
 </body>
