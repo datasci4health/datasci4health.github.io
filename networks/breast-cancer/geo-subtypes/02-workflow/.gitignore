@@ -32,3 +32,5 @@ Thumbs.db
 
 # venv
 .venv/
+
+*.gz
