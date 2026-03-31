@@ -36,3 +36,5 @@ __pycache__
 
 # venv
 .venv/
+
+_test/
