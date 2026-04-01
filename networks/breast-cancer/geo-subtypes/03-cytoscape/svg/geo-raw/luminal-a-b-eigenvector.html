@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Comparison</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .svg-wrapper {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1;
+      max-width: 45%;
+    }
+    .svg-wrapper h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #333;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Comparing Expression (color) and Eigenvector (size)</h1>
+  <div class="container">
+    <div class="svg-wrapper">
+      <h2>Luminal A</h2>
+      <object data="luminal-a/expression-eigenvector.svg" type="image/svg+xml"></object>
+    </div>
+    <div class="svg-wrapper">
+      <h2>Luminal B</h2>
+      <object data="luminal-b/expression-eigenvector.svg" type="image/svg+xml"></object>
+    </div>
+  </div>
+</body>
+</html>
