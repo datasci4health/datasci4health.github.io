@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Pathway to Knowledge Graph" qualified_name="orange3biosci.widgets.pathway_kg.OWPathwayKG" project_name="orange-biosci" version="" title="MapK to KG (aggregated)" position="(149.0, 185.0)" />
+		<node id="1" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Nodes for CytoScape" position="(360.0, 94.0)" />
+		<node id="2" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Edges for CytoScape" position="(358.0, 273.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Edges" sink_channel="Data" enabled="true" source_channel_id="edges" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'aggregate_functional_units': True, 'auto_extract': True, 'controlAreaVisible': True, 'filename': 'kegg/hsa04010.xml', 'mapping_filename': 'kegg/hsa_genes.tsv', 'pathway_as_property': True, 'relative_to_workflow': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x039\x00\x00\x01\x8c\x00\x00\x04G\x00\x00\x02\xab\x00\x00\x039\x00\x00\x01\x8c\x00\x00\x04G\x00\x00\x02\xab\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x039\x00\x00\x01\x8c\x00\x00\x04G\x00\x00\x02\xab', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04v\x00\x00\x02e\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04v\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04v\x00\x00\x02e', 'stored_name': 'mapk-aggregated-nodes.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="2" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04v\x00\x00\x02e\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04v\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04v\x00\x00\x02e', 'stored_name': 'mapk-aggregated-edges.csv', 'stored_path': '.', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
