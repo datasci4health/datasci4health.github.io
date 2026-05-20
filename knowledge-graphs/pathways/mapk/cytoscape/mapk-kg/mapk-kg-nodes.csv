@@ -1,0 +1,423 @@
+id,label,full_label,type,logic,pathway
+hsa:5923,RASGRF1,"RASGRF1, CDC25, CDC25L, GNRP, GRF1, GRF55, H-GRF55, PP13187, ras-GRF1; ras-specific guanine nucleotide-releasing factor 1 isoform 1",gene,,path:hsa04010
+hsa:5924,RASGRF2,"RASGRF2, GRF2, RAS-GRF2; ras-specific guanine nucleotide-releasing factor 2",gene,,path:hsa04010
+fu:d9cb13f7,fu:d9cb13f7,,functional_unit,OR,path:hsa04010
+hsa:11221,DUSP10,"DUSP10, MKP-5, MKP5; dual specificity protein phosphatase 10",gene,,path:hsa04010
+hsa:1843,DUSP1,"DUSP1, CL100, HVH1, MKP-1, MKP1, PTPN10; dual specificity protein phosphatase 1",gene,,path:hsa04010
+hsa:1844,DUSP2,"DUSP2, PAC-1, PAC1; dual specificity protein phosphatase 2",gene,,path:hsa04010
+hsa:1846,DUSP4,"DUSP4, HVH2, MKP-2, MKP2, TYP; dual specificity protein phosphatase 4 isoform 1",gene,,path:hsa04010
+hsa:1847,DUSP5,"DUSP5, DUSP, HVH3; dual specificity protein phosphatase 5",gene,,path:hsa04010
+hsa:1848,DUSP6,"DUSP6, HH19, MKP3, PYST1; dual specificity protein phosphatase 6 isoform a",gene,,path:hsa04010
+hsa:1849,DUSP7,"DUSP7, MKPX, PYST2; dual specificity protein phosphatase 7",gene,,path:hsa04010
+hsa:1850,DUSP8,"DUSP8, C11orf81, HB5, HVH-5, HVH8; dual specificity protein phosphatase 8",gene,,path:hsa04010
+hsa:1852,DUSP9,"DUSP9, MKP-4, MKP4; dual specificity protein phosphatase 9",gene,,path:hsa04010
+hsa:80824,DUSP16,"DUSP16, MKP-7, MKP7; dual specificity protein phosphatase 16",gene,,path:hsa04010
+fu:60e236ec,fu:60e236ec,,functional_unit,OR,path:hsa04010
+hsa:1845,DUSP3,"DUSP3, VHR; dual specificity protein phosphatase 3",gene,,path:hsa04010
+hsa:5778,PTPN7,"PTPN7, BPTP-4, HEPTP, LC-PTP, LPTP, PTPNI; tyrosine-protein phosphatase non-receptor type 7 isoform 1",gene,,path:hsa04010
+hsa:5801,PTPRR,"PTPRR, EC-PTP, PCPTP1, PTP-SL, PTPBR7, PTPRQ; receptor-type tyrosine-protein phosphatase R isoform 1 precursor",gene,,path:hsa04010
+hsa:84867,PTPN5,"PTPN5, PTPSTEP, STEP, STEP61; tyrosine-protein phosphatase non-receptor type 5 isoform a",gene,,path:hsa04010
+fu:1fded98d,fu:1fded98d,,functional_unit,OR,path:hsa04010
+hsa:5495,PPM1B,"PPM1B, PP2C-beta, PP2C-beta-X, PP2CB, PP2CBETA, PPC2BETAX; protein phosphatase 1B isoform 1",gene,,path:hsa04010
+fu:ae2d1643,fu:ae2d1643,,functional_unit,SINGLE,path:hsa04010
+hsa:356,FASLG,"FASLG, ALPS1B, APT1LG1, APTL, CD178, CD95-L, CD95L, FASL, TNFSF6, TNLG1A; tumor necrosis factor ligand superfamily member 6 isoform 1",gene,,path:hsa04010
+fu:660f6698,fu:660f6698,,functional_unit,SINGLE,path:hsa04010
+hsa:9448,MAP4K4,"MAP4K4, FLH21957, HEL-S-31, HGK, MEKKK4, NIK; mitogen-activated protein kinase kinase kinase kinase 4 isoform 4",gene,,path:hsa04010
+fu:c516e24a,fu:c516e24a,,functional_unit,SINGLE,path:hsa04010
+hsa:100137049,PLA2G4B,"PLA2G4B, HsT16992, cPLA2-beta; cytosolic phospholipase A2 beta",gene,,path:hsa04010
+hsa:123745,PLA2G4E,PLA2G4E; cytosolic phospholipase A2 epsilon isoform 1,gene,,path:hsa04010
+hsa:255189,PLA2G4F,"PLA2G4F, PLA2G4FZ; cytosolic phospholipase A2 zeta",gene,,path:hsa04010
+hsa:283748,PLA2G4D,"PLA2G4D, cPLA2delta; cytosolic phospholipase A2 delta",gene,,path:hsa04010
+hsa:5321,PLA2G4A,"PLA2G4A, GURDP, PLA2G4, cPLA2, cPLA2-alpha; cytosolic phospholipase A2 isoform 1",gene,,path:hsa04010
+hsa:8605,PLA2G4C,"PLA2G4C, CPLA2-gamma; cytosolic phospholipase A2 gamma isoform 1 precursor",gene,,path:hsa04010
+hsa:8681,JMJD7-PLA2G4B,"JMJD7-PLA2G4B, HsT16992, cPLA2-beta; JMJD7-PLA2G4B protein isoform b",gene,,path:hsa04010
+fu:afc36910,fu:afc36910,,functional_unit,OR,path:hsa04010
+hsa:3925,STMN1,"STMN1, C1orf215, LAP18, Lag, OP18, PP17, PP19, PR22, SMN; stathmin isoform a",gene,,path:hsa04010
+fu:1c5fa37c,fu:1c5fa37c,,functional_unit,SINGLE,path:hsa04010
+hsa:4137,MAPT,"MAPT, DDPAC, FTD1, FTDP-17, MAPTL, MSTD, MTBT1, MTBT2, PPND, PPP1R103, TAU, Tau-PHF6, tau-40; microtubule-associated protein tau isoform 1",gene,,path:hsa04010
+fu:e3c2e161,fu:e3c2e161,,functional_unit,SINGLE,path:hsa04010
+hsa:4790,NFKB1,"NFKB1, CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB; nuclear factor NF-kappa-B p105 subunit isoform 2 proprotein",gene,,path:hsa04010
+hsa:4791,NFKB2,"NFKB2, CVID10, H2TF1, LYT-10, LYT10, NF-kB2, p100, p49/p100, p52; nuclear factor NF-kappa-B p100 subunit isoform a",gene,,path:hsa04010
+hsa:5970,RELA,"RELA, AIF3BL3, CMCU, NFKB3, p65; transcription factor p65 isoform 1",gene,,path:hsa04010
+hsa:5971,RELB,"RELB, I-REL, IMD53, IREL, REL-B; transcription factor RelB isoform 1",gene,,path:hsa04010
+fu:a9305fcb,fu:a9305fcb,,functional_unit,OR,path:hsa04010
+hsa:1147,CHUK,"CHUK, BPS2, IKBKA, IKK-1, IKK-alpha, IKK1, IKKA, NFKBIKA, TCF16; inhibitor of nuclear factor kappa-B kinase subunit alpha isoform 1",gene,,path:hsa04010
+hsa:3551,IKBKB,"IKBKB, IKK-2, IKK-beta, IKK2, IKKB, IMD15, IMD15A, IMD15B, NFKBIKB; inhibitor of nuclear factor kappa-B kinase subunit beta isoform 1",gene,,path:hsa04010
+hsa:8517,IKBKG,"IKBKG, AMCBX1, EDAID1, FIP-3, FIP3, Fip3p, IKK-gamma, IKKAP1, IKKG, IMD33, IP, IP1, IP2, IPD2, NEMO, SAIDX, ZC2HC9; NF-kappa-B essential modulator isoform a",gene,,path:hsa04010
+fu:2aaff0ef,fu:2aaff0ef,,functional_unit,OR,path:hsa04010
+hsa:9020,MAP3K14,"MAP3K14, FTDCR1B, HS, HSNIK, IMD112, NIK; mitogen-activated protein kinase kinase kinase 14",gene,,path:hsa04010
+fu:b7ac05e6,fu:b7ac05e6,,functional_unit,SINGLE,path:hsa04010
+hsa:5594,MAPK1,"MAPK1, ERK, ERK-2, ERK2, ERT1, MAPK2, NS13, P42MAPK, PRKM1, PRKM2, p38, p40, p41, p41mapk, p42-MAPK; mitogen-activated protein kinase 1",gene,,path:hsa04010
+hsa:5595,MAPK3,"MAPK3, ERK-1, ERK1, ERT2, HS44KDAP, HUMKER1A, P44ERK1, P44MAPK, PRKM3, p44-ERK1, p44-MAPK; mitogen-activated protein kinase 3 isoform 1",gene,,path:hsa04010
+fu:db5eb53a,fu:db5eb53a,,functional_unit,OR,path:hsa04010
+hsa:8649,LAMTOR3,"LAMTOR3, MAP2K1IP1, MAPBP, MAPKSP1, MP1, PRO0633, Ragulator3; ragulator complex protein LAMTOR3 isoform 1",gene,,path:hsa04010
+fu:1deb785f,fu:1deb785f,,functional_unit,SINGLE,path:hsa04010
+hsa:5605,MAP2K2,"MAP2K2, CFC4, MAPKK2, MEK2, MKK2, PRKMK2; dual specificity mitogen-activated protein kinase kinase 2 isoform 1",gene,,path:hsa04010
+fu:623f23ba,fu:623f23ba,,functional_unit,SINGLE,path:hsa04010
+hsa:5604,MAP2K1,"MAP2K1, CFC3, MAPKK1, MEK1, MEL, MKK1, PRKMK1; dual specificity mitogen-activated protein kinase kinase 1 isoform 1",gene,,path:hsa04010
+fu:beffb338,fu:beffb338,,functional_unit,SINGLE,path:hsa04010
+hsa:5894,RAF1,"RAF1, CMD1NN, CRAF, NS5, Raf-1, c-Raf; RAF proto-oncogene serine/threonine-protein kinase isoform b",gene,,path:hsa04010
+fu:f11c723f,fu:f11c723f,,functional_unit,SINGLE,path:hsa04010
+hsa:673,BRAF,"BRAF, B-RAF1, B-raf, BRAF-1, BRAF1, NS7, RAFB1; serine/threonine-protein kinase B-raf isoform 1",gene,,path:hsa04010
+fu:31df8378,fu:31df8378,,functional_unit,SINGLE,path:hsa04010
+hsa:5921,RASA1,"RASA1, CM-AVM, CMAVM, CMAVM1, GAP, PKWS, RASA, RASGAP, p120, p120GAP, p120RASGAP; ras GTPase-activating protein 1 isoform 1",gene,,path:hsa04010
+fu:a9511836,fu:a9511836,,functional_unit,SINGLE,path:hsa04010
+hsa:4763,NF1,"NF1, NFNS, VRNF, WSS; neurofibromin isoform 1",gene,,path:hsa04010
+fu:64721de4,fu:64721de4,,functional_unit,SINGLE,path:hsa04010
+hsa:5578,PRKCA,"PRKCA, AAG6, PKC-alpha, PKCA, PKCI+/-, PKCalpha, PRKACA; protein kinase C alpha type",gene,,path:hsa04010
+hsa:5579,PRKCB,"PRKCB, PKC-beta, PKCB, PKCI(2), PKCbeta, PRKCB1, PRKCB2; protein kinase C beta type isoform 1",gene,,path:hsa04010
+hsa:5582,PRKCG,"PRKCG, PKC-gamma, PKCC, PKCG, PKCI(3), PKCgamma, SCA14; protein kinase C gamma type isoform 2",gene,,path:hsa04010
+fu:011d9d9b,fu:011d9d9b,,functional_unit,OR,path:hsa04010
+hsa:5906,RAP1A,"RAP1A, C21KG, G-22K, KREV-1, KREV1, RAP1, SMGP21; ras-related protein Rap-1A precursor",gene,,path:hsa04010
+hsa:5908,RAP1B,"RAP1B, K-REV, RAL1B, THC11; ras-related protein Rap-1b isoform 1 precursor",gene,,path:hsa04010
+fu:307bc9c7,fu:307bc9c7,,functional_unit,OR,path:hsa04010
+hsa:5566,PRKACA,"PRKACA, CAFD1, PKACA, PPNAD4; cAMP-dependent protein kinase catalytic subunit alpha isoform Calpha1",gene,,path:hsa04010
+hsa:5567,PRKACB,"PRKACB, CAFD2, PKA C-beta, PKACB; cAMP-dependent protein kinase catalytic subunit beta isoform 2",gene,,path:hsa04010
+hsa:5568,PRKACG,"PRKACG, BDPLT19, KAPG, PKACg; cAMP-dependent protein kinase catalytic subunit gamma",gene,,path:hsa04010
+fu:2e629c93,fu:2e629c93,,functional_unit,OR,path:hsa04010
+hsa:9693,RAPGEF2,"RAPGEF2, CNrasGEF, NRAPGEP, PDZ-GEF1, PDZGEF1, RA-GEF, RA-GEF-1, RAGEF, Rap-GEP, nRap GEP; rap guanine nucleotide exchange factor 2 isoform 5",gene,,path:hsa04010
+fu:5291bfed,fu:5291bfed,,functional_unit,SINGLE,path:hsa04010
+hsa:5922,RASA2,"RASA2, GAP1M; ras GTPase-activating protein 2 isoform 2",gene,,path:hsa04010
+fu:5e9bf09f,fu:5e9bf09f,,functional_unit,SINGLE,path:hsa04010
+hsa:22800,RRAS2,"RRAS2, NS12, TC21; ras-related protein R-Ras2 isoform a",gene,,path:hsa04010
+hsa:22808,MRAS,"MRAS, M-RAs, NS11, R-RAS3, RRAS3; ras-related protein M-Ras isoform 1 precursor",gene,,path:hsa04010
+hsa:3265,HRAS,"HRAS, C-BAS/HAS, C-H-RAS, C-HA-RAS1, CTLO, H-RASIDX, HAMSV, HRAS1, RASH1, p21ras; GTPase HRas isoform 1",gene,,path:hsa04010
+hsa:3845,KRAS,"KRAS, 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2; GTPase KRas isoform a",gene,,path:hsa04010
+hsa:4893,NRAS,"NRAS, ALPS4, CMNS, KRAS, N-ras, NCMS, NRAS1, NS6; GTPase NRas",gene,,path:hsa04010
+hsa:6237,RRAS,"RRAS, R-Ras, RRAS1; ras-related protein R-Ras",gene,,path:hsa04010
+fu:6af6d78a,fu:6af6d78a,,functional_unit,OR,path:hsa04010
+hsa:10125,RASGRP1,"RASGRP1, CALDAG-GEFI, CALDAG-GEFII, IMD64, RASGRP; RAS guanyl-releasing protein 1 isoform a",gene,,path:hsa04010
+hsa:10235,RASGRP2,"RASGRP2, CALDAG-GEFI, CDC25L; RAS guanyl-releasing protein 2 isoform a",gene,,path:hsa04010
+hsa:115727,RASGRP4,RASGRP4; RAS guanyl-releasing protein 4 isoform a,gene,,path:hsa04010
+hsa:25780,RASGRP3,"RASGRP3, GRP3; ras guanyl-releasing protein 3 isoform 1",gene,,path:hsa04010
+fu:bbc827fb,fu:bbc827fb,,functional_unit,OR,path:hsa04010
+hsa:6654,SOS1,"SOS1, GF1, GGF1, GINGF, HGF, NS4, SOS-1; son of sevenless homolog 1 isoform 1",gene,,path:hsa04010
+hsa:6655,SOS2,"SOS2, NS9, SOS-2; son of sevenless homolog 2 isoform 1",gene,,path:hsa04010
+fu:7befe6a3,fu:7befe6a3,,functional_unit,OR,path:hsa04010
+hsa:2768,GNA12,"GNA12, HG1M1, NNX3, RMP, gep; guanine nucleotide-binding protein subunit alpha-12 isoform 1",gene,,path:hsa04010
+hsa:55970,GNG12,"GNG12, HG3A; guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-12",gene,,path:hsa04010
+fu:d5424c45,fu:d5424c45,,functional_unit,OR,path:hsa04010
+hsa:2885,GRB2,"GRB2, ASH, EGFRBP-GRB2, Grb3-3, MST084, MSTP084, NCKAP2; growth factor receptor-bound protein 2 isoform 1",gene,,path:hsa04010
+fu:6ab9ded4,fu:6ab9ded4,,functional_unit,SINGLE,path:hsa04010
+hsa:1436,CSF1R,"CSF1R, BANDDOS, C-FMS, CD115, CSF-1R, CSFR, FIM2, FMS, GPSC, HDLS, HDLS1, M-CSF-R; macrophage colony-stimulating factor 1 receptor isoform a precursor",gene,,path:hsa04010
+hsa:1956,EGFR,"EGFR, ERBB, ERBB1, ERRP, HER1, NISBD2, NNCIS, PIG61, mENA; epidermal growth factor receptor isoform a precursor",gene,,path:hsa04010
+hsa:1969,EPHA2,"EPHA2, ARCC2, CTPA, CTPP1, CTRCT6, ECK; ephrin type-A receptor 2 isoform 1 precursor",gene,,path:hsa04010
+hsa:2064,ERBB2,"ERBB2, CD340, HER-2, HER-2/neu, HER2, MLN 19, MLN-19, NEU, NGL, TKR1, VSCN2, c-ERB-2, c-ERB2, p185(erbB2); receptor tyrosine-protein kinase erbB-2 isoform a precursor",gene,,path:hsa04010
+hsa:2065,ERBB3,"ERBB3, ErbB-3, FERLK, HER3, LCCS2, MDA-BF-1, VSCN1, c-erbB-3, c-erbB3, erbB3-S, p180-ErbB3, p45-sErbB3, p85-sErbB3; receptor tyrosine-protein kinase erbB-3 isoform 1 precursor",gene,,path:hsa04010
+hsa:2066,ERBB4,"ERBB4, ALS19, HER4, p180erbB4; receptor tyrosine-protein kinase erbB-4 isoform JM-a/CYT-1 precursor",gene,,path:hsa04010
+hsa:2260,FGFR1,"FGFR1, BFGFR, CD331, CEK, ECCL, FGFBR, FGFR-1, FLG, FLT-2, FLT2, HBGFR, HH2, HRTFDS, KAL2, N-SAM, OGD, bFGF-R-1; fibroblast growth factor receptor 1 isoform 1 precursor",gene,,path:hsa04010
+hsa:2261,FGFR3,"FGFR3, ACH, CD333, CEK2, HSFGFR3EX, JTK4; fibroblast growth factor receptor 3 isoform 1 precursor",gene,,path:hsa04010
+hsa:2263,FGFR2,"FGFR2, BBDS, BEK, BFR-1, CD332, CEK3, CFD1, ECT1, JWS, K-SAM, KGFR, TK14, TK25; fibroblast growth factor receptor 2 isoform 1 precursor",gene,,path:hsa04010
+hsa:2264,FGFR4,"FGFR4, CD334, JTK2, TKF; fibroblast growth factor receptor 4 isoform 1 precursor",gene,,path:hsa04010
+hsa:2321,FLT1,"FLT1, FLT, FLT-1, VEGFR-1, VEGFR1; vascular endothelial growth factor receptor 1 isoform 1 precursor",gene,,path:hsa04010
+hsa:2322,FLT3,"FLT3, CD135, FLK-2, FLK2, STK1; receptor-type tyrosine-protein kinase FLT3 precursor",gene,,path:hsa04010
+hsa:2324,FLT4,"FLT4, CHTD7, FLT-4, FLT41, LMPH1A, LMPHM1, PCL, VEGFR-3, VEGFR3; vascular endothelial growth factor receptor 3 isoform 1 precursor",gene,,path:hsa04010
+hsa:3480,IGF1R,"IGF1R, CD221, IGFIR, IGFR, JTK13; insulin-like growth factor 1 receptor isoform 1 precursor",gene,,path:hsa04010
+hsa:3643,INSR,"INSR, CD220, HHF5; insulin receptor isoform Long preproprotein",gene,,path:hsa04010
+hsa:3791,KDR,"KDR, CD309, FLK1, VEGFR, VEGFR2; vascular endothelial growth factor receptor 2 precursor",gene,,path:hsa04010
+hsa:3815,KIT,"KIT, C-Kit, CD117, MASTC, PBT, SCFR; mast/stem cell growth factor receptor Kit isoform 1 precursor",gene,,path:hsa04010
+hsa:4233,MET,"MET, AUTS9, DA11, DFNB97, HGFR, RCCP2, c-Met; hepatocyte growth factor receptor isoform b preproprotein",gene,,path:hsa04010
+hsa:4804,NGFR,"NGFR, CD271, Gp80-LNGFR, TNFRSF16, p75(NTR), p75NTR; tumor necrosis factor receptor superfamily member 16 precursor",gene,,path:hsa04010
+hsa:4914,NTRK1,"NTRK1, MTC, TRK, TRK1, TRKA, Trk-A, p140-TrkA; high affinity nerve growth factor receptor isoform 2 precursor",gene,,path:hsa04010
+hsa:4915,NTRK2,"NTRK2, DEE58, EIEE58, GP145-TrkB, OBHD, TRKB, trk-B; BDNF/NT-3 growth factors receptor isoform c precursor",gene,,path:hsa04010
+hsa:5156,PDGFRA,"PDGFRA, CD140A, PDGFR-2, PDGFR2; platelet-derived growth factor receptor alpha isoform 1 precursor",gene,,path:hsa04010
+hsa:5159,PDGFRB,"PDGFRB, CD140B, IBGC4, IMF1, JTK12, KOGS, OPDKD, PDGFR, PDGFR-1, PDGFR1, PENTT; platelet-derived growth factor receptor beta isoform 1 precursor",gene,,path:hsa04010
+hsa:5979,RET,"RET, CDHF12, CDHR16, HSCR1, MEN2A, MEN2B, MTC1, PTC, RET-ELE1; proto-oncogene tyrosine-protein kinase receptor Ret isoform a precursor",gene,,path:hsa04010
+hsa:7010,TEK,"TEK, CD202B, GLC3E, TIE-2, TIE2, VMCM, VMCM1; angiopoietin-1 receptor isoform 1 precursor",gene,,path:hsa04010
+fu:3c2d350d,fu:3c2d350d,,functional_unit,OR,path:hsa04010
+hsa:10368,CACNG3,CACNG3; voltage-dependent calcium channel gamma-3 subunit,gene,,path:hsa04010
+hsa:10369,CACNG2,"CACNG2, MRD10; voltage-dependent calcium channel gamma-2 subunit isoform 1",gene,,path:hsa04010
+hsa:27091,CACNG5,CACNG5; voltage-dependent calcium channel gamma-5 subunit isoform 1,gene,,path:hsa04010
+hsa:27092,CACNG4,CACNG4; voltage-dependent calcium channel gamma-4 subunit,gene,,path:hsa04010
+hsa:55799,CACNA2D3,"CACNA2D3, HSA272268; voltage-dependent calcium channel subunit alpha-2/delta-3 precursor",gene,,path:hsa04010
+hsa:59283,CACNG8,CACNG8; voltage-dependent calcium channel gamma-8 subunit,gene,,path:hsa04010
+hsa:59284,CACNG7,CACNG7; voltage-dependent calcium channel gamma-7 subunit isoform 1,gene,,path:hsa04010
+hsa:59285,CACNG6,CACNG6; voltage-dependent calcium channel gamma-6 subunit isoform a,gene,,path:hsa04010
+hsa:773,CACNA1A,"CACNA1A, APCA, BI, CACNL1A4, CAV2.1, DEE42, EA2, EIEE42, FHM, HPCA, MHP, MHP1, SCA6; voltage-dependent P/Q-type calcium channel subunit alpha-1A isoform 4",gene,,path:hsa04010
+hsa:774,CACNA1B,"CACNA1B, BIII, CACNL1A5, CACNN, Cav2.2, DYT23, NEDNEH; voltage-dependent N-type calcium channel subunit alpha-1B isoform 1",gene,,path:hsa04010
+hsa:775,CACNA1C,"CACNA1C, CACH2, CACN2, CACNA1C-IT2, CACNL1A1, CCHL1A1, CaV1.2, LQT8, NEDHLSS, TS, TS. LQT8; voltage-dependent L-type calcium channel subunit alpha-1C isoform 18",gene,,path:hsa04010
+hsa:776,CACNA1D,"CACNA1D, CACH3, CACN4, CACNL1A2, CCHL1A2, Cav1.3, PASNA, SANDD; voltage-dependent L-type calcium channel subunit alpha-1D isoform b",gene,,path:hsa04010
+hsa:777,CACNA1E,"CACNA1E, BII, CACH6, CACNL1A6, Cav2.3, DEE69, EIEE69, gm139; voltage-dependent R-type calcium channel subunit alpha-1E isoform 1",gene,,path:hsa04010
+hsa:778,CACNA1F,"CACNA1F, AIED, COD3, COD4, CORDX, CORDX3, CSNB2, CSNB2A, CSNBX2, Cav1.4, Cav1.4alpha1, JM8, JMC8, OA2; voltage-dependent L-type calcium channel subunit alpha-1F isoform 1",gene,,path:hsa04010
+hsa:779,CACNA1S,"CACNA1S, CACNL1A3, CCHL1A3, CMYO18, CMYP18, Cav1.1, DHPRM, HOKPP, HOKPP1, MHS5, TTPP1, hypoPP; voltage-dependent L-type calcium channel subunit alpha-1S",gene,,path:hsa04010
+hsa:781,CACNA2D1,"CACNA2D1, CACNA2, CACNL2A, CCHL2A, DEE110, LINC01112, lncRNA-N3, MHS3; voltage-dependent calcium channel subunit alpha-2/delta-1 isoform 3 preproprotein",gene,,path:hsa04010
+hsa:782,CACNB1,"CACNB1, CAB1, CACNLB1, CCHLB1; voltage-dependent L-type calcium channel subunit beta-1 isoform 1",gene,,path:hsa04010
+hsa:783,CACNB2,"CACNB2, CAB2, CACNLB2, CAVB2, MYSB; voltage-dependent L-type calcium channel subunit beta-2 isoform 2",gene,,path:hsa04010
+hsa:784,CACNB3,"CACNB3, CAB3, CACNLB3; voltage-dependent L-type calcium channel subunit beta-3 isoform 1",gene,,path:hsa04010
+hsa:785,CACNB4,"CACNB4, CAB4, CACNLB4, EA5, EIG9, EJM, EJM4, EJM6; voltage-dependent L-type calcium channel subunit beta-4 isoform b",gene,,path:hsa04010
+hsa:786,CACNG1,"CACNG1, CACNLG; voltage-dependent calcium channel gamma-1 subunit",gene,,path:hsa04010
+hsa:8911,CACNA1I,"CACNA1I, Cav3.3, NEDSIS, ca(v)3.3; voltage-dependent T-type calcium channel subunit alpha-1I isoform a",gene,,path:hsa04010
+hsa:8912,CACNA1H,"CACNA1H, CACNA1HB, Cav3.2, ECA6, EIG6, HALD4; voltage-dependent T-type calcium channel subunit alpha-1H isoform a",gene,,path:hsa04010
+hsa:8913,CACNA1G,"CACNA1G, Ca(V)T.1, Cav3.1, NBR13, SCA42, SCA42ND; voltage-dependent T-type calcium channel subunit alpha-1G isoform 1",gene,,path:hsa04010
+hsa:9254,CACNA2D2,"CACNA2D2, CACNA2D, CASVDD; voltage-dependent calcium channel subunit alpha-2/delta-2 isoform c precursor",gene,,path:hsa04010
+hsa:93589,CACNA2D4,"CACNA2D4, RCD4; voltage-dependent calcium channel subunit alpha-2/delta-4",gene,,path:hsa04010
+fu:bad14ab9,fu:bad14ab9,,functional_unit,OR,path:hsa04010
+hsa:3164,NR4A1,"NR4A1, GFRP1, HMR, N10, NAK-1, NGFIB, NP10, NUR77, TR3; nuclear receptor subfamily 4immunitygroup A member 1 isoform 1",gene,,path:hsa04010
+fu:d5fad51c,fu:d5fad51c,,functional_unit,SINGLE,path:hsa04010
+hsa:5598,MAPK7,"MAPK7, BMK1, ERK4, ERK5, PRKM7; mitogen-activated protein kinase 7 isoform 1",gene,,path:hsa04010
+fu:c9209858,fu:c9209858,,functional_unit,SINGLE,path:hsa04010
+hsa:5607,MAP2K5,"MAP2K5, HsT17454, MAPKK5, MEK5, PRKMK5; dual specificity mitogen-activated protein kinase kinase 5 isoform A",gene,,path:hsa04010
+fu:e801eb1f,fu:e801eb1f,,functional_unit,SINGLE,path:hsa04010
+hsa:51701,NLK,NLK; serine/threonine-protein kinase NLK,gene,,path:hsa04010
+fu:9fc92db4,fu:9fc92db4,,functional_unit,SINGLE,path:hsa04010
+hsa:994,CDC25B,"CDC25B, MPIP2; M-phase inducer phosphatase 2 isoform 1",gene,,path:hsa04010
+fu:13cd58c4,fu:13cd58c4,,functional_unit,SINGLE,path:hsa04010
+hsa:8986,RPS6KA4,"RPS6KA4, MSK2, RSK-B, S6K-alpha-4; ribosomal protein S6 kinase alpha-4 isoform a",gene,,path:hsa04010
+hsa:9252,RPS6KA5,"RPS6KA5, MSK1, MSPK1, RLPK; ribosomal protein S6 kinase alpha-5 isoform a",gene,,path:hsa04010
+fu:3aace7cb,fu:3aace7cb,,functional_unit,OR,path:hsa04010
+hsa:7867,MAPKAPK3,"MAPKAPK3, 3PK, MAPKAP-K3, MAPKAP3, MAPKAPK-3, MDPT3, MK-3, MK3; MAP kinase-activated protein kinase 3",gene,,path:hsa04010
+hsa:9261,MAPKAPK2,"MAPKAPK2, MAPKAP-K2, MK-2, MK2; MAP kinase-activated protein kinase 2 isoform 2",gene,,path:hsa04010
+fu:a8f2314c,fu:a8f2314c,,functional_unit,OR,path:hsa04010
+hsa:468,ATF4,"ATF4, CREB-2, CREB2, TAXREB67, TXREB; cyclic AMP-dependent transcription factor ATF-4",gene,,path:hsa04010
+fu:8b106c85,fu:8b106c85,,functional_unit,SINGLE,path:hsa04010
+hsa:4208,MEF2C,"MEF2C, C5DELq14.3, DEL5q14.3, NEDHSIL; myocyte-specific enhancer factor 2C isoform 1",gene,,path:hsa04010
+fu:c6e0967c,fu:c6e0967c,,functional_unit,SINGLE,path:hsa04010
+hsa:4149,MAX,"MAX, PDMCS, bHLHd4; protein max isoform a",gene,,path:hsa04010
+fu:a5289ec4,fu:a5289ec4,,functional_unit,SINGLE,path:hsa04010
+hsa:1649,DDIT3,"DDIT3, AltDDIT3, C/EBPzeta, CEBPZ, CHOP, CHOP-10, CHOP10, GADD153; DNA damage-inducible transcript 3 protein isoform 2",gene,,path:hsa04010
+fu:b0617671,fu:b0617671,,functional_unit,SINGLE,path:hsa04010
+hsa:2005,ELK4,"ELK4, SAP1; ETS domain-containing protein Elk-4 isoform a",gene,,path:hsa04010
+fu:c92370d9,fu:c92370d9,,functional_unit,SINGLE,path:hsa04010
+hsa:7157,TP53,"TP53, BCC7, BMFS5, LFS1, P53, TRP53; cellular tumor antigen p53 isoform a",gene,,path:hsa04010
+fu:5e7099e5,fu:5e7099e5,,functional_unit,SINGLE,path:hsa04010
+hsa:2002,ELK1,ELK1; ETS domain-containing protein Elk-1 isoform a,gene,,path:hsa04010
+fu:ad8f8ff8,fu:ad8f8ff8,,functional_unit,SINGLE,path:hsa04010
+hsa:1386,ATF2,"ATF2, CRE-BP1, CREB-2, CREB2, HB16, TREB7; cyclic AMP-dependent transcription factor ATF-2 isoform 1",gene,,path:hsa04010
+fu:b276723a,fu:b276723a,,functional_unit,SINGLE,path:hsa04010
+hsa:1432,MAPK14,"MAPK14, CSBP, CSBP1, CSBP2, CSPB1, EXIP, Mxi2, PRKM14, PRKM15, RK, SAPK2A, p38, p38ALPHA; mitogen-activated protein kinase 14 isoform 2",gene,,path:hsa04010
+hsa:5600,MAPK11,"MAPK11, P38B, P38BETA2, PRKM11, SAPK2, SAPK2B, p38-2, p38Beta; mitogen-activated protein kinase 11",gene,,path:hsa04010
+hsa:5603,MAPK13,"MAPK13, MAPK 13, MAPK-13, PRKM13, SAPK4, p38delta; mitogen-activated protein kinase 13",gene,,path:hsa04010
+hsa:6300,MAPK12,"MAPK12, ERK-6, ERK3, ERK6, MAPK 12, P38GAMMA, PRKM12, SAPK-3, SAPK3; mitogen-activated protein kinase 12 isoform 1",gene,,path:hsa04010
+fu:6ba9e6d9,fu:6ba9e6d9,,functional_unit,OR,path:hsa04010
+hsa:5536,PPP5C,"PPP5C, PP5, PPP5, PPT; serine/threonine-protein phosphatase 5 isoform 1",gene,,path:hsa04010
+fu:b7b7b76a,fu:b7b7b76a,,functional_unit,SINGLE,path:hsa04010
+hsa:5608,MAP2K6,"MAP2K6, CRCMSL, MAPKK6, MEK6, MKK6, PRKMK6, SAPKK-3, SAPKK3; dual specificity mitogen-activated protein kinase kinase 6 isoform 1",gene,,path:hsa04010
+fu:c32fffbc,fu:c32fffbc,,functional_unit,SINGLE,path:hsa04010
+hsa:5606,MAP2K3,"MAP2K3, MAPKK3, MEK3, MKK3, PRKMK3, SAPKK-2, SAPKK2; dual specificity mitogen-activated protein kinase kinase 3 isoform B",gene,,path:hsa04010
+fu:24b19240,fu:24b19240,,functional_unit,SINGLE,path:hsa04010
+fu:f4ba257f,fu:f4ba257f,,functional_unit,OR,path:hsa04010
+fu:b7042c12,fu:b7042c12,,functional_unit,OR,path:hsa04010
+hsa:5494,PPM1A,"PPM1A, PP2C-ALPHA, PP2CA, PP2Calpha; protein phosphatase 1A isoform 1",gene,,path:hsa04010
+fu:4f421602,fu:4f421602,,functional_unit,SINGLE,path:hsa04010
+hsa:10000,AKT3,"AKT3, MPPH, MPPH2, PKB-GAMMA, PKBG, PRKBG, RAC-PK-gamma, RAC-gamma, STK-2; RAC-gamma serine/threonine-protein kinase isoform 1",gene,,path:hsa04010
+hsa:207,AKT1,"AKT1, AKT, PKB, PKB-ALPHA, PRKBA, RAC, RAC-ALPHA; RAC-alpha serine/threonine-protein kinase",gene,,path:hsa04010
+hsa:208,AKT2,"AKT2, HIHGHH, PKBB, PKBBETA, PRKBB, RAC-BETA; RAC-beta serine/threonine-protein kinase isoform 1",gene,,path:hsa04010
+fu:76ff15cb,fu:76ff15cb,,functional_unit,OR,path:hsa04010
+hsa:51347,TAOK3,"TAOK3, DPK, JIK, MAP3K18, hKFC-A; serine/threonine-protein kinase TAO3 isoform b",gene,,path:hsa04010
+hsa:57551,TAOK1,"TAOK1, DDIB, KFC-B, MAP3K16, MARKK, PSK-2, PSK2, TAO1, hKFC-B, hTAOK1; serine/threonine-protein kinase TAO1 isoform 1",gene,,path:hsa04010
+hsa:9344,TAOK2,"TAOK2, MAP3K17, PSK, PSK1, PSK1-BETA, TAO1, TAO2, Tao2beta; serine/threonine-protein kinase TAO2 isoform 1",gene,,path:hsa04010
+fu:25aad4c3,fu:25aad4c3,,functional_unit,OR,path:hsa04010
+hsa:4216,MAP3K4,"MAP3K4, MAPKKK4, MEKK 4, MEKK4, MTK1, PRO0412; mitogen-activated protein kinase kinase kinase 4 isoform a",gene,,path:hsa04010
+fu:d885c339,fu:d885c339,,functional_unit,SINGLE,path:hsa04010
+hsa:3315,HSPB1,"HSPB1, CMT2F, HEL-S-102, HMN2B, HMND3, HS.76067, HSP27, HSP28, Hsp25, SRP27; heat shock protein beta-1",gene,,path:hsa04010
+fu:69715a7a,fu:69715a7a,,functional_unit,SINGLE,path:hsa04010
+hsa:6885,MAP3K7,"MAP3K7, CSCF, FMD2, MEKK7, TAK1, TGF1a; mitogen-activated protein kinase kinase kinase 7 isoform B",gene,,path:hsa04010
+fu:13c25744,fu:13c25744,,functional_unit,SINGLE,path:hsa04010
+hsa:4217,MAP3K5,"MAP3K5, ASK1, MAPKKK5, MEKK5; mitogen-activated protein kinase kinase kinase 5 isoform 2",gene,,path:hsa04010
+fu:9430ca46,fu:9430ca46,,functional_unit,SINGLE,path:hsa04010
+hsa:9064,MAP3K6,"MAP3K6, ASK2, MAPKKK6, MEKK6; mitogen-activated protein kinase kinase kinase 6 isoform 1",gene,,path:hsa04010
+fu:7b59f2f9,fu:7b59f2f9,,functional_unit,SINGLE,path:hsa04010
+hsa:51776,MAP3K20,"MAP3K20, AZK, CNM6, MLK7, MLT, MLTK, MLTKalpha, MLTKbeta, MRK, SFMMP, ZAK, mlklak, pk; mitogen-activated protein kinase kinase kinase 20 isoform 1",gene,,path:hsa04010
+fu:765239d2,fu:765239d2,,functional_unit,SINGLE,path:hsa04010
+hsa:7786,MAP3K12,"MAP3K12, DLK, HP09298, MEKK12, MUK, ZPK, ZPKP1; mitogen-activated protein kinase kinase kinase 12 isoform 2",gene,,path:hsa04010
+hsa:9175,MAP3K13,"MAP3K13, LZK, MEKK13, MLK; mitogen-activated protein kinase kinase kinase 13 isoform 1",gene,,path:hsa04010
+fu:bdf742c5,fu:bdf742c5,,functional_unit,OR,path:hsa04010
+hsa:4293,MAP3K9,"MAP3K9, MEKK9, MLK1, PRKE1; mitogen-activated protein kinase kinase kinase 9 isoform 2",gene,,path:hsa04010
+hsa:4294,MAP3K10,"MAP3K10, MEKK10, MLK2, MST; mitogen-activated protein kinase kinase kinase 10",gene,,path:hsa04010
+hsa:84451,MAP3K21,"MAP3K21, MLK4, dJ862P8.3; mitogen-activated protein kinase kinase kinase 21",gene,,path:hsa04010
+fu:e7c23063,fu:e7c23063,,functional_unit,OR,path:hsa04010
+hsa:5871,MAP4K2,"MAP4K2, BL44, GCK, RAB8IP; mitogen-activated protein kinase kinase kinase kinase 2 isoform 1",gene,,path:hsa04010
+fu:b9cd5da1,fu:b9cd5da1,,functional_unit,SINGLE,path:hsa04010
+hsa:6788,STK3,"STK3, KRS1, MST2; serine/threonine-protein kinase 3 isoform 1",gene,,path:hsa04010
+hsa:6789,STK4,"STK4, KRS2, MST1, YSK3; serine/threonine-protein kinase 4 isoform 1",gene,,path:hsa04010
+fu:6ad9125c,fu:6ad9125c,,functional_unit,OR,path:hsa04010
+hsa:51295,ECSIT,"ECSIT, SITPEC; evolutionarily conserved signaling intermediate in Toll pathway, mitochondrial isoform 1 precursor",gene,,path:hsa04010
+fu:abef13f0,fu:abef13f0,,functional_unit,SINGLE,path:hsa04010
+hsa:23118,TAB2,"TAB2, CHTD2, MAP3K7IP2, TAB-2; TGF-beta-activated kinase 1 and MAP3K7-binding protein 2 isoform a",gene,,path:hsa04010
+fu:50e477cd,fu:50e477cd,,functional_unit,SINGLE,path:hsa04010
+hsa:10454,TAB1,"TAB1, 3'-Tab1, MAP3K7IP1; TGF-beta-activated kinase 1 and MAP3K7-binding protein 1 isoform alpha",gene,,path:hsa04010
+fu:6b042d75,fu:6b042d75,,functional_unit,SINGLE,path:hsa04010
+hsa:10912,GADD45G,"GADD45G, CR6, DDIT2, GADD45gamma, GRP17; growth arrest and DNA damage-inducible protein GADD45 gamma",gene,,path:hsa04010
+hsa:1647,GADD45A,"GADD45A, DDIT1, GADD45; growth arrest and DNA damage-inducible protein GADD45 alpha isoform 1",gene,,path:hsa04010
+hsa:4616,GADD45B,"GADD45B, GADD45BETA, MYD118; growth arrest and DNA damage-inducible protein GADD45 beta",gene,,path:hsa04010
+fu:18257a1a,fu:18257a1a,,functional_unit,OR,path:hsa04010
+hsa:7189,TRAF6,"TRAF6, MGC:3310, RNF85; TNF receptor-associated factor 6",gene,,path:hsa04010
+fu:380a8c9c,fu:380a8c9c,,functional_unit,SINGLE,path:hsa04010
+hsa:1616,DAXX,"DAXX, BING2, DAP6, EAP1, SMIM40; death domain-associated protein 6 isoform a",gene,,path:hsa04010
+fu:c52cf97a,fu:c52cf97a,,functional_unit,SINGLE,path:hsa04010
+hsa:7186,TRAF2,"TRAF2, MGC:45012, RNF117, TRAP, TRAP3; TNF receptor-associated factor 2",gene,,path:hsa04010
+fu:efd88231,fu:efd88231,,functional_unit,SINGLE,path:hsa04010
+hsa:836,CASP3,"CASP3, CPP32, CPP32B, SCA-1; caspase-3 isoform a preproprotein",gene,,path:hsa04010
+fu:aea2f6ea,fu:aea2f6ea,,functional_unit,SINGLE,path:hsa04010
+hsa:929,CD14,CD14; monocyte differentiation antigen CD14 precursor,gene,,path:hsa04010
+fu:925491b4,fu:925491b4,,functional_unit,SINGLE,path:hsa04010
+hsa:7046,TGFBR1,"TGFBR1, AAT5, ACVRLK4, ALK-5, ALK5, ESS1, LDS1, LDS1A, LDS2A, MSSE, SKR4, TBR-i, TBRI, TGFR-1, tbetaR-I; TGF-beta receptor type-1 isoform 1 precursor",gene,,path:hsa04010
+hsa:7048,TGFBR2,"TGFBR2, AAT3, FAA3, LDS1B, LDS2, LDS2B, MFS2, RIIC, TAAD2, TBR-ii, TBRII, TGFR-2, TGFbeta-RII, tbetaR-II; TGF-beta receptor type-2 isoform B precursor",gene,,path:hsa04010
+fu:b35242a6,fu:b35242a6,,functional_unit,OR,path:hsa04010
+hsa:355,FAS,"FAS, ALPS1A, APO-1, APT1, CD95, FAS1, FASTM, TNFRSF6; tumor necrosis factor receptor superfamily member 6 isoform 1 precursor",gene,,path:hsa04010
+fu:1520c439,fu:1520c439,,functional_unit,SINGLE,path:hsa04010
+hsa:3554,IL1R1,"IL1R1, CD121A, CRMO3, D2S1473, IL-1R-alpha, IL-1RT1, IL1R, IL1RA, P80; interleukin-1 receptor type 1 isoform 1 precursor",gene,,path:hsa04010
+hsa:3556,IL1RAP,"IL1RAP, C3orf13, IL-1RAcP, IL1R3; interleukin-1 receptor accessory protein isoform 1 precursor",gene,,path:hsa04010
+fu:6d9f19be,fu:6d9f19be,,functional_unit,OR,path:hsa04010
+hsa:7132,TNFRSF1A,"TNFRSF1A, CD120a, FPF, TBP1, TNF-R, TNF-R-I, TNF-R55, TNFAR, TNFR1, TNFR55, TNFR60, p55, p55-R, p60; tumor necrosis factor receptor superfamily member 1A isoform 1 precursor",gene,,path:hsa04010
+fu:7c5dbbe7,fu:7c5dbbe7,,functional_unit,SINGLE,path:hsa04010
+hsa:7040,TGFB1,"TGFB1, CED, DPD1, IBDIMDE, LAP, TGF-beta1, TGFB, TGFbeta; transforming growth factor beta-1 proprotein preproprotein",gene,,path:hsa04010
+hsa:7042,TGFB2,"TGFB2, G-TSF, LDS4, TGF-beta2; transforming growth factor beta-2 proprotein isoform 2 preproprotein",gene,,path:hsa04010
+hsa:7043,TGFB3,"TGFB3, ARVD, ARVD1, LDS5, RNHF, TGF-beta3; transforming growth factor beta-3 proprotein isoform 1 preproprotein",gene,,path:hsa04010
+fu:868fd6f8,fu:868fd6f8,,functional_unit,OR,path:hsa04010
+hsa:3552,IL1A,"IL1A, IL-1 alpha, IL-1A, IL1, IL1-ALPHA, IL1F1; interleukin-1 alpha precursor",gene,,path:hsa04010
+hsa:3553,IL1B,"IL1B, IL-1, IL1-BETA, IL1F2, IL1beta; interleukin-1 beta proprotein",gene,,path:hsa04010
+fu:89eef994,fu:89eef994,,functional_unit,OR,path:hsa04010
+hsa:7124,TNF,"TNF, DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F; tumor necrosis factor",gene,,path:hsa04010
+fu:38d52bc5,fu:38d52bc5,,functional_unit,SINGLE,path:hsa04010
+hsa:8550,MAPKAPK5,"MAPKAPK5, MAPKAP-K5, MK-5, MK5, NCFD, PRAK; MAP kinase-activated protein kinase 5 isoform 2",gene,,path:hsa04010
+fu:bcd1d489,fu:bcd1d489,,functional_unit,SINGLE,path:hsa04010
+hsa:5879,RAC1,"RAC1, MIG5, MRD48, Rac-1, TC-25, p21-Rac1; ras-related C3 botulinum toxin substrate 1 isoform Rac1",gene,,path:hsa04010
+hsa:5880,RAC2,"RAC2, EN-7, Gx, HSPC022, IMD73A, IMD73B, IMD73C, p21-Rac2; ras-related C3 botulinum toxin substrate 2",gene,,path:hsa04010
+hsa:5881,RAC3,RAC3; ras-related C3 botulinum toxin substrate 3 isoform 1,gene,,path:hsa04010
+hsa:998,CDC42,"CDC42, CDC42Hs, G25K, TKS; cell division control protein 42 homolog isoform 1 precursor",gene,,path:hsa04010
+fu:7580441c,fu:7580441c,,functional_unit,OR,path:hsa04010
+hsa:5058,PAK1,"PAK1, IDDMSSD, PAKalpha, alpha-PAK, p65-PAK; serine/threonine-protein kinase PAK 1 isoform 2",gene,,path:hsa04010
+hsa:5062,PAK2,"PAK2, KNO2, PAK65, PAKgamma; serine/threonine-protein kinase PAK 2",gene,,path:hsa04010
+fu:5e377e3f,fu:5e377e3f,,functional_unit,OR,path:hsa04010
+hsa:10746,MAP3K2,"MAP3K2, MEKK2, MEKK2B; mitogen-activated protein kinase kinase kinase 2",gene,,path:hsa04010
+hsa:4215,MAP3K3,"MAP3K3, CCM5, MAPKKK3, MEKK3; mitogen-activated protein kinase kinase kinase 3 isoform 2",gene,,path:hsa04010
+fu:b9a4e385,fu:b9a4e385,,functional_unit,OR,path:hsa04010
+hsa:23542,MAPK8IP2,"MAPK8IP2, IB-2, IB2, JIP2, PRKM8IPL; C-Jun-amino-terminal kinase-interacting protein 2",gene,,path:hsa04010
+hsa:9479,MAPK8IP1,"MAPK8IP1, IB1, JIP-1, JIP1, PRKM8IP; C-Jun-amino-terminal kinase-interacting protein 1",gene,,path:hsa04010
+fu:6fe4014e,fu:6fe4014e,,functional_unit,OR,path:hsa04010
+hsa:4296,MAP3K11,"MAP3K11, MEKK11, MLK-3, MLK3, PTK1, SPRK; mitogen-activated protein kinase kinase kinase 11",gene,,path:hsa04010
+fu:85decfaf,fu:85decfaf,,functional_unit,SINGLE,path:hsa04010
+hsa:5609,MAP2K7,"MAP2K7, JNKK2, MAPKK7, MEK, MEK 7, MKK7, PRKMK7, SAPKK-4, SAPKK4; dual specificity mitogen-activated protein kinase kinase 7 isoform 3",gene,,path:hsa04010
+fu:dd256444,fu:dd256444,,functional_unit,SINGLE,path:hsa04010
+hsa:5599,MAPK8,"MAPK8, JNK, JNK-46, JNK1, JNK1A2, JNK21B1/2, PRKM8, SAPK1, SAPK1c; mitogen-activated protein kinase 8 isoform alpha2",gene,,path:hsa04010
+hsa:5601,MAPK9,"MAPK9, JNK-55, JNK2, JNK2A, JNK2ALPHA, JNK2B, JNK2BETA, PRKM9, SAPK, SAPK1a, p54a, p54aSAPK; mitogen-activated protein kinase 9 isoform alpha2",gene,,path:hsa04010
+hsa:5602,MAPK10,"MAPK10, JNK3, JNK3A, PRKM10, SAPK1b, p493F12, p54bSAPK; mitogen-activated protein kinase 10 isoform 1",gene,,path:hsa04010
+fu:53b10c28,fu:53b10c28,,functional_unit,OR,path:hsa04010
+hsa:6416,MAP2K4,"MAP2K4, JNKK, JNKK1, MAPKK4, MEK4, MKK4, PRKMK4, SAPKK-1, SAPKK1, SEK1, SERK1, SKK1; dual specificity mitogen-activated protein kinase kinase 4 isoform 1",gene,,path:hsa04010
+fu:41179064,fu:41179064,,functional_unit,SINGLE,path:hsa04010
+hsa:1398,CRK,"CRK, CRKII, p38; adapter molecule crk isoform a",gene,,path:hsa04010
+hsa:1399,CRKL,CRKL; crk-like protein,gene,,path:hsa04010
+fu:42c68f20,fu:42c68f20,,functional_unit,OR,path:hsa04010
+hsa:408,ARRB1,"ARRB1, ARB1, ARR1; beta-arrestin-1 isoform A",gene,,path:hsa04010
+hsa:409,ARRB2,"ARRB2, ARB2, ARR2, BARR2; beta-arrestin-2 isoform 1",gene,,path:hsa04010
+fu:d07d8b68,fu:d07d8b68,,functional_unit,OR,path:hsa04010
+hsa:2122,MECOM,"MECOM, AML1-EVI-1, EVI1, KMT8E, MDS1, MDS1-EVI1, PRDM3, RUSAT2; histone-lysine N-methyltransferase MECOM isoform f",gene,,path:hsa04010
+fu:29014263,fu:29014263,,functional_unit,SINGLE,path:hsa04010
+hsa:3303,HSPA1A,"HSPA1A, HEL-S-103, HSP70, HSP70-1, HSP70-1A, HSP70-2, HSP70.1, HSP70.2, HSP70I, HSP72, HSPA1; heat shock 70 kDa protein 1A",gene,,path:hsa04010
+hsa:3304,HSPA1B,"HSPA1B, HSP70-1, HSP70-1B, HSP70-2, HSP70.1, HSP70.2, HSP72, HSPA1, HSX70; heat shock 70 kDa protein 1B",gene,,path:hsa04010
+hsa:3305,HSPA1L,"HSPA1L, HSP70-1L, HSP70-HOM, HSP70T, hum70t; heat shock 70 kDa protein 1-like",gene,,path:hsa04010
+hsa:3310,HSPA6,"HSPA6, HSP70B'; heat shock 70 kDa protein 6",gene,,path:hsa04010
+hsa:3312,HSPA8,"HSPA8, HEL-33, HEL-S-72p, HSC54, HSC70, HSC71, HSP71, HSP73, HSPA10, LAP-1, LAP1, NIP71; heat shock cognate 71 kDa protein isoform 1",gene,,path:hsa04010
+fu:6a00b55c,fu:6a00b55c,,functional_unit,OR,path:hsa04010
+hsa:3727,JUND,"JUND, AP-1; transcription factor JunD isoform JunD-FL",gene,,path:hsa04010
+fu:84a61edc,fu:84a61edc,,functional_unit,SINGLE,path:hsa04010
+hsa:2353,FOS,"FOS, AP-1, C-FOS, p55; protein c-Fos",gene,,path:hsa04010
+hsa:3725,JUN,"JUN, AP-1, AP1, c-Jun, cJUN, p39; transcription factor Jun",gene,,path:hsa04010
+fu:45d37654,fu:45d37654,,functional_unit,OR,path:hsa04010
+hsa:4775,NFATC3,"NFATC3, NF-AT4c, NFAT4, NFATX, n339260; nuclear factor of activated T-cells, cytoplasmic 3 isoform 1",gene,,path:hsa04010
+fu:d66dccc5,fu:d66dccc5,,functional_unit,SINGLE,path:hsa04010
+hsa:4772,NFATC1,"NFATC1, NF-ATC, NF-ATc1.2, NFAT2, NFATc; nuclear factor of activated T-cells, cytoplasmic 1 isoform F",gene,,path:hsa04010
+fu:a8faa1a3,fu:a8faa1a3,,functional_unit,SINGLE,path:hsa04010
+hsa:5530,PPP3CA,"PPP3CA, ACCIID, CALN, CALNA, CALNA1, CCN1, CNA1, DEE91, IECEE, IECEE1, PPP2B; protein phosphatase 3 catalytic subunit alpha isoform 1",gene,,path:hsa04010
+hsa:5532,PPP3CB,"PPP3CB, CALNA2, CALNB, CNA2, PP2Bbeta; serine/threonine-protein phosphatase 2B catalytic subunit beta isoform isoform b",gene,,path:hsa04010
+hsa:5533,PPP3CC,"PPP3CC, CALNA3, CNA3, PP2Bgamma; serine/threonine-protein phosphatase 2B catalytic subunit gamma isoform isoform 2",gene,,path:hsa04010
+hsa:5534,PPP3R1,"PPP3R1, CALNB1, CNB, CNB1; calcineurin subunit B type 1",gene,,path:hsa04010
+hsa:5535,PPP3R2,"PPP3R2, PPP3RL; calcineurin subunit B type 2",gene,,path:hsa04010
+fu:c9fb2f87,fu:c9fb2f87,,functional_unit,OR,path:hsa04010
+hsa:23162,MAPK8IP3,"MAPK8IP3, JIP-3, JIP3, JSAP1, NEDBA, SYD2, syd; C-Jun-amino-terminal kinase-interacting protein 3 isoform 1",gene,,path:hsa04010
+fu:d619f7e8,fu:d619f7e8,,functional_unit,SINGLE,path:hsa04010
+hsa:2316,FLNA,"FLNA, ABP-280, ABPX, CSBS, CVD1, FGS2, FLN, FLN-A, FLN1, FMD, MNS, NHBP, OPD, OPD1, OPD2, XLVD, XMVD; filamin-A isoform 2",gene,,path:hsa04010
+fu:5f5fbdbd,fu:5f5fbdbd,,functional_unit,SINGLE,path:hsa04010
+hsa:4214,MAP3K1,"MAP3K1, MAPKKK1, MEKK, MEKK 1, MEKK1, SRXY6; mitogen-activated protein kinase kinase kinase 1",gene,,path:hsa04010
+fu:634dd023,fu:634dd023,,functional_unit,SINGLE,path:hsa04010
+hsa:1326,MAP3K8,"MAP3K8, AURA2, COT, EST, ESTF, MEKK8, TPL2, Tpl-2, c-COT; mitogen-activated protein kinase kinase kinase 8",gene,,path:hsa04010
+fu:a89b6f8d,fu:a89b6f8d,,functional_unit,SINGLE,path:hsa04010
+hsa:11184,MAP4K1,"MAP4K1, HPK1; mitogen-activated protein kinase kinase kinase kinase 1 isoform 2",gene,,path:hsa04010
+fu:0d4bb414,fu:0d4bb414,,functional_unit,SINGLE,path:hsa04010
+hsa:8491,MAP4K3,"MAP4K3, GLK, MAPKKKK3, MEKKK 3, MEKKK3, RAB8IPL1; mitogen-activated protein kinase kinase kinase kinase 3 isoform 1",gene,,path:hsa04010
+fu:b1667507,fu:b1667507,,functional_unit,SINGLE,path:hsa04010
+fu:7da5a68c,fu:7da5a68c,,functional_unit,SINGLE,path:hsa04010
+hsa:6722,SRF,"SRF, MCM1; serum response factor isoform 1",gene,,path:hsa04010
+fu:dde490f0,fu:dde490f0,,functional_unit,SINGLE,path:hsa04010
+hsa:4609,MYC,"MYC, MRTL, MYCC, bHLHe39, c-Myc; myc proto-oncogene protein isoform 1",gene,,path:hsa04010
+fu:6f8defad,fu:6f8defad,,functional_unit,SINGLE,path:hsa04010
+fu:99d52518,fu:99d52518,,functional_unit,SINGLE,path:hsa04010
+fu:a6b72414,fu:a6b72414,,functional_unit,SINGLE,path:hsa04010
+fu:af3eedc3,fu:af3eedc3,,functional_unit,SINGLE,path:hsa04010
+hsa:27330,RPS6KA6,"RPS6KA6, PP90RSK4, RSK-4, RSK4, S6K-alpha-6, p90RSK6; ribosomal protein S6 kinase alpha-6 isoform 2",gene,,path:hsa04010
+hsa:6195,RPS6KA1,"RPS6KA1, HU-1, MAPKAPK1, MAPKAPK1A, RSK, RSK1, p90Rsk; ribosomal protein S6 kinase alpha-1 isoform a",gene,,path:hsa04010
+hsa:6196,RPS6KA2,"RPS6KA2, HU-2, MAPKAPK1C, RSK, RSK3, S6K-alpha, S6K-alpha2, p90-RSK3, p90RSK2, pp90RSK3; ribosomal protein S6 kinase alpha-2 isoform a",gene,,path:hsa04010
+hsa:6197,RPS6KA3,"RPS6KA3, CLS, HU-3, ISPK-1, MAPKAPK1B, MRX19, RSK, RSK2, S6K-alpha3, XLID19, p90-RSK2, pp90RSK2; ribosomal protein S6 kinase alpha-3 isoform 1",gene,,path:hsa04010
+fu:746aa4e9,fu:746aa4e9,,functional_unit,OR,path:hsa04010
+hsa:2872,MKNK2,"MKNK2, GPRK7, MNK2; MAP kinase-interacting serine/threonine-protein kinase 2 isoform 2",gene,,path:hsa04010
+hsa:8569,MKNK1,"MKNK1, MNK1; MAP kinase-interacting serine/threonine-protein kinase 1 isoform 1",gene,,path:hsa04010
+fu:21beb0bd,fu:21beb0bd,,functional_unit,OR,path:hsa04010
+hsa:125467750,EFNA4-EFNA3,EFNA4-EFNA3; EFNA4-EFNA3 protein precursor,gene,,path:hsa04010
+hsa:1435,CSF1,"CSF1, CSF-1, MCSF, PG-M-CSF; macrophage colony-stimulating factor 1 isoform a precursor",gene,,path:hsa04010
+hsa:1942,EFNA1,"EFNA1, B61, ECKLG, EFL1, EPLG1, GMAN, LERK-1, LERK1, TNFAIP4; ephrin-A1 isoform a precursor",gene,,path:hsa04010
+hsa:1943,EFNA2,"EFNA2, ELF-1, EPLG6, HEK7-L, LERK-6, LERK6; ephrin-A2 precursor",gene,,path:hsa04010
+hsa:1944,EFNA3,"EFNA3, EFL2, EPLG3, Ehk1-L, LERK3; ephrin-A3 precursor",gene,,path:hsa04010
+hsa:1945,EFNA4,"EFNA4, EFL4, EPLG4, LERK-4, LERK4; ephrin-A4 isoform a precursor",gene,,path:hsa04010
+hsa:1946,EFNA5,"EFNA5, AF1, EFL5, EPLG7, GLC1M, LERK7, RAGS; ephrin-A5 isoform 1 precursor",gene,,path:hsa04010
+hsa:1950,EGF,"EGF, HOMG4, URG; pro-epidermal growth factor isoform 1 preproprotein",gene,,path:hsa04010
+hsa:2069,EREG,"EREG, EPR, ER, Ep; proepiregulin preproprotein",gene,,path:hsa04010
+hsa:2246,FGF1,"FGF1, AFGF, ECGF, ECGF-beta, ECGFA, ECGFB, FGF-1, FGF-alpha, FGFA, GLIO703, HBGF-1, HBGF1; fibroblast growth factor 1 isoform 1 precursor",gene,,path:hsa04010
+hsa:2247,FGF2,"FGF2, BFGF, FGF-2, FGFB, HBGF-2; fibroblast growth factor 2 isoform 34 kDa",gene,,path:hsa04010
+hsa:2248,FGF3,"FGF3, HBGF-3, INT2; fibroblast growth factor 3 precursor",gene,,path:hsa04010
+hsa:2249,FGF4,"FGF4, FGF-4, HBGF-4, HST, HST-1, HSTF-1, HSTF1, K-FGF, KFGF, SRTD22; fibroblast growth factor 4 precursor",gene,,path:hsa04010
+hsa:2250,FGF5,"FGF5, HBGF-5, Smag-82, TCMGLY; fibroblast growth factor 5 isoform 1 precursor",gene,,path:hsa04010
+hsa:2251,FGF6,"FGF6, HBGF-6, HST2; fibroblast growth factor 6 precursor",gene,,path:hsa04010
+hsa:2252,FGF7,"FGF7, HBGF-7, KGF; fibroblast growth factor 7 precursor",gene,,path:hsa04010
+hsa:2253,FGF8,"FGF8, AIGF, FGF-8, HBGF-8, HH6, KAL6; fibroblast growth factor 8 isoform E precursor",gene,,path:hsa04010
+hsa:2254,FGF9,"FGF9, FGF-9, GAF, HBFG-9, HBGF-9, SYNS3; fibroblast growth factor 9 precursor",gene,,path:hsa04010
+hsa:2255,FGF10,"FGF10, LADD3; fibroblast growth factor 10 precursor",gene,,path:hsa04010
+hsa:2277,VEGFD,"VEGFD, FIGF, VEGF-D; vascular endothelial growth factor D preproprotein",gene,,path:hsa04010
+hsa:2323,FLT3LG,"FLT3LG, FL, FLG3L, FLT3L, IMD125; fms-related tyrosine kinase 3 ligand isoform 1 precursor",gene,,path:hsa04010
+hsa:26281,FGF20,"FGF20, FGF-20, RHDA2; fibroblast growth factor 20",gene,,path:hsa04010
+hsa:26291,FGF21,FGF21; fibroblast growth factor 21 precursor,gene,,path:hsa04010
+hsa:2668,GDNF,"GDNF, ATF, ATF1, ATF2, HFB1-GDNF, HSCR3; glial cell line-derived neurotrophic factor isoform 1 preproprotein",gene,,path:hsa04010
+hsa:27006,FGF22,FGF22; fibroblast growth factor 22 isoform 1 precursor,gene,,path:hsa04010
+hsa:284,ANGPT1,"ANGPT1, AGP1, AGPT, AGPT-1, ANG1, HAE5; angiopoietin-1 isoform 1 precursor",gene,,path:hsa04010
+hsa:285,ANGPT2,"ANGPT2, AGPT2, ANG2, LMPHM10; angiopoietin-2 isoform a precursor",gene,,path:hsa04010
+hsa:3082,HGF,"HGF, DFNB39, F-TCF, HGFB, HPTA, SF; hepatocyte growth factor isoform 1 preproprotein",gene,,path:hsa04010
+hsa:3479,IGF1,"IGF1, IGF, IGF-I, IGFI, MGF; insulin-like growth factor 1 isoform 3 preproprotein",gene,,path:hsa04010
+hsa:3481,IGF2,"IGF2, C11orf43, GRDF, IGF-II, PP9974, SRS3; insulin-like growth factor 2 isoform 1 preproprotein",gene,,path:hsa04010
+hsa:3630,INS,"INS, IDDM, IDDM1, IDDM2, ILPR, IRDN, MODY10, PNDM4; insulin preproprotein",gene,,path:hsa04010
+hsa:374,AREG,"AREG, AR, AREGB, CRDGF, SDGF; amphiregulin preproprotein",gene,,path:hsa04010
+hsa:4254,KITLG,"KITLG, DCUA, DFNA69, FPH2, FPHH, KL-1, Kitl, MGF, SCF, SF, SHEP7, SLF, WS2F; kit ligand isoform b precursor",gene,,path:hsa04010
+hsa:4803,NGF,"NGF, Beta-NGF, HSAN5, NGFB; beta-nerve growth factor precursor",gene,,path:hsa04010
+hsa:4902,NRTN,"NRTN, NTN; neurturin preproprotein",gene,,path:hsa04010
+hsa:4908,NTF3,"NTF3, HDNF, NGF-2, NGF2, NT-3, NT3; neurotrophin-3 isoform 2 preproprotein",gene,,path:hsa04010
+hsa:4909,NTF4,"NTF4, GLC10, GLC1O, NT-4, NT-4/5, NT-5, NT4, NT5, NTF5; neurotrophin-4 preproprotein",gene,,path:hsa04010
+hsa:51378,ANGPT4,"ANGPT4, ANG3, ANG4; angiopoietin-4 isoform 1 precursor",gene,,path:hsa04010
+hsa:5154,PDGFA,"PDGFA, PDGF-A, PDGF1; platelet-derived growth factor subunit A isoform 1 preproprotein",gene,,path:hsa04010
+hsa:5155,PDGFB,"PDGFB, IBGC5, PDGF-2, PDGF2, SIS, SSV, c-sis; platelet-derived growth factor subunit B isoform 1 preproprotein",gene,,path:hsa04010
+hsa:5228,PGF,"PGF, D12S1900, PGFL, PIGF, PLGF, PlGF-2, SHGC-10760; placenta growth factor isoform 2 precursor",gene,,path:hsa04010
+hsa:56034,PDGFC,"PDGFC, FALLOTEIN, SCDGF; platelet-derived growth factor C precursor",gene,,path:hsa04010
+hsa:5623,PSPN,"PSPN, PSP; persephin preproprotein",gene,,path:hsa04010
+hsa:627,BDNF,"BDNF, ANON2, BULN2; neurotrophic factor BDNF precursor form isoform a preproprotein",gene,,path:hsa04010
+hsa:7039,TGFA,"TGFA, TFGA; protransforming growth factor alpha isoform 1 preproprotein",gene,,path:hsa04010
+hsa:7422,VEGFA,"VEGFA, L-VEGF, MVCD1, VEGF, VPF; vascular endothelial growth factor A, long form isoform b",gene,,path:hsa04010
+hsa:7423,VEGFB,"VEGFB, VEGFL, VRF; vascular endothelial growth factor B isoform VEGFB-186 precursor",gene,,path:hsa04010
+hsa:7424,VEGFC,"VEGFC, Flt4-L, LMPH1D, LMPHM4, VRP; vascular endothelial growth factor C preproprotein",gene,,path:hsa04010
+hsa:80310,PDGFD,"PDGFD, IEGF, MSTP036, SCDGF-B, SCDGFB; platelet-derived growth factor D isoform 1 precursor",gene,,path:hsa04010
+hsa:8074,FGF23,"FGF23, ADHR, FGFN, HFTC2, HPDR2, HYPF, PHPTC; fibroblast growth factor 23 precursor",gene,,path:hsa04010
+hsa:8817,FGF18,"FGF18, FGF-18, ZFGF5; fibroblast growth factor 18 precursor",gene,,path:hsa04010
+hsa:8822,FGF17,"FGF17, FGF-13, FGF-17, HH20; fibroblast growth factor 17 isoform 1 precursor",gene,,path:hsa04010
+hsa:8823,FGF16,"FGF16, FGF-16, MF4; fibroblast growth factor 16",gene,,path:hsa04010
+hsa:9048,ARTN,"ARTN, ART, ENOVIN, EVN, NBN; artemin isoform 1 preproprotein",gene,,path:hsa04010
+hsa:9965,FGF19,FGF19; fibroblast growth factor 19 precursor,gene,,path:hsa04010
+fu:bc721fb9,fu:bc721fb9,,functional_unit,OR,path:hsa04010
+hsa:8717,TRADD,"TRADD, Hs.89862; tumor necrosis factor receptor type 1-associated DEATH domain protein",gene,,path:hsa04010
+fu:cb915a0e,fu:cb915a0e,,functional_unit,SINGLE,path:hsa04010
+hsa:4615,MYD88,"MYD88, IMD68, MYD88D, WM1; myeloid differentiation primary response protein MyD88 isoform 2",gene,,path:hsa04010
+fu:52a67244,fu:52a67244,,functional_unit,SINGLE,path:hsa04010
+hsa:3654,IRAK1,"IRAK1, IRAK, pelle; interleukin-1 receptor-associated kinase 1 isoform 1",gene,,path:hsa04010
+hsa:51135,IRAK4,"IRAK4, IMD67, IPD1, IRAK-4, NY-REN-64, REN64; interleukin-1 receptor-associated kinase 4 isoform a",gene,,path:hsa04010
+fu:b626b1e9,fu:b626b1e9,,functional_unit,OR,path:hsa04010
+hsa:369,ARAF,"ARAF, A-RAF, ARAF1, PKS2, RAFA1; serine/threonine-protein kinase A-Raf isoform 1",gene,,path:hsa04010
+fu:35b0cd0d,fu:35b0cd0d,,functional_unit,SINGLE,path:hsa04010
+fu:1e863058,fu:1e863058,,functional_unit,SINGLE,path:hsa04010
+fu:e7bc3157,fu:e7bc3157,,functional_unit,AND,path:hsa04010
+fu:661a5763,fu:661a5763,,functional_unit,AND,path:hsa04010

@@ -1,0 +1,299 @@
+
+<style>
+#drop-zone {
+  border: 1.5px dashed var(--color-border-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin: 1rem 0 0.75rem;
+}
+#drop-zone.over { background: var(--color-background-secondary); border-color: var(--color-border-primary); }
+#status { font-size: 13px; color: var(--color-text-secondary); min-height: 20px; padding: 0.25rem 0; }
+#cy { width:100%; height:460px; border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-lg); background:var(--color-background-secondary); display:none; }
+#legend { display:none; gap:12px; flex-wrap:wrap; padding:0.5rem 0; font-size:12px; color:var(--color-text-secondary); }
+.leg { display:flex; align-items:center; gap:5px; }
+.leg-dot { width:11px; height:11px; border-radius:50%; flex-shrink:0; }
+#node-info { background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:0.75rem 1rem; font-size:13px; color:var(--color-text-secondary); margin-top:0.5rem; display:none; word-break:break-all; }
+#stats { display:none; gap:12px; margin:0.5rem 0; }
+.stat { background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:0.6rem 1rem; font-size:13px; }
+.stat span { display:block; font-size:20px; font-weight:500; color:var(--color-text-primary); }
+</style>
+
+<h2 class="sr-only">UniProt RDF file drag-and-drop graph viewer</h2>
+
+<div id="drop-zone" onclick="document.getElementById('file-input').click()">
+  <i class="ti ti-upload" style="font-size:28px;color:var(--color-text-tertiary);display:block;margin-bottom:8px" aria-hidden="true"></i>
+  <p style="margin:0;font-size:14px;color:var(--color-text-secondary)">Drop your UniProt RDF file here, or click to browse</p>
+  <p style="margin:4px 0 0;font-size:12px;color:var(--color-text-tertiary)">Supports .ttl, .rdf, .xml, .nt, .n3</p>
+  <input id="file-input" type="file" accept=".ttl,.rdf,.xml,.nt,.n3,.owl" style="display:none" onchange="handleFile(this.files[0])">
+</div>
+
+<div id="status">No file loaded yet.</div>
+
+<div id="stats">
+  <div class="stat">Triples<span id="stat-triples">0</span></div>
+  <div class="stat">Nodes<span id="stat-nodes">0</span></div>
+  <div class="stat">Edges<span id="stat-edges">0</span></div>
+</div>
+
+<div id="legend">
+  <div class="leg"><div class="leg-dot" style="background:#178CBA"></div>Protein</div>
+  <div class="leg"><div class="leg-dot" style="background:#E67E22"></div>Literal</div>
+  <div class="leg"><div class="leg-dot" style="background:#27AE60"></div>Gene / organism</div>
+  <div class="leg"><div class="leg-dot" style="background:#8E44AD"></div>Ontology</div>
+  <div class="leg"><div class="leg-dot" style="background:#95A5A6"></div>Other</div>
+</div>
+
+<div id="cy"></div>
+<div id="node-info"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<script>
+let cy;
+
+const dz = document.getElementById('drop-zone');
+dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('over'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('over'));
+dz.addEventListener('drop', e => { e.preventDefault(); dz.classList.remove('over'); handleFile(e.dataTransfer.files[0]); });
+
+function handleFile(file) {
+  if (!file) return;
+  setStatus('Reading file…');
+  const reader = new FileReader();
+  reader.onload = e => parseRDF(e.target.result, file.name);
+  reader.onerror = () => setStatus('Error reading file.');
+  reader.readAsText(file);
+}
+
+function setStatus(msg) { document.getElementById('status').textContent = msg; }
+
+function parseRDF(text, filename) {
+  setStatus('Parsing RDF…');
+  const triples = [];
+  const ext = filename.split('.').pop().toLowerCase();
+
+  try {
+    if (ext === 'nt') {
+      parseNTriples(text, triples);
+    } else if (ext === 'ttl' || ext === 'n3') {
+      parseTurtle(text, triples);
+    } else {
+      parseXMLRDF(text, triples);
+    }
+  } catch(e) {
+    try { parseXMLRDF(text, triples); } catch(_) {}
+    if (!triples.length) {
+      try { parseTurtle(text, triples); } catch(_) {}
+    }
+    if (!triples.length) {
+      try { parseNTriples(text, triples); } catch(_) {}
+    }
+  }
+
+  if (!triples.length) { setStatus('Could not parse any triples. Try a .ttl or .nt file.'); return; }
+  buildGraph(triples);
+}
+
+function parseNTriples(text, triples) {
+  const lines = text.split('\n');
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t || t.startsWith('#')) continue;
+    const m = t.match(/^(<[^>]+>|"(?:[^"\\]|\\.)*"(?:@\S+|(?:\^\^<[^>]+>))?|_:\S+)\s+(<[^>]+>)\s+(.*)\s*\.\s*$/);
+    if (m) triples.push({ s: clean(m[1]), p: clean(m[2]), o: clean(m[3]), oIsLit: m[3].startsWith('"') });
+  }
+}
+
+function parseTurtle(text, triples) {
+  const prefixes = {};
+  const lines = text.split('\n');
+  for (const line of lines) {
+    const pm = line.match(/^\s*@?[Pp][Rr][Ee][Ff][Ii][Xx]\s+(\w*):\s*<([^>]+)>/);
+    if (pm) prefixes[pm[1]] = pm[2];
+  }
+  function expand(tok) {
+    if (tok.startsWith('<') && tok.endsWith('>')) return tok.slice(1,-1);
+    if (tok === 'a') return 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type';
+    const ci = tok.indexOf(':');
+    if (ci > 0) {
+      const pref = tok.slice(0, ci);
+      if (prefixes[pref]) return prefixes[pref] + tok.slice(ci+1);
+    }
+    return tok;
+  }
+  const noComments = text.replace(/#[^\n]*/g, '');
+  const statements = noComments.split('.').map(s => s.trim()).filter(Boolean);
+  for (const stmt of statements) {
+    const tokens = stmt.match(/(?:<[^>]*>|"(?:[^"\\]|\\.)*"(?:@\S+|\^\^\S+)?|[^\s,;]+)/g);
+    if (!tokens || tokens.length < 3) continue;
+    const s = expand(tokens[0]);
+    let i = 1;
+    while (i < tokens.length - 1) {
+      const p = expand(tokens[i++]);
+      const oTok = tokens[i++];
+      const isLit = oTok.startsWith('"');
+      const o = isLit ? oTok.replace(/^"|".*$/g,'') : expand(oTok);
+      if (s && p && o) triples.push({ s, p, o, oIsLit: isLit });
+      while (i < tokens.length && (tokens[i] === ';' || tokens[i] === ',')) i++;
+    }
+  }
+}
+
+function parseXMLRDF(text, triples) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(text, 'application/xml');
+  if (doc.querySelector('parsererror')) throw new Error('XML parse error');
+  const descs = doc.querySelectorAll('Description, *[*|about], *[*|ID]');
+  descs.forEach(desc => {
+    const s = desc.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','about')
+            || desc.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','ID')
+            || desc.getAttribute('rdf:about') || desc.getAttribute('rdf:ID') || '';
+    if (!s) return;
+    Array.from(desc.children).forEach(child => {
+      const p = child.namespaceURI ? child.namespaceURI + child.localName : child.tagName;
+      const res = child.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','resource') || child.getAttribute('rdf:resource');
+      if (res) {
+        triples.push({ s, p, o: res, oIsLit: false });
+      } else if (child.textContent.trim()) {
+        triples.push({ s, p, o: child.textContent.trim(), oIsLit: true });
+      }
+    });
+  });
+}
+
+function clean(tok) {
+  if (tok.startsWith('<') && tok.endsWith('>')) return tok.slice(1,-1);
+  if (tok.startsWith('"')) return tok.replace(/^"|"(?:@\S+|\^\^\S+)?$/g,'');
+  return tok;
+}
+
+function shortLabel(uri, isLit) {
+  if (isLit) return uri.length > 40 ? uri.slice(0,38)+'…' : uri;
+  const frag = uri.split(/[#\/]/).filter(Boolean).pop() || uri;
+  return frag.length > 36 ? frag.slice(0,34)+'…' : frag;
+}
+
+function nodeColor(uri) {
+  if (!uri) return '#95A5A6';
+  if (uri.includes('/uniprot/')) return '#178CBA';
+  if (uri.includes('/taxonomy/') || uri.toLowerCase().includes('gene')) return '#27AE60';
+  if (uri.includes('purl.uniprot.org/core') || uri.includes('obolibrary') || uri.includes('purl.org')) return '#8E44AD';
+  return '#95A5A6';
+}
+
+function edgeLabel(uri) {
+  return (uri.split(/[#\/]/).filter(Boolean).pop() || uri).replace(/([A-Z])/g,' $1').trim();
+}
+
+function buildGraph(triples) {
+  const nodeMap = {};
+  const edges = [];
+
+  function addNode(id, isLit) {
+    if (!nodeMap[id]) nodeMap[id] = { id, label: shortLabel(id, isLit), color: isLit ? '#E67E22' : nodeColor(id), isLit };
+  }
+
+  triples.forEach((t, i) => {
+    addNode(t.s, false);
+    const oId = t.oIsLit ? `__lit_${i}` : t.o;
+    addNode(oId, t.oIsLit);
+    edges.push({ source: t.s, target: oId, label: edgeLabel(t.p), fullProp: t.p, fullVal: t.o });
+  });
+
+  const nodeCount = Object.keys(nodeMap).length;
+  const edgeCount = edges.length;
+
+  document.getElementById('stat-triples').textContent = triples.length;
+  document.getElementById('stat-nodes').textContent = nodeCount;
+  document.getElementById('stat-edges').textContent = edgeCount;
+  document.getElementById('stats').style.display = 'flex';
+  document.getElementById('legend').style.display = 'flex';
+  document.getElementById('cy').style.display = 'block';
+
+  const elements = [
+    ...Object.values(nodeMap).map(n => ({ data: { id: n.id, label: n.label, color: n.color, fullUri: n.id, isLit: n.isLit } })),
+    ...edges.map((e,i) => ({ data: { id:'e'+i, source: e.source, target: e.target, label: e.label, fullProp: e.fullProp, fullVal: e.fullVal } }))
+  ];
+
+  if (cy) cy.destroy();
+  cy = cytoscape({
+    container: document.getElementById('cy'),
+    elements,
+    style: [
+      {
+        selector: 'node',
+        style: {
+          'background-color': 'data(color)',
+          'label': 'data(label)',
+          'font-size': '8px',
+          'color': '#fff',
+          'text-valign': 'center',
+          'text-halign': 'center',
+          'text-wrap': 'wrap',
+          'text-max-width': '90px',
+          'width': 'label',
+          'height': 'label',
+          'padding': '6px',
+          'shape': 'roundrectangle',
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'width': 1,
+          'line-color': '#BDC3C7',
+          'target-arrow-color': '#BDC3C7',
+          'target-arrow-shape': 'triangle',
+          'curve-style': 'bezier',
+          'label': 'data(label)',
+          'font-size': '7px',
+          'color': '#999',
+          'text-rotation': 'autorotate',
+          'text-margin-y': -6
+        }
+      },
+      {
+        selector: ':selected',
+        style: {
+          'border-width': 2,
+          'border-color': '#178CBA',
+          'line-color': '#178CBA',
+          'target-arrow-color': '#178CBA'
+        }
+      }
+    ],
+    layout: {
+      name: 'cose',
+      animate: false,
+      idealEdgeLength: 90,
+      nodeRepulsion: 8000,
+      gravity: 0.3,
+      numIter: 1200
+    }
+  });
+
+  cy.on('tap', 'node', evt => {
+    const d = evt.target.data();
+    const info = document.getElementById('node-info');
+    info.style.display = 'block';
+    info.innerHTML = d.isLit
+      ? `<strong style="color:var(--color-text-primary)">Literal value</strong><br><span>${d.fullUri}</span>`
+      : `<strong style="color:var(--color-text-primary)">${d.label}</strong><br>
+         <span style="font-size:12px">${d.fullUri}</span><br>
+         ${!d.fullUri.startsWith('__') ? `<a href="${d.fullUri}" target="_blank" style="color:var(--color-text-info);font-size:12px">Open URI ↗</a>` : ''}`;
+  });
+
+  cy.on('tap', 'edge', evt => {
+    const d = evt.target.data();
+    const info = document.getElementById('node-info');
+    info.style.display = 'block';
+    info.innerHTML = `<strong style="color:var(--color-text-primary)">Property:</strong> ${d.label}<br>
+      <span style="font-size:12px">${d.fullProp}</span><br>
+      <strong style="color:var(--color-text-primary)">Value:</strong> <span style="font-size:12px">${d.fullVal}</span>`;
+  });
+
+  setStatus(`Parsed ${triples.length} triples → ${nodeCount} nodes, ${edgeCount} edges. Click any node or edge for details.`);
+}
+</script>
