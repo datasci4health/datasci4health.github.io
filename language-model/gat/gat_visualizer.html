@@ -564,23 +564,49 @@ function initCanvas() {
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
 
-  let drag = false, lastX, lastY;
+  let panning = false, panMoved = false, lastX, lastY;
+
   canvas.addEventListener('mousedown', e => {
-    const h = hitTest(e); if (h) { selectNode(h); return; }
-    drag = true; lastX = e.clientX; lastY = e.clientY;
+    lastX = e.clientX; lastY = e.clientY;
+    panning = true; panMoved = false;
     canvas.parentElement.classList.add('grabbing');
   });
+
   canvas.addEventListener('mousemove', e => {
-    if (drag) {
-      STATE.tx += e.clientX - lastX; STATE.ty += e.clientY - lastY;
-      lastX = e.clientX; lastY = e.clientY; redraw(); return;
+    if (panning) {
+      const dx = e.clientX - lastX, dy = e.clientY - lastY;
+      if (Math.abs(dx) > 2 || Math.abs(dy) > 2) panMoved = true;
+      if (panMoved) {
+        STATE.tx += dx; STATE.ty += dy;
+        lastX = e.clientX; lastY = e.clientY;
+        redraw();
+      }
+      return;
     }
     const h = hitTest(e);
     canvas.style.cursor = h ? 'pointer' : 'grab';
     showTooltip(e, h);
   });
-  canvas.addEventListener('mouseup', () => { drag = false; canvas.parentElement.classList.remove('grabbing'); });
-  canvas.addEventListener('mouseleave', () => { drag = false; hideTooltip(); canvas.parentElement.classList.remove('grabbing'); });
+
+  canvas.addEventListener('mouseup', e => {
+    canvas.parentElement.classList.remove('grabbing');
+    if (!panMoved) {
+      const h = hitTest(e);
+      if (h) {
+        selectNode(h);
+      } else {
+        STATE.selectedNode = null; updatePanel(); redraw();
+      }
+    }
+    panning = false; panMoved = false;
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    panning = false; panMoved = false;
+    hideTooltip();
+    canvas.parentElement.classList.remove('grabbing');
+  });
+
   canvas.addEventListener('wheel', e => {
     e.preventDefault();
     const f = e.deltaY < 0 ? 1.12 : 0.9;
@@ -591,12 +617,6 @@ function initCanvas() {
     STATE.scale *= f;
     redraw();
   }, { passive: false });
-
-  canvas.addEventListener('click', e => {
-    const h = hitTest(e);
-    if (h) selectNode(h);
-    else { STATE.selectedNode = null; updatePanel(); redraw(); }
-  });
 }
 
 function resizeCanvas() {
