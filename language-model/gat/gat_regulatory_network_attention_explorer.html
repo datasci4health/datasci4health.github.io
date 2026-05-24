@@ -1,0 +1,279 @@
+
+<style>
+* { box-sizing: border-box; }
+#canvas { width: 100%; display: block; cursor: default; }
+.ctrl-row { display: flex; align-items: center; gap: 12px; margin: 10px 0 4px; font-size: 13px; color: var(--color-text-secondary); flex-wrap: wrap; }
+.legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+#info-panel { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--color-text-primary); min-height: 48px; margin-top: 8px; }
+#info-panel .label { color: var(--color-text-secondary); font-size: 12px; margin-bottom: 2px; }
+#attn-bar-wrap { margin-top: 8px; }
+.attn-row { display: flex; align-items: center; gap: 8px; margin: 3px 0; font-size: 12px; }
+.attn-bar-bg { flex: 1; background: var(--color-border-tertiary); border-radius: 4px; height: 8px; overflow: hidden; }
+.attn-bar { height: 100%; border-radius: 4px; transition: width 0.3s; }
+.attn-name { min-width: 72px; color: var(--color-text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.attn-val { min-width: 34px; text-align: right; color: var(--color-text-primary); }
+button.layer-btn { font-size: 12px; padding: 3px 10px; border-radius: 6px; border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); cursor: pointer; }
+button.layer-btn.active { background: var(--color-background-info); color: var(--color-text-info); border-color: var(--color-border-info); }
+</style>
+
+<h2 class="sr-only">Interactive GAT attention explorer for a regulatory network of proteins and miRNAs. Click any node to see its attention weights toward neighbors.</h2>
+
+<canvas id="canvas" height="370"></canvas>
+
+<div class="ctrl-row">
+  <span>GAT layer:</span>
+  <button class="layer-btn active" onclick="setLayer(0,this)">Layer 1</button>
+  <button class="layer-btn" onclick="setLayer(1,this)">Layer 2</button>
+  <span style="margin-left:8px"><span class="legend-dot" style="background:#1D9E75"></span>mRNA/protein</span>
+  <span><span class="legend-dot" style="background:#D85A30"></span>miRNA</span>
+  <span><span class="legend-dot" style="background:#7F77DD"></span>selected</span>
+  <span style="margin-left:auto; font-size:12px; color:var(--color-text-tertiary)">Click any node</span>
+</div>
+
+<div id="info-panel">
+  <div class="label">Select a node to inspect attention weights</div>
+</div>
+
+<script>
+const W = 680, H = 370;
+const canvas = document.getElementById('canvas');
+canvas.width = W; canvas.height = H;
+const ctx = canvas.getContext('2d');
+
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+const C = {
+  bg:      dark ? '#1a1a18' : '#ffffff',
+  edge:    dark ? '#3a3a36' : '#d3d1c7',
+  mrna:    '#1D9E75',
+  mir:     '#D85A30',
+  sel:     '#7F77DD',
+  attnHi:  '#EF9F27',
+  attnLo:  dark ? '#3a3a36' : '#e0dfd6',
+  label:   dark ? '#c2c0b6' : '#3d3d3a',
+  labSel:  dark ? '#ffffff' : '#000000',
+  nodeBrd: dark ? '#2c2c2a' : '#ffffff',
+};
+
+const nodes = [
+  { id:0, label:'TP53',   type:'mrna', x:340, y:80  },
+  { id:1, label:'BRCA1',  type:'mrna', x:160, y:150 },
+  { id:2, label:'MYC',    type:'mrna', x:520, y:155 },
+  { id:3, label:'PTEN',   type:'mrna', x:200, y:295 },
+  { id:4, label:'MDM2',   type:'mrna', x:480, y:295 },
+  { id:5, label:'miR-21', type:'mir',  x:80,  y:230 },
+  { id:6, label:'miR-34a',type:'mir',  x:340, y:200 },
+  { id:7, label:'miR-155',type:'mir',  x:600, y:230 },
+  { id:8, label:'CDKN1A', type:'mrna', x:340, y:330 },
+];
+
+const edges = [
+  [0,1],[0,2],[0,6],[0,8],
+  [1,3],[1,5],[1,6],
+  [2,4],[2,7],
+  [3,5],[3,8],
+  [4,6],[4,8],
+  [5,1],[5,3],
+  [6,0],[6,4],
+  [7,2],[7,4],
+  [8,3],[8,4],
+];
+
+function buildAdj() {
+  const adj = nodes.map(() => []);
+  edges.forEach(([a,b]) => { adj[a].push(b); adj[b].push(a); });
+  return adj;
+}
+const adj = buildAdj();
+
+function seededRand(seed) {
+  let s = seed;
+  return () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff; };
+}
+
+function computeAttention(srcId, layer) {
+  const rand = seededRand(srcId * 31 + layer * 97 + 7);
+  const neighbors = adj[srcId];
+  const rawScores = neighbors.map(nb => {
+    const r = seededRand(srcId * 13 + nb * 29 + layer * 53 + 3);
+    return 0.1 + r() * 0.9;
+  });
+  const expScores = rawScores.map(s => Math.exp(s * 3));
+  const sumExp = expScores.reduce((a,b) => a+b, 0);
+  const weights = expScores.map(e => e / sumExp);
+  const result = {};
+  neighbors.forEach((nb, i) => { result[nb] = weights[i]; });
+  return result;
+}
+
+let selectedNode = null;
+let currentLayer = 0;
+let attnWeights = {};
+let hoverNode = null;
+
+function nodeColor(n) {
+  if (selectedNode !== null && n.id === selectedNode) return C.sel;
+  return n.type === 'mrna' ? C.mrna : C.mir;
+}
+
+function edgeAttention(a, b) {
+  if (selectedNode === null) return null;
+  if (a === selectedNode && attnWeights[b] !== undefined) return attnWeights[b];
+  if (b === selectedNode && attnWeights[a] !== undefined) return attnWeights[a];
+  return null;
+}
+
+function lerpColor(hex1, hex2, t) {
+  const p = s => parseInt(s,16);
+  const r1=p(hex1.slice(1,3)),g1=p(hex1.slice(3,5)),b1=p(hex1.slice(5,7));
+  const r2=p(hex2.slice(1,3)),g2=p(hex2.slice(3,5)),b2=p(hex2.slice(5,7));
+  const r=Math.round(r1+(r2-r1)*t).toString(16).padStart(2,'0');
+  const g=Math.round(g1+(g2-g1)*t).toString(16).padStart(2,'0');
+  const b=Math.round(b1+(b2-b1)*t).toString(16).padStart(2,'0');
+  return '#'+r+g+b;
+}
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+
+  edges.forEach(([a,b]) => {
+    const na = nodes[a], nb = nodes[b];
+    const attn = edgeAttention(a, b);
+    const isActive = attn !== null;
+    ctx.save();
+    ctx.globalAlpha = isActive ? 0.9 : (selectedNode === null ? 0.5 : 0.12);
+    ctx.strokeStyle = isActive ? lerpColor(C.attnLo, C.attnHi, attn) : C.edge;
+    ctx.lineWidth = isActive ? 1 + attn * 4 : 1;
+    if (!isActive) ctx.setLineDash([4,4]);
+    ctx.beginPath();
+    ctx.moveTo(na.x, na.y);
+    ctx.lineTo(nb.x, nb.y);
+    ctx.stroke();
+    ctx.restore();
+
+    if (isActive && attn > 0.05) {
+      const mx = (na.x+nb.x)/2, my = (na.y+nb.y)/2;
+      ctx.save();
+      ctx.font = '11px sans-serif';
+      ctx.fillStyle = dark ? '#EF9F27' : '#854F0B';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText((attn*100).toFixed(0)+'%', mx, my - 7);
+      ctx.restore();
+    }
+  });
+
+  nodes.forEach(n => {
+    const isSel = selectedNode === n.id;
+    const isNeighbor = selectedNode !== null && adj[selectedNode].includes(n.id);
+    const isHov = hoverNode === n.id;
+    const dimmed = selectedNode !== null && !isSel && !isNeighbor;
+    const r = isSel ? 22 : 18;
+
+    ctx.save();
+    ctx.globalAlpha = dimmed ? 0.25 : 1;
+
+    if (isSel) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, r+5, 0, Math.PI*2);
+      ctx.fillStyle = C.sel;
+      ctx.globalAlpha = 0.15;
+      ctx.fill();
+      ctx.globalAlpha = dimmed ? 0.25 : 1;
+    }
+
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI*2);
+    ctx.fillStyle = nodeColor(n);
+    ctx.fill();
+    ctx.strokeStyle = C.nodeBrd;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.font = `${isSel ? '500 ' : ''}12px sans-serif`;
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(n.label.length > 7 ? n.label.slice(0,6)+'…' : n.label, n.x, n.y);
+
+    const ly = n.y + r + 13;
+    ctx.font = '11px sans-serif';
+    ctx.fillStyle = isSel ? C.labSel : C.label;
+    ctx.fillText(n.label, n.x, ly);
+
+    ctx.restore();
+  });
+}
+
+function setLayer(idx, btn) {
+  currentLayer = idx;
+  document.querySelectorAll('.layer-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  if (selectedNode !== null) {
+    attnWeights = computeAttention(selectedNode, currentLayer);
+    updatePanel();
+  }
+  draw();
+}
+
+function updatePanel() {
+  const panel = document.getElementById('info-panel');
+  if (selectedNode === null) {
+    panel.innerHTML = '<div class="label">Select a node to inspect attention weights</div>';
+    return;
+  }
+  const n = nodes[selectedNode];
+  const neighbors = adj[selectedNode];
+  const sorted = [...neighbors].sort((a,b) => (attnWeights[b]||0) - (attnWeights[a]||0));
+  const typeLabel = n.type === 'mrna' ? 'mRNA → protein' : 'miRNA regulator';
+
+  let html = `<div class="label">${typeLabel} &nbsp;·&nbsp; Layer ${currentLayer+1} attention from <strong>${n.label}</strong></div>`;
+  html += `<div id="attn-bar-wrap">`;
+  sorted.forEach(nb => {
+    const w = attnWeights[nb] || 0;
+    const pct = (w*100).toFixed(1);
+    const barColor = lerpColor('#B4B2A9', '#EF9F27', w);
+    html += `<div class="attn-row">
+      <span class="attn-name">${nodes[nb].label}</span>
+      <div class="attn-bar-bg"><div class="attn-bar" style="width:${pct}%;background:${barColor}"></div></div>
+      <span class="attn-val">${pct}%</span>
+    </div>`;
+  });
+  html += '</div>';
+  panel.innerHTML = html;
+}
+
+function hitTest(x, y) {
+  const scale = canvas.getBoundingClientRect().width / W;
+  const cx = x / scale, cy = y / scale;
+  for (let i = nodes.length-1; i >= 0; i--) {
+    const n = nodes[i];
+    const r = selectedNode === n.id ? 22 : 18;
+    if ((cx-n.x)**2 + (cy-n.y)**2 <= (r+6)**2) return n.id;
+  }
+  return null;
+}
+
+canvas.addEventListener('click', e => {
+  const rect = canvas.getBoundingClientRect();
+  const hit = hitTest(e.clientX - rect.left, e.clientY - rect.top);
+  if (hit !== null) {
+    selectedNode = (selectedNode === hit) ? null : hit;
+    attnWeights = selectedNode !== null ? computeAttention(selectedNode, currentLayer) : {};
+  } else {
+    selectedNode = null;
+    attnWeights = {};
+  }
+  updatePanel();
+  draw();
+});
+
+canvas.addEventListener('mousemove', e => {
+  const rect = canvas.getBoundingClientRect();
+  const hit = hitTest(e.clientX - rect.left, e.clientY - rect.top);
+  if (hit !== hoverNode) { hoverNode = hit; canvas.style.cursor = hit !== null ? 'pointer' : 'default'; draw(); }
+});
+
+canvas.addEventListener('mouseleave', () => { hoverNode = null; canvas.style.cursor = 'default'; draw(); });
+
+draw();
+</script>

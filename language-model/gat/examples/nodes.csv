@@ -1,0 +1,16 @@
+id,type,logic
+TP53,gene,
+MDM2,gene,
+CDKN1A,gene,
+BRCA1,gene,
+MYC,gene,
+PTEN,gene,
+FU_TP53,functional_unit,OR
+FU_MDM2,functional_unit,AND
+FU_CDKN1A,functional_unit,OR
+FU_BRCA1,functional_unit,AND
+FU_MYC,functional_unit,OR
+FU_PTEN,functional_unit,OR
+miR-21,mir,
+miR-34a,mir,
+miR-155,mir,

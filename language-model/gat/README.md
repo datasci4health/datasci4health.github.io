@@ -1,0 +1,1 @@
+python3 gat_pipeline.py --nodes mapk/nodes-mapk-mir-lm.csv --edges mapk/edges-mapk-mir-lm.csv --gene-seq mapk/nodes-mapk-gene-sequence.csv --mir-seq mapk/modes-mapk-mir-sequence.csv --output-dir mapk-gat/

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAT Regulatory Network — Attention Explorer</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #ffffff; --bg2: #f5f4f0; --bg3: #eeedea;
+  --text: #1a1a18; --text2: #5f5e5a; --text3: #888780;
+  --border: rgba(0,0,0,0.12); --border2: rgba(0,0,0,0.22);
+  --card: #ffffff;
+  --teal: #1D9E75; --teal-l: #E1F5EE; --teal-d: #085041;
+  --coral: #D85A30; --coral-l: #FAECE7; --coral-d: #4A1B0C;
+  --purple: #7F77DD; --purple-l: #EEEDFE; --purple-d: #26215C;
+  --amber: #EF9F27; --amber-l: #FAEEDA; --amber-d: #412402;
+  --gray: #888780; --gray-l: #F1EFE8; --gray-d: #2C2C2A;
+  --blue: #378ADD; --blue-l: #E6F1FB; --blue-d: #042C53;
+  --radius: 8px; --radius-lg: 12px;
+  --attn-lo: #D3D1C7; --attn-hi: #EF9F27;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a18; --bg2: #242422; --bg3: #2c2c2a;
+    --text: #f0ede6; --text2: #b4b2a9; --text3: #888780;
+    --border: rgba(255,255,255,0.10); --border2: rgba(255,255,255,0.20);
+    --card: #242422;
+    --teal-l: #085041; --coral-l: #4A1B0C; --purple-l: #26215C;
+    --amber-l: #412402; --gray-l: #2C2C2A; --blue-l: #042C53;
+    --teal-d: #9FE1CB; --coral-d: #F5C4B3; --purple-d: #CECBF6;
+    --amber-d: #FAC775; --gray-d: #D3D1C7; --blue-d: #B5D4F4;
+    --attn-lo: #444441; --attn-hi: #EF9F27;
+  }
+}
+
+body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ── Drop Zone ── */
+#drop-zone {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 24px; padding: 40px 24px; min-height: 100vh;
+}
+#drop-zone.dragging { background: var(--bg2); }
+.drop-title { font-size: 22px; font-weight: 500; color: var(--text); }
+.drop-sub   { font-size: 14px; color: var(--text2); text-align: center; max-width: 460px; line-height: 1.6; }
+
+.file-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; width: 100%; max-width: 540px;
+}
+.file-card {
+  border: 1.5px dashed var(--border2); border-radius: var(--radius-lg);
+  padding: 16px 18px; cursor: pointer; transition: border-color .15s, background .15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.file-card:hover { border-color: var(--purple); background: var(--purple-l); }
+.file-card.loaded { border-style: solid; border-color: var(--teal); background: var(--teal-l); }
+.file-card .fc-name { font-size: 13px; font-weight: 500; color: var(--text); }
+.file-card .fc-desc { font-size: 12px; color: var(--text2); }
+.file-card .fc-status { font-size: 11px; color: var(--teal); margin-top: 4px; }
+.file-card.loaded .fc-status { color: var(--teal); }
+.file-card input[type=file] { display: none; }
+
+.load-btn {
+  margin-top: 8px; padding: 10px 28px; border-radius: var(--radius);
+  border: 1px solid var(--border2); background: var(--bg); color: var(--text);
+  font-size: 14px; cursor: pointer; transition: background .15s;
+}
+.load-btn:hover { background: var(--bg2); }
+.load-btn.ready { background: var(--purple); color: #fff; border-color: var(--purple); }
+
+/* ── Main App ── */
+#app { display: none; flex-direction: column; height: 100vh; overflow: hidden; }
+
+/* toolbar */
+#toolbar {
+  display: flex; align-items: center; gap: 10px; padding: 10px 16px;
+  border-bottom: 0.5px solid var(--border); background: var(--bg); flex-shrink: 0; flex-wrap: wrap;
+}
+.tb-title { font-size: 15px; font-weight: 500; color: var(--text); margin-right: 8px; }
+.tb-sep   { width: 1px; height: 20px; background: var(--border); }
+
+.seg-ctrl { display: flex; border: 0.5px solid var(--border2); border-radius: var(--radius); overflow: hidden; }
+.seg-btn  {
+  padding: 5px 12px; font-size: 12px; cursor: pointer; border: none;
+  background: var(--bg); color: var(--text2); transition: background .12s, color .12s;
+}
+.seg-btn.active { background: var(--bg3); color: var(--text); font-weight: 500; }
+
+.tb-label { font-size: 12px; color: var(--text2); }
+select.tb-sel {
+  font-size: 12px; padding: 4px 8px; border-radius: var(--radius);
+  border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer;
+}
+.tb-spacer { flex: 1; }
+.tb-badge {
+  font-size: 11px; padding: 3px 9px; border-radius: 20px;
+  background: var(--bg2); color: var(--text2); border: 0.5px solid var(--border);
+}
+
+/* main canvas area */
+#main { flex: 1; display: flex; overflow: hidden; }
+#canvas-wrap { flex: 1; position: relative; overflow: hidden; background: var(--bg); cursor: grab; }
+#canvas-wrap.grabbing { cursor: grabbing; }
+canvas#gc { position: absolute; top: 0; left: 0; }
+
+/* side panel */
+#side {
+  width: 280px; flex-shrink: 0; border-left: 0.5px solid var(--border);
+  background: var(--bg); display: flex; flex-direction: column; overflow: hidden;
+}
+#side-header { padding: 12px 14px; border-bottom: 0.5px solid var(--border); }
+#side-header .sh-title { font-size: 13px; font-weight: 500; color: var(--text); }
+#side-header .sh-sub   { font-size: 12px; color: var(--text2); margin-top: 2px; }
+#side-body { flex: 1; overflow-y: auto; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+
+.attn-section-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; }
+
+.attn-row {
+  display: flex; align-items: center; gap: 8px; padding: 6px 8px;
+  border-radius: var(--radius); cursor: pointer; transition: background .1s;
+}
+.attn-row:hover { background: var(--bg2); }
+.attn-row.highlighted { background: var(--amber-l); }
+.attn-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.attn-node-name { font-size: 12px; color: var(--text); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.attn-bar-wrap  { width: 72px; flex-shrink: 0; background: var(--bg3); border-radius: 4px; height: 6px; overflow: hidden; }
+.attn-bar-fill  { height: 100%; border-radius: 4px; transition: width .25s; }
+.attn-pct       { font-size: 11px; color: var(--text2); min-width: 32px; text-align: right; }
+
+.head-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 4px; }
+.head-cell {
+  background: var(--bg2); border-radius: 4px; padding: 4px 2px;
+  text-align: center; font-size: 10px; color: var(--text2);
+}
+.head-cell span { display: block; font-size: 12px; font-weight: 500; color: var(--text); }
+
+.node-info-card {
+  background: var(--bg2); border-radius: var(--radius); padding: 10px 12px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.ni-row { display: flex; justify-content: space-between; font-size: 12px; }
+.ni-label { color: var(--text2); }
+.ni-val   { color: var(--text); font-weight: 500; }
+.type-pill {
+  font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500;
+}
+
+/* legend */
+#legend {
+  position: absolute; bottom: 12px; left: 12px;
+  background: var(--card); border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg); padding: 10px 14px;
+  display: flex; flex-direction: column; gap: 6px; pointer-events: none;
+}
+.leg-row { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text2); }
+.leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.leg-line { width: 24px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+/* zoom controls */
+#zoom-ctrl {
+  position: absolute; bottom: 12px; right: 12px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.zoom-btn {
+  width: 30px; height: 30px; border-radius: var(--radius);
+  border: 0.5px solid var(--border2); background: var(--card); color: var(--text);
+  font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .1s;
+}
+.zoom-btn:hover { background: var(--bg2); }
+
+/* tooltip */
+#tooltip {
+  position: absolute; pointer-events: none; display: none;
+  background: var(--card); border: 0.5px solid var(--border2);
+  border-radius: var(--radius); padding: 7px 11px;
+  font-size: 12px; color: var(--text); white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.empty-state { padding: 24px 0; text-align: center; color: var(--text3); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ DROP / LOAD SCREEN ══════════════ -->
+<div id="drop-zone">
+  <div class="drop-title">GAT Regulatory Network — Attention Explorer</div>
+  <p class="drop-sub">Load the four CSV files produced by <code>gat_pipeline.py</code>. Click a card to browse, or drag and drop files anywhere on this page.</p>
+
+  <div class="file-grid">
+    <label class="file-card" id="fc-nodes">
+      <input type="file" accept=".csv" data-key="nodes">
+      <div class="fc-name">node_metadata.csv</div>
+      <div class="fc-desc">Node ids, types, logic</div>
+      <div class="fc-status">not loaded</div>
+    </label>
+    <label class="file-card" id="fc-edges">
+      <input type="file" accept=".csv" data-key="edges">
+      <div class="fc-name">edge_metadata.csv</div>
+      <div class="fc-desc">Edge connections &amp; final-layer attention</div>
+      <div class="fc-status">not loaded</div>
+    </label>
+    <label class="file-card" id="fc-attn">
+      <input type="file" accept=".csv" data-key="attn">
+      <div class="fc-name">attention_weights.csv</div>
+      <div class="fc-desc">Per-layer per-head α weights</div>
+      <div class="fc-status">not loaded</div>
+    </label>
+    <label class="file-card" id="fc-emb">
+      <input type="file" accept=".csv" data-key="emb">
+      <div class="fc-name">node_embeddings.csv</div>
+      <div class="fc-desc">Layer embeddings (optional)</div>
+      <div class="fc-status">not loaded</div>
+    </label>
+  </div>
+
+  <button class="load-btn" id="launch-btn" disabled>Load visualizer</button>
+</div>
+
+<!-- ══════════════ MAIN APP ══════════════ -->
+<div id="app">
+  <div id="toolbar">
+    <span class="tb-title">GAT Attention Explorer</span>
+    <div class="tb-sep"></div>
+
+    <span class="tb-label">Layer</span>
+    <div class="seg-ctrl" id="layer-ctrl"></div>
+
+    <div class="tb-sep"></div>
+    <span class="tb-label">Edge type</span>
+    <select class="tb-sel" id="subtype-filter">
+      <option value="all">All</option>
+    </select>
+
+    <div class="tb-sep"></div>
+    <span class="tb-label">Attention head</span>
+    <select class="tb-sel" id="head-sel">
+      <option value="mean">Mean</option>
+    </select>
+
+    <div class="tb-spacer"></div>
+    <span class="tb-badge" id="stat-nodes">— nodes</span>
+    <span class="tb-badge" id="stat-edges">— edges</span>
+    <button class="load-btn" style="margin:0;padding:6px 14px;font-size:12px" onclick="resetToDropzone()">↩ reload files</button>
+  </div>
+
+  <div id="main">
+    <div id="canvas-wrap">
+      <canvas id="gc"></canvas>
+      <div id="legend">
+        <div class="leg-row"><div class="leg-dot" style="background:var(--teal)"></div>gene / mRNA</div>
+        <div class="leg-row"><div class="leg-dot" style="background:var(--coral)"></div>miRNA</div>
+        <div class="leg-row"><div class="leg-dot" style="background:var(--purple)"></div>functional unit</div>
+        <div class="leg-row"><div class="leg-dot" style="background:var(--gray)"></div>selected</div>
+        <div style="border-top: 0.5px solid var(--border); margin: 4px 0;"></div>
+        <div class="leg-row"><div class="leg-line" style="background:var(--attn-hi)"></div>high attention</div>
+        <div class="leg-row"><div class="leg-line" style="background:var(--attn-lo)"></div>low attention</div>
+      </div>
+      <div id="zoom-ctrl">
+        <button class="zoom-btn" onclick="zoom(1.25)">+</button>
+        <button class="zoom-btn" onclick="zoom(0.8)">−</button>
+        <button class="zoom-btn" title="fit" onclick="fitView()" style="font-size:13px">⊡</button>
+      </div>
+      <div id="tooltip"></div>
+    </div>
+
+    <div id="side">
+      <div id="side-header">
+        <div class="sh-title" id="sh-title">Click a node</div>
+        <div class="sh-sub"  id="sh-sub">to inspect its attention weights</div>
+      </div>
+      <div id="side-body">
+        <div class="empty-state" id="empty-state">Select a node to see its attention gradient across the network.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// CSV parser (RFC 4180 subset)
+// ═══════════════════════════════════════════════════════
+function parseCSV(text) {
+  const lines = text.trim().split('\n').map(l => l.replace(/\r$/, ''));
+  const headers = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const vals = line.split(',');
+    const obj = {};
+    headers.forEach((h, i) => { obj[h] = (vals[i] || '').trim(); });
+    return obj;
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+// File loading state
+// ═══════════════════════════════════════════════════════
+const files = { nodes: null, edges: null, attn: null, emb: null };
+const required = ['nodes', 'edges', 'attn'];
+
+function onFileLoaded(key, text, filename) {
+  files[key] = { text, filename };
+  const card = document.querySelector(`[data-key="${key}"]`).closest('.file-card');
+  card.classList.add('loaded');
+  card.querySelector('.fc-status').textContent = '✓ ' + filename;
+  const allReady = required.every(k => files[k]);
+  const btn = document.getElementById('launch-btn');
+  btn.disabled = !allReady;
+  if (allReady) btn.classList.add('ready');
+}
+
+document.querySelectorAll('.file-card input[type=file]').forEach(inp => {
+  inp.addEventListener('change', e => {
+    const f = e.target.files[0]; if (!f) return;
+    const key = e.target.dataset.key;
+    const reader = new FileReader();
+    reader.onload = ev => onFileLoaded(key, ev.target.result, f.name);
+    reader.readAsText(f);
+  });
+});
+
+// Drag & drop on entire page
+const dz = document.getElementById('drop-zone');
+['dragenter','dragover'].forEach(ev => document.addEventListener(ev, e => { e.preventDefault(); dz.classList.add('dragging'); }));
+['dragleave','drop'].forEach(ev => document.addEventListener(ev, e => { e.preventDefault(); dz.classList.remove('dragging'); }));
+document.addEventListener('drop', e => {
+  Array.from(e.dataTransfer.files).forEach(f => {
+    const name = f.name.toLowerCase();
+    let key = null;
+    if (name.includes('node_metadata') || name === 'node_metadata.csv') key = 'nodes';
+    else if (name.includes('edge_metadata') || name === 'edge_metadata.csv') key = 'edges';
+    else if (name.includes('attention_weights') || name === 'attention_weights.csv') key = 'attn';
+    else if (name.includes('node_embeddings') || name === 'node_embeddings.csv') key = 'emb';
+    if (!key) return;
+    const reader = new FileReader();
+    reader.onload = ev => onFileLoaded(key, ev.target.result, f.name);
+    reader.readAsText(f);
+  });
+});
+
+document.getElementById('launch-btn').addEventListener('click', () => {
+  if (!required.every(k => files[k])) return;
+  buildApp();
+});
+
+function resetToDropzone() {
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('drop-zone').style.display = '';
+}
+
+// ═══════════════════════════════════════════════════════
+// Color helpers
+// ═══════════════════════════════════════════════════════
+const COLORS = {
+  gene: '#1D9E75', mir: '#D85A30', functional_unit: '#7F77DD',
+  selected: '#888780',
+  edgeDefault: '#D3D1C7',
+  attnLo: '#D3D1C7', attnHi: '#EF9F27'
+};
+
+function isDark() { return window.matchMedia('(prefers-color-scheme: dark)').matches; }
+function nodeColor(type, selected) {
+  if (selected) return COLORS.selected;
+  return COLORS[type] || '#888780';
+}
+
+function lerpHex(h1, h2, t) {
+  const p = s => parseInt(s, 16);
+  const r1=p(h1.slice(1,3)),g1=p(h1.slice(3,5)),b1=p(h1.slice(5,7));
+  const r2=p(h2.slice(1,3)),g2=p(h2.slice(3,5)),b2=p(h2.slice(5,7));
+  const r=Math.round(r1+(r2-r1)*t), g=Math.round(g1+(g2-g1)*t), b=Math.round(b1+(b2-b1)*t);
+  return `rgb(${r},${g},${b})`;
+}
+
+function attnColor(val, dark) {
+  const lo = dark ? '#444441' : '#D3D1C7';
+  return lerpHex(lo, '#EF9F27', Math.min(1, Math.max(0, val)));
+}
+
+// ═══════════════════════════════════════════════════════
+// Force-directed layout (Fruchterman–Reingold lite)
+// ═══════════════════════════════════════════════════════
+function forceLayout(nodes, edges, W, H, iters=200) {
+  const n = nodes.length;
+  const area = W * H;
+  const k = Math.sqrt(area / n) * 0.85;
+  const cool = t => t * 0.97;
+
+  // seed positions on a circle with jitter
+  nodes.forEach((nd, i) => {
+    const a = (2*Math.PI*i)/n;
+    nd.x = W/2 + (W*0.35)*Math.cos(a) + (Math.random()-0.5)*30;
+    nd.y = H/2 + (H*0.35)*Math.sin(a) + (Math.random()-0.5)*30;
+    nd.vx = 0; nd.vy = 0;
+  });
+
+  const idxMap = {};
+  nodes.forEach((nd,i) => { idxMap[nd.id] = i; });
+
+  let temp = W * 0.12;
+  for (let it = 0; it < iters; it++) {
+    nodes.forEach(nd => { nd.fx = 0; nd.fy = 0; });
+
+    // repulsion
+    for (let i = 0; i < n; i++) for (let j = i+1; j < n; j++) {
+      const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
+      const d = Math.max(Math.sqrt(dx*dx+dy*dy), 0.01);
+      const f = (k*k)/d;
+      nodes[i].fx += (dx/d)*f; nodes[i].fy += (dy/d)*f;
+      nodes[j].fx -= (dx/d)*f; nodes[j].fy -= (dy/d)*f;
+    }
+
+    // attraction
+    edges.forEach(e => {
+      const si = idxMap[e.source], ti = idxMap[e.target];
+      if (si === undefined || ti === undefined) return;
+      const dx = nodes[si].x - nodes[ti].x, dy = nodes[si].y - nodes[ti].y;
+      const d = Math.max(Math.sqrt(dx*dx+dy*dy), 0.01);
+      const f = (d*d)/k;
+      nodes[si].fx -= (dx/d)*f; nodes[si].fy -= (dy/d)*f;
+      nodes[ti].fx += (dx/d)*f; nodes[ti].fy += (dy/d)*f;
+    });
+
+    nodes.forEach(nd => {
+      const d = Math.sqrt(nd.fx*nd.fx+nd.fy*nd.fy);
+      if (d > 0) {
+        nd.x += (nd.fx/d)*Math.min(d, temp);
+        nd.y += (nd.fy/d)*Math.min(d, temp);
+      }
+      nd.x = Math.max(40, Math.min(W-40, nd.x));
+      nd.y = Math.max(40, Math.min(H-40, nd.y));
+    });
+    temp = cool(temp);
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// App state
+// ═══════════════════════════════════════════════════════
+let STATE = {
+  nodes: [],        // {id, type, logic, x, y, r}
+  edges: [],        // {source, target, subtype, final_layer_mean_attn, final_layer_max_attn}
+  attnRaw: [],      // raw parsed attention_weights rows
+  numLayers: 1,
+  numHeads: 1,
+  subtypes: [],
+
+  selectedNode: null,
+  layer: 1,
+  headKey: 'mean',
+  subtypeFilter: 'all',
+
+  // viewport
+  tx: 0, ty: 0, scale: 1,
+};
+
+function getAttnKey() {
+  return STATE.headKey === 'mean' ? 'mean_attention' : `head_${STATE.headKey}_attention`;
+}
+
+function filteredEdges() {
+  const sf = STATE.subtypeFilter;
+  return sf === 'all' ? STATE.edges : STATE.edges.filter(e => e.subtype === sf);
+}
+
+function getLayerEdgeAttn(layer) {
+  const key = getAttnKey();
+  const map = {};
+  STATE.attnRaw.filter(r => +r.layer === layer).forEach(r => {
+    map[`${r.source}→${r.target}`] = +r[key] || 0;
+  });
+  return map;
+}
+
+// ═══════════════════════════════════════════════════════
+// Build / init app
+// ═══════════════════════════════════════════════════════
+function buildApp() {
+  document.getElementById('drop-zone').style.display = 'none';
+  const app = document.getElementById('app');
+  app.style.display = 'flex';
+
+  const nodesRaw = parseCSV(files.nodes.text);
+  const edgesRaw = parseCSV(files.edges.text);
+  const attnRaw  = parseCSV(files.attn.text);
+
+  STATE.attnRaw = attnRaw;
+  STATE.numLayers = Math.max(...attnRaw.map(r => +r.layer));
+
+  // detect heads
+  const headKeys = Object.keys(attnRaw[0]).filter(k => k.startsWith('head_') && k.endsWith('_attention'));
+  STATE.numHeads = headKeys.length;
+
+  // populate nodes
+  STATE.nodes = nodesRaw.map(n => ({
+    id: n.id, type: n.type, logic: n.logic || '',
+    l2: +n.embedding_l2_norm || 0,
+    x: 0, y: 0, r: n.type === 'functional_unit' ? 22 : 18
+  }));
+
+  // populate edges (use edge_metadata for final-layer, attn for per-layer)
+  STATE.edges = edgesRaw.map(e => ({
+    source: e.source, target: e.target,
+    type: e.type, subtype: e.subtype,
+    final_layer_mean_attn: +e.final_layer_mean_attn || 0,
+    final_layer_max_attn:  +e.final_layer_max_attn  || 0,
+  }));
+
+  STATE.subtypes = [...new Set(STATE.edges.map(e => e.subtype))];
+  STATE.layer = 1;
+  STATE.headKey = 'mean';
+  STATE.selectedNode = null;
+
+  // build layer buttons
+  const lc = document.getElementById('layer-ctrl');
+  lc.innerHTML = '';
+  for (let l = 1; l <= STATE.numLayers; l++) {
+    const b = document.createElement('button');
+    b.className = 'seg-btn' + (l===1?' active':'');
+    b.textContent = 'Layer ' + l;
+    b.onclick = () => { STATE.layer = l; document.querySelectorAll('.seg-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); redraw(); updatePanel(); };
+    lc.appendChild(b);
+  }
+
+  // subtype filter
+  const sf = document.getElementById('subtype-filter');
+  sf.innerHTML = '<option value="all">All</option>';
+  STATE.subtypes.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; sf.appendChild(o); });
+  sf.onchange = () => { STATE.subtypeFilter = sf.value; redraw(); };
+
+  // head selector
+  const hs = document.getElementById('head-sel');
+  hs.innerHTML = '<option value="mean">Mean</option>';
+  for (let h = 1; h <= STATE.numHeads; h++) {
+    const o = document.createElement('option'); o.value = h; o.textContent = 'Head ' + h; hs.appendChild(o);
+  }
+  hs.onchange = () => { STATE.headKey = hs.value; redraw(); updatePanel(); };
+
+  // stats
+  document.getElementById('stat-nodes').textContent = STATE.nodes.length + ' nodes';
+  document.getElementById('stat-edges').textContent = STATE.edges.length + ' edges';
+
+  // layout
+  const cw = document.getElementById('canvas-wrap');
+  const W = cw.clientWidth || 800, H = cw.clientHeight || 500;
+  forceLayout(STATE.nodes, STATE.edges, W, H, 250);
+
+  initCanvas();
+  fitView();
+  redraw();
+}
+
+// ═══════════════════════════════════════════════════════
+// Canvas interaction
+// ═══════════════════════════════════════════════════════
+let canvas, ctx2d;
+
+function initCanvas() {
+  canvas = document.getElementById('gc');
+  ctx2d  = canvas.getContext('2d');
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  let drag = false, lastX, lastY;
+  canvas.addEventListener('mousedown', e => {
+    const h = hitTest(e); if (h) { selectNode(h); return; }
+    drag = true; lastX = e.clientX; lastY = e.clientY;
+    canvas.parentElement.classList.add('grabbing');
+  });
+  canvas.addEventListener('mousemove', e => {
+    if (drag) {
+      STATE.tx += e.clientX - lastX; STATE.ty += e.clientY - lastY;
+      lastX = e.clientX; lastY = e.clientY; redraw(); return;
+    }
+    const h = hitTest(e);
+    canvas.style.cursor = h ? 'pointer' : 'grab';
+    showTooltip(e, h);
+  });
+  canvas.addEventListener('mouseup', () => { drag = false; canvas.parentElement.classList.remove('grabbing'); });
+  canvas.addEventListener('mouseleave', () => { drag = false; hideTooltip(); canvas.parentElement.classList.remove('grabbing'); });
+  canvas.addEventListener('wheel', e => {
+    e.preventDefault();
+    const f = e.deltaY < 0 ? 1.12 : 0.9;
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    STATE.tx = mx + (STATE.tx - mx)*f;
+    STATE.ty = my + (STATE.ty - my)*f;
+    STATE.scale *= f;
+    redraw();
+  }, { passive: false });
+
+  canvas.addEventListener('click', e => {
+    const h = hitTest(e);
+    if (h) selectNode(h);
+    else { STATE.selectedNode = null; updatePanel(); redraw(); }
+  });
+}
+
+function resizeCanvas() {
+  const wrap = document.getElementById('canvas-wrap');
+  canvas.width  = wrap.clientWidth;
+  canvas.height = wrap.clientHeight;
+  redraw();
+}
+
+function zoom(f) {
+  const cx = canvas.width/2, cy = canvas.height/2;
+  STATE.tx = cx + (STATE.tx - cx)*f;
+  STATE.ty = cy + (STATE.ty - cy)*f;
+  STATE.scale *= f;
+  redraw();
+}
+
+function fitView() {
+  if (!STATE.nodes.length) return;
+  const pad = 60;
+  const xs = STATE.nodes.map(n=>n.x), ys = STATE.nodes.map(n=>n.y);
+  const minX=Math.min(...xs), maxX=Math.max(...xs), minY=Math.min(...ys), maxY=Math.max(...ys);
+  const W=canvas.width, H=canvas.height;
+  const scaleX = (W-pad*2)/(maxX-minX||1), scaleY = (H-pad*2)/(maxY-minY||1);
+  STATE.scale = Math.min(scaleX, scaleY, 1.8);
+  STATE.tx = W/2 - (minX+maxX)/2*STATE.scale;
+  STATE.ty = H/2 - (minY+maxY)/2*STATE.scale;
+  redraw();
+}
+
+function worldToScreen(x, y) { return [x*STATE.scale+STATE.tx, y*STATE.scale+STATE.ty]; }
+function screenToWorld(x, y) { return [(x-STATE.tx)/STATE.scale, (y-STATE.ty)/STATE.scale]; }
+
+function hitTest(e) {
+  const rect = canvas.getBoundingClientRect();
+  const [wx, wy] = screenToWorld(e.clientX-rect.left, e.clientY-rect.top);
+  for (let i = STATE.nodes.length-1; i >= 0; i--) {
+    const n = STATE.nodes[i];
+    if ((wx-n.x)**2+(wy-n.y)**2 <= (n.r+4)**2) return n;
+  }
+  return null;
+}
+
+// ═══════════════════════════════════════════════════════
+// Draw
+// ═══════════════════════════════════════════════════════
+function redraw() {
+  if (!ctx2d) return;
+  const dark = isDark();
+  ctx2d.clearRect(0, 0, canvas.width, canvas.height);
+  ctx2d.save();
+  ctx2d.translate(STATE.tx, STATE.ty);
+  ctx2d.scale(STATE.scale, STATE.scale);
+
+  const sel = STATE.selectedNode;
+  const attnMap = getLayerEdgeAttn(STATE.layer);
+  const edges = filteredEdges();
+  const nodeMap = {};
+  STATE.nodes.forEach(n => nodeMap[n.id] = n);
+
+  const selNeighbors = new Set();
+  if (sel) edges.forEach(e => { if (e.source===sel.id||e.target===sel.id) { selNeighbors.add(e.source); selNeighbors.add(e.target); } });
+
+  // draw edges
+  edges.forEach(e => {
+    const ns = nodeMap[e.source], nt = nodeMap[e.target];
+    if (!ns || !nt) return;
+    const key = `${e.source}→${e.target}`;
+    const attn = attnMap[key] ?? 0;
+    const isActive = sel ? (e.source===sel.id || e.target===sel.id) : true;
+
+    ctx2d.save();
+    ctx2d.globalAlpha = isActive ? 0.9 : (sel ? 0.06 : 0.45);
+    ctx2d.strokeStyle = isActive ? attnColor(attn, dark) : (dark?'#3a3a36':'#d3d1c7');
+    ctx2d.lineWidth   = isActive ? 1 + attn * 5 : 1;
+    if (!isActive) ctx2d.setLineDash([4,5]);
+
+    // draw arrow line
+    const angle = Math.atan2(nt.y-ns.y, nt.x-ns.x);
+    const ex = nt.x - Math.cos(angle)*nt.r;
+    const ey = nt.y - Math.sin(angle)*nt.r;
+    ctx2d.beginPath(); ctx2d.moveTo(ns.x, ns.y); ctx2d.lineTo(ex, ey); ctx2d.stroke();
+
+    // arrowhead
+    if (isActive) {
+      ctx2d.fillStyle = ctx2d.strokeStyle;
+      ctx2d.beginPath();
+      ctx2d.moveTo(ex, ey);
+      ctx2d.lineTo(ex - 8*Math.cos(angle-0.35), ey - 8*Math.sin(angle-0.35));
+      ctx2d.lineTo(ex - 8*Math.cos(angle+0.35), ey - 8*Math.sin(angle+0.35));
+      ctx2d.closePath(); ctx2d.fill();
+    }
+
+    // attention label
+    if (isActive && sel && attn > 0.04) {
+      const mx=(ns.x+ex)/2, my=(ns.y+ey)/2;
+      ctx2d.setLineDash([]);
+      ctx2d.font = '10px system-ui';
+      ctx2d.fillStyle = dark ? '#EF9F27' : '#854F0B';
+      ctx2d.textAlign = 'center'; ctx2d.textBaseline = 'middle';
+      ctx2d.fillText((attn*100).toFixed(1)+'%', mx, my - 8);
+    }
+    ctx2d.restore();
+  });
+
+  // draw nodes
+  STATE.nodes.forEach(n => {
+    const isSel = sel && n.id === sel.id;
+    const isNeighbor = selNeighbors.has(n.id);
+    const dimmed = sel && !isSel && !isNeighbor;
+    const r = isSel ? n.r + 4 : n.r;
+
+    ctx2d.save();
+    ctx2d.globalAlpha = dimmed ? 0.2 : 1;
+
+    if (isSel) {
+      ctx2d.beginPath(); ctx2d.arc(n.x, n.y, r+6, 0, Math.PI*2);
+      ctx2d.fillStyle = 'rgba(127,119,221,0.15)'; ctx2d.fill();
+    }
+
+    // node shape: functional_unit = rounded square, else circle
+    ctx2d.fillStyle = nodeColor(n.type, false);
+    ctx2d.strokeStyle = dark ? '#1a1a18' : '#ffffff';
+    ctx2d.lineWidth = 2;
+    if (n.type === 'functional_unit') {
+      const s = r * 1.55;
+      roundRect(ctx2d, n.x-s/2, n.y-s/2, s, s, 5);
+    } else {
+      ctx2d.beginPath(); ctx2d.arc(n.x, n.y, r, 0, Math.PI*2);
+      ctx2d.fill(); ctx2d.stroke();
+    }
+
+    // label inside
+    ctx2d.font = `${isSel?'500 ':''}11px system-ui`;
+    ctx2d.fillStyle = '#ffffff';
+    ctx2d.textAlign = 'center'; ctx2d.textBaseline = 'middle';
+    const short = n.id.length > 8 ? n.id.slice(0,7)+'…' : n.id;
+    ctx2d.fillText(short, n.x, n.y);
+
+    // label below
+    ctx2d.font = '11px system-ui';
+    ctx2d.fillStyle = isSel ? (dark?'#fff':'#1a1a18') : (dark?'#b4b2a9':'#5f5e5a');
+    ctx2d.fillText(n.id, n.x, n.y + r + 12);
+
+    ctx2d.restore();
+  });
+
+  ctx2d.restore();
+}
+
+function roundRect(c, x, y, w, h, r) {
+  c.beginPath();
+  c.moveTo(x+r, y); c.lineTo(x+w-r, y); c.arcTo(x+w,y,x+w,y+r,r);
+  c.lineTo(x+w, y+h-r); c.arcTo(x+w,y+h,x+w-r,y+h,r);
+  c.lineTo(x+r, y+h); c.arcTo(x,y+h,x,y+h-r,r);
+  c.lineTo(x, y+r); c.arcTo(x,y,x+r,y,r);
+  c.closePath(); c.fill(); c.stroke();
+}
+
+// ═══════════════════════════════════════════════════════
+// Tooltip
+// ═══════════════════════════════════════════════════════
+function showTooltip(e, node) {
+  const tt = document.getElementById('tooltip');
+  if (!node) { tt.style.display = 'none'; return; }
+  const attnMap = getLayerEdgeAttn(STATE.layer);
+  const incoming = STATE.edges.filter(ed => ed.target === node.id);
+  const outgoing  = STATE.edges.filter(ed => ed.source === node.id);
+  const avgIn  = incoming.length ? (incoming.reduce((s,ed) => s+(attnMap[`${ed.source}→${ed.target}`]||0),0)/incoming.length) : 0;
+
+  tt.innerHTML = `<strong>${node.id}</strong> &nbsp;<span style="color:var(--text2);font-size:11px">${node.type}</span><br>
+    <span style="color:var(--text3);font-size:11px">In: ${incoming.length} &nbsp;Out: ${outgoing.length} &nbsp;Avg incoming α: ${(avgIn*100).toFixed(1)}%</span>`;
+  tt.style.display = 'block';
+  tt.style.left = (e.clientX - canvas.getBoundingClientRect().left + 14) + 'px';
+  tt.style.top  = (e.clientY - canvas.getBoundingClientRect().top  - 10) + 'px';
+}
+function hideTooltip() { document.getElementById('tooltip').style.display = 'none'; }
+
+// ═══════════════════════════════════════════════════════
+// Node selection + side panel
+// ═══════════════════════════════════════════════════════
+function selectNode(n) {
+  STATE.selectedNode = (STATE.selectedNode && STATE.selectedNode.id === n.id) ? null : n;
+  updatePanel();
+  redraw();
+}
+
+function updatePanel() {
+  const sel = STATE.selectedNode;
+  const title = document.getElementById('sh-title');
+  const sub   = document.getElementById('sh-sub');
+  const body  = document.getElementById('side-body');
+  const empty = document.getElementById('empty-state');
+
+  if (!sel) {
+    title.textContent = 'Click a node';
+    sub.textContent   = 'to inspect attention weights';
+    body.innerHTML    = '';
+    body.appendChild(empty);
+    empty.style.display = '';
+    return;
+  }
+
+  empty.style.display = 'none';
+  title.textContent = sel.id;
+
+  const typeColors = { gene: 'var(--teal)', mir: 'var(--coral)', functional_unit: 'var(--purple)' };
+  const typeBg     = { gene: 'var(--teal-l)', mir: 'var(--coral-l)', functional_unit: 'var(--purple-l)' };
+  sub.innerHTML = `<span class="type-pill" style="background:${typeBg[sel.type]||'var(--gray-l)'};color:${typeColors[sel.type]||'var(--gray)'}">${sel.type}</span>` +
+    (sel.logic ? ` &nbsp;<span style="font-size:11px;color:var(--text3)">${sel.logic}</span>` : '');
+
+  const attnMap = getLayerEdgeAttn(STATE.layer);
+  const key = getAttnKey();
+
+  const outEdges = filteredEdges().filter(e => e.source === sel.id);
+  const inEdges  = filteredEdges().filter(e => e.target === sel.id);
+
+  // gather per-head values for selected node edges
+  const attnRows = STATE.attnRaw.filter(r => +r.layer === STATE.layer && r.source === sel.id);
+  const headCols = Object.keys(STATE.attnRaw[0]).filter(k => k.startsWith('head_') && k.endsWith('_attention'));
+
+  let html = '';
+
+  // node info
+  html += `<div class="node-info-card">
+    <div class="ni-row"><span class="ni-label">Node index</span><span class="ni-val">${STATE.nodes.indexOf(sel)}</span></div>
+    <div class="ni-row"><span class="ni-label">Embedding L2</span><span class="ni-val">${sel.l2.toFixed(4)}</span></div>
+    <div class="ni-row"><span class="ni-label">Out-degree</span><span class="ni-val">${outEdges.length}</span></div>
+    <div class="ni-row"><span class="ni-label">In-degree</span><span class="ni-val">${inEdges.length}</span></div>
+  </div>`;
+
+  // outgoing attention
+  if (outEdges.length) {
+    const sorted = [...outEdges].sort((a,b) => (attnMap[`${b.source}→${b.target}`]||0) - (attnMap[`${a.source}→${a.target}`]||0));
+    const maxA = Math.max(...sorted.map(e => attnMap[`${e.source}→${e.target}`]||0), 0.001);
+
+    html += `<div class="attn-section-label">Outgoing attention (layer ${STATE.layer})</div>`;
+    sorted.forEach(e => {
+      const a = attnMap[`${e.source}→${e.target}`] || 0;
+      const tgt = STATE.nodes.find(n => n.id === e.target);
+      const col = tgt ? (typeColors[tgt.type]||'var(--gray)') : 'var(--gray)';
+      const headRow = attnRows.find(r => r.target === e.target);
+      const pct = (a * 100).toFixed(1);
+      const barPct = (a / maxA * 100).toFixed(1);
+      const barCol = lerpHex('#D3D1C7', '#EF9F27', a / maxA);
+
+      html += `<div class="attn-row" onclick="highlightEdge('${e.source}','${e.target}')">
+        <div class="attn-dot" style="background:${col}"></div>
+        <span class="attn-node-name" title="${e.target}">${e.target}</span>
+        <div class="attn-bar-wrap"><div class="attn-bar-fill" style="width:${barPct}%;background:${barCol}"></div></div>
+        <span class="attn-pct">${pct}%</span>
+      </div>`;
+
+      // per-head breakdown
+      if (headRow && headCols.length > 1) {
+        html += `<div class="head-grid">`;
+        headCols.forEach((hk, hi) => {
+          const hv = +(headRow[hk]||0);
+          html += `<div class="head-cell">H${hi+1}<span>${(hv*100).toFixed(0)}%</span></div>`;
+        });
+        html += `</div>`;
+      }
+    });
+  }
+
+  // incoming attention
+  if (inEdges.length) {
+    const inAttnRows = STATE.attnRaw.filter(r => +r.layer === STATE.layer && r.target === sel.id);
+    const sorted = [...inEdges].sort((a,b) => (attnMap[`${b.source}→${b.target}`]||0) - (attnMap[`${a.source}→${a.target}`]||0));
+    const maxA = Math.max(...sorted.map(e => attnMap[`${e.source}→${e.target}`]||0), 0.001);
+
+    html += `<div class="attn-section-label" style="margin-top:6px">Incoming attention (layer ${STATE.layer})</div>`;
+    sorted.forEach(e => {
+      const a = attnMap[`${e.source}→${e.target}`] || 0;
+      const src = STATE.nodes.find(n => n.id === e.source);
+      const col = src ? (typeColors[src.type]||'var(--gray)') : 'var(--gray)';
+      const pct = (a*100).toFixed(1);
+      const barPct = (a/maxA*100).toFixed(1);
+      const barCol = lerpHex('#D3D1C7', '#EF9F27', a/maxA);
+
+      html += `<div class="attn-row">
+        <div class="attn-dot" style="background:${col}"></div>
+        <span class="attn-node-name" title="${e.source}">${e.source}</span>
+        <div class="attn-bar-wrap"><div class="attn-bar-fill" style="width:${barPct}%;background:${barCol}"></div></div>
+        <span class="attn-pct">${pct}%</span>
+      </div>`;
+    });
+  }
+
+  body.innerHTML = html;
+}
+
+function highlightEdge(src, tgt) {
+  const tgtNode = STATE.nodes.find(n => n.id === tgt);
+  if (tgtNode) { STATE.selectedNode = tgtNode; updatePanel(); redraw(); }
+}
+
+// ═══════════════════════════════════════════════════════
+// Keyboard shortcuts
+// ═══════════════════════════════════════════════════════
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { STATE.selectedNode = null; updatePanel(); redraw(); }
+  if (e.key === '0') fitView();
+});
+</script>
+</body>
+</html>

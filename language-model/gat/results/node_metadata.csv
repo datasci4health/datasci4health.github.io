@@ -1,0 +1,16 @@
+node_index,id,type,logic,embedding_l2_norm
+0,TP53,gene,,0.0
+1,MDM2,gene,,0.0
+2,CDKN1A,gene,,0.0
+3,BRCA1,gene,,0.0
+4,MYC,gene,,0.0
+5,PTEN,gene,,0.0
+6,FU_TP53,functional_unit,OR,0.015059951692819595
+7,FU_MDM2,functional_unit,AND,0.007182554341852665
+8,FU_CDKN1A,functional_unit,OR,0.014435576274991035
+9,FU_BRCA1,functional_unit,AND,0.017021596431732178
+10,FU_MYC,functional_unit,OR,0.009498046711087227
+11,FU_PTEN,functional_unit,OR,0.014949860982596874
+12,miR-21,mir,,0.0
+13,miR-34a,mir,,0.0
+14,miR-155,mir,,0.0
