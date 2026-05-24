@@ -227,6 +227,13 @@ canvas#gc { position: absolute; top: 0; left: 0; }
     <span class="tb-title">GAT Attention Explorer</span>
     <div class="tb-sep"></div>
 
+    <span class="tb-label">Interaction</span>
+    <div class="seg-ctrl" id="mode-ctrl">
+      <button class="seg-btn active" data-mode="attention" title="Inspect attention neighborhoods">Attention</button>
+      <button class="seg-btn" data-mode="layout" title="Drag nodes to adjust the layout">Layout</button>
+    </div>
+
+    <div class="tb-sep"></div>
     <span class="tb-label">Layer</span>
     <div class="seg-ctrl" id="layer-ctrl"></div>
 
@@ -449,6 +456,7 @@ let STATE = {
   subtypes: [],
 
   selectedNode: null,
+  interactionMode: 'attention',
   layer: 1,
   headKey: 'mean',
   subtypeFilter: 'all',
@@ -513,6 +521,19 @@ function buildApp() {
   STATE.layer = 1;
   STATE.headKey = 'mean';
   STATE.selectedNode = null;
+  STATE.interactionMode = 'attention';
+
+  // interaction mode
+  document.querySelectorAll('#mode-ctrl .seg-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.mode === STATE.interactionMode);
+    btn.onclick = () => {
+      STATE.interactionMode = btn.dataset.mode;
+      document.querySelectorAll('#mode-ctrl .seg-btn').forEach(x => x.classList.remove('active'));
+      btn.classList.add('active');
+      hideTooltip();
+      redraw();
+    };
+  });
 
   // build layer buttons
   const lc = document.getElementById('layer-ctrl');
@@ -521,7 +542,7 @@ function buildApp() {
     const b = document.createElement('button');
     b.className = 'seg-btn' + (l===1?' active':'');
     b.textContent = 'Layer ' + l;
-    b.onclick = () => { STATE.layer = l; document.querySelectorAll('.seg-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); redraw(); updatePanel(); };
+    b.onclick = () => { STATE.layer = l; document.querySelectorAll('#layer-ctrl .seg-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); redraw(); updatePanel(); };
     lc.appendChild(b);
   }
 
@@ -564,33 +585,71 @@ function initCanvas() {
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
 
-  let panning = false, panMoved = false, lastX, lastY;
+  let activePointer = null;
+  let action = null;
+  let moved = false;
+  let lastX = 0, lastY = 0;
+  let dragNode = null;
+  let nodeOffsetX = 0, nodeOffsetY = 0;
 
-  canvas.addEventListener('mousedown', e => {
+  canvas.addEventListener('pointerdown', e => {
+    if (e.button !== 0) return;
+    activePointer = e.pointerId;
     lastX = e.clientX; lastY = e.clientY;
-    panning = true; panMoved = false;
-    canvas.parentElement.classList.add('grabbing');
+    moved = false;
+    dragNode = hitTest(e);
+    action = STATE.interactionMode === 'layout' && dragNode ? 'drag-node' : 'pan';
+
+    if (action === 'drag-node') {
+      const rect = canvas.getBoundingClientRect();
+      const [wx, wy] = screenToWorld(e.clientX - rect.left, e.clientY - rect.top);
+      nodeOffsetX = dragNode.x - wx;
+      nodeOffsetY = dragNode.y - wy;
+      canvas.style.cursor = 'grabbing';
+    } else {
+      canvas.parentElement.classList.add('grabbing');
+    }
+
+    canvas.setPointerCapture(e.pointerId);
+    hideTooltip();
   });
 
-  canvas.addEventListener('mousemove', e => {
-    if (panning) {
+  canvas.addEventListener('pointermove', e => {
+    if (activePointer === e.pointerId && action) {
       const dx = e.clientX - lastX, dy = e.clientY - lastY;
-      if (Math.abs(dx) > 2 || Math.abs(dy) > 2) panMoved = true;
-      if (panMoved) {
-        STATE.tx += dx; STATE.ty += dy;
-        lastX = e.clientX; lastY = e.clientY;
-        redraw();
+      if (Math.abs(dx) > 2 || Math.abs(dy) > 2) moved = true;
+
+      if (action === 'drag-node' && dragNode) {
+        const rect = canvas.getBoundingClientRect();
+        const [wx, wy] = screenToWorld(e.clientX - rect.left, e.clientY - rect.top);
+        dragNode.x = wx + nodeOffsetX;
+        dragNode.y = wy + nodeOffsetY;
+      } else if (action === 'pan') {
+        STATE.tx += dx;
+        STATE.ty += dy;
       }
+
+      lastX = e.clientX;
+      lastY = e.clientY;
+      redraw();
       return;
     }
+
     const h = hitTest(e);
-    canvas.style.cursor = h ? 'pointer' : 'grab';
+    if (STATE.interactionMode === 'layout') {
+      canvas.style.cursor = h ? 'grab' : 'grab';
+    } else {
+      canvas.style.cursor = h ? 'pointer' : 'grab';
+    }
     showTooltip(e, h);
   });
 
-  canvas.addEventListener('mouseup', e => {
+  function finishPointer(e) {
+    if (activePointer !== e.pointerId) return;
     canvas.parentElement.classList.remove('grabbing');
-    if (!panMoved) {
+    try { canvas.releasePointerCapture(e.pointerId); } catch (_) {}
+
+    if (!moved && STATE.interactionMode === 'attention') {
       const h = hitTest(e);
       if (h) {
         selectNode(h);
@@ -598,13 +657,18 @@ function initCanvas() {
         STATE.selectedNode = null; updatePanel(); redraw();
       }
     }
-    panning = false; panMoved = false;
-  });
 
-  canvas.addEventListener('mouseleave', () => {
-    panning = false; panMoved = false;
-    hideTooltip();
-    canvas.parentElement.classList.remove('grabbing');
+    activePointer = null;
+    action = null;
+    moved = false;
+    dragNode = null;
+    canvas.style.cursor = 'grab';
+  }
+
+  canvas.addEventListener('pointerup', finishPointer);
+  canvas.addEventListener('pointercancel', finishPointer);
+  canvas.addEventListener('pointerleave', e => {
+    if (activePointer !== e.pointerId) hideTooltip();
   });
 
   canvas.addEventListener('wheel', e => {
