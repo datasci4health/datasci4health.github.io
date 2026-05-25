@@ -901,18 +901,14 @@ function updatePanel() {
   const title = document.getElementById('sh-title');
   const sub   = document.getElementById('sh-sub');
   const body  = document.getElementById('side-body');
-  const empty = document.getElementById('empty-state');
 
   if (!sel) {
     title.textContent = 'Click a node';
     sub.textContent   = 'to inspect attention weights';
-    body.innerHTML    = '';
-    body.appendChild(empty);
-    empty.style.display = '';
+    body.innerHTML    = '<div class="empty-state" id="empty-state">Select a node to see its attention gradient across the network.</div>';
     return;
   }
 
-  empty.style.display = 'none';
   title.textContent = sel.id;
 
   const typeColors = { gene: 'var(--teal)', mir: 'var(--coral)', functional_unit: 'var(--purple)' };
