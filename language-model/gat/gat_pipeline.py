@@ -93,6 +93,22 @@ def kmer_freq(seq, vocab, k):
     vec /= total
     return vec
 
+def normalise_node_type(node_type):
+    value = str(node_type).strip().lower()
+    if value in {"mir", "mirna", "microrna", "micro_rna", "micro-rna"}:
+        return "mir"
+    if value in {"gene", "mrna", "protein"}:
+        return "gene"
+    if value in {"functional_unit", "functional unit", "fu"}:
+        return "functional_unit"
+    return value
+
+def build_sequence_dict(seq_df):
+    return {
+        str(row["id"]).strip(): str(row["sequence"]).strip()
+        for _, row in seq_df.dropna(subset=["id", "sequence"]).iterrows()
+    }
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Lightweight in-house ProteinBERT-style encoder
@@ -197,12 +213,16 @@ def build_feature_matrix(nodes, gene_seq, mir_seq, kmer_k, encoder_mode):
     Returns (X: np.ndarray shape N×raw_dim, meta: dict).
     raw_dim = protein_dim + rna_dim  (rna_dim is always k-mer based)
     """
-    gene_seq_dict = dict(zip(gene_seq["id"], gene_seq["sequence"]))
-    mir_seq_dict  = dict(zip(mir_seq["id"],  mir_seq["sequence"]))
+    gene_seq_dict = build_sequence_dict(gene_seq)
+    mir_seq_dict  = build_sequence_dict(mir_seq)
 
-    node_list = nodes["id"].tolist()
+    node_list = [str(nid).strip() for nid in nodes["id"].tolist()]
     node_idx  = {nid: i for i, nid in enumerate(node_list)}
     N         = len(node_list)
+    node_types = {
+        str(row["id"]).strip(): normalise_node_type(row["type"])
+        for _, row in nodes.iterrows()
+    }
 
     rna_vocab = build_kmer_vocab(RNA_ALPHABET, kmer_k)
     rna_dim   = len(rna_vocab)
@@ -233,17 +253,23 @@ def build_feature_matrix(nodes, gene_seq, mir_seq, kmer_k, encoder_mode):
     X = np.zeros((N, raw_dim), dtype=np.float32)
 
     # split nodes by type
+    mir_node_ids = [nid for nid in node_list if node_types.get(nid) == "mir"]
     prot_ids = [nid for nid in node_list
-                if nodes.loc[nodes["id"]==nid, "type"].values[0] in ("gene","functional_unit")
+                if node_types.get(nid) in ("gene","functional_unit")
                 and gene_seq_dict.get(nid,"")]
     mir_ids  = [nid for nid in node_list
-                if nodes.loc[nodes["id"]==nid, "type"].values[0] == "mir"
+                if node_types.get(nid) == "mir"
                 and mir_seq_dict.get(nid,"")]
+    missing_mir_ids = [nid for nid in mir_node_ids if nid not in mir_ids]
     missing  = [nid for nid in node_list
                 if nid not in prot_ids and nid not in mir_ids]
     if missing:
         print(f"  [warn] No sequence for {len(missing)} node(s) → zero-vector: {missing[:5]}"
               + (" ..." if len(missing)>5 else ""))
+    if missing_mir_ids:
+        print(f"  [warn] No miRNA sequence for {len(missing_mir_ids)} miR node(s); "
+              f"expected matching IDs in --mir-seq. Examples: {missing_mir_ids[:5]}"
+              + (" ..." if len(missing_mir_ids)>5 else ""))
 
     # ── encode proteins ───────────────────────────────────────────────────
     if prot_ids:
@@ -266,6 +292,8 @@ def build_feature_matrix(nodes, gene_seq, mir_seq, kmer_k, encoder_mode):
                 X[node_idx[nid], :prot_dim] = emb
 
     # ── encode miRNAs (always k-mer) ──────────────────────────────────────
+    if mir_ids:
+        print(f"  Encoding {len(mir_ids)} miRNA sequence(s) with RNA k-mer …")
     for nid in mir_ids:
         seq = mir_seq_dict[nid].upper().replace("T","U")
         X[node_idx[nid], prot_dim:] = kmer_freq(seq, rna_vocab, kmer_k)
@@ -283,11 +311,14 @@ def build_edge_index(edges, node_idx):
     src_list, dst_list, valid = [], [], []
     skipped = 0
     for _, row in edges.iterrows():
-        s, t = row["source"], row["target"]
+        s, t = str(row["source"]).strip(), str(row["target"]).strip()
         if s not in node_idx or t not in node_idx:
             skipped += 1; continue
         src_list.append(node_idx[s]); dst_list.append(node_idx[t])
-        valid.append(row.to_dict())
+        ed = row.to_dict()
+        ed["source"] = s
+        ed["target"] = t
+        valid.append(ed)
     if skipped:
         print(f"  [warn] Skipped {skipped} edge(s) with unknown node IDs.")
     return torch.tensor([src_list, dst_list], dtype=torch.long), valid
@@ -445,6 +476,11 @@ def main():
     edges    = pd.read_csv(args.edges)
     gene_seq = pd.read_csv(args.gene_seq)
     mir_seq  = pd.read_csv(args.mir_seq)
+    nodes["id"] = nodes["id"].astype(str).str.strip()
+    edges["source"] = edges["source"].astype(str).str.strip()
+    edges["target"] = edges["target"].astype(str).str.strip()
+    gene_seq["id"] = gene_seq["id"].astype(str).str.strip()
+    mir_seq["id"] = mir_seq["id"].astype(str).str.strip()
     print(f"  Nodes: {len(nodes)}  |  Edges: {len(edges)}")
     print(f"  Node types:   {nodes['type'].value_counts().to_dict()}")
     print(f"  Edge subtypes:{edges['subtype'].value_counts().to_dict()}")
@@ -459,8 +495,9 @@ def main():
     print("\n[3/5] Building edge index …")
     edge_index, valid_edges = build_edge_index(edges, meta["node_idx"])
     logic_series   = nodes.set_index("id")["logic"]
+    node_type_series = nodes.set_index("id")["type"].map(normalise_node_type)
     logic_mask_and = torch.tensor([
-        nodes.loc[nodes["id"]==nid, "type"].values[0] == "functional_unit"
+        node_type_series.get(nid) == "functional_unit"
         and str(logic_series.get(nid,"OR")).strip().upper() == "AND"
         for nid in meta["node_list"]
     ], dtype=torch.bool)

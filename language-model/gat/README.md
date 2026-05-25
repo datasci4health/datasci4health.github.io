@@ -31,7 +31,7 @@ python3 fasta_to_csv.py --input thca/mart_export.fasta --output thca/nodes-mRNA-
 ~~~
 
 ~~~bash
-python3 parse_mirwalk.py --input thca/miRWalk_miRNA_Targets_limma.csv  --output thca/nodes-mIR-sequence.csv
+python3 parse_mirwalk.py --input thca/mir-mimat-sequence_limma.csv --mir-col mimat_id --output thca/nodes-mIR-sequence.csv
 ~~~
 
 ~~~bash

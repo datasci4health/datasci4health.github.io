@@ -383,7 +383,8 @@ const COLORS = {
 function isDark() { return window.matchMedia('(prefers-color-scheme: dark)').matches; }
 function nodeColor(type, selected) {
   if (selected) return COLORS.selected;
-  return COLORS[type] || '#888780';
+  let tp = type.toLowerCase().replace('mrna','gene')
+  return COLORS[tp] || '#888780';
 }
 
 function lerpHex(h1, h2, t) {

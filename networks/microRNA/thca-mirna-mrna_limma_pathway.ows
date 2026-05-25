@@ -66,21 +66,22 @@
 		<node id="62" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(3698.5, 1703.75)" />
 		<node id="63" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(3848.5, 1703.75)" />
 		<node id="64" name="Pathway to Knowledge Graph" qualified_name="orange3biosci.widgets.pathway_kg.OWPathwayKG" project_name="orange-biosci" version="" title="Pathway to Knowledge Graph" position="(205.5952380952387, 1355.3452380952374)" />
-		<node id="65" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (2)" position="(3027.2857142857138, 320.7142857142858)" />
-		<node id="66" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Filter mRNA(gene) columns to combine" position="(3029.714285714285, 847.4285714285713)" />
-		<node id="67" name="Merge Data" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" project_name="Orange3" version="" title="Add extra data to existing columns" position="(3338.0, 480.0)" />
-		<node id="68" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter functional unit columns" position="(3033.4285714285706, 957.857142857143)" />
-		<node id="69" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Extract only functional units" position="(3384.0, 826.0)" />
-		<node id="70" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate" position="(3582.0, 589.0)" />
-		<node id="71" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Only Genes" position="(378.02380952380975, 1246.095238095239)" />
-		<node id="72" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only Symbol" position="(506.4523809523813, 1243.2142857142856)" />
-		<node id="73" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Rename to genesymbol (same of miRWalk)" position="(622.5476190476192, 1220.9523809523814)" />
-		<node id="74" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (1)" position="(762.5476190476193, 1068.095238095238)" />
-		<node id="75" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(2984.4285714285716, 1093.7142857142853)" />
-		<node id="76" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(3248.142857142857, 1030.2857142857142)" />
-		<node id="77" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Formula" position="(3388.642857142856, 1148.7857142857142)" />
-		<node id="78" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (2)" position="(3504.642857142856, 1020.7857142857142)" />
-		<node id="79" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(3725.5454545454545, 490.0)" />
+		<node id="65" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Filter mRNA(gene) columns to combine" position="(3029.714285714285, 847.4285714285713)" />
+		<node id="66" name="Merge Data" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" project_name="Orange3" version="" title="Add extra data to existing columns" position="(3338.0, 480.0)" />
+		<node id="67" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter functional unit columns" position="(3033.4285714285706, 957.857142857143)" />
+		<node id="68" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Extract only functional units" position="(3384.0, 826.0)" />
+		<node id="69" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate" position="(3582.0, 589.0)" />
+		<node id="70" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Only Genes" position="(378.02380952380975, 1246.095238095239)" />
+		<node id="71" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only Symbol" position="(506.4523809523813, 1243.2142857142856)" />
+		<node id="72" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Rename to genesymbol (same of miRWalk)" position="(622.5476190476192, 1220.9523809523814)" />
+		<node id="73" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (1)" position="(762.5476190476193, 1068.095238095238)" />
+		<node id="74" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(2984.4285714285716, 1093.7142857142853)" />
+		<node id="75" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(3248.142857142857, 1030.2857142857142)" />
+		<node id="76" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Formula" position="(3388.642857142856, 1148.7857142857142)" />
+		<node id="77" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (2)" position="(3504.642857142856, 1020.7857142857142)" />
+		<node id="78" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter mRNAs (genes)" position="(3692.1111111111118, 445.55555555555566)" />
+		<node id="79" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only id column" position="(3806.5555555555557, 443.3333333333333)" />
+		<node id="80" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save for Ensembl sequencing" position="(3928.777777777778, 438.8888888888889)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
@@ -146,28 +147,29 @@
 		<link id="60" source_node_id="42" sink_node_id="61" source_channel="Paired Sources" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="61" source_node_id="61" sink_node_id="62" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="62" source_node_id="61" sink_node_id="63" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="63" source_node_id="38" sink_node_id="65" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="64" source_node_id="64" sink_node_id="66" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
-		<link id="65" source_node_id="38" sink_node_id="67" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="66" source_node_id="66" sink_node_id="67" source_channel="Data" sink_channel="Extra Data" enabled="true" source_channel_id="data" sink_channel_id="extra_data" />
-		<link id="67" source_node_id="64" sink_node_id="68" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
-		<link id="68" source_node_id="68" sink_node_id="69" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
-		<link id="69" source_node_id="67" sink_node_id="70" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
-		<link id="70" source_node_id="69" sink_node_id="70" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
-		<link id="71" source_node_id="70" sink_node_id="39" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="72" source_node_id="64" sink_node_id="71" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
-		<link id="73" source_node_id="71" sink_node_id="72" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
-		<link id="74" source_node_id="72" sink_node_id="73" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="75" source_node_id="19" sink_node_id="74" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
-		<link id="76" source_node_id="73" sink_node_id="74" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
-		<link id="77" source_node_id="74" sink_node_id="20" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="78" source_node_id="64" sink_node_id="75" source_channel="Edges" sink_channel="Data" enabled="true" source_channel_id="edges" sink_channel_id="data" />
-		<link id="79" source_node_id="75" sink_node_id="76" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="80" source_node_id="36" sink_node_id="77" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="81" source_node_id="77" sink_node_id="78" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
-		<link id="82" source_node_id="76" sink_node_id="78" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
-		<link id="83" source_node_id="78" sink_node_id="37" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="84" source_node_id="70" sink_node_id="79" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="63" source_node_id="64" sink_node_id="65" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
+		<link id="64" source_node_id="38" sink_node_id="66" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="65" source_node_id="65" sink_node_id="66" source_channel="Data" sink_channel="Extra Data" enabled="true" source_channel_id="data" sink_channel_id="extra_data" />
+		<link id="66" source_node_id="64" sink_node_id="67" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
+		<link id="67" source_node_id="67" sink_node_id="68" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="68" source_node_id="66" sink_node_id="69" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="69" source_node_id="68" sink_node_id="69" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="70" source_node_id="69" sink_node_id="39" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="71" source_node_id="64" sink_node_id="70" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
+		<link id="72" source_node_id="70" sink_node_id="71" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="73" source_node_id="71" sink_node_id="72" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="74" source_node_id="19" sink_node_id="73" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="75" source_node_id="72" sink_node_id="73" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="76" source_node_id="73" sink_node_id="20" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="77" source_node_id="64" sink_node_id="74" source_channel="Edges" sink_channel="Data" enabled="true" source_channel_id="edges" sink_channel_id="data" />
+		<link id="78" source_node_id="74" sink_node_id="75" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="79" source_node_id="36" sink_node_id="76" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="80" source_node_id="76" sink_node_id="77" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="81" source_node_id="75" sink_node_id="77" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="82" source_node_id="77" sink_node_id="37" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="83" source_node_id="69" sink_node_id="78" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="84" source_node_id="78" sink_node_id="79" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="85" source_node_id="79" sink_node_id="80" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 	</links>
 	<annotations>
 		<arrow id="0" start="(2168.940392940393, 504.9607059607059)" end="(356.06709956709943, 1058.6753246753246)" fill="#C1272D" />
@@ -58935,7 +58937,7 @@ SwJ1dWJldS4=
 		<properties node_id="53" format="pickle">gASVMgEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwCMC2Rl
 c2NyaXB0b3JzlF2UjChPcmFuZ2Uud2lkZ2V0cy5kYXRhLm93ZmVhdHVyZWNvbnN0cnVjdG9ylIwS
 RGlzY3JldGVEZXNjcmlwdG9ylJOUKIwEdHlwZZSMBidtUk5BJ5QpiYl0lIGUYYwXZXhwcmVzc2lv
-bnNfd2l0aF92YWx1ZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAHxgAAARUA
+bnNfd2l0aF92YWx1ZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAHxgAAAPAA
 AAwLAAACoAAAB8YAAAEVAAAMCwAAAqAAAAAAAAAAAAeAAAAHxgAAARUAAAwLAAACoJSMC19fdmVy
 c2lvbl9flEsEjBBjb250ZXh0X3NldHRpbmdzlF2UdS4=
 </properties>
@@ -58949,7 +58951,7 @@ AAF3AAAMVQAAA/wAAAAAAAAAAAeAAAAHxgAAAXcAAAxVAAAD/JSMC19fdmVyc2lvbl9flEsEdS4=
 		<properties node_id="55" format="pickle">gASVMQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwCMC2Rl
 c2NyaXB0b3JzlF2UjChPcmFuZ2Uud2lkZ2V0cy5kYXRhLm93ZmVhdHVyZWNvbnN0cnVjdG9ylIwS
 RGlzY3JldGVEZXNjcmlwdG9ylJOUKIwEdHlwZZSMBSdtaVInlCmJiXSUgZRhjBdleHByZXNzaW9u
-c193aXRoX3ZhbHVlc5SJjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAGdAAABMQAA
+c193aXRoX3ZhbHVlc5SJjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAGdAAABVgAA
 BeIAAALhAAABnQAAAVYAAAXiAAAC4QAAAAEAAAAAB4AAAAGdAAABVgAABeIAAALhlIwLX192ZXJz
 aW9uX1+USwSMEGNvbnRleHRfc2V0dGluZ3OUXZR1Lg==
 </properties>
@@ -61347,10 +61349,9 @@ fZQojAtNYXR1cmUxX0FjY5RLZ4wKTWF0dXJlMV9JRJRLZ3V1YmV1Lg==
 		<properties node_id="62" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00F\x00\x00\x00\x1b\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00F\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00F\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [('backbone', -1)], '__version__': 1}</properties>
 		<properties node_id="63" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\xad\x00\x00\ty\x00\x00\x02e\x00\x00\x07\xc6\x00\x00\x01\xd2\x00\x00\ty\x00\x00\x02e\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\xd2\x00\x00\ty\x00\x00\x02e', 'stored_name': 'projection-mRNA-mRNA-backbone.csv', 'stored_path': 'cytoscape/limma_pathway', '__version__': 3}</properties>
 		<properties node_id="64" format="literal">{'aggregate_functional_units': True, 'auto_extract': True, 'controlAreaVisible': True, 'filename': 'kegg/hsa04010.xml', 'mapping_filename': 'kegg/hsa_genes.tsv', 'pathway_as_property': True, 'relative_to_workflow': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\r\x00\x00\x01\x18\x00\x00\x0b\x1b\x00\x00\x02\\\x00\x00\n\r\x00\x00\x01=\x00\x00\x0b\x1b\x00\x00\x02\\\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\r\x00\x00\x01=\x00\x00\x0b\x1b\x00\x00\x02\\', '__version__': 1}</properties>
-		<properties node_id="65" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x0b\x00\x00\x00\x7f\x00\x00\x06u\x00\x00\x03\x93\x00\x00\x01\x0b\x00\x00\x00\xa4\x00\x00\x06u\x00\x00\x03\x93\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x01\x0b\x00\x00\x00\xa4\x00\x00\x06u\x00\x00\x03\x93', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
-		<properties node_id="66" format="pickle">gASV4gIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABSgAAAEg
-AAAHfwAABA0AAAUoAAABIAAAB38AAAQNAAAAAAAAAAAHgAAABSgAAAEgAAAHfwAABA2UjBJ1c2Vf
+		<properties node_id="65" format="pickle">gASV4gIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAB8YAAAD7
+AAAKHQAABA0AAAfGAAABIAAACh0AAAQNAAAAAAAAAAAHgAAAB8YAAAEgAAAKHQAABA2UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
 cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
 aW5fcm9sZV9oaW50c5R9lCiMAmlklEsDhpSMCWF2YWlsYWJsZZRLAIaUjApmdWxsX2xhYmVslEsD
@@ -61363,7 +61364,7 @@ A4aUaDpLAoaUjAVsb2dpY5RLA4aUaDpLA4aUjAdwYXRod2F5lEsDhpRoOksEhpSMCmZ1bGxfbGFi
 ZWyUSwOGlGg6SwWGlHVK/v///4aUaAdLAXVoKX2UaC59lChoOEsDaDxLA2g/SwNoQksDaEVLA2hI
 SwN1dWJldS4=
 </properties>
-		<properties node_id="67" format="pickle">gASVFgIAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMB21lcmdp
+		<properties node_id="66" format="pickle">gASVFgIAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMB21lcmdp
 bmeUSwCME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAC4MAAAHxAAAM9QAAAykAAAuD
 AAACFgAADPUAAAMpAAAAAAAAAAAHgAAAC4MAAAIWAAAM9QAAAymUjAtfX3ZlcnNpb25fX5RLAowQ
 Y29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5Qp
@@ -61374,7 +61375,7 @@ Z4aUjAJpZJRLZ4aUZWFoBksCdWgXfZQoaBlLZWgTS2doGktmdWgbfZQoaB1LZWgeS2VoJUtndXVi
 aAspgZR9lChoDn2UKGgQXZRdlChoE0tnhpRoJUtnhpRlYWgGSwJ1aBd9lChoGUtlaBNLZ2gaS2Z1
 aBt9lCiMBHR5cGWUS2VoHUtlaB5LZWglS2d1dWJldS4=
 </properties>
-		<properties node_id="68" format="pickle">gASV6wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+		<properties node_id="67" format="pickle">gASV6wEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
 ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
 0MsAAwAAAAAK+wAAAVgAAA6EAAADbwAACvsAAAF9AAAOhAAAA28AAAAAAAAAAAeAAAAK+wAAAX0A
 AA6EAAADb5SMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
@@ -61384,7 +61385,7 @@ aAhLAnWMCmF0dHJpYnV0ZXOUfZQoaBRLAYwFbG9naWOUSwGMB3BhdGh3YXmUSwF1jAVtZXRhc5R9
 lCiMAmlklEsDjAVsYWJlbJRLA4wKZnVsbF9sYWJlbJRLA3V1YmgNKYGUfZQoaBB9lChoEl2UKGga
 SwFLAF2UjACUYXSUYWgISwJ1aBh9lChoGksBaBtLAXVoHH2UaB9LA3N1YmV1Lg==
 </properties>
-		<properties node_id="69" format="pickle">gASV8QEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+		<properties node_id="68" format="pickle">gASV8QEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
 cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACrgAAAEg
 AAANDwAABA0AAAq4AAABIAAADQ8AAAQNAAAAAAAAAAAHgAAACrgAAAEgAAANDwAABA2UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
@@ -61394,8 +61395,8 @@ SwOGlGgVSwGGlIwEdHlwZZRLAYaUjAlhdHRyaWJ1dGWUSwCGlIwFbG9naWOUSwGGlGgcSwGGlIwH
 cGF0aHdheZRLAYaUaBxLAoaUjAJpZJRLA4aUjARtZXRhlEsAhpR1Sv7///+GlGgHSwF1jAphdHRy
 aWJ1dGVzlH2UKGgaSwFoHksBaCFLAXWMBW1ldGFzlH2UKGgkSwNoF0sDaBNLA3V1YmF1Lg==
 </properties>
-		<properties node_id="70" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
-		<properties node_id="71" format="pickle">gASVpQEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+		<properties node_id="69" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
+		<properties node_id="70" format="pickle">gASVpQEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
 ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
 0MsAAwAAAAADcwAAAVoAAAb8AAADcQAAA3MAAAF/AAAG/AAAA3EAAAAAAAAAAAeAAAADcwAAAX8A
 AAb8AAADcZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
@@ -61404,7 +61405,7 @@ c5R9lCiMCmNvbmRpdGlvbnOUXZQojAR0eXBllEsBSwBdlIwEZ2VuZZRhdJRhaAhLAnWMCmF0dHJp
 YnV0ZXOUfZQojAR0eXBllEsBjAVsb2dpY5RLAYwHcGF0aHdheZRLAXWMBW1ldGFzlH2UKIwCaWSU
 SwOMBWxhYmVslEsDjApmdWxsX2xhYmVslEsDdXViYXUu
 </properties>
-		<properties node_id="72" format="pickle">gASVDgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+		<properties node_id="71" format="pickle">gASVDgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
 cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABSgAAAEg
 AAAHfwAABA0AAAUoAAABIAAAB38AAAQNAAAAAAAAAAAHgAAABSgAAAEgAAAHfwAABA2UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
@@ -61415,9 +61416,9 @@ FUsEhpSMBWxhYmVslEsDhpSMBG1ldGGUSwCGlHVK/v///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQo
 jAR0eXBllEsBjAVsb2dpY5RLAYwHcGF0aHdheZRLAXWMBW1ldGFzlH2UKIwCaWSUSwOMBWxhYmVs
 lEsDjApmdWxsX2xhYmVslEsDdXViYXUu
 </properties>
-		<properties node_id="73" format="literal">{'_domain_change_hints': {('String', ('label', ())): [('Rename', ('genesymbol',))]}, '_merge_dialog_settings': {}, 'controlAreaVisible': True, 'output_table_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o', '__version__': 4}</properties>
-		<properties node_id="74" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
-		<properties node_id="75" format="pickle">gASVNAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+		<properties node_id="72" format="literal">{'_domain_change_hints': {('String', ('label', ())): [('Rename', ('genesymbol',))]}, '_merge_dialog_settings': {}, 'controlAreaVisible': True, 'output_table_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o', '__version__': 4}</properties>
+		<properties node_id="73" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
+		<properties node_id="74" format="pickle">gASVNAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
 cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABSgAAAEg
 AAAHfwAABA0AAAUoAAABIAAAB38AAAQNAAAAAAAAAAAHgAAABSgAAAEgAAAHfwAABA2UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
@@ -61429,22 +61430,41 @@ b3VyY2VfbGFiZWyUSwOGlIwEbWV0YZRLAIaUjAx0YXJnZXRfbGFiZWyUSwOGlGgjSwGGlHVK/v//
 jAZzb3VyY2WUSwOMBnRhcmdldJRLA4wMc291cmNlX2xhYmVslEsDjAx0YXJnZXRfbGFiZWyUSwN1
 dWJhdS4=
 </properties>
-		<properties node_id="76" format="pickle">gASVMQEAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UKIwGU3RyaW5nlIwMc291cmNl
+		<properties node_id="75" format="pickle">gASVMQEAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UKIwGU3RyaW5nlIwMc291cmNl
 X2xhYmVslCmGlIaUXZSMBlJlbmFtZZSMBnNvdXJjZZSFlIaUYWgDjAx0YXJnZXRfbGFiZWyUKYaU
 hpRdlGgIjAZ0YXJnZXSUhZSGlGF1jBZfbWVyZ2VfZGlhbG9nX3NldHRpbmdzlH2UjBJjb250cm9s
 QXJlYVZpc2libGWUiIwRb3V0cHV0X3RhYmxlX25hbWWUjACUjBNzYXZlZFdpZGdldEdlb21ldHJ5
 lENCAdnQywADAAAAAAQsAAAA6gAAB38AAANvAAAELAAAAOoAAAd/AAADbwAAAAAAAAAAB4AAAAQs
 AAAA6gAAB38AAANvlIwLX192ZXJzaW9uX1+USwR1Lg==
 </properties>
-		<properties node_id="77" format="pickle">gASVOQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwCMC2Rl
+		<properties node_id="76" format="pickle">gASVOQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxjdXJyZW50SW5kZXiUSwCMC2Rl
 c2NyaXB0b3JzlF2UjChPcmFuZ2Uud2lkZ2V0cy5kYXRhLm93ZmVhdHVyZWNvbnN0cnVjdG9ylIwS
 RGlzY3JldGVEZXNjcmlwdG9ylJOUKIwEdHlwZZSMDSdtaXJfdG9fZ2VuZSeUKYmJdJSBlGGMF2V4
 cHJlc3Npb25zX3dpdGhfdmFsdWVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAA
 AZ0AAAFWAAAF4gAAAuEAAAGdAAABVgAABeIAAALhAAAAAQAAAAAHgAAAAZ0AAAFWAAAF4gAAAuGU
 jAtfX3ZlcnNpb25fX5RLBIwQY29udGV4dF9zZXR0aW5nc5RdlHUu
 </properties>
-		<properties node_id="78" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
-		<properties node_id="79" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00F\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00F\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00F\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="77" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
+		<properties node_id="78" format="pickle">gASVkQEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAHxgAAAXcAAAtPAAADjgAAB8YAAAGcAAALTwAAA44AAAAAAAAAAAeAAAAHxgAAAZwA
+AAtPAAADjpSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojAR0eXBllEsBSwBdlIwEbVJOQZRhdJRhaAhLAnWMCmF0dHJp
+YnV0ZXOUfZQoaBRLAYwFbG9naWOUSwGMB3BhdGh3YXmUSwF1jAVtZXRhc5R9lCiMAmlklEsDjAVs
+b2dGQ5RLAnV1YmF1Lg==
+</properties>
+		<properties node_id="79" format="pickle">gASVzAEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAB8YAAAD7
+AAAKHQAABA0AAAfGAAABIAAACh0AAAQNAAAAAAAAAAAHgAAAB8YAAAEgAAAKHQAABA2UjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwEdHlwZZRLAYaUjAlhdmFpbGFibGWUSwCGlIwFbG9naWOUSwGGlGgV
+SwGGlIwHcGF0aHdheZRLAYaUaBVLAoaUjAVsb2dGQ5RLAoaUaBVLA4aUjAJpZJRLA4aUjARtZXRh
+lEsAhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKGgTSwFoF0sBaBpLAXWMBW1ldGFzlH2U
+KGggSwNoHUsCdXViYXUu
+</properties>
+		<properties node_id="80" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\xad\x00\x00\tA\x00\x00\x02e\x00\x00\x07\xc6\x00\x00\x01\xd2\x00\x00\tA\x00\x00\x02e\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\xd2\x00\x00\tA\x00\x00\x02e', 'stored_name': 'mrna-ensembl-sequencing.csv', 'stored_path': 'ensembl', '__version__': 3}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
