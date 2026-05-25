@@ -578,6 +578,17 @@ function buildApp() {
 // Canvas interaction
 // ═══════════════════════════════════════════════════════
 let canvas, ctx2d;
+let redrawQueued = false;
+
+function queueRedraw() {
+  redraw();
+  if (redrawQueued) return;
+  redrawQueued = true;
+  requestAnimationFrame(() => {
+    redrawQueued = false;
+    redraw();
+  });
+}
 
 function initCanvas() {
   canvas = document.getElementById('gc');
@@ -594,7 +605,6 @@ function initCanvas() {
 
   canvas.addEventListener('pointerdown', e => {
     if (e.button !== 0) return;
-    activePointer = e.pointerId;
     lastX = e.clientX; lastY = e.clientY;
     moved = false;
     dragNode = hitTest(e);
@@ -605,6 +615,7 @@ function initCanvas() {
     } else {
       action = 'pan';
     }
+    activePointer = e.pointerId;
 
     if (action === 'drag-node') {
       const rect = canvas.getBoundingClientRect();
@@ -616,7 +627,9 @@ function initCanvas() {
       canvas.parentElement.classList.add('grabbing');
     }
 
-    canvas.setPointerCapture(e.pointerId);
+    if (action !== 'select-node') {
+      canvas.setPointerCapture(e.pointerId);
+    }
     hideTooltip();
   });
 
@@ -656,16 +669,13 @@ function initCanvas() {
 
   function finishPointer(e) {
     if (activePointer !== e.pointerId) return;
-    canvas.parentElement.classList.remove('grabbing');
-    try { canvas.releasePointerCapture(e.pointerId); } catch (_) {}
+    const finishedAction = action;
+    const clickedNode = finishedAction === 'select-node' ? (hitTest(e) || dragNode) : null;
+    const shouldClearSelection = !moved && finishedAction === 'pan' && STATE.interactionMode === 'attention';
 
-    if (!moved && STATE.interactionMode === 'attention') {
-      const h = hitTest(e);
-      if (h) {
-        selectNode(h);
-      } else {
-        STATE.selectedNode = null; updatePanel(); redraw();
-      }
+    canvas.parentElement.classList.remove('grabbing');
+    if (canvas.hasPointerCapture && canvas.hasPointerCapture(e.pointerId)) {
+      try { canvas.releasePointerCapture(e.pointerId); } catch (_) {}
     }
 
     activePointer = null;
@@ -673,6 +683,14 @@ function initCanvas() {
     moved = false;
     dragNode = null;
     canvas.style.cursor = 'grab';
+
+    if (clickedNode) {
+      selectNode(clickedNode);
+    } else if (shouldClearSelection) {
+      STATE.selectedNode = null;
+      updatePanel();
+      queueRedraw();
+    }
   }
 
   canvas.addEventListener('pointerup', finishPointer);
@@ -875,7 +893,7 @@ function hideTooltip() { document.getElementById('tooltip').style.display = 'non
 function selectNode(n) {
   STATE.selectedNode = (STATE.selectedNode && STATE.selectedNode.id === n.id) ? null : n;
   updatePanel();
-  redraw();
+  queueRedraw();
 }
 
 function updatePanel() {
@@ -985,14 +1003,14 @@ function updatePanel() {
 
 function highlightEdge(src, tgt) {
   const tgtNode = STATE.nodes.find(n => n.id === tgt);
-  if (tgtNode) { STATE.selectedNode = tgtNode; updatePanel(); redraw(); }
+  if (tgtNode) { STATE.selectedNode = tgtNode; updatePanel(); queueRedraw(); }
 }
 
 // ═══════════════════════════════════════════════════════
 // Keyboard shortcuts
 // ═══════════════════════════════════════════════════════
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { STATE.selectedNode = null; updatePanel(); redraw(); }
+  if (e.key === 'Escape') { STATE.selectedNode = null; updatePanel(); queueRedraw(); }
   if (e.key === '0') fitView();
 });
 </script>
