@@ -16,8 +16,8 @@
 		<node id="12" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Removing redundant mappings" position="(822.9404761904764, 1038.8809523809518)" />
 		<node id="13" name="Merge Data" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" project_name="Orange3" version="" title="Merge Data for Name Mapping" position="(956.4404761904764, 852.6309523809518)" />
 		<node id="14" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only miR (Mature_Acc) and genesymbol" position="(1099.857142857143, 848.9642857142858)" />
-		<node id="15" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Uniformize schema to merge (Mature_Acc  and genesymbol becomes source and target)" position="(1324.0000000000002, 687.8571428571431)" />
-		<node id="16" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Add type column (mir_regulates_mrna)" position="(1492.5714285714291, 692.1428571428569)" />
+		<node id="15" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Uniformize schema to merge (Mature_Acc  and genesymbol becomes source and target)" position="(1342.0, 854.8571428571431)" />
+		<node id="16" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Add type column (mir_regulates_mrna)" position="(1510.5714285714294, 859.1428571428569)" />
 		<node id="17" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only source (miR)" position="(1428.642857142857, 333.2142857142858)" />
 		<node id="18" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Remove redundant miRs" position="(1538.642857142857, 335.3571428571429)" />
 		<node id="19" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Add type column (mir)" position="(1665.3571428571433, 337.92857142857133)" />
@@ -34,6 +34,11 @@
 		<node id="30" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only miR id" position="(882.4285714285714, 662.8571428571429)" />
 		<node id="31" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Remove redundant miRs" position="(1009.5714285714286, 661.4285714285714)" />
 		<node id="32" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="miR for Ensembl" position="(1139.5714285714287, 661.4285714285714)" />
+		<node id="33" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="gene sequences from Ensembl" position="(594.5714285714284, 46.28571428571439)" />
+		<node id="34" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(747.4285714285713, 47.71428571428582)" />
+		<node id="35" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(903.8571428571429, 47.142857142857146)" />
+		<node id="36" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(886.7142857142857, 432.857142857143)" />
+		<node id="37" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(1092.4285714285716, 462.8571428571429)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Nodes" sink_channel="Data" enabled="true" source_channel_id="nodes" sink_channel_id="data" />
@@ -70,6 +75,10 @@
 		<link id="31" source_node_id="4" sink_node_id="30" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="32" source_node_id="30" sink_node_id="31" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="33" source_node_id="31" sink_node_id="32" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="34" source_node_id="33" sink_node_id="34" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="35" source_node_id="34" sink_node_id="35" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="36" source_node_id="4" sink_node_id="36" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="37" source_node_id="4" sink_node_id="37" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 	</links>
 	<annotations>
 		<arrow id="0" start="(630.3571428571431, 716.9642857142858)" end="(730.3571428571431, 719.4642857142858)" fill="#C1272D" />
@@ -306,6 +315,29 @@ bmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwNc2VsZWN0ZWRfdmFyc5RdlGgHSwF1
 jAphdHRyaWJ1dGVzlH2UjAVtZXRhc5R9lIwHbWlybmFpZJRLA3N1YmF1Lg==
 </properties>
 		<properties node_id="32" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04&amp;\x00\x00\x02e\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04&amp;\x00\x00\x02e\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\t\x00\x00\x01\xd2\x00\x00\x04&amp;\x00\x00\x02e', 'stored_name': 'mir-ensembl.csv', 'stored_path': 'ensembl', '__version__': 3}</properties>
+		<properties node_id="33" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'ensembl/mapk-gene-embeddings.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 2, 'value': 'Text'}, {'start': 2, 'stop': 1564, 'value': 'Skip'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/datasci4health/homepage/knowledge-graphs/pathways/mapk/ensembl', 'filter': 'Text - tab separated (*.tsv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\nF\x00\x00\x01\xf4\x00\x00\x0b\x91\x00\x00\x03\\\x00\x00\nF\x00\x00\x02\x19\x00\x00\x0b\x91\x00\x00\x03\\\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\nF\x00\x00\x02\x19\x00\x00\x0b\x91\x00\x00\x03\\', '__version__': 3}</properties>
+		<properties node_id="34" format="literal">{'_domain_change_hints': {('String', ('label', ())): [('Rename', ('id',))]}, '_merge_dialog_settings': {}, 'controlAreaVisible': True, 'output_table_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x00\xfa\x00\x00\x0b\x19\x00\x00\x03\x7f\x00\x00\x07\xc6\x00\x00\x00\xfa\x00\x00\x0b\x19\x00\x00\x03\x7f\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x00\xfa\x00\x00\x0b\x19\x00\x00\x03\x7f', '__version__': 4}</properties>
+		<properties node_id="35" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xa7\x00\x00\x01X\x00\x00\x0b\xff\x00\x00\x02\x10\x00\x00\n\xa7\x00\x00\x01}\x00\x00\x0b\xff\x00\x00\x02\x10\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xa7\x00\x00\x01}\x00\x00\x0b\xff\x00\x00\x02\x10', 'stored_name': 'mapk-node-sequence.csv', 'stored_path': 'gat', '__version__': 3}</properties>
+		<properties node_id="36" format="pickle">gASVwQMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAC8IAAADd
+AAAOGQAAA1kAAAvCAAABAgAADhkAAANZAAAAAAAAAAAHgAAAC8IAAAECAAAOGQAAA1mUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
+cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
+aW5fcm9sZV9oaW50c5R9lCiMBXN0YXJ0lEsChpSMCWF2YWlsYWJsZZRLAIaUjANlbmSUSwKGlGgV
+SwGGlIwIYmluZGluZ3CUSwKGlGgVSwKGlIwGZW5lcmd5lEsChpRoFUsDhpSMBHNlZWSUSwGGlGgV
+SwSGlIwNYWNjZXNzaWJpbGl0eZRLAoaUaBVLBYaUjAJhdZRLAoaUaBVLBoaUjApwaHlsb3BzdGVt
+lEsChpRoFUsHhpSMC3BoeWxvcGZsYW5rlEsChpRoFUsIhpSMAm1llEsChpRoFUsJhpSMEm51bWJl
+cl9vZl9wYWlyaW5nc5RLAoaUaBVLCoaUjBViaW5kaW5nX3JlZ2lvbl9sZW5ndGiUSwKGlGgVSwuG
+lIwcbG9uZ2VzdF9jb25zZWN1dGl2ZV9wYWlyaW5nc5RLAoaUaBVLDIaUjAhwb3NpdGlvbpRLAYaU
+aBVLDYaUjApUYXJnZXRTY2FulEsBhpRoFUsOhpSMBW1pUkRClEsBhpRoFUsPhpSMCHJlZnNlcWlk
+lEsDhpRoFUsQhpSMCmdlbmVzeW1ib2yUSwOGlGgVSxGGlIwGZHVwbGV4lEsDhpRoFUsShpSMCXZh
+bGlkYXRlZJRLA4aUaBVLE4aUjAdtaXJuYWlklEsDhpSMBG1ldGGUSwCGlHVK/v///4aUaAdLAXWM
+CmF0dHJpYnV0ZXOUfZQoaBNLAmgXSwJoGksCaB1LAmggSwFoI0sCaCZLAmgpSwJoLEsCaC9LAmgy
+SwJoNUsCaDhLAmg7SwFoPksBaEFLAXWMBW1ldGFzlH2UKGhQSwNoREsDaEdLA2hKSwNoTUsDdXVi
+aAwpgZR9lChoD32UKGgRfZRoUEsDhpRoUksAhpRzSv7///+GlGgHSwF1aFV9lGhXfZRoUEsDc3Vi
+ZXUu
+</properties>
+		<properties node_id="37" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x08C\x00\x00\x01\x05\x00\x00\x0e\xff\x00\x00\x04\x19\x00\x00\x08C\x00\x00\x01*\x00\x00\x0e\xff\x00\x00\x04\x19\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x08C\x00\x00\x01*\x00\x00\x0e\xff\x00\x00\x04\x19', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [0], 'columns': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, 'stored_sort': [], '__version__': 1}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />

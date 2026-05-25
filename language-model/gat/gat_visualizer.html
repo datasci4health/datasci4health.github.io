@@ -238,6 +238,14 @@ canvas#gc { position: absolute; top: 0; left: 0; touch-action: none; }
     <div class="seg-ctrl" id="layer-ctrl"></div>
 
     <div class="tb-sep"></div>
+    <span class="tb-label">Hops</span>
+    <div class="seg-ctrl" id="hop-ctrl">
+      <button class="seg-btn active" data-hop="1">1</button>
+      <button class="seg-btn" data-hop="2">2</button>
+      <button class="seg-btn" data-hop="3">3</button>
+    </div>
+
+    <div class="tb-sep"></div>
     <span class="tb-label">Edge type</span>
     <select class="tb-sel" id="subtype-filter">
       <option value="all">All</option>
@@ -266,6 +274,10 @@ canvas#gc { position: absolute; top: 0; left: 0; touch-action: none; }
         <div style="border-top: 0.5px solid var(--border); margin: 4px 0;"></div>
         <div class="leg-row"><div class="leg-line" style="background:var(--attn-hi)"></div>high attention</div>
         <div class="leg-row"><div class="leg-line" style="background:var(--attn-lo)"></div>low attention</div>
+        <div style="border-top: 0.5px solid var(--border); margin: 4px 0;"></div>
+        <div class="leg-row"><div class="leg-line" style="background:#EF9F27;opacity:1"></div>hop 1</div>
+        <div class="leg-row"><div class="leg-line" style="background:#EF9F27;opacity:0.55"></div>hop 2</div>
+        <div class="leg-row"><div class="leg-line" style="background:#EF9F27;opacity:0.28"></div>hop 3</div>
       </div>
       <div id="zoom-ctrl">
         <button class="zoom-btn" onclick="zoom(1.25)">+</button>
@@ -460,10 +472,45 @@ let STATE = {
   layer: 1,
   headKey: 'mean',
   subtypeFilter: 'all',
+  hopDepth: 1,      // how many hops to expand from the selected node
 
   // viewport
   tx: 0, ty: 0, scale: 1,
 };
+
+// BFS from a source node up to `maxHops` hops.
+// Returns a Map: nodeId → hop distance (0 = the selected node itself).
+function bfsNeighbors(sourceId, maxHops) {
+  const edges = filteredEdges();
+  // build undirected adjacency list so BFS goes both ways
+  const adj = {};
+  STATE.nodes.forEach(n => { adj[n.id] = []; });
+  edges.forEach(e => {
+    if (adj[e.source]) adj[e.source].push(e.target);
+    if (adj[e.target]) adj[e.target].push(e.source);
+  });
+
+  const dist = new Map();
+  dist.set(sourceId, 0);
+  const queue = [sourceId];
+  while (queue.length) {
+    const cur = queue.shift();
+    const d = dist.get(cur);
+    if (d >= maxHops) continue;
+    (adj[cur] || []).forEach(nb => {
+      if (!dist.has(nb)) { dist.set(nb, d + 1); queue.push(nb); }
+    });
+  }
+  return dist;   // Map<nodeId, distance>
+}
+
+// Returns the subset of edges where BOTH endpoints are within the hop subgraph,
+// annotated with the minimum distance of either endpoint.
+function getHopEdges(distMap) {
+  return filteredEdges()
+    .filter(e => distMap.has(e.source) && distMap.has(e.target))
+    .map(e => ({ ...e, hopDist: Math.max(distMap.get(e.source), distMap.get(e.target)) }));
+}
 
 function getAttnKey() {
   return STATE.headKey === 'mean' ? 'mean_attention' : `head_${STATE.headKey}_attention`;
@@ -559,6 +606,18 @@ function buildApp() {
     const o = document.createElement('option'); o.value = h; o.textContent = 'Head ' + h; hs.appendChild(o);
   }
   hs.onchange = () => { STATE.headKey = hs.value; redraw(); updatePanel(); };
+
+  // hop depth buttons
+  document.querySelectorAll('#hop-ctrl .seg-btn').forEach(btn => {
+    btn.classList.toggle('active', +btn.dataset.hop === STATE.hopDepth);
+    btn.onclick = () => {
+      STATE.hopDepth = +btn.dataset.hop;
+      document.querySelectorAll('#hop-ctrl .seg-btn').forEach(x => x.classList.remove('active'));
+      btn.classList.add('active');
+      redraw();
+      updatePanel();
+    };
+  });
 
   // stats
   document.getElementById('stat-nodes').textContent = STATE.nodes.length + ' nodes';
@@ -763,37 +822,66 @@ function redraw() {
   ctx2d.translate(STATE.tx, STATE.ty);
   ctx2d.scale(STATE.scale, STATE.scale);
 
-  const sel = STATE.selectedNode;
-  const attnMap = getLayerEdgeAttn(STATE.layer);
-  const edges = filteredEdges();
-  const nodeMap = {};
+  const sel      = STATE.selectedNode;
+  const attnMap  = getLayerEdgeAttn(STATE.layer);
+  const nodeMap  = {};
   STATE.nodes.forEach(n => nodeMap[n.id] = n);
 
-  const selNeighbors = new Set();
-  if (sel) edges.forEach(e => { if (e.source===sel.id||e.target===sel.id) { selNeighbors.add(e.source); selNeighbors.add(e.target); } });
+  // ── compute multi-hop neighbourhood ──────────────────────────────────
+  // distMap: nodeId → hop distance from selected node (undefined if not in subgraph)
+  let distMap = new Map();
+  let hopEdges = [];
+  if (sel) {
+    distMap  = bfsNeighbors(sel.id, STATE.hopDepth);
+    hopEdges = getHopEdges(distMap);
+  }
 
-  // draw edges
-  edges.forEach(e => {
+  // opacity and line-width scale per hop distance
+  // hop 1 = full, hop 2 = 55%, hop 3 = 28%
+  const hopAlpha = [1, 1, 0.55, 0.28];
+  const hopWidth = [1, 1, 0.7,  0.45];
+
+  // ── draw edges ────────────────────────────────────────────────────────
+  const allEdges = filteredEdges();
+  allEdges.forEach(e => {
     const ns = nodeMap[e.source], nt = nodeMap[e.target];
     if (!ns || !nt) return;
-    const key = `${e.source}→${e.target}`;
-    const attn = attnMap[key] ?? 0;
-    const isActive = sel ? (e.source===sel.id || e.target===sel.id) : true;
+
+    const key      = `${e.source}→${e.target}`;
+    const attn     = attnMap[key] ?? 0;
+    const hopEntry = sel ? hopEdges.find(h => h.source===e.source && h.target===e.target) : null;
+    const inHop    = hopEntry !== null && hopEntry !== undefined;
+    const hopDist  = inHop ? hopEntry.hopDist : 0;
 
     ctx2d.save();
-    ctx2d.globalAlpha = isActive ? 0.9 : (sel ? 0.06 : 0.45);
-    ctx2d.strokeStyle = isActive ? attnColor(attn, dark) : (dark?'#3a3a36':'#d3d1c7');
-    ctx2d.lineWidth   = isActive ? 1 + attn * 5 : 1;
-    if (!isActive) ctx2d.setLineDash([4,5]);
 
-    // draw arrow line
+    if (!sel) {
+      // no selection: show full graph lightly
+      ctx2d.globalAlpha = 0.45;
+      ctx2d.strokeStyle = dark ? '#3a3a36' : '#d3d1c7';
+      ctx2d.lineWidth   = 1;
+      ctx2d.setLineDash([4,5]);
+    } else if (inHop) {
+      // inside the hop subgraph: colour by attention, fade by distance
+      ctx2d.globalAlpha = hopAlpha[Math.min(hopDist, 3)];
+      ctx2d.strokeStyle = attnColor(attn, dark);
+      ctx2d.lineWidth   = (1 + attn * 5) * hopWidth[Math.min(hopDist, 3)];
+    } else {
+      // outside subgraph: strongly dimmed
+      ctx2d.globalAlpha = 0.05;
+      ctx2d.strokeStyle = dark ? '#3a3a36' : '#d3d1c7';
+      ctx2d.lineWidth   = 1;
+      ctx2d.setLineDash([4,5]);
+    }
+
     const angle = Math.atan2(nt.y-ns.y, nt.x-ns.x);
     const ex = nt.x - Math.cos(angle)*nt.r;
     const ey = nt.y - Math.sin(angle)*nt.r;
     ctx2d.beginPath(); ctx2d.moveTo(ns.x, ns.y); ctx2d.lineTo(ex, ey); ctx2d.stroke();
 
-    // arrowhead
-    if (isActive) {
+    // arrowhead for hop-subgraph edges
+    if (sel && inHop) {
+      ctx2d.setLineDash([]);
       ctx2d.fillStyle = ctx2d.strokeStyle;
       ctx2d.beginPath();
       ctx2d.moveTo(ex, ey);
@@ -802,10 +890,10 @@ function redraw() {
       ctx2d.closePath(); ctx2d.fill();
     }
 
-    // attention label
-    if (isActive && sel && attn > 0.04) {
-      const mx=(ns.x+ex)/2, my=(ns.y+ey)/2;
+    // attention label: only on hop-1 edges to avoid clutter
+    if (sel && inHop && hopDist <= 1 && attn > 0.04) {
       ctx2d.setLineDash([]);
+      const mx=(ns.x+ex)/2, my=(ns.y+ey)/2;
       ctx2d.font = '10px system-ui';
       ctx2d.fillStyle = dark ? '#EF9F27' : '#854F0B';
       ctx2d.textAlign = 'center'; ctx2d.textBaseline = 'middle';
@@ -814,22 +902,33 @@ function redraw() {
     ctx2d.restore();
   });
 
-  // draw nodes
+  // ── draw nodes ────────────────────────────────────────────────────────
   STATE.nodes.forEach(n => {
-    const isSel = sel && n.id === sel.id;
-    const isNeighbor = selNeighbors.has(n.id);
-    const dimmed = sel && !isSel && !isNeighbor;
-    const r = isSel ? n.r + 4 : n.r;
+    const isSel      = sel && n.id === sel.id;
+    const nodeDist   = distMap.get(n.id);           // undefined if outside subgraph
+    const inSubgraph = nodeDist !== undefined;
+    const dimmed     = sel && !inSubgraph;
+    const r          = isSel ? n.r + 4 : n.r;
 
     ctx2d.save();
-    ctx2d.globalAlpha = dimmed ? 0.2 : 1;
+    // fade nodes by their hop distance (hop-0 = selected = full, hop-2/3 = progressively faint)
+    ctx2d.globalAlpha = dimmed ? 0.1 : (inSubgraph ? hopAlpha[Math.min(nodeDist, 3)] : 1);
 
     if (isSel) {
       ctx2d.beginPath(); ctx2d.arc(n.x, n.y, r+6, 0, Math.PI*2);
       ctx2d.fillStyle = 'rgba(127,119,221,0.15)'; ctx2d.fill();
     }
 
-    // node shape: functional_unit = rounded square, else circle
+    // hop-ring: draw a thin ring around hop-2/3 nodes to make depth visible
+    if (inSubgraph && nodeDist >= 2 && !isSel) {
+      ctx2d.beginPath(); ctx2d.arc(n.x, n.y, r+4, 0, Math.PI*2);
+      ctx2d.strokeStyle = dark ? '#EF9F2755' : '#EF9F2766';
+      ctx2d.lineWidth = 1;
+      ctx2d.setLineDash([3,3]);
+      ctx2d.stroke();
+      ctx2d.setLineDash([]);
+    }
+
     ctx2d.fillStyle = nodeColor(n.type, false);
     ctx2d.strokeStyle = dark ? '#1a1a18' : '#ffffff';
     ctx2d.lineWidth = 2;
@@ -841,14 +940,26 @@ function redraw() {
       ctx2d.fill(); ctx2d.stroke();
     }
 
-    // label inside
+    // hop-distance badge on multi-hop nodes (hop ≥ 2)
+    if (inSubgraph && nodeDist >= 2 && !isSel) {
+      const bx = n.x + r - 2, by = n.y - r + 2;
+      ctx2d.beginPath(); ctx2d.arc(bx, by, 7, 0, Math.PI*2);
+      ctx2d.fillStyle = dark ? '#2c2c2a' : '#ffffff';
+      ctx2d.fill();
+      ctx2d.strokeStyle = '#EF9F27'; ctx2d.lineWidth = 1;
+      ctx2d.stroke();
+      ctx2d.font = 'bold 9px system-ui';
+      ctx2d.fillStyle = '#EF9F27';
+      ctx2d.textAlign = 'center'; ctx2d.textBaseline = 'middle';
+      ctx2d.fillText(nodeDist, bx, by);
+    }
+
     ctx2d.font = `${isSel?'500 ':''}11px system-ui`;
     ctx2d.fillStyle = '#ffffff';
     ctx2d.textAlign = 'center'; ctx2d.textBaseline = 'middle';
     const short = n.id.length > 8 ? n.id.slice(0,7)+'…' : n.id;
     ctx2d.fillText(short, n.x, n.y);
 
-    // label below
     ctx2d.font = '11px system-ui';
     ctx2d.fillStyle = isSel ? (dark?'#fff':'#1a1a18') : (dark?'#b4b2a9':'#5f5e5a');
     ctx2d.fillText(n.id, n.x, n.y + r + 12);
@@ -934,14 +1045,18 @@ function updatePanel() {
     <div class="ni-row"><span class="ni-label">Embedding L2</span><span class="ni-val">${sel.l2.toFixed(4)}</span></div>
     <div class="ni-row"><span class="ni-label">Out-degree</span><span class="ni-val">${outEdges.length}</span></div>
     <div class="ni-row"><span class="ni-label">In-degree</span><span class="ni-val">${inEdges.length}</span></div>
+    <div class="ni-row"><span class="ni-label">Hops shown</span><span class="ni-val">${STATE.hopDepth}</span></div>
   </div>`;
 
-  // outgoing attention
+  // build hop-distance map for panel grouping
+  const distMap = bfsNeighbors(sel.id, STATE.hopDepth);
+
+  // ── outgoing attention ────────────────────────────────────────────────
   if (outEdges.length) {
     const sorted = [...outEdges].sort((a,b) => (attnMap[`${b.source}→${b.target}`]||0) - (attnMap[`${a.source}→${a.target}`]||0));
     const maxA = Math.max(...sorted.map(e => attnMap[`${e.source}→${e.target}`]||0), 0.001);
 
-    html += `<div class="attn-section-label">Outgoing attention (layer ${STATE.layer})</div>`;
+    html += `<div class="attn-section-label">Outgoing attention — hop 1 (layer ${STATE.layer})</div>`;
     sorted.forEach(e => {
       const a = attnMap[`${e.source}→${e.target}`] || 0;
       const tgt = STATE.nodes.find(n => n.id === e.target);
@@ -958,7 +1073,6 @@ function updatePanel() {
         <span class="attn-pct">${pct}%</span>
       </div>`;
 
-      // per-head breakdown
       if (headRow && headCols.length > 1) {
         html += `<div class="head-grid">`;
         headCols.forEach((hk, hi) => {
@@ -970,13 +1084,12 @@ function updatePanel() {
     });
   }
 
-  // incoming attention
+  // ── incoming attention (hop 1) ────────────────────────────────────────
   if (inEdges.length) {
-    const inAttnRows = STATE.attnRaw.filter(r => +r.layer === STATE.layer && r.target === sel.id);
     const sorted = [...inEdges].sort((a,b) => (attnMap[`${b.source}→${b.target}`]||0) - (attnMap[`${a.source}→${a.target}`]||0));
     const maxA = Math.max(...sorted.map(e => attnMap[`${e.source}→${e.target}`]||0), 0.001);
 
-    html += `<div class="attn-section-label" style="margin-top:6px">Incoming attention (layer ${STATE.layer})</div>`;
+    html += `<div class="attn-section-label" style="margin-top:6px">Incoming attention — hop 1 (layer ${STATE.layer})</div>`;
     sorted.forEach(e => {
       const a = attnMap[`${e.source}→${e.target}`] || 0;
       const src = STATE.nodes.find(n => n.id === e.source);
@@ -985,11 +1098,37 @@ function updatePanel() {
       const barPct = (a/maxA*100).toFixed(1);
       const barCol = lerpHex('#D3D1C7', '#EF9F27', a/maxA);
 
-      html += `<div class="attn-row">
+      html += `<div class="attn-row" onclick="highlightEdge('${e.source}','${e.target}')">
         <div class="attn-dot" style="background:${col}"></div>
         <span class="attn-node-name" title="${e.source}">${e.source}</span>
         <div class="attn-bar-wrap"><div class="attn-bar-fill" style="width:${barPct}%;background:${barCol}"></div></div>
         <span class="attn-pct">${pct}%</span>
+      </div>`;
+    });
+  }
+
+  // ── hop-2 and hop-3 neighbour summary ────────────────────────────────
+  for (let hop = 2; hop <= STATE.hopDepth; hop++) {
+    const hopNodes = [...distMap.entries()]
+      .filter(([id, d]) => d === hop && id !== sel.id)
+      .map(([id]) => STATE.nodes.find(n => n.id === id))
+      .filter(Boolean);
+
+    if (!hopNodes.length) continue;
+
+    html += `<div class="attn-section-label" style="margin-top:6px">Reachable at hop ${hop}</div>`;
+    hopNodes.forEach(n => {
+      const col = typeColors[n.type] || 'var(--gray)';
+      // sum all attention on paths leading to this node from the subgraph
+      const pathAttn = filteredEdges()
+        .filter(e => e.target === n.id && distMap.has(e.source) && distMap.get(e.source) < hop)
+        .reduce((s, e) => s + (attnMap[`${e.source}→${e.target}`] || 0), 0);
+
+      html += `<div class="attn-row" onclick="highlightEdge('${sel.id}','${n.id}')">
+        <div class="attn-dot" style="background:${col};opacity:0.6"></div>
+        <span class="attn-node-name" title="${n.id}">${n.id}</span>
+        <span style="font-size:11px;color:var(--text3);margin-left:auto">${n.type.replace('_',' ')}</span>
+        <span class="attn-pct" style="color:var(--text3)">${pathAttn > 0 ? (pathAttn*100).toFixed(1)+'%' : '—'}</span>
       </div>`;
     });
   }
