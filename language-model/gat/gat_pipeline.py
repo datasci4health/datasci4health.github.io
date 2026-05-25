@@ -307,7 +307,7 @@ def build_feature_matrix(nodes, gene_seq, mir_seq, kmer_k, encoder_mode):
 # Graph construction
 # ─────────────────────────────────────────────────────────────────────────────
 
-def build_edge_index(edges, node_idx):
+def build_edge_index(edges, node_idx, add_self_loops=True):
     src_list, dst_list, valid = [], [], []
     skipped = 0
     for _, row in edges.iterrows():
@@ -319,6 +319,16 @@ def build_edge_index(edges, node_idx):
         ed["source"] = s
         ed["target"] = t
         valid.append(ed)
+    if add_self_loops:
+        for nid, idx in node_idx.items():
+            src_list.append(idx)
+            dst_list.append(idx)
+            valid.append({
+                "source": nid,
+                "target": nid,
+                "type": "self_loop",
+                "subtype": "self_loop",
+            })
     if skipped:
         print(f"  [warn] Skipped {skipped} edge(s) with unknown node IDs.")
     return torch.tensor([src_list, dst_list], dtype=torch.long), valid

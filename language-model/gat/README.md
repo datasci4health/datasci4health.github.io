@@ -37,3 +37,12 @@ python3 parse_mirwalk.py --input thca/mir-mimat-sequence_limma.csv --mir-col mim
 ~~~bash
 python3 gat_pipeline.py --nodes thca/nodes-microRNA-mRNA-type-expression.csv --edges thca/edges-microRNA-mRNA-relation.csv --gene-seq thca/nodes-gene-sequence.csv --mir-seq thca/nodes-mIR-sequence.csv --output-dir thca/gat/ --encoder proteinbert --num-layers 3
 ~~~
+
+## thca-mapk-only
+### Thyroid carcinoma (THCA) with miR (only genes of mapk pathway)
+* source: `networks/microRNA`
+  * `lima_pathway_only` variation, produced by `thca-mirna-mrna_limma_pathway(filter-pathway).ows`
+
+~~~bash
+python3 gat_pipeline.py --nodes thca-mapk-only/nodes-microRNA-mRNA-type-expression.csv --edges thca-mapk-only/edges-microRNA-mRNA-relation.csv --gene-seq thca-mapk-only/nodes-gene-sequence.csv --mir-seq thca-mapk-only/nodes-mIR-sequence.csv --output-dir thca-mapk-only/gat/ --encoder proteinbert --num-layers 3
+~~~
