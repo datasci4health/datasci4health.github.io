@@ -1,5 +1,25 @@
 
 <style>
+:root {
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f4f6f8;
+  --color-border-primary: #178cba;
+  --color-border-secondary: #ced4da;
+  --color-border-tertiary: #e9ecef;
+  --color-text-primary: #212529;
+  --color-text-secondary: #495057;
+  --color-text-tertiary: #868e96;
+  --color-text-info: #178cba;
+  --border-radius-md: 6px;
+  --border-radius-lg: 10px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 1.5rem;
+}
 #drop-zone {
   border: 1.5px dashed var(--color-border-secondary);
   border-radius: var(--border-radius-lg);
@@ -13,7 +33,9 @@
 #status { font-size: 13px; color: var(--color-text-secondary); min-height: 20px; padding: 0.25rem 0; }
 #cy { width:100%; height:460px; border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-lg); background:var(--color-background-secondary); display:none; }
 #legend { display:none; gap:12px; flex-wrap:wrap; padding:0.5rem 0; font-size:12px; color:var(--color-text-secondary); }
-.leg { display:flex; align-items:center; gap:5px; }
+.leg { display:flex; align-items:center; gap:5px; cursor:pointer; user-select:none; transition:opacity 0.2s; }
+.leg:hover { opacity: 0.8; }
+.leg.disabled { opacity: 0.4; text-decoration: line-through; }
 .leg-dot { width:11px; height:11px; border-radius:50%; flex-shrink:0; }
 #node-info { background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-md); padding:0.75rem 1rem; font-size:13px; color:var(--color-text-secondary); margin-top:0.5rem; display:none; word-break:break-all; }
 #stats { display:none; gap:12px; margin:0.5rem 0; }
@@ -39,11 +61,11 @@
 </div>
 
 <div id="legend">
-  <div class="leg"><div class="leg-dot" style="background:#178CBA"></div>Protein</div>
-  <div class="leg"><div class="leg-dot" style="background:#E67E22"></div>Literal</div>
-  <div class="leg"><div class="leg-dot" style="background:#27AE60"></div>Gene / organism</div>
-  <div class="leg"><div class="leg-dot" style="background:#8E44AD"></div>Ontology</div>
-  <div class="leg"><div class="leg-dot" style="background:#95A5A6"></div>Other</div>
+  <div class="leg" data-color="#178CBA"><div class="leg-dot" style="background:#178CBA"></div>Protein</div>
+  <div class="leg" data-color="#E67E22"><div class="leg-dot" style="background:#E67E22"></div>Literal</div>
+  <div class="leg" data-color="#27AE60"><div class="leg-dot" style="background:#27AE60"></div>Gene / organism</div>
+  <div class="leg" data-color="#8E44AD"><div class="leg-dot" style="background:#8E44AD"></div>Ontology</div>
+  <div class="leg disabled" data-color="#95A5A6"><div class="leg-dot" style="background:#95A5A6"></div>Other</div>
 </div>
 
 <div id="cy"></div>
@@ -52,6 +74,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
 <script>
 let cy;
+const hiddenColors = new Set(['#95A5A6']);
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.leg').forEach(el => {
+    el.addEventListener('click', () => {
+      const color = el.getAttribute('data-color');
+      if (hiddenColors.has(color)) {
+        hiddenColors.delete(color);
+        el.classList.remove('disabled');
+      } else {
+        hiddenColors.add(color);
+        el.classList.add('disabled');
+      }
+      if (cy) {
+        cy.batch(() => {
+          cy.nodes().forEach(n => {
+            if (hiddenColors.has(n.data('color'))) {
+              n.addClass('hidden');
+            } else {
+              n.removeClass('hidden');
+            }
+          });
+        });
+      }
+    });
+  });
+});
 
 const dz = document.getElementById('drop-zone');
 dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('over'); });
@@ -145,17 +194,31 @@ function parseXMLRDF(text, triples) {
   const parser = new DOMParser();
   const doc = parser.parseFromString(text, 'application/xml');
   if (doc.querySelector('parsererror')) throw new Error('XML parse error');
+
+  const root = doc.documentElement;
+  const xmlBase = root.getAttribute('xml:base') || root.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'base') || '';
+
+  function resolveURI(uri) {
+    if (!uri || uri.startsWith('http') || uri.startsWith('urn:')) return uri;
+    if (xmlBase) {
+      try { return new URL(uri, xmlBase).href; } catch(e) {}
+    }
+    return uri;
+  }
+
   const descs = doc.querySelectorAll('Description, *[*|about], *[*|ID]');
   descs.forEach(desc => {
-    const s = desc.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','about')
+    let s = desc.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','about')
             || desc.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','ID')
             || desc.getAttribute('rdf:about') || desc.getAttribute('rdf:ID') || '';
     if (!s) return;
+    s = resolveURI(s);
+
     Array.from(desc.children).forEach(child => {
       const p = child.namespaceURI ? child.namespaceURI + child.localName : child.tagName;
       const res = child.getAttributeNS('http://www.w3.org/1999/02/22-rdf-syntax-ns#','resource') || child.getAttribute('rdf:resource');
       if (res) {
-        triples.push({ s, p, o: res, oIsLit: false });
+        triples.push({ s, p, o: resolveURI(res), oIsLit: false });
       } else if (child.textContent.trim()) {
         triples.push({ s, p, o: child.textContent.trim(), oIsLit: true });
       }
@@ -199,7 +262,7 @@ function buildGraph(triples) {
     addNode(t.s, false);
     const oId = t.oIsLit ? `__lit_${i}` : t.o;
     addNode(oId, t.oIsLit);
-    edges.push({ source: t.s, target: oId, label: edgeLabel(t.p), fullProp: t.p, fullVal: t.o });
+    edges.push({ id: 'e'+i, source: t.s, target: oId, label: edgeLabel(t.p), fullProp: t.p, fullVal: t.o });
   });
 
   const nodeCount = Object.keys(nodeMap).length;
@@ -212,15 +275,21 @@ function buildGraph(triples) {
   document.getElementById('legend').style.display = 'flex';
   document.getElementById('cy').style.display = 'block';
 
-  const elements = [
-    ...Object.values(nodeMap).map(n => ({ data: { id: n.id, label: n.label, color: n.color, fullUri: n.id, isLit: n.isLit } })),
-    ...edges.map((e,i) => ({ data: { id:'e'+i, source: e.source, target: e.target, label: e.label, fullProp: e.fullProp, fullVal: e.fullVal } }))
-  ];
+  // Determine central node (highest degree, ignoring literals as center)
+  const degreeMap = {};
+  edges.forEach(e => {
+    degreeMap[e.source] = (degreeMap[e.source] || 0) + 1;
+    if (!nodeMap[e.target].isLit) {
+      degreeMap[e.target] = (degreeMap[e.target] || 0) + 1;
+    }
+  });
+  
+  let centralNodeId = Object.keys(degreeMap).reduce((a, b) => (degreeMap[a] || 0) > (degreeMap[b] || 0) ? a : b, Object.keys(nodeMap)[0]);
 
   if (cy) cy.destroy();
   cy = cytoscape({
     container: document.getElementById('cy'),
-    elements,
+    elements: [],
     style: [
       {
         selector: 'node',
@@ -262,27 +331,101 @@ function buildGraph(triples) {
           'line-color': '#178CBA',
           'target-arrow-color': '#178CBA'
         }
+      },
+      {
+        selector: '.hidden',
+        style: {
+          'display': 'none'
+        }
       }
     ],
     layout: {
       name: 'cose',
-      animate: false,
-      idealEdgeLength: 90,
-      nodeRepulsion: 8000,
-      gravity: 0.3,
-      numIter: 1200
+      animate: false
     }
   });
 
+  const visibleNodes = new Set();
+  const visibleEdges = new Set();
+
+  function expandNode(nodeId) {
+    const newElements = [];
+    
+    if (!visibleNodes.has(nodeId)) {
+      const n = nodeMap[nodeId];
+      if (n) {
+        visibleNodes.add(nodeId);
+        newElements.push({ group: 'nodes', data: { id: n.id, label: n.label, color: n.color, fullUri: n.id, isLit: n.isLit }, classes: hiddenColors.has(n.color) ? 'hidden' : '' });
+      }
+    }
+
+    edges.forEach(e => {
+      if (e.source === nodeId || e.target === nodeId) {
+        if (!visibleEdges.has(e.id)) {
+          visibleEdges.add(e.id);
+          
+          [e.source, e.target].forEach(id => {
+            if (!visibleNodes.has(id)) {
+              visibleNodes.add(id);
+              const n = nodeMap[id];
+              newElements.push({ group: 'nodes', data: { id: n.id, label: n.label, color: n.color, fullUri: n.id, isLit: n.isLit }, classes: hiddenColors.has(n.color) ? 'hidden' : '' });
+            }
+          });
+
+          newElements.push({ group: 'edges', data: { id: e.id, source: e.source, target: e.target, label: e.label, fullProp: e.fullProp, fullVal: e.fullVal } });
+        }
+      }
+    });
+
+    if (newElements.length > 0) {
+      const added = cy.add(newElements);
+      const sourceNode = cy.getElementById(nodeId);
+      if (sourceNode.length > 0) {
+        const p = sourceNode.position();
+        added.nodes().forEach(n => {
+          if (n.id() !== nodeId) {
+            n.position({ x: p.x + (Math.random() - 0.5) * 20, y: p.y + (Math.random() - 0.5) * 20 });
+          }
+        });
+      }
+      cy.layout({
+        name: 'cose',
+        animate: true,
+        randomize: false,
+        idealEdgeLength: 90,
+        nodeRepulsion: 8000,
+        gravity: 0.3,
+        numIter: 1000
+      }).run();
+    }
+  }
+
+  let doubleClickDelayMs = 300;
+  let previousTapStamp = 0;
+  let previousTapNode = null;
+
   cy.on('tap', 'node', evt => {
-    const d = evt.target.data();
-    const info = document.getElementById('node-info');
-    info.style.display = 'block';
-    info.innerHTML = d.isLit
-      ? `<strong style="color:var(--color-text-primary)">Literal value</strong><br><span>${d.fullUri}</span>`
-      : `<strong style="color:var(--color-text-primary)">${d.label}</strong><br>
-         <span style="font-size:12px">${d.fullUri}</span><br>
-         ${!d.fullUri.startsWith('__') ? `<a href="${d.fullUri}" target="_blank" style="color:var(--color-text-info);font-size:12px">Open URI ↗</a>` : ''}`;
+    const currentStamp = evt.timeStamp || Date.now();
+    const currentNode = evt.target;
+    
+    if (previousTapNode === currentNode && currentStamp - previousTapStamp < doubleClickDelayMs) {
+      expandNode(currentNode.id());
+      previousTapStamp = 0;
+      previousTapNode = null;
+    } else {
+      previousTapStamp = currentStamp;
+      previousTapNode = currentNode;
+      
+      const d = currentNode.data();
+      const info = document.getElementById('node-info');
+      info.style.display = 'block';
+      info.innerHTML = d.isLit
+        ? `<strong style="color:var(--color-text-primary)">Literal value</strong><br><span>${d.fullUri}</span>`
+        : `<strong style="color:var(--color-text-primary)">${d.label}</strong><br>
+           <span style="font-size:12px">${d.fullUri}</span><br>
+           ${!d.fullUri.startsWith('__') ? `<a href="${d.fullUri}" target="_blank" style="color:var(--color-text-info);font-size:12px">Open URI ↗</a>` : ''}
+           <br><span style="font-size:11px;color:var(--color-text-tertiary);display:block;margin-top:4px;">Double tap to expand neighbors</span>`;
+    }
   });
 
   cy.on('tap', 'edge', evt => {
@@ -294,6 +437,8 @@ function buildGraph(triples) {
       <strong style="color:var(--color-text-primary)">Value:</strong> <span style="font-size:12px">${d.fullVal}</span>`;
   });
 
-  setStatus(`Parsed ${triples.length} triples → ${nodeCount} nodes, ${edgeCount} edges. Click any node or edge for details.`);
+  expandNode(centralNodeId);
+
+  setStatus(`Loaded progressive view starting from central node. Double-click any node to expand it. (Total: ${nodeCount} nodes, ${edgeCount} edges)`);
 }
 </script>

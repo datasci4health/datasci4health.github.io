@@ -78,13 +78,13 @@
 		<node id="74" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(3248.142857142857, 1030.2857142857142)" />
 		<node id="75" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Formula" position="(3388.642857142856, 1148.7857142857142)" />
 		<node id="76" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (2)" position="(3504.642857142856, 1020.7857142857142)" />
-		<node id="77" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter mRNAs (genes)" position="(3692.1111111111118, 445.55555555555566)" />
-		<node id="78" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only id column" position="(3806.5555555555557, 443.3333333333333)" />
-		<node id="79" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save for Ensembl sequencing and GAT" position="(3928.777777777778, 438.8888888888889)" />
-		<node id="80" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="miR MIMAT id and sequence" position="(3116.8333333333326, 1387.5000000000002)" />
+		<node id="77" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter mRNAs (genes)" position="(3631.000000000001, 712.2222222222224)" />
+		<node id="78" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only id column" position="(3745.4444444444443, 710.0)" />
+		<node id="79" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save for Ensembl sequencing and GAT" position="(3867.666666666667, 705.5555555555557)" />
+		<node id="80" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="miR MIMAT id and sequence" position="(3612.0380116959063, 862.6461988304097)" />
 		<node id="81" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(417.6666666666667, 1141.6666666666667)" />
-		<node id="82" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Adjust MIMAT column name" position="(3238.5, 1386.6666666666667)" />
-		<node id="83" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="MIMAT and sequence for GAT" position="(3350.1666666666665, 1385.0)" />
+		<node id="82" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Adjust MIMAT column name" position="(3754.75730994152, 860.233918128655)" />
+		<node id="83" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="MIMAT and sequence for GAT" position="(3879.991228070176, 856.3450292397658)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
@@ -182,11 +182,14 @@
 		<text id="1" type="text/markdown" rect="(1792.5757575757573, 538.2121212121211, 150.0, 49.0)" font-family="Ubuntu" font-size="16"># miRWalk</text>
 		<text id="2" type="text/markdown" rect="(3627.0, 1246.75, 113.75, 49.0)" font-family="Ubuntu" font-size="16"># Edges</text>
 		<arrow id="3" start="(3664.25, 1238.5)" end="(3665.5, 1092.0)" fill="#C1272D" />
-		<text id="4" type="text/markdown" rect="(3709.0, 854.0, 150.0, 49.0)" font-family="Ubuntu" font-size="16"># Nodes</text>
-		<arrow id="5" start="(3759.0, 848.5)" end="(3764.0, 668.5)" fill="#C1272D" />
+		<text id="4" type="text/markdown" rect="(3956.777777777778, 575.1111111111112, 150.0, 49.0)" font-family="Ubuntu" font-size="16"># Nodes</text>
+		<arrow id="5" start="(3943.444444444445, 597.3888888888889)" end="(3810.6666666666665, 592.9444444444443)" fill="#C1272D" />
 		<text id="6" type="text/markdown" rect="(2929.160839160839, 1487.0909090909083, 187.27272727272793, 46.0)" font-family="Ubuntu" font-size="16"># Projections</text>
 		<arrow id="7" start="(3123.846153846154, 1506.153846153846)" end="(3378.461538461538, 1452.3076923076922)" fill="#C1272D" />
 		<arrow id="8" start="(3120.769230769231, 1528.461538461538)" end="(3417.6923076923067, 1624.6153846153845)" fill="#C1272D" />
+		<text id="9" type="text/markdown" rect="(3997.7777777777774, 752.4444444444445, 82.22222222222172, 49.0)" font-family="Ubuntu" font-size="16"># GAT</text>
+		<arrow id="10" start="(3991.1111111111113, 772.2222222222223)" end="(3901.1111111111113, 703.3333333333334)" fill="#C1272D" />
+		<arrow id="11" start="(3980.0, 785.5555555555555)" end="(3904.444444444445, 853.3333333333334)" fill="#C1272D" />
 	</annotations>
 	<thumbnail />
 	<node_properties>
@@ -62977,7 +62980,7 @@ lChoE0sBhpRoFUsAhpRoF0sBhpRoFUsBhpRoGksBhpRoFUsChpRoHUsChpRoFUsDhpRoIEsDhpRo
 IksAhpSMBmR1cGxleJRLA4aUaCJLAYaUdUr+////hpRoB0sBdWglfZQoaBNLAWgXSwFoGksBdWgq
 fZQoaCBLA2gdSwJoPEsDdXViZXUu
 </properties>
-		<properties node_id="79" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\xad\x00\x00\tA\x00\x00\x02e\x00\x00\x07\xc6\x00\x00\x01\xd2\x00\x00\tA\x00\x00\x02e\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\xd2\x00\x00\tA\x00\x00\x02e', 'stored_name': 'mrna-ensembl-sequencing.csv', 'stored_path': 'ensembl', '__version__': 3}</properties>
+		<properties node_id="79" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06\x04\x00\x00\x01\x88\x00\x00\x07\x7f\x00\x00\x02@\x00\x00\x06\x04\x00\x00\x01\xad\x00\x00\x07\x7f\x00\x00\x02@\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x06\x04\x00\x00\x01\xad\x00\x00\x07\x7f\x00\x00\x02@', 'stored_name': 'mrna-ensembl-sequencing.csv', 'stored_path': 'ensembl', '__version__': 3}</properties>
 		<properties node_id="80" format="pickle">gASVwwEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
 cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACMYAAAB/
 AAALHQAAA5EAAAjGAAAApAAACx0AAAORAAAAAAAAAAAHgAAACMYAAACkAAALHQAAA5GUjBJ1c2Vf
