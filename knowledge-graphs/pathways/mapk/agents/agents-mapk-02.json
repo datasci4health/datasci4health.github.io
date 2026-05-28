@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-05-28T11:59:46.173Z",
+  "userQuestion": "Consider the MAPK signaling pathway (path:hsa04010) from KEGG (https://www.kegg.jp/kegg-bin/show_pathway?hsa04010).",
+  "dataSources": [
+    {
+      "label": "Data1",
+      "content": "CSF1R\nEGFR\nEPHA2\nERBB2\nERBB3\nERBB4\nFGFR1\nFGFR3\nFGFR2\nFGFR4\nFLT1\nFLT3\nFLT4\nIGF1R\nINSR\nKDR\nKIT\nMET\nNGFR\nNTRK1\nNTRK2\nPDGFRA\nPDGFRB\nRET\nTEK\n",
+      "subscribeTopic": ""
+    }
+  ],
+  "agents": [
+    {
+      "title": "Specialist",
+      "prompt": "I have extracted from the pathway an entry representing a group of genes with the following internal KEGG symbols:\n{Symbols}\n\nAll these genes encode proteins that have the same role in an entry of the pathway, i.e., the resulting proteins can perform the same task in the same spot in a chain of the pathway proteins. Can you propose a generic symbol that represents these genes roles? This is a short symbol to be used to generically represent the group in the pathway illustration.",
+      "model": "MedAIBase/MedGemma1.5:4b",
+      "subscribeTopic": "START",
+      "publishTopic": "",
+      "showResult": true
+    }
+  ]
+}
