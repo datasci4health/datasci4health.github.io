@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<scheme version="2.0" title="Thyroid Cancer - miRNA study" description="">
+<scheme version="2.0" title="Thyroid Carcinoma (THCA) mRNA-miR network (Limma)" description="Departs from differentially expressed miR and adds mRNAs that are miR targets. Three networks are produced for CytoScape: miR-mRNA (bipartite), miR-miR (projection), and mRNA-mRNA (projection). Computes differential expression with the Limma R Package.">
 	<nodes>
 		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="microRNA Seq" position="(150.0, 153.0)" />
 		<node id="1" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Sum counts same region" position="(313.8173076923076, 151.51923076923072)" />

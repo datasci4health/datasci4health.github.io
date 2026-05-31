@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<scheme version="2.0" title="Thyroid Cancer - miRNA study" description="">
+<scheme version="2.0" title="Thyroid Carcinoma (THCA) mRNA-miR network (Limma) and MAPK pathway" description="Departs from differentially expressed miR and adds mRNAs that are miR targets. Three networks are produced for CytoScape: miR-mRNA (bipartite), miR-miR (projection), and mRNA-mRNA (projection). Computes differential expression with the Limma R Package.&#10;&#10;It integrates the miR-mRNA network that stems from the differential expression of miRs and their targets with one of the over-represented pathways, the MAP Kinase pathway. The network links target genes (mRNAs) of differentially expressed miRs with all MAPK genes (mRNAs), producing an overview of the action of miRs on the pathway, in addition to external articulations.&#10;&#10;Produces miR sequences and mRNA IDs for Ensembl to generate sequences. Both sequences feed embedding algorithms and Graph Attention Network (GAT) computation.">
 	<nodes>
 		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="microRNA Seq" position="(150.0, 153.0)" />
 		<node id="1" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Sum counts same region" position="(313.8173076923076, 151.51923076923072)" />
@@ -74,7 +74,7 @@
 		<node id="70" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only Symbol" position="(506.4523809523813, 1243.2142857142856)" />
 		<node id="71" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Rename to genesymbol (same of miRWalk)" position="(622.5476190476192, 1220.9523809523814)" />
 		<node id="72" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate" position="(762.5476190476193, 1068.095238095238)" />
-		<node id="73" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(2984.4285714285716, 1093.7142857142853)" />
+		<node id="73" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Remove internal id columns" position="(2984.4285714285716, 1093.7142857142853)" />
 		<node id="74" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(3248.142857142857, 1030.2857142857142)" />
 		<node id="75" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Formula" position="(3388.642857142856, 1148.7857142857142)" />
 		<node id="76" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (2)" position="(3504.642857142856, 1020.7857142857142)" />
@@ -13717,7 +13717,7 @@ c2NyaXB0b3JzlF2UKIwoT3JhbmdlLndpZGdldHMuZGF0YS5vd2ZlYXR1cmVjb25zdHJ1Y3RvcpSM
 EFN0cmluZ0Rlc2NyaXB0b3KUk5SMCVNhbXBsZVN1YpSMGkZlYXR1cmVfbmFtZVswOjEyXS5sb3dl
 cigplIiHlIGUaAeMDFR1bW9yWE5vcm1hbJSMG0ZlYXR1cmVfbmFtZVsxMzoxNV0ubG93ZXIoKZSI
 h5SBlGWMF2V4cHJlc3Npb25zX3dpdGhfdmFsdWVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB
-2dDLAAMAAAAAB8YAAAE4AAAMCwAAAugAAAfGAAABXQAADAsAAALoAAAAAAAAAAAHgAAAB8YAAAFd
+2dDLAAMAAAAAB8YAAAFdAAAMCwAAAugAAAfGAAABXQAADAsAAALoAAAAAAAAAAAHgAAAB8YAAAFd
 AAAMCwAAAuiUjAtfX3ZlcnNpb25fX5RLBIwQY29udGV4dF9zZXR0aW5nc5RdlHUu
 </properties>
 		<properties node_id="22" format="pickle">gASVAgABAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMB21lcmdp
@@ -62930,8 +62930,8 @@ lEsDjApmdWxsX2xhYmVslEsDdXViYXUu
 		<properties node_id="71" format="literal">{'_domain_change_hints': {('String', ('label', ())): [('Rename', ('genesymbol',))]}, '_merge_dialog_settings': {}, 'controlAreaVisible': True, 'output_table_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x04,\x00\x00\x00\xea\x00\x00\x07\x7f\x00\x00\x03o', '__version__': 4}</properties>
 		<properties node_id="72" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': True, 'ignore_names': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\x00\x00\x00\tz\x00\x00\x02\xe6', 'source_attr_name': 'source', 'source_column_role': 2, '__version__': 1}</properties>
 		<properties node_id="73" format="pickle">gASVNAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABSgAAAEg
-AAAHfwAABA0AAAUoAAABIAAAB38AAAQNAAAAAAAAAAAHgAAABSgAAAEgAAAHfwAABA2UjBJ1c2Vf
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAB8YAAAD7
+AAAKHQAABA0AAAfGAAABIAAACh0AAAQNAAAAAAAAAAAHgAAAB8YAAAEgAAAKHQAABA2UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
 YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
 bl9yb2xlX2hpbnRzlH2UKIwGc291cmNllEsDhpSMCWF2YWlsYWJsZZRLAIaUjAZ0YXJnZXSUSwOG
@@ -62967,20 +62967,21 @@ lEsDjAVsb2dGQ5RLAnV1YmgNKYGUfZQoaBB9lChoEl2UKGgUSwFLAF2UjARtUk5BlGF0lGFoCEsC
 dWgYfZQoaBRLAYwFbG9naWOUSwGMB3BhdGh3YXmUSwF1aB19lCiMAmlklEsDjAVsb2dGQ5RLAowG
 ZHVwbGV4lEsDdXViZXUu
 </properties>
-		<properties node_id="78" format="pickle">gASVfQIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAB8YAAAD7
+		<properties node_id="78" format="pickle">gASVugIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAB8YAAAEg
 AAAKHQAABA0AAAfGAAABIAAACh0AAAQNAAAAAAAAAAAHgAAAB8YAAAEgAAAKHQAABA2UjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVv
 cmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBFkb21h
 aW5fcm9sZV9oaW50c5R9lCiMBHR5cGWUSwGGlIwJYXZhaWxhYmxllEsAhpSMBWxvZ2ljlEsBhpRo
 FUsBhpSMB3BhdGh3YXmUSwGGlGgVSwKGlIwFbG9nRkOUSwKGlGgVSwOGlIwCaWSUSwOGlIwEbWV0
 YZRLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lCiMBHR5cGWUSwGMBWxvZ2ljlEsBjAdw
-YXRod2F5lEsBdYwFbWV0YXOUfZQojAJpZJRLA4wFbG9nRkOUSwJ1dWJoDCmBlH2UKGgPfZQoaBF9
-lChoE0sBhpRoFUsAhpRoF0sBhpRoFUsBhpRoGksBhpRoFUsChpRoHUsChpRoFUsDhpRoIEsDhpRo
-IksAhpSMBmR1cGxleJRLA4aUaCJLAYaUdUr+////hpRoB0sBdWglfZQoaBNLAWgXSwFoGksBdWgq
-fZQoaCBLA2gdSwJoPEsDdXViZXUu
+YXRod2F5lEsBdYwFbWV0YXOUfZQojAJpZJRLA4wFbG9nRkOUSwJ1dWJoDCmBlH2UKGgPfZQojBFk
+b21haW5fcm9sZV9oaW50c5R9lCiMBHR5cGWUSwGGlIwJYXZhaWxhYmxllEsAhpSMBWxvZ2ljlEsB
+hpRoNUsBhpSMB3BhdGh3YXmUSwGGlGg1SwKGlIwFbG9nRkOUSwKGlGg1SwOGlIwCaWSUSwOGlIwE
+bWV0YZRLAIaUjAZkdXBsZXiUSwOGlGhCSwGGlHVK/v///4aUaAdLAXVoJX2UKGgzSwFoN0sBaDpL
+AXVoKn2UKGhASwNoPUsCaERLA3V1YmV1Lg==
 </properties>
-		<properties node_id="79" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06\x04\x00\x00\x01\x88\x00\x00\x07\x7f\x00\x00\x02@\x00\x00\x06\x04\x00\x00\x01\xad\x00\x00\x07\x7f\x00\x00\x02@\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x06\x04\x00\x00\x01\xad\x00\x00\x07\x7f\x00\x00\x02@', 'stored_name': 'mrna-ensembl-sequencing.csv', 'stored_path': 'ensembl', '__version__': 3}</properties>
+		<properties node_id="79" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xc6\x00\x00\x01\x88\x00\x00\tA\x00\x00\x02@\x00\x00\x07\xc6\x00\x00\x01\xad\x00\x00\tA\x00\x00\x02@\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x07\xc6\x00\x00\x01\xad\x00\x00\tA\x00\x00\x02@', 'stored_name': 'mrna-ensembl-sequencing.csv', 'stored_path': 'ensembl', '__version__': 3}</properties>
 		<properties node_id="80" format="pickle">gASVwwEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
 cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACMYAAAB/
 AAALHQAAA5EAAAjGAAAApAAACx0AAAORAAAAAAAAAAAHgAAACMYAAACkAAALHQAAA5GUjBJ1c2Vf
