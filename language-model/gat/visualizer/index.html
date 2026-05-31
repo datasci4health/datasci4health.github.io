@@ -457,6 +457,171 @@ function forceLayout(nodes, edges, W, H, iters=200) {
   }
 }
 
+function isFunctionalUnit(node) {
+  return node.type === 'functional_unit' || String(node.id).startsWith('fu:');
+}
+
+function dagFunctionalLayout(nodes, edges, W, H) {
+  const fuNodes = nodes.filter(isFunctionalUnit);
+  if (!fuNodes.length) {
+    forceLayout(nodes, edges, W, H, 250);
+    return;
+  }
+
+  const nodeMap = {};
+  nodes.forEach(n => { nodeMap[n.id] = n; });
+
+  const fuIds = new Set(fuNodes.map(n => n.id));
+  const fuAdj = {};
+  const fuIn = {};
+  fuNodes.forEach(n => { fuAdj[n.id] = []; fuIn[n.id] = 0; });
+
+  edges.forEach(e => {
+    if (!fuIds.has(e.source) || !fuIds.has(e.target)) return;
+    fuAdj[e.source].push(e.target);
+    fuIn[e.target] += 1;
+  });
+
+  const order = [];
+  const queue = fuNodes
+    .filter(n => fuIn[n.id] === 0)
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .map(n => n.id);
+  const inWork = { ...fuIn };
+
+  while (queue.length) {
+    const id = queue.shift();
+    order.push(id);
+    fuAdj[id].forEach(next => {
+      inWork[next] -= 1;
+      if (inWork[next] === 0) {
+        queue.push(next);
+        queue.sort((a, b) => a.localeCompare(b));
+      }
+    });
+  }
+
+  // The FU graph is expected to be a DAG; this keeps the layout usable if input has a stray cycle.
+  fuNodes
+    .map(n => n.id)
+    .filter(id => !order.includes(id))
+    .sort((a, b) => a.localeCompare(b))
+    .forEach(id => order.push(id));
+
+  const level = {};
+  order.forEach(id => { level[id] = 0; });
+  order.forEach(id => {
+    fuAdj[id].forEach(next => {
+      level[next] = Math.max(level[next] || 0, (level[id] || 0) + 1);
+    });
+  });
+
+  const levels = {};
+  fuNodes.forEach(n => {
+    const lv = level[n.id] || 0;
+    if (!levels[lv]) levels[lv] = [];
+    levels[lv].push(n);
+  });
+  Object.values(levels).forEach(group => {
+    group.sort((a, b) => a.id.localeCompare(b.id));
+  });
+
+  const levelKeys = Object.keys(levels).map(Number).sort((a, b) => a - b);
+  const maxLevel = levelKeys.length ? Math.max(...levelKeys) : 0;
+  const fuSpacingX = 150;
+  const levelSpacingY = 120;
+  const layoutW = Math.max(W, fuNodes.length * fuSpacingX + 160);
+  const layoutH = Math.max(H, (maxLevel + 1) * levelSpacingY + 160);
+  const yOffset = (layoutH - maxLevel * levelSpacingY) / 2;
+
+  order.forEach((id, i) => {
+    const n = nodeMap[id];
+    if (!n || !fuIds.has(id)) return;
+    n.x = 80 + i * fuSpacingX;
+    n.y = yOffset + (level[id] || 0) * levelSpacingY;
+    n.vx = 0; n.vy = 0;
+  });
+
+  levelKeys.forEach(lv => {
+    const group = levels[lv].sort((a, b) => a.x - b.x);
+    if (group.length <= 1) return;
+    const centerX = group.reduce((sum, n) => sum + n.x, 0) / group.length;
+    const startX = centerX - ((group.length - 1) * fuSpacingX) / 2;
+    group.forEach((n, i) => {
+      n.x = startX + i * fuSpacingX;
+      n.vx = 0; n.vy = 0;
+    });
+  });
+
+  const fuNeighborScore = {};
+  const nonFuAdj = {};
+  const freeNodes = [];
+  nodes.filter(n => !isFunctionalUnit(n)).forEach(n => {
+    fuNeighborScore[n.id] = {};
+    nonFuAdj[n.id] = [];
+  });
+
+  edges.forEach(e => {
+    if (fuIds.has(e.source) && fuNeighborScore[e.target]) {
+      fuNeighborScore[e.target][e.source] = (fuNeighborScore[e.target][e.source] || 0) + 1;
+    }
+    if (fuIds.has(e.target) && fuNeighborScore[e.source]) {
+      fuNeighborScore[e.source][e.target] = (fuNeighborScore[e.source][e.target] || 0) + 1;
+    }
+    if (nonFuAdj[e.source] && nonFuAdj[e.target]) {
+      nonFuAdj[e.source].push(e.target);
+      nonFuAdj[e.target].push(e.source);
+    }
+  });
+
+  Object.keys(fuNeighborScore).forEach(nodeId => {
+    if (Object.keys(fuNeighborScore[nodeId]).length) return;
+    (nonFuAdj[nodeId] || []).forEach(nb => {
+      Object.entries(fuNeighborScore[nb] || {}).forEach(([fuId, score]) => {
+        fuNeighborScore[nodeId][fuId] = (fuNeighborScore[nodeId][fuId] || 0) + score * 0.5;
+      });
+    });
+  });
+
+  const attached = {};
+  fuNodes.forEach(n => { attached[n.id] = []; });
+  nodes.filter(n => !isFunctionalUnit(n)).forEach(n => {
+    const fuChoices = Object.entries(fuNeighborScore[n.id] || {})
+      .sort((a, b) => b[1] - a[1] || (level[a[0]] || 0) - (level[b[0]] || 0) || a[0].localeCompare(b[0]));
+    if (fuChoices.length) {
+      attached[fuChoices[0][0]].push(n);
+    } else {
+      freeNodes.push(n);
+    }
+  });
+
+  Object.entries(attached).forEach(([fuId, group]) => {
+    const anchor = nodeMap[fuId];
+    if (!anchor || !group.length) return;
+    group.sort((a, b) => a.id.localeCompare(b.id));
+    group.forEach((n, i) => {
+      const ring = Math.floor(i / 10);
+      const pos = i % 10;
+      const count = Math.min(10, group.length - ring * 10);
+      const radius = 76 + ring * 44;
+      const angle = (-Math.PI / 2) + (2 * Math.PI * pos) / count + ring * 0.33;
+      n.x = anchor.x + Math.cos(angle) * radius;
+      n.y = anchor.y + Math.sin(angle) * radius;
+      n.vx = 0; n.vy = 0;
+    });
+  });
+
+  if (freeNodes.length) {
+    const cols = Math.ceil(Math.sqrt(freeNodes.length));
+    freeNodes.sort((a, b) => a.id.localeCompare(b.id));
+    freeNodes.forEach((n, i) => {
+      n.x = layoutW + 120 + (i % cols) * 72;
+      n.y = 100 + Math.floor(i / cols) * 72;
+      n.vx = 0; n.vy = 0;
+    });
+  }
+}
+
 // ═══════════════════════════════════════════════════════
 // App state
 // ═══════════════════════════════════════════════════════
@@ -627,7 +792,7 @@ function buildApp() {
   // layout
   const cw = document.getElementById('canvas-wrap');
   const W = cw.clientWidth || 800, H = cw.clientHeight || 500;
-  forceLayout(STATE.nodes, STATE.edges, W, H, 250);
+  dagFunctionalLayout(STATE.nodes, STATE.edges, W, H);
 
   initCanvas();
   fitView();
