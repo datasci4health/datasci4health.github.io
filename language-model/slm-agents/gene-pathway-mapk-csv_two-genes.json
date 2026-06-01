@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-06-01T01:03:26.611Z",
+  "userQuestion": "Consider the MAPK signaling pathway (path:hsa04010) from KEGG (https://www.kegg.jp/kegg-bin/show_pathway?hsa04010).",
+  "dataSources": [
+    {
+      "label": "Symbols",
+      "type": "active",
+      "content": "Functional Unit,Gene Symbols\nfu:282f2b98,DUSP10 DUSP2 DUSP4 DUSP5 DUSP7 DUSP8 DUSP9 DUSP16\nfu:de327064,RRAS2 MRAS HRAS KRAS NRAS RRAS",
+      "subscribeTopic": "",
+      "appendContent": false,
+      "splitLastLine": false,
+      "firstTopic": "START",
+      "nextTopic": "NEXT_ROW",
+      "publishTopic": "GENES"
+    },
+    {
+      "label": "Complete Results",
+      "type": "passive",
+      "content": "1. The shared biological function/protein family is phosphatase activity related to dual-specificity tyrosine-phosphorylation-regulated proteins (DUSP).\n2. Proposed acronym: DYSPS\n3. fu:282f2b98,DYSPS\n1. Shared biological function/protein family: Ras GTPase signaling pathway.\n2. Proposed acronym: RAS\n3. fu:de327064,RAS",
+      "subscribeTopic": "NEXT_ROW",
+      "appendContent": true,
+      "splitLastLine": false,
+      "firstTopic": "",
+      "nextTopic": "",
+      "publishTopic": ""
+    },
+    {
+      "label": "FU Symbols",
+      "type": "passive",
+      "content": "3. fu:282f2b98,DYSPS\n3. fu:de327064,RAS",
+      "subscribeTopic": "NEXT_ROW",
+      "appendContent": true,
+      "splitLastLine": true,
+      "firstTopic": "",
+      "nextTopic": "",
+      "publishTopic": ""
+    }
+  ],
+  "agents": [
+    {
+      "title": "Specialist",
+      "prompt": "You are an expert bioinformatician. Below is an input containing a Functional Unit identifier and a list of gene symbols. These genes encode proteins that perform the exact same biological task in a pathway (the functional unit).\n\nInput:\n{input}\n\nTask: \n1. Briefly identify the shared biological function or protein family of these genes.\n2. Propose a single, generic acronym (2 to 6 capital letters) representing this group.\n3. At the absolute end of your response, on a new line, write strictly the Functional Unit identifier and the proposed symbol, separated by a comma. \n\nCrucial Rule for Step 3:\nThe very last line of your response must contain ONLY the identifier and the symbol. Do not add a period or any other text. \nFormat of the final line: Identifier, SYMBOL\n\nResponse:",
+      "model": "phi4-mini",
+      "subscribeTopic": "GENES",
+      "publishTopic": "NEXT_ROW",
+      "showResult": true
+    }
+  ],
+  "results": {
+    "finalResult": "--- Specialist ---\n\n1. The shared biological function/protein family is phosphatase activity related to dual-specificity tyrosine-phosphorylation-regulated proteins (DUSP).\n2. Proposed acronym: DYSPS\n3. fu:282f2b98,DYSPS\n\n--- Specialist ---\n\n1. Shared biological function/protein family: Ras GTPase signaling pathway.\n2. Proposed acronym: RAS\n3. fu:de327064,RAS",
+    "nerResult": "",
+    "executionLog": "[10:01:17 PM] ℹ️ Initializing Pub/Sub Agent System...\n[10:01:17 PM] ℹ️ Total agents configured: 1\n[10:01:17 PM] ℹ️ Data sources: 3\n[10:01:17 PM] ℹ️ User Question: Consider the MAPK signaling pathway (path:hsa04010) from KEGG (https://www.kegg.jp/kegg-bin/show_pathway?hsa04010).\n[10:01:56 PM] 📡 Bus initialized\n[10:01:56 PM] 📡 Agent \"Specialist\" subscribed to topic \"GENES\"\n[10:01:56 PM] 📡 Data source \"Symbols\" subscribed to topic \"START\"\n[10:01:56 PM] 📡 Data source \"Symbols\" subscribed to topic \"NEXT_ROW\"\n[10:01:56 PM] 📡 Data source \"Complete Results\" subscribed to topic \"NEXT_ROW\"\n[10:01:56 PM] 📡 Data source \"FU Symbols\" subscribed to topic \"NEXT_ROW\"\n[10:01:56 PM] 📡 Published to \"START\": Consider the MAPK signaling pathway (path:hsa04010) from KEGG (https://www.kegg.jp/kegg-bin/show_pat...\n[10:01:56 PM] 📡 Data source \"Symbols\" dispatched row 1 to \"GENES\"\n[10:01:56 PM] 📡 Published to \"GENES\": * Functional Unit: fu:282f2b98\n* Gene Symbols: DUSP10 DUSP2 DUSP4 DUSP5 DUSP7 DUSP8 DUSP9 DUSP16\n[10:01:56 PM] 🤖 Agent \"Specialist\" triggered by topic \"genes\"\n[10:01:56 PM] 🤖 Agent \"Specialist\" processing...\n[10:01:56 PM] ℹ️ Input: * Functional Unit: fu:282f2b98\n* Gene Symbols: DUSP10 DUSP2 DUSP4 DUSP5 DUSP7 DUSP8 DUSP9 DUSP16\n[10:01:56 PM] ℹ️ Output: 1. The shared biological function/protein family is phosphatase activity related to dual-specificity tyrosine-phosphorylation-regulated proteins (DUSP).\n2. Proposed acronym: DYSPS\n3. fu:282f2b98,DYSPS\n[10:01:56 PM] 📡 Published to \"NEXT_ROW\": 1. The shared biological function/protein family is phosphatase activity related to dual-specificity...\n[10:01:56 PM] ✅ Agent \"Specialist\" completed\n[10:01:56 PM] 📡 Data source \"Symbols\" dispatched row 2 to \"GENES\"\n[10:01:56 PM] 📡 Published to \"GENES\": * Functional Unit: fu:de327064\n* Gene Symbols: RRAS2 MRAS HRAS KRAS NRAS RRAS\n[10:01:56 PM] 📡 Data source \"Complete Results\" appended with message from \"next_row\"\n[10:01:56 PM] 📡 Data source \"FU Symbols\" appended last line from \"next_row\"\n[10:01:56 PM] 🤖 Agent \"Specialist\" triggered by topic \"genes\"\n[10:01:56 PM] 🤖 Agent \"Specialist\" processing...\n[10:01:56 PM] ℹ️ Input: * Functional Unit: fu:de327064\n* Gene Symbols: RRAS2 MRAS HRAS KRAS NRAS RRAS\n[10:01:56 PM] ℹ️ Output: 1. Shared biological function/protein family: Ras GTPase signaling pathway.\n2. Proposed acronym: RAS\n3. fu:de327064,RAS\n[10:01:56 PM] 📡 Published to \"NEXT_ROW\": 1. Shared biological function/protein family: Ras GTPase signaling pathway.\n2. Proposed acronym: RAS...\n[10:01:56 PM] ✅ Agent \"Specialist\" completed\n[10:01:56 PM] 📡 Data source \"Symbols\" has no more rows for \"next_row\"\n[10:01:56 PM] 📡 Data source \"Complete Results\" appended with message from \"next_row\"\n[10:01:56 PM] 📡 Data source \"FU Symbols\" appended last line from \"next_row\"\n[10:01:56 PM] ✅ \n=== EXECUTION COMPLETE ===\n"
+  }
+}
