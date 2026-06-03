@@ -76,7 +76,7 @@
 		<node id="72" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate" position="(762.5476190476193, 1068.095238095238)" />
 		<node id="73" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Remove internal id columns" position="(2984.4285714285716, 1093.7142857142853)" />
 		<node id="74" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(3248.142857142857, 1030.2857142857142)" />
-		<node id="75" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Formula" position="(3388.642857142856, 1148.7857142857142)" />
+		<node id="75" name="Formula" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" project_name="Orange3" version="" title="Adding mir_to_gene type" position="(3388.642857142856, 1148.7857142857142)" />
 		<node id="76" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate (2)" position="(3504.642857142856, 1020.7857142857142)" />
 		<node id="77" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Filter mRNAs (genes)" position="(3631.000000000001, 712.2222222222224)" />
 		<node id="78" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Only id column" position="(3745.4444444444443, 710.0)" />
